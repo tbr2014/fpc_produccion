@@ -1,0 +1,352 @@
+C:\ABorjas\Aplicaciones\bddc\bddc.Util\bin\Debug\bddc.Util.dll
+C:\ABorjas\Aplicaciones\bddc\bddc.Util\bin\Debug\bddc.Util.pdb
+C:\ABorjas\Aplicaciones\bddc\bddc.Util\bin\Debug\bddc.Util.xml
+C:\ABorjas\Aplicaciones\bddc\bddc.Util\bin\Debug\bddc.BEC.dll
+C:\ABorjas\Aplicaciones\bddc\bddc.Util\bin\Debug\Interop.Excel.dll
+C:\ABorjas\Aplicaciones\bddc\bddc.Util\bin\Debug\office.dll
+C:\ABorjas\Aplicaciones\bddc\bddc.Util\bin\Debug\Microsoft.Vbe.Interop.dll
+C:\ABorjas\Aplicaciones\bddc\bddc.Util\bin\Debug\office.xml
+C:\ABorjas\Aplicaciones\bddc\bddc.Util\bin\Debug\bddc.BEC.pdb
+C:\ABorjas\Aplicaciones\bddc\bddc.Util\bin\Debug\bddc.BEC.xml
+C:\ABorjas\Aplicaciones\bddc\bddc.Util\obj\Debug\ResolveAssemblyReference.cache
+C:\ABorjas\Aplicaciones\bddc\bddc.Util\obj\Debug\bddc.Util.Resources.resources
+C:\ABorjas\Aplicaciones\bddc\bddc.Util\obj\Debug\bddc.Util.vbproj.GenerateResource.Cache
+C:\ABorjas\Aplicaciones\bddc\bddc.Util\obj\Debug\bddc.Util.dll
+C:\ABorjas\Aplicaciones\bddc\bddc.Util\obj\Debug\bddc.Util.xml
+C:\ABorjas\Aplicaciones\bddc\bddc.Util\obj\Debug\bddc.Util.pdb
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\bddc\bddc.Util\bin\Debug\bddc.Util.dll
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\bddc\bddc.Util\bin\Debug\bddc.Util.pdb
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\bddc\bddc.Util\bin\Debug\bddc.Util.xml
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\bddc\bddc.Util\bin\Debug\bddc.BEC.dll
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\bddc\bddc.Util\bin\Debug\office.dll
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\bddc\bddc.Util\bin\Debug\Microsoft.Vbe.Interop.dll
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\bddc\bddc.Util\bin\Debug\office.xml
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\bddc\bddc.Util\bin\Debug\bddc.BEC.pdb
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\bddc\bddc.Util\bin\Debug\bddc.BEC.xml
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\bddc\bddc.Util\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\bddc\bddc.Util\obj\Debug\bddc.Util.Resources.resources
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\bddc\bddc.Util\obj\Debug\bddc.Util.vbproj.GenerateResource.Cache
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\bddc\bddc.Util\obj\Debug\bddc.Util.dll
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\bddc\bddc.Util\obj\Debug\bddc.Util.xml
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\bddc\bddc.Util\obj\Debug\bddc.Util.pdb
+C:\Users\Administrator\Desktop\bddc\bddc.Util\bin\Debug\bddc.Util.dll
+C:\Users\Administrator\Desktop\bddc\bddc.Util\bin\Debug\bddc.Util.pdb
+C:\Users\Administrator\Desktop\bddc\bddc.Util\bin\Debug\bddc.Util.xml
+C:\Users\Administrator\Desktop\bddc\bddc.Util\bin\Debug\bddc.BEC.dll
+C:\Users\Administrator\Desktop\bddc\bddc.Util\bin\Debug\office.dll
+C:\Users\Administrator\Desktop\bddc\bddc.Util\bin\Debug\Microsoft.Vbe.Interop.dll
+C:\Users\Administrator\Desktop\bddc\bddc.Util\bin\Debug\office.xml
+C:\Users\Administrator\Desktop\bddc\bddc.Util\bin\Debug\bddc.BEC.pdb
+C:\Users\Administrator\Desktop\bddc\bddc.Util\bin\Debug\bddc.BEC.xml
+C:\Users\Administrator\Desktop\bddc\bddc.Util\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\bddc\bddc.Util\obj\Debug\bddc.Util.Resources.resources
+C:\Users\Administrator\Desktop\bddc\bddc.Util\obj\Debug\bddc.Util.vbproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\bddc\bddc.Util\obj\Debug\bddc.Util.dll
+C:\Users\Administrator\Desktop\bddc\bddc.Util\obj\Debug\bddc.Util.xml
+C:\Users\Administrator\Desktop\bddc\bddc.Util\obj\Debug\bddc.Util.pdb
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Util\bin\Debug\bddc.Util.dll
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Util\bin\Debug\bddc.Util.pdb
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Util\bin\Debug\bddc.Util.xml
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Util\bin\Debug\bddc.BEC.dll
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Util\bin\Debug\office.dll
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Util\bin\Debug\Microsoft.Vbe.Interop.dll
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Util\bin\Debug\office.xml
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Util\bin\Debug\bddc.BEC.pdb
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Util\bin\Debug\bddc.BEC.xml
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Util\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Util\obj\Debug\bddc.Util.Resources.resources
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Util\obj\Debug\bddc.Util.vbproj.GenerateResource.Cache
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Util\obj\Debug\bddc.Util.dll
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Util\obj\Debug\bddc.Util.xml
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Util\obj\Debug\bddc.Util.pdb
+C:\LuxorPlayerClub\bddc\bddc.Util\bin\Debug\bddc.Util.dll
+C:\LuxorPlayerClub\bddc\bddc.Util\bin\Debug\bddc.Util.pdb
+C:\LuxorPlayerClub\bddc\bddc.Util\bin\Debug\bddc.Util.xml
+C:\LuxorPlayerClub\bddc\bddc.Util\bin\Debug\bddc.BEC.dll
+C:\LuxorPlayerClub\bddc\bddc.Util\bin\Debug\office.dll
+C:\LuxorPlayerClub\bddc\bddc.Util\bin\Debug\Microsoft.Vbe.Interop.dll
+C:\LuxorPlayerClub\bddc\bddc.Util\bin\Debug\office.xml
+C:\LuxorPlayerClub\bddc\bddc.Util\bin\Debug\bddc.BEC.pdb
+C:\LuxorPlayerClub\bddc\bddc.Util\bin\Debug\bddc.BEC.xml
+C:\LuxorPlayerClub\bddc\bddc.Util\obj\Debug\ResolveAssemblyReference.cache
+C:\LuxorPlayerClub\bddc\bddc.Util\obj\Debug\bddc.Util.Resources.resources
+C:\LuxorPlayerClub\bddc\bddc.Util\obj\Debug\bddc.Util.vbproj.GenerateResource.Cache
+C:\LuxorPlayerClub\bddc\bddc.Util\obj\Debug\bddc.Util.dll
+C:\LuxorPlayerClub\bddc\bddc.Util\obj\Debug\bddc.Util.xml
+C:\LuxorPlayerClub\bddc\bddc.Util\obj\Debug\bddc.Util.pdb
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Util\bin\Debug\bddc.Util.dll
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Util\bin\Debug\bddc.Util.pdb
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Util\bin\Debug\bddc.Util.xml
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Util\bin\Debug\bddc.BEC.dll
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Util\bin\Debug\office.dll
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Util\bin\Debug\Microsoft.Vbe.Interop.dll
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Util\bin\Debug\office.xml
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Util\bin\Debug\bddc.BEC.pdb
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Util\bin\Debug\bddc.BEC.xml
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Util\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Util\obj\Debug\bddc.Util.Resources.resources
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Util\obj\Debug\bddc.Util.vbproj.GenerateResource.Cache
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Util\obj\Debug\bddc.Util.dll
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Util\obj\Debug\bddc.Util.xml
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Util\obj\Debug\bddc.Util.pdb
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_26_8_2013\bddc\bddc.Util\bin\Debug\bddc.Util.dll
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_26_8_2013\bddc\bddc.Util\bin\Debug\bddc.Util.pdb
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_26_8_2013\bddc\bddc.Util\bin\Debug\bddc.Util.xml
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_26_8_2013\bddc\bddc.Util\bin\Debug\bddc.BEC.dll
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_26_8_2013\bddc\bddc.Util\bin\Debug\office.dll
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_26_8_2013\bddc\bddc.Util\bin\Debug\Microsoft.Vbe.Interop.dll
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_26_8_2013\bddc\bddc.Util\bin\Debug\office.xml
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_26_8_2013\bddc\bddc.Util\bin\Debug\bddc.BEC.pdb
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_26_8_2013\bddc\bddc.Util\bin\Debug\bddc.BEC.xml
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_26_8_2013\bddc\bddc.Util\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_26_8_2013\bddc\bddc.Util\obj\Debug\bddc.Util.Resources.resources
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_26_8_2013\bddc\bddc.Util\obj\Debug\bddc.Util.vbproj.GenerateResource.Cache
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_26_8_2013\bddc\bddc.Util\obj\Debug\bddc.Util.dll
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_26_8_2013\bddc\bddc.Util\obj\Debug\bddc.Util.xml
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_26_8_2013\bddc\bddc.Util\obj\Debug\bddc.Util.pdb
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_02_09_2013\bddc\bddc.Util\bin\Debug\bddc.Util.dll
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_02_09_2013\bddc\bddc.Util\bin\Debug\bddc.Util.pdb
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_02_09_2013\bddc\bddc.Util\bin\Debug\bddc.Util.xml
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_02_09_2013\bddc\bddc.Util\bin\Debug\bddc.BEC.dll
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_02_09_2013\bddc\bddc.Util\bin\Debug\office.dll
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_02_09_2013\bddc\bddc.Util\bin\Debug\Microsoft.Vbe.Interop.dll
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_02_09_2013\bddc\bddc.Util\bin\Debug\office.xml
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_02_09_2013\bddc\bddc.Util\bin\Debug\bddc.BEC.pdb
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_02_09_2013\bddc\bddc.Util\bin\Debug\bddc.BEC.xml
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_02_09_2013\bddc\bddc.Util\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_02_09_2013\bddc\bddc.Util\obj\Debug\bddc.Util.Resources.resources
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_02_09_2013\bddc\bddc.Util\obj\Debug\bddc.Util.vbproj.GenerateResource.Cache
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_02_09_2013\bddc\bddc.Util\obj\Debug\bddc.Util.dll
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_02_09_2013\bddc\bddc.Util\obj\Debug\bddc.Util.xml
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_02_09_2013\bddc\bddc.Util\obj\Debug\bddc.Util.pdb
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_09_10_2013\bddc\bddc.Util\bin\Debug\bddc.Util.dll
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_09_10_2013\bddc\bddc.Util\bin\Debug\bddc.Util.pdb
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_09_10_2013\bddc\bddc.Util\bin\Debug\bddc.Util.xml
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_09_10_2013\bddc\bddc.Util\bin\Debug\bddc.BEC.dll
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_09_10_2013\bddc\bddc.Util\bin\Debug\office.dll
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_09_10_2013\bddc\bddc.Util\bin\Debug\Microsoft.Vbe.Interop.dll
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_09_10_2013\bddc\bddc.Util\bin\Debug\office.xml
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_09_10_2013\bddc\bddc.Util\bin\Debug\bddc.BEC.pdb
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_09_10_2013\bddc\bddc.Util\bin\Debug\bddc.BEC.xml
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_09_10_2013\bddc\bddc.Util\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_09_10_2013\bddc\bddc.Util\obj\Debug\bddc.Util.Resources.resources
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_09_10_2013\bddc\bddc.Util\obj\Debug\bddc.Util.vbproj.GenerateResource.Cache
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_09_10_2013\bddc\bddc.Util\obj\Debug\bddc.Util.dll
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_09_10_2013\bddc\bddc.Util\obj\Debug\bddc.Util.xml
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_09_10_2013\bddc\bddc.Util\obj\Debug\bddc.Util.pdb
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_01_11_2013\bddc\bddc.Util\bin\Debug\bddc.Util.dll
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_01_11_2013\bddc\bddc.Util\bin\Debug\bddc.Util.pdb
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_01_11_2013\bddc\bddc.Util\bin\Debug\bddc.Util.xml
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_01_11_2013\bddc\bddc.Util\bin\Debug\bddc.BEC.dll
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_01_11_2013\bddc\bddc.Util\bin\Debug\office.dll
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_01_11_2013\bddc\bddc.Util\bin\Debug\Microsoft.Vbe.Interop.dll
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_01_11_2013\bddc\bddc.Util\bin\Debug\office.xml
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_01_11_2013\bddc\bddc.Util\bin\Debug\bddc.BEC.pdb
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_01_11_2013\bddc\bddc.Util\bin\Debug\bddc.BEC.xml
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_01_11_2013\bddc\bddc.Util\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_01_11_2013\bddc\bddc.Util\obj\Debug\bddc.Util.Resources.resources
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_01_11_2013\bddc\bddc.Util\obj\Debug\bddc.Util.vbproj.GenerateResource.Cache
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_01_11_2013\bddc\bddc.Util\obj\Debug\bddc.Util.dll
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_01_11_2013\bddc\bddc.Util\obj\Debug\bddc.Util.xml
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_01_11_2013\bddc\bddc.Util\obj\Debug\bddc.Util.pdb
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_16_12_2013\bddc\bddc.Util\bin\Debug\bddc.Util.dll
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_16_12_2013\bddc\bddc.Util\bin\Debug\bddc.Util.pdb
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_16_12_2013\bddc\bddc.Util\bin\Debug\bddc.Util.xml
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_16_12_2013\bddc\bddc.Util\bin\Debug\bddc.BEC.dll
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_16_12_2013\bddc\bddc.Util\bin\Debug\office.dll
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_16_12_2013\bddc\bddc.Util\bin\Debug\Microsoft.Vbe.Interop.dll
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_16_12_2013\bddc\bddc.Util\bin\Debug\office.xml
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_16_12_2013\bddc\bddc.Util\bin\Debug\bddc.BEC.pdb
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_16_12_2013\bddc\bddc.Util\bin\Debug\bddc.BEC.xml
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_16_12_2013\bddc\bddc.Util\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_16_12_2013\bddc\bddc.Util\obj\Debug\bddc.Util.Resources.resources
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_16_12_2013\bddc\bddc.Util\obj\Debug\bddc.Util.vbproj.GenerateResource.Cache
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_16_12_2013\bddc\bddc.Util\obj\Debug\bddc.Util.dll
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_16_12_2013\bddc\bddc.Util\obj\Debug\bddc.Util.xml
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_16_12_2013\bddc\bddc.Util\obj\Debug\bddc.Util.pdb
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_18_02_2014\bddc\bddc.Util\bin\Debug\bddc.Util.dll
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_18_02_2014\bddc\bddc.Util\bin\Debug\bddc.Util.pdb
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_18_02_2014\bddc\bddc.Util\bin\Debug\bddc.Util.xml
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_18_02_2014\bddc\bddc.Util\bin\Debug\bddc.BEC.dll
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_18_02_2014\bddc\bddc.Util\bin\Debug\office.dll
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_18_02_2014\bddc\bddc.Util\bin\Debug\Microsoft.Vbe.Interop.dll
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_18_02_2014\bddc\bddc.Util\bin\Debug\office.xml
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_18_02_2014\bddc\bddc.Util\bin\Debug\bddc.BEC.pdb
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_18_02_2014\bddc\bddc.Util\bin\Debug\bddc.BEC.xml
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_18_02_2014\bddc\bddc.Util\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_18_02_2014\bddc\bddc.Util\obj\Debug\bddc.Util.Resources.resources
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_18_02_2014\bddc\bddc.Util\obj\Debug\bddc.Util.vbproj.GenerateResource.Cache
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_18_02_2014\bddc\bddc.Util\obj\Debug\bddc.Util.dll
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_18_02_2014\bddc\bddc.Util\obj\Debug\bddc.Util.xml
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_18_02_2014\bddc\bddc.Util\obj\Debug\bddc.Util.pdb
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_07_03_2014\bddc\bddc.Util\bin\Debug\bddc.Util.dll
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_07_03_2014\bddc\bddc.Util\bin\Debug\bddc.Util.pdb
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_07_03_2014\bddc\bddc.Util\bin\Debug\bddc.Util.xml
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_07_03_2014\bddc\bddc.Util\bin\Debug\bddc.BEC.dll
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_07_03_2014\bddc\bddc.Util\bin\Debug\office.dll
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_07_03_2014\bddc\bddc.Util\bin\Debug\Microsoft.Vbe.Interop.dll
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_07_03_2014\bddc\bddc.Util\bin\Debug\office.xml
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_07_03_2014\bddc\bddc.Util\bin\Debug\bddc.BEC.pdb
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_07_03_2014\bddc\bddc.Util\bin\Debug\bddc.BEC.xml
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_07_03_2014\bddc\bddc.Util\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_07_03_2014\bddc\bddc.Util\obj\Debug\bddc.Util.Resources.resources
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_07_03_2014\bddc\bddc.Util\obj\Debug\bddc.Util.vbproj.GenerateResource.Cache
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_07_03_2014\bddc\bddc.Util\obj\Debug\bddc.Util.dll
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_07_03_2014\bddc\bddc.Util\obj\Debug\bddc.Util.xml
+C:\Users\anapai.pan01.TBR\Desktop\MultiCasino  FPC_07_03_2014\bddc\bddc.Util\obj\Debug\bddc.Util.pdb
+C:\Users\anapai.pan01.TBR\Desktop\PRUEBAS SIN INFRAGISTIC\MultiCasino  FPC_07_03_2014\bddc\bddc.Util\bin\Debug\bddc.Util.dll
+C:\Users\anapai.pan01.TBR\Desktop\PRUEBAS SIN INFRAGISTIC\MultiCasino  FPC_07_03_2014\bddc\bddc.Util\bin\Debug\bddc.Util.pdb
+C:\Users\anapai.pan01.TBR\Desktop\PRUEBAS SIN INFRAGISTIC\MultiCasino  FPC_07_03_2014\bddc\bddc.Util\bin\Debug\bddc.Util.xml
+C:\Users\anapai.pan01.TBR\Desktop\PRUEBAS SIN INFRAGISTIC\MultiCasino  FPC_07_03_2014\bddc\bddc.Util\bin\Debug\bddc.BEC.dll
+C:\Users\anapai.pan01.TBR\Desktop\PRUEBAS SIN INFRAGISTIC\MultiCasino  FPC_07_03_2014\bddc\bddc.Util\bin\Debug\office.dll
+C:\Users\anapai.pan01.TBR\Desktop\PRUEBAS SIN INFRAGISTIC\MultiCasino  FPC_07_03_2014\bddc\bddc.Util\bin\Debug\Microsoft.Vbe.Interop.dll
+C:\Users\anapai.pan01.TBR\Desktop\PRUEBAS SIN INFRAGISTIC\MultiCasino  FPC_07_03_2014\bddc\bddc.Util\bin\Debug\bddc.BEC.pdb
+C:\Users\anapai.pan01.TBR\Desktop\PRUEBAS SIN INFRAGISTIC\MultiCasino  FPC_07_03_2014\bddc\bddc.Util\bin\Debug\bddc.BEC.xml
+C:\Users\anapai.pan01.TBR\Desktop\PRUEBAS SIN INFRAGISTIC\MultiCasino  FPC_07_03_2014\bddc\bddc.Util\bin\Debug\office.xml
+C:\Users\anapai.pan01.TBR\Desktop\PRUEBAS SIN INFRAGISTIC\MultiCasino  FPC_07_03_2014\bddc\bddc.Util\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\anapai.pan01.TBR\Desktop\PRUEBAS SIN INFRAGISTIC\MultiCasino  FPC_07_03_2014\bddc\bddc.Util\obj\Debug\bddc.Util.Resources.resources
+C:\Users\anapai.pan01.TBR\Desktop\PRUEBAS SIN INFRAGISTIC\MultiCasino  FPC_07_03_2014\bddc\bddc.Util\obj\Debug\ResGen.read.1.tlog
+C:\Users\anapai.pan01.TBR\Desktop\PRUEBAS SIN INFRAGISTIC\MultiCasino  FPC_07_03_2014\bddc\bddc.Util\obj\Debug\ResGen.write.1.tlog
+C:\Users\anapai.pan01.TBR\Desktop\PRUEBAS SIN INFRAGISTIC\MultiCasino  FPC_07_03_2014\bddc\bddc.Util\obj\Debug\bddc.Util.dll
+C:\Users\anapai.pan01.TBR\Desktop\PRUEBAS SIN INFRAGISTIC\MultiCasino  FPC_07_03_2014\bddc\bddc.Util\obj\Debug\bddc.Util.xml
+C:\Users\anapai.pan01.TBR\Desktop\PRUEBAS SIN INFRAGISTIC\MultiCasino  FPC_07_03_2014\bddc\bddc.Util\obj\Debug\bddc.Util.pdb
+C:\Users\anapai.pan01.TBR\Desktop\ULTIMA VERSION FPC MULTICASINO CON INFRAGISTIC\MultiCasino  FPC_07_03_2014\bddc\bddc.Util\bin\Debug\bddc.Util.dll
+C:\Users\anapai.pan01.TBR\Desktop\ULTIMA VERSION FPC MULTICASINO CON INFRAGISTIC\MultiCasino  FPC_07_03_2014\bddc\bddc.Util\bin\Debug\bddc.Util.pdb
+C:\Users\anapai.pan01.TBR\Desktop\ULTIMA VERSION FPC MULTICASINO CON INFRAGISTIC\MultiCasino  FPC_07_03_2014\bddc\bddc.Util\bin\Debug\bddc.Util.xml
+C:\Users\anapai.pan01.TBR\Desktop\ULTIMA VERSION FPC MULTICASINO CON INFRAGISTIC\MultiCasino  FPC_07_03_2014\bddc\bddc.Util\bin\Debug\bddc.BEC.dll
+C:\Users\anapai.pan01.TBR\Desktop\ULTIMA VERSION FPC MULTICASINO CON INFRAGISTIC\MultiCasino  FPC_07_03_2014\bddc\bddc.Util\bin\Debug\office.dll
+C:\Users\anapai.pan01.TBR\Desktop\ULTIMA VERSION FPC MULTICASINO CON INFRAGISTIC\MultiCasino  FPC_07_03_2014\bddc\bddc.Util\bin\Debug\Microsoft.Vbe.Interop.dll
+C:\Users\anapai.pan01.TBR\Desktop\ULTIMA VERSION FPC MULTICASINO CON INFRAGISTIC\MultiCasino  FPC_07_03_2014\bddc\bddc.Util\bin\Debug\bddc.BEC.pdb
+C:\Users\anapai.pan01.TBR\Desktop\ULTIMA VERSION FPC MULTICASINO CON INFRAGISTIC\MultiCasino  FPC_07_03_2014\bddc\bddc.Util\bin\Debug\bddc.BEC.xml
+C:\Users\anapai.pan01.TBR\Desktop\ULTIMA VERSION FPC MULTICASINO CON INFRAGISTIC\MultiCasino  FPC_07_03_2014\bddc\bddc.Util\bin\Debug\office.xml
+C:\Users\anapai.pan01.TBR\Desktop\ULTIMA VERSION FPC MULTICASINO CON INFRAGISTIC\MultiCasino  FPC_07_03_2014\bddc\bddc.Util\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\anapai.pan01.TBR\Desktop\ULTIMA VERSION FPC MULTICASINO CON INFRAGISTIC\MultiCasino  FPC_07_03_2014\bddc\bddc.Util\obj\Debug\bddc.Util.Resources.resources
+C:\Users\anapai.pan01.TBR\Desktop\ULTIMA VERSION FPC MULTICASINO CON INFRAGISTIC\MultiCasino  FPC_07_03_2014\bddc\bddc.Util\obj\Debug\ResGen.read.1.tlog
+C:\Users\anapai.pan01.TBR\Desktop\ULTIMA VERSION FPC MULTICASINO CON INFRAGISTIC\MultiCasino  FPC_07_03_2014\bddc\bddc.Util\obj\Debug\ResGen.write.1.tlog
+C:\Users\anapai.pan01.TBR\Desktop\ULTIMA VERSION FPC MULTICASINO CON INFRAGISTIC\MultiCasino  FPC_07_03_2014\bddc\bddc.Util\obj\Debug\bddc.Util.dll
+C:\Users\anapai.pan01.TBR\Desktop\ULTIMA VERSION FPC MULTICASINO CON INFRAGISTIC\MultiCasino  FPC_07_03_2014\bddc\bddc.Util\obj\Debug\bddc.Util.xml
+C:\Users\anapai.pan01.TBR\Desktop\ULTIMA VERSION FPC MULTICASINO CON INFRAGISTIC\MultiCasino  FPC_07_03_2014\bddc\bddc.Util\obj\Debug\bddc.Util.pdb
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Marzo 20 de 2014\MultiCasino  FPC_07_03_2014\bddc\bddc.Util\bin\Debug\bddc.Util.dll
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Marzo 20 de 2014\MultiCasino  FPC_07_03_2014\bddc\bddc.Util\bin\Debug\bddc.Util.pdb
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Marzo 20 de 2014\MultiCasino  FPC_07_03_2014\bddc\bddc.Util\bin\Debug\bddc.Util.xml
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Marzo 20 de 2014\MultiCasino  FPC_07_03_2014\bddc\bddc.Util\bin\Debug\bddc.BEC.dll
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Marzo 20 de 2014\MultiCasino  FPC_07_03_2014\bddc\bddc.Util\bin\Debug\office.dll
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Marzo 20 de 2014\MultiCasino  FPC_07_03_2014\bddc\bddc.Util\bin\Debug\Microsoft.Vbe.Interop.dll
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Marzo 20 de 2014\MultiCasino  FPC_07_03_2014\bddc\bddc.Util\bin\Debug\bddc.BEC.pdb
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Marzo 20 de 2014\MultiCasino  FPC_07_03_2014\bddc\bddc.Util\bin\Debug\bddc.BEC.xml
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Marzo 20 de 2014\MultiCasino  FPC_07_03_2014\bddc\bddc.Util\bin\Debug\office.xml
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Marzo 20 de 2014\MultiCasino  FPC_07_03_2014\bddc\bddc.Util\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Marzo 20 de 2014\MultiCasino  FPC_07_03_2014\bddc\bddc.Util\obj\Debug\bddc.Util.Resources.resources
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Marzo 20 de 2014\MultiCasino  FPC_07_03_2014\bddc\bddc.Util\obj\Debug\ResGen.read.1.tlog
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Marzo 20 de 2014\MultiCasino  FPC_07_03_2014\bddc\bddc.Util\obj\Debug\ResGen.write.1.tlog
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Marzo 20 de 2014\MultiCasino  FPC_07_03_2014\bddc\bddc.Util\obj\Debug\bddc.Util.dll
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Marzo 20 de 2014\MultiCasino  FPC_07_03_2014\bddc\bddc.Util\obj\Debug\bddc.Util.xml
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Marzo 20 de 2014\MultiCasino  FPC_07_03_2014\bddc\bddc.Util\obj\Debug\bddc.Util.pdb
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Marzo 26 de 2014\MultiCasino  FPC\bddc\bddc.Util\bin\Debug\bddc.Util.dll
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Marzo 26 de 2014\MultiCasino  FPC\bddc\bddc.Util\bin\Debug\bddc.Util.pdb
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Marzo 26 de 2014\MultiCasino  FPC\bddc\bddc.Util\bin\Debug\bddc.Util.xml
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Marzo 26 de 2014\MultiCasino  FPC\bddc\bddc.Util\bin\Debug\bddc.BEC.dll
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Marzo 26 de 2014\MultiCasino  FPC\bddc\bddc.Util\bin\Debug\office.dll
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Marzo 26 de 2014\MultiCasino  FPC\bddc\bddc.Util\bin\Debug\Microsoft.Vbe.Interop.dll
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Marzo 26 de 2014\MultiCasino  FPC\bddc\bddc.Util\bin\Debug\bddc.BEC.pdb
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Marzo 26 de 2014\MultiCasino  FPC\bddc\bddc.Util\bin\Debug\bddc.BEC.xml
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Marzo 26 de 2014\MultiCasino  FPC\bddc\bddc.Util\bin\Debug\office.xml
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Marzo 26 de 2014\MultiCasino  FPC\bddc\bddc.Util\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Marzo 26 de 2014\MultiCasino  FPC\bddc\bddc.Util\obj\Debug\bddc.Util.Resources.resources
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Marzo 26 de 2014\MultiCasino  FPC\bddc\bddc.Util\obj\Debug\ResGen.read.1.tlog
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Marzo 26 de 2014\MultiCasino  FPC\bddc\bddc.Util\obj\Debug\ResGen.write.1.tlog
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Marzo 26 de 2014\MultiCasino  FPC\bddc\bddc.Util\obj\Debug\bddc.Util.dll
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Marzo 26 de 2014\MultiCasino  FPC\bddc\bddc.Util\obj\Debug\bddc.Util.xml
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Marzo 26 de 2014\MultiCasino  FPC\bddc\bddc.Util\obj\Debug\bddc.Util.pdb
+C:\bddc\bddc.Util\bin\Debug\bddc.Util.dll
+C:\bddc\bddc.Util\bin\Debug\bddc.Util.pdb
+C:\bddc\bddc.Util\bin\Debug\bddc.Util.xml
+C:\bddc\bddc.Util\bin\Debug\bddc.BEC.dll
+C:\bddc\bddc.Util\bin\Debug\office.dll
+C:\bddc\bddc.Util\bin\Debug\Microsoft.Vbe.Interop.dll
+C:\bddc\bddc.Util\bin\Debug\bddc.BEC.pdb
+C:\bddc\bddc.Util\bin\Debug\bddc.BEC.xml
+C:\bddc\bddc.Util\bin\Debug\office.xml
+C:\bddc\bddc.Util\obj\Debug\ResolveAssemblyReference.cache
+C:\bddc\bddc.Util\obj\Debug\bddc.Util.Resources.resources
+C:\bddc\bddc.Util\obj\Debug\ResGen.read.1.tlog
+C:\bddc\bddc.Util\obj\Debug\ResGen.write.1.tlog
+C:\bddc\bddc.Util\obj\Debug\bddc.Util.dll
+C:\bddc\bddc.Util\obj\Debug\bddc.Util.xml
+C:\bddc\bddc.Util\obj\Debug\bddc.Util.pdb
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Marzo 27 de 2014\bddc\bddc.Util\bin\Debug\bddc.Util.dll
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Marzo 27 de 2014\bddc\bddc.Util\bin\Debug\bddc.Util.pdb
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Marzo 27 de 2014\bddc\bddc.Util\bin\Debug\bddc.Util.xml
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Marzo 27 de 2014\bddc\bddc.Util\bin\Debug\bddc.BEC.dll
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Marzo 27 de 2014\bddc\bddc.Util\bin\Debug\office.dll
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Marzo 27 de 2014\bddc\bddc.Util\bin\Debug\Microsoft.Vbe.Interop.dll
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Marzo 27 de 2014\bddc\bddc.Util\bin\Debug\bddc.BEC.pdb
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Marzo 27 de 2014\bddc\bddc.Util\bin\Debug\bddc.BEC.xml
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Marzo 27 de 2014\bddc\bddc.Util\bin\Debug\office.xml
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Marzo 27 de 2014\bddc\bddc.Util\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Marzo 27 de 2014\bddc\bddc.Util\obj\Debug\bddc.Util.Resources.resources
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Marzo 27 de 2014\bddc\bddc.Util\obj\Debug\ResGen.read.1.tlog
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Marzo 27 de 2014\bddc\bddc.Util\obj\Debug\ResGen.write.1.tlog
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Marzo 27 de 2014\bddc\bddc.Util\obj\Debug\bddc.Util.dll
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Marzo 27 de 2014\bddc\bddc.Util\obj\Debug\bddc.Util.xml
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Marzo 27 de 2014\bddc\bddc.Util\obj\Debug\bddc.Util.pdb
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Mayo 9 de 2014\bddc\bddc.Util\bin\Debug\bddc.Util.dll
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Mayo 9 de 2014\bddc\bddc.Util\bin\Debug\bddc.Util.pdb
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Mayo 9 de 2014\bddc\bddc.Util\bin\Debug\bddc.Util.xml
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Mayo 9 de 2014\bddc\bddc.Util\bin\Debug\bddc.BEC.dll
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Mayo 9 de 2014\bddc\bddc.Util\bin\Debug\office.dll
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Mayo 9 de 2014\bddc\bddc.Util\bin\Debug\Microsoft.Vbe.Interop.dll
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Mayo 9 de 2014\bddc\bddc.Util\bin\Debug\bddc.BEC.pdb
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Mayo 9 de 2014\bddc\bddc.Util\bin\Debug\bddc.BEC.xml
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Mayo 9 de 2014\bddc\bddc.Util\bin\Debug\office.xml
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Mayo 9 de 2014\bddc\bddc.Util\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Mayo 9 de 2014\bddc\bddc.Util\obj\Debug\bddc.Util.Resources.resources
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Mayo 9 de 2014\bddc\bddc.Util\obj\Debug\ResGen.read.1.tlog
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Mayo 9 de 2014\bddc\bddc.Util\obj\Debug\ResGen.write.1.tlog
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Mayo 9 de 2014\bddc\bddc.Util\obj\Debug\bddc.Util.dll
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Mayo 9 de 2014\bddc\bddc.Util\obj\Debug\bddc.Util.xml
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Mayo 9 de 2014\bddc\bddc.Util\obj\Debug\bddc.Util.pdb
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Mayo 9 de 2014 - Modulo de cajas\bddc\bddc.Util\bin\Debug\bddc.Util.dll
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Mayo 9 de 2014 - Modulo de cajas\bddc\bddc.Util\bin\Debug\bddc.Util.pdb
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Mayo 9 de 2014 - Modulo de cajas\bddc\bddc.Util\bin\Debug\bddc.Util.xml
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Mayo 9 de 2014 - Modulo de cajas\bddc\bddc.Util\bin\Debug\bddc.BEC.dll
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Mayo 9 de 2014 - Modulo de cajas\bddc\bddc.Util\bin\Debug\office.dll
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Mayo 9 de 2014 - Modulo de cajas\bddc\bddc.Util\bin\Debug\Microsoft.Vbe.Interop.dll
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Mayo 9 de 2014 - Modulo de cajas\bddc\bddc.Util\bin\Debug\bddc.BEC.pdb
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Mayo 9 de 2014 - Modulo de cajas\bddc\bddc.Util\bin\Debug\bddc.BEC.xml
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Mayo 9 de 2014 - Modulo de cajas\bddc\bddc.Util\bin\Debug\office.xml
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Mayo 9 de 2014 - Modulo de cajas\bddc\bddc.Util\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Mayo 9 de 2014 - Modulo de cajas\bddc\bddc.Util\obj\Debug\bddc.Util.Resources.resources
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Mayo 9 de 2014 - Modulo de cajas\bddc\bddc.Util\obj\Debug\ResGen.read.1.tlog
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Mayo 9 de 2014 - Modulo de cajas\bddc\bddc.Util\obj\Debug\ResGen.write.1.tlog
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Mayo 9 de 2014 - Modulo de cajas\bddc\bddc.Util\obj\Debug\bddc.Util.dll
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Mayo 9 de 2014 - Modulo de cajas\bddc\bddc.Util\obj\Debug\bddc.Util.xml
+C:\Users\anapai.pan01.TBR\Desktop\Versiones\CON INFRAGISTICS VERSION 2012\Mayo 9 de 2014 - Modulo de cajas\bddc\bddc.Util\obj\Debug\bddc.Util.pdb
+C:\Users\anapai.pan01.TBR\Desktop\COPIA PARA AMBIENTE DE PRUEBA\FPC Ambiente prueba V_1.0\bddc\bddc.Util\bin\Debug\bddc.Util.dll
+C:\Users\anapai.pan01.TBR\Desktop\COPIA PARA AMBIENTE DE PRUEBA\FPC Ambiente prueba V_1.0\bddc\bddc.Util\bin\Debug\bddc.Util.pdb
+C:\Users\anapai.pan01.TBR\Desktop\COPIA PARA AMBIENTE DE PRUEBA\FPC Ambiente prueba V_1.0\bddc\bddc.Util\bin\Debug\bddc.Util.xml
+C:\Users\anapai.pan01.TBR\Desktop\COPIA PARA AMBIENTE DE PRUEBA\FPC Ambiente prueba V_1.0\bddc\bddc.Util\bin\Debug\bddc.BEC.dll
+C:\Users\anapai.pan01.TBR\Desktop\COPIA PARA AMBIENTE DE PRUEBA\FPC Ambiente prueba V_1.0\bddc\bddc.Util\bin\Debug\office.dll
+C:\Users\anapai.pan01.TBR\Desktop\COPIA PARA AMBIENTE DE PRUEBA\FPC Ambiente prueba V_1.0\bddc\bddc.Util\bin\Debug\Microsoft.Vbe.Interop.dll
+C:\Users\anapai.pan01.TBR\Desktop\COPIA PARA AMBIENTE DE PRUEBA\FPC Ambiente prueba V_1.0\bddc\bddc.Util\bin\Debug\bddc.BEC.pdb
+C:\Users\anapai.pan01.TBR\Desktop\COPIA PARA AMBIENTE DE PRUEBA\FPC Ambiente prueba V_1.0\bddc\bddc.Util\bin\Debug\bddc.BEC.xml
+C:\Users\anapai.pan01.TBR\Desktop\COPIA PARA AMBIENTE DE PRUEBA\FPC Ambiente prueba V_1.0\bddc\bddc.Util\bin\Debug\office.xml
+C:\Users\anapai.pan01.TBR\Desktop\COPIA PARA AMBIENTE DE PRUEBA\FPC Ambiente prueba V_1.0\bddc\bddc.Util\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\anapai.pan01.TBR\Desktop\COPIA PARA AMBIENTE DE PRUEBA\FPC Ambiente prueba V_1.0\bddc\bddc.Util\obj\Debug\bddc.Util.Resources.resources
+C:\Users\anapai.pan01.TBR\Desktop\COPIA PARA AMBIENTE DE PRUEBA\FPC Ambiente prueba V_1.0\bddc\bddc.Util\obj\Debug\ResGen.read.1.tlog
+C:\Users\anapai.pan01.TBR\Desktop\COPIA PARA AMBIENTE DE PRUEBA\FPC Ambiente prueba V_1.0\bddc\bddc.Util\obj\Debug\ResGen.write.1.tlog
+C:\Users\anapai.pan01.TBR\Desktop\COPIA PARA AMBIENTE DE PRUEBA\FPC Ambiente prueba V_1.0\bddc\bddc.Util\obj\Debug\bddc.Util.dll
+C:\Users\anapai.pan01.TBR\Desktop\COPIA PARA AMBIENTE DE PRUEBA\FPC Ambiente prueba V_1.0\bddc\bddc.Util\obj\Debug\bddc.Util.xml
+C:\Users\anapai.pan01.TBR\Desktop\COPIA PARA AMBIENTE DE PRUEBA\FPC Ambiente prueba V_1.0\bddc\bddc.Util\obj\Debug\bddc.Util.pdb
+C:\Users\USER\Desktop\FPC AMBIENTE DE DESARROLLO\bddc\bddc.Util\bin\Debug\bddc.Util.dll
+C:\Users\USER\Desktop\FPC AMBIENTE DE DESARROLLO\bddc\bddc.Util\bin\Debug\bddc.Util.pdb
+C:\Users\USER\Desktop\FPC AMBIENTE DE DESARROLLO\bddc\bddc.Util\bin\Debug\bddc.Util.xml
+C:\Users\USER\Desktop\FPC AMBIENTE DE DESARROLLO\bddc\bddc.Util\bin\Debug\bddc.BEC.dll
+C:\Users\USER\Desktop\FPC AMBIENTE DE DESARROLLO\bddc\bddc.Util\bin\Debug\bddc.BEC.pdb
+C:\Users\USER\Desktop\FPC AMBIENTE DE DESARROLLO\bddc\bddc.Util\bin\Debug\bddc.BEC.xml
+C:\Users\USER\Desktop\FPC AMBIENTE DE DESARROLLO\bddc\bddc.Util\obj\Debug\bddc.Util.vbprojResolveAssemblyReference.cache
+C:\Users\USER\Desktop\FPC AMBIENTE DE DESARROLLO\bddc\bddc.Util\obj\Debug\bddc.Util.Resources.resources
+C:\Users\USER\Desktop\FPC AMBIENTE DE DESARROLLO\bddc\bddc.Util\obj\Debug\bddc.Util.vbproj.GenerateResource.Cache
+C:\Users\USER\Desktop\FPC AMBIENTE DE DESARROLLO\bddc\bddc.Util\obj\Debug\bddc.Util.dll
+C:\Users\USER\Desktop\FPC AMBIENTE DE DESARROLLO\bddc\bddc.Util\obj\Debug\bddc.Util.xml
+C:\Users\USER\Desktop\FPC AMBIENTE DE DESARROLLO\bddc\bddc.Util\obj\Debug\bddc.Util.pdb

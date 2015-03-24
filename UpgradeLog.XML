@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="bddc">
+</Property><Property Name="Solution File" Value="C:\Users\anapai.pan01.TBR\Desktop\PRUEBAS SIN INFRAGISTIC\MultiCasino  FPC_07_03_2014\bddc\bddc.sln">
+</Property><Property Name="Date" Value="17 March, 2014">
+</Property><Property Name="Time" Value="16:53 PM">
+</Property></Properties><Event ErrorLevel="0" Project="bddc.BEC" Source="bddc.BEC\bddc.BEC.vbproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="bddc.BEC" Source="bddc.BEC\bddc.BEC.vbproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="bddc.DALC" Source="bddc.DALC\bddc.DALC.vbproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="bddc.DALC" Source="bddc.DALC\bddc.DALC.vbproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="bddc.Util" Source="bddc.Util\bddc.Util.vbproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="bddc.Util" Source="bddc.Util\bddc.Util.vbproj" Description="Converted">
+</Event><Event ErrorLevel="4" Project="bddc.Win" Source="http://go.microsoft.com/fwlink/?LinkId=159919" Description="Warning: this project requires Crystal Reports, which is no longer included with Visual Studio. Please click here for more information.">
+</Event><Event ErrorLevel="0" Project="bddc.Win" Source="bddc.Win\bddc.Win.vbproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="bddc.Win" Source="bddc.Win\bddc.Win.vbproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="bddc.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="bddc.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="bddc.BEC" Source="bddc.BEC\bddc.BEC.vbproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="bddc.DALC" Source="bddc.DALC\bddc.DALC.vbproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="bddc.Util" Source="bddc.Util\bddc.Util.vbproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="bddc.Win" Source="bddc.Win\bddc.Win.vbproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

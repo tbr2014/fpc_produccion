@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="xmlRatingDetalle" targetNamespace="http://tempuri.org/xmlRatingDetalle.xsd" xmlns:mstns="http://tempuri.org/xmlRatingDetalle.xsd" xmlns="http://tempuri.org/xmlRatingDetalle.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="xmlRatingDetalle" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="xmlRatingDetalle" msprop:Generator_DataSetName="xmlRatingDetalle" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="rptRatingDetalle" msprop:Generator_UserTableName="rptRatingDetalle" msprop:Generator_RowDeletedName="rptRatingDetalleRowDeleted" msprop:Generator_RowChangedName="rptRatingDetalleRowChanged" msprop:Generator_RowClassName="rptRatingDetalleRow" msprop:Generator_RowChangingName="rptRatingDetalleRowChanging" msprop:Generator_RowEvArgName="rptRatingDetalleRowChangeEvent" msprop:Generator_RowEvHandlerName="rptRatingDetalleRowChangeEventHandler" msprop:Generator_TableClassName="rptRatingDetalleDataTable" msprop:Generator_TableVarName="tablerptRatingDetalle" msprop:Generator_RowDeletingName="rptRatingDetalleRowDeleting" msprop:Generator_TablePropName="rptRatingDetalle">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ClienteId" msprop:Generator_UserColumnName="ClienteId" msprop:Generator_ColumnVarNameInTable="columnClienteId" msprop:Generator_ColumnPropNameInRow="ClienteId" msprop:Generator_ColumnPropNameInTable="ClienteIdColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ClienteCodigo" msprop:Generator_UserColumnName="ClienteCodigo" msprop:Generator_ColumnVarNameInTable="columnClienteCodigo" msprop:Generator_ColumnPropNameInRow="ClienteCodigo" msprop:Generator_ColumnPropNameInTable="ClienteCodigoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ClienteNombreCompleto" msprop:Generator_UserColumnName="ClienteNombreCompleto" msprop:Generator_ColumnVarNameInTable="columnClienteNombreCompleto" msprop:Generator_ColumnPropNameInRow="ClienteNombreCompleto" msprop:Generator_ColumnPropNameInTable="ClienteNombreCompletoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TipoJuego" msprop:Generator_UserColumnName="TipoJuego" msprop:Generator_ColumnVarNameInTable="columnTipoJuego" msprop:Generator_ColumnPropNameInRow="TipoJuego" msprop:Generator_ColumnPropNameInTable="TipoJuegoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MovimientoFecha" msprop:Generator_UserColumnName="MovimientoFecha" msprop:Generator_ColumnVarNameInTable="columnMovimientoFecha" msprop:Generator_ColumnPropNameInRow="MovimientoFecha" msprop:Generator_ColumnPropNameInTable="MovimientoFechaColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MovimientoNroMesa" msprop:Generator_UserColumnName="MovimientoNroMesa" msprop:Generator_ColumnVarNameInTable="columnMovimientoNroMesa" msprop:Generator_ColumnPropNameInRow="MovimientoNroMesa" msprop:Generator_ColumnPropNameInTable="MovimientoNroMesaColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MovimientoDrop" msprop:Generator_UserColumnName="MovimientoDrop" msprop:Generator_ColumnVarNameInTable="columnMovimientoDrop" msprop:Generator_ColumnPropNameInRow="MovimientoDrop" msprop:Generator_ColumnPropNameInTable="MovimientoDropColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MovimientoWinLoss" msprop:Generator_UserColumnName="MovimientoWinLoss" msprop:Generator_ColumnVarNameInTable="columnMovimientoWinLoss" msprop:Generator_ColumnPropNameInRow="MovimientoWinLoss" msprop:Generator_ColumnPropNameInTable="MovimientoWinLossColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MovimientoPromedio" msprop:Generator_UserColumnName="MovimientoPromedio" msprop:Generator_ColumnVarNameInTable="columnMovimientoPromedio" msprop:Generator_ColumnPropNameInRow="MovimientoPromedio" msprop:Generator_ColumnPropNameInTable="MovimientoPromedioColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MovimientoTiempo" msprop:Generator_UserColumnName="MovimientoTiempo" msprop:Generator_ColumnVarNameInTable="columnMovimientoTiempo" msprop:Generator_ColumnPropNameInRow="MovimientoTiempo" msprop:Generator_ColumnPropNameInTable="MovimientoTiempoColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MovimientoMoneda" msprop:Generator_UserColumnName="MovimientoMoneda" msprop:Generator_ColumnVarNameInTable="columnMovimientoMoneda" msprop:Generator_ColumnPropNameInRow="MovimientoMoneda" msprop:Generator_ColumnPropNameInTable="MovimientoMonedaColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

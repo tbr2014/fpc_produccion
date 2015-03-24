@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="xmlRatingPit" targetNamespace="http://tempuri.org/xmlRatingPit.xsd" xmlns:mstns="http://tempuri.org/xmlRatingPit.xsd" xmlns="http://tempuri.org/xmlRatingPit.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="xmlRatingPit" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="xmlRatingPit" msprop:Generator_DataSetName="xmlRatingPit" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="rptRatingPit" msprop:Generator_UserTableName="rptRatingPit" msprop:Generator_RowDeletedName="rptRatingPitRowDeleted" msprop:Generator_RowChangedName="rptRatingPitRowChanged" msprop:Generator_RowClassName="rptRatingPitRow" msprop:Generator_RowChangingName="rptRatingPitRowChanging" msprop:Generator_RowEvArgName="rptRatingPitRowChangeEvent" msprop:Generator_RowEvHandlerName="rptRatingPitRowChangeEventHandler" msprop:Generator_TableClassName="rptRatingPitDataTable" msprop:Generator_TableVarName="tablerptRatingPit" msprop:Generator_RowDeletingName="rptRatingPitRowDeleting" msprop:Generator_TablePropName="rptRatingPit">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PitId" msprop:Generator_UserColumnName="PitId" msprop:Generator_ColumnVarNameInTable="columnPitId" msprop:Generator_ColumnPropNameInRow="PitId" msprop:Generator_ColumnPropNameInTable="PitIdColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="Pit" msprop:Generator_UserColumnName="Pit" msprop:Generator_ColumnVarNameInTable="columnPit" msprop:Generator_ColumnPropNameInRow="Pit" msprop:Generator_ColumnPropNameInTable="PitColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TipoJuegoId" msprop:Generator_UserColumnName="TipoJuegoId" msprop:Generator_ColumnVarNameInTable="columnTipoJuegoId" msprop:Generator_ColumnPropNameInRow="TipoJuegoId" msprop:Generator_ColumnPropNameInTable="TipoJuegoIdColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="TipoJuego" msprop:Generator_UserColumnName="TipoJuego" msprop:Generator_ColumnVarNameInTable="columnTipoJuego" msprop:Generator_ColumnPropNameInRow="TipoJuego" msprop:Generator_ColumnPropNameInTable="TipoJuegoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NroMesa" msprop:Generator_UserColumnName="NroMesa" msprop:Generator_ColumnVarNameInTable="columnNroMesa" msprop:Generator_ColumnPropNameInRow="NroMesa" msprop:Generator_ColumnPropNameInTable="NroMesaColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ClienteCodigo" msprop:Generator_UserColumnName="ClienteCodigo" msprop:Generator_ColumnVarNameInTable="columnClienteCodigo" msprop:Generator_ColumnPropNameInRow="ClienteCodigo" msprop:Generator_ColumnPropNameInTable="ClienteCodigoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ClienteNombreCompleto" msprop:Generator_UserColumnName="ClienteNombreCompleto" msprop:Generator_ColumnVarNameInTable="columnClienteNombreCompleto" msprop:Generator_ColumnPropNameInRow="ClienteNombreCompleto" msprop:Generator_ColumnPropNameInTable="ClienteNombreCompletoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaProceso" msprop:Generator_UserColumnName="FechaProceso" msprop:Generator_ColumnPropNameInRow="FechaProceso" msprop:Generator_ColumnVarNameInTable="columnFechaProceso" msprop:Generator_ColumnPropNameInTable="FechaProcesoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalDrop" msprop:Generator_UserColumnName="TotalDrop" msprop:Generator_ColumnVarNameInTable="columnTotalDrop" msprop:Generator_ColumnPropNameInRow="TotalDrop" msprop:Generator_ColumnPropNameInTable="TotalDropColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TotalWinLoss" msprop:Generator_UserColumnName="TotalWinLoss" msprop:Generator_ColumnVarNameInTable="columnTotalWinLoss" msprop:Generator_ColumnPropNameInRow="TotalWinLoss" msprop:Generator_ColumnPropNameInTable="TotalWinLossColumn" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

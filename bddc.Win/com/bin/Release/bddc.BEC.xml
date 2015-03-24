@@ -1,0 +1,93 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+bddc.BEC
+</name>
+</assembly>
+<members>
+<member name="F:bddc.BEC.COM.clsAuditoria.intUnidadId">
+	<summary>
+ Tabla bdauxiliar.tblaux_unidad -&gt; cund_id
+ </summary>
+</member><member name="P:bddc.BEC.COM.clsAuditoria.UnidadId">
+	<summary>
+ Tabla bdauxiliar.tblaux_unidad -&gt; cund_id
+ </summary>
+</member><member name="F:bddc.BEC.COM.clsUnidad.intEmpresaId">
+	<summary>
+ Grupo Parametro: Empresas = 2
+ </summary>
+</member><member name="F:bddc.BEC.COM.clsUnidad.intUbicacionId">
+	<summary>
+ Tabla bdauxiliar.tblaux_ubigeo -&gt; cubg_itemid
+ </summary>
+</member><member name="F:bddc.BEC.COM.clsUnidad.intEstadoId">
+	<summary>
+ Grupo Parametro: Estado = 1
+ </summary>
+</member><member name="P:bddc.BEC.COM.clsUnidad.UbicacionId">
+	<summary>
+ Tabla bdauxiliar.tblaux_ubigeo -&gt; cubg_itemid
+ </summary>
+</member><member name="T:bddc.BEC.COM.clsUnidad">
+	<summary>
+ Unidad: Locacion de Negocio Thunderbird
+ </summary>
+</member><member name="P:bddc.BEC.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:bddc.BEC.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:bddc.BEC.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="F:bddc.BEC.FJM.clsOperacionMesa.strPersonalAsignado">
+	<summary>
+ Dealer|Pitboss|Supervisor|Inspector
+ </summary>
+</member><member name="F:bddc.BEC.FJM.clsOperacionMesa.strFlotaFichas">
+	<summary>
+ Concatenar por denominaciones. Ejm. #monedas de 5000|# monedas de 1000|...
+ </summary>
+</member><member name="P:bddc.BEC.FJM.clsOperacionMesa.PersonalAsignado">
+	<summary>
+ Dealer|Pitboss|Supervisor|Inspector
+ </summary>
+</member><member name="P:bddc.BEC.FJM.clsOperacionMesa.FlotaFichas">
+	<summary>
+ Concatenar por denominaciones. Ejm. #monedas de 5000|# monedas de 1000|...
+ </summary>
+</member><member name="F:bddc.BEC.CLI.viwClienteTicket.strTicketsGUID">
+	<summary>
+ ID generado por la aplicacion
+ </summary>
+</member><member name="P:bddc.BEC.CLI.viwClienteTicket.TicketsGUID">
+	<summary>
+ ID generado por la aplicacion
+ </summary>
+</member><member name="F:bddc.BEC.SEG.clsUsuarioEvento.intUnidadId">
+	<summary>
+ Tabla bdauxiliar.tblaux_unidad -&gt; cund_id
+ </summary>
+</member><member name="P:bddc.BEC.SEG.clsUsuarioEvento.UnidadId">
+	<summary>
+ Tabla bdauxiliar.tblaux_unidad -&gt; cund_id
+ </summary>
+</member><member name="M:bddc.BEC.FJM.viwEstimadoMesa.#ctor(System.Int32,System.Int32,System.String,System.String,System.Int32,System.String,System.Collections.IList,System.Collections.IList)">
+	<param name="pintMesaId"></param>
+	<param name="pintTipoJuegoId"></param>
+	<param name="pstrTipoJuego"></param>
+	<param name="pstrNroMesa"></param>
+	<param name="pintMonedaId"></param>
+	<param name="pstrMoneda"></param>
+	<param name="parrDrop"></param>
+	<param name="parrWinLoss"></param>
+</member>
+</members>
+</doc>

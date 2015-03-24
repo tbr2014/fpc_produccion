@@ -1,0 +1,591 @@
+body.standar {
+    margin: 0 0 0 1;
+    background: white;
+    margin-left: inherit;
+    margin-top: inherit;
+}
+
+table.GNRTBLTabla01
+{
+	border-right: #3b513f 1px solid;
+	border-top: #3b513f 1px solid;
+	border-left: #3b513f 1px solid;
+	border-bottom: #3b513f 1px solid;
+	background-color: #99ccff;
+}
+
+.GNRtxtTitulo01
+{
+    font: bold 13px Verdana;
+    color: #FFFF00;
+    background-color: #000000;
+}
+
+.GNRtxtTitulo02
+{
+    font: bold 11px Verdana;
+    color: #FFFFFF;
+    background-color: #808080;
+}
+
+.GNRtxtSubTitulo
+{
+	border-right: gray thin solid;
+	border-top: gray thin solid;
+	font: bold 10px Verdana;
+	border-left: gray thin solid;
+	color: white;
+	border-bottom: gray thin solid;
+	background-color: gray;
+}
+
+.GNRtxtTexto01
+{
+	font: 10px Verdana;
+	color: Gray;
+}
+
+.GNRtxtNumeroDisable
+{
+	border-right: #3b513f 1px solid;
+	border-top: #3b513f 1px solid;
+	font: 10px Verdana;
+	border-left: #3b513f 1px solid;
+	color: dimgray;
+	border-bottom: #3b513f 1px solid;
+	background-color: ghostwhite;
+	text-align: right;
+}
+
+.GNRtxtNumeroDisableRed
+{
+	border-right: #3b513f 1px solid;
+	border-top: #3b513f 1px solid;
+	font: 10px Verdana;
+	border-left: #3b513f 1px solid;
+	color: Red;
+	border-bottom: #3b513f 1px solid;
+	background-color: ghostwhite;
+	text-align: right;
+}
+
+.GNRtxtNumeroDisableBold
+{
+	border-right: #3b513f 1px solid;
+	border-top: #3b513f 1px solid;
+	border-left: #3b513f 1px solid;
+	color: Black;
+	font: bold 10px Verdana;
+	border-bottom: #3b513f 1px solid;
+	background-color: ghostwhite;
+	text-align: right;
+}
+
+.GNRtxtNumeroNavy
+{
+	border-right: dimgray 1px solid;
+	border-top: dimgray 1px solid;
+	font: 10px Verdana;
+	border-left: dimgray 1px solid;
+	color: Black;
+	border-bottom: dimgray 1px solid;
+	background-color: ghostwhite;
+	text-align: right;
+}
+
+.GNRtxtNumeroRed
+{
+	border-right: dimgray 1px solid;
+	border-top: dimgray 1px solid;
+	font: 10px Verdana;
+	border-left: dimgray 1px solid;
+	color: Red;
+	border-bottom: dimgray 1px solid;
+	background-color: ghostwhite;
+	text-align: right;
+}
+
+.GNRtxtNumero
+{
+	border-right: dimgray 1px solid;
+	border-top: dimgray 1px solid;
+	font: bold 10px Verdana;
+	border-left: dimgray 1px solid;
+	color: Black;
+	border-bottom: dimgray 1px solid;
+	background-color: lightgrey;
+	text-align: right;
+}
+
+
+.GNRtxtInputNavy
+{
+	border-right: dimgray 1px solid;
+	border-top: dimgray 1px solid;
+	font: 10px Verdana;
+	border-left: dimgray 1px solid;
+	color: Black;
+	border-bottom: dimgray 1px solid;
+	background-color: ghostwhite;	
+}
+
+.GNRtxtInputError
+{
+	border-right: dimgray 1px solid;
+	border-top: dimgray 1px solid;
+	font: 10px Verdana;
+	border-left: dimgray 1px solid;
+	color: red;
+	border-bottom: dimgray 1px solid;
+	background-color: mistyrose;	
+}
+
+.GNRtxtInputBold
+{
+	border: #3b513f 1px solid;
+	font: 10px Verdana;
+	color: Black;
+	font-weight: bold;
+	background-color: ghostwhite;
+}
+
+.GNRtxtInputRed
+{
+	border-right: dimgray 1px solid;
+	border-top: dimgray 1px solid;
+	font: 10px Verdana;
+	border-left: dimgray 1px solid;
+	color: Red;
+	border-bottom: dimgray 1px solid;
+	background-color: ghostwhite;
+}
+
+.GNRtxtInputBlue
+{
+	border: #3b513f 1px solid;
+	font: 10px Verdana;
+	color: Blue;
+}
+
+.GNRtxtReadNavy
+{
+	border: #3b513f 1px solid;
+	font: 10px Verdana;
+	color: Gray;
+	background-color:#F5F5F5;
+}
+
+.GNRtxtReadBlue
+{
+	border: #3b513f 1px solid;
+	font: 10px Verdana;
+	color: Blue;
+	background-color:#F5F5F5;
+}
+
+.GNRtxtReadRed
+{
+	border: #3b513f 1px solid;
+	font: 10px Verdana;
+	color: #DEDEDE;
+	background-color:#F5F5F5;
+}
+
+.GNRtxtInputCheck01
+{
+	border: 1px solid;
+	font: 10px Verdana;
+	color: #2F4142;
+}
+
+.GNRtxtError
+{
+	font: 10px Verdana;
+	color: Red 
+}
+
+.GNRtxtInfo
+{
+	font: 10px Verdana;
+	color: Gray;
+}
+
+.GNRtxtTextoDisable
+{
+	border-right: #3b513f 1px solid;
+	border-top: #3b513f 1px solid;
+	font: 10px Verdana;
+	border-left: #3b513f 1px solid;
+	color: dimgray;
+	border-bottom: #3b513f 1px solid;
+	background-color: ghostwhite;
+	text-align: left;
+}
+
+.GNRtxtNumeroDisable
+{
+	border-right: #3b513f 1px solid;
+	border-top: #3b513f 1px solid;
+	font: 10px Verdana;
+	border-left: #3b513f 1px solid;
+	color: dimgray;
+	border-bottom: #3b513f 1px solid;
+	background-color: ghostwhite;
+	text-align: right;
+}
+
+.TBLTabla01
+{
+	font: 10px Verdana;
+	border: Gray 1px solid;
+}
+
+.TBLTitulo01 td
+{
+	padding-right: 4px;
+	padding-left: 4px;
+	padding-bottom: 1px;
+	color: #edf3ef;
+	padding-top: 1px;
+	background-color: #99ccff;
+}
+
+.TBLTitulo01Out
+{
+	color: White;
+	background-color: Gray;
+	padding: 1px 4px 1px 4px; 
+}
+
+.TBLTitulo01Over
+{
+	padding-right: 4px;
+	padding-left: 4px;
+	padding-bottom: 1px;
+	color: Yellow;
+	padding-top: 1px;
+	background-color: Black;
+}
+
+.TBLTitulo01Enlace:link
+{
+	color: white;
+	text-decoration: none;	
+}
+
+.TBLTitulo01Enlace:hover
+{
+	color: yellow;
+	text-decoration: underline;
+}
+
+.TBLTitulo01Enlace:visited
+{
+	color: white;
+	text-decoration: none;	
+}
+
+.TBLTitulo02Enlace:link
+{
+	color: blue;
+	text-decoration: none;
+}
+.TBLTitulo02Enlace:hover
+{
+	color: blue;
+	text-decoration: underline;
+}
+.TBLTitulo02Enlace:visited
+{
+	color: blue;
+	text-decoration: none;
+}
+
+.TBLTextoPar01 td
+{
+	padding: 1px 4px 1px 4px;
+	background-color: white;
+}
+
+.TBLTextoImpar01 td
+{
+	padding-right: 4px;
+	padding-left: 4px;
+	padding-bottom: 1px;
+	padding-top: 1px;
+	background-color: #f5f5f5;
+}
+
+.TBLTextoPar01Selected td
+{
+	padding-right: 4px;
+	padding-left: 4px;
+	padding-bottom: 1px;
+	padding-top: 1px;
+	background-color: yellow;
+}
+
+.TBLTextoImpar01Selected td
+{
+	background-color: yellow;
+	padding: 1px 4px 1px 4px; 
+}
+
+.PageTable01Title
+{
+	padding-right: 4px;
+	padding-left: 4px;
+	padding-bottom: 1px;
+	font: 11px Verdana;
+	color: #edf3ef;
+	padding-top: 1px;
+	background-color: Gray;
+}
+
+.PageTable01Item
+{
+	padding-right: 4px;
+	padding-left: 4px;
+	padding-bottom: 1px;
+	font: bold 11px Verdana;
+	color: #edf3ef;
+	padding-top: 1px;
+	background-color: Gray;
+}
+
+.PageTable01SymbolLink
+{
+	font: 10pt Webdings;
+	color: #edf3ef;
+	background-color: Gray;
+	text-decoration: none;
+}
+
+.PageTable01SymbolLink:hover
+{
+	font: 10pt Webdings;
+	color: #edf3ef;
+	background-color: Gray;
+	text-decoration: underline;
+}
+
+.PageTable01NumberLink
+{
+	font: 11px Verdana;
+	color: #edf3ef;
+	background-color: Gray;
+	text-decoration: none;
+}
+
+.PageTable01NumberLink:hover
+{
+	font: 11px Verdana;
+	color: #edf3ef;
+	background-color: Gray;
+	text-decoration: underline;
+}
+
+
+.InputPage
+{
+	border: #333333 1px solid;
+	text-align: center;
+	font: 11px Verdana;
+	color: Black;
+	width: 40px;
+}
+
+.ButtomText
+{
+	font-weight: bold;
+	font-size: 10px;
+	color: Black;
+	font-family: Verdana;
+}
+
+.NavyText
+{
+	font-size: 10px;
+	LINE-HEIGHT: 16px;
+	color: Black;
+	font-family: Verdana;
+}
+
+.NavyTable
+{
+	font-size: 10px;
+	color: Black;
+	font-family: Verdana;
+	margin: 1 0 1 0;	
+}
+
+.NavyBold
+{
+	font-weight: bold;
+	font-size: 10px;
+	color: Black;
+	font-family: Verdana;
+}
+
+.BlueText
+{
+	font-size: 10px;
+	color: blue;
+	font-family: Verdana;
+}
+
+.BlueBold
+{
+	font-weight: bold;
+	font-size: 10px;
+	color: blue;
+	font-family: Verdana;
+}
+
+.RedText
+{
+	font-size: 10px;
+	color: Red;
+	font-family: Verdana;
+}
+
+.RedBold
+{
+	font-weight: bold;
+	font-size: 10px;
+	color: Red;
+	font-family: Verdana;
+}
+.BlackText
+{
+	font-size: 10px;
+	color: Black;
+	font-family: Verdana;
+}
+
+.BlackBold
+{
+	font-weight: bold;
+	font-size: 10px;
+	color: Black;
+	font-family: Verdana;
+}
+.Texto
+{
+	font-size: 10px;
+	font-family: Verdana;	
+}
+
+.TextoContacto
+{
+	font-size: 14px;
+	font-weight:bold;
+	font-family: Verdana;	
+	color: Black;
+}
+
+.TextoPromocion
+{
+	font-size: 20px;
+	font-weight:bold;
+	font-family: Verdana;	
+	color: #8d754d;
+	text-decoration: blink; 
+}
+
+.enlace:link
+{	
+	font: bold 10px Verdana;
+	color: #8d754d;
+	text-decoration: none;
+}
+.enlace:visited
+{
+    font: bold 10px Verdana;
+	color: #8d754d;
+    TEXT-DECORATION: none
+}
+.enlace:hover
+{
+    font: bold 10px Verdana;
+	color: #8d754d;
+    TEXT-DECORATION: underline;
+}
+
+.enlacePtos:link
+{	
+	font: bold 10px Verdana;
+	color: Black;
+	text-decoration: none;
+}
+.enlacePtos:visited
+{
+    font: bold 10px Verdana;
+	color: Black;
+    TEXT-DECORATION: none
+}
+.enlacePtos:hover
+{
+    font: bold 10px Verdana;
+	color: #8d754d;
+    TEXT-DECORATION: underline;
+}
+
+.PtosAcum
+{
+	font: bold 24pt Verdana;
+	color: #8d754d;
+	text-decoration: none;
+}
+
+.FrameTitulo01
+{
+	font: bold 14px Verdana;
+	color: #8d754d;
+	background-color: none;
+	TEXT-DECORATION: underline;
+}
+
+.FrameTitulo02
+{
+	font: bold 12px Verdana;
+	color: black;
+	background-color: none;
+	TEXT-DECORATION: underline;
+}
+
+
+td.tabOver
+{
+	border-right: gray 1px solid;
+	border-top: gray 1px solid;
+	font: bold 10px Verdana;
+	border-left: gray 1px solid;
+	color: Gray;
+	cursor: hand;
+	border-bottom: gray 1px solid;
+	background-color: Yellow;
+}
+
+td.tabOut
+{
+	border-right: gray 1px solid;
+	border-top: gray 1px solid;
+	font: bold 10px Verdana;
+	border-left: gray 1px solid;
+	color: white;
+	cursor: hand;
+	border-bottom: gray 1px solid;
+	background-color: gray;
+}
+
+td.tabTitulo
+{
+	border-right: gray 1px solid;
+	border-top: gray 1px solid;
+	font: bold 10px Verdana;
+	border-left: gray 1px solid;
+	color: white;
+	border-bottom: gray 1px solid;
+	background-color: gray;
+}

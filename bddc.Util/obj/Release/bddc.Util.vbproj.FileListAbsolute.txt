@@ -1,0 +1,48 @@
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Util\bin\Release\bddc.Util.dll
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Util\bin\Release\bddc.Util.pdb
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Util\bin\Release\bddc.Util.xml
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Util\bin\Release\bddc.BEC.dll
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Util\bin\Release\bddc.BEC.pdb
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Util\bin\Release\bddc.BEC.xml
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Util\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Util\obj\Release\bddc.Util.Resources.resources
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Util\obj\Release\bddc.Util.vbproj.GenerateResource.Cache
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Util\obj\Release\bddc.Util.dll
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Util\obj\Release\bddc.Util.xml
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Util\obj\Release\bddc.Util.pdb
+C:\LuxorPlayerClub - Copy\bddc\bddc.Util\bin\Release\bddc.Util.dll
+C:\LuxorPlayerClub - Copy\bddc\bddc.Util\bin\Release\bddc.Util.pdb
+C:\LuxorPlayerClub - Copy\bddc\bddc.Util\bin\Release\bddc.Util.xml
+C:\LuxorPlayerClub - Copy\bddc\bddc.Util\bin\Release\bddc.BEC.dll
+C:\LuxorPlayerClub - Copy\bddc\bddc.Util\bin\Release\bddc.BEC.pdb
+C:\LuxorPlayerClub - Copy\bddc\bddc.Util\bin\Release\bddc.BEC.xml
+C:\LuxorPlayerClub - Copy\bddc\bddc.Util\obj\Release\ResolveAssemblyReference.cache
+C:\LuxorPlayerClub - Copy\bddc\bddc.Util\obj\Release\bddc.Util.Resources.resources
+C:\LuxorPlayerClub - Copy\bddc\bddc.Util\obj\Release\bddc.Util.vbproj.GenerateResource.Cache
+C:\LuxorPlayerClub - Copy\bddc\bddc.Util\obj\Release\bddc.Util.dll
+C:\LuxorPlayerClub - Copy\bddc\bddc.Util\obj\Release\bddc.Util.xml
+C:\LuxorPlayerClub - Copy\bddc\bddc.Util\obj\Release\bddc.Util.pdb
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Util\bin\Release\bddc.Util.dll
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Util\bin\Release\bddc.Util.pdb
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Util\bin\Release\bddc.Util.xml
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Util\bin\Release\bddc.BEC.dll
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Util\bin\Release\bddc.BEC.pdb
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Util\bin\Release\bddc.BEC.xml
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Util\obj\Release\ResolveAssemblyReference.cache
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Util\obj\Release\bddc.Util.Resources.resources
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Util\obj\Release\bddc.Util.vbproj.GenerateResource.Cache
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Util\obj\Release\bddc.Util.dll
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Util\obj\Release\bddc.Util.xml
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Util\obj\Release\bddc.Util.pdb
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Util\bin\Release\bddc.Util.dll
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Util\bin\Release\bddc.Util.pdb
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Util\bin\Release\bddc.Util.xml
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Util\bin\Release\bddc.BEC.dll
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Util\bin\Release\bddc.BEC.pdb
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Util\bin\Release\bddc.BEC.xml
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Util\obj\Release\ResolveAssemblyReference.cache
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Util\obj\Release\bddc.Util.Resources.resources
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Util\obj\Release\bddc.Util.vbproj.GenerateResource.Cache
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Util\obj\Release\bddc.Util.dll
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Util\obj\Release\bddc.Util.xml
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Util\obj\Release\bddc.Util.pdb

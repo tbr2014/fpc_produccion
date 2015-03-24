@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectView>ShowAllFiles</ProjectView>
+    <ReferencePath>C:\Program Files\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\;C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\;c:\Program Files (x86)\Business Objects\Common\2.8\managed\C:\Archivos de programa\Business Objects\Common\2.8\managed\C:\Program Files\Business Objects\Common\2.8\managed\</ReferencePath>
+    <PublishUrlHistory>\\172.20.1.2\Releases\FPC_Multicasino\|\\172.20.1.2\Releases\Prueba\|\\172.20.1.2\Releases\LuxorPC Release\LPC Software Version\|\\10.0.0.153\Fiesta Player Club Luxor Lima\|\\10.0.0.153\Releases\LPC Release\LPC Software Version\</PublishUrlHistory>
+    <InstallUrlHistory>\\172.20.1.2\Releases\FCB Release\FCB ThunderPits Mesas\</InstallUrlHistory>
+    <SupportUrlHistory>
+    </SupportUrlHistory>
+    <UpdateUrlHistory>
+    </UpdateUrlHistory>
+    <BootstrapperUrlHistory>\\172.20.1.2\Releases\FPC_Multicasino\Pre_requisites|\\172.20.1.2\Releases\Pre-requisites</BootstrapperUrlHistory>
+    <FallbackCulture>en-US</FallbackCulture>
+    <VerifyUploadedFiles>true</VerifyUploadedFiles>
+    <ErrorReportUrlHistory>
+    </ErrorReportUrlHistory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+</Project>

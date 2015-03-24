@@ -1,0 +1,48 @@
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.BEC\bin\Release\bddc.BEC.dll.config
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.BEC\bin\Release\bddc.BEC.dll
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.BEC\bin\Release\bddc.BEC.pdb
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.BEC\bin\Release\bddc.BEC.xml
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.BEC\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.BEC\obj\Release\bddc.BEC.Resources.resources
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.BEC\obj\Release\bddc.BEC.vbproj.GenerateResource.Cache
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.BEC\obj\Release\bddc.BEC.dll
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.BEC\obj\Release\bddc.BEC.xml
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.BEC\obj\Release\bddc.BEC.pdb
+C:\LuxorPlayerClub - Copy\bddc\bddc.BEC\bin\Release\bddc.BEC.dll.config
+C:\LuxorPlayerClub - Copy\bddc\bddc.BEC\bin\Release\bddc.BEC.dll
+C:\LuxorPlayerClub - Copy\bddc\bddc.BEC\bin\Release\bddc.BEC.pdb
+C:\LuxorPlayerClub - Copy\bddc\bddc.BEC\bin\Release\bddc.BEC.xml
+C:\LuxorPlayerClub - Copy\bddc\bddc.BEC\bin\Release\Devart.Data.Linq.dll
+C:\LuxorPlayerClub - Copy\bddc\bddc.BEC\bin\Release\Devart.Data.MySql.dll
+C:\LuxorPlayerClub - Copy\bddc\bddc.BEC\bin\Release\Devart.Data.MySql.Linq.dll
+C:\LuxorPlayerClub - Copy\bddc\bddc.BEC\bin\Release\Devart.Data.MySql.xml
+C:\LuxorPlayerClub - Copy\bddc\bddc.BEC\obj\Release\ResolveAssemblyReference.cache
+C:\LuxorPlayerClub - Copy\bddc\bddc.BEC\obj\Release\bddc.BEC.Resources.resources
+C:\LuxorPlayerClub - Copy\bddc\bddc.BEC\obj\Release\bddc.BEC.vbproj.GenerateResource.Cache
+C:\LuxorPlayerClub - Copy\bddc\bddc.BEC\obj\Release\bddc.BEC.dll
+C:\LuxorPlayerClub - Copy\bddc\bddc.BEC\obj\Release\bddc.BEC.xml
+C:\LuxorPlayerClub - Copy\bddc\bddc.BEC\obj\Release\bddc.BEC.pdb
+C:\LuxorPlayerClub - Copy2\bddc\bddc.BEC\bin\Release\bddc.BEC.dll.config
+C:\LuxorPlayerClub - Copy2\bddc\bddc.BEC\bin\Release\bddc.BEC.dll
+C:\LuxorPlayerClub - Copy2\bddc\bddc.BEC\bin\Release\bddc.BEC.pdb
+C:\LuxorPlayerClub - Copy2\bddc\bddc.BEC\bin\Release\bddc.BEC.xml
+C:\LuxorPlayerClub - Copy2\bddc\bddc.BEC\bin\Release\Devart.Data.Linq.dll
+C:\LuxorPlayerClub - Copy2\bddc\bddc.BEC\bin\Release\Devart.Data.MySql.dll
+C:\LuxorPlayerClub - Copy2\bddc\bddc.BEC\bin\Release\Devart.Data.MySql.Linq.dll
+C:\LuxorPlayerClub - Copy2\bddc\bddc.BEC\bin\Release\Devart.Data.MySql.xml
+C:\LuxorPlayerClub - Copy2\bddc\bddc.BEC\obj\Release\ResolveAssemblyReference.cache
+C:\LuxorPlayerClub - Copy2\bddc\bddc.BEC\obj\Release\bddc.BEC.Resources.resources
+C:\LuxorPlayerClub - Copy2\bddc\bddc.BEC\obj\Release\bddc.BEC.vbproj.GenerateResource.Cache
+C:\LuxorPlayerClub - Copy2\bddc\bddc.BEC\obj\Release\bddc.BEC.dll
+C:\LuxorPlayerClub - Copy2\bddc\bddc.BEC\obj\Release\bddc.BEC.xml
+C:\LuxorPlayerClub - Copy2\bddc\bddc.BEC\obj\Release\bddc.BEC.pdb
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.BEC\bin\Release\bddc.BEC.dll.config
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.BEC\bin\Release\bddc.BEC.dll
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.BEC\bin\Release\bddc.BEC.pdb
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.BEC\bin\Release\bddc.BEC.xml
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.BEC\obj\Release\ResolveAssemblyReference.cache
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.BEC\obj\Release\bddc.BEC.Resources.resources
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.BEC\obj\Release\bddc.BEC.vbproj.GenerateResource.Cache
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.BEC\obj\Release\bddc.BEC.dll
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.BEC\obj\Release\bddc.BEC.xml
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.BEC\obj\Release\bddc.BEC.pdb

@@ -1,0 +1,297 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+bddc.BEC
+</name>
+</assembly>
+<members>
+<member name="F:bddc.BEC.CLI.viwClienteTicket.strTicketsGUID">
+	<summary>
+ ID generado por la aplicacion
+ </summary>
+</member><member name="P:bddc.BEC.CLI.viwClienteTicket.TicketsGUID">
+	<summary>
+ ID generado por la aplicacion
+ </summary>
+</member><member name="M:bddc.BEC.CLI.viwEstimadoMesa.#ctor(System.Int32,System.Int32,System.String,System.String,System.Int32,System.String,System.Collections.IList,System.Collections.IList)">
+	<param name="pintMesaId"></param>
+	<param name="pintTipoJuegoId"></param>
+	<param name="pstrTipoJuego"></param>
+	<param name="pstrNroMesa"></param>
+	<param name="pintMonedaId"></param>
+	<param name="pstrMoneda"></param>
+	<param name="parrDrop"></param>
+	<param name="parrWinLoss"></param>
+</member><member name="M:bddc.BEC.bdcrmEntities.#ctor">
+	<summary>
+Initializes a new bdcrmEntities object using the connection string found in the 'bdcrmEntities' section of the application configuration file.
+</summary>
+</member><member name="M:bddc.BEC.bdcrmEntities.#ctor(System.String)">
+	<summary>
+Initialize a new bdcrmEntities object.
+</summary>
+</member><member name="M:bddc.BEC.bdcrmEntities.#ctor(System.Data.EntityClient.EntityConnection)">
+	<summary>
+Initialize a new bdcrmEntities object.
+</summary>
+</member><member name="P:bddc.BEC.bdcrmEntities.tblbdd_cliente">
+	<summary>
+There are no comments for tblbdd_cliente in the schema.
+</summary>
+</member><member name="P:bddc.BEC.bdcrmEntities.tblbdd_consumo_ttr">
+	<summary>
+There are no comments for tblbdd_consumo_ttr in the schema.
+</summary>
+</member><member name="M:bddc.BEC.bdcrmEntities.AddTotblbdd_cliente(bddc.BEC.tblbdd_cliente)">
+	<summary>
+There are no comments for tblbdd_cliente in the schema.
+</summary>
+</member><member name="M:bddc.BEC.bdcrmEntities.AddTotblbdd_consumo_ttr(bddc.BEC.tblbdd_consumo_ttr)">
+	<summary>
+There are no comments for tblbdd_consumo_ttr in the schema.
+</summary>
+</member><member name="T:bddc.BEC.bdcrmEntities">
+	<summary>
+There are no comments for bdcrmEntities in the schema.
+</summary>
+</member><member name="M:bddc.BEC.tblbdd_cliente.Createtblbdd_cliente(System.Int32,System.Int32,System.DateTimeOffset,System.Int32,System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+Create a new tblbdd_cliente object.
+</summary>
+	<param name="ccli_id">Initial value of ccli_id.</param>
+	<param name="ccli_id_ant">Initial value of ccli_id_ant.</param>
+	<param name="daud_ins_fecha">Initial value of daud_ins_fecha.</param>
+	<param name="faud_ins_usrid">Initial value of faud_ins_usrid.</param>
+	<param name="fcli_estadoid">Initial value of fcli_estadoid.</param>
+	<param name="fcli_fuenteid">Initial value of fcli_fuenteid.</param>
+	<param name="scli_apellidomat">Initial value of scli_apellidomat.</param>
+	<param name="scli_apellidopat">Initial value of scli_apellidopat.</param>
+	<param name="scli_nombres">Initial value of scli_nombres.</param>
+	<param name="scli_telefonofijo">Initial value of scli_telefonofijo.</param>
+	<param name="scli_telefonomovil">Initial value of scli_telefonomovil.</param>
+	<param name="scli_unidad">Initial value of scli_unidad.</param>
+	<param name="scli_tiers">Initial value of scli_tiers.</param>
+</member><member name="P:bddc.BEC.tblbdd_cliente.ccli_id">
+	<summary>
+There are no comments for Property ccli_id in the schema.
+</summary>
+</member><member name="P:bddc.BEC.tblbdd_cliente.ccli_id_ant">
+	<summary>
+There are no comments for Property ccli_id_ant in the schema.
+</summary>
+</member><member name="P:bddc.BEC.tblbdd_cliente.daud_ins_fecha">
+	<summary>
+There are no comments for Property daud_ins_fecha in the schema.
+</summary>
+</member><member name="P:bddc.BEC.tblbdd_cliente.daud_upd_fecha">
+	<summary>
+There are no comments for Property daud_upd_fecha in the schema.
+</summary>
+</member><member name="P:bddc.BEC.tblbdd_cliente.faud_ins_usrid">
+	<summary>
+There are no comments for Property faud_ins_usrid in the schema.
+</summary>
+</member><member name="P:bddc.BEC.tblbdd_cliente.faud_upd_usrid">
+	<summary>
+There are no comments for Property faud_upd_usrid in the schema.
+</summary>
+</member><member name="P:bddc.BEC.tblbdd_cliente.fcli_estadoid">
+	<summary>
+There are no comments for Property fcli_estadoid in the schema.
+</summary>
+</member><member name="P:bddc.BEC.tblbdd_cliente.fcli_fuenteid">
+	<summary>
+There are no comments for Property fcli_fuenteid in the schema.
+</summary>
+</member><member name="P:bddc.BEC.tblbdd_cliente.fcli_generoid">
+	<summary>
+There are no comments for Property fcli_generoid in the schema.
+</summary>
+</member><member name="P:bddc.BEC.tblbdd_cliente.fcli_tipodoc">
+	<summary>
+There are no comments for Property fcli_tipodoc in the schema.
+</summary>
+</member><member name="P:bddc.BEC.tblbdd_cliente.scli_apellidomat">
+	<summary>
+There are no comments for Property scli_apellidomat in the schema.
+</summary>
+</member><member name="P:bddc.BEC.tblbdd_cliente.scli_apellidopat">
+	<summary>
+There are no comments for Property scli_apellidopat in the schema.
+</summary>
+</member><member name="P:bddc.BEC.tblbdd_cliente.scli_codigo">
+	<summary>
+There are no comments for Property scli_codigo in the schema.
+</summary>
+</member><member name="P:bddc.BEC.tblbdd_cliente.scli_comentarios">
+	<summary>
+There are no comments for Property scli_comentarios in the schema.
+</summary>
+</member><member name="P:bddc.BEC.tblbdd_cliente.scli_correoelectronico">
+	<summary>
+There are no comments for Property scli_correoelectronico in the schema.
+</summary>
+</member><member name="P:bddc.BEC.tblbdd_cliente.scli_domiciliociudad">
+	<summary>
+There are no comments for Property scli_domiciliociudad in the schema.
+</summary>
+</member><member name="P:bddc.BEC.tblbdd_cliente.scli_domiciliodireccion">
+	<summary>
+There are no comments for Property scli_domiciliodireccion in the schema.
+</summary>
+</member><member name="P:bddc.BEC.tblbdd_cliente.scli_domiciliopais">
+	<summary>
+There are no comments for Property scli_domiciliopais in the schema.
+</summary>
+</member><member name="P:bddc.BEC.tblbdd_cliente.scli_domicilioreferencia">
+	<summary>
+There are no comments for Property scli_domicilioreferencia in the schema.
+</summary>
+</member><member name="P:bddc.BEC.tblbdd_cliente.scli_domiciliotelefono">
+	<summary>
+There are no comments for Property scli_domiciliotelefono in the schema.
+</summary>
+</member><member name="P:bddc.BEC.tblbdd_cliente.scli_empresadepartamento">
+	<summary>
+There are no comments for Property scli_empresadepartamento in the schema.
+</summary>
+</member><member name="P:bddc.BEC.tblbdd_cliente.scli_empresadireccion">
+	<summary>
+There are no comments for Property scli_empresadireccion in the schema.
+</summary>
+</member><member name="P:bddc.BEC.tblbdd_cliente.scli_empresanombre">
+	<summary>
+There are no comments for Property scli_empresanombre in the schema.
+</summary>
+</member><member name="P:bddc.BEC.tblbdd_cliente.scli_empresapais">
+	<summary>
+There are no comments for Property scli_empresapais in the schema.
+</summary>
+</member><member name="P:bddc.BEC.tblbdd_cliente.scli_empresapuesto">
+	<summary>
+There are no comments for Property scli_empresapuesto in the schema.
+</summary>
+</member><member name="P:bddc.BEC.tblbdd_cliente.scli_empresaruc">
+	<summary>
+There are no comments for Property scli_empresaruc in the schema.
+</summary>
+</member><member name="P:bddc.BEC.tblbdd_cliente.scli_empresatelefono">
+	<summary>
+There are no comments for Property scli_empresatelefono in the schema.
+</summary>
+</member><member name="P:bddc.BEC.tblbdd_cliente.scli_fechanacimiento">
+	<summary>
+There are no comments for Property scli_fechanacimiento in the schema.
+</summary>
+</member><member name="P:bddc.BEC.tblbdd_cliente.scli_nacionalidad">
+	<summary>
+There are no comments for Property scli_nacionalidad in the schema.
+</summary>
+</member><member name="P:bddc.BEC.tblbdd_cliente.scli_nombrecompleto">
+	<summary>
+There are no comments for Property scli_nombrecompleto in the schema.
+</summary>
+</member><member name="P:bddc.BEC.tblbdd_cliente.scli_nombres">
+	<summary>
+There are no comments for Property scli_nombres in the schema.
+</summary>
+</member><member name="P:bddc.BEC.tblbdd_cliente.scli_numdoc">
+	<summary>
+There are no comments for Property scli_numdoc in the schema.
+</summary>
+</member><member name="P:bddc.BEC.tblbdd_cliente.scli_profesion">
+	<summary>
+There are no comments for Property scli_profesion in the schema.
+</summary>
+</member><member name="P:bddc.BEC.tblbdd_cliente.scli_telefonofijo">
+	<summary>
+There are no comments for Property scli_telefonofijo in the schema.
+</summary>
+</member><member name="P:bddc.BEC.tblbdd_cliente.scli_telefonomovil">
+	<summary>
+There are no comments for Property scli_telefonomovil in the schema.
+</summary>
+</member><member name="P:bddc.BEC.tblbdd_cliente.scli_titulo">
+	<summary>
+There are no comments for Property scli_titulo in the schema.
+</summary>
+</member><member name="P:bddc.BEC.tblbdd_cliente.scli_unidad">
+	<summary>
+There are no comments for Property scli_unidad in the schema.
+</summary>
+</member><member name="P:bddc.BEC.tblbdd_cliente.scli_preferenciasFJM">
+	<summary>
+There are no comments for Property scli_preferenciasFJM in the schema.
+</summary>
+</member><member name="P:bddc.BEC.tblbdd_cliente.scli_tiers">
+	<summary>
+There are no comments for Property scli_tiers in the schema.
+</summary>
+</member><member name="T:bddc.BEC.tblbdd_cliente">
+	<summary>
+There are no comments for bdcrm.tblbdd_cliente in the schema.
+</summary>
+	<KeyProperties>
+ccli_id
+</KeyProperties>
+</member><member name="M:bddc.BEC.tblbdd_consumo_ttr.Createtblbdd_consumo_ttr(System.Int32,System.DateTimeOffset,System.DateTimeOffset,System.DateTime,System.Int64,System.Int64,System.Int64,System.Int64,System.String)">
+	<summary>
+Create a new tblbdd_consumo_ttr object.
+</summary>
+	<param name="ccli_id">Initial value of ccli_id.</param>
+	<param name="daud_ins_fecha">Initial value of daud_ins_fecha.</param>
+	<param name="daud_upd_fecha">Initial value of daud_upd_fecha.</param>
+	<param name="dcon_last_activity">Initial value of dcon_last_activity.</param>
+	<param name="faud_ins_usrid">Initial value of faud_ins_usrid.</param>
+	<param name="faud_upd_usrid">Initial value of faud_upd_usrid.</param>
+	<param name="ncon_tier">Initial value of ncon_tier.</param>
+	<param name="ncon_visits">Initial value of ncon_visits.</param>
+	<param name="scon_fechaproceso">Initial value of scon_fechaproceso.</param>
+</member><member name="P:bddc.BEC.tblbdd_consumo_ttr.ccli_id">
+	<summary>
+There are no comments for Property ccli_id in the schema.
+</summary>
+</member><member name="P:bddc.BEC.tblbdd_consumo_ttr.daud_ins_fecha">
+	<summary>
+There are no comments for Property daud_ins_fecha in the schema.
+</summary>
+</member><member name="P:bddc.BEC.tblbdd_consumo_ttr.daud_upd_fecha">
+	<summary>
+There are no comments for Property daud_upd_fecha in the schema.
+</summary>
+</member><member name="P:bddc.BEC.tblbdd_consumo_ttr.dcon_last_activity">
+	<summary>
+There are no comments for Property dcon_last_activity in the schema.
+</summary>
+</member><member name="P:bddc.BEC.tblbdd_consumo_ttr.faud_ins_usrid">
+	<summary>
+There are no comments for Property faud_ins_usrid in the schema.
+</summary>
+</member><member name="P:bddc.BEC.tblbdd_consumo_ttr.faud_upd_usrid">
+	<summary>
+There are no comments for Property faud_upd_usrid in the schema.
+</summary>
+</member><member name="P:bddc.BEC.tblbdd_consumo_ttr.ncon_tier">
+	<summary>
+There are no comments for Property ncon_tier in the schema.
+</summary>
+</member><member name="P:bddc.BEC.tblbdd_consumo_ttr.ncon_visits">
+	<summary>
+There are no comments for Property ncon_visits in the schema.
+</summary>
+</member><member name="P:bddc.BEC.tblbdd_consumo_ttr.scon_fechaproceso">
+	<summary>
+There are no comments for Property scon_fechaproceso in the schema.
+</summary>
+</member><member name="T:bddc.BEC.tblbdd_consumo_ttr">
+	<summary>
+There are no comments for bdcrm.tblbdd_consumo_ttr in the schema.
+</summary>
+	<KeyProperties>
+ccli_id
+scon_fechaproceso
+</KeyProperties>
+</member>
+</members>
+</doc>

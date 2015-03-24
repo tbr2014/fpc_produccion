@@ -1,0 +1,529 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="xmlCalendarioPuntaje" targetNamespace="http://tempuri.org/xmlCalendarioPuntaje.xsd" xmlns:mstns="http://tempuri.org/xmlCalendarioPuntaje.xsd" xmlns="http://tempuri.org/xmlCalendarioPuntaje.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="bdcrmConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="bdcrmConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.bddc.Win.My.MySettings.GlobalReference.Default.bdcrmConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTableTableAdapter" GeneratorDataComponentClassName="DataTableTableAdapter" Name="DataTable" UserDataComponentName="DataTableTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="bdcrmConnectionString (MySettings)" DbObjectName="bdcrm.tblbdd_cliente" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM `tblbdd_cliente` WHERE ((`ccli_id` = @Original_ccli_id) AND (`fcli_fuenteid` = @Original_fcli_fuenteid) AND (`ccli_id_ant` = @Original_ccli_id_ant) AND (`scli_codigo` = @Original_scli_codigo) AND ((@IsNull_fcli_tipodoc = 1 AND `fcli_tipodoc` IS NULL) OR (`fcli_tipodoc` = @Original_fcli_tipodoc)) AND ((@IsNull_scli_numdoc = 1 AND `scli_numdoc` IS NULL) OR (`scli_numdoc` = @Original_scli_numdoc)) AND ((@IsNull_scli_titulo = 1 AND `scli_titulo` IS NULL) OR (`scli_titulo` = @Original_scli_titulo)) AND (`scli_apellidopat` = @Original_scli_apellidopat) AND (`scli_apellidomat` = @Original_scli_apellidomat) AND (`scli_nombres` = @Original_scli_nombres) AND ((@IsNull_scli_nombrecompleto = 1 AND `scli_nombrecompleto` IS NULL) OR (`scli_nombrecompleto` = @Original_scli_nombrecompleto)) AND (`scli_telefonofijo` = @Original_scli_telefonofijo) AND (`scli_telefonomovil` = @Original_scli_telefonomovil) AND ((@IsNull_scli_correoelectronico = 1 AND `scli_correoelectronico` IS NULL) OR (`scli_correoelectronico` = @Original_scli_correoelectronico)) AND ((@IsNull_scli_fechanacimiento = 1 AND `scli_fechanacimiento` IS NULL) OR (`scli_fechanacimiento` = @Original_scli_fechanacimiento)) AND ((@IsNull_fcli_generoid = 1 AND `fcli_generoid` IS NULL) OR (`fcli_generoid` = @Original_fcli_generoid)) AND ((@IsNull_scli_nacionalidad = 1 AND `scli_nacionalidad` IS NULL) OR (`scli_nacionalidad` = @Original_scli_nacionalidad)) AND ((@IsNull_scli_profesion = 1 AND `scli_profesion` IS NULL) OR (`scli_profesion` = @Original_scli_profesion)) AND ((@IsNull_scli_empresanombre = 1 AND `scli_empresanombre` IS NULL) OR (`scli_empresanombre` = @Original_scli_empresanombre)) AND ((@IsNull_scli_empresaruc = 1 AND `scli_empresaruc` IS NULL) OR (`scli_empresaruc` = @Original_scli_empresaruc)) AND ((@IsNull_scli_empresadepartamento = 1 AND `scli_empresadepartamento` IS NULL) OR (`scli_empresadepartamento` = @Original_scli_empresadepartamento)) AND ((@IsNull_scli_empresapuesto = 1 AND `scli_empresapuesto` IS NULL) OR (`scli_empresapuesto` = @Original_scli_empresapuesto)) AND ((@IsNull_scli_empresadireccion = 1 AND `scli_empresadireccion` IS NULL) OR (`scli_empresadireccion` = @Original_scli_empresadireccion)) AND ((@IsNull_scli_empresatelefono = 1 AND `scli_empresatelefono` IS NULL) OR (`scli_empresatelefono` = @Original_scli_empresatelefono)) AND ((@IsNull_scli_empresapais = 1 AND `scli_empresapais` IS NULL) OR (`scli_empresapais` = @Original_scli_empresapais)) AND (`scli_domiciliodireccion` = @Original_scli_domiciliodireccion) AND (`scli_domiciliociudad` = @Original_scli_domiciliociudad) AND (`scli_domiciliopais` = @Original_scli_domiciliopais) AND (`scli_domicilioreferencia` = @Original_scli_domicilioreferencia) AND (`scli_domiciliotelefono` = @Original_scli_domiciliotelefono) AND (`scli_comentarios` = @Original_scli_comentarios) AND (`scli_unidad` = @Original_scli_unidad) AND (`scli_tiers` = @Original_scli_tiers) AND (`fcli_estadoid` = @Original_fcli_estadoid) AND (`faud_ins_usrid` = @Original_faud_ins_usrid) AND (`daud_ins_fecha` = @Original_daud_ins_fecha) AND ((@IsNull_faud_upd_usrid = 1 AND `faud_upd_usrid` IS NULL) OR (`faud_upd_usrid` = @Original_faud_upd_usrid)) AND ((@IsNull_daud_upd_fecha = 1 AND `daud_upd_fecha` IS NULL) OR (`daud_upd_fecha` = @Original_daud_upd_fecha)) AND ((@IsNull_scli_preferenciasFJM = 1 AND `scli_preferenciasFJM` IS NULL) OR (`scli_preferenciasFJM` = @Original_scli_preferenciasFJM)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_ccli_id" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="ccli_id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_fcli_fuenteid" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="fcli_fuenteid" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_ccli_id_ant" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="ccli_id_ant" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_scli_codigo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_codigo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_fcli_tipodoc" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="fcli_tipodoc" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_fcli_tipodoc" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="fcli_tipodoc" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_scli_numdoc" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="scli_numdoc" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_scli_numdoc" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_numdoc" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_scli_titulo" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="scli_titulo" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_scli_titulo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_titulo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_scli_apellidopat" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_apellidopat" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_scli_apellidomat" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_apellidomat" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_scli_nombres" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_nombres" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_scli_nombrecompleto" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="scli_nombrecompleto" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_scli_nombrecompleto" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_nombrecompleto" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_scli_telefonofijo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_telefonofijo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_scli_telefonomovil" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_telefonomovil" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_scli_correoelectronico" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="scli_correoelectronico" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_scli_correoelectronico" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_correoelectronico" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_scli_fechanacimiento" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="scli_fechanacimiento" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_scli_fechanacimiento" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_fechanacimiento" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_fcli_generoid" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="fcli_generoid" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_fcli_generoid" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="fcli_generoid" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_scli_nacionalidad" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="scli_nacionalidad" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_scli_nacionalidad" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_nacionalidad" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_scli_profesion" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="scli_profesion" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_scli_profesion" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_profesion" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_scli_empresanombre" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="scli_empresanombre" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_scli_empresanombre" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_empresanombre" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_scli_empresaruc" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="scli_empresaruc" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_scli_empresaruc" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_empresaruc" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_scli_empresadepartamento" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="scli_empresadepartamento" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_scli_empresadepartamento" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_empresadepartamento" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_scli_empresapuesto" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="scli_empresapuesto" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_scli_empresapuesto" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_empresapuesto" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_scli_empresadireccion" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="scli_empresadireccion" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_scli_empresadireccion" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_empresadireccion" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_scli_empresatelefono" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="scli_empresatelefono" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_scli_empresatelefono" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_empresatelefono" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_scli_empresapais" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="scli_empresapais" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_scli_empresapais" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_empresapais" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_scli_domiciliodireccion" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_domiciliodireccion" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_scli_domiciliociudad" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_domiciliociudad" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_scli_domiciliopais" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_domiciliopais" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_scli_domicilioreferencia" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_domicilioreferencia" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_scli_domiciliotelefono" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_domiciliotelefono" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_scli_comentarios" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_comentarios" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_scli_unidad" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_unidad" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_scli_tiers" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_tiers" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_fcli_estadoid" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="fcli_estadoid" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_faud_ins_usrid" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="faud_ins_usrid" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_daud_ins_fecha" Precision="0" ProviderType="Timestamp" Scale="0" Size="0" SourceColumn="daud_ins_fecha" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_faud_upd_usrid" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="faud_upd_usrid" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_faud_upd_usrid" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="faud_upd_usrid" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_daud_upd_fecha" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="daud_upd_fecha" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_daud_upd_fecha" Precision="0" ProviderType="Timestamp" Scale="0" Size="0" SourceColumn="daud_upd_fecha" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_scli_preferenciasFJM" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="scli_preferenciasFJM" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_scli_preferenciasFJM" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_preferenciasFJM" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO `tblbdd_cliente` (`fcli_fuenteid`, `ccli_id_ant`, `scli_codigo`, `fcli_tipodoc`, `scli_numdoc`, `scli_titulo`, `scli_apellidopat`, `scli_apellidomat`, `scli_nombres`, `scli_nombrecompleto`, `scli_telefonofijo`, `scli_telefonomovil`, `scli_correoelectronico`, `scli_fechanacimiento`, `fcli_generoid`, `scli_nacionalidad`, `scli_profesion`, `scli_empresanombre`, `scli_empresaruc`, `scli_empresadepartamento`, `scli_empresapuesto`, `scli_empresadireccion`, `scli_empresatelefono`, `scli_empresapais`, `scli_domiciliodireccion`, `scli_domiciliociudad`, `scli_domiciliopais`, `scli_domicilioreferencia`, `scli_domiciliotelefono`, `scli_comentarios`, `scli_unidad`, `scli_tiers`, `fcli_estadoid`, `faud_ins_usrid`, `daud_ins_fecha`, `faud_upd_usrid`, `daud_upd_fecha`, `scli_preferenciasFJM`) VALUES (@fcli_fuenteid, @ccli_id_ant, @scli_codigo, @fcli_tipodoc, @scli_numdoc, @scli_titulo, @scli_apellidopat, @scli_apellidomat, @scli_nombres, @scli_nombrecompleto, @scli_telefonofijo, @scli_telefonomovil, @scli_correoelectronico, @scli_fechanacimiento, @fcli_generoid, @scli_nacionalidad, @scli_profesion, @scli_empresanombre, @scli_empresaruc, @scli_empresadepartamento, @scli_empresapuesto, @scli_empresadireccion, @scli_empresatelefono, @scli_empresapais, @scli_domiciliodireccion, @scli_domiciliociudad, @scli_domiciliopais, @scli_domicilioreferencia, @scli_domiciliotelefono, @scli_comentarios, @scli_unidad, @scli_tiers, @fcli_estadoid, @faud_ins_usrid, @daud_ins_fecha, @faud_upd_usrid, @daud_upd_fecha, @scli_preferenciasFJM)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@fcli_fuenteid" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="fcli_fuenteid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@ccli_id_ant" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="ccli_id_ant" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@scli_codigo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_codigo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@fcli_tipodoc" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="fcli_tipodoc" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@scli_numdoc" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_numdoc" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@scli_titulo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_titulo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@scli_apellidopat" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_apellidopat" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@scli_apellidomat" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_apellidomat" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@scli_nombres" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_nombres" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@scli_nombrecompleto" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_nombrecompleto" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@scli_telefonofijo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_telefonofijo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@scli_telefonomovil" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_telefonomovil" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@scli_correoelectronico" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_correoelectronico" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@scli_fechanacimiento" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_fechanacimiento" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@fcli_generoid" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="fcli_generoid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@scli_nacionalidad" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_nacionalidad" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@scli_profesion" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_profesion" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@scli_empresanombre" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_empresanombre" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@scli_empresaruc" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_empresaruc" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@scli_empresadepartamento" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_empresadepartamento" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@scli_empresapuesto" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_empresapuesto" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@scli_empresadireccion" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_empresadireccion" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@scli_empresatelefono" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_empresatelefono" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@scli_empresapais" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_empresapais" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@scli_domiciliodireccion" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_domiciliodireccion" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@scli_domiciliociudad" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_domiciliociudad" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@scli_domiciliopais" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_domiciliopais" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@scli_domicilioreferencia" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_domicilioreferencia" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@scli_domiciliotelefono" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_domiciliotelefono" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@scli_comentarios" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_comentarios" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@scli_unidad" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_unidad" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@scli_tiers" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_tiers" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@fcli_estadoid" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="fcli_estadoid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@faud_ins_usrid" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="faud_ins_usrid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@daud_ins_fecha" Precision="0" ProviderType="Timestamp" Scale="0" Size="0" SourceColumn="daud_ins_fecha" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@faud_upd_usrid" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="faud_upd_usrid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@daud_upd_fecha" Precision="0" ProviderType="Timestamp" Scale="0" Size="0" SourceColumn="daud_upd_fecha" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@scli_preferenciasFJM" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_preferenciasFJM" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT * FROM `tblbdd_cliente`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE `tblbdd_cliente` SET `fcli_fuenteid` = @fcli_fuenteid, `ccli_id_ant` = @ccli_id_ant, `scli_codigo` = @scli_codigo, `fcli_tipodoc` = @fcli_tipodoc, `scli_numdoc` = @scli_numdoc, `scli_titulo` = @scli_titulo, `scli_apellidopat` = @scli_apellidopat, `scli_apellidomat` = @scli_apellidomat, `scli_nombres` = @scli_nombres, `scli_nombrecompleto` = @scli_nombrecompleto, `scli_telefonofijo` = @scli_telefonofijo, `scli_telefonomovil` = @scli_telefonomovil, `scli_correoelectronico` = @scli_correoelectronico, `scli_fechanacimiento` = @scli_fechanacimiento, `fcli_generoid` = @fcli_generoid, `scli_nacionalidad` = @scli_nacionalidad, `scli_profesion` = @scli_profesion, `scli_empresanombre` = @scli_empresanombre, `scli_empresaruc` = @scli_empresaruc, `scli_empresadepartamento` = @scli_empresadepartamento, `scli_empresapuesto` = @scli_empresapuesto, `scli_empresadireccion` = @scli_empresadireccion, `scli_empresatelefono` = @scli_empresatelefono, `scli_empresapais` = @scli_empresapais, `scli_domiciliodireccion` = @scli_domiciliodireccion, `scli_domiciliociudad` = @scli_domiciliociudad, `scli_domiciliopais` = @scli_domiciliopais, `scli_domicilioreferencia` = @scli_domicilioreferencia, `scli_domiciliotelefono` = @scli_domiciliotelefono, `scli_comentarios` = @scli_comentarios, `scli_unidad` = @scli_unidad, `scli_tiers` = @scli_tiers, `fcli_estadoid` = @fcli_estadoid, `faud_ins_usrid` = @faud_ins_usrid, `daud_ins_fecha` = @daud_ins_fecha, `faud_upd_usrid` = @faud_upd_usrid, `daud_upd_fecha` = @daud_upd_fecha, `scli_preferenciasFJM` = @scli_preferenciasFJM WHERE ((`ccli_id` = @Original_ccli_id) AND (`fcli_fuenteid` = @Original_fcli_fuenteid) AND (`ccli_id_ant` = @Original_ccli_id_ant) AND (`scli_codigo` = @Original_scli_codigo) AND ((@IsNull_fcli_tipodoc = 1 AND `fcli_tipodoc` IS NULL) OR (`fcli_tipodoc` = @Original_fcli_tipodoc)) AND ((@IsNull_scli_numdoc = 1 AND `scli_numdoc` IS NULL) OR (`scli_numdoc` = @Original_scli_numdoc)) AND ((@IsNull_scli_titulo = 1 AND `scli_titulo` IS NULL) OR (`scli_titulo` = @Original_scli_titulo)) AND (`scli_apellidopat` = @Original_scli_apellidopat) AND (`scli_apellidomat` = @Original_scli_apellidomat) AND (`scli_nombres` = @Original_scli_nombres) AND ((@IsNull_scli_nombrecompleto = 1 AND `scli_nombrecompleto` IS NULL) OR (`scli_nombrecompleto` = @Original_scli_nombrecompleto)) AND (`scli_telefonofijo` = @Original_scli_telefonofijo) AND (`scli_telefonomovil` = @Original_scli_telefonomovil) AND ((@IsNull_scli_correoelectronico = 1 AND `scli_correoelectronico` IS NULL) OR (`scli_correoelectronico` = @Original_scli_correoelectronico)) AND ((@IsNull_scli_fechanacimiento = 1 AND `scli_fechanacimiento` IS NULL) OR (`scli_fechanacimiento` = @Original_scli_fechanacimiento)) AND ((@IsNull_fcli_generoid = 1 AND `fcli_generoid` IS NULL) OR (`fcli_generoid` = @Original_fcli_generoid)) AND ((@IsNull_scli_nacionalidad = 1 AND `scli_nacionalidad` IS NULL) OR (`scli_nacionalidad` = @Original_scli_nacionalidad)) AND ((@IsNull_scli_profesion = 1 AND `scli_profesion` IS NULL) OR (`scli_profesion` = @Original_scli_profesion)) AND ((@IsNull_scli_empresanombre = 1 AND `scli_empresanombre` IS NULL) OR (`scli_empresanombre` = @Original_scli_empresanombre)) AND ((@IsNull_scli_empresaruc = 1 AND `scli_empresaruc` IS NULL) OR (`scli_empresaruc` = @Original_scli_empresaruc)) AND ((@IsNull_scli_empresadepartamento = 1 AND `scli_empresadepartamento` IS NULL) OR (`scli_empresadepartamento` = @Original_scli_empresadepartamento)) AND ((@IsNull_scli_empresapuesto = 1 AND `scli_empresapuesto` IS NULL) OR (`scli_empresapuesto` = @Original_scli_empresapuesto)) AND ((@IsNull_scli_empresadireccion = 1 AND `scli_empresadireccion` IS NULL) OR (`scli_empresadireccion` = @Original_scli_empresadireccion)) AND ((@IsNull_scli_empresatelefono = 1 AND `scli_empresatelefono` IS NULL) OR (`scli_empresatelefono` = @Original_scli_empresatelefono)) AND ((@IsNull_scli_empresapais = 1 AND `scli_empresapais` IS NULL) OR (`scli_empresapais` = @Original_scli_empresapais)) AND (`scli_domiciliodireccion` = @Original_scli_domiciliodireccion) AND (`scli_domiciliociudad` = @Original_scli_domiciliociudad) AND (`scli_domiciliopais` = @Original_scli_domiciliopais) AND (`scli_domicilioreferencia` = @Original_scli_domicilioreferencia) AND (`scli_domiciliotelefono` = @Original_scli_domiciliotelefono) AND (`scli_comentarios` = @Original_scli_comentarios) AND (`scli_unidad` = @Original_scli_unidad) AND (`scli_tiers` = @Original_scli_tiers) AND (`fcli_estadoid` = @Original_fcli_estadoid) AND (`faud_ins_usrid` = @Original_faud_ins_usrid) AND (`daud_ins_fecha` = @Original_daud_ins_fecha) AND ((@IsNull_faud_upd_usrid = 1 AND `faud_upd_usrid` IS NULL) OR (`faud_upd_usrid` = @Original_faud_upd_usrid)) AND ((@IsNull_daud_upd_fecha = 1 AND `daud_upd_fecha` IS NULL) OR (`daud_upd_fecha` = @Original_daud_upd_fecha)) AND ((@IsNull_scli_preferenciasFJM = 1 AND `scli_preferenciasFJM` IS NULL) OR (`scli_preferenciasFJM` = @Original_scli_preferenciasFJM)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@fcli_fuenteid" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="fcli_fuenteid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@ccli_id_ant" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="ccli_id_ant" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@scli_codigo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_codigo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@fcli_tipodoc" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="fcli_tipodoc" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@scli_numdoc" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_numdoc" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@scli_titulo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_titulo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@scli_apellidopat" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_apellidopat" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@scli_apellidomat" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_apellidomat" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@scli_nombres" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_nombres" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@scli_nombrecompleto" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_nombrecompleto" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@scli_telefonofijo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_telefonofijo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@scli_telefonomovil" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_telefonomovil" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@scli_correoelectronico" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_correoelectronico" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@scli_fechanacimiento" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_fechanacimiento" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@fcli_generoid" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="fcli_generoid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@scli_nacionalidad" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_nacionalidad" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@scli_profesion" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_profesion" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@scli_empresanombre" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_empresanombre" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@scli_empresaruc" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_empresaruc" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@scli_empresadepartamento" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_empresadepartamento" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@scli_empresapuesto" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_empresapuesto" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@scli_empresadireccion" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_empresadireccion" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@scli_empresatelefono" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_empresatelefono" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@scli_empresapais" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_empresapais" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@scli_domiciliodireccion" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_domiciliodireccion" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@scli_domiciliociudad" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_domiciliociudad" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@scli_domiciliopais" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_domiciliopais" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@scli_domicilioreferencia" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_domicilioreferencia" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@scli_domiciliotelefono" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_domiciliotelefono" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@scli_comentarios" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_comentarios" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@scli_unidad" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_unidad" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@scli_tiers" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_tiers" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@fcli_estadoid" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="fcli_estadoid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@faud_ins_usrid" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="faud_ins_usrid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@daud_ins_fecha" Precision="0" ProviderType="Timestamp" Scale="0" Size="0" SourceColumn="daud_ins_fecha" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@faud_upd_usrid" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="faud_upd_usrid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@daud_upd_fecha" Precision="0" ProviderType="Timestamp" Scale="0" Size="0" SourceColumn="daud_upd_fecha" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@scli_preferenciasFJM" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_preferenciasFJM" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_ccli_id" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="ccli_id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_fcli_fuenteid" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="fcli_fuenteid" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_ccli_id_ant" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="ccli_id_ant" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_scli_codigo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_codigo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_fcli_tipodoc" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="fcli_tipodoc" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_fcli_tipodoc" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="fcli_tipodoc" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_scli_numdoc" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="scli_numdoc" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_scli_numdoc" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_numdoc" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_scli_titulo" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="scli_titulo" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_scli_titulo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_titulo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_scli_apellidopat" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_apellidopat" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_scli_apellidomat" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_apellidomat" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_scli_nombres" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_nombres" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_scli_nombrecompleto" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="scli_nombrecompleto" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_scli_nombrecompleto" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_nombrecompleto" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_scli_telefonofijo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_telefonofijo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_scli_telefonomovil" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_telefonomovil" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_scli_correoelectronico" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="scli_correoelectronico" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_scli_correoelectronico" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_correoelectronico" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_scli_fechanacimiento" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="scli_fechanacimiento" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_scli_fechanacimiento" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_fechanacimiento" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_fcli_generoid" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="fcli_generoid" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_fcli_generoid" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="fcli_generoid" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_scli_nacionalidad" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="scli_nacionalidad" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_scli_nacionalidad" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_nacionalidad" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_scli_profesion" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="scli_profesion" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_scli_profesion" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_profesion" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_scli_empresanombre" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="scli_empresanombre" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_scli_empresanombre" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_empresanombre" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_scli_empresaruc" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="scli_empresaruc" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_scli_empresaruc" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_empresaruc" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_scli_empresadepartamento" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="scli_empresadepartamento" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_scli_empresadepartamento" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_empresadepartamento" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_scli_empresapuesto" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="scli_empresapuesto" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_scli_empresapuesto" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_empresapuesto" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_scli_empresadireccion" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="scli_empresadireccion" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_scli_empresadireccion" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_empresadireccion" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_scli_empresatelefono" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="scli_empresatelefono" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_scli_empresatelefono" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_empresatelefono" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_scli_empresapais" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="scli_empresapais" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_scli_empresapais" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_empresapais" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_scli_domiciliodireccion" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_domiciliodireccion" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_scli_domiciliociudad" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_domiciliociudad" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_scli_domiciliopais" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_domiciliopais" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_scli_domicilioreferencia" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_domicilioreferencia" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_scli_domiciliotelefono" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_domiciliotelefono" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_scli_comentarios" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_comentarios" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_scli_unidad" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_unidad" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_scli_tiers" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_tiers" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_fcli_estadoid" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="fcli_estadoid" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_faud_ins_usrid" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="faud_ins_usrid" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_daud_ins_fecha" Precision="0" ProviderType="Timestamp" Scale="0" Size="0" SourceColumn="daud_ins_fecha" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_faud_upd_usrid" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="faud_upd_usrid" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_faud_upd_usrid" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="faud_upd_usrid" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_daud_upd_fecha" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="daud_upd_fecha" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_daud_upd_fecha" Precision="0" ProviderType="Timestamp" Scale="0" Size="0" SourceColumn="daud_upd_fecha" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_scli_preferenciasFJM" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="scli_preferenciasFJM" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_scli_preferenciasFJM" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scli_preferenciasFJM" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ccli_id" DataSetColumn="ccli_id" />
+              <Mapping SourceColumn="fcli_fuenteid" DataSetColumn="fcli_fuenteid" />
+              <Mapping SourceColumn="ccli_id_ant" DataSetColumn="ccli_id_ant" />
+              <Mapping SourceColumn="scli_codigo" DataSetColumn="scli_codigo" />
+              <Mapping SourceColumn="fcli_tipodoc" DataSetColumn="fcli_tipodoc" />
+              <Mapping SourceColumn="scli_numdoc" DataSetColumn="scli_numdoc" />
+              <Mapping SourceColumn="scli_titulo" DataSetColumn="scli_titulo" />
+              <Mapping SourceColumn="scli_apellidopat" DataSetColumn="scli_apellidopat" />
+              <Mapping SourceColumn="scli_apellidomat" DataSetColumn="scli_apellidomat" />
+              <Mapping SourceColumn="scli_nombres" DataSetColumn="scli_nombres" />
+              <Mapping SourceColumn="scli_nombrecompleto" DataSetColumn="scli_nombrecompleto" />
+              <Mapping SourceColumn="scli_telefonofijo" DataSetColumn="scli_telefonofijo" />
+              <Mapping SourceColumn="scli_telefonomovil" DataSetColumn="scli_telefonomovil" />
+              <Mapping SourceColumn="scli_correoelectronico" DataSetColumn="scli_correoelectronico" />
+              <Mapping SourceColumn="scli_fechanacimiento" DataSetColumn="scli_fechanacimiento" />
+              <Mapping SourceColumn="fcli_generoid" DataSetColumn="fcli_generoid" />
+              <Mapping SourceColumn="scli_nacionalidad" DataSetColumn="scli_nacionalidad" />
+              <Mapping SourceColumn="scli_profesion" DataSetColumn="scli_profesion" />
+              <Mapping SourceColumn="scli_empresanombre" DataSetColumn="scli_empresanombre" />
+              <Mapping SourceColumn="scli_empresaruc" DataSetColumn="scli_empresaruc" />
+              <Mapping SourceColumn="scli_empresadepartamento" DataSetColumn="scli_empresadepartamento" />
+              <Mapping SourceColumn="scli_empresapuesto" DataSetColumn="scli_empresapuesto" />
+              <Mapping SourceColumn="scli_empresadireccion" DataSetColumn="scli_empresadireccion" />
+              <Mapping SourceColumn="scli_empresatelefono" DataSetColumn="scli_empresatelefono" />
+              <Mapping SourceColumn="scli_empresapais" DataSetColumn="scli_empresapais" />
+              <Mapping SourceColumn="scli_domiciliodireccion" DataSetColumn="scli_domiciliodireccion" />
+              <Mapping SourceColumn="scli_domiciliociudad" DataSetColumn="scli_domiciliociudad" />
+              <Mapping SourceColumn="scli_domiciliopais" DataSetColumn="scli_domiciliopais" />
+              <Mapping SourceColumn="scli_domicilioreferencia" DataSetColumn="scli_domicilioreferencia" />
+              <Mapping SourceColumn="scli_domiciliotelefono" DataSetColumn="scli_domiciliotelefono" />
+              <Mapping SourceColumn="scli_comentarios" DataSetColumn="scli_comentarios" />
+              <Mapping SourceColumn="scli_unidad" DataSetColumn="scli_unidad" />
+              <Mapping SourceColumn="scli_tiers" DataSetColumn="scli_tiers" />
+              <Mapping SourceColumn="fcli_estadoid" DataSetColumn="fcli_estadoid" />
+              <Mapping SourceColumn="faud_ins_usrid" DataSetColumn="faud_ins_usrid" />
+              <Mapping SourceColumn="daud_ins_fecha" DataSetColumn="daud_ins_fecha" />
+              <Mapping SourceColumn="faud_upd_usrid" DataSetColumn="faud_upd_usrid" />
+              <Mapping SourceColumn="daud_upd_fecha" DataSetColumn="daud_upd_fecha" />
+              <Mapping SourceColumn="scli_preferenciasFJM" DataSetColumn="scli_preferenciasFJM" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="xmlCalendarioPuntaje" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="xmlCalendarioPuntaje" msprop:Generator_DataSetName="xmlCalendarioPuntaje" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="rptCalendarioPuntaje" msprop:Generator_UserTableName="rptCalendarioPuntaje" msprop:Generator_RowDeletedName="rptCalendarioPuntajeRowDeleted" msprop:Generator_RowChangedName="rptCalendarioPuntajeRowChanged" msprop:Generator_RowClassName="rptCalendarioPuntajeRow" msprop:Generator_RowChangingName="rptCalendarioPuntajeRowChanging" msprop:Generator_RowEvArgName="rptCalendarioPuntajeRowChangeEvent" msprop:Generator_RowEvHandlerName="rptCalendarioPuntajeRowChangeEventHandler" msprop:Generator_TableClassName="rptCalendarioPuntajeDataTable" msprop:Generator_TableVarName="tablerptCalendarioPuntaje" msprop:Generator_RowDeletingName="rptCalendarioPuntajeRowDeleting" msprop:Generator_TablePropName="rptCalendarioPuntaje">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ProcesoAño" msprop:Generator_UserColumnName="ProcesoAño" msprop:Generator_ColumnVarNameInTable="columnProcesoAño" msprop:Generator_ColumnPropNameInRow="ProcesoAño" msprop:Generator_ColumnPropNameInTable="ProcesoAñoColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="ProcesoMes" msprop:Generator_UserColumnName="ProcesoMes" msprop:Generator_ColumnVarNameInTable="columnProcesoMes" msprop:Generator_ColumnPropNameInRow="ProcesoMes" msprop:Generator_ColumnPropNameInTable="ProcesoMesColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="ProcesoDia" msprop:Generator_UserColumnName="ProcesoDia" msprop:Generator_ColumnVarNameInTable="columnProcesoDia" msprop:Generator_ColumnPropNameInRow="ProcesoDia" msprop:Generator_ColumnPropNameInTable="ProcesoDiaColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="ClienteNombreCompleto" msprop:Generator_UserColumnName="ClienteNombreCompleto" msprop:Generator_ColumnVarNameInTable="columnClienteNombreCompleto" msprop:Generator_ColumnPropNameInRow="ClienteNombreCompleto" msprop:Generator_ColumnPropNameInTable="ClienteNombreCompletoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TipoJuegoId" msprop:Generator_UserColumnName="TipoJuegoId" msprop:Generator_ColumnVarNameInTable="columnTipoJuegoId" msprop:Generator_ColumnPropNameInRow="TipoJuegoId" msprop:Generator_ColumnPropNameInTable="TipoJuegoIdColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="TipoJuego" msprop:Generator_UserColumnName="TipoJuego" msprop:Generator_ColumnPropNameInRow="TipoJuego" msprop:Generator_ColumnVarNameInTable="columnTipoJuego" msprop:Generator_ColumnPropNameInTable="TipoJuegoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="WinTeorico" msprop:Generator_UserColumnName="WinTeorico" msprop:Generator_ColumnVarNameInTable="columnWinTeorico" msprop:Generator_ColumnPropNameInRow="WinTeorico" msprop:Generator_ColumnPropNameInTable="WinTeoricoColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="NumCupones" msprop:Generator_UserColumnName="NumCupones" msprop:Generator_ColumnVarNameInTable="columnNumCupones" msprop:Generator_ColumnPropNameInRow="NumCupones" msprop:Generator_ColumnPropNameInTable="NumCuponesColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTable" msprop:Generator_UserTableName="DataTable" msprop:Generator_RowDeletedName="DataTableRowDeleted" msprop:Generator_TableClassName="DataTableDataTable" msprop:Generator_RowChangedName="DataTableRowChanged" msprop:Generator_RowClassName="DataTableRow" msprop:Generator_RowChangingName="DataTableRowChanging" msprop:Generator_RowEvArgName="DataTableRowChangeEvent" msprop:Generator_RowEvHandlerName="DataTableRowChangeEventHandler" msprop:Generator_TablePropName="DataTable" msprop:Generator_TableVarName="tableDataTable" msprop:Generator_RowDeletingName="DataTableRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ccli_id" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="ccli_id" msprop:Generator_ColumnPropNameInRow="ccli_id" msprop:Generator_ColumnVarNameInTable="columnccli_id" msprop:Generator_ColumnPropNameInTable="ccli_idColumn" type="xs:int" />
+              <xs:element name="fcli_fuenteid" msprop:Generator_UserColumnName="fcli_fuenteid" msprop:Generator_ColumnPropNameInRow="fcli_fuenteid" msprop:Generator_ColumnVarNameInTable="columnfcli_fuenteid" msprop:Generator_ColumnPropNameInTable="fcli_fuenteidColumn" type="xs:int" />
+              <xs:element name="ccli_id_ant" msprop:Generator_UserColumnName="ccli_id_ant" msprop:Generator_ColumnPropNameInRow="ccli_id_ant" msprop:Generator_ColumnVarNameInTable="columnccli_id_ant" msprop:Generator_ColumnPropNameInTable="ccli_id_antColumn" type="xs:int" />
+              <xs:element name="scli_codigo" msprop:Generator_UserColumnName="scli_codigo" msprop:Generator_ColumnPropNameInRow="scli_codigo" msprop:Generator_ColumnVarNameInTable="columnscli_codigo" msprop:Generator_ColumnPropNameInTable="scli_codigoColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fcli_tipodoc" msprop:Generator_UserColumnName="fcli_tipodoc" msprop:Generator_ColumnPropNameInRow="fcli_tipodoc" msprop:Generator_ColumnVarNameInTable="columnfcli_tipodoc" msprop:Generator_ColumnPropNameInTable="fcli_tipodocColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="scli_numdoc" msprop:Generator_UserColumnName="scli_numdoc" msprop:Generator_ColumnPropNameInRow="scli_numdoc" msprop:Generator_ColumnVarNameInTable="columnscli_numdoc" msprop:Generator_ColumnPropNameInTable="scli_numdocColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="scli_titulo" msprop:Generator_UserColumnName="scli_titulo" msprop:Generator_ColumnPropNameInRow="scli_titulo" msprop:Generator_ColumnVarNameInTable="columnscli_titulo" msprop:Generator_ColumnPropNameInTable="scli_tituloColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="scli_apellidopat" msprop:Generator_UserColumnName="scli_apellidopat" msprop:Generator_ColumnPropNameInRow="scli_apellidopat" msprop:Generator_ColumnVarNameInTable="columnscli_apellidopat" msprop:Generator_ColumnPropNameInTable="scli_apellidopatColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="scli_apellidomat" msprop:Generator_UserColumnName="scli_apellidomat" msprop:Generator_ColumnPropNameInRow="scli_apellidomat" msprop:Generator_ColumnVarNameInTable="columnscli_apellidomat" msprop:Generator_ColumnPropNameInTable="scli_apellidomatColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="scli_nombres" msprop:Generator_UserColumnName="scli_nombres" msprop:Generator_ColumnPropNameInRow="scli_nombres" msprop:Generator_ColumnVarNameInTable="columnscli_nombres" msprop:Generator_ColumnPropNameInTable="scli_nombresColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="scli_nombrecompleto" msprop:Generator_UserColumnName="scli_nombrecompleto" msprop:Generator_ColumnPropNameInRow="scli_nombrecompleto" msprop:Generator_ColumnVarNameInTable="columnscli_nombrecompleto" msprop:Generator_ColumnPropNameInTable="scli_nombrecompletoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="scli_telefonofijo" msprop:Generator_UserColumnName="scli_telefonofijo" msprop:Generator_ColumnPropNameInRow="scli_telefonofijo" msprop:Generator_ColumnVarNameInTable="columnscli_telefonofijo" msprop:Generator_ColumnPropNameInTable="scli_telefonofijoColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="scli_telefonomovil" msprop:Generator_UserColumnName="scli_telefonomovil" msprop:Generator_ColumnPropNameInRow="scli_telefonomovil" msprop:Generator_ColumnVarNameInTable="columnscli_telefonomovil" msprop:Generator_ColumnPropNameInTable="scli_telefonomovilColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="scli_correoelectronico" msprop:Generator_UserColumnName="scli_correoelectronico" msprop:Generator_ColumnPropNameInRow="scli_correoelectronico" msprop:Generator_ColumnVarNameInTable="columnscli_correoelectronico" msprop:Generator_ColumnPropNameInTable="scli_correoelectronicoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="scli_fechanacimiento" msprop:Generator_UserColumnName="scli_fechanacimiento" msprop:Generator_ColumnPropNameInRow="scli_fechanacimiento" msprop:Generator_ColumnVarNameInTable="columnscli_fechanacimiento" msprop:Generator_ColumnPropNameInTable="scli_fechanacimientoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fcli_generoid" msprop:Generator_UserColumnName="fcli_generoid" msprop:Generator_ColumnPropNameInRow="fcli_generoid" msprop:Generator_ColumnVarNameInTable="columnfcli_generoid" msprop:Generator_ColumnPropNameInTable="fcli_generoidColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="scli_nacionalidad" msprop:Generator_UserColumnName="scli_nacionalidad" msprop:Generator_ColumnPropNameInRow="scli_nacionalidad" msprop:Generator_ColumnVarNameInTable="columnscli_nacionalidad" msprop:Generator_ColumnPropNameInTable="scli_nacionalidadColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="scli_profesion" msprop:Generator_UserColumnName="scli_profesion" msprop:Generator_ColumnPropNameInRow="scli_profesion" msprop:Generator_ColumnVarNameInTable="columnscli_profesion" msprop:Generator_ColumnPropNameInTable="scli_profesionColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="scli_empresanombre" msprop:Generator_UserColumnName="scli_empresanombre" msprop:Generator_ColumnPropNameInRow="scli_empresanombre" msprop:Generator_ColumnVarNameInTable="columnscli_empresanombre" msprop:Generator_ColumnPropNameInTable="scli_empresanombreColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="scli_empresaruc" msprop:Generator_UserColumnName="scli_empresaruc" msprop:Generator_ColumnPropNameInRow="scli_empresaruc" msprop:Generator_ColumnVarNameInTable="columnscli_empresaruc" msprop:Generator_ColumnPropNameInTable="scli_empresarucColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="scli_empresadepartamento" msprop:Generator_UserColumnName="scli_empresadepartamento" msprop:Generator_ColumnPropNameInRow="scli_empresadepartamento" msprop:Generator_ColumnVarNameInTable="columnscli_empresadepartamento" msprop:Generator_ColumnPropNameInTable="scli_empresadepartamentoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="scli_empresapuesto" msprop:Generator_UserColumnName="scli_empresapuesto" msprop:Generator_ColumnPropNameInRow="scli_empresapuesto" msprop:Generator_ColumnVarNameInTable="columnscli_empresapuesto" msprop:Generator_ColumnPropNameInTable="scli_empresapuestoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="scli_empresadireccion" msprop:Generator_UserColumnName="scli_empresadireccion" msprop:Generator_ColumnPropNameInRow="scli_empresadireccion" msprop:Generator_ColumnVarNameInTable="columnscli_empresadireccion" msprop:Generator_ColumnPropNameInTable="scli_empresadireccionColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="scli_empresatelefono" msprop:Generator_UserColumnName="scli_empresatelefono" msprop:Generator_ColumnPropNameInRow="scli_empresatelefono" msprop:Generator_ColumnVarNameInTable="columnscli_empresatelefono" msprop:Generator_ColumnPropNameInTable="scli_empresatelefonoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="scli_empresapais" msprop:Generator_UserColumnName="scli_empresapais" msprop:Generator_ColumnPropNameInRow="scli_empresapais" msprop:Generator_ColumnVarNameInTable="columnscli_empresapais" msprop:Generator_ColumnPropNameInTable="scli_empresapaisColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="scli_domiciliodireccion" msprop:Generator_UserColumnName="scli_domiciliodireccion" msprop:Generator_ColumnPropNameInRow="scli_domiciliodireccion" msprop:Generator_ColumnVarNameInTable="columnscli_domiciliodireccion" msprop:Generator_ColumnPropNameInTable="scli_domiciliodireccionColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="scli_domiciliociudad" msprop:Generator_UserColumnName="scli_domiciliociudad" msprop:Generator_ColumnPropNameInRow="scli_domiciliociudad" msprop:Generator_ColumnVarNameInTable="columnscli_domiciliociudad" msprop:Generator_ColumnPropNameInTable="scli_domiciliociudadColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="scli_domiciliopais" msprop:Generator_UserColumnName="scli_domiciliopais" msprop:Generator_ColumnPropNameInRow="scli_domiciliopais" msprop:Generator_ColumnVarNameInTable="columnscli_domiciliopais" msprop:Generator_ColumnPropNameInTable="scli_domiciliopaisColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="scli_domicilioreferencia" msprop:Generator_UserColumnName="scli_domicilioreferencia" msprop:Generator_ColumnPropNameInRow="scli_domicilioreferencia" msprop:Generator_ColumnVarNameInTable="columnscli_domicilioreferencia" msprop:Generator_ColumnPropNameInTable="scli_domicilioreferenciaColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="scli_domiciliotelefono" msprop:Generator_UserColumnName="scli_domiciliotelefono" msprop:Generator_ColumnPropNameInRow="scli_domiciliotelefono" msprop:Generator_ColumnVarNameInTable="columnscli_domiciliotelefono" msprop:Generator_ColumnPropNameInTable="scli_domiciliotelefonoColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="scli_comentarios" msprop:Generator_UserColumnName="scli_comentarios" msprop:Generator_ColumnPropNameInRow="scli_comentarios" msprop:Generator_ColumnVarNameInTable="columnscli_comentarios" msprop:Generator_ColumnPropNameInTable="scli_comentariosColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="scli_unidad" msprop:Generator_UserColumnName="scli_unidad" msprop:Generator_ColumnPropNameInRow="scli_unidad" msprop:Generator_ColumnVarNameInTable="columnscli_unidad" msprop:Generator_ColumnPropNameInTable="scli_unidadColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="scli_tiers" msprop:Generator_UserColumnName="scli_tiers" msprop:Generator_ColumnPropNameInRow="scli_tiers" msprop:Generator_ColumnVarNameInTable="columnscli_tiers" msprop:Generator_ColumnPropNameInTable="scli_tiersColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fcli_estadoid" msprop:Generator_UserColumnName="fcli_estadoid" msprop:Generator_ColumnPropNameInRow="fcli_estadoid" msprop:Generator_ColumnVarNameInTable="columnfcli_estadoid" msprop:Generator_ColumnPropNameInTable="fcli_estadoidColumn" type="xs:int" />
+              <xs:element name="faud_ins_usrid" msprop:Generator_UserColumnName="faud_ins_usrid" msprop:Generator_ColumnPropNameInRow="faud_ins_usrid" msprop:Generator_ColumnVarNameInTable="columnfaud_ins_usrid" msprop:Generator_ColumnPropNameInTable="faud_ins_usridColumn" type="xs:int" />
+              <xs:element name="daud_ins_fecha" msprop:Generator_UserColumnName="daud_ins_fecha" msprop:Generator_ColumnPropNameInRow="daud_ins_fecha" msprop:Generator_ColumnVarNameInTable="columndaud_ins_fecha" msprop:Generator_ColumnPropNameInTable="daud_ins_fechaColumn" type="xs:dateTime" />
+              <xs:element name="faud_upd_usrid" msprop:Generator_UserColumnName="faud_upd_usrid" msprop:Generator_ColumnPropNameInRow="faud_upd_usrid" msprop:Generator_ColumnVarNameInTable="columnfaud_upd_usrid" msprop:Generator_ColumnPropNameInTable="faud_upd_usridColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="daud_upd_fecha" msprop:Generator_UserColumnName="daud_upd_fecha" msprop:Generator_ColumnPropNameInRow="daud_upd_fecha" msprop:Generator_ColumnVarNameInTable="columndaud_upd_fecha" msprop:Generator_ColumnPropNameInTable="daud_upd_fechaColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="scli_preferenciasFJM" msprop:Generator_UserColumnName="scli_preferenciasFJM" msprop:Generator_ColumnPropNameInRow="scli_preferenciasFJM" msprop:Generator_ColumnVarNameInTable="columnscli_preferenciasFJM" msprop:Generator_ColumnPropNameInTable="scli_preferenciasFJMColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1">
+      <xs:selector xpath=".//mstns:DataTable" />
+      <xs:field xpath="mstns:scli_codigo" />
+    </xs:unique>
+    <xs:unique name="Constraint2" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DataTable" />
+      <xs:field xpath="mstns:ccli_id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

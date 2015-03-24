@@ -1,0 +1,161 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="bddc_Win_thlaadfs_wsSeguridad" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.0.0.157/itpe.WebService/wsSeguridad.asmx</Value>
+    </Setting>
+    <Setting Name="bdclienteluxorConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;User Id=root;Password=root;Host=10.0.0.59;Database=bdclienteluxor;Persist Security Info=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;Devart.Data.MySql&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">User Id=root;Password=root;Host=10.0.0.59;Database=bdclienteluxor;Persist Security Info=True</Value>
+    </Setting>
+    <Setting Name="bdcrmluxorConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;User Id=root;Password=root;Host=10.0.0.59;Database=bdcrmluxor;Persist Security Info=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;Devart.Data.MySql&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">User Id=root;Password=root;Host=10.0.0.59;Database=bdcrmluxor;Persist Security Info=True</Value>
+    </Setting>
+    <Setting Name="bdauxiliarluxorConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;User Id=root;Password=root;Host=10.0.0.59;Database=bdauxiliarluxor;Persist Security Info=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;Devart.Data.MySql&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">User Id=root;Password=root;Host=10.0.0.59;Database=bdauxiliarluxor;Persist Security Info=True</Value>
+    </Setting>
+    <Setting Name="bdseguridadluxorConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;User Id=root;Password=root;Host=10.0.0.59;Database=bdseguridadluxor;Persist Security Info=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;Devart.Data.MySql&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">User Id=root;Password=root;Host=10.0.0.59;Database=bdseguridadluxor;Persist Security Info=True</Value>
+    </Setting>
+    <Setting Name="bdclienteConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;User Id=root;Password=root;Host=10.0.0.59;Database=bdcliente;Persist Security Info=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;Devart.Data.MySql&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">User Id=root;Password=root;Host=10.0.0.59;Database=bdcliente;Persist Security Info=True</Value>
+    </Setting>
+    <Setting Name="bdcrmConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;User Id=root;Password=root;Host=10.0.0.59;Database=bdcrm;Persist Security Info=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;Devart.Data.MySql&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">User Id=root;Password=root;Host=10.0.0.59;Database=bdcrm;Persist Security Info=True</Value>
+    </Setting>
+    <Setting Name="bdauxiliarConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;User Id=root;Password=root;Host=10.0.0.59;Database=bdauxiliar;Persist Security Info=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;Devart.Data.MySql&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">User Id=root;Password=root;Host=10.0.0.59;Database=bdauxiliar;Persist Security Info=True</Value>
+    </Setting>
+    <Setting Name="bdseguridadConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;User Id=root;Password=root;Host=10.0.0.59;Database=bdseguridad;Persist Security Info=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;Devart.Data.MySql&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">User Id=root;Password=root;Host=10.0.0.59;Database=bdseguridad;Persist Security Info=True</Value>
+    </Setting>
+    <Setting Name="bdclienteConnectionString1" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;server=10.0.0.59;User Id=root;password=root;Persist Security Info=True;database=bdcliente&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;MySql.Data.MySqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">server=10.0.0.59;User Id=root;password=root;Persist Security Info=True;database=bdcliente</Value>
+    </Setting>
+    <Setting Name="bdcrmluxorConnectionString1" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;server=10.0.0.59;User Id=root;password=root;Persist Security Info=True;database=bdcrmluxor&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;MySql.Data.MySqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">server=10.0.0.59;User Id=root;password=root;Persist Security Info=True;database=bdcrmluxor</Value>
+    </Setting>
+    <Setting Name="bdclienteluxorConnectionString1" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;server=10.0.0.59;User Id=root;password=root;Persist Security Info=True;database=bdclienteluxor&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;MySql.Data.MySqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">server=10.0.0.59;User Id=root;password=root;Persist Security Info=True;database=bdclienteluxor</Value>
+    </Setting>
+    <Setting Name="bdauxiliarluxorConnectionString1" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;server=10.0.0.59;User Id=root;password=root;Persist Security Info=True;database=bdauxiliarluxor&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;MySql.Data.MySqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">server=10.0.0.59;User Id=root;password=root;Persist Security Info=True;database=bdauxiliarluxor</Value>
+    </Setting>
+    <Setting Name="bdcrmtacnaConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;User Id=root;Password=root;Host=10.0.0.59;Database=bdcrmtacna;Persist Security Info=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;Devart.Data.MySql&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">User Id=root;Password=root;Host=10.0.0.59;Database=bdcrmtacna;Persist Security Info=True</Value>
+    </Setting>
+    <Setting Name="bdauxiliartacnaConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;User Id=root;Password=root;Host=10.0.0.59;Database=bdauxiliartacna;Persist Security Info=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;Devart.Data.MySql&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">User Id=root;Password=root;Host=10.0.0.59;Database=bdauxiliartacna;Persist Security Info=True</Value>
+    </Setting>
+    <Setting Name="bdcrmTestConnectionString1" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;server=10.0.0.59;User Id=FPCTest;password=UserUser2015.FPC;Persist Security Info=True;database=bdcrm_test&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;MySql.Data.MySqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">server=10.0.0.59;User Id=FPCTest;password=UserUser2015.FPC;Persist Security Info=True;database=bdcrm_test</Value>
+    </Setting>
+    <Setting Name="bdauxiliarTestConnectionString1" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;server=10.0.0.59;User Id=FPCTest;password=UserUser2015.FPC;Persist Security Info=True;database=bdauxiliar_test&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;MySql.Data.MySqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">server=10.0.0.59;User Id=FPCTest;password=UserUser2015.FPC;Persist Security Info=True;database=bdauxiliar_test</Value>
+    </Setting>
+    <Setting Name="bdclienteTestConnectionString1" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;server=10.0.0.59;User Id=FPCTest;password=UserUser2015.FPC;Persist Security Info=True;database=bdcliente_test&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;MySql.Data.MySqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">server=10.0.0.59;User Id=FPCTest;password=UserUser2015.FPC;Persist Security Info=True;database=bdcliente_test</Value>
+    </Setting>
+    <Setting Name="bdseguridadTestConnectionString1" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;server=10.0.0.59;User Id=FPCTest;password=UserUser2015.FPC;Persist Security Info=True;database=bdseguridad_test&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;MySql.Data.MySqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">server=10.0.0.59;User Id=FPCTest;password=UserUser2015.FPC;Persist Security Info=True;database=bdseguridad_test</Value>
+    </Setting>
+    <Setting Name="ConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Dsn=Peru Mysql FPC;uid=root;pwd=root&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.Odbc&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Dsn=Peru Mysql FPC;uid=root;pwd=root</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

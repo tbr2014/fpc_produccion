@@ -1,0 +1,379 @@
+C:\ABorjas\Aplicaciones\bddc\bddc.Win\bin\Release\bddc.Win.exe.config
+C:\ABorjas\Aplicaciones\bddc\bddc.Win\bin\Release\bddc.Win.exe.manifest
+C:\ABorjas\Aplicaciones\bddc\bddc.Win\bin\Release\bddc.Win.application
+C:\ABorjas\Aplicaciones\bddc\bddc.Win\bin\Release\bddc.Win.exe
+C:\ABorjas\Aplicaciones\bddc\bddc.Win\bin\Release\bddc.Win.pdb
+C:\ABorjas\Aplicaciones\bddc\bddc.Win\bin\Release\bddc.Win.xml
+C:\ABorjas\Aplicaciones\bddc\bddc.Win\bin\Release\bddc.BEC.dll
+C:\ABorjas\Aplicaciones\bddc\bddc.Win\bin\Release\bddc.DALC.dll
+C:\ABorjas\Aplicaciones\bddc\bddc.Win\bin\Release\bddc.Util.dll
+C:\ABorjas\Aplicaciones\bddc\bddc.Win\bin\Release\bddc.Web.dll
+C:\ABorjas\Aplicaciones\bddc\bddc.Win\bin\Release\Microsoft.ReportViewer.Common.dll
+C:\ABorjas\Aplicaciones\bddc\bddc.Win\bin\Release\Microsoft.ReportViewer.WinForms.dll
+C:\ABorjas\Aplicaciones\bddc\bddc.Win\bin\Release\skmmenu.dll
+C:\ABorjas\Aplicaciones\bddc\bddc.Win\bin\Release\Microsoft.ReportViewer.WinForms.xml
+C:\ABorjas\Aplicaciones\bddc\bddc.Win\bin\Release\bddc.Web.pdb
+C:\ABorjas\Aplicaciones\bddc\bddc.Win\bin\Release\bddc.Web.xml
+C:\ABorjas\Aplicaciones\bddc\bddc.Win\bin\Release\bddc.BEC.pdb
+C:\ABorjas\Aplicaciones\bddc\bddc.Win\bin\Release\bddc.BEC.xml
+C:\ABorjas\Aplicaciones\bddc\bddc.Win\bin\Release\bddc.Util.pdb
+C:\ABorjas\Aplicaciones\bddc\bddc.Win\bin\Release\bddc.Util.xml
+C:\ABorjas\Aplicaciones\bddc\bddc.Win\bin\Release\bddc.DALC.pdb
+C:\ABorjas\Aplicaciones\bddc\bddc.Win\bin\Release\bddc.DALC.xml
+C:\ABorjas\Aplicaciones\bddc\bddc.Win\obj\Release\ResolveAssemblyReference.cache
+C:\ABorjas\Aplicaciones\bddc\bddc.Win\obj\Release\bddc.Win.frmReporte5.resources
+C:\ABorjas\Aplicaciones\bddc\bddc.Win\obj\Release\bddc.Win.frmReporte6.resources
+C:\ABorjas\Aplicaciones\bddc\bddc.Win\obj\Release\bddc.Win.frmAuditoriaRpt.resources
+C:\ABorjas\Aplicaciones\bddc\bddc.Win\obj\Release\bddc.Win.frmClienteBus.resources
+C:\ABorjas\Aplicaciones\bddc\bddc.Win\obj\Release\bddc.Win.frmClienteTicketBus.resources
+C:\ABorjas\Aplicaciones\bddc\bddc.Win\obj\Release\bddc.Win.frmImpresion1.resources
+C:\ABorjas\Aplicaciones\bddc\bddc.Win\obj\Release\bddc.Win.frmImpresionLista.resources
+C:\ABorjas\Aplicaciones\bddc\bddc.Win\obj\Release\bddc.Win.frmReporte1.resources
+C:\ABorjas\Aplicaciones\bddc\bddc.Win\obj\Release\bddc.Win.frmReporte4.resources
+C:\ABorjas\Aplicaciones\bddc\bddc.Win\obj\Release\bddc.Win.frmReporte3.resources
+C:\ABorjas\Aplicaciones\bddc\bddc.Win\obj\Release\bddc.Win.frmReporte2.resources
+C:\ABorjas\Aplicaciones\bddc\bddc.Win\obj\Release\bddc.Win.frmRatingReg.resources
+C:\ABorjas\Aplicaciones\bddc\bddc.Win\obj\Release\bddc.Win.frmClienteReg.resources
+C:\ABorjas\Aplicaciones\bddc\bddc.Win\obj\Release\bddc.Win.frmReporteLista.resources
+C:\ABorjas\Aplicaciones\bddc\bddc.Win\obj\Release\bddc.Win.frmSistema.resources
+C:\ABorjas\Aplicaciones\bddc\bddc.Win\obj\Release\bddc.Win.frmSplash.resources
+C:\ABorjas\Aplicaciones\bddc\bddc.Win\obj\Release\bddc.Win.frmLogin.resources
+C:\ABorjas\Aplicaciones\bddc\bddc.Win\obj\Release\bddc.Win.Resources.resources
+C:\ABorjas\Aplicaciones\bddc\bddc.Win\obj\Release\bddc.Win.vbproj.GenerateResource.Cache
+C:\ABorjas\Aplicaciones\bddc\bddc.Win\obj\Release\RdlCompile.cache
+C:\ABorjas\Aplicaciones\bddc\bddc.Win\obj\Release\RdlCompile.compiled
+C:\ABorjas\Aplicaciones\bddc\bddc.Win\obj\Release\bddc.Win.TrustInfo.xml
+C:\ABorjas\Aplicaciones\bddc\bddc.Win\obj\Release\bddc.Win.exe.manifest
+C:\ABorjas\Aplicaciones\bddc\bddc.Win\obj\Release\bddc.Win.application
+C:\ABorjas\Aplicaciones\bddc\bddc.Win\obj\Release\bddc.Win.exe
+C:\ABorjas\Aplicaciones\bddc\bddc.Win\obj\Release\bddc.Win.xml
+C:\ABorjas\Aplicaciones\bddc\bddc.Win\obj\Release\bddc.Win.pdb
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Win\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Win\obj\Release\bddc.Win.ucFecha.resources
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Win\obj\Release\bddc.Win.frmClienteRegistro.resources
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Win\obj\Release\bddc.Win.frmCajaBuscar.resources
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Win\obj\Release\bddc.Win.frmCajaRegistro.resources
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Win\obj\Release\bddc.Win.frmCajaRegistroImprimir.resources
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Win\obj\Release\bddc.Win.frmCajaRegistroOperador.resources
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Win\obj\Release\bddc.Win.frmCajaReporteImprimir.resources
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Win\obj\Release\bddc.Win.frmCajaReportes.resources
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Win\obj\Release\bddc.Win.frmMesasOperaciones.resources
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Win\obj\Release\bddc.Win.ucFlotaFichas.resources
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Win\obj\Release\bddc.Win.frmReporte9.resources
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Win\obj\Release\bddc.Win.frmRatingTraslado.resources
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Win\obj\Release\bddc.Win.frmReporteRatingAnual.resources
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Win\obj\Release\bddc.Win.frmReportesMesas.resources
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Win\obj\Release\bddc.Win.frmRptClientes_Promociones.resources
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Win\obj\Release\bddc.Win.frmReportesMercadeo.resources
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Win\obj\Release\bddc.Win.frmSeg_Accesos.resources
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Win\obj\Release\bddc.Win.frmSeg_Usuarios.resources
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Win\obj\Release\bddc.Win.frmSis_Auditoria.resources
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Win\obj\Release\bddc.Win.frmEstimadoMesas.resources
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Win\obj\Release\bddc.Win.frmClienteTicketsImprimir.resources
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Win\obj\Release\bddc.Win.frmProcesoTT.resources
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Win\obj\Release\bddc.Win.frmReporte2.resources
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Win\obj\Release\bddc.Win.frmReporte5.resources
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Win\obj\Release\bddc.Win.frmReporte6.resources
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Win\obj\Release\bddc.Win.frmReporte7.resources
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Win\obj\Release\bddc.Win.frmReporte8.resources
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Win\obj\Release\bddc.Win.frmClienteBuscar.resources
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Win\obj\Release\bddc.Win.frmClienteTicketBuscar.resources
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Win\obj\Release\bddc.Win.frmReporte1.resources
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Win\obj\Release\bddc.Win.frmRptCliente_Cumple.resources
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Win\obj\Release\bddc.Win.frmRptClientes_Juegos.resources
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Win\obj\Release\bddc.Win.frmRatingRegistro.resources
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Win\obj\Release\bddc.Win.frmSis_Parametros.resources
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Win\obj\Release\bddc.Win.frmPrincipal.resources
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Win\obj\Release\bddc.Win.frmLogin.resources
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Win\obj\Release\bddc.Win.Resources.resources
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Win\obj\Release\bddc.Win.frmTasaCambio.resources
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Win\obj\Release\bddc.Win.vbproj.GenerateResource.Cache
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Win\obj\Release\bddc.Win.exe.licenses
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Win\obj\Release\RdlCompile.cache
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Win\obj\Release\RdlCompile.compiled
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Win\obj\Release\bddc.Win.exe
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Win\obj\Release\bddc.Win.xml
+C:\Documents and Settings\omprueba\Mis documentos\Visual Studio 2008\BDDC Produccion ACTUAL\bddc\bddc.Win\obj\Release\bddc.Win.pdb
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\bin\Release\imgLogoFCB.ico
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\bin\Release\Styles.css
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\bin\Release\bddc.Win.exe.config
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\bin\Release\bddc.Win.exe.manifest
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\bin\Release\bddc.Win.application
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\bin\Release\bddc.Win.exe
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\bin\Release\bddc.Win.XmlSerializers.dll
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\bin\Release\bddc.Win.pdb
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\bin\Release\bddc.Win.xml
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\bin\Release\bddc.BEC.dll
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\bin\Release\bddc.DALC.dll
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\bin\Release\bddc.Util.dll
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\bin\Release\CrystalDecisions.CrystalReports.Engine.dll
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\bin\Release\CrystalDecisions.Enterprise.Framework.dll
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\bin\Release\CrystalDecisions.Enterprise.InfoStore.dll
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\bin\Release\CrystalDecisions.ReportSource.dll
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\bin\Release\CrystalDecisions.Shared.dll
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\bin\Release\CrystalDecisions.Windows.Forms.dll
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\bin\Release\Devart.Data.dll
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\bin\Release\Devart.Data.MySql.dll
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\bin\Release\Infragistics2.Shared.v10.2.dll
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\bin\Release\Infragistics2.Win.Misc.v10.2.dll
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\bin\Release\Infragistics2.Win.UltraWinStatusBar.v10.2.dll
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\bin\Release\Infragistics2.Win.UltraWinToolbars.v10.2.dll
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\bin\Release\Infragistics2.Win.v10.2.dll
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\bin\Release\Microsoft.ReportViewer.WinForms.dll
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\bin\Release\MySql.Data.dll
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\bin\Release\System.Data.DataSetExtensions.dll
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\bin\Release\System.Data.dll
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\bin\Release\System.Xml.Linq.dll
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\bin\Release\DL.DAC.dll
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\bin\Release\Microsoft.ReportViewer.WinForms.xml
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\bin\Release\CrystalDecisions.Windows.Forms.xml
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\bin\Release\Devart.Data.MySql.xml
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\bin\Release\bddc.BEC.pdb
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\bin\Release\bddc.BEC.xml
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\bin\Release\CrystalDecisions.Shared.xml
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\bin\Release\CrystalDecisions.ReportSource.xml
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\bin\Release\CrystalDecisions.CrystalReports.Engine.xml
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\bin\Release\bddc.Util.pdb
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\bin\Release\bddc.Util.xml
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\bin\Release\bddc.DALC.pdb
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\bin\Release\bddc.DALC.xml
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\obj\Release\ResolveAssemblyReference.cache
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\obj\Release\bddc.Win.ucFecha.resources
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\obj\Release\bddc.Win.frmClienteRegistro.resources
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\obj\Release\bddc.Win.frmCajaBuscar.resources
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\obj\Release\bddc.Win.frmCajaRegistro.resources
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\obj\Release\bddc.Win.frmCajaRegistroImprimir.resources
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\obj\Release\bddc.Win.frmCajaRegistroOperador.resources
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\obj\Release\bddc.Win.frmCajaReporteImprimir.resources
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\obj\Release\bddc.Win.frmCajaReportes.resources
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\obj\Release\bddc.Win.frmMesasOperaciones.resources
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\obj\Release\bddc.Win.ucFlotaFichas.resources
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\obj\Release\bddc.Win.frmReporte9.resources
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\obj\Release\bddc.Win.frmRatingTraslado.resources
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\obj\Release\bddc.Win.frmReporteRatingAnual.resources
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\obj\Release\bddc.Win.frmReportesMesas.resources
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\obj\Release\bddc.Win.frmRptClientes_Promociones.resources
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\obj\Release\bddc.Win.frmReportesMercadeo.resources
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\obj\Release\bddc.Win.frmSeg_Accesos.resources
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\obj\Release\bddc.Win.frmSeg_Usuarios.resources
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\obj\Release\bddc.Win.frmSis_Auditoria.resources
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\obj\Release\bddc.Win.frmEstimadoMesas.resources
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\obj\Release\bddc.Win.frmClienteTicketsImprimir.resources
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\obj\Release\bddc.Win.frmProcesoTT.resources
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\obj\Release\bddc.Win.frmReporte2.resources
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\obj\Release\bddc.Win.frmReporte5.resources
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\obj\Release\bddc.Win.frmReporte6.resources
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\obj\Release\bddc.Win.frmReporte7.resources
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\obj\Release\bddc.Win.frmReporte8.resources
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\obj\Release\bddc.Win.frmClienteBuscar.resources
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\obj\Release\bddc.Win.frmClienteTicketBuscar.resources
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\obj\Release\bddc.Win.frmReporte1.resources
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\obj\Release\bddc.Win.frmRptCliente_Cumple.resources
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\obj\Release\bddc.Win.frmRptClientes_Juegos.resources
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\obj\Release\bddc.Win.frmRatingRegistro.resources
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\obj\Release\bddc.Win.frmSis_Parametros.resources
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\obj\Release\bddc.Win.frmPrincipal.resources
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\obj\Release\bddc.Win.frmLogin.resources
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\obj\Release\bddc.Win.Resources.resources
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\obj\Release\bddc.Win.frmTasaCambio.resources
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\obj\Release\bddc.Win.vbproj.GenerateResource.Cache
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\obj\Release\bddc.Win.exe.licenses
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\obj\Release\RdlCompile.cache
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\obj\Release\RdlCompile.compiled
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\obj\Release\bddc.Win.TrustInfo.xml
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\obj\Release\bddc.Win.exe.manifest
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\obj\Release\bddc.Win.application
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\obj\Release\bddc.Win.exe
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\obj\Release\bddc.Win.xml
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\obj\Release\bddc.Win.pdb
+C:\LuxorPlayerClub - Copy\bddc\bddc.Win\obj\Release\bddc.Win.XmlSerializers.dll
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\bin\Release\imgLogoFCB.ico
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\bin\Release\Styles.css
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\bin\Release\bddc.Win.exe.config
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\bin\Release\bddc.Win.exe.manifest
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\bin\Release\bddc.Win.application
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\bin\Release\bddc.Win.exe
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\bin\Release\bddc.Win.XmlSerializers.dll
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\bin\Release\bddc.Win.pdb
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\bin\Release\bddc.Win.xml
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\bin\Release\bddc.BEC.dll
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\bin\Release\bddc.DALC.dll
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\bin\Release\bddc.Util.dll
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\bin\Release\CrystalDecisions.CrystalReports.Engine.dll
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\bin\Release\CrystalDecisions.Enterprise.Framework.dll
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\bin\Release\CrystalDecisions.Enterprise.InfoStore.dll
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\bin\Release\CrystalDecisions.ReportSource.dll
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\bin\Release\CrystalDecisions.Shared.dll
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\bin\Release\CrystalDecisions.Windows.Forms.dll
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\bin\Release\Devart.Data.dll
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\bin\Release\Devart.Data.MySql.dll
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\bin\Release\Infragistics2.Shared.v10.2.dll
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\bin\Release\Infragistics2.Win.Misc.v10.2.dll
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\bin\Release\Infragistics2.Win.UltraWinStatusBar.v10.2.dll
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\bin\Release\Infragistics2.Win.UltraWinToolbars.v10.2.dll
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\bin\Release\Infragistics2.Win.v10.2.dll
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\bin\Release\Microsoft.ReportViewer.WinForms.dll
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\bin\Release\MySql.Data.dll
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\bin\Release\System.Data.DataSetExtensions.dll
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\bin\Release\System.Data.dll
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\bin\Release\System.Xml.Linq.dll
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\bin\Release\DL.DAC.dll
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\bin\Release\Microsoft.ReportViewer.WinForms.xml
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\bin\Release\CrystalDecisions.Windows.Forms.xml
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\bin\Release\Devart.Data.MySql.xml
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\bin\Release\bddc.BEC.pdb
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\bin\Release\bddc.BEC.xml
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\bin\Release\CrystalDecisions.Shared.xml
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\bin\Release\CrystalDecisions.ReportSource.xml
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\bin\Release\CrystalDecisions.CrystalReports.Engine.xml
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\bin\Release\bddc.Util.pdb
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\bin\Release\bddc.Util.xml
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\bin\Release\bddc.DALC.pdb
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\bin\Release\bddc.DALC.xml
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\obj\Release\ResolveAssemblyReference.cache
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\obj\Release\bddc.Win.ucFecha.resources
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\obj\Release\bddc.Win.frmClienteRegistro.resources
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\obj\Release\bddc.Win.frmCajaBuscar.resources
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\obj\Release\bddc.Win.frmCajaRegistro.resources
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\obj\Release\bddc.Win.frmCajaRegistroImprimir.resources
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\obj\Release\bddc.Win.frmCajaRegistroOperador.resources
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\obj\Release\bddc.Win.frmCajaReporteImprimir.resources
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\obj\Release\bddc.Win.frmCajaReportes.resources
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\obj\Release\bddc.Win.frmMesasOperaciones.resources
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\obj\Release\bddc.Win.ucFlotaFichas.resources
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\obj\Release\bddc.Win.frmReporte9.resources
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\obj\Release\bddc.Win.frmRatingTraslado.resources
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\obj\Release\bddc.Win.frmReporteRatingAnual.resources
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\obj\Release\bddc.Win.frmReportesMesas.resources
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\obj\Release\bddc.Win.frmRptClientes_Promociones.resources
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\obj\Release\bddc.Win.frmReportesMercadeo.resources
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\obj\Release\bddc.Win.frmSeg_Accesos.resources
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\obj\Release\bddc.Win.frmSeg_Usuarios.resources
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\obj\Release\bddc.Win.frmSis_Auditoria.resources
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\obj\Release\bddc.Win.frmEstimadoMesas.resources
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\obj\Release\bddc.Win.frmClienteTicketsImprimir.resources
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\obj\Release\bddc.Win.frmProcesoTT.resources
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\obj\Release\bddc.Win.frmReporte2.resources
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\obj\Release\bddc.Win.frmReporte5.resources
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\obj\Release\bddc.Win.frmReporte6.resources
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\obj\Release\bddc.Win.frmReporte7.resources
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\obj\Release\bddc.Win.frmReporte8.resources
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\obj\Release\bddc.Win.frmClienteBuscar.resources
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\obj\Release\bddc.Win.frmClienteTicketBuscar.resources
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\obj\Release\bddc.Win.frmReporte1.resources
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\obj\Release\bddc.Win.frmRptCliente_Cumple.resources
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\obj\Release\bddc.Win.frmRptClientes_Juegos.resources
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\obj\Release\bddc.Win.frmRatingRegistro.resources
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\obj\Release\bddc.Win.frmSis_Parametros.resources
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\obj\Release\bddc.Win.frmPrincipal.resources
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\obj\Release\bddc.Win.frmLogin.resources
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\obj\Release\bddc.Win.Resources.resources
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\obj\Release\bddc.Win.frmTasaCambio.resources
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\obj\Release\bddc.Win.vbproj.GenerateResource.Cache
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\obj\Release\bddc.Win.exe.licenses
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\obj\Release\RdlCompile.cache
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\obj\Release\RdlCompile.compiled
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\obj\Release\bddc.Win.TrustInfo.xml
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\obj\Release\bddc.Win.exe.manifest
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\obj\Release\bddc.Win.application
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\obj\Release\bddc.Win.exe
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\obj\Release\bddc.Win.xml
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\obj\Release\bddc.Win.pdb
+C:\LuxorPlayerClub - Copy2\bddc\bddc.Win\obj\Release\bddc.Win.XmlSerializers.dll
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\bin\Release\imgLogoFCB.ico
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\bin\Release\Styles.css
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\bin\Release\bddc.Win.exe.config
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\bin\Release\bddc.Win.exe.manifest
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\bin\Release\bddc.Win.application
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\bin\Release\bddc.Win.exe
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\bin\Release\bddc.Win.XmlSerializers.dll
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\bin\Release\bddc.Win.pdb
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\bin\Release\bddc.Win.xml
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\bin\Release\bddc.BEC.dll
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\bin\Release\bddc.DALC.dll
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\bin\Release\bddc.Util.dll
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\bin\Release\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\bin\Release\CrystalDecisions.Enterprise.Framework.dll
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\bin\Release\CrystalDecisions.Enterprise.InfoStore.dll
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\bin\Release\CrystalDecisions.ReportSource.dll
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\bin\Release\CrystalDecisions.Shared.dll
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\bin\Release\CrystalDecisions.Windows.Forms.dll
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\bin\Release\Infragistics2.Shared.v10.2.dll
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\bin\Release\Infragistics2.Win.Misc.v10.2.dll
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\bin\Release\Infragistics2.Win.UltraWinStatusBar.v10.2.dll
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\bin\Release\Infragistics2.Win.UltraWinToolbars.v10.2.dll
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\bin\Release\Infragistics2.Win.v10.2.dll
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\bin\Release\Microsoft.ReportViewer.WinForms.dll
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\bin\Release\MySql.Data.dll
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\bin\Release\System.Data.DataSetExtensions.dll
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\bin\Release\System.Data.dll
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\bin\Release\System.Xml.Linq.dll
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\bin\Release\DL.DAC.dll
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\bin\Release\Infragistics2.Win.UltraWinTabControl.v10.2.dll
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\bin\Release\Infragistics2.Win.UltraWinEditors.v10.2.dll
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\bin\Release\Infragistics2.Shared.v10.2.xml
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\bin\Release\Microsoft.ReportViewer.WinForms.xml
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\bin\Release\CrystalDecisions.Windows.Forms.xml
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\bin\Release\Infragistics2.Win.Misc.v10.2.xml
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\bin\Release\bddc.BEC.pdb
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\bin\Release\bddc.BEC.xml
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\bin\Release\CrystalDecisions.Shared.xml
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\bin\Release\CrystalDecisions.ReportSource.xml
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\bin\Release\CrystalDecisions.CrystalReports.Engine.xml
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\bin\Release\bddc.Util.pdb
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\bin\Release\bddc.Util.xml
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\bin\Release\Infragistics2.Win.v10.2.xml
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\bin\Release\bddc.DALC.pdb
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\bin\Release\bddc.DALC.xml
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\obj\Release\ResolveAssemblyReference.cache
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\obj\Release\bddc.Win.ucFecha.resources
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\obj\Release\bddc.Win.frmClienteBuscar.resources
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\obj\Release\bddc.Win.frmClienteBuscarL.resources
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\obj\Release\bddc.Win.frmClienteRegistro.resources
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\obj\Release\bddc.Win.frmCajaBuscar.resources
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\obj\Release\bddc.Win.frmCajaRegistro.resources
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\obj\Release\bddc.Win.frmCajaRegistroImprimir.resources
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\obj\Release\bddc.Win.frmCajaRegistroOperador.resources
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\obj\Release\bddc.Win.frmCajaReporteImprimir.resources
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\obj\Release\bddc.Win.frmCajaReportes.resources
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\obj\Release\bddc.Win.frmMesasOperaciones.resources
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\obj\Release\bddc.Win.ucFlotaFichas.resources
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\obj\Release\bddc.Win.frmRatingTraslado.resources
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\obj\Release\bddc.Win.frmReporte10.resources
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\obj\Release\bddc.Win.frmReporte9.resources
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\obj\Release\bddc.Win.frmReporteRatingAnual.resources
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\obj\Release\bddc.Win.frmReportesMesas.resources
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\obj\Release\bddc.Win.frmRptClientes_Promociones.resources
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\obj\Release\bddc.Win.frmReportesMercadeo.resources
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\obj\Release\bddc.Win.frmSeg_Accesos.resources
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\obj\Release\bddc.Win.frmSeg_Usuarios.resources
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\obj\Release\bddc.Win.frmSis_Auditoria.resources
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\obj\Release\bddc.Win.frmEstimadoMesas.resources
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\obj\Release\bddc.Win.frmClienteTicketsImprimir.resources
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\obj\Release\bddc.Win.frmProcesoTT.resources
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\obj\Release\bddc.Win.frmReporte2.resources
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\obj\Release\bddc.Win.frmReporte5.resources
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\obj\Release\bddc.Win.frmReporte6.resources
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\obj\Release\bddc.Win.frmReporte7.resources
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\obj\Release\bddc.Win.frmReporte8.resources
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\obj\Release\bddc.Win.frmClienteTicketBuscar.resources
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\obj\Release\bddc.Win.frmReporte1.resources
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\obj\Release\bddc.Win.frmRptCliente_Cumple.resources
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\obj\Release\bddc.Win.frmRptClientes_Juegos.resources
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\obj\Release\bddc.Win.frmRatingRegistro.resources
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\obj\Release\bddc.Win.frmSis_Parametros.resources
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\obj\Release\bddc.Win.frmPrincipal.resources
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\obj\Release\bddc.Win.frmLogin.resources
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\obj\Release\bddc.Win.Resources.resources
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\obj\Release\bddc.Win.frmTasaCambio.resources
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\obj\Release\bddc.Win.vbproj.GenerateResource.Cache
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\obj\Release\bddc.Win.exe.licenses
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\obj\Release\RdlCompile.cache
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\obj\Release\RdlCompile.compiled
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\obj\Release\bddc.Win.TrustInfo.xml
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\obj\Release\bddc.Win.exe.manifest
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\obj\Release\bddc.Win.application
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\obj\Release\bddc.Win.exe
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\obj\Release\bddc.Win.xml
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\obj\Release\bddc.Win.pdb
+C:\Users\anapai.pan01.TBR\Desktop\LuxorPlayerClub - Instalador\bddc\bddc.Win\obj\Release\bddc.Win.XmlSerializers.dll

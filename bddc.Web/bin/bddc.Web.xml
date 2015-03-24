@@ -1,0 +1,117 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+bddc.Web
+</name>
+</assembly>
+<members>
+<member name="F:bddc.Web._default.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="M:bddc.Web.thlaadfs.wsSeguridad.#ctor">
+	<remarks/>
+</member><member name="E:bddc.Web.thlaadfs.wsSeguridad.HelloWorldCompleted">
+	<remarks/>
+</member><member name="E:bddc.Web.thlaadfs.wsSeguridad.IsAuthenticatedUserCompleted">
+	<remarks/>
+</member><member name="M:bddc.Web.thlaadfs.wsSeguridad.HelloWorld">
+	<remarks/>
+</member><member name="M:bddc.Web.thlaadfs.wsSeguridad.HelloWorldAsync">
+	<remarks/>
+</member><member name="M:bddc.Web.thlaadfs.wsSeguridad.HelloWorldAsync(System.Object)">
+	<remarks/>
+</member><member name="M:bddc.Web.thlaadfs.wsSeguridad.IsAuthenticatedUser(System.String,System.String)">
+	<remarks/>
+</member><member name="M:bddc.Web.thlaadfs.wsSeguridad.IsAuthenticatedUserAsync(System.String,System.String)">
+	<remarks/>
+</member><member name="M:bddc.Web.thlaadfs.wsSeguridad.IsAuthenticatedUserAsync(System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:bddc.Web.thlaadfs.wsSeguridad.CancelAsync(System.Object)">
+	<remarks/>
+</member><member name="T:bddc.Web.thlaadfs.wsSeguridad">
+	<remarks/>
+</member><member name="T:bddc.Web.thlaadfs.HelloWorldCompletedEventHandler">
+	<remarks/>
+</member><member name="P:bddc.Web.thlaadfs.HelloWorldCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:bddc.Web.thlaadfs.HelloWorldCompletedEventArgs">
+	<remarks/>
+</member><member name="T:bddc.Web.thlaadfs.IsAuthenticatedUserCompletedEventHandler">
+	<remarks/>
+</member><member name="P:bddc.Web.thlaadfs.IsAuthenticatedUserCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:bddc.Web.thlaadfs.IsAuthenticatedUserCompletedEventArgs">
+	<remarks/>
+</member><member name="F:bddc.Web.PagoProv.Form1">
+	<summary>
+Form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:bddc.Web.PagoProv.lblTitulo">
+	<summary>
+lblTitulo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:bddc.Web.PagoProv.lblVersion">
+	<summary>
+lblVersion control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:bddc.Web.PagoProv.lblOpcion">
+	<summary>
+lblOpcion control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:bddc.Web.PagoProv.lblMensaje">
+	<summary>
+lblMensaje control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:bddc.Web.PagoProv.txtNumRUC">
+	<summary>
+txtNumRUC control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:bddc.Web.PagoProv.btnBuscar">
+	<summary>
+btnBuscar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:bddc.Web.PagoProv.dgResultados">
+	<summary>
+dgResultados control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+</members>
+</doc>

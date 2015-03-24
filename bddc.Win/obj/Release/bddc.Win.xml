@@ -1,0 +1,646 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+bddc.Win
+</name>
+</assembly>
+<members>
+<member name="T:bddc.Win.xmlOperacionCajaRegistro.rpOperacionCajaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:bddc.Win.xmlOperacionCajaRegistro.rpOperacionCajaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:bddc.Win.xmlOperacionCajaRegistro.rpOperacionCajaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:bddc.Win.xmlOperacionCajaRegistro">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSet.Luxor_tbllim_grupoclientebaccaratDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSet.Fiesta_tblfjm_grupoclientebaccaratDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSet.Luxor_tblbdd_clienteDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSet.Luxor_tblbdd_consumo_ttrDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSet.Fiesta_tblbdd_clienteDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSet.Fiesta_tblbdd_consumo_ttrDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSet.Luxor_tblbdd_clienteBusquedaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSet.Fiesta_tblbdd_clienteBusquedaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSet.Luxor_tblttr_cliente_consumoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSet.Fiesta_tblttr_cliente_consumoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSet.Luxor_tblaux_tipocambioDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSet.Fiesta_tblaux_tipocambioDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSet.Luxor_viwbdd_cliente_crmDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSet.Fiesta_viwbdd_cliente_crmDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSet.Luxor_viwfcb_clientes_datosbasicosDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSet.Fiesta_viwfcb_clientes_datosbasicosDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSet.Luxor_viwbdd_cliente_slotsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSet.Fiesta_viwbdd_cliente_slotsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSet.Luxor_tbllim_grupoclientebaccaratRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSet.Fiesta_tblfjm_grupoclientebaccaratRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSet.Luxor_tblbdd_clienteRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSet.Luxor_tblbdd_consumo_ttrRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSet.Fiesta_tblbdd_clienteRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSet.Fiesta_tblbdd_consumo_ttrRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSet.Luxor_tblbdd_clienteBusquedaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSet.Fiesta_tblbdd_clienteBusquedaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSet.Luxor_tblttr_cliente_consumoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSet.Fiesta_tblttr_cliente_consumoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSet.Luxor_tblaux_tipocambioRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSet.Fiesta_tblaux_tipocambioRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSet.Luxor_viwbdd_cliente_crmRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSet.Fiesta_viwbdd_cliente_crmRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSet.Luxor_viwfcb_clientes_datosbasicosRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSet.Fiesta_viwfcb_clientes_datosbasicosRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSet.Luxor_viwbdd_cliente_slotsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSet.Fiesta_viwbdd_cliente_slotsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSet.Luxor_tbllim_grupoclientebaccaratRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSet.Fiesta_tblfjm_grupoclientebaccaratRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSet.Luxor_tblbdd_clienteRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSet.Luxor_tblbdd_consumo_ttrRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSet.Fiesta_tblbdd_clienteRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSet.Fiesta_tblbdd_consumo_ttrRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSet.Luxor_tblbdd_clienteBusquedaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSet.Fiesta_tblbdd_clienteBusquedaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSet.Luxor_tblttr_cliente_consumoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSet.Fiesta_tblttr_cliente_consumoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSet.Luxor_tblaux_tipocambioRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSet.Fiesta_tblaux_tipocambioRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSet.Luxor_viwbdd_cliente_crmRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSet.Fiesta_viwbdd_cliente_crmRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSet.Luxor_viwfcb_clientes_datosbasicosRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSet.Fiesta_viwfcb_clientes_datosbasicosRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSet.Luxor_viwbdd_cliente_slotsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSet.Fiesta_viwbdd_cliente_slotsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSetTableAdapters.Luxor_tbllim_grupoclientebaccaratTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSetTableAdapters.Fiesta_tblfjm_grupoclientebaccaratTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSetTableAdapters.Luxor_tblbdd_clienteTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSetTableAdapters.Luxor_tblbdd_consumo_ttrTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSetTableAdapters.Fiesta_tblbdd_clienteTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSetTableAdapters.Fiesta_tblbdd_consumo_ttrTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSetTableAdapters.Luxor_tblbdd_clienteBusquedaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSetTableAdapters.Fiesta_tblbdd_clienteBusquedaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSetTableAdapters.Luxor_tblttr_cliente_consumoTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSetTableAdapters.Fiesta_tblttr_cliente_consumoTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSetTableAdapters.Luxor_tblaux_tipocambioTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSetTableAdapters.Fiesta_tblaux_tipocambioTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSetTableAdapters.Luxor_viwbdd_cliente_crmTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSetTableAdapters.Fiesta_viwbdd_cliente_crmTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSetTableAdapters.Luxor_viwfcb_clientes_datosbasicosTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSetTableAdapters.Fiesta_viwfcb_clientes_datosbasicosTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSetTableAdapters.Luxor_viwbdd_cliente_slotsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSetTableAdapters.Fiesta_viwbdd_cliente_slotsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:bddc.Win.BDClientesDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(bddc.Win.BDClientesDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:bddc.Win.BDClientesDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(bddc.Win.BDClientesDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:bddc.Win.BDClientesDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(bddc.Win.BDClientesDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:bddc.Win.BDClientesDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:bddc.Win.BDClientesDataSetTableAdapters.TableAdapterManager.UpdateAll(bddc.Win.BDClientesDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="M:bddc.Win.thlaadfs.wsSeguridad.#ctor">
+	<remarks/>
+</member><member name="E:bddc.Win.thlaadfs.wsSeguridad.HelloWorldCompleted">
+	<remarks/>
+</member><member name="E:bddc.Win.thlaadfs.wsSeguridad.IsAuthenticatedUserCompleted">
+	<remarks/>
+</member><member name="M:bddc.Win.thlaadfs.wsSeguridad.HelloWorld">
+	<remarks/>
+</member><member name="M:bddc.Win.thlaadfs.wsSeguridad.HelloWorldAsync">
+	<remarks/>
+</member><member name="M:bddc.Win.thlaadfs.wsSeguridad.HelloWorldAsync(System.Object)">
+	<remarks/>
+</member><member name="M:bddc.Win.thlaadfs.wsSeguridad.IsAuthenticatedUser(System.String,System.String)">
+	<remarks/>
+</member><member name="M:bddc.Win.thlaadfs.wsSeguridad.IsAuthenticatedUserAsync(System.String,System.String)">
+	<remarks/>
+</member><member name="M:bddc.Win.thlaadfs.wsSeguridad.IsAuthenticatedUserAsync(System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:bddc.Win.thlaadfs.wsSeguridad.CancelAsync(System.Object)">
+	<remarks/>
+</member><member name="T:bddc.Win.thlaadfs.wsSeguridad">
+	<remarks/>
+</member><member name="T:bddc.Win.thlaadfs.HelloWorldCompletedEventHandler">
+	<remarks/>
+</member><member name="P:bddc.Win.thlaadfs.HelloWorldCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:bddc.Win.thlaadfs.HelloWorldCompletedEventArgs">
+	<remarks/>
+</member><member name="T:bddc.Win.thlaadfs.IsAuthenticatedUserCompletedEventHandler">
+	<remarks/>
+</member><member name="P:bddc.Win.thlaadfs.IsAuthenticatedUserCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:bddc.Win.thlaadfs.IsAuthenticatedUserCompletedEventArgs">
+	<remarks/>
+</member><member name="T:bddc.Win.xmlWinLossAnual.winloss_añosDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:bddc.Win.xmlWinLossAnual.RatingTotal_xAñoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:bddc.Win.xmlWinLossAnual.winloss_añosRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:bddc.Win.xmlWinLossAnual.RatingTotal_xAñoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:bddc.Win.xmlWinLossAnual.winloss_añosRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:bddc.Win.xmlWinLossAnual.RatingTotal_xAñoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:bddc.Win.xmlWinLossAnual">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:bddc.Win.xmlWinLossAnualTableAdapters.winloss_añosTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:bddc.Win.xmlWinLossAnualTableAdapters.TableAdapterManager.UpdateUpdatedRows(bddc.Win.xmlWinLossAnual,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:bddc.Win.xmlWinLossAnualTableAdapters.TableAdapterManager.UpdateInsertedRows(bddc.Win.xmlWinLossAnual,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:bddc.Win.xmlWinLossAnualTableAdapters.TableAdapterManager.UpdateDeletedRows(bddc.Win.xmlWinLossAnual,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:bddc.Win.xmlWinLossAnualTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:bddc.Win.xmlWinLossAnualTableAdapters.TableAdapterManager.UpdateAll(bddc.Win.xmlWinLossAnual)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:bddc.Win.xmlWinLossAnualTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:bddc.Win.xmlWinLossAnualTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:bddc.Win.xmlWinLossAnualTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="P:bddc.Win.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:bddc.Win.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:bddc.Win.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="T:bddc.Win.xmlClientePuntaje.rptClientePuntajeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:bddc.Win.xmlClientePuntaje.rptClientePuntajeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:bddc.Win.xmlClientePuntaje.rptClientePuntajeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:bddc.Win.xmlClientePuntaje">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:bddc.Win.xmlRatingDetalle.rptRatingDetalleDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:bddc.Win.xmlRatingDetalle.rptRatingDetalleRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:bddc.Win.xmlRatingDetalle.rptRatingDetalleRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:bddc.Win.xmlRatingDetalle">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:bddc.Win.xmlOperacionCajaReporte.rpRetiroEfectivoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:bddc.Win.xmlOperacionCajaReporte.rpVentaFichaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:bddc.Win.xmlOperacionCajaReporte.rpPagoManualDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:bddc.Win.xmlOperacionCajaReporte.rpRetiroEfectivoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:bddc.Win.xmlOperacionCajaReporte.rpVentaFichaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:bddc.Win.xmlOperacionCajaReporte.rpPagoManualRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:bddc.Win.xmlOperacionCajaReporte.rpRetiroEfectivoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:bddc.Win.xmlOperacionCajaReporte.rpVentaFichaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:bddc.Win.xmlOperacionCajaReporte.rpPagoManualRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:bddc.Win.xmlOperacionCajaReporte">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:bddc.Win.xmlRatingPit.rptRatingPitDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:bddc.Win.xmlRatingPit.rptRatingPitRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:bddc.Win.xmlRatingPit.rptRatingPitRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:bddc.Win.xmlRatingPit">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:bddc.Win.xmlCalendarioPuntaje.DataTableDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:bddc.Win.xmlCalendarioPuntaje.rptCalendarioPuntajeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:bddc.Win.xmlCalendarioPuntaje.DataTableRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:bddc.Win.xmlCalendarioPuntaje.rptCalendarioPuntajeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:bddc.Win.xmlCalendarioPuntaje.DataTableRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:bddc.Win.xmlCalendarioPuntaje.rptCalendarioPuntajeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:bddc.Win.xmlCalendarioPuntaje">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:bddc.Win.xmlCalendarioPuntajeTableAdapters.DataTableTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:bddc.Win.xmlCalendarioPuntajeTableAdapters.TableAdapterManager.UpdateUpdatedRows(bddc.Win.xmlCalendarioPuntaje,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:bddc.Win.xmlCalendarioPuntajeTableAdapters.TableAdapterManager.UpdateInsertedRows(bddc.Win.xmlCalendarioPuntaje,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:bddc.Win.xmlCalendarioPuntajeTableAdapters.TableAdapterManager.UpdateDeletedRows(bddc.Win.xmlCalendarioPuntaje,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:bddc.Win.xmlCalendarioPuntajeTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:bddc.Win.xmlCalendarioPuntajeTableAdapters.TableAdapterManager.UpdateAll(bddc.Win.xmlCalendarioPuntaje)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:bddc.Win.xmlCalendarioPuntajeTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:bddc.Win.xmlCalendarioPuntajeTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:bddc.Win.xmlCalendarioPuntajeTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:bddc.Win.xmlMesaOperacionFormato.dtDenominacionDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:bddc.Win.xmlMesaOperacionFormato.dtDenominacionRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:bddc.Win.xmlMesaOperacionFormato.dtDenominacionRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:bddc.Win.xmlMesaOperacionFormato">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:bddc.Win.xmlRatingTotal.rptRatingTotalDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:bddc.Win.xmlRatingTotal.rptRatingTotalRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:bddc.Win.xmlRatingTotal.rptRatingTotalRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:bddc.Win.xmlRatingTotal">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+</members>
+</doc>

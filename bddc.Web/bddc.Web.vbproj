@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{51402037-B004-48CB-BC56-76EF23319553}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>bddc.Web</RootNamespace>
+    <AssemblyName>bddc.Web</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>bddc.Web.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>bddc.Web.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ITLibrary, Version=1.0.8.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Library\ITLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="PageTable, Version=2.1.0.0, Culture=neutral, PublicKeyToken=84a5dfb7db4fd811">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Library\PageTable.dll</HintPath>
+    </Reference>
+    <Reference Include="skmmenu, Version=2.2.1768.42486, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Library\skmmenu.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="calendar\back_line.gif" />
+    <Content Include="calendar\calendar.gif" />
+    <Content Include="calendar\calendar.js" />
+    <Content Include="calendar\datetimepicker.html" />
+    <Content Include="calendar\datetimepicker.js" />
+    <Content Include="calendar\Exdate.html" />
+    <Content Include="calendar\GeneralFunctions.js" />
+    <Content Include="cli\frmClienteReg.aspx" />
+    <Content Include="css\EnConstruccion.aspx" />
+    <Content Include="css\menuStyle.css" />
+    <Content Include="css\Styles.css" />
+    <Content Include="default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="img\activo.gif" />
+    <Content Include="img\blank.gif" />
+    <Content Include="img\btnAdicionar.jpg" />
+    <Content Include="img\btnBorrar.jpg" />
+    <Content Include="img\btnBrowse.png" />
+    <Content Include="img\btnBuscar.gif" />
+    <Content Include="img\btnCancelar.gif" />
+    <Content Include="img\btnCancelar.jpg" />
+    <Content Include="img\btnClose.png" />
+    <Content Include="img\btnComment.gif" />
+    <Content Include="img\btnEditar.gif" />
+    <Content Include="img\btnGuardar.jpg" />
+    <Content Include="img\btnInactivo.gif" />
+    <Content Include="img\btnModificar.gif" />
+    <Content Include="img\btnOk.png" />
+    <Content Include="img\btnSave.png" />
+    <Content Include="img\btnSend.png" />
+    <Content Include="img\btnVer.gif" />
+    <Content Include="img\Buscar.gif" />
+    <Content Include="img\cabecera.swf" />
+    <Content Include="img\CargaMasiva.gif" />
+    <Content Include="img\construccion.gif" />
+    <Content Include="img\Crear.gif" />
+    <Content Include="img\CUH.gif" />
+    <Content Include="img\Editar.gif" />
+    <Content Include="img\Eliminar.gif" />
+    <Content Include="img\ElPueblo.png" />
+    <Content Include="img\Etapas.gif" />
+    <Content Include="img\Evento01.png" />
+    <Content Include="img\Evento02.png" />
+    <Content Include="img\Evento03.png" />
+    <Content Include="img\Evento04.png" />
+    <Content Include="img\Evento05.png" />
+    <Content Include="img\Evento06.png" />
+    <Content Include="img\Exportar.gif" />
+    <Content Include="img\fiesta.jpg" />
+    <Content Include="img\Grabar.gif" />
+    <Content Include="img\Header.jpg" />
+    <Content Include="img\Header.png" />
+    <Content Include="img\hotels v1.png" />
+    <Content Include="img\hotels.jpg" />
+    <Content Include="img\hotels.png" />
+    <Content Include="img\Imprimir.gif" />
+    <Content Include="img\inactivo.gif" />
+    <Content Include="img\isotipo1.gif" />
+    <Content Include="img\Modelos.gif" />
+    <Content Include="img\premios1.jpg" />
+    <Content Include="img\premios2.jpg" />
+    <Content Include="img\premios3.jpg" />
+    <Content Include="img\premios4.jpg" />
+    <Content Include="img\premios5.jpg" />
+    <Content Include="img\Proyectos.gif" />
+    <Content Include="img\refresh.png" />
+    <Content Include="img\resorts.jpg" />
+    <Content Include="img\TH01.gif" />
+    <Content Include="img\TH02.gif" />
+    <Content Include="img\TH03.gif" />
+    <Content Include="img\TH04.gif" />
+    <Content Include="img\TH05.gif" />
+    <Content Include="img\TH06.gif" />
+    <Content Include="img\ThunderbirdResorts_Fenix.gif" />
+    <Content Include="img\ThunderbirdResorts_Logo.gif" />
+    <Content Include="img\ThunderbirdResorts_Logo.jpg" />
+    <Content Include="img\Ver.gif" />
+    <Content Include="inc\footer.htm" />
+    <Content Include="inc\header.htm" />
+    <Content Include="inc\menu.xml" />
+    <Content Include="inc\ValidForm.js" />
+    <Content Include="ini\index.aspx" />
+    <None Include="Web References\thlaadfs\wsSeguridad.disco" />
+    <Content Include="tes\PagoProv.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cli\frmClienteReg.aspx.vb">
+      <DependentUpon>frmClienteReg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="css\EnConstruccion.aspx.vb">
+      <DependentUpon>EnConstruccion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="inc\Menu.vb" />
+    <Compile Include="inc\Pagina.vb" />
+    <Compile Include="ini\index.aspx.vb">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="tes\PagoProv.aspx.designer.vb">
+      <DependentUpon>PagoProv.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tes\PagoProv.aspx.vb">
+      <DependentUpon>PagoProv.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Web References\thlaadfs\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="cli\frmClienteReg.aspx.resx">
+      <DependentUpon>frmClienteReg.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="css\EnConstruccion.aspx.resx">
+      <DependentUpon>EnConstruccion.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ini\index.aspx.resx">
+      <DependentUpon>index.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\thlaadfs\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\thlaadfs\wsSeguridad.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\bddc.BEC\bddc.BEC.vbproj">
+      <Project>{1E7B7FB0-2DDB-406B-978D-295843806DC0}</Project>
+      <Name>bddc.BEC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\bddc.DALC\bddc.DALC.vbproj">
+      <Project>{58498D54-3F33-41C0-AAD5-95B4C613626D}</Project>
+      <Name>bddc.DALC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\bddc.Util\bddc.Util.vbproj">
+      <Project>{90B4C030-02DD-4C1E-98D9-C941B80BC812}</Project>
+      <Name>bddc.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://10.0.0.157/itpe.WebService/wsSeguridad.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\thlaadfs\</RelPath>
+      <UpdateFromURL>http://10.0.0.157/itpe.WebService/wsSeguridad.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>bddc_Web_thlaadfs_wsSeguridad</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="mov\" />
+    <Folder Include="tmp\" />
+    <Folder Include="xlt\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3141</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/bddc</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

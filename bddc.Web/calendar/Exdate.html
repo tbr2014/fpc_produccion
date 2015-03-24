@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+	<head>
+		<title>Date Example</title>
+		<script language="JavaScript" src="Calendar.js"></script>
+		<script language="JavaScript" src="GeneralFunctions.js"></script>
+		<script language="JavaScript">
+			var PickerPath="";
+		</script>
+	</head>
+	<body>
+		<table>
+			<tr>
+				<td class="GridCell">
+					<input type="text" name="EdtDate" size="14" maxlength="16" onblur="CheckDateTimeFormat(this.value, 'dd/mm/yyyy')">
+					<img border="0" name="ImgDate" src="calendar.gif" align="absMiddle"  onclick="getDateTime(EdtDate,true,false)" id="IMG1" width="21" height="19">
+				</td>
+			</tr>
+			<tr>
+				<td class="GridCell">
+					<input type="text" name="EdtTest" size="14" maxlength="16">
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

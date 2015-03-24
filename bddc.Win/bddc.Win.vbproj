@@ -1,0 +1,1551 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5AA8E0A0-A318-4BE7-AE56-03C0E610F614}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>bddc.Win.My.MyApplication</StartupObject>
+    <RootNamespace>bddc.Win</RootNamespace>
+    <AssemblyName>bddc.Win</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <ApplicationIcon>imgLogoFCB.ico</ApplicationIcon>
+    <SignManifests>false</SignManifests>
+    <TargetZone>LocalIntranet</TargetZone>
+    <GenerateManifests>true</GenerateManifests>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ManifestCertificateThumbprint>D665B9FD3689BD7AB12CAC002F2E5BD4E92059AD</ManifestCertificateThumbprint>
+    <ManifestKeyFile>bddc.Win_TemporaryKey.pfx</ManifestKeyFile>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DelaySign>false</DelaySign>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>\\172.20.1.2\Releases\FPC_Multicasino\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>Fiesta Player%27s Club MultiCasino</ProductName>
+    <PublisherName>IT</PublisherName>
+    <MinimumRequiredVersion>1.0.0.18</MinimumRequiredVersion>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.1.0.1</ApplicationVersion>
+    <UseApplicationTrust>true</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Absolute</BootstrapperComponentsLocation>
+    <BootstrapperComponentsUrl>\\172.20.1.2\Releases\FPC_Multicasino\Pre_requisites</BootstrapperComponentsUrl>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>bddc.Win.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Optimize>true</Optimize>
+    <WarningLevel>1</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>bddc.Win.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <WarningLevel>1</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Devart.Data, Version=5.0.746.0, Culture=neutral, PublicKeyToken=09af7300eec23701, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Devart.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Devart.Data.MySql, Version=7.7.287.0, Culture=neutral, PublicKeyToken=09af7300eec23701, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Devart.Data.MySql.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Shared.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\Infragistics4.Shared.v12.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.Misc.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\Infragistics4.Win.Misc.v12.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinGrid.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\Infragistics4.Win.UltraWinGrid.v12.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinStatusBar.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\Infragistics4.Win.UltraWinStatusBar.v12.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinToolbars.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\Infragistics4.Win.UltraWinToolbars.v12.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinTree.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\Infragistics4.Win.UltraWinTree.v12.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\Infragistics4.Win.v12.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.6.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>bin\Debug\MySQL.DataVersion6.6.4.0\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BDClientesDataSet.xsd.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BDClientesDataSet.xsd.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="caja\FormAperturaCaja.Designer.vb">
+      <DependentUpon>FormAperturaCaja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="caja\FormAperturaCaja.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="caja\FormCajasAbiertas.Designer.vb">
+      <DependentUpon>FormCajasAbiertas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="caja\FormCajasAbiertas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="caja\FormSesionCaja.Designer.vb">
+      <DependentUpon>FormSesionCaja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="caja\FormSesionCaja.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="com\ucFecha.Designer.vb">
+      <DependentUpon>ucFecha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="com\ucFecha.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="crm\frmClienteBuscarT.Designer.vb">
+      <DependentUpon>frmClienteBuscarT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="crm\frmClienteBuscarT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="crm\frmClienteBuscar.Designer.vb">
+      <DependentUpon>frmClienteBuscar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="crm\frmClienteBuscar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="crm\frmClienteBuscarL.Designer.vb">
+      <DependentUpon>frmClienteBuscarL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="crm\frmClienteBuscarL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="crm\frmClienteRegistro.Designer.vb">
+      <DependentUpon>frmClienteRegistro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="crm\frmClienteRegistro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="crm\clsColeccion.vb" />
+    <Compile Include="fcb\CyC\frmCajaBuscar.Designer.vb">
+      <DependentUpon>frmCajaBuscar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fcb\CyC\frmCajaBuscar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fcb\CyC\frmCajaRegistro.Designer.vb">
+      <DependentUpon>frmCajaRegistro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fcb\CyC\frmCajaRegistro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fcb\CyC\frmCajaRegistroImprimir.Designer.vb">
+      <DependentUpon>frmCajaRegistroImprimir.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fcb\CyC\frmCajaRegistroImprimir.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fcb\CyC\frmCajaRegistroOperador.Designer.vb">
+      <DependentUpon>frmCajaRegistroOperador.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fcb\CyC\frmCajaRegistroOperador.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fcb\CyC\frmCajaReporteImprimir.Designer.vb">
+      <DependentUpon>frmCajaReporteImprimir.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fcb\CyC\frmCajaReporteImprimir.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fcb\CyC\frmCajaReportes.Designer.vb">
+      <DependentUpon>frmCajaReportes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fcb\CyC\frmCajaReportes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fjm\FyC\frmMesasOperaciones.Designer.vb">
+      <DependentUpon>frmMesasOperaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fjm\FyC\frmMesasOperaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="com\ucFlotaFichas.Designer.vb">
+      <DependentUpon>ucFlotaFichas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="com\ucFlotaFichas.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="fjm\JdM\frmRatingTraslado.Designer.vb">
+      <DependentUpon>frmRatingTraslado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fjm\JdM\frmRatingTraslado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fjm\JdM\frmReporte10.Designer.vb">
+      <DependentUpon>frmReporte10.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fjm\JdM\frmReporte10.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fjm\JdM\frmReporte9.Designer.vb">
+      <DependentUpon>frmReporte9.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fjm\JdM\frmReporte9.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fjm\JdM\frmReporteRatingAnual.Designer.vb">
+      <DependentUpon>frmReporteRatingAnual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fjm\JdM\frmReporteRatingAnual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fjm\JdM\frmReportesMesas.Designer.vb">
+      <DependentUpon>frmReportesMesas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fjm\JdM\frmReportesMesas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ini\frmPrincipal2.Designer.vb">
+      <DependentUpon>frmPrincipal2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ini\frmPrincipal2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mkt\frmRptClientes_Promociones.Designer.vb">
+      <DependentUpon>frmRptClientes_Promociones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="mkt\frmRptClientes_Promociones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mkt\frmReportesMercadeo.Designer.vb">
+      <DependentUpon>frmReportesMercadeo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="mkt\frmReportesMercadeo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rpt\crOperacionCajaReportePagoManual_Fiesta.vb">
+      <DependentUpon>crOperacionCajaReportePagoManual_Fiesta.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="rpt\crOperacionCajaReporteRetEfec_Fiesta.vb">
+      <DependentUpon>crOperacionCajaReporteRetEfec_Fiesta.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="rpt\crComisionBacarat.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crComisionBacarat.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt\crComisionBaccarat2.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crComisionBaccarat2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt\crOperacionCajaRegistro.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crOperacionCajaRegistro.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt\crOperacionCajaReportePagoManual.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crOperacionCajaReportePagoManual.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt\crOperacionCajaReporteRetEfec.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crOperacionCajaReporteRetEfec.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt\crOperacionCajaReporteVentFich.vb">
+      <DependentUpon>crOperacionCajaReporteVentFich.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rpt\crRatingDetalle_cliente.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crRatingDetalle_cliente.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt\crRatingTotal_Anual.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crRatingTotal_Anual.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt\xmlMesaOperacionFormato.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>xmlMesaOperacionFormato.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="rpt\xmlMesaOperacionFormato.vb">
+      <DependentUpon>xmlMesaOperacionFormato.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="rpt\xmlOperacionCajaRegistro.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>xmlOperacionCajaRegistro.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="rpt\xmlOperacionCajaRegistro.vb">
+      <DependentUpon>xmlOperacionCajaRegistro.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="rpt\xmlOperacionCajaReporte.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>xmlOperacionCajaReporte.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="rpt\xmlOperacionCajaReporte.vb">
+      <DependentUpon>xmlOperacionCajaReporte.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="rpt\xmlWinLossAnual.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>xmlWinLossAnual.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="rpt\xmlWinLossAnual.vb">
+      <DependentUpon>xmlWinLossAnual.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sis\frmSeg_Config_Mesas.Designer.vb">
+      <DependentUpon>frmSeg_Config_Mesas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sis\frmSeg_Config_Mesas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sis\frmTasaCambio_luxor.Designer.vb">
+      <DependentUpon>frmTasaCambio_luxor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sis\frmTasaCambio_luxor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sis\frmSeg_Accesos.Designer.vb">
+      <DependentUpon>frmSeg_Accesos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sis\frmSeg_Accesos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sis\frmSeg_Usuarios.Designer.vb">
+      <DependentUpon>frmSeg_Usuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sis\frmSeg_Usuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sis\frmSis_Auditoria.Designer.vb">
+      <DependentUpon>frmSis_Auditoria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sis\frmSis_Auditoria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fjm\JdM\frmEstimadoMesas.Designer.vb">
+      <DependentUpon>frmEstimadoMesas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fjm\JdM\frmEstimadoMesas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fcb\IdT\frmClienteTicketsImprimir.Designer.vb">
+      <DependentUpon>frmClienteTicketsImprimir.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fcb\IdT\frmClienteTicketsImprimir.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mkt\frmProcesoTT.Designer.vb">
+      <DependentUpon>frmProcesoTT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="mkt\frmProcesoTT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fjm\JdM\frmReporte2.Designer.vb">
+      <DependentUpon>frmReporte2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fjm\JdM\frmReporte2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fjm\JdM\frmReporte5.Designer.vb">
+      <DependentUpon>frmReporte5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fjm\JdM\frmReporte5.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fjm\JdM\frmReporte6.Designer.vb">
+      <DependentUpon>frmReporte6.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fjm\JdM\frmReporte6.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fjm\JdM\frmReporte7.Designer.vb">
+      <DependentUpon>frmReporte7.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fjm\JdM\frmReporte7.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fjm\JdM\frmReporte8.Designer.vb">
+      <DependentUpon>frmReporte8.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fjm\JdM\frmReporte8.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ini\frmPrincipal.Designer.vb">
+      <DependentUpon>frmPrincipal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ini\frmPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rpt\crCalendarioPuntaje.vb">
+      <DependentUpon>crCalendarioPuntaje.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rpt\crClientePuntaje.vb">
+      <DependentUpon>crClientePuntaje.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rpt\crRatingDetalle.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crRatingDetalle.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt\crRatingPit.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crRatingPit.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt\crRatingTotal.vb">
+      <DependentUpon>crRatingTotal.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rpt\crResumenPuntajexJuego.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crResumenPuntajexJuego.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt\xmlCalendarioPuntaje.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>xmlCalendarioPuntaje.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="fcb\IdT\frmClienteTicketsBuscar.Designer.vb">
+      <DependentUpon>frmClienteTicketsBuscar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fcb\IdT\frmClienteTicketsBuscar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fjm\JdM\frmReporte1.Designer.vb">
+      <DependentUpon>frmReporte1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fjm\JdM\frmReporte1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mkt\frmRptCliente_Cumple.Designer.vb">
+      <DependentUpon>frmRptCliente_Cumple.vb</DependentUpon>
+    </Compile>
+    <Compile Include="mkt\frmRptCliente_Cumple.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mkt\frmRptClientes_Juegos.Designer.vb">
+      <DependentUpon>frmRptClientes_Juegos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="mkt\frmRptClientes_Juegos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fjm\JdM\frmRatingRegistro.Designer.vb">
+      <DependentUpon>frmRatingRegistro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fjm\JdM\frmRatingRegistro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sis\frmSis_Parametros.Designer.vb">
+      <DependentUpon>frmSis_Parametros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sis\frmSis_Parametros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ini\frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ini\frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="rpt\xmlCalendarioPuntaje.vb">
+      <DependentUpon>xmlCalendarioPuntaje.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="rpt\xmlClientePuntaje.Designer.vb">
+      <DependentUpon>xmlClientePuntaje.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rpt\xmlClientePuntaje.vb">
+      <DependentUpon>xmlClientePuntaje.xsd</DependentUpon>
+      <SubType>code</SubType>
+    </Compile>
+    <Compile Include="rpt\xmlRatingDetalle.Designer.vb">
+      <DependentUpon>xmlRatingDetalle.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rpt\xmlRatingDetalle.vb">
+      <DependentUpon>xmlRatingDetalle.xsd</DependentUpon>
+      <SubType>code</SubType>
+    </Compile>
+    <Compile Include="rpt\xmlRatingPit.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>xmlRatingPit.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="rpt\xmlRatingTotal.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>xmlRatingTotal.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="rpt\xmlRatingTotal.vb">
+      <DependentUpon>xmlRatingTotal.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sis\frmTasaCambio.Designer.vb">
+      <DependentUpon>frmTasaCambio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sis\frmTasaCambio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sis\frmTasaCambio_Tacna.Designer.vb">
+      <DependentUpon>frmTasaCambio_Tacna.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sis\frmTasaCambio_Tacna.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Web References\thlaadfs\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bddc.Win_TemporaryKey.pfx" />
+    <None Include="bin\Debug\rpt\rptRatingTotal_Anual.rdlc" />
+    <EmbeddedResource Include="caja\FormAperturaCaja.resx">
+      <DependentUpon>FormAperturaCaja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="caja\FormCajasAbiertas.resx">
+      <DependentUpon>FormCajasAbiertas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="caja\FormSesionCaja.resx">
+      <DependentUpon>FormSesionCaja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="com\ucFecha.resx">
+      <DependentUpon>ucFecha.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crm\frmClienteBuscarT.resx">
+      <DependentUpon>frmClienteBuscarT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crm\frmClienteBuscar.resx">
+      <DependentUpon>frmClienteBuscar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crm\frmClienteBuscarL.resx">
+      <DependentUpon>frmClienteBuscarL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crm\frmClienteRegistro.resx">
+      <DependentUpon>frmClienteRegistro.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fcb\CyC\frmCajaBuscar.resx">
+      <DependentUpon>frmCajaBuscar.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fcb\CyC\frmCajaRegistro.resx">
+      <DependentUpon>frmCajaRegistro.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fcb\CyC\frmCajaRegistroImprimir.resx">
+      <DependentUpon>frmCajaRegistroImprimir.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fcb\CyC\frmCajaRegistroOperador.resx">
+      <DependentUpon>frmCajaRegistroOperador.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fcb\CyC\frmCajaReporteImprimir.resx">
+      <DependentUpon>frmCajaReporteImprimir.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fcb\CyC\frmCajaReportes.resx">
+      <DependentUpon>frmCajaReportes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fjm\FyC\frmMesasOperaciones.resx">
+      <DependentUpon>frmMesasOperaciones.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="com\ucFlotaFichas.resx">
+      <DependentUpon>ucFlotaFichas.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fjm\JdM\frmRatingTraslado.resx">
+      <DependentUpon>frmRatingTraslado.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fjm\JdM\frmReporte10.resx">
+      <DependentUpon>frmReporte10.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fjm\JdM\frmReporte9.resx">
+      <DependentUpon>frmReporte9.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fjm\JdM\frmReporteRatingAnual.resx">
+      <DependentUpon>frmReporteRatingAnual.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fjm\JdM\frmReportesMesas.resx">
+      <DependentUpon>frmReportesMesas.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ini\frmPrincipal2.resx">
+      <DependentUpon>frmPrincipal2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mkt\frmRptClientes_Promociones.resx">
+      <DependentUpon>frmRptClientes_Promociones.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mkt\frmReportesMercadeo.resx">
+      <DependentUpon>frmReportesMercadeo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\rptRatingTotal_Anual.rdlc" />
+    <EmbeddedResource Include="rpt\crOperacionCajaReportePagoManual_Fiesta.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crOperacionCajaReportePagoManual_Fiesta.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\crOperacionCajaReporteRetEfec_Fiesta.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crOperacionCajaReporteRetEfec_Fiesta.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\crComisionBacarat.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crComisionBacarat.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\crComisionBaccarat2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crComisionBaccarat2.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\crOperacionCajaRegistro.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crOperacionCajaRegistro.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\crOperacionCajaReportePagoManual.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crOperacionCajaReportePagoManual.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fjm\FyC\rptOperacionMesa.rdlc" />
+    <EmbeddedResource Include="rpt\crOperacionCajaReporteRetEfec.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crOperacionCajaReporteRetEfec.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\crOperacionCajaReporteVentFich.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crOperacionCajaReporteVentFich.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\crRatingDetalle_cliente.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crRatingDetalle_cliente.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\crRatingTotal_Anual.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crRatingTotal_Anual.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\RptBaccarat3.rdlc" />
+    <EmbeddedResource Include="sis\frmSeg_Config_Mesas.resx">
+      <DependentUpon>frmSeg_Config_Mesas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sis\frmTasaCambio_luxor.resx">
+      <DependentUpon>frmTasaCambio_luxor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sis\frmSeg_Accesos.resx">
+      <DependentUpon>frmSeg_Accesos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sis\frmSeg_Usuarios.resx">
+      <DependentUpon>frmSeg_Usuarios.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sis\frmSis_Auditoria.resx">
+      <DependentUpon>frmSis_Auditoria.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fjm\JdM\frmEstimadoMesas.resx">
+      <DependentUpon>frmEstimadoMesas.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fcb\IdT\frmClienteTicketsImprimir.resx">
+      <DependentUpon>frmClienteTicketsImprimir.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mkt\frmProcesoTT.resx">
+      <DependentUpon>frmProcesoTT.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fjm\JdM\frmReporte2.resx">
+      <DependentUpon>frmReporte2.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fjm\JdM\frmReporte5.resx">
+      <DependentUpon>frmReporte5.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fjm\JdM\frmReporte6.resx">
+      <DependentUpon>frmReporte6.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fjm\JdM\frmReporte7.resx">
+      <DependentUpon>frmReporte7.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fjm\JdM\frmReporte8.resx">
+      <DependentUpon>frmReporte8.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fcb\IdT\frmClienteTicketsBuscar.resx">
+      <DependentUpon>frmClienteTicketsBuscar.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fjm\JdM\frmReporte1.resx">
+      <DependentUpon>frmReporte1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mkt\frmRptCliente_Cumple.resx">
+      <DependentUpon>frmRptCliente_Cumple.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mkt\frmRptClientes_Juegos.resx">
+      <DependentUpon>frmRptClientes_Juegos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fjm\JdM\frmRatingRegistro.resx">
+      <DependentUpon>frmRatingRegistro.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sis\frmSis_Parametros.resx">
+      <DependentUpon>frmSis_Parametros.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fjm\JdM\rptFCBTicket01.rdlc" />
+    <EmbeddedResource Include="ini\frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ini\frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\crCalendarioPuntaje.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crCalendarioPuntaje.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\crClientePuntaje.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crClientePuntaje.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\crRatingDetalle.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crRatingDetalle.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\crRatingPit.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crRatingPit.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\crRatingTotal.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crRatingTotal.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\crResumenPuntajexJuego.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crResumenPuntajexJuego.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sis\frmTasaCambio.resx">
+      <DependentUpon>frmTasaCambio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sis\frmTasaCambio_Tacna.resx">
+      <DependentUpon>frmTasaCambio_Tacna.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgClientes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\bddc.BEC\bddc.BEC.vbproj">
+      <Project>{1E7B7FB0-2DDB-406B-978D-295843806DC0}</Project>
+      <Name>bddc.BEC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\bddc.DALC\bddc.DALC.vbproj">
+      <Project>{58498D54-3F33-41C0-AAD5-95B4C613626D}</Project>
+      <Name>bddc.DALC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\bddc.Util\bddc.Util.vbproj">
+      <Project>{90B4C030-02DD-4C1E-98D9-C941B80BC812}</Project>
+      <Name>bddc.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgReportes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="imgLogoFCB.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="BDClientesDataSet.xsd.xsc">
+      <DependentUpon>BDClientesDataSet.xsd.xsd</DependentUpon>
+    </None>
+    <None Include="BDClientesDataSet.xsd.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BDClientesDataSet.xsd.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="BDClientesDataSet.xsd.xss">
+      <DependentUpon>BDClientesDataSet.xsd.xsd</DependentUpon>
+    </None>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Resources\btnSalida.png" />
+    <None Include="Resources\imgTrasladoRating.png" />
+    <None Include="Resources\imgAccesos.png" />
+    <None Include="Resources\imgUsuarios.png" />
+    <None Include="Resources\imgMovimMesas.png" />
+    <None Include="Resources\btnFJMRelleno.gif" />
+    <None Include="Resources\btnFJMCredito.gif" />
+    <None Include="Resources\imgCajayConteo.png" />
+    <None Include="Resources\imgMercadeoPromocion.png" />
+    <None Include="Resources\imgMercadeoCortesias.png" />
+    <None Include="Resources\btnFJMCierre.png" />
+    <None Include="Resources\imgTipoCambio.png" />
+    <None Include="Resources\imgLogin.png" />
+    <None Include="Resources\caja.jpg" />
+    <None Include="Resources\btnAperturaCaja.png" />
+    <None Include="Resources\btnCajasAbiertas.png" />
+    <Content Include="Resources\TasaCambio.gif" />
+    <Content Include="Resources\update.jpg" />
+    <Content Include="Styles.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="rpt\xmlMesaOperacionFormato.xsc">
+      <DependentUpon>xmlMesaOperacionFormato.xsd</DependentUpon>
+    </None>
+    <None Include="rpt\xmlMesaOperacionFormato.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>xmlMesaOperacionFormato.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="rpt\xmlMesaOperacionFormato.xss">
+      <DependentUpon>xmlMesaOperacionFormato.xsd</DependentUpon>
+    </None>
+    <None Include="rpt\xmlOperacionCajaRegistro.xsc">
+      <DependentUpon>xmlOperacionCajaRegistro.xsd</DependentUpon>
+    </None>
+    <None Include="rpt\xmlOperacionCajaRegistro.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>xmlOperacionCajaRegistro.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="rpt\xmlOperacionCajaRegistro.xss">
+      <DependentUpon>xmlOperacionCajaRegistro.xsd</DependentUpon>
+    </None>
+    <None Include="rpt\xmlOperacionCajaReporte.xsc">
+      <DependentUpon>xmlOperacionCajaReporte.xsd</DependentUpon>
+    </None>
+    <None Include="rpt\xmlOperacionCajaReporte.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>xmlOperacionCajaReporte.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="rpt\xmlOperacionCajaReporte.xss">
+      <DependentUpon>xmlOperacionCajaReporte.xsd</DependentUpon>
+    </None>
+    <None Include="rpt\xmlWinLossAnual.xsc">
+      <DependentUpon>xmlWinLossAnual.xsd</DependentUpon>
+    </None>
+    <None Include="rpt\xmlWinLossAnual.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>xmlWinLossAnual.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="rpt\xmlWinLossAnual.xss">
+      <DependentUpon>xmlWinLossAnual.xsd</DependentUpon>
+    </None>
+    <None Include="Web References\thlaadfs\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\thlaadfs\wsSeguridad.disco" />
+    <None Include="Resources\btngridGuardar.jpg" />
+    <None Include="Resources\btngridBorrar.jpg" />
+    <None Include="Resources\btngridNuevo.gif" />
+    <None Include="Resources\imgEstimadoMesa.png" />
+    <None Include="Resources\btnNo.gif" />
+    <None Include="Resources\btnOk.gif" />
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="rpt\xmlCalendarioPuntaje.xsc">
+      <DependentUpon>xmlCalendarioPuntaje.xsd</DependentUpon>
+    </None>
+    <None Include="rpt\xmlCalendarioPuntaje.xsd">
+      <SubType>
+      </SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>xmlCalendarioPuntaje.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="rpt\xmlCalendarioPuntaje.xss">
+      <DependentUpon>xmlCalendarioPuntaje.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\imgAuditoria.png" />
+    <None Include="Resources\btnBuscar.png" />
+    <None Include="Resources\btngridBuscar.gif" />
+    <None Include="Resources\btngridBorrarFila.gif" />
+    <None Include="Resources\imgImpresion.png" />
+    <None Include="Resources\btnImprimir.png" />
+    <None Include="Resources\btnImprimirCli.png" />
+    <None Include="Resources\imgSalir.png" />
+    <None Include="Resources\imgRuleta.png" />
+    <None Include="Resources\btnVolver.png" />
+    <None Include="Resources\btnGuardar.png" />
+    <None Include="Resources\btnNuevoCli.png" />
+    <None Include="Resources\imgSistema.png" />
+    <None Include="Resources\imgLogoFCB.png" />
+    <None Include="rpt\xmlClientePuntaje.xsc">
+      <DependentUpon>xmlClientePuntaje.xsd</DependentUpon>
+    </None>
+    <None Include="rpt\xmlClientePuntaje.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>xmlClientePuntaje.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="rpt\xmlClientePuntaje.xss">
+      <DependentUpon>xmlClientePuntaje.xsd</DependentUpon>
+    </None>
+    <None Include="rpt\xmlRatingDetalle.xsc">
+      <DependentUpon>xmlRatingDetalle.xsd</DependentUpon>
+    </None>
+    <None Include="rpt\xmlRatingDetalle.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>xmlRatingDetalle.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="rpt\xmlRatingDetalle.xss">
+      <DependentUpon>xmlRatingDetalle.xsd</DependentUpon>
+    </None>
+    <None Include="rpt\xmlRatingPit.xsc">
+      <DependentUpon>xmlRatingPit.xsd</DependentUpon>
+    </None>
+    <None Include="rpt\xmlRatingPit.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>xmlRatingPit.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="rpt\xmlRatingPit.xss">
+      <DependentUpon>xmlRatingPit.xsd</DependentUpon>
+    </None>
+    <None Include="rpt\xmlRatingTotal.xsc">
+      <DependentUpon>xmlRatingTotal.xsd</DependentUpon>
+    </None>
+    <None Include="rpt\xmlRatingTotal.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>xmlRatingTotal.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="rpt\xmlRatingTotal.xss">
+      <DependentUpon>xmlRatingTotal.xsd</DependentUpon>
+    </None>
+    <None Include="Web References\thlaadfs\wsSeguridad.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.ReportViewer.10.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft Visual Studio 2010 Report Viewer</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.VSTORuntime.4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft Visual Studio 2010 Tools for Office Runtime %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="SAP.CrystalReports14.NET.2.0">
+      <Visible>False</Visible>
+      <ProductName>SAP Crystal Reports Runtime Engine for .NET Framework</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://10.0.0.157/itpe.WebService/wsSeguridad.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\thlaadfs\</RelPath>
+      <UpdateFromURL>http://10.0.0.157/itpe.WebService/wsSeguridad.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>bddc_Win_thlaadfs_wsSeguridad</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="ADODB">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.CrystalReports.Engine">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.ClientDoc">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CommLayer">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CommonControls">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CommonObjectModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.Controllers">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CubeDefModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.DataDefModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.DataSetConversion">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.ObjectFactory">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.Prompting">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.ReportDefModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.XmlSerialize">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportSource">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.Shared">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.Windows.Forms">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Devart.Data">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Devart.Data.MySql">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="FlashControlV71">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.UltraWinTabControl.v10.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics4.Shared.v12.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics4.Win.Misc.v12.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics4.Win.UltraWinEditors.v12.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics4.Win.UltraWinGrid.v12.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics4.Win.UltraWinStatusBar.v12.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics4.Win.UltraWinTabControl.v12.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics4.Win.UltraWinToolbars.v12.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics4.Win.UltraWinTree.v12.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics4.Win.v12.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="log4net">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.Common">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.ProcessingObjectModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="ShockwaveFlashObjects">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="stdole">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

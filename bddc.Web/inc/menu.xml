@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<menu>		
+	<menuItem>
+		<text>Inicio</text>
+		<url>/bddc/ini/index.aspx</url>
+	</menuItem>
+	
+	<menuItem>
+		<text>Clientes</text>
+		<subMenu>
+			<menuItem>					
+				<text>Registro</text>
+				<url>/bddc/cli/frmClienteReg.aspx</url>				
+			</menuItem>			
+            <menuItem>
+                <text>Búsqueda</text>
+                <url>/bddc/cli/frmClienteBus.aspx</url>
+            </menuItem>
+        </subMenu>
+        <roles>MODCLI</roles>	
+	</menuItem>
+
+    <menuItem>
+        <text>Movimientos</text>
+        <subMenu>
+            <menuItem>
+                <text>Registro</text>
+                <url>/bddc/mov/frmMovimientoReg.aspx</url>
+            </menuItem>       
+            <menuItem>
+                <text>Búsqueda</text>
+                <url>/bddc/mov/frmMovimientoBus.aspx</url>
+            </menuItem>
+        </subMenu>
+        <roles>MODMOV</roles>
+    </menuItem>
+
+    <menuItem>
+        <text>Juego de Mesas</text>
+        <subMenu>
+            <menuItem>
+                <text>Procesos</text>
+                <url>/bddc/mov/frmMovimientoReg.aspx</url>
+            </menuItem>
+            <menuItem>
+                <text>Reportes</text>
+                <url>/bddc/mov/frmMovimientoBus.aspx</url>
+            </menuItem>
+        </subMenu>
+        <roles>MODMOV</roles>
+    </menuItem>
+        				
+	<menuItem>
+		<text>Seguridad</text>
+		<subMenu>
+			<menuItem>					
+				<text>Usuarios</text>
+				<url>/bddc/seg/frmSegUsr.aspx</url>				
+			</menuItem>
+			<menuItem>					
+				<text>Auditoría de Eventos</text>
+				<url>/bddc/seg/frmSegAud.aspx</url>				
+			</menuItem>
+			<menuItem>					
+				<text>Parámetros</text>
+				<url>/bddc/ini/EnConstruccion.aspx</url>	
+				<roles>MODTBL</roles>		
+			</menuItem>						
+		</subMenu>	
+		<roles>MODSEG</roles>
+	</menuItem>
+							
+	<menuItem>
+		<text>Salir</text>
+		<subMenu>
+			<menuItem>
+				<text>Cerrar sesión</text>
+				<url>/bddc/ini/logout.aspx</url>		
+			</menuItem>
+		</subMenu>
+	</menuItem>
+</menu>
+

@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="xmlWinLossAnual" targetNamespace="http://tempuri.org/xmlWinLossAnual.xsd" xmlns:mstns="http://tempuri.org/xmlWinLossAnual.xsd" xmlns="http://tempuri.org/xmlWinLossAnual.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="bdclienteConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="bdclienteConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.bddc.Win.My.MySettings.GlobalReference.Default.bdclienteConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="winloss_añosTableAdapter" GeneratorDataComponentClassName="winloss_añosTableAdapter" Name="winloss_años" UserDataComponentName="winloss_añosTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="bdclienteConnectionString (MySettings)" DbObjectName="bdcliente.winloss_x_cliemes" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill_Year" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill_Year" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill_Year">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT DISTINCT _YEAR
+FROM         winloss_x_cliemes</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="_YEAR" DataSetColumn="_YEAR" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="xmlWinLossAnual" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="xmlWinLossAnual" msprop:Generator_DataSetName="xmlWinLossAnual" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="RatingTotal_xAño" msprop:Generator_UserTableName="RatingTotal_xAño" msprop:Generator_RowDeletedName="RatingTotal_xAñoRowDeleted" msprop:Generator_RowChangedName="RatingTotal_xAñoRowChanged" msprop:Generator_RowClassName="RatingTotal_xAñoRow" msprop:Generator_RowChangingName="RatingTotal_xAñoRowChanging" msprop:Generator_RowEvArgName="RatingTotal_xAñoRowChangeEvent" msprop:Generator_RowEvHandlerName="RatingTotal_xAñoRowChangeEventHandler" msprop:Generator_TableClassName="RatingTotal_xAñoDataTable" msprop:Generator_TableVarName="tableRatingTotal_xAño" msprop:Generator_RowDeletingName="RatingTotal_xAñoRowDeleting" msprop:Generator_TablePropName="RatingTotal_xAño">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="_YEAR" msprop:Generator_UserColumnName="_YEAR" msprop:Generator_ColumnPropNameInRow="_YEAR" msprop:Generator_ColumnVarNameInTable="column_YEAR" msprop:Generator_ColumnPropNameInTable="_YEARColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DropENe" msprop:Generator_UserColumnName="DropENe" msprop:Generator_ColumnPropNameInRow="DropENe" msprop:Generator_ColumnVarNameInTable="columnDropENe" msprop:Generator_ColumnPropNameInTable="DropENeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="WinLossENE" msprop:Generator_UserColumnName="WinLossENE" msprop:Generator_ColumnPropNameInRow="WinLossENE" msprop:Generator_ColumnVarNameInTable="columnWinLossENE" msprop:Generator_ColumnPropNameInTable="WinLossENEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DropFEB" msprop:Generator_UserColumnName="DropFEB" msprop:Generator_ColumnPropNameInRow="DropFEB" msprop:Generator_ColumnVarNameInTable="columnDropFEB" msprop:Generator_ColumnPropNameInTable="DropFEBColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="WinLossFEB" msprop:Generator_UserColumnName="WinLossFEB" msprop:Generator_ColumnPropNameInRow="WinLossFEB" msprop:Generator_ColumnVarNameInTable="columnWinLossFEB" msprop:Generator_ColumnPropNameInTable="WinLossFEBColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DropMAR" msprop:Generator_UserColumnName="DropMAR" msprop:Generator_ColumnPropNameInRow="DropMAR" msprop:Generator_ColumnVarNameInTable="columnDropMAR" msprop:Generator_ColumnPropNameInTable="DropMARColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="WinLossMAR" msprop:Generator_UserColumnName="WinLossMAR" msprop:Generator_ColumnPropNameInRow="WinLossMAR" msprop:Generator_ColumnVarNameInTable="columnWinLossMAR" msprop:Generator_ColumnPropNameInTable="WinLossMARColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DropABR" msprop:Generator_UserColumnName="DropABR" msprop:Generator_ColumnPropNameInRow="DropABR" msprop:Generator_ColumnVarNameInTable="columnDropABR" msprop:Generator_ColumnPropNameInTable="DropABRColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="WinLossABR" msprop:Generator_UserColumnName="WinLossABR" msprop:Generator_ColumnPropNameInRow="WinLossABR" msprop:Generator_ColumnVarNameInTable="columnWinLossABR" msprop:Generator_ColumnPropNameInTable="WinLossABRColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DropMAY" msprop:Generator_UserColumnName="DropMAY" msprop:Generator_ColumnPropNameInRow="DropMAY" msprop:Generator_ColumnVarNameInTable="columnDropMAY" msprop:Generator_ColumnPropNameInTable="DropMAYColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="WinLossMAY" msprop:Generator_UserColumnName="WinLossMAY" msprop:Generator_ColumnPropNameInRow="WinLossMAY" msprop:Generator_ColumnVarNameInTable="columnWinLossMAY" msprop:Generator_ColumnPropNameInTable="WinLossMAYColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DropJUN" msprop:Generator_UserColumnName="DropJUN" msprop:Generator_ColumnPropNameInRow="DropJUN" msprop:Generator_ColumnVarNameInTable="columnDropJUN" msprop:Generator_ColumnPropNameInTable="DropJUNColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="WinLossJUN" msprop:Generator_UserColumnName="WinLossJUN" msprop:Generator_ColumnPropNameInRow="WinLossJUN" msprop:Generator_ColumnVarNameInTable="columnWinLossJUN" msprop:Generator_ColumnPropNameInTable="WinLossJUNColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DropJUL" msprop:Generator_UserColumnName="DropJUL" msprop:Generator_ColumnPropNameInRow="DropJUL" msprop:Generator_ColumnVarNameInTable="columnDropJUL" msprop:Generator_ColumnPropNameInTable="DropJULColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="WinLossJUL" msprop:Generator_UserColumnName="WinLossJUL" msprop:Generator_ColumnPropNameInRow="WinLossJUL" msprop:Generator_ColumnVarNameInTable="columnWinLossJUL" msprop:Generator_ColumnPropNameInTable="WinLossJULColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DropAGO" msprop:Generator_UserColumnName="DropAGO" msprop:Generator_ColumnPropNameInRow="DropAGO" msprop:Generator_ColumnVarNameInTable="columnDropAGO" msprop:Generator_ColumnPropNameInTable="DropAGOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="WinLossAGO" msprop:Generator_UserColumnName="WinLossAGO" msprop:Generator_ColumnPropNameInRow="WinLossAGO" msprop:Generator_ColumnVarNameInTable="columnWinLossAGO" msprop:Generator_ColumnPropNameInTable="WinLossAGOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DropSEP" msprop:Generator_UserColumnName="DropSEP" msprop:Generator_ColumnPropNameInRow="DropSEP" msprop:Generator_ColumnVarNameInTable="columnDropSEP" msprop:Generator_ColumnPropNameInTable="DropSEPColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="WinLossSEP" msprop:Generator_UserColumnName="WinLossSEP" msprop:Generator_ColumnPropNameInRow="WinLossSEP" msprop:Generator_ColumnVarNameInTable="columnWinLossSEP" msprop:Generator_ColumnPropNameInTable="WinLossSEPColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DropOCT" msprop:Generator_UserColumnName="DropOCT" msprop:Generator_ColumnPropNameInRow="DropOCT" msprop:Generator_ColumnVarNameInTable="columnDropOCT" msprop:Generator_ColumnPropNameInTable="DropOCTColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="WinLossOCT" msprop:Generator_UserColumnName="WinLossOCT" msprop:Generator_ColumnPropNameInRow="WinLossOCT" msprop:Generator_ColumnVarNameInTable="columnWinLossOCT" msprop:Generator_ColumnPropNameInTable="WinLossOCTColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DropNOV" msprop:Generator_UserColumnName="DropNOV" msprop:Generator_ColumnPropNameInRow="DropNOV" msprop:Generator_ColumnVarNameInTable="columnDropNOV" msprop:Generator_ColumnPropNameInTable="DropNOVColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="WinLossNOV" msprop:Generator_UserColumnName="WinLossNOV" msprop:Generator_ColumnPropNameInRow="WinLossNOV" msprop:Generator_ColumnVarNameInTable="columnWinLossNOV" msprop:Generator_ColumnPropNameInTable="WinLossNOVColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DropDIC" msprop:Generator_UserColumnName="DropDIC" msprop:Generator_ColumnPropNameInRow="DropDIC" msprop:Generator_ColumnVarNameInTable="columnDropDIC" msprop:Generator_ColumnPropNameInTable="DropDICColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="WinLossDIC" msprop:Generator_UserColumnName="WinLossDIC" msprop:Generator_ColumnPropNameInRow="WinLossDIC" msprop:Generator_ColumnVarNameInTable="columnWinLossDIC" msprop:Generator_ColumnPropNameInTable="WinLossDICColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Droptotal" msprop:Generator_UserColumnName="Droptotal" msprop:Generator_ColumnPropNameInRow="Droptotal" msprop:Generator_ColumnVarNameInTable="columnDroptotal" msprop:Generator_ColumnPropNameInTable="DroptotalColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="WinLossTotal" msprop:Generator_UserColumnName="WinLossTotal" msprop:Generator_ColumnPropNameInRow="WinLossTotal" msprop:Generator_ColumnVarNameInTable="columnWinLossTotal" msprop:Generator_ColumnPropNameInTable="WinLossTotalColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ClienteCodigo" msprop:Generator_UserColumnName="ClienteCodigo" msprop:Generator_ColumnVarNameInTable="columnClienteCodigo" msprop:Generator_ColumnPropNameInRow="ClienteCodigo" msprop:Generator_ColumnPropNameInTable="ClienteCodigoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ClienteNombres" msprop:Generator_UserColumnName="ClienteNombres" msprop:Generator_ColumnVarNameInTable="columnClienteNombres" msprop:Generator_ColumnPropNameInRow="ClienteNombres" msprop:Generator_ColumnPropNameInTable="ClienteNombresColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ClienteApellidos" msprop:Generator_UserColumnName="ClienteApellidos" msprop:Generator_ColumnVarNameInTable="columnClienteApellidos" msprop:Generator_ColumnPropNameInRow="ClienteApellidos" msprop:Generator_ColumnPropNameInTable="ClienteApellidosColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="winloss_años" msprop:Generator_UserTableName="winloss_años" msprop:Generator_RowDeletedName="winloss_añosRowDeleted" msprop:Generator_TableClassName="winloss_añosDataTable" msprop:Generator_RowChangedName="winloss_añosRowChanged" msprop:Generator_RowClassName="winloss_añosRow" msprop:Generator_RowChangingName="winloss_añosRowChanging" msprop:Generator_RowEvArgName="winloss_añosRowChangeEvent" msprop:Generator_RowEvHandlerName="winloss_añosRowChangeEventHandler" msprop:Generator_TablePropName="winloss_años" msprop:Generator_TableVarName="tablewinloss_años" msprop:Generator_RowDeletingName="winloss_añosRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="_YEAR" msprop:Generator_UserColumnName="_YEAR" msprop:Generator_ColumnPropNameInRow="_YEAR" msprop:Generator_ColumnVarNameInTable="column_YEAR" msprop:Generator_ColumnPropNameInTable="_YEARColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

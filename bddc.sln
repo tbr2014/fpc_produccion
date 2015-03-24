@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "bddc.BEC", "bddc.BEC\bddc.BEC.vbproj", "{1E7B7FB0-2DDB-406B-978D-295843806DC0}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "bddc.DALC", "bddc.DALC\bddc.DALC.vbproj", "{58498D54-3F33-41C0-AAD5-95B4C613626D}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "bddc.Util", "bddc.Util\bddc.Util.vbproj", "{90B4C030-02DD-4C1E-98D9-C941B80BC812}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "bddc.Win", "bddc.Win\bddc.Win.vbproj", "{5AA8E0A0-A318-4BE7-AE56-03C0E610F614}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "LuxorPlayerClub_Setup", "LuxorPlayerClub_Setup\LuxorPlayerClub_Setup.vdproj", "{B25651B0-FDD5-46E8-8F2E-09BEC40CEE2D}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "FCP_MultiCasino_Setup", "FCP_MultiCasino_Setup\FCP_MultiCasino_Setup.vdproj", "{12488289-2981-43C3-BACB-149CA075FC54}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1E7B7FB0-2DDB-406B-978D-295843806DC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E7B7FB0-2DDB-406B-978D-295843806DC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E7B7FB0-2DDB-406B-978D-295843806DC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E7B7FB0-2DDB-406B-978D-295843806DC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58498D54-3F33-41C0-AAD5-95B4C613626D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58498D54-3F33-41C0-AAD5-95B4C613626D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58498D54-3F33-41C0-AAD5-95B4C613626D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58498D54-3F33-41C0-AAD5-95B4C613626D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90B4C030-02DD-4C1E-98D9-C941B80BC812}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90B4C030-02DD-4C1E-98D9-C941B80BC812}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90B4C030-02DD-4C1E-98D9-C941B80BC812}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90B4C030-02DD-4C1E-98D9-C941B80BC812}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AA8E0A0-A318-4BE7-AE56-03C0E610F614}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AA8E0A0-A318-4BE7-AE56-03C0E610F614}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AA8E0A0-A318-4BE7-AE56-03C0E610F614}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AA8E0A0-A318-4BE7-AE56-03C0E610F614}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B25651B0-FDD5-46E8-8F2E-09BEC40CEE2D}.Debug|Any CPU.ActiveCfg = Debug
+		{B25651B0-FDD5-46E8-8F2E-09BEC40CEE2D}.Release|Any CPU.ActiveCfg = Release
+		{12488289-2981-43C3-BACB-149CA075FC54}.Debug|Any CPU.ActiveCfg = Debug
+		{12488289-2981-43C3-BACB-149CA075FC54}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
