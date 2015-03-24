@@ -2070,3 +2070,7 @@ C:\Users\USER\Desktop\FPC AMBIENTE DE DESARROLLO\bddc\bddc.Win\obj\Debug\bddc.Wi
 C:\Users\USER\Desktop\FPC AMBIENTE DE DESARROLLO\bddc\bddc.Win\obj\Debug\bddc.Win.exe
 C:\Users\USER\Desktop\FPC AMBIENTE DE DESARROLLO\bddc\bddc.Win\obj\Debug\bddc.Win.xml
 C:\Users\USER\Desktop\FPC AMBIENTE DE DESARROLLO\bddc\bddc.Win\obj\Debug\bddc.Win.pdb
+C:\FPC AMBIENTE DE DESARROLLO\bddc\bddc.Win\bin\Debug\bddc.Win.exe.config
+C:\FPC AMBIENTE DE DESARROLLO\bddc\bddc.Win\obj\Debug\bddc.Win.exe
+C:\FPC AMBIENTE DE DESARROLLO\bddc\bddc.Win\obj\Debug\bddc.Win.xml
+C:\FPC AMBIENTE DE DESARROLLO\bddc\bddc.Win\obj\Debug\bddc.Win.pdb
