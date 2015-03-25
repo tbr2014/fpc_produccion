@@ -1,2 +1,2 @@
 # bddc
-Fiesta Player Club
+Fiesta Player Club - Codigo para Desarrollo y pruebas de la aplicación
