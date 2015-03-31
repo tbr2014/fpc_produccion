@@ -67,6 +67,7 @@
               </xs:element>
               <xs:element name="EstadoId" msprop:Generator_ColumnVarNameInTable="columnEstadoId" msprop:Generator_ColumnPropNameInRow="EstadoId" msprop:Generator_ColumnPropNameInTable="EstadoIdColumn" msprop:Generator_UserColumnName="EstadoId" type="xs:short" minOccurs="0" />
               <xs:element name="UserName" msprop:Generator_ColumnVarNameInTable="columnUserName" msprop:Generator_ColumnPropNameInRow="UserName" msprop:Generator_ColumnPropNameInTable="UserNameColumn" msprop:Generator_UserColumnName="UserName" type="xs:string" minOccurs="0" />
+              <xs:element name="OperacionModalidadId" msprop:Generator_ColumnVarNameInTable="columnOperacionModalidadId" msprop:Generator_ColumnPropNameInRow="OperacionModalidadId" msprop:Generator_ColumnPropNameInTable="OperacionModalidadIdColumn" msprop:Generator_UserColumnName="OperacionModalidadId" type="xs:short" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

@@ -286,7 +286,7 @@
                         objFrm.Dispose()
 
                     Case "EMPRESA DE PRUEBA"
-                        Dim objFrm As New frmTasaCambio
+                        Dim objFrm As New frmTasaCambio_Prueba
                         objFrm.ShowDialog()
                         objFrm.Dispose()
                 End Select

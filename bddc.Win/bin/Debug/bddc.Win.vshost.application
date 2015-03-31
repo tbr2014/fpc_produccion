@@ -14,14 +14,14 @@
     <framework targetVersion="4.0" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="bddc.Win.exe.manifest" size="19618">
+    <dependentAssembly dependencyType="install" codebase="bddc.Win.exe.manifest" size="19919">
       <assemblyIdentity name="bddc.Win.exe" version="1.1.0.1" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>OnOBsAR5oqXP42v7PI1gFDaDM1Y=</dsig:DigestValue>
+        <dsig:DigestValue>2nvGdsx1eoEM/VYCgLPuVMoGEWI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

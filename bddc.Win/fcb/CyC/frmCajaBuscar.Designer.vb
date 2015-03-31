@@ -22,29 +22,32 @@ Partial Class frmCajaBuscar
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox
-        Me.statusStrip1 = New System.Windows.Forms.StatusStrip
-        Me.tssMensaje = New System.Windows.Forms.ToolStripStatusLabel
-        Me.gbEstados = New System.Windows.Forms.GroupBox
-        Me.chkActivos = New System.Windows.Forms.CheckBox
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox
-        Me.chkFiltro = New System.Windows.Forms.CheckBox
-        Me.btnVolver = New System.Windows.Forms.Button
-        Me.gbCaja = New System.Windows.Forms.GroupBox
-        Me.cboCaja = New System.Windows.Forms.ComboBox
-        Me.gbFechaRegistro = New System.Windows.Forms.GroupBox
-        Me.ucFechaProceso = New bddc.Win.ucFecha
-        Me.btnBuscar = New System.Windows.Forms.Button
-        Me.dgvResultados = New System.Windows.Forms.DataGridView
-        Me.Ver2 = New System.Windows.Forms.DataGridViewImageColumn
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.statusStrip1 = New System.Windows.Forms.StatusStrip()
+        Me.tssMensaje = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.gbEstados = New System.Windows.Forms.GroupBox()
+        Me.chkActivos = New System.Windows.Forms.CheckBox()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.chkFiltro = New System.Windows.Forms.CheckBox()
+        Me.gbCaja = New System.Windows.Forms.GroupBox()
+        Me.cboCaja = New System.Windows.Forms.ComboBox()
+        Me.gbFechaRegistro = New System.Windows.Forms.GroupBox()
+        Me.ucFechaProceso = New bddc.Win.ucFecha()
+        Me.dgvResultados = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewImageColumn1 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.btnExport = New System.Windows.Forms.Button()
+        Me.Ver2 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.btnBuscar = New System.Windows.Forms.Button()
+        Me.btnVolver = New System.Windows.Forms.Button()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.FolderBrowserDialog1 = New System.Windows.Forms.FolderBrowserDialog()
         Me.statusStrip1.SuspendLayout()
         Me.gbEstados.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.gbCaja.SuspendLayout()
         Me.gbFechaRegistro.SuspendLayout()
         CType(Me.dgvResultados, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label2
@@ -57,17 +60,6 @@ Partial Class frmCajaBuscar
         Me.Label2.TabIndex = 71
         Me.Label2.Text = "Registro de Transacción en Caja"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox2.Image = Global.bddc.Win.My.Resources.Resources.imgCajayConteo
-        Me.PictureBox2.Location = New System.Drawing.Point(12, 12)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(59, 57)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox2.TabIndex = 72
-        Me.PictureBox2.TabStop = False
         '
         'statusStrip1
         '
@@ -124,17 +116,6 @@ Partial Class frmCajaBuscar
         Me.chkFiltro.Text = "Sólo los Registros para Imprimir"
         Me.chkFiltro.UseVisualStyleBackColor = True
         '
-        'btnVolver
-        '
-        Me.btnVolver.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnVolver.BackgroundImage = Global.bddc.Win.My.Resources.Resources.btnSalida
-        Me.btnVolver.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.btnVolver.Location = New System.Drawing.Point(533, 601)
-        Me.btnVolver.Name = "btnVolver"
-        Me.btnVolver.Size = New System.Drawing.Size(53, 53)
-        Me.btnVolver.TabIndex = 92
-        Me.btnVolver.UseVisualStyleBackColor = True
-        '
         'gbCaja
         '
         Me.gbCaja.Controls.Add(Me.cboCaja)
@@ -171,18 +152,6 @@ Partial Class frmCajaBuscar
         Me.ucFechaProceso.Size = New System.Drawing.Size(96, 25)
         Me.ucFechaProceso.TabIndex = 78
         '
-        'btnBuscar
-        '
-        Me.btnBuscar.BackgroundImage = Global.bddc.Win.My.Resources.Resources.btngridBuscar
-        Me.btnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.btnBuscar.Location = New System.Drawing.Point(535, 79)
-        Me.btnBuscar.Name = "btnBuscar"
-        Me.btnBuscar.Size = New System.Drawing.Size(51, 38)
-        Me.btnBuscar.TabIndex = 95
-        Me.btnBuscar.Text = "Buscar"
-        Me.btnBuscar.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.btnBuscar.UseVisualStyleBackColor = True
-        '
         'dgvResultados
         '
         Me.dgvResultados.AllowUserToAddRows = False
@@ -200,6 +169,25 @@ Partial Class frmCajaBuscar
         Me.dgvResultados.Size = New System.Drawing.Size(574, 414)
         Me.dgvResultados.TabIndex = 98
         '
+        'DataGridViewImageColumn1
+        '
+        Me.DataGridViewImageColumn1.HeaderText = ""
+        Me.DataGridViewImageColumn1.Image = Global.bddc.Win.My.Resources.Resources.btngridNuevo
+        Me.DataGridViewImageColumn1.Name = "DataGridViewImageColumn1"
+        Me.DataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DataGridViewImageColumn1.ToolTipText = "Ver Registro"
+        Me.DataGridViewImageColumn1.Width = 5
+        '
+        'btnExport
+        '
+        Me.btnExport.Image = Global.bddc.Win.My.Resources.Resources.excel
+        Me.btnExport.Location = New System.Drawing.Point(553, 12)
+        Me.btnExport.Name = "btnExport"
+        Me.btnExport.Size = New System.Drawing.Size(33, 33)
+        Me.btnExport.TabIndex = 99
+        Me.btnExport.UseVisualStyleBackColor = True
+        Me.btnExport.Visible = False
+        '
         'Ver2
         '
         Me.Ver2.HeaderText = ""
@@ -209,11 +197,46 @@ Partial Class frmCajaBuscar
         Me.Ver2.ToolTipText = "Ver Registro"
         Me.Ver2.Width = 5
         '
+        'btnBuscar
+        '
+        Me.btnBuscar.BackgroundImage = Global.bddc.Win.My.Resources.Resources.btngridBuscar
+        Me.btnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.btnBuscar.Location = New System.Drawing.Point(535, 79)
+        Me.btnBuscar.Name = "btnBuscar"
+        Me.btnBuscar.Size = New System.Drawing.Size(51, 38)
+        Me.btnBuscar.TabIndex = 95
+        Me.btnBuscar.Text = "Buscar"
+        Me.btnBuscar.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnBuscar.UseVisualStyleBackColor = True
+        '
+        'btnVolver
+        '
+        Me.btnVolver.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnVolver.BackgroundImage = Global.bddc.Win.My.Resources.Resources.btnSalida
+        Me.btnVolver.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.btnVolver.Location = New System.Drawing.Point(533, 601)
+        Me.btnVolver.Name = "btnVolver"
+        Me.btnVolver.Size = New System.Drawing.Size(53, 53)
+        Me.btnVolver.TabIndex = 92
+        Me.btnVolver.UseVisualStyleBackColor = True
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox2.Image = Global.bddc.Win.My.Resources.Resources.imgCajayConteo
+        Me.PictureBox2.Location = New System.Drawing.Point(12, 12)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(59, 57)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 72
+        Me.PictureBox2.TabStop = False
+        '
         'frmCajaBuscar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(594, 681)
+        Me.Controls.Add(Me.btnExport)
         Me.Controls.Add(Me.dgvResultados)
         Me.Controls.Add(Me.btnBuscar)
         Me.Controls.Add(Me.gbFechaRegistro)
@@ -228,7 +251,6 @@ Partial Class frmCajaBuscar
         Me.Name = "frmCajaBuscar"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Lista de Transacciones en Caja"
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.statusStrip1.ResumeLayout(False)
         Me.statusStrip1.PerformLayout()
         Me.gbEstados.ResumeLayout(False)
@@ -238,6 +260,7 @@ Partial Class frmCajaBuscar
         Me.gbCaja.ResumeLayout(False)
         Me.gbFechaRegistro.ResumeLayout(False)
         CType(Me.dgvResultados, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -258,4 +281,7 @@ Partial Class frmCajaBuscar
     Friend WithEvents btnBuscar As System.Windows.Forms.Button
     Friend WithEvents dgvResultados As System.Windows.Forms.DataGridView
     Friend WithEvents Ver2 As System.Windows.Forms.DataGridViewImageColumn
+    Friend WithEvents btnExport As System.Windows.Forms.Button
+    Friend WithEvents DataGridViewImageColumn1 As System.Windows.Forms.DataGridViewImageColumn
+    Friend WithEvents FolderBrowserDialog1 As System.Windows.Forms.FolderBrowserDialog
 End Class

@@ -1,4 +1,7 @@
-﻿Public Class frmCajaBuscar
+﻿Imports System.Windows.Forms
+Imports System.IO
+
+Public Class frmCajaBuscar
 
 #Region "Atributos"
     Private objHorario As Util.clsHorario
@@ -108,7 +111,6 @@
             End Select
         Catch ex As Exception
             'Me.tssMensaje.Text = ex.Message
-
         Finally
             objDL = Nothing
         End Try
@@ -128,46 +130,16 @@
             .Add(Util.Enumeracion.enmResultadoOperacion.NONE)
         End With
 
+        'Limpiar el datasource del grid
+        dgvResultados.DataSource = ""
+
         arrResultado = objDALC.Buscar(arrFiltro, frmLogin.Unidad)
 
         If arrResultado IsNot Nothing Then
             dgvResultados.Visible = True
             dgvResultados.DataSource = arrResultado
 
-            dgvResultados.Columns("OperacionCajaId").Visible = False
-            dgvResultados.Columns(1).HeaderText = "No. Registro"
-            dgvResultados.Columns.Remove("OperacionFecha")
-            dgvResultados.Columns.Remove("SujetoObligado")
-            dgvResultados.Columns.Remove("OficialCumplimiento")
-            dgvResultados.Columns("OperacionMontoMonedaId").Visible = False
-            dgvResultados.Columns("OperacionTipoCambio").Visible = False
-            dgvResultados.Columns.Remove("OperacionModalidadId")
-            dgvResultados.Columns.Remove("OperacionTipoId")
-            dgvResultados.Columns("OperacionMontoImporte").Visible = False
-            dgvResultados.Columns.Remove("OperacionReferencia")
-            dgvResultados.Columns.Remove("OperacionTarjetaNum")
-            dgvResultados.Columns.Remove("OperacionCaja")
-            dgvResultados.Columns.Remove("ClienteId")
-            dgvResultados.Columns.Remove("ClienteDocumento")
-            dgvResultados.Columns(6).HeaderText = "Cliente"
-            dgvResultados.Columns(7).HeaderText = "Hora"
-            dgvResultados.Columns(8).HeaderText = "Monto"
-            dgvResultados.Columns.Remove("OperacionFichaCantidad")
-            dgvResultados.Columns.Remove("OperacionFichaDenominacion")
-            dgvResultados.Columns.Remove("OperacionMaquinaNum")
-            dgvResultados.Columns.Remove("OperacionComentario")
-            dgvResultados.Columns("EstadoId").Visible = False
-            'dgvResultados.Columns.Remove("EstadoId")
-            dgvResultados.Columns.Remove("NumRegistro")
-            dgvResultados.Columns.Remove("UserName")
-            dgvResultados.Columns.Remove("AudCreac_UsuarioId")
-            dgvResultados.Columns.Remove("AudCreac_Fecha")
-            dgvResultados.Columns.Remove("AudEdic_UsuarioId")
-            dgvResultados.Columns.Remove("AudCreac_Usuario")
-            dgvResultados.Columns.Remove("AudEdic_Fecha")
-            dgvResultados.Columns.Remove("AudEdic_Usuario")
-            dgvResultados.Columns.Remove("TipoTarjetaCred")
-
+            CleanDGV()
 
             tssMensaje.Text = Replace(Util.Constante.Ope_BuscarNUMREG, "XX", arrResultado.Count.ToString)
 
@@ -263,6 +235,7 @@
 
                         If arrResultadosFiltrados.Count > 0 Then
                             dgvResultados.DataSource = arrResultadosFiltrados
+                            CleanDGV()
                             MarcarRegistros()
 
                             tssMensaje.Text = Replace(Util.Constante.Ope_BuscarNUMREG, "XX", arrResultadosFiltrados.Count.ToString)
@@ -288,11 +261,183 @@
 
     End Sub
 
+    Private Sub CleanDGV()
+        '1.-
+        dgvResultados.Columns("OperacionCajaId").Visible = False
+        '2.-
+        dgvResultados.Columns(2).HeaderText = "No. Registro"
+        '3.-
+        dgvResultados.Columns("OperacionFecha").Visible = False
+
+        dgvResultados.Columns.Remove("SujetoObligado")
+        dgvResultados.Columns.Remove("OficialCumplimiento")
+
+        '4.-
+        dgvResultados.Columns("OperacionMontoMonedaId").Visible = False
+        '5.-
+        dgvResultados.Columns("OperacionMontoImporte").Visible = False
+        '6.-
+        dgvResultados.Columns("OperacionTipoCambio").Visible = False
+
+        dgvResultados.Columns.Remove("OperacionModalidadId")
+
+        '7.-
+        dgvResultados.Columns("OperacionTipoId").Visible = False
+
+        dgvResultados.Columns.Remove("OperacionReferencia")
+        dgvResultados.Columns.Remove("OperacionTarjetaNum")
+        dgvResultados.Columns.Remove("OperacionCaja")
+
+        '8.-
+        dgvResultados.Columns("ClienteId").Visible = False
+        '9.-
+        dgvResultados.Columns(9).HeaderText = "Cliente"
+
+        dgvResultados.Columns.Remove("ClienteDocumento")
+
+        '10.-
+        dgvResultados.Columns(10).HeaderText = "Hora"
+        '11.-
+        dgvResultados.Columns(11).HeaderText = "Monto"
+
+        dgvResultados.Columns.Remove("OperacionFichaCantidad")
+        dgvResultados.Columns.Remove("OperacionFichaDenominacion")
+        dgvResultados.Columns.Remove("OperacionMaquinaNum")
+        dgvResultados.Columns.Remove("OperacionComentario")
+
+        '12.-
+        dgvResultados.Columns("EstadoId").Visible = False
+
+        dgvResultados.Columns.Remove("NumRegistro")
+        dgvResultados.Columns.Remove("UserName")
+        dgvResultados.Columns.Remove("TipoTarjetaCred")
+
+        '14.-
+        dgvResultados.Columns("NombreCaja").Visible = False
+        '15.-
+        dgvResultados.Columns("TipoDocumento").Visible = False
+        '16.-
+        dgvResultados.Columns("NumeroDocumento").Visible = False
+
+        dgvResultados.Columns.Remove("AudCreac_UsuarioId")
+        dgvResultados.Columns.Remove("AudCreac_Fecha")
+        dgvResultados.Columns.Remove("AudEdic_UsuarioId")
+        dgvResultados.Columns.Remove("AudCreac_Usuario")
+        dgvResultados.Columns.Remove("AudEdic_Fecha")
+        dgvResultados.Columns.Remove("AudEdic_Usuario")
+    End Sub
+
+    Private Sub Exportar()
+
+        Dim result As DialogResult = folderBrowserDialog1.ShowDialog()
+        Dim Path As String
+        Dim di As DirectoryInfo
+        Dim outputFile As String
+        Dim Fecha As String = DateTime.Now.ToString("MM-dd-yy")
+        Dim TipoOp As Integer
+        Dim TipoOpNombre As String
+        Dim ClienteTipoDoc As Integer
+        Dim NumeroDoc As String
+        Dim Nombre As String
+
+        If result = DialogResult.OK Then
+            Path = FolderBrowserDialog1.SelectedPath
+        End If
+
+        If Not Directory.Exists(Path) Then
+            di = Directory.CreateDirectory(Path)
+        End If
+
+        'Ruta para exportar
+        outputFile = Path & "\" & "ReporteRegistroTransacciónCaja_" & Fecha & ".csv"
+
+        'Verificar que el datagridview tenga informacion
+        If dgvResultados.RowCount > 0 Then
+
+            Using writer As StreamWriter = New StreamWriter(outputFile)
+
+                writer.WriteLine("Fecha, Codigo_Operacion, DNI_Cliente, Nombre, Caja, Hora, Monto, Tipo_Operacion")
+
+                For Each row As DataGridViewRow In dgvResultados.Rows
+                    'Obtener el valor de la celda de los diferentes campos
+
+                    '1. Fecha
+                    writer.Write(row.Cells(3).Value.ToString())
+                    writer.Write(",")
+
+                    '2. Codigo Operacion
+                    writer.Write(row.Cells(2).Value.ToString())
+                    writer.Write(",")
+
+                    '3. DNI
+                    ClienteTipoDoc = Convert.ToInt32(row.Cells(15).Value.ToString())
+                    Select Case ClienteTipoDoc
+                        Case 0
+                            NumeroDoc = "No registrado"
+                        Case 1
+                            NumeroDoc = "DNI-" & row.Cells(16).Value.ToString()
+                        Case 2
+                            NumeroDoc = "CE-" & row.Cells(16).Value.ToString()
+                        Case 3
+                            NumeroDoc = "PAS-" & row.Cells(16).Value.ToString()
+                        Case 4
+                            NumeroDoc = "CEDULA-" & row.Cells(16).Value.ToString()
+                    End Select
+                    writer.Write(NumeroDoc)
+                    writer.Write(",")
+
+                    '4. Nombre
+                    Nombre = row.Cells(9).Value.ToString()
+                    Nombre = Nombre.Replace(",", "")
+                    writer.Write(Nombre)
+                    writer.Write(",")
+
+                    '5. Caja
+                    writer.Write(row.Cells(14).Value.ToString())
+                    writer.Write(",")
+
+                    '6. Hora
+                    writer.Write(row.Cells(10).Value.ToString())
+                    writer.Write(",")
+
+                    '7. Monto
+                    writer.Write(row.Cells(11).Value.ToString())
+                    writer.Write(",")
+
+                    '8. Tipo Operacion
+                    TipoOp = Convert.ToInt32(row.Cells(7).Value.ToString())
+                    Select Case TipoOp
+                        Case 1
+                            TipoOpNombre = "Canje Dinero por Fichas"
+                        Case 2
+                            TipoOpNombre = "Canje Fichas por Dinero"
+                        Case 3
+                            TipoOpNombre = "Canje Tickets Slots"
+                        Case 4
+                            TipoOpNombre = "Canje Tickets por Fichas"
+                        Case 5
+                            TipoOpNombre = "Cobro premio Jackpot"
+                        Case 6
+                            TipoOpNombre = "Retiro Efectivo"
+                    End Select
+                    writer.Write(TipoOpNombre)
+
+                    writer.WriteLine()
+                Next
+
+            End Using
+
+            tssMensaje.Text = Util.Constante.Ope_ExportarReporte
+        End If
+    End Sub
+
 #End Region
 
 #Region "Eventos de Controles"
 
     Private Sub frmCajaBuscar_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        btnExport.Visible = False
+
         LeerParametros()
 
         'objHorario = New Util.clsHorario
@@ -331,6 +476,14 @@
 
     Private Sub Filtro(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles chkFiltro.CheckedChanged, chkActivos.CheckedChanged
         LeerOperacionesCaja()
+
+        If chkFiltro.Checked = True Then
+            btnExport.Visible = True
+        End If
+        If chkFiltro.Checked = False Then
+            btnExport.Visible = False
+        End If
+
     End Sub
 
     Private Sub btnVolver_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnVolver.Click
@@ -341,4 +494,14 @@
         LeerOperacionesCaja()
     End Sub
 
+    Private Sub btnExport_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnExport.Click
+        Try
+            Exportar()
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        Finally
+
+        End Try
+
+    End Sub
 End Class

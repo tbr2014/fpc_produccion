@@ -51,6 +51,10 @@ Namespace FCB
         Private strUserName As String
         Private strNumRegistro As String
         Private TipoTarjeta As String
+        Private Caja As String
+        Private TipoDoc As Integer
+        Private NumDoc As String
+
 
 
         Public Sub New()
@@ -306,6 +310,33 @@ Namespace FCB
             End Get
             Set(ByVal Value As String)
                 TipoTarjeta = Value
+            End Set
+        End Property
+
+        Public Property NombreCaja() As String
+            Get
+                Return Caja
+            End Get
+            Set(ByVal Value As String)
+                Caja = Value
+            End Set
+        End Property
+
+        Public Property TipoDocumento() As Integer
+            Get
+                Return TipoDoc
+            End Get
+            Set(ByVal Value As Integer)
+                TipoDoc = Value
+            End Set
+        End Property
+
+        Public Property NumeroDocumento() As String
+            Get
+                Return NumDoc
+            End Get
+            Set(ByVal Value As String)
+                NumDoc = Value
             End Set
         End Property
 

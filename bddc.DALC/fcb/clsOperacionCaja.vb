@@ -108,6 +108,9 @@ Namespace FCB
                             .EstadoId = dato.EsNuloBD(dtsResultado.Tables(0).Rows(k)("EstadoId"))
                             .UserId = dato.EsNuloBD(dtsResultado.Tables(0).Rows(k)("UserId"))
                             .NumRegistro = dato.EsNuloBD(dtsResultado.Tables(0).Rows(k)("numRegistro"))
+                            .NombreCaja = dato.EsNuloBD(dtsResultado.Tables(0).Rows(k)("Caja"))
+                            .TipoDocumento = dato.EsNuloBD(dtsResultado.Tables(0).Rows(k)("ClienteTipoDoc"))
+                            .NumeroDocumento = dato.EsNuloBD(dtsResultado.Tables(0).Rows(k)("NumDoc"))
                         End With
 
                         arrResultados.Add(objBEC)

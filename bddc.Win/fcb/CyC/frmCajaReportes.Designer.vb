@@ -22,24 +22,24 @@ Partial Class frmCajaReportes
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox
-        Me.btnReporteVentaFichas = New System.Windows.Forms.Button
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox
-        Me.btnReportePagosManuales = New System.Windows.Forms.Button
-        Me.btnReporteRetiroEfectivo = New System.Windows.Forms.Button
-        Me.btnVolver = New System.Windows.Forms.Button
-        Me.gbFechaRegistro = New System.Windows.Forms.GroupBox
-        Me.Label3 = New System.Windows.Forms.Label
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.gbCaja = New System.Windows.Forms.GroupBox
-        Me.cboCaja = New System.Windows.Forms.ComboBox
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox
-        Me.btnBuscarUsuario = New System.Windows.Forms.Button
-        Me.txtCliente = New System.Windows.Forms.TextBox
-        Me.chkClientes = New System.Windows.Forms.CheckBox
-        Me.ucFechaProcesoFin = New bddc.Win.ucFecha
-        Me.ucFechaProcesoIni = New bddc.Win.ucFecha
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.btnReporteVentaFichas = New System.Windows.Forms.Button()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btnReportePagosManuales = New System.Windows.Forms.Button()
+        Me.btnReporteRetiroEfectivo = New System.Windows.Forms.Button()
+        Me.btnVolver = New System.Windows.Forms.Button()
+        Me.gbFechaRegistro = New System.Windows.Forms.GroupBox()
+        Me.ucFechaProcesoFin = New bddc.Win.ucFecha()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.ucFechaProcesoIni = New bddc.Win.ucFecha()
+        Me.gbCaja = New System.Windows.Forms.GroupBox()
+        Me.cboCaja = New System.Windows.Forms.ComboBox()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.btnBuscarUsuario = New System.Windows.Forms.Button()
+        Me.txtCliente = New System.Windows.Forms.TextBox()
+        Me.chkClientes = New System.Windows.Forms.CheckBox()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.gbFechaRegistro.SuspendLayout()
@@ -86,14 +86,14 @@ Partial Class frmCajaReportes
         Me.GroupBox1.Controls.Add(Me.btnReporteVentaFichas)
         Me.GroupBox1.Location = New System.Drawing.Point(12, 214)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(303, 140)
+        Me.GroupBox1.Size = New System.Drawing.Size(303, 134)
         Me.GroupBox1.TabIndex = 1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Reportes"
         '
         'btnReportePagosManuales
         '
-        Me.btnReportePagosManuales.Location = New System.Drawing.Point(12, 92)
+        Me.btnReportePagosManuales.Location = New System.Drawing.Point(15, 92)
         Me.btnReportePagosManuales.Name = "btnReportePagosManuales"
         Me.btnReportePagosManuales.Size = New System.Drawing.Size(271, 29)
         Me.btnReportePagosManuales.TabIndex = 2
@@ -114,7 +114,7 @@ Partial Class frmCajaReportes
         Me.btnVolver.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.btnVolver.BackgroundImage = Global.bddc.Win.My.Resources.Resources.btnSalida
         Me.btnVolver.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.btnVolver.Location = New System.Drawing.Point(268, 360)
+        Me.btnVolver.Location = New System.Drawing.Point(268, 354)
         Me.btnVolver.Name = "btnVolver"
         Me.btnVolver.Size = New System.Drawing.Size(47, 39)
         Me.btnVolver.TabIndex = 3
@@ -127,12 +127,20 @@ Partial Class frmCajaReportes
         Me.gbFechaRegistro.Controls.Add(Me.Label3)
         Me.gbFechaRegistro.Controls.Add(Me.Label1)
         Me.gbFechaRegistro.Controls.Add(Me.ucFechaProcesoIni)
-        Me.gbFechaRegistro.Location = New System.Drawing.Point(12, 91)
+        Me.gbFechaRegistro.Location = New System.Drawing.Point(12, 85)
         Me.gbFechaRegistro.Name = "gbFechaRegistro"
         Me.gbFechaRegistro.Size = New System.Drawing.Size(236, 42)
         Me.gbFechaRegistro.TabIndex = 2
         Me.gbFechaRegistro.TabStop = False
         Me.gbFechaRegistro.Text = "Fecha Registro"
+        '
+        'ucFechaProcesoFin
+        '
+        Me.ucFechaProcesoFin.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.ucFechaProcesoFin.Location = New System.Drawing.Point(135, 12)
+        Me.ucFechaProcesoFin.Name = "ucFechaProcesoFin"
+        Me.ucFechaProcesoFin.Size = New System.Drawing.Size(96, 25)
+        Me.ucFechaProcesoFin.TabIndex = 81
         '
         'Label3
         '
@@ -154,11 +162,19 @@ Partial Class frmCajaReportes
         Me.Label1.TabIndex = 79
         Me.Label1.Text = "De"
         '
+        'ucFechaProcesoIni
+        '
+        Me.ucFechaProcesoIni.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.ucFechaProcesoIni.Location = New System.Drawing.Point(31, 12)
+        Me.ucFechaProcesoIni.Name = "ucFechaProcesoIni"
+        Me.ucFechaProcesoIni.Size = New System.Drawing.Size(96, 25)
+        Me.ucFechaProcesoIni.TabIndex = 78
+        '
         'gbCaja
         '
         Me.gbCaja.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.gbCaja.Controls.Add(Me.cboCaja)
-        Me.gbCaja.Location = New System.Drawing.Point(254, 91)
+        Me.gbCaja.Location = New System.Drawing.Point(254, 85)
         Me.gbCaja.Name = "gbCaja"
         Me.gbCaja.Size = New System.Drawing.Size(61, 42)
         Me.gbCaja.TabIndex = 77
@@ -181,7 +197,7 @@ Partial Class frmCajaReportes
         Me.GroupBox2.Controls.Add(Me.btnBuscarUsuario)
         Me.GroupBox2.Controls.Add(Me.txtCliente)
         Me.GroupBox2.Controls.Add(Me.chkClientes)
-        Me.GroupBox2.Location = New System.Drawing.Point(12, 139)
+        Me.GroupBox2.Location = New System.Drawing.Point(12, 133)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(236, 72)
         Me.GroupBox2.TabIndex = 78
@@ -219,27 +235,11 @@ Partial Class frmCajaReportes
         Me.chkClientes.Text = "Todos"
         Me.chkClientes.UseVisualStyleBackColor = True
         '
-        'ucFechaProcesoFin
-        '
-        Me.ucFechaProcesoFin.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.ucFechaProcesoFin.Location = New System.Drawing.Point(135, 12)
-        Me.ucFechaProcesoFin.Name = "ucFechaProcesoFin"
-        Me.ucFechaProcesoFin.Size = New System.Drawing.Size(96, 25)
-        Me.ucFechaProcesoFin.TabIndex = 81
-        '
-        'ucFechaProcesoIni
-        '
-        Me.ucFechaProcesoIni.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.ucFechaProcesoIni.Location = New System.Drawing.Point(31, 12)
-        Me.ucFechaProcesoIni.Name = "ucFechaProcesoIni"
-        Me.ucFechaProcesoIni.Size = New System.Drawing.Size(96, 25)
-        Me.ucFechaProcesoIni.TabIndex = 78
-        '
         'frmCajaReportes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(327, 406)
+        Me.ClientSize = New System.Drawing.Size(327, 399)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.gbCaja)
         Me.Controls.Add(Me.gbFechaRegistro)

@@ -123,4 +123,24 @@
         lblMensaje.Text = Util.Constante.Ope_OperacionERR & " Fue cancelada. "
 
     End Sub
+
+    Private Sub tsbEliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles tsbEliminar.Click
+        Try
+            If MsgBox(Util.Constante.Msg_ConfEliminar, MsgBoxStyle.YesNo, Util.Constante.Msj_SistemaTitulo) <> 6 Then Exit Sub
+
+            Dim intUsuarioId As Integer = Util.Enumeracion.enmResultadoOperacion.NONE
+            If frmLogin.objColeccionFCB.objUsuBEC IsNot Nothing Then
+                intUsuarioId = frmLogin.objColeccionFCB.objUsuBEC.UsuarioId
+            Else
+                Throw New DataException(Util.Constante.Acc_SesionERR)
+            End If
+
+            ValidarRegistros()
+
+            Me.Fiesta_tblaux_tipocambioTableAdapter.DeleteTasaCambio(Convert.ToInt32(Me.txtAño.Text), Convert.ToInt32(Me.txtMes.Text), Convert.ToInt32(Me.txtDia.Text))
+
+        Catch ex As Exception
+            lblMensaje.Text = ex.Message
+        End Try
+    End Sub
 End Class

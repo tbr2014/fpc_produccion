@@ -119,6 +119,16 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Devart.Data" version="5.0.746.0" publicKeyToken="09AF7300EEC23701" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Devart.Data.MySql" version="7.7.287.0" publicKeyToken="09AF7300EEC23701" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
       <assemblyIdentity name="FlashControlV71" version="1.0.3187.32366" publicKeyToken="692FBEA5521E1304" language="neutral" />
     </dependentAssembly>
   </dependency>
@@ -188,14 +198,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="bddc.BEC.dll" size="67584">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="bddc.BEC.dll" size="68096">
       <assemblyIdentity name="bddc.BEC" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>V6qjZDKZ4IQdL4kOOK8S//vD9Sw=</dsig:DigestValue>
+        <dsig:DigestValue>oxGR20ll1YG6omfyQVC58WE25Gk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -207,31 +217,31 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>xLnOS8ufs+RvBjiubT77cO5t770=</dsig:DigestValue>
+        <dsig:DigestValue>Z8oCx7btQA/pCzT5yRSsk74gbF8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="bddc.Util.dll" size="38400">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="bddc.Util.dll" size="38912">
       <assemblyIdentity name="bddc.Util" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>A1zKYc4sKxINa8I2qN9+c37zWYM=</dsig:DigestValue>
+        <dsig:DigestValue>XzJ9JPi8yzvFPkhLsBEW+xjGEy0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="bddc.Win.exe" size="5808640">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="bddc.Win.exe" size="5847552">
       <assemblyIdentity name="bddc.Win" version="1.0.0.1" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>YWG6rhfkXDAKxBj+DDuJ/x98HzA=</dsig:DigestValue>
+        <dsig:DigestValue>f8mB2uEinGfT+gQfwXEkuYzWs+A=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -245,16 +255,6 @@
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
         <dsig:DigestValue>5ZXZdwlMHyeLh90+m3uC7qX1BKg=</dsig:DigestValue>
       </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Devart.Data.dll" size="266240">
-      <assemblyIdentity name="Devart.Data" version="5.0.746.0" publicKeyToken="09AF7300EEC23701" language="neutral" processorArchitecture="msil" />
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Devart.Data.MySql.dll" size="506880">
-      <assemblyIdentity name="Devart.Data.MySql" version="7.7.287.0" publicKeyToken="09AF7300EEC23701" language="neutral" processorArchitecture="msil" />
     </dependentAssembly>
   </dependency>
   <dependency>
@@ -293,13 +293,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="bddc.Win.exe.config" size="11733">
+  <file name="bddc.Win.exe.config" size="11968">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>9YkpP9CIcXAuV8/EUNaIS1MZrz0=</dsig:DigestValue>
+      <dsig:DigestValue>sRd9Y+udKypae3MCbFbsIqlfrBU=</dsig:DigestValue>
     </hash>
   </file>
   <file name="imgLogoFCB.ico" size="260929">
@@ -309,6 +309,15 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
       <dsig:DigestValue>KTAO1akyfAJJo8EUbk26pCkwe2c=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\excel.png" size="2603">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>ZX5MXHamrjWFzTW2YXPOja+cbmU=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Resources\TasaCambio.gif" size="8930">

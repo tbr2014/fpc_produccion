@@ -236,3 +236,12 @@ C:\Users\USER\Desktop\FPC AMBIENTE DE DESARROLLO\bddc\bddc.BEC\obj\Debug\bddc.BE
 C:\Users\USER\Desktop\FPC AMBIENTE DE DESARROLLO\bddc\bddc.BEC\obj\Debug\bddc.BEC.dll
 C:\Users\USER\Desktop\FPC AMBIENTE DE DESARROLLO\bddc\bddc.BEC\obj\Debug\bddc.BEC.xml
 C:\Users\USER\Desktop\FPC AMBIENTE DE DESARROLLO\bddc\bddc.BEC\obj\Debug\bddc.BEC.pdb
+C:\FPC AMBIENTE DE DESARROLLO\bddc\bddc.BEC\bin\Debug\bddc.BEC.dll.config
+C:\FPC AMBIENTE DE DESARROLLO\bddc\bddc.BEC\bin\Debug\bddc.BEC.dll
+C:\FPC AMBIENTE DE DESARROLLO\bddc\bddc.BEC\bin\Debug\bddc.BEC.pdb
+C:\FPC AMBIENTE DE DESARROLLO\bddc\bddc.BEC\bin\Debug\bddc.BEC.xml
+C:\FPC AMBIENTE DE DESARROLLO\bddc\bddc.BEC\obj\Debug\bddc.BEC.Resources.resources
+C:\FPC AMBIENTE DE DESARROLLO\bddc\bddc.BEC\obj\Debug\bddc.BEC.vbproj.GenerateResource.Cache
+C:\FPC AMBIENTE DE DESARROLLO\bddc\bddc.BEC\obj\Debug\bddc.BEC.dll
+C:\FPC AMBIENTE DE DESARROLLO\bddc\bddc.BEC\obj\Debug\bddc.BEC.xml
+C:\FPC AMBIENTE DE DESARROLLO\bddc\bddc.BEC\obj\Debug\bddc.BEC.pdb

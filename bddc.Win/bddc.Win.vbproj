@@ -638,6 +638,12 @@
     <Compile Include="sis\frmTasaCambio.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="sis\frmTasaCambio_Prueba.Designer.vb">
+      <DependentUpon>frmTasaCambio_Prueba.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sis\frmTasaCambio_Prueba.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="sis\frmTasaCambio_Tacna.Designer.vb">
       <DependentUpon>frmTasaCambio_Tacna.vb</DependentUpon>
     </Compile>
@@ -900,6 +906,9 @@
     <EmbeddedResource Include="sis\frmTasaCambio.resx">
       <DependentUpon>frmTasaCambio.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="sis\frmTasaCambio_Prueba.resx">
+      <DependentUpon>frmTasaCambio_Prueba.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="sis\frmTasaCambio_Tacna.resx">
       <DependentUpon>frmTasaCambio_Tacna.vb</DependentUpon>
     </EmbeddedResource>
@@ -967,6 +976,7 @@
     <None Include="Resources\caja.jpg" />
     <None Include="Resources\btnAperturaCaja.png" />
     <None Include="Resources\btnCajasAbiertas.png" />
+    <Content Include="Resources\excel.png" />
     <Content Include="Resources\TasaCambio.gif" />
     <Content Include="Resources\update.jpg" />
     <Content Include="Styles.css">

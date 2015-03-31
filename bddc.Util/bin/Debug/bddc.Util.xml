@@ -6,20 +6,7 @@ bddc.Util
 </name>
 </assembly>
 <members>
-<member name="P:bddc.Util.My.Resources.Resources.ResourceManager">
-	<summary>
-  Returns the cached ResourceManager instance used by this class.
-</summary>
-</member><member name="P:bddc.Util.My.Resources.Resources.Culture">
-	<summary>
-  Overrides the current thread's CurrentUICulture property for all
-  resource lookups using this strongly typed resource class.
-</summary>
-</member><member name="T:bddc.Util.My.Resources.Resources">
-	<summary>
-  A strongly-typed resource class, for looking up localized strings, etc.
-</summary>
-</member><member name="T:bddc.Util.Random">
+<member name="T:bddc.Util.Random">
 	<date>27072005</date><time>070339</time>
 	<type>class</type>
 	<summary>
@@ -50,6 +37,19 @@ bddc.Util
  GENERATES A RANDOM STRING OF LETTERS AND NUMBERS. LETTERS CAN BE RANDOMLY CAPITAL OR SMALL.
  </summary>
 	<returns type="String">RETURNS THE RANDOMLY GENERATED KEY</returns>
+</member><member name="P:bddc.Util.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:bddc.Util.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:bddc.Util.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
 </member>
 </members>
 </doc>

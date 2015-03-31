@@ -6,29 +6,29 @@ bddc.BEC
 </name>
 </assembly>
 <members>
-<member name="F:bddc.BEC.CLI.viwClienteTicket.strTicketsGUID">
+<member name="F:bddc.BEC.FJM.clsOperacionMesa.strPersonalAsignado">
+	<summary>
+ Dealer|Pitboss|Supervisor|Inspector
+ </summary>
+</member><member name="F:bddc.BEC.FJM.clsOperacionMesa.strFlotaFichas">
+	<summary>
+ Concatenar por denominaciones. Ejm. #monedas de 5000|# monedas de 1000|...
+ </summary>
+</member><member name="P:bddc.BEC.FJM.clsOperacionMesa.PersonalAsignado">
+	<summary>
+ Dealer|Pitboss|Supervisor|Inspector
+ </summary>
+</member><member name="P:bddc.BEC.FJM.clsOperacionMesa.FlotaFichas">
+	<summary>
+ Concatenar por denominaciones. Ejm. #monedas de 5000|# monedas de 1000|...
+ </summary>
+</member><member name="F:bddc.BEC.CLI.viwClienteTicket.strTicketsGUID">
 	<summary>
  ID generado por la aplicacion
  </summary>
 </member><member name="P:bddc.BEC.CLI.viwClienteTicket.TicketsGUID">
 	<summary>
  ID generado por la aplicacion
- </summary>
-</member><member name="F:bddc.BEC.SEG.clsUsuarioEvento.intUnidadId">
-	<summary>
- Tabla bdauxiliar.tblaux_unidad -&gt; cund_id
- </summary>
-</member><member name="P:bddc.BEC.SEG.clsUsuarioEvento.UnidadId">
-	<summary>
- Tabla bdauxiliar.tblaux_unidad -&gt; cund_id
- </summary>
-</member><member name="F:bddc.BEC.COM.clsAuditoria.intUnidadId">
-	<summary>
- Tabla bdauxiliar.tblaux_unidad -&gt; cund_id
- </summary>
-</member><member name="P:bddc.BEC.COM.clsAuditoria.UnidadId">
-	<summary>
- Tabla bdauxiliar.tblaux_unidad -&gt; cund_id
  </summary>
 </member><member name="F:bddc.BEC.COM.clsUnidad.intEmpresaId">
 	<summary>
@@ -59,21 +59,21 @@ bddc.BEC
 	<param name="pstrMoneda"></param>
 	<param name="parrDrop"></param>
 	<param name="parrWinLoss"></param>
-</member><member name="F:bddc.BEC.FJM.clsOperacionMesa.strPersonalAsignado">
+</member><member name="F:bddc.BEC.SEG.clsUsuarioEvento.intUnidadId">
 	<summary>
- Dealer|Pitboss|Supervisor|Inspector
+ Tabla bdauxiliar.tblaux_unidad -&gt; cund_id
  </summary>
-</member><member name="F:bddc.BEC.FJM.clsOperacionMesa.strFlotaFichas">
+</member><member name="P:bddc.BEC.SEG.clsUsuarioEvento.UnidadId">
 	<summary>
- Concatenar por denominaciones. Ejm. #monedas de 5000|# monedas de 1000|...
+ Tabla bdauxiliar.tblaux_unidad -&gt; cund_id
  </summary>
-</member><member name="P:bddc.BEC.FJM.clsOperacionMesa.PersonalAsignado">
+</member><member name="F:bddc.BEC.COM.clsAuditoria.intUnidadId">
 	<summary>
- Dealer|Pitboss|Supervisor|Inspector
+ Tabla bdauxiliar.tblaux_unidad -&gt; cund_id
  </summary>
-</member><member name="P:bddc.BEC.FJM.clsOperacionMesa.FlotaFichas">
+</member><member name="P:bddc.BEC.COM.clsAuditoria.UnidadId">
 	<summary>
- Concatenar por denominaciones. Ejm. #monedas de 5000|# monedas de 1000|...
+ Tabla bdauxiliar.tblaux_unidad -&gt; cund_id
  </summary>
 </member><member name="P:bddc.BEC.My.Resources.Resources.ResourceManager">
 	<summary>

@@ -2,7 +2,7 @@
 <xs:schema id="BDClientesDataSet" targetNamespace="http://tempuri.org/BDClientesDataSet.xsd" xmlns:mstns="http://tempuri.org/BDClientesDataSet.xsd" xmlns="http://tempuri.org/BDClientesDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
   <xs:annotation>
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
-      <DataSource DefaultConnectionIndex="7" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="8" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
           <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="bdclienteluxorConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="bdclienteluxorConnectionString (MySettings)" PropertyReference="ApplicationSettings.bddc.Win.My.MySettings.GlobalReference.Default.bdclienteluxorConnectionString" Provider="Devart.Data.MySql" />
           <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="bdclienteConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="bdclienteConnectionString (MySettings)" PropertyReference="ApplicationSettings.bddc.Win.My.MySettings.GlobalReference.Default.bdclienteConnectionString" Provider="Devart.Data.MySql" />
@@ -12,6 +12,7 @@
           <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="bdauxiliarConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="bdauxiliarConnectionString (MySettings)" PropertyReference="ApplicationSettings.bddc.Win.My.MySettings.GlobalReference.Default.bdauxiliarConnectionString" Provider="Devart.Data.MySql" />
           <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="bdcrmtacnaConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="bdcrmtacnaConnectionString (MySettings)" PropertyReference="ApplicationSettings.bddc.Win.My.MySettings.GlobalReference.Default.bdcrmtacnaConnectionString" Provider="Devart.Data.MySql" />
           <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="bdauxiliartacnaConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="bdauxiliartacnaConnectionString (MySettings)" PropertyReference="ApplicationSettings.bddc.Win.My.MySettings.GlobalReference.Default.bdauxiliartacnaConnectionString" Provider="Devart.Data.MySql" />
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="bdauxiliar_testConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="bdauxiliar_testConnectionString (MySettings)" PropertyReference="ApplicationSettings.bddc.Win.My.MySettings.GlobalReference.Default.bdauxiliar_testConnectionString" Provider="Devart.Data.MySql" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Luxor_tbllim_grupoclientebaccaratTableAdapter" GeneratorDataComponentClassName="Luxor_tbllim_grupoclientebaccaratTableAdapter" Name="Luxor_tbllim_grupoclientebaccarat" UserDataComponentName="Luxor_tbllim_grupoclientebaccaratTableAdapter">
@@ -1751,91 +1752,6 @@ ORDER BY Fecha DESC</CommandText>
               </DbSource>
             </Sources>
           </TableAdapter>
-          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Fiesta_tblaux_tipocambioTableAdapter" GeneratorDataComponentClassName="Fiesta_tblaux_tipocambioTableAdapter" Name="Fiesta_tblaux_tipocambio" UserDataComponentName="Fiesta_tblaux_tipocambioTableAdapter">
-            <MainSource>
-              <DbSource ConnectionRef="bdauxiliarConnectionString (MySettings)" DbObjectName="bdauxiliar.tblaux_tipocambio" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
-                <DeleteCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>DELETE FROM `bdauxiliar`.`tblaux_tipocambio` WHERE (((:IsNull_Fecha = 1 AND `ftdc_fechac` IS NULL) OR (`ftdc_fechac` = :Original_Fecha)) AND ((:IsNull_Tasa = 1 AND `ntdc_valor` IS NULL) OR (`ntdc_valor` = :Original_Tasa)) AND (`ftdc_yyyy` = :Original_ftdc_yyyy) AND (`ftdc_mm` = :Original_ftdc_mm) AND (`ftdc_dd` = :Original_ftdc_dd) AND ((:IsNull_Estado = 1 AND `ftdc_estadoid` IS NULL) OR (`ftdc_estadoid` = :Original_Estado)))</CommandText>
-                    <Parameters>
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Fecha" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Fecha" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_Fecha" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="Fecha" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Tasa" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Tasa" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="Original_Tasa" Precision="0" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="Tasa" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_ftdc_yyyy" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ftdc_yyyy" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_ftdc_mm" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ftdc_mm" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_ftdc_dd" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ftdc_dd" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Estado" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Estado" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_Estado" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Estado" SourceColumnNullMapping="false" SourceVersion="Original" />
-                    </Parameters>
-                  </DbCommand>
-                </DeleteCommand>
-                <InsertCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>INSERT INTO `bdauxiliar`.`tblaux_tipocambio` (`ftdc_fechac`, `ntdc_valor`, `ftdc_yyyy`, `ftdc_mm`, `ftdc_dd`, `ftdc_estadoid`) VALUES (:Fecha, :Tasa, :ftdc_yyyy, :ftdc_mm, :ftdc_dd, :Estado)</CommandText>
-                    <Parameters>
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Fecha" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="Fecha" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="Tasa" Precision="0" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="Tasa" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="ftdc_yyyy" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ftdc_yyyy" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="ftdc_mm" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ftdc_mm" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="ftdc_dd" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ftdc_dd" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Estado" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Estado" SourceColumnNullMapping="false" SourceVersion="Current" />
-                    </Parameters>
-                  </DbCommand>
-                </InsertCommand>
-                <SelectCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="true">
-                    <CommandText>SELECT        ftdc_fechac AS Fecha, ntdc_valor AS Tasa, ftdc_yyyy, ftdc_mm, ftdc_dd, ftdc_estadoid AS Estado
-FROM            tblaux_tipocambio
-ORDER BY Fecha DESC</CommandText>
-                    <Parameters />
-                  </DbCommand>
-                </SelectCommand>
-                <UpdateCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>UPDATE `bdauxiliar`.`tblaux_tipocambio` SET `ftdc_fechac` = :Fecha, `ntdc_valor` = :Tasa, `ftdc_yyyy` = :ftdc_yyyy, `ftdc_mm` = :ftdc_mm, `ftdc_dd` = :ftdc_dd, `ftdc_estadoid` = :Estado WHERE (((:IsNull_Fecha = 1 AND `ftdc_fechac` IS NULL) OR (`ftdc_fechac` = :Original_Fecha)) AND ((:IsNull_Tasa = 1 AND `ntdc_valor` IS NULL) OR (`ntdc_valor` = :Original_Tasa)) AND (`ftdc_yyyy` = :Original_ftdc_yyyy) AND (`ftdc_mm` = :Original_ftdc_mm) AND (`ftdc_dd` = :Original_ftdc_dd) AND ((:IsNull_Estado = 1 AND `ftdc_estadoid` IS NULL) OR (`ftdc_estadoid` = :Original_Estado)))</CommandText>
-                    <Parameters>
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Fecha" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="Fecha" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="Tasa" Precision="0" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="Tasa" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="ftdc_yyyy" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ftdc_yyyy" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="ftdc_mm" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ftdc_mm" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="ftdc_dd" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ftdc_dd" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Estado" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Estado" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Fecha" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Fecha" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_Fecha" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="Fecha" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Tasa" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Tasa" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="Original_Tasa" Precision="0" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="Tasa" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_ftdc_yyyy" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ftdc_yyyy" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_ftdc_mm" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ftdc_mm" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_ftdc_dd" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ftdc_dd" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Estado" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Estado" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_Estado" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Estado" SourceColumnNullMapping="false" SourceVersion="Original" />
-                    </Parameters>
-                  </DbCommand>
-                </UpdateCommand>
-              </DbSource>
-            </MainSource>
-            <Mappings>
-              <Mapping SourceColumn="Fecha" DataSetColumn="Fecha" />
-              <Mapping SourceColumn="Tasa" DataSetColumn="Tasa" />
-              <Mapping SourceColumn="ftdc_yyyy" DataSetColumn="ftdc_yyyy" />
-              <Mapping SourceColumn="ftdc_mm" DataSetColumn="ftdc_mm" />
-              <Mapping SourceColumn="ftdc_dd" DataSetColumn="ftdc_dd" />
-              <Mapping SourceColumn="Estado" DataSetColumn="Estado" />
-            </Mappings>
-            <Sources>
-              <DbSource ConnectionRef="bdauxiliarConnectionString (MySettings)" DbObjectName="bdauxiliar.tblaux_tipocambio" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="GetCambioByDate" GetMethodModifier="Public" GetMethodName="GetCambioByDate" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetCambioByDate" UserSourceName="GetCambioByDate">
-                <SelectCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="true">
-                    <CommandText>SELECT        ftdc_fechac AS Fecha, ntdc_valor AS Tasa, ftdc_yyyy, ftdc_mm, ftdc_dd, ftdc_estadoid AS Estado
-FROM            tblaux_tipocambio
-ORDER BY Fecha DESC</CommandText>
-                    <Parameters />
-                  </DbCommand>
-                </SelectCommand>
-              </DbSource>
-            </Sources>
-          </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Luxor_viwbdd_cliente_crmTableAdapter" GeneratorDataComponentClassName="Luxor_viwbdd_cliente_crmTableAdapter" Name="Luxor_viwbdd_cliente_crm" UserDataComponentName="Luxor_viwbdd_cliente_crmTableAdapter">
             <MainSource>
               <DbSource ConnectionRef="bdcrmluxorConnectionString (MySettings)" DbObjectName="bdcrmluxor.viwbdd_cliente_crm" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
@@ -2203,6 +2119,200 @@ ORDER BY Fecha DESC</CommandText>
               </DbSource>
             </Sources>
           </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Fiesta_tblaux_tipocambioTableAdapter" GeneratorDataComponentClassName="Fiesta_tblaux_tipocambioTableAdapter" Name="Fiesta_tblaux_tipocambio" UserDataComponentName="Fiesta_tblaux_tipocambioTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="bdauxiliarConnectionString (MySettings)" DbObjectName="bdauxiliar.tblaux_tipocambio" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM `bdauxiliar`.`tblaux_tipocambio` WHERE (((:IsNull_Fecha = 1 AND `ftdc_fechac` IS NULL) OR (`ftdc_fechac` = :Original_Fecha)) AND ((:IsNull_Tasa = 1 AND `ntdc_valor` IS NULL) OR (`ntdc_valor` = :Original_Tasa)) AND (`ftdc_yyyy` = :Original_ftdc_yyyy) AND (`ftdc_mm` = :Original_ftdc_mm) AND (`ftdc_dd` = :Original_ftdc_dd) AND ((:IsNull_Estado = 1 AND `ftdc_estadoid` IS NULL) OR (`ftdc_estadoid` = :Original_Estado)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Fecha" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Fecha" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_Fecha" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="Fecha" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Tasa" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Tasa" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="Original_Tasa" Precision="0" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="Tasa" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_ftdc_yyyy" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ftdc_yyyy" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_ftdc_mm" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ftdc_mm" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_ftdc_dd" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ftdc_dd" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Estado" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Estado" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_Estado" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Estado" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO `bdauxiliar`.`tblaux_tipocambio` (`ftdc_fechac`, `ntdc_valor`, `ftdc_yyyy`, `ftdc_mm`, `ftdc_dd`, `ftdc_estadoid`) VALUES (:Fecha, :Tasa, :ftdc_yyyy, :ftdc_mm, :ftdc_dd, :Estado)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Fecha" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="Fecha" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="Tasa" Precision="0" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="Tasa" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="ftdc_yyyy" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ftdc_yyyy" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="ftdc_mm" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ftdc_mm" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="ftdc_dd" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ftdc_dd" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Estado" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Estado" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        ftdc_fechac AS Fecha, ntdc_valor AS Tasa, ftdc_yyyy, ftdc_mm, ftdc_dd, ftdc_estadoid AS Estado
+FROM            tblaux_tipocambio
+ORDER BY Fecha DESC</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE `bdauxiliar`.`tblaux_tipocambio` SET `ftdc_fechac` = :Fecha, `ntdc_valor` = :Tasa, `ftdc_yyyy` = :ftdc_yyyy, `ftdc_mm` = :ftdc_mm, `ftdc_dd` = :ftdc_dd, `ftdc_estadoid` = :Estado WHERE (((:IsNull_Fecha = 1 AND `ftdc_fechac` IS NULL) OR (`ftdc_fechac` = :Original_Fecha)) AND ((:IsNull_Tasa = 1 AND `ntdc_valor` IS NULL) OR (`ntdc_valor` = :Original_Tasa)) AND (`ftdc_yyyy` = :Original_ftdc_yyyy) AND (`ftdc_mm` = :Original_ftdc_mm) AND (`ftdc_dd` = :Original_ftdc_dd) AND ((:IsNull_Estado = 1 AND `ftdc_estadoid` IS NULL) OR (`ftdc_estadoid` = :Original_Estado)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Fecha" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="Fecha" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="Tasa" Precision="0" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="Tasa" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="ftdc_yyyy" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ftdc_yyyy" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="ftdc_mm" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ftdc_mm" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="ftdc_dd" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ftdc_dd" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Estado" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Estado" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Fecha" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Fecha" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_Fecha" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="Fecha" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Tasa" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Tasa" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="Original_Tasa" Precision="0" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="Tasa" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_ftdc_yyyy" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ftdc_yyyy" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_ftdc_mm" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ftdc_mm" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_ftdc_dd" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ftdc_dd" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Estado" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Estado" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_Estado" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Estado" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Fecha" DataSetColumn="Fecha" />
+              <Mapping SourceColumn="Tasa" DataSetColumn="Tasa" />
+              <Mapping SourceColumn="ftdc_yyyy" DataSetColumn="ftdc_yyyy" />
+              <Mapping SourceColumn="ftdc_mm" DataSetColumn="ftdc_mm" />
+              <Mapping SourceColumn="ftdc_dd" DataSetColumn="ftdc_dd" />
+              <Mapping SourceColumn="Estado" DataSetColumn="Estado" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="bdauxiliarConnectionString (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="DeleteTasaCambio" Modifier="Public" Name="DeleteTasaCambio" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="DeleteTasaCambio">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>DELETE FROM tblaux_tipocambio
+WHERE        (ftdc_yyyy = :PARAM1) AND (ftdc_mm = :PARAM2) AND (ftdc_dd = :PARAM3)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="PARAM1" ColumnName="ftdc_yyyy" DataSourceName="bdauxiliar.tblaux_tipocambio" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="PARAM1" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ftdc_yyyy" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="PARAM2" ColumnName="ftdc_mm" DataSourceName="bdauxiliar.tblaux_tipocambio" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="PARAM2" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ftdc_mm" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="PARAM3" ColumnName="ftdc_dd" DataSourceName="bdauxiliar.tblaux_tipocambio" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="PARAM3" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ftdc_dd" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+              </DbSource>
+              <DbSource ConnectionRef="bdauxiliarConnectionString (MySettings)" DbObjectName="bdauxiliar.tblaux_tipocambio" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="GetCambioByDate" GetMethodModifier="Public" GetMethodName="GetCambioByDate" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetCambioByDate" UserSourceName="GetCambioByDate">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        ftdc_fechac AS Fecha, ntdc_valor AS Tasa, ftdc_yyyy, ftdc_mm, ftdc_dd, ftdc_estadoid AS Estado
+FROM            tblaux_tipocambio
+ORDER BY Fecha DESC</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Prueba_tblaux_tipocambioTableAdapter" GeneratorDataComponentClassName="Prueba_tblaux_tipocambioTableAdapter" Name="Prueba_tblaux_tipocambio" UserDataComponentName="Prueba_tblaux_tipocambioTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="bdauxiliar_testConnectionString (MySettings)" DbObjectName="bdauxiliar_test.tblaux_tipocambio" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM `bdauxiliar_test`.`tblaux_tipocambio` WHERE (((:IsNull_Fecha = 1 AND `ftdc_fechac` IS NULL) OR (`ftdc_fechac` = :Original_Fecha)) AND ((:IsNull_Tasa = 1 AND `ntdc_valor` IS NULL) OR (`ntdc_valor` = :Original_Tasa)) AND (`ftdc_yyyy` = :Original_ftdc_yyyy) AND (`ftdc_mm` = :Original_ftdc_mm) AND (`ftdc_dd` = :Original_ftdc_dd) AND ((:IsNull_Estado = 1 AND `ftdc_estadoid` IS NULL) OR (`ftdc_estadoid` = :Original_Estado)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Fecha" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Fecha" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_Fecha" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="Fecha" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Tasa" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Tasa" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="Original_Tasa" Precision="0" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="Tasa" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_ftdc_yyyy" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ftdc_yyyy" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_ftdc_mm" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ftdc_mm" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_ftdc_dd" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ftdc_dd" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Estado" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Estado" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_Estado" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Estado" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO `bdauxiliar_test`.`tblaux_tipocambio` (`ftdc_fechac`, `ntdc_valor`, `ftdc_yyyy`, `ftdc_mm`, `ftdc_dd`, `ftdc_estadoid`) VALUES (:Fecha, :Tasa, :ftdc_yyyy, :ftdc_mm, :ftdc_dd, :Estado)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Fecha" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="Fecha" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="Tasa" Precision="0" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="Tasa" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="ftdc_yyyy" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ftdc_yyyy" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="ftdc_mm" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ftdc_mm" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="ftdc_dd" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ftdc_dd" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Estado" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Estado" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        ftdc_fechac AS Fecha, ntdc_valor AS Tasa, ftdc_yyyy, ftdc_mm, ftdc_dd, ftdc_estadoid AS Estado
+FROM            tblaux_tipocambio
+ORDER BY Fecha DESC</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE `bdauxiliar_test`.`tblaux_tipocambio` SET `ftdc_fechac` = :Fecha, `ntdc_valor` = :Tasa, `ftdc_yyyy` = :ftdc_yyyy, `ftdc_mm` = :ftdc_mm, `ftdc_dd` = :ftdc_dd, `ftdc_estadoid` = :Estado WHERE (((:IsNull_Fecha = 1 AND `ftdc_fechac` IS NULL) OR (`ftdc_fechac` = :Original_Fecha)) AND ((:IsNull_Tasa = 1 AND `ntdc_valor` IS NULL) OR (`ntdc_valor` = :Original_Tasa)) AND (`ftdc_yyyy` = :Original_ftdc_yyyy) AND (`ftdc_mm` = :Original_ftdc_mm) AND (`ftdc_dd` = :Original_ftdc_dd) AND ((:IsNull_Estado = 1 AND `ftdc_estadoid` IS NULL) OR (`ftdc_estadoid` = :Original_Estado)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Fecha" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="Fecha" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="Tasa" Precision="0" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="Tasa" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="ftdc_yyyy" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ftdc_yyyy" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="ftdc_mm" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ftdc_mm" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="ftdc_dd" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ftdc_dd" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Estado" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Estado" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Fecha" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Fecha" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_Fecha" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="Fecha" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Tasa" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Tasa" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="Original_Tasa" Precision="0" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="Tasa" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_ftdc_yyyy" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ftdc_yyyy" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_ftdc_mm" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ftdc_mm" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_ftdc_dd" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ftdc_dd" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Estado" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Estado" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_Estado" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Estado" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Fecha" DataSetColumn="Fecha" />
+              <Mapping SourceColumn="Tasa" DataSetColumn="Tasa" />
+              <Mapping SourceColumn="ftdc_yyyy" DataSetColumn="ftdc_yyyy" />
+              <Mapping SourceColumn="ftdc_mm" DataSetColumn="ftdc_mm" />
+              <Mapping SourceColumn="ftdc_dd" DataSetColumn="ftdc_dd" />
+              <Mapping SourceColumn="Estado" DataSetColumn="Estado" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="bdauxiliar_testConnectionString (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="DeleteTasaCambio" Modifier="Public" Name="DeleteTasaCambio" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="DeleteTasaCambio">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>DELETE FROM tblaux_tipocambio
+WHERE        (ftdc_yyyy = :PARAM1) AND (ftdc_mm = :PARAM2) AND (ftdc_dd = :PARAM3)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="PARAM1" ColumnName="ftdc_yyyy" DataSourceName="bdauxiliar_test.tblaux_tipocambio" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="PARAM1" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ftdc_yyyy" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="PARAM2" ColumnName="ftdc_mm" DataSourceName="bdauxiliar_test.tblaux_tipocambio" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="PARAM2" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ftdc_mm" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="PARAM3" ColumnName="ftdc_dd" DataSourceName="bdauxiliar_test.tblaux_tipocambio" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="PARAM3" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ftdc_dd" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+              </DbSource>
+              <DbSource ConnectionRef="bdauxiliar_testConnectionString (MySettings)" DbObjectName="bdauxiliar_test.tblaux_tipocambio" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="GetCambioByDate" GetMethodModifier="Public" GetMethodName="GetCambioByDate" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetCambioByDate" UserSourceName="GetCambioByDate">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT ftdc_dd, ftdc_estadoid AS Estado, ftdc_fechac AS Fecha, ftdc_mm, ftdc_yyyy, ntdc_valor AS Tasa FROM tblaux_tipocambio ORDER BY ftdc_fechac DESC</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
         </Tables>
         <Sources />
       </DataSource>
@@ -2211,7 +2321,7 @@ ORDER BY Fecha DESC</CommandText>
   <xs:element name="BDClientesDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="BDClientesDataSet" msprop:Generator_UserDSName="BDClientesDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Luxor_tbllim_grupoclientebaccarat" msprop:Generator_TableClassName="Luxor_tbllim_grupoclientebaccaratDataTable" msprop:Generator_RowEvArgName="Luxor_tbllim_grupoclientebaccaratRowChangeEvent" msprop:Generator_TableVarName="tableLuxor_tbllim_grupoclientebaccarat" msprop:Generator_TablePropName="Luxor_tbllim_grupoclientebaccarat" msprop:Generator_RowDeletingName="Luxor_tbllim_grupoclientebaccaratRowDeleting" msprop:Generator_UserTableName="Luxor_tbllim_grupoclientebaccarat" msprop:Generator_RowChangingName="Luxor_tbllim_grupoclientebaccaratRowChanging" msprop:Generator_RowDeletedName="Luxor_tbllim_grupoclientebaccaratRowDeleted" msprop:Generator_RowChangedName="Luxor_tbllim_grupoclientebaccaratRowChanged" msprop:Generator_RowEvHandlerName="Luxor_tbllim_grupoclientebaccaratRowChangeEventHandler" msprop:Generator_RowClassName="Luxor_tbllim_grupoclientebaccaratRow">
+        <xs:element name="Luxor_tbllim_grupoclientebaccarat" msprop:Generator_TableClassName="Luxor_tbllim_grupoclientebaccaratDataTable" msprop:Generator_RowEvArgName="Luxor_tbllim_grupoclientebaccaratRowChangeEvent" msprop:Generator_TableVarName="tableLuxor_tbllim_grupoclientebaccarat" msprop:Generator_TablePropName="Luxor_tbllim_grupoclientebaccarat" msprop:Generator_RowDeletingName="Luxor_tbllim_grupoclientebaccaratRowDeleting" msprop:Generator_RowChangingName="Luxor_tbllim_grupoclientebaccaratRowChanging" msprop:Generator_RowDeletedName="Luxor_tbllim_grupoclientebaccaratRowDeleted" msprop:Generator_RowClassName="Luxor_tbllim_grupoclientebaccaratRow" msprop:Generator_RowEvHandlerName="Luxor_tbllim_grupoclientebaccaratRowChangeEventHandler" msprop:Generator_RowChangedName="Luxor_tbllim_grupoclientebaccaratRowChanged" msprop:Generator_UserTableName="Luxor_tbllim_grupoclientebaccarat">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ccli_id" msprop:Generator_ColumnVarNameInTable="columnccli_id" msprop:Generator_ColumnPropNameInRow="ccli_id" msprop:Generator_ColumnPropNameInTable="ccli_idColumn" msprop:Generator_UserColumnName="ccli_id" type="xs:int" />
@@ -2219,7 +2329,7 @@ ORDER BY Fecha DESC</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Fiesta_tblfjm_grupoclientebaccarat" msprop:Generator_TableClassName="Fiesta_tblfjm_grupoclientebaccaratDataTable" msprop:Generator_RowEvArgName="Fiesta_tblfjm_grupoclientebaccaratRowChangeEvent" msprop:Generator_TableVarName="tableFiesta_tblfjm_grupoclientebaccarat" msprop:Generator_TablePropName="Fiesta_tblfjm_grupoclientebaccarat" msprop:Generator_RowDeletingName="Fiesta_tblfjm_grupoclientebaccaratRowDeleting" msprop:Generator_UserTableName="Fiesta_tblfjm_grupoclientebaccarat" msprop:Generator_RowChangingName="Fiesta_tblfjm_grupoclientebaccaratRowChanging" msprop:Generator_RowDeletedName="Fiesta_tblfjm_grupoclientebaccaratRowDeleted" msprop:Generator_RowChangedName="Fiesta_tblfjm_grupoclientebaccaratRowChanged" msprop:Generator_RowEvHandlerName="Fiesta_tblfjm_grupoclientebaccaratRowChangeEventHandler" msprop:Generator_RowClassName="Fiesta_tblfjm_grupoclientebaccaratRow">
+        <xs:element name="Fiesta_tblfjm_grupoclientebaccarat" msprop:Generator_TableClassName="Fiesta_tblfjm_grupoclientebaccaratDataTable" msprop:Generator_RowEvArgName="Fiesta_tblfjm_grupoclientebaccaratRowChangeEvent" msprop:Generator_TableVarName="tableFiesta_tblfjm_grupoclientebaccarat" msprop:Generator_TablePropName="Fiesta_tblfjm_grupoclientebaccarat" msprop:Generator_RowDeletingName="Fiesta_tblfjm_grupoclientebaccaratRowDeleting" msprop:Generator_RowChangingName="Fiesta_tblfjm_grupoclientebaccaratRowChanging" msprop:Generator_RowDeletedName="Fiesta_tblfjm_grupoclientebaccaratRowDeleted" msprop:Generator_RowClassName="Fiesta_tblfjm_grupoclientebaccaratRow" msprop:Generator_RowEvHandlerName="Fiesta_tblfjm_grupoclientebaccaratRowChangeEventHandler" msprop:Generator_RowChangedName="Fiesta_tblfjm_grupoclientebaccaratRowChanged" msprop:Generator_UserTableName="Fiesta_tblfjm_grupoclientebaccarat">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ccli_id" msprop:Generator_ColumnVarNameInTable="columnccli_id" msprop:Generator_ColumnPropNameInRow="ccli_id" msprop:Generator_ColumnPropNameInTable="ccli_idColumn" msprop:Generator_UserColumnName="ccli_id" type="xs:int" />
@@ -2227,7 +2337,7 @@ ORDER BY Fecha DESC</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Luxor_tblbdd_cliente" msprop:Generator_TableClassName="Luxor_tblbdd_clienteDataTable" msprop:Generator_RowEvArgName="Luxor_tblbdd_clienteRowChangeEvent" msprop:Generator_TableVarName="tableLuxor_tblbdd_cliente" msprop:Generator_TablePropName="Luxor_tblbdd_cliente" msprop:Generator_RowDeletingName="Luxor_tblbdd_clienteRowDeleting" msprop:Generator_UserTableName="Luxor_tblbdd_cliente" msprop:Generator_RowChangingName="Luxor_tblbdd_clienteRowChanging" msprop:Generator_RowDeletedName="Luxor_tblbdd_clienteRowDeleted" msprop:Generator_RowChangedName="Luxor_tblbdd_clienteRowChanged" msprop:Generator_RowEvHandlerName="Luxor_tblbdd_clienteRowChangeEventHandler" msprop:Generator_RowClassName="Luxor_tblbdd_clienteRow">
+        <xs:element name="Luxor_tblbdd_cliente" msprop:Generator_TableClassName="Luxor_tblbdd_clienteDataTable" msprop:Generator_RowEvArgName="Luxor_tblbdd_clienteRowChangeEvent" msprop:Generator_TableVarName="tableLuxor_tblbdd_cliente" msprop:Generator_TablePropName="Luxor_tblbdd_cliente" msprop:Generator_RowDeletingName="Luxor_tblbdd_clienteRowDeleting" msprop:Generator_RowChangingName="Luxor_tblbdd_clienteRowChanging" msprop:Generator_RowDeletedName="Luxor_tblbdd_clienteRowDeleted" msprop:Generator_RowClassName="Luxor_tblbdd_clienteRow" msprop:Generator_RowEvHandlerName="Luxor_tblbdd_clienteRowChangeEventHandler" msprop:Generator_RowChangedName="Luxor_tblbdd_clienteRowChanged" msprop:Generator_UserTableName="Luxor_tblbdd_cliente">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ccli_id" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnccli_id" msprop:Generator_ColumnPropNameInRow="ccli_id" msprop:Generator_ColumnPropNameInTable="ccli_idColumn" msprop:Generator_UserColumnName="ccli_id" type="xs:int" />
@@ -2272,7 +2382,7 @@ ORDER BY Fecha DESC</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Luxor_tblbdd_consumo_ttr" msprop:Generator_TableClassName="Luxor_tblbdd_consumo_ttrDataTable" msprop:Generator_RowEvArgName="Luxor_tblbdd_consumo_ttrRowChangeEvent" msprop:Generator_TableVarName="tableLuxor_tblbdd_consumo_ttr" msprop:Generator_TablePropName="Luxor_tblbdd_consumo_ttr" msprop:Generator_RowDeletingName="Luxor_tblbdd_consumo_ttrRowDeleting" msprop:Generator_UserTableName="Luxor_tblbdd_consumo_ttr" msprop:Generator_RowChangingName="Luxor_tblbdd_consumo_ttrRowChanging" msprop:Generator_RowDeletedName="Luxor_tblbdd_consumo_ttrRowDeleted" msprop:Generator_RowChangedName="Luxor_tblbdd_consumo_ttrRowChanged" msprop:Generator_RowEvHandlerName="Luxor_tblbdd_consumo_ttrRowChangeEventHandler" msprop:Generator_RowClassName="Luxor_tblbdd_consumo_ttrRow">
+        <xs:element name="Luxor_tblbdd_consumo_ttr" msprop:Generator_TableClassName="Luxor_tblbdd_consumo_ttrDataTable" msprop:Generator_RowEvArgName="Luxor_tblbdd_consumo_ttrRowChangeEvent" msprop:Generator_TableVarName="tableLuxor_tblbdd_consumo_ttr" msprop:Generator_TablePropName="Luxor_tblbdd_consumo_ttr" msprop:Generator_RowDeletingName="Luxor_tblbdd_consumo_ttrRowDeleting" msprop:Generator_RowChangingName="Luxor_tblbdd_consumo_ttrRowChanging" msprop:Generator_RowDeletedName="Luxor_tblbdd_consumo_ttrRowDeleted" msprop:Generator_RowClassName="Luxor_tblbdd_consumo_ttrRow" msprop:Generator_RowEvHandlerName="Luxor_tblbdd_consumo_ttrRowChangeEventHandler" msprop:Generator_RowChangedName="Luxor_tblbdd_consumo_ttrRowChanged" msprop:Generator_UserTableName="Luxor_tblbdd_consumo_ttr">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ccli_id" msprop:Generator_ColumnVarNameInTable="columnccli_id" msprop:Generator_ColumnPropNameInRow="ccli_id" msprop:Generator_ColumnPropNameInTable="ccli_idColumn" msprop:Generator_UserColumnName="ccli_id" type="xs:int" />
@@ -2300,7 +2410,7 @@ ORDER BY Fecha DESC</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Fiesta_tblbdd_cliente" msprop:Generator_TableClassName="Fiesta_tblbdd_clienteDataTable" msprop:Generator_RowEvArgName="Fiesta_tblbdd_clienteRowChangeEvent" msprop:Generator_TableVarName="tableFiesta_tblbdd_cliente" msprop:Generator_TablePropName="Fiesta_tblbdd_cliente" msprop:Generator_RowDeletingName="Fiesta_tblbdd_clienteRowDeleting" msprop:Generator_UserTableName="Fiesta_tblbdd_cliente" msprop:Generator_RowChangingName="Fiesta_tblbdd_clienteRowChanging" msprop:Generator_RowDeletedName="Fiesta_tblbdd_clienteRowDeleted" msprop:Generator_RowChangedName="Fiesta_tblbdd_clienteRowChanged" msprop:Generator_RowEvHandlerName="Fiesta_tblbdd_clienteRowChangeEventHandler" msprop:Generator_RowClassName="Fiesta_tblbdd_clienteRow">
+        <xs:element name="Fiesta_tblbdd_cliente" msprop:Generator_TableClassName="Fiesta_tblbdd_clienteDataTable" msprop:Generator_RowEvArgName="Fiesta_tblbdd_clienteRowChangeEvent" msprop:Generator_TableVarName="tableFiesta_tblbdd_cliente" msprop:Generator_TablePropName="Fiesta_tblbdd_cliente" msprop:Generator_RowDeletingName="Fiesta_tblbdd_clienteRowDeleting" msprop:Generator_RowChangingName="Fiesta_tblbdd_clienteRowChanging" msprop:Generator_RowDeletedName="Fiesta_tblbdd_clienteRowDeleted" msprop:Generator_RowClassName="Fiesta_tblbdd_clienteRow" msprop:Generator_RowEvHandlerName="Fiesta_tblbdd_clienteRowChangeEventHandler" msprop:Generator_RowChangedName="Fiesta_tblbdd_clienteRowChanged" msprop:Generator_UserTableName="Fiesta_tblbdd_cliente">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ccli_id" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnccli_id" msprop:Generator_ColumnPropNameInRow="ccli_id" msprop:Generator_ColumnPropNameInTable="ccli_idColumn" msprop:Generator_UserColumnName="ccli_id" type="xs:int" />
@@ -2345,7 +2455,7 @@ ORDER BY Fecha DESC</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Fiesta_tblbdd_consumo_ttr" msprop:Generator_TableClassName="Fiesta_tblbdd_consumo_ttrDataTable" msprop:Generator_RowEvArgName="Fiesta_tblbdd_consumo_ttrRowChangeEvent" msprop:Generator_TableVarName="tableFiesta_tblbdd_consumo_ttr" msprop:Generator_TablePropName="Fiesta_tblbdd_consumo_ttr" msprop:Generator_RowDeletingName="Fiesta_tblbdd_consumo_ttrRowDeleting" msprop:Generator_UserTableName="Fiesta_tblbdd_consumo_ttr" msprop:Generator_RowChangingName="Fiesta_tblbdd_consumo_ttrRowChanging" msprop:Generator_RowDeletedName="Fiesta_tblbdd_consumo_ttrRowDeleted" msprop:Generator_RowChangedName="Fiesta_tblbdd_consumo_ttrRowChanged" msprop:Generator_RowEvHandlerName="Fiesta_tblbdd_consumo_ttrRowChangeEventHandler" msprop:Generator_RowClassName="Fiesta_tblbdd_consumo_ttrRow">
+        <xs:element name="Fiesta_tblbdd_consumo_ttr" msprop:Generator_TableClassName="Fiesta_tblbdd_consumo_ttrDataTable" msprop:Generator_RowEvArgName="Fiesta_tblbdd_consumo_ttrRowChangeEvent" msprop:Generator_TableVarName="tableFiesta_tblbdd_consumo_ttr" msprop:Generator_TablePropName="Fiesta_tblbdd_consumo_ttr" msprop:Generator_RowDeletingName="Fiesta_tblbdd_consumo_ttrRowDeleting" msprop:Generator_RowChangingName="Fiesta_tblbdd_consumo_ttrRowChanging" msprop:Generator_RowDeletedName="Fiesta_tblbdd_consumo_ttrRowDeleted" msprop:Generator_RowClassName="Fiesta_tblbdd_consumo_ttrRow" msprop:Generator_RowEvHandlerName="Fiesta_tblbdd_consumo_ttrRowChangeEventHandler" msprop:Generator_RowChangedName="Fiesta_tblbdd_consumo_ttrRowChanged" msprop:Generator_UserTableName="Fiesta_tblbdd_consumo_ttr">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ccli_id" msprop:Generator_ColumnVarNameInTable="columnccli_id" msprop:Generator_ColumnPropNameInRow="ccli_id" msprop:Generator_ColumnPropNameInTable="ccli_idColumn" msprop:Generator_UserColumnName="ccli_id" type="xs:int" />
@@ -2373,7 +2483,7 @@ ORDER BY Fecha DESC</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Luxor_tblbdd_clienteBusqueda" msprop:Generator_TableClassName="Luxor_tblbdd_clienteBusquedaDataTable" msprop:Generator_RowEvArgName="Luxor_tblbdd_clienteBusquedaRowChangeEvent" msprop:Generator_TableVarName="tableLuxor_tblbdd_clienteBusqueda" msprop:Generator_TablePropName="Luxor_tblbdd_clienteBusqueda" msprop:Generator_RowDeletingName="Luxor_tblbdd_clienteBusquedaRowDeleting" msprop:Generator_UserTableName="Luxor_tblbdd_clienteBusqueda" msprop:Generator_RowChangingName="Luxor_tblbdd_clienteBusquedaRowChanging" msprop:Generator_RowDeletedName="Luxor_tblbdd_clienteBusquedaRowDeleted" msprop:Generator_RowChangedName="Luxor_tblbdd_clienteBusquedaRowChanged" msprop:Generator_RowEvHandlerName="Luxor_tblbdd_clienteBusquedaRowChangeEventHandler" msprop:Generator_RowClassName="Luxor_tblbdd_clienteBusquedaRow">
+        <xs:element name="Luxor_tblbdd_clienteBusqueda" msprop:Generator_TableClassName="Luxor_tblbdd_clienteBusquedaDataTable" msprop:Generator_RowEvArgName="Luxor_tblbdd_clienteBusquedaRowChangeEvent" msprop:Generator_TableVarName="tableLuxor_tblbdd_clienteBusqueda" msprop:Generator_TablePropName="Luxor_tblbdd_clienteBusqueda" msprop:Generator_RowDeletingName="Luxor_tblbdd_clienteBusquedaRowDeleting" msprop:Generator_RowChangingName="Luxor_tblbdd_clienteBusquedaRowChanging" msprop:Generator_RowDeletedName="Luxor_tblbdd_clienteBusquedaRowDeleted" msprop:Generator_RowClassName="Luxor_tblbdd_clienteBusquedaRow" msprop:Generator_RowEvHandlerName="Luxor_tblbdd_clienteBusquedaRowChangeEventHandler" msprop:Generator_RowChangedName="Luxor_tblbdd_clienteBusquedaRowChanged" msprop:Generator_UserTableName="Luxor_tblbdd_clienteBusqueda">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ClienteId" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnClienteId" msprop:Generator_ColumnPropNameInRow="ClienteId" msprop:Generator_ColumnPropNameInTable="ClienteIdColumn" msprop:Generator_UserColumnName="ClienteId" type="xs:int" />
@@ -2385,7 +2495,7 @@ ORDER BY Fecha DESC</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Fiesta_tblbdd_clienteBusqueda" msprop:Generator_TableClassName="Fiesta_tblbdd_clienteBusquedaDataTable" msprop:Generator_RowEvArgName="Fiesta_tblbdd_clienteBusquedaRowChangeEvent" msprop:Generator_TableVarName="tableFiesta_tblbdd_clienteBusqueda" msprop:Generator_TablePropName="Fiesta_tblbdd_clienteBusqueda" msprop:Generator_RowDeletingName="Fiesta_tblbdd_clienteBusquedaRowDeleting" msprop:Generator_UserTableName="Fiesta_tblbdd_clienteBusqueda" msprop:Generator_RowChangingName="Fiesta_tblbdd_clienteBusquedaRowChanging" msprop:Generator_RowDeletedName="Fiesta_tblbdd_clienteBusquedaRowDeleted" msprop:Generator_RowChangedName="Fiesta_tblbdd_clienteBusquedaRowChanged" msprop:Generator_RowEvHandlerName="Fiesta_tblbdd_clienteBusquedaRowChangeEventHandler" msprop:Generator_RowClassName="Fiesta_tblbdd_clienteBusquedaRow">
+        <xs:element name="Fiesta_tblbdd_clienteBusqueda" msprop:Generator_TableClassName="Fiesta_tblbdd_clienteBusquedaDataTable" msprop:Generator_RowEvArgName="Fiesta_tblbdd_clienteBusquedaRowChangeEvent" msprop:Generator_TableVarName="tableFiesta_tblbdd_clienteBusqueda" msprop:Generator_TablePropName="Fiesta_tblbdd_clienteBusqueda" msprop:Generator_RowDeletingName="Fiesta_tblbdd_clienteBusquedaRowDeleting" msprop:Generator_RowChangingName="Fiesta_tblbdd_clienteBusquedaRowChanging" msprop:Generator_RowDeletedName="Fiesta_tblbdd_clienteBusquedaRowDeleted" msprop:Generator_RowClassName="Fiesta_tblbdd_clienteBusquedaRow" msprop:Generator_RowEvHandlerName="Fiesta_tblbdd_clienteBusquedaRowChangeEventHandler" msprop:Generator_RowChangedName="Fiesta_tblbdd_clienteBusquedaRowChanged" msprop:Generator_UserTableName="Fiesta_tblbdd_clienteBusqueda">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ClienteId" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnClienteId" msprop:Generator_ColumnPropNameInRow="ClienteId" msprop:Generator_ColumnPropNameInTable="ClienteIdColumn" msprop:Generator_UserColumnName="ClienteId" type="xs:int" />
@@ -2397,7 +2507,7 @@ ORDER BY Fecha DESC</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Luxor_tblttr_cliente_consumo" msprop:Generator_TableClassName="Luxor_tblttr_cliente_consumoDataTable" msprop:Generator_RowEvArgName="Luxor_tblttr_cliente_consumoRowChangeEvent" msprop:Generator_TableVarName="tableLuxor_tblttr_cliente_consumo" msprop:Generator_TablePropName="Luxor_tblttr_cliente_consumo" msprop:Generator_RowDeletingName="Luxor_tblttr_cliente_consumoRowDeleting" msprop:Generator_UserTableName="Luxor_tblttr_cliente_consumo" msprop:Generator_RowChangingName="Luxor_tblttr_cliente_consumoRowChanging" msprop:Generator_RowDeletedName="Luxor_tblttr_cliente_consumoRowDeleted" msprop:Generator_RowChangedName="Luxor_tblttr_cliente_consumoRowChanged" msprop:Generator_RowEvHandlerName="Luxor_tblttr_cliente_consumoRowChangeEventHandler" msprop:Generator_RowClassName="Luxor_tblttr_cliente_consumoRow">
+        <xs:element name="Luxor_tblttr_cliente_consumo" msprop:Generator_TableClassName="Luxor_tblttr_cliente_consumoDataTable" msprop:Generator_RowEvArgName="Luxor_tblttr_cliente_consumoRowChangeEvent" msprop:Generator_TableVarName="tableLuxor_tblttr_cliente_consumo" msprop:Generator_TablePropName="Luxor_tblttr_cliente_consumo" msprop:Generator_RowDeletingName="Luxor_tblttr_cliente_consumoRowDeleting" msprop:Generator_RowChangingName="Luxor_tblttr_cliente_consumoRowChanging" msprop:Generator_RowDeletedName="Luxor_tblttr_cliente_consumoRowDeleted" msprop:Generator_RowClassName="Luxor_tblttr_cliente_consumoRow" msprop:Generator_RowEvHandlerName="Luxor_tblttr_cliente_consumoRowChangeEventHandler" msprop:Generator_RowChangedName="Luxor_tblttr_cliente_consumoRowChanged" msprop:Generator_UserTableName="Luxor_tblttr_cliente_consumo">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="datFechaCreac" msprop:Generator_ColumnVarNameInTable="columndatFechaCreac" msprop:Generator_ColumnPropNameInRow="datFechaCreac" msprop:Generator_ColumnPropNameInTable="datFechaCreacColumn" msprop:Generator_UserColumnName="datFechaCreac" type="xs:dateTime" />
@@ -2441,7 +2551,7 @@ ORDER BY Fecha DESC</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Fiesta_tblttr_cliente_consumo" msprop:Generator_TableClassName="Fiesta_tblttr_cliente_consumoDataTable" msprop:Generator_RowEvArgName="Fiesta_tblttr_cliente_consumoRowChangeEvent" msprop:Generator_TableVarName="tableFiesta_tblttr_cliente_consumo" msprop:Generator_TablePropName="Fiesta_tblttr_cliente_consumo" msprop:Generator_RowDeletingName="Fiesta_tblttr_cliente_consumoRowDeleting" msprop:Generator_UserTableName="Fiesta_tblttr_cliente_consumo" msprop:Generator_RowChangingName="Fiesta_tblttr_cliente_consumoRowChanging" msprop:Generator_RowDeletedName="Fiesta_tblttr_cliente_consumoRowDeleted" msprop:Generator_RowChangedName="Fiesta_tblttr_cliente_consumoRowChanged" msprop:Generator_RowEvHandlerName="Fiesta_tblttr_cliente_consumoRowChangeEventHandler" msprop:Generator_RowClassName="Fiesta_tblttr_cliente_consumoRow">
+        <xs:element name="Fiesta_tblttr_cliente_consumo" msprop:Generator_TableClassName="Fiesta_tblttr_cliente_consumoDataTable" msprop:Generator_RowEvArgName="Fiesta_tblttr_cliente_consumoRowChangeEvent" msprop:Generator_TableVarName="tableFiesta_tblttr_cliente_consumo" msprop:Generator_TablePropName="Fiesta_tblttr_cliente_consumo" msprop:Generator_RowDeletingName="Fiesta_tblttr_cliente_consumoRowDeleting" msprop:Generator_RowChangingName="Fiesta_tblttr_cliente_consumoRowChanging" msprop:Generator_RowDeletedName="Fiesta_tblttr_cliente_consumoRowDeleted" msprop:Generator_RowClassName="Fiesta_tblttr_cliente_consumoRow" msprop:Generator_RowEvHandlerName="Fiesta_tblttr_cliente_consumoRowChangeEventHandler" msprop:Generator_RowChangedName="Fiesta_tblttr_cliente_consumoRowChanged" msprop:Generator_UserTableName="Fiesta_tblttr_cliente_consumo">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="datFechaCreac" msprop:Generator_ColumnVarNameInTable="columndatFechaCreac" msprop:Generator_ColumnPropNameInRow="datFechaCreac" msprop:Generator_ColumnPropNameInTable="datFechaCreacColumn" msprop:Generator_UserColumnName="datFechaCreac" type="xs:dateTime" />
@@ -2485,7 +2595,7 @@ ORDER BY Fecha DESC</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Luxor_tblaux_tipocambio" msprop:Generator_TableClassName="Luxor_tblaux_tipocambioDataTable" msprop:Generator_RowEvArgName="Luxor_tblaux_tipocambioRowChangeEvent" msprop:Generator_TableVarName="tableLuxor_tblaux_tipocambio" msprop:Generator_TablePropName="Luxor_tblaux_tipocambio" msprop:Generator_RowDeletingName="Luxor_tblaux_tipocambioRowDeleting" msprop:Generator_UserTableName="Luxor_tblaux_tipocambio" msprop:Generator_RowChangingName="Luxor_tblaux_tipocambioRowChanging" msprop:Generator_RowDeletedName="Luxor_tblaux_tipocambioRowDeleted" msprop:Generator_RowChangedName="Luxor_tblaux_tipocambioRowChanged" msprop:Generator_RowEvHandlerName="Luxor_tblaux_tipocambioRowChangeEventHandler" msprop:Generator_RowClassName="Luxor_tblaux_tipocambioRow">
+        <xs:element name="Luxor_tblaux_tipocambio" msprop:Generator_TableClassName="Luxor_tblaux_tipocambioDataTable" msprop:Generator_RowEvArgName="Luxor_tblaux_tipocambioRowChangeEvent" msprop:Generator_TableVarName="tableLuxor_tblaux_tipocambio" msprop:Generator_TablePropName="Luxor_tblaux_tipocambio" msprop:Generator_RowDeletingName="Luxor_tblaux_tipocambioRowDeleting" msprop:Generator_RowChangingName="Luxor_tblaux_tipocambioRowChanging" msprop:Generator_RowDeletedName="Luxor_tblaux_tipocambioRowDeleted" msprop:Generator_RowClassName="Luxor_tblaux_tipocambioRow" msprop:Generator_RowEvHandlerName="Luxor_tblaux_tipocambioRowChangeEventHandler" msprop:Generator_RowChangedName="Luxor_tblaux_tipocambioRowChanged" msprop:Generator_UserTableName="Luxor_tblaux_tipocambio">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Fecha" msprop:Generator_ColumnVarNameInTable="columnFecha" msprop:Generator_ColumnPropNameInRow="Fecha" msprop:Generator_ColumnPropNameInTable="FechaColumn" msprop:Generator_UserColumnName="Fecha" type="xs:dateTime" minOccurs="0" />
@@ -2497,19 +2607,7 @@ ORDER BY Fecha DESC</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Fiesta_tblaux_tipocambio" msprop:Generator_TableClassName="Fiesta_tblaux_tipocambioDataTable" msprop:Generator_RowEvArgName="Fiesta_tblaux_tipocambioRowChangeEvent" msprop:Generator_TableVarName="tableFiesta_tblaux_tipocambio" msprop:Generator_TablePropName="Fiesta_tblaux_tipocambio" msprop:Generator_RowDeletingName="Fiesta_tblaux_tipocambioRowDeleting" msprop:Generator_UserTableName="Fiesta_tblaux_tipocambio" msprop:Generator_RowChangingName="Fiesta_tblaux_tipocambioRowChanging" msprop:Generator_RowDeletedName="Fiesta_tblaux_tipocambioRowDeleted" msprop:Generator_RowChangedName="Fiesta_tblaux_tipocambioRowChanged" msprop:Generator_RowEvHandlerName="Fiesta_tblaux_tipocambioRowChangeEventHandler" msprop:Generator_RowClassName="Fiesta_tblaux_tipocambioRow">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="Fecha" msprop:Generator_ColumnVarNameInTable="columnFecha" msprop:Generator_ColumnPropNameInRow="Fecha" msprop:Generator_ColumnPropNameInTable="FechaColumn" msprop:Generator_UserColumnName="Fecha" type="xs:dateTime" minOccurs="0" />
-              <xs:element name="Tasa" msprop:Generator_ColumnVarNameInTable="columnTasa" msprop:Generator_ColumnPropNameInRow="Tasa" msprop:Generator_ColumnPropNameInTable="TasaColumn" msprop:Generator_UserColumnName="Tasa" type="xs:decimal" minOccurs="0" />
-              <xs:element name="ftdc_yyyy" msprop:Generator_ColumnVarNameInTable="columnftdc_yyyy" msprop:Generator_ColumnPropNameInRow="ftdc_yyyy" msprop:Generator_ColumnPropNameInTable="ftdc_yyyyColumn" msprop:Generator_UserColumnName="ftdc_yyyy" type="xs:int" />
-              <xs:element name="ftdc_mm" msprop:Generator_ColumnVarNameInTable="columnftdc_mm" msprop:Generator_ColumnPropNameInRow="ftdc_mm" msprop:Generator_ColumnPropNameInTable="ftdc_mmColumn" msprop:Generator_UserColumnName="ftdc_mm" type="xs:int" />
-              <xs:element name="ftdc_dd" msprop:Generator_ColumnVarNameInTable="columnftdc_dd" msprop:Generator_ColumnPropNameInRow="ftdc_dd" msprop:Generator_ColumnPropNameInTable="ftdc_ddColumn" msprop:Generator_UserColumnName="ftdc_dd" type="xs:int" />
-              <xs:element name="Estado" msprop:Generator_ColumnVarNameInTable="columnEstado" msprop:Generator_ColumnPropNameInRow="Estado" msprop:Generator_ColumnPropNameInTable="EstadoColumn" msprop:Generator_UserColumnName="Estado" type="xs:int" minOccurs="0" />
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
-        <xs:element name="Luxor_viwbdd_cliente_crm" msprop:Generator_TableClassName="Luxor_viwbdd_cliente_crmDataTable" msprop:Generator_RowEvArgName="Luxor_viwbdd_cliente_crmRowChangeEvent" msprop:Generator_TableVarName="tableLuxor_viwbdd_cliente_crm" msprop:Generator_TablePropName="Luxor_viwbdd_cliente_crm" msprop:Generator_RowDeletingName="Luxor_viwbdd_cliente_crmRowDeleting" msprop:Generator_UserTableName="Luxor_viwbdd_cliente_crm" msprop:Generator_RowChangingName="Luxor_viwbdd_cliente_crmRowChanging" msprop:Generator_RowDeletedName="Luxor_viwbdd_cliente_crmRowDeleted" msprop:Generator_RowChangedName="Luxor_viwbdd_cliente_crmRowChanged" msprop:Generator_RowEvHandlerName="Luxor_viwbdd_cliente_crmRowChangeEventHandler" msprop:Generator_RowClassName="Luxor_viwbdd_cliente_crmRow">
+        <xs:element name="Luxor_viwbdd_cliente_crm" msprop:Generator_TableClassName="Luxor_viwbdd_cliente_crmDataTable" msprop:Generator_RowEvArgName="Luxor_viwbdd_cliente_crmRowChangeEvent" msprop:Generator_TableVarName="tableLuxor_viwbdd_cliente_crm" msprop:Generator_TablePropName="Luxor_viwbdd_cliente_crm" msprop:Generator_RowDeletingName="Luxor_viwbdd_cliente_crmRowDeleting" msprop:Generator_RowChangingName="Luxor_viwbdd_cliente_crmRowChanging" msprop:Generator_RowDeletedName="Luxor_viwbdd_cliente_crmRowDeleted" msprop:Generator_RowClassName="Luxor_viwbdd_cliente_crmRow" msprop:Generator_RowEvHandlerName="Luxor_viwbdd_cliente_crmRowChangeEventHandler" msprop:Generator_RowChangedName="Luxor_viwbdd_cliente_crmRowChanged" msprop:Generator_UserTableName="Luxor_viwbdd_cliente_crm">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Fuente" msprop:Generator_ColumnVarNameInTable="columnFuente" msprop:Generator_ColumnPropNameInRow="Fuente" msprop:Generator_ColumnPropNameInTable="FuenteColumn" msprop:Generator_UserColumnName="Fuente" type="xs:string" minOccurs="0" />
@@ -2540,7 +2638,7 @@ ORDER BY Fecha DESC</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Fiesta_viwbdd_cliente_crm" msprop:Generator_TableClassName="Fiesta_viwbdd_cliente_crmDataTable" msprop:Generator_RowEvArgName="Fiesta_viwbdd_cliente_crmRowChangeEvent" msprop:Generator_TableVarName="tableFiesta_viwbdd_cliente_crm" msprop:Generator_TablePropName="Fiesta_viwbdd_cliente_crm" msprop:Generator_RowDeletingName="Fiesta_viwbdd_cliente_crmRowDeleting" msprop:Generator_UserTableName="Fiesta_viwbdd_cliente_crm" msprop:Generator_RowChangingName="Fiesta_viwbdd_cliente_crmRowChanging" msprop:Generator_RowDeletedName="Fiesta_viwbdd_cliente_crmRowDeleted" msprop:Generator_RowChangedName="Fiesta_viwbdd_cliente_crmRowChanged" msprop:Generator_RowEvHandlerName="Fiesta_viwbdd_cliente_crmRowChangeEventHandler" msprop:Generator_RowClassName="Fiesta_viwbdd_cliente_crmRow">
+        <xs:element name="Fiesta_viwbdd_cliente_crm" msprop:Generator_TableClassName="Fiesta_viwbdd_cliente_crmDataTable" msprop:Generator_RowEvArgName="Fiesta_viwbdd_cliente_crmRowChangeEvent" msprop:Generator_TableVarName="tableFiesta_viwbdd_cliente_crm" msprop:Generator_TablePropName="Fiesta_viwbdd_cliente_crm" msprop:Generator_RowDeletingName="Fiesta_viwbdd_cliente_crmRowDeleting" msprop:Generator_RowChangingName="Fiesta_viwbdd_cliente_crmRowChanging" msprop:Generator_RowDeletedName="Fiesta_viwbdd_cliente_crmRowDeleted" msprop:Generator_RowClassName="Fiesta_viwbdd_cliente_crmRow" msprop:Generator_RowEvHandlerName="Fiesta_viwbdd_cliente_crmRowChangeEventHandler" msprop:Generator_RowChangedName="Fiesta_viwbdd_cliente_crmRowChanged" msprop:Generator_UserTableName="Fiesta_viwbdd_cliente_crm">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Fuente" msprop:Generator_ColumnVarNameInTable="columnFuente" msprop:Generator_ColumnPropNameInRow="Fuente" msprop:Generator_ColumnPropNameInTable="FuenteColumn" msprop:Generator_UserColumnName="Fuente" type="xs:string" minOccurs="0" />
@@ -2571,7 +2669,7 @@ ORDER BY Fecha DESC</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Luxor_viwfcb_clientes_datosbasicos" msprop:Generator_TableClassName="Luxor_viwfcb_clientes_datosbasicosDataTable" msprop:Generator_RowEvArgName="Luxor_viwfcb_clientes_datosbasicosRowChangeEvent" msprop:Generator_TableVarName="tableLuxor_viwfcb_clientes_datosbasicos" msprop:Generator_TablePropName="Luxor_viwfcb_clientes_datosbasicos" msprop:Generator_RowDeletingName="Luxor_viwfcb_clientes_datosbasicosRowDeleting" msprop:Generator_UserTableName="Luxor_viwfcb_clientes_datosbasicos" msprop:Generator_RowChangingName="Luxor_viwfcb_clientes_datosbasicosRowChanging" msprop:Generator_RowDeletedName="Luxor_viwfcb_clientes_datosbasicosRowDeleted" msprop:Generator_RowChangedName="Luxor_viwfcb_clientes_datosbasicosRowChanged" msprop:Generator_RowEvHandlerName="Luxor_viwfcb_clientes_datosbasicosRowChangeEventHandler" msprop:Generator_RowClassName="Luxor_viwfcb_clientes_datosbasicosRow">
+        <xs:element name="Luxor_viwfcb_clientes_datosbasicos" msprop:Generator_TableClassName="Luxor_viwfcb_clientes_datosbasicosDataTable" msprop:Generator_RowEvArgName="Luxor_viwfcb_clientes_datosbasicosRowChangeEvent" msprop:Generator_TableVarName="tableLuxor_viwfcb_clientes_datosbasicos" msprop:Generator_TablePropName="Luxor_viwfcb_clientes_datosbasicos" msprop:Generator_RowDeletingName="Luxor_viwfcb_clientes_datosbasicosRowDeleting" msprop:Generator_RowChangingName="Luxor_viwfcb_clientes_datosbasicosRowChanging" msprop:Generator_RowDeletedName="Luxor_viwfcb_clientes_datosbasicosRowDeleted" msprop:Generator_RowClassName="Luxor_viwfcb_clientes_datosbasicosRow" msprop:Generator_RowEvHandlerName="Luxor_viwfcb_clientes_datosbasicosRowChangeEventHandler" msprop:Generator_RowChangedName="Luxor_viwfcb_clientes_datosbasicosRowChanged" msprop:Generator_UserTableName="Luxor_viwfcb_clientes_datosbasicos">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ClienteId" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnClienteId" msprop:Generator_ColumnPropNameInRow="ClienteId" msprop:Generator_ColumnPropNameInTable="ClienteIdColumn" msprop:Generator_UserColumnName="ClienteId" type="xs:int" />
@@ -2585,7 +2683,7 @@ ORDER BY Fecha DESC</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Fiesta_viwfcb_clientes_datosbasicos" msprop:Generator_TableClassName="Fiesta_viwfcb_clientes_datosbasicosDataTable" msprop:Generator_RowEvArgName="Fiesta_viwfcb_clientes_datosbasicosRowChangeEvent" msprop:Generator_TableVarName="tableFiesta_viwfcb_clientes_datosbasicos" msprop:Generator_TablePropName="Fiesta_viwfcb_clientes_datosbasicos" msprop:Generator_RowDeletingName="Fiesta_viwfcb_clientes_datosbasicosRowDeleting" msprop:Generator_UserTableName="Fiesta_viwfcb_clientes_datosbasicos" msprop:Generator_RowChangingName="Fiesta_viwfcb_clientes_datosbasicosRowChanging" msprop:Generator_RowDeletedName="Fiesta_viwfcb_clientes_datosbasicosRowDeleted" msprop:Generator_RowChangedName="Fiesta_viwfcb_clientes_datosbasicosRowChanged" msprop:Generator_RowEvHandlerName="Fiesta_viwfcb_clientes_datosbasicosRowChangeEventHandler" msprop:Generator_RowClassName="Fiesta_viwfcb_clientes_datosbasicosRow">
+        <xs:element name="Fiesta_viwfcb_clientes_datosbasicos" msprop:Generator_TableClassName="Fiesta_viwfcb_clientes_datosbasicosDataTable" msprop:Generator_RowEvArgName="Fiesta_viwfcb_clientes_datosbasicosRowChangeEvent" msprop:Generator_TableVarName="tableFiesta_viwfcb_clientes_datosbasicos" msprop:Generator_TablePropName="Fiesta_viwfcb_clientes_datosbasicos" msprop:Generator_RowDeletingName="Fiesta_viwfcb_clientes_datosbasicosRowDeleting" msprop:Generator_RowChangingName="Fiesta_viwfcb_clientes_datosbasicosRowChanging" msprop:Generator_RowDeletedName="Fiesta_viwfcb_clientes_datosbasicosRowDeleted" msprop:Generator_RowClassName="Fiesta_viwfcb_clientes_datosbasicosRow" msprop:Generator_RowEvHandlerName="Fiesta_viwfcb_clientes_datosbasicosRowChangeEventHandler" msprop:Generator_RowChangedName="Fiesta_viwfcb_clientes_datosbasicosRowChanged" msprop:Generator_UserTableName="Fiesta_viwfcb_clientes_datosbasicos">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ClienteId" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnClienteId" msprop:Generator_ColumnPropNameInRow="ClienteId" msprop:Generator_ColumnPropNameInTable="ClienteIdColumn" msprop:Generator_UserColumnName="ClienteId" type="xs:int" />
@@ -2599,7 +2697,7 @@ ORDER BY Fecha DESC</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Luxor_viwbdd_cliente_slots" msprop:Generator_TableClassName="Luxor_viwbdd_cliente_slotsDataTable" msprop:Generator_RowEvArgName="Luxor_viwbdd_cliente_slotsRowChangeEvent" msprop:Generator_TableVarName="tableLuxor_viwbdd_cliente_slots" msprop:Generator_TablePropName="Luxor_viwbdd_cliente_slots" msprop:Generator_RowDeletingName="Luxor_viwbdd_cliente_slotsRowDeleting" msprop:Generator_UserTableName="Luxor_viwbdd_cliente_slots" msprop:Generator_RowChangingName="Luxor_viwbdd_cliente_slotsRowChanging" msprop:Generator_RowDeletedName="Luxor_viwbdd_cliente_slotsRowDeleted" msprop:Generator_RowChangedName="Luxor_viwbdd_cliente_slotsRowChanged" msprop:Generator_RowEvHandlerName="Luxor_viwbdd_cliente_slotsRowChangeEventHandler" msprop:Generator_RowClassName="Luxor_viwbdd_cliente_slotsRow">
+        <xs:element name="Luxor_viwbdd_cliente_slots" msprop:Generator_TableClassName="Luxor_viwbdd_cliente_slotsDataTable" msprop:Generator_RowEvArgName="Luxor_viwbdd_cliente_slotsRowChangeEvent" msprop:Generator_TableVarName="tableLuxor_viwbdd_cliente_slots" msprop:Generator_TablePropName="Luxor_viwbdd_cliente_slots" msprop:Generator_RowDeletingName="Luxor_viwbdd_cliente_slotsRowDeleting" msprop:Generator_RowChangingName="Luxor_viwbdd_cliente_slotsRowChanging" msprop:Generator_RowDeletedName="Luxor_viwbdd_cliente_slotsRowDeleted" msprop:Generator_RowClassName="Luxor_viwbdd_cliente_slotsRow" msprop:Generator_RowEvHandlerName="Luxor_viwbdd_cliente_slotsRowChangeEventHandler" msprop:Generator_RowChangedName="Luxor_viwbdd_cliente_slotsRowChanged" msprop:Generator_UserTableName="Luxor_viwbdd_cliente_slots">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Fuente" msprop:Generator_ColumnVarNameInTable="columnFuente" msprop:Generator_ColumnPropNameInRow="Fuente" msprop:Generator_ColumnPropNameInTable="FuenteColumn" msprop:Generator_UserColumnName="Fuente" type="xs:string" minOccurs="0" />
@@ -2632,7 +2730,7 @@ ORDER BY Fecha DESC</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Fiesta_viwbdd_cliente_slots" msprop:Generator_TableClassName="Fiesta_viwbdd_cliente_slotsDataTable" msprop:Generator_RowEvArgName="Fiesta_viwbdd_cliente_slotsRowChangeEvent" msprop:Generator_TableVarName="tableFiesta_viwbdd_cliente_slots" msprop:Generator_TablePropName="Fiesta_viwbdd_cliente_slots" msprop:Generator_RowDeletingName="Fiesta_viwbdd_cliente_slotsRowDeleting" msprop:Generator_UserTableName="Fiesta_viwbdd_cliente_slots" msprop:Generator_RowChangingName="Fiesta_viwbdd_cliente_slotsRowChanging" msprop:Generator_RowDeletedName="Fiesta_viwbdd_cliente_slotsRowDeleted" msprop:Generator_RowChangedName="Fiesta_viwbdd_cliente_slotsRowChanged" msprop:Generator_RowEvHandlerName="Fiesta_viwbdd_cliente_slotsRowChangeEventHandler" msprop:Generator_RowClassName="Fiesta_viwbdd_cliente_slotsRow">
+        <xs:element name="Fiesta_viwbdd_cliente_slots" msprop:Generator_TableClassName="Fiesta_viwbdd_cliente_slotsDataTable" msprop:Generator_RowEvArgName="Fiesta_viwbdd_cliente_slotsRowChangeEvent" msprop:Generator_TableVarName="tableFiesta_viwbdd_cliente_slots" msprop:Generator_TablePropName="Fiesta_viwbdd_cliente_slots" msprop:Generator_RowDeletingName="Fiesta_viwbdd_cliente_slotsRowDeleting" msprop:Generator_RowChangingName="Fiesta_viwbdd_cliente_slotsRowChanging" msprop:Generator_RowDeletedName="Fiesta_viwbdd_cliente_slotsRowDeleted" msprop:Generator_RowClassName="Fiesta_viwbdd_cliente_slotsRow" msprop:Generator_RowEvHandlerName="Fiesta_viwbdd_cliente_slotsRowChangeEventHandler" msprop:Generator_RowChangedName="Fiesta_viwbdd_cliente_slotsRowChanged" msprop:Generator_UserTableName="Fiesta_viwbdd_cliente_slots">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Fuente" msprop:Generator_ColumnVarNameInTable="columnFuente" msprop:Generator_ColumnPropNameInRow="Fuente" msprop:Generator_ColumnPropNameInTable="FuenteColumn" msprop:Generator_UserColumnName="Fuente" type="xs:string" minOccurs="0" />
@@ -2665,7 +2763,7 @@ ORDER BY Fecha DESC</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Tacna_tblbdd_clienteBusqueda" msprop:Generator_TableClassName="Tacna_tblbdd_clienteBusquedaDataTable" msprop:Generator_RowEvArgName="Tacna_tblbdd_clienteBusquedaRowChangeEvent" msprop:Generator_TableVarName="tableTacna_tblbdd_clienteBusqueda" msprop:Generator_TablePropName="Tacna_tblbdd_clienteBusqueda" msprop:Generator_RowDeletingName="Tacna_tblbdd_clienteBusquedaRowDeleting" msprop:Generator_UserTableName="Tacna_tblbdd_clienteBusqueda" msprop:Generator_RowChangingName="Tacna_tblbdd_clienteBusquedaRowChanging" msprop:Generator_RowDeletedName="Tacna_tblbdd_clienteBusquedaRowDeleted" msprop:Generator_RowChangedName="Tacna_tblbdd_clienteBusquedaRowChanged" msprop:Generator_RowEvHandlerName="Tacna_tblbdd_clienteBusquedaRowChangeEventHandler" msprop:Generator_RowClassName="Tacna_tblbdd_clienteBusquedaRow">
+        <xs:element name="Tacna_tblbdd_clienteBusqueda" msprop:Generator_TableClassName="Tacna_tblbdd_clienteBusquedaDataTable" msprop:Generator_RowEvArgName="Tacna_tblbdd_clienteBusquedaRowChangeEvent" msprop:Generator_TableVarName="tableTacna_tblbdd_clienteBusqueda" msprop:Generator_TablePropName="Tacna_tblbdd_clienteBusqueda" msprop:Generator_RowDeletingName="Tacna_tblbdd_clienteBusquedaRowDeleting" msprop:Generator_RowChangingName="Tacna_tblbdd_clienteBusquedaRowChanging" msprop:Generator_RowDeletedName="Tacna_tblbdd_clienteBusquedaRowDeleted" msprop:Generator_RowClassName="Tacna_tblbdd_clienteBusquedaRow" msprop:Generator_RowEvHandlerName="Tacna_tblbdd_clienteBusquedaRowChangeEventHandler" msprop:Generator_RowChangedName="Tacna_tblbdd_clienteBusquedaRowChanged" msprop:Generator_UserTableName="Tacna_tblbdd_clienteBusqueda">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ClienteId" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnClienteId" msprop:Generator_ColumnPropNameInRow="ClienteId" msprop:Generator_ColumnPropNameInTable="ClienteIdColumn" msprop:Generator_UserColumnName="ClienteId" type="xs:int" />
@@ -2677,7 +2775,31 @@ ORDER BY Fecha DESC</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Tacna_tblaux_tipocambio" msprop:Generator_TableClassName="Tacna_tblaux_tipocambioDataTable" msprop:Generator_RowEvArgName="Tacna_tblaux_tipocambioRowChangeEvent" msprop:Generator_TableVarName="tableTacna_tblaux_tipocambio" msprop:Generator_TablePropName="Tacna_tblaux_tipocambio" msprop:Generator_RowDeletingName="Tacna_tblaux_tipocambioRowDeleting" msprop:Generator_UserTableName="Tacna_tblaux_tipocambio" msprop:Generator_RowChangingName="Tacna_tblaux_tipocambioRowChanging" msprop:Generator_RowDeletedName="Tacna_tblaux_tipocambioRowDeleted" msprop:Generator_RowChangedName="Tacna_tblaux_tipocambioRowChanged" msprop:Generator_RowEvHandlerName="Tacna_tblaux_tipocambioRowChangeEventHandler" msprop:Generator_RowClassName="Tacna_tblaux_tipocambioRow">
+        <xs:element name="Tacna_tblaux_tipocambio" msprop:Generator_TableClassName="Tacna_tblaux_tipocambioDataTable" msprop:Generator_RowEvArgName="Tacna_tblaux_tipocambioRowChangeEvent" msprop:Generator_TableVarName="tableTacna_tblaux_tipocambio" msprop:Generator_TablePropName="Tacna_tblaux_tipocambio" msprop:Generator_RowDeletingName="Tacna_tblaux_tipocambioRowDeleting" msprop:Generator_RowChangingName="Tacna_tblaux_tipocambioRowChanging" msprop:Generator_RowDeletedName="Tacna_tblaux_tipocambioRowDeleted" msprop:Generator_RowClassName="Tacna_tblaux_tipocambioRow" msprop:Generator_RowEvHandlerName="Tacna_tblaux_tipocambioRowChangeEventHandler" msprop:Generator_RowChangedName="Tacna_tblaux_tipocambioRowChanged" msprop:Generator_UserTableName="Tacna_tblaux_tipocambio">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Fecha" msprop:Generator_ColumnVarNameInTable="columnFecha" msprop:Generator_ColumnPropNameInRow="Fecha" msprop:Generator_ColumnPropNameInTable="FechaColumn" msprop:Generator_UserColumnName="Fecha" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Tasa" msprop:Generator_ColumnVarNameInTable="columnTasa" msprop:Generator_ColumnPropNameInRow="Tasa" msprop:Generator_ColumnPropNameInTable="TasaColumn" msprop:Generator_UserColumnName="Tasa" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ftdc_yyyy" msprop:Generator_ColumnVarNameInTable="columnftdc_yyyy" msprop:Generator_ColumnPropNameInRow="ftdc_yyyy" msprop:Generator_ColumnPropNameInTable="ftdc_yyyyColumn" msprop:Generator_UserColumnName="ftdc_yyyy" type="xs:int" />
+              <xs:element name="ftdc_mm" msprop:Generator_ColumnVarNameInTable="columnftdc_mm" msprop:Generator_ColumnPropNameInRow="ftdc_mm" msprop:Generator_ColumnPropNameInTable="ftdc_mmColumn" msprop:Generator_UserColumnName="ftdc_mm" type="xs:int" />
+              <xs:element name="ftdc_dd" msprop:Generator_ColumnVarNameInTable="columnftdc_dd" msprop:Generator_ColumnPropNameInRow="ftdc_dd" msprop:Generator_ColumnPropNameInTable="ftdc_ddColumn" msprop:Generator_UserColumnName="ftdc_dd" type="xs:int" />
+              <xs:element name="Estado" msprop:Generator_ColumnVarNameInTable="columnEstado" msprop:Generator_ColumnPropNameInRow="Estado" msprop:Generator_ColumnPropNameInTable="EstadoColumn" msprop:Generator_UserColumnName="Estado" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Fiesta_tblaux_tipocambio" msprop:Generator_TableClassName="Fiesta_tblaux_tipocambioDataTable" msprop:Generator_TableVarName="tableFiesta_tblaux_tipocambio" msprop:Generator_TablePropName="Fiesta_tblaux_tipocambio" msprop:Generator_RowDeletingName="Fiesta_tblaux_tipocambioRowDeleting" msprop:Generator_RowChangingName="Fiesta_tblaux_tipocambioRowChanging" msprop:Generator_RowEvHandlerName="Fiesta_tblaux_tipocambioRowChangeEventHandler" msprop:Generator_RowDeletedName="Fiesta_tblaux_tipocambioRowDeleted" msprop:Generator_UserTableName="Fiesta_tblaux_tipocambio" msprop:Generator_RowChangedName="Fiesta_tblaux_tipocambioRowChanged" msprop:Generator_RowEvArgName="Fiesta_tblaux_tipocambioRowChangeEvent" msprop:Generator_RowClassName="Fiesta_tblaux_tipocambioRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Fecha" msprop:Generator_ColumnVarNameInTable="columnFecha" msprop:Generator_ColumnPropNameInRow="Fecha" msprop:Generator_ColumnPropNameInTable="FechaColumn" msprop:Generator_UserColumnName="Fecha" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Tasa" msprop:Generator_ColumnVarNameInTable="columnTasa" msprop:Generator_ColumnPropNameInRow="Tasa" msprop:Generator_ColumnPropNameInTable="TasaColumn" msprop:Generator_UserColumnName="Tasa" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ftdc_yyyy" msprop:Generator_ColumnVarNameInTable="columnftdc_yyyy" msprop:Generator_ColumnPropNameInRow="ftdc_yyyy" msprop:Generator_ColumnPropNameInTable="ftdc_yyyyColumn" msprop:Generator_UserColumnName="ftdc_yyyy" type="xs:int" />
+              <xs:element name="ftdc_mm" msprop:Generator_ColumnVarNameInTable="columnftdc_mm" msprop:Generator_ColumnPropNameInRow="ftdc_mm" msprop:Generator_ColumnPropNameInTable="ftdc_mmColumn" msprop:Generator_UserColumnName="ftdc_mm" type="xs:int" />
+              <xs:element name="ftdc_dd" msprop:Generator_ColumnVarNameInTable="columnftdc_dd" msprop:Generator_ColumnPropNameInRow="ftdc_dd" msprop:Generator_ColumnPropNameInTable="ftdc_ddColumn" msprop:Generator_UserColumnName="ftdc_dd" type="xs:int" />
+              <xs:element name="Estado" msprop:Generator_ColumnVarNameInTable="columnEstado" msprop:Generator_ColumnPropNameInRow="Estado" msprop:Generator_ColumnPropNameInTable="EstadoColumn" msprop:Generator_UserColumnName="Estado" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Prueba_tblaux_tipocambio" msprop:Generator_TableClassName="Prueba_tblaux_tipocambioDataTable" msprop:Generator_TableVarName="tablePrueba_tblaux_tipocambio" msprop:Generator_TablePropName="Prueba_tblaux_tipocambio" msprop:Generator_RowDeletingName="Prueba_tblaux_tipocambioRowDeleting" msprop:Generator_RowChangingName="Prueba_tblaux_tipocambioRowChanging" msprop:Generator_RowEvHandlerName="Prueba_tblaux_tipocambioRowChangeEventHandler" msprop:Generator_RowDeletedName="Prueba_tblaux_tipocambioRowDeleted" msprop:Generator_UserTableName="Prueba_tblaux_tipocambio" msprop:Generator_RowChangedName="Prueba_tblaux_tipocambioRowChanged" msprop:Generator_RowEvArgName="Prueba_tblaux_tipocambioRowChangeEvent" msprop:Generator_RowClassName="Prueba_tblaux_tipocambioRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Fecha" msprop:Generator_ColumnVarNameInTable="columnFecha" msprop:Generator_ColumnPropNameInRow="Fecha" msprop:Generator_ColumnPropNameInTable="FechaColumn" msprop:Generator_UserColumnName="Fecha" type="xs:dateTime" minOccurs="0" />
@@ -2751,12 +2873,6 @@ ORDER BY Fecha DESC</CommandText>
       <xs:field xpath="mstns:ftdc_mm" />
       <xs:field xpath="mstns:ftdc_dd" />
     </xs:unique>
-    <xs:unique name="Fiesta_tblaux_tipocambio_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
-      <xs:selector xpath=".//mstns:Fiesta_tblaux_tipocambio" />
-      <xs:field xpath="mstns:ftdc_yyyy" />
-      <xs:field xpath="mstns:ftdc_mm" />
-      <xs:field xpath="mstns:ftdc_dd" />
-    </xs:unique>
     <xs:unique name="Luxor_viwbdd_cliente_crm_Constraint1" msdata:ConstraintName="Constraint1">
       <xs:selector xpath=".//mstns:Luxor_viwbdd_cliente_crm" />
       <xs:field xpath="mstns:ClienteCodigo" />
@@ -2791,11 +2907,23 @@ ORDER BY Fecha DESC</CommandText>
       <xs:field xpath="mstns:ftdc_mm" />
       <xs:field xpath="mstns:ftdc_dd" />
     </xs:unique>
+    <xs:unique name="Fiesta_tblaux_tipocambio_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Fiesta_tblaux_tipocambio" />
+      <xs:field xpath="mstns:ftdc_yyyy" />
+      <xs:field xpath="mstns:ftdc_mm" />
+      <xs:field xpath="mstns:ftdc_dd" />
+    </xs:unique>
+    <xs:unique name="Prueba_tblaux_tipocambio_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Prueba_tblaux_tipocambio" />
+      <xs:field xpath="mstns:ftdc_yyyy" />
+      <xs:field xpath="mstns:ftdc_mm" />
+      <xs:field xpath="mstns:ftdc_dd" />
+    </xs:unique>
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="Luxor_tblbdd_cliente_Luxor_tblbdd_consumo_ttr" msdata:parent="Luxor_tblbdd_cliente" msdata:child="Luxor_tblbdd_consumo_ttr" msdata:parentkey="ccli_id" msdata:childkey="ccli_id" msprop:Generator_UserChildTable="Luxor_tblbdd_consumo_ttr" msprop:Generator_ChildPropName="GetLuxor_tblbdd_consumo_ttrRows" msprop:Generator_ParentPropName="Luxor_tblbdd_clienteRow" msprop:Generator_UserRelationName="Luxor_tblbdd_cliente_Luxor_tblbdd_consumo_ttr" msprop:Generator_RelationVarName="relationLuxor_tblbdd_cliente_Luxor_tblbdd_consumo_ttr" msprop:Generator_UserParentTable="Luxor_tblbdd_cliente" />
-      <msdata:Relationship name="Fiesta_tblbdd_cliente_Fiesta_tblbdd_consumo_ttr" msdata:parent="Fiesta_tblbdd_cliente" msdata:child="Fiesta_tblbdd_consumo_ttr" msdata:parentkey="ccli_id" msdata:childkey="ccli_id" msprop:Generator_UserChildTable="Fiesta_tblbdd_consumo_ttr" msprop:Generator_ChildPropName="GetFiesta_tblbdd_consumo_ttrRows" msprop:Generator_ParentPropName="Fiesta_tblbdd_clienteRow" msprop:Generator_UserRelationName="Fiesta_tblbdd_cliente_Fiesta_tblbdd_consumo_ttr" msprop:Generator_RelationVarName="relationFiesta_tblbdd_cliente_Fiesta_tblbdd_consumo_ttr" msprop:Generator_UserParentTable="Fiesta_tblbdd_cliente" />
+      <msdata:Relationship name="Luxor_tblbdd_cliente_Luxor_tblbdd_consumo_ttr" msdata:parent="Luxor_tblbdd_cliente" msdata:child="Luxor_tblbdd_consumo_ttr" msdata:parentkey="ccli_id" msdata:childkey="ccli_id" msprop:Generator_UserChildTable="Luxor_tblbdd_consumo_ttr" msprop:Generator_ChildPropName="GetLuxor_tblbdd_consumo_ttrRows" msprop:Generator_UserRelationName="Luxor_tblbdd_cliente_Luxor_tblbdd_consumo_ttr" msprop:Generator_RelationVarName="relationLuxor_tblbdd_cliente_Luxor_tblbdd_consumo_ttr" msprop:Generator_UserParentTable="Luxor_tblbdd_cliente" msprop:Generator_ParentPropName="Luxor_tblbdd_clienteRow" />
+      <msdata:Relationship name="Fiesta_tblbdd_cliente_Fiesta_tblbdd_consumo_ttr" msdata:parent="Fiesta_tblbdd_cliente" msdata:child="Fiesta_tblbdd_consumo_ttr" msdata:parentkey="ccli_id" msdata:childkey="ccli_id" msprop:Generator_UserChildTable="Fiesta_tblbdd_consumo_ttr" msprop:Generator_ChildPropName="GetFiesta_tblbdd_consumo_ttrRows" msprop:Generator_UserRelationName="Fiesta_tblbdd_cliente_Fiesta_tblbdd_consumo_ttr" msprop:Generator_RelationVarName="relationFiesta_tblbdd_cliente_Fiesta_tblbdd_consumo_ttr" msprop:Generator_UserParentTable="Fiesta_tblbdd_cliente" msprop:Generator_ParentPropName="Fiesta_tblbdd_clienteRow" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>

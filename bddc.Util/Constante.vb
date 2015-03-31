@@ -23,7 +23,8 @@ Namespace Constante
     Public Module Mensajes
         'Sistema:
         'Public Msj_SistemaTitulo As String = "Fiesta Player's Club" 'Debe ser cambiado! (06/12/2010)
-        Public Msj_SistemaTitulo As String = "Acceso al sistema" 'Debe ser cambiado! (06/12/2010)
+        'Public Msj_SistemaTitulo As String = "Acceso al sistema" 'Debe ser cambiado! (06/12/2010)
+        Public Msj_SistemaTitulo As String = "Multicasino Fiesta Player's CLub"
 
         'Resultados de Operaciones:
         Public Ope_BuscarOK As String = "Búsqueda exitosa"
@@ -56,6 +57,7 @@ Namespace Constante
         Public Ope_EnProceso As String = "En proceso..."
         Public Ope_ProcesoFin As String = "Proceso finalizado!"
         Public Ope_ProcesoInvalido As String = "No se puede procesar al mismo usuario. Revisar."
+        Public Ope_ExportarReporte As String = "Se exporto exisitosamente el archivo!"
 
         'Mensajes de Accesos:
         Public Acc_AutenticacionOK As String = "Autenticación exitosa!"
