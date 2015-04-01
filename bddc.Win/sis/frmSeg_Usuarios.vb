@@ -235,8 +235,8 @@
 
         Dim objDALC = New DALC.SEG.clsUsuario
         Dim intResultado As Integer = Util.Enumeracion.enmResultadoOperacion.NONE
-
         Try
+            If MsgBox(Util.Constante.Msg_ConfInactivar, MsgBoxStyle.YesNo, Util.Constante.Msj_SistemaTitulo) <> 6 Then Exit Sub
 
             For k As Integer = 0 To cboUsuarioBuscar.Items.Count - 1
                 If txtUsuarioId.Text = CType(Me.cboUsuarioBuscar.Items(k), BEC.COM.clsItem).ItemId Then
@@ -246,22 +246,18 @@
             Next
 
             intResultado = objDALC.Eliminar(CType(Me.cboUsuarioBuscar.SelectedItem, BEC.COM.clsItem).ItemId, frmLogin.Unidad)
-
             If intResultado = Util.Enumeracion.enmResultadoOperacion.OK Then
-                tsslblMensaje.Text = Util.Constante.Ope_EliminarOK
+                tsslblMensaje.Text = Util.Constante.Ope_InactivarUsuarioOk
                 ResetControles()
                 LeerUsuarios()
             Else
-                tsslblMensaje.Text = Util.Constante.Ope_EliminarERR
+                tsslblMensaje.Text = Util.Constante.Ope_InactivarUsuarioERR
             End If
-
         Catch ex As Exception
             tsslblMensaje.Text = ex.Message
-
         Finally
             objDALC = Nothing
         End Try
-
     End Sub
 
 #End Region
@@ -273,6 +269,7 @@
         LeerUsuarios()
 
         tsbGuardar.Visible = True
+        tsbEliminar.Visible = True
     End Sub
 
     Private Sub tsbNuevo_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles tsbNuevo.Click

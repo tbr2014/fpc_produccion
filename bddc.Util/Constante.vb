@@ -58,6 +58,8 @@ Namespace Constante
         Public Ope_ProcesoFin As String = "Proceso finalizado!"
         Public Ope_ProcesoInvalido As String = "No se puede procesar al mismo usuario. Revisar."
         Public Ope_ExportarReporte As String = "Se exporto exisitosamente el archivo!"
+        Public Ope_InactivarUsuarioOk As String = "Se ha inactivado el usuario con éxito."
+        Public Ope_InactivarUsuarioERR As String = "No se ha inactivado el usuario."
 
         'Mensajes de Accesos:
         Public Acc_AutenticacionOK As String = "Autenticación exitosa!"
@@ -137,6 +139,7 @@ Namespace Constante
         'Mensaje de confirmacion
         Public Msg_ConfAgregar As String = "Esta seguro que desea guardar el registro?"
         Public Msg_ConfEliminar As String = "Esta seguro que desea eliminar el registro?"
+        Public Msg_ConfInactivar As String = "Esta seguro que quiere inactivar el usuario?"
 
         'Mensaje Validacion
         Public Msg_ClienteNoSeleccionado As String = "Error: Debe seleccionar al menos un cliente."

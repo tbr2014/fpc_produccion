@@ -42,18 +42,6 @@ Namespace SEG
                 prmParameter(0) = New MySqlParameter(arrParameter(0).ToString, MySqlDbType.String, Util.Constante.DiccionarioDatos.CONST_NOMBRE_50)
                 prmParameter(0).Value = arrFiltro(0)
 
-                ''2. Formateando Parámetros del SP:
-                'objMySqlCommand = New MySqlCommand
-                'With objMySqlCommand
-                '    .Connection = objMySqlConnection
-                '    .CommandType = CommandType.StoredProcedure
-                '    .CommandText = "sprbdd_cliente_escribir"
-                '    .Parameters.AddRange(prmParameter)
-
-                '3. Invocando al SP:
-
-                'Dim uni As Integer = StrComp(Unidad, "FIESTA CASINO BENAVIDES")
-
                 Select Case Unidad
                     Case "FIESTA CASINO BENAVIDES"
                         Util.Factory.ConfigOrigen = 1
@@ -207,6 +195,7 @@ Namespace SEG
             Dim strCadena As String = ""
 
             Try
+                'REALMENTE NO ELIMINA EL USUARIO SINO ACTUALIZA SU ESTADO
 
                 '1. Definiendo Parámetros del SP:
 
@@ -222,17 +211,6 @@ Namespace SEG
                     strCadena &= arrParameter(k) & ","
                 Next
                 strCadena = Mid(strCadena, 1, Len(strCadena) - 1)
-
-                'Dim uni As Integer = StrComp(Unidad, "FIESTA CASINO BENAVIDES")
-                'If uni = 0 Then
-                '    Util.Factory.ConfigOrigen = 1
-                '    CadenaConexion = Util.Factory.GetConexion
-                '    intResultado = MySqlHelper.ExecuteNonQuery(CadenaConexion, "call bdSeguridad.sprseg_usuario_eliminar ( " & strCadena & " );", prmParameter)
-                'Else
-                '    Util.Factory.ConfigOrigen = 2
-                '    CadenaConexion = Util.Factory.GetConexion
-                '    intResultado = MySqlHelper.ExecuteNonQuery(CadenaConexion, "call bdSeguridadluxor.sprseg_usuario_eliminar ( " & strCadena & " );", prmParameter)
-                'End If
 
                 Select Case Unidad
                     Case "FIESTA CASINO BENAVIDES"
@@ -256,7 +234,6 @@ Namespace SEG
                         intResultado = MySqlHelper.ExecuteNonQuery(CadenaConexion, "call bdseguridad_test.sprseg_usuario_eliminar ( " & strCadena & " );", prmParameter)
 
                 End Select
-
 
                 '4. Resultado del SP:
                 If intResultado > 0 Then
