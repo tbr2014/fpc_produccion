@@ -1,4 +1,6 @@
-﻿Public Class frmTasaCambio_luxor
+﻿Imports bddc.Win.BDClientesDataSetTableAdapters
+
+Public Class frmTasaCambio_luxor
 
     Dim boolNuevo As Boolean
 
@@ -28,7 +30,7 @@
         Me.Luxor_tblaux_tipocambioTableAdapter.Fill(Me.BDClientesDataSet.Luxor_tblaux_tipocambio)
 
         frmLogin.ConfigurarBarraxPermisos(ToolStrip1, Util.Enumeracion.enmSEGModulos.MODTBL)
-
+        'dptFecha.Value = DateTime.Today()
         boolNuevo = False
     End Sub
 

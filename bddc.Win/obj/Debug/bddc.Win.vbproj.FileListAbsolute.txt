@@ -2140,7 +2140,6 @@ C:\FPC AMBIENTE DE DESARROLLO\bddc\bddc.Win\obj\Debug\bddc.Win.frmPrincipal.reso
 C:\FPC AMBIENTE DE DESARROLLO\bddc\bddc.Win\obj\Debug\bddc.Win.frmLogin.resources
 C:\FPC AMBIENTE DE DESARROLLO\bddc\bddc.Win\obj\Debug\bddc.Win.Resources.resources
 C:\FPC AMBIENTE DE DESARROLLO\bddc\bddc.Win\obj\Debug\bddc.Win.frmTasaCambio.resources
-C:\FPC AMBIENTE DE DESARROLLO\bddc\bddc.Win\obj\Debug\bddc.Win.frmTasaCambio_Prueba.resources
 C:\FPC AMBIENTE DE DESARROLLO\bddc\bddc.Win\obj\Debug\bddc.Win.frmTasaCambio_Tacna.resources
 C:\FPC AMBIENTE DE DESARROLLO\bddc\bddc.Win\obj\Debug\bddc.Win.vbproj.GenerateResource.Cache
 C:\FPC AMBIENTE DE DESARROLLO\bddc\bddc.Win\obj\Debug\bddc.Win.exe.licenses
@@ -2152,3 +2151,4 @@ C:\FPC AMBIENTE DE DESARROLLO\bddc\bddc.Win\obj\Debug\bddc.Win.application
 C:\FPC AMBIENTE DE DESARROLLO\bddc\bddc.Win\obj\Debug\bddc.Win.exe
 C:\FPC AMBIENTE DE DESARROLLO\bddc\bddc.Win\obj\Debug\bddc.Win.xml
 C:\FPC AMBIENTE DE DESARROLLO\bddc\bddc.Win\obj\Debug\bddc.Win.pdb
+C:\FPC AMBIENTE DE DESARROLLO\bddc\bddc.Win\obj\Debug\bddc.Win.frmTasaCambio_prueba.resources

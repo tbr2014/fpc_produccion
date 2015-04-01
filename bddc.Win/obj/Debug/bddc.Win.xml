@@ -6,7 +6,290 @@ bddc.Win
 </name>
 </assembly>
 <members>
-<member name="T:bddc.Win.BDClientesDataSet.Luxor_tbllim_grupoclientebaccaratDataTable">
+<member name="M:bddc.Win.thlaadfs.wsSeguridad.#ctor">
+	<remarks/>
+</member><member name="E:bddc.Win.thlaadfs.wsSeguridad.HelloWorldCompleted">
+	<remarks/>
+</member><member name="E:bddc.Win.thlaadfs.wsSeguridad.IsAuthenticatedUserCompleted">
+	<remarks/>
+</member><member name="M:bddc.Win.thlaadfs.wsSeguridad.HelloWorld">
+	<remarks/>
+</member><member name="M:bddc.Win.thlaadfs.wsSeguridad.HelloWorldAsync">
+	<remarks/>
+</member><member name="M:bddc.Win.thlaadfs.wsSeguridad.HelloWorldAsync(System.Object)">
+	<remarks/>
+</member><member name="M:bddc.Win.thlaadfs.wsSeguridad.IsAuthenticatedUser(System.String,System.String)">
+	<remarks/>
+</member><member name="M:bddc.Win.thlaadfs.wsSeguridad.IsAuthenticatedUserAsync(System.String,System.String)">
+	<remarks/>
+</member><member name="M:bddc.Win.thlaadfs.wsSeguridad.IsAuthenticatedUserAsync(System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:bddc.Win.thlaadfs.wsSeguridad.CancelAsync(System.Object)">
+	<remarks/>
+</member><member name="T:bddc.Win.thlaadfs.wsSeguridad">
+	<remarks/>
+</member><member name="T:bddc.Win.thlaadfs.HelloWorldCompletedEventHandler">
+	<remarks/>
+</member><member name="P:bddc.Win.thlaadfs.HelloWorldCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:bddc.Win.thlaadfs.HelloWorldCompletedEventArgs">
+	<remarks/>
+</member><member name="T:bddc.Win.thlaadfs.IsAuthenticatedUserCompletedEventHandler">
+	<remarks/>
+</member><member name="P:bddc.Win.thlaadfs.IsAuthenticatedUserCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:bddc.Win.thlaadfs.IsAuthenticatedUserCompletedEventArgs">
+	<remarks/>
+</member><member name="T:bddc.Win.xmlWinLossAnual.winloss_añosDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:bddc.Win.xmlWinLossAnual.RatingTotal_xAñoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:bddc.Win.xmlWinLossAnual.winloss_añosRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:bddc.Win.xmlWinLossAnual.RatingTotal_xAñoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:bddc.Win.xmlWinLossAnual.winloss_añosRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:bddc.Win.xmlWinLossAnual.RatingTotal_xAñoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:bddc.Win.xmlWinLossAnual">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:bddc.Win.xmlWinLossAnualTableAdapters.winloss_añosTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:bddc.Win.xmlWinLossAnualTableAdapters.TableAdapterManager.UpdateUpdatedRows(bddc.Win.xmlWinLossAnual,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:bddc.Win.xmlWinLossAnualTableAdapters.TableAdapterManager.UpdateInsertedRows(bddc.Win.xmlWinLossAnual,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:bddc.Win.xmlWinLossAnualTableAdapters.TableAdapterManager.UpdateDeletedRows(bddc.Win.xmlWinLossAnual,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:bddc.Win.xmlWinLossAnualTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:bddc.Win.xmlWinLossAnualTableAdapters.TableAdapterManager.UpdateAll(bddc.Win.xmlWinLossAnual)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:bddc.Win.xmlWinLossAnualTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:bddc.Win.xmlWinLossAnualTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:bddc.Win.xmlWinLossAnualTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="P:bddc.Win.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:bddc.Win.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:bddc.Win.My.Resources.Resources.btnAperturaCaja">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:bddc.Win.My.Resources.Resources.btnCajasAbiertas">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:bddc.Win.My.Resources.Resources.btnFJMCierre">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:bddc.Win.My.Resources.Resources.btnFJMCredito">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:bddc.Win.My.Resources.Resources.btnFJMRelleno">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:bddc.Win.My.Resources.Resources.btngridBorrar">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:bddc.Win.My.Resources.Resources.btngridBorrarFila">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:bddc.Win.My.Resources.Resources.btngridBuscar">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:bddc.Win.My.Resources.Resources.btngridGuardar">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:bddc.Win.My.Resources.Resources.btngridNuevo">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:bddc.Win.My.Resources.Resources.btnGuardar">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:bddc.Win.My.Resources.Resources.btnImprimir">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:bddc.Win.My.Resources.Resources.btnImprimirCli">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:bddc.Win.My.Resources.Resources.btnNo">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:bddc.Win.My.Resources.Resources.btnNuevoCli">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:bddc.Win.My.Resources.Resources.btnOk">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:bddc.Win.My.Resources.Resources.btnSalida">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:bddc.Win.My.Resources.Resources.btnVolver">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:bddc.Win.My.Resources.Resources.caja">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:bddc.Win.My.Resources.Resources.excel">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:bddc.Win.My.Resources.Resources.imgAccesos">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:bddc.Win.My.Resources.Resources.imgAuditoria">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:bddc.Win.My.Resources.Resources.imgCajayConteo">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:bddc.Win.My.Resources.Resources.imgClientes">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:bddc.Win.My.Resources.Resources.imgEstimadoMesa">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:bddc.Win.My.Resources.Resources.imgImpresion">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:bddc.Win.My.Resources.Resources.imgLogin">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:bddc.Win.My.Resources.Resources.imgLogoFCB">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:bddc.Win.My.Resources.Resources.imgMercadeoCortesias">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:bddc.Win.My.Resources.Resources.imgMercadeoPromocion">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:bddc.Win.My.Resources.Resources.imgMovimMesas">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:bddc.Win.My.Resources.Resources.imgReportes">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:bddc.Win.My.Resources.Resources.imgRuleta">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:bddc.Win.My.Resources.Resources.imgSalir">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:bddc.Win.My.Resources.Resources.imgSistema">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:bddc.Win.My.Resources.Resources.imgTipoCambio">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:bddc.Win.My.Resources.Resources.imgTrasladoRating">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:bddc.Win.My.Resources.Resources.imgUsuarios">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:bddc.Win.My.Resources.Resources.update">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="T:bddc.Win.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="T:bddc.Win.xmlRatingDetalle.rptRatingDetalleDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:bddc.Win.xmlRatingDetalle.rptRatingDetalleRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:bddc.Win.xmlRatingDetalle.rptRatingDetalleRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:bddc.Win.xmlRatingDetalle">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:bddc.Win.BDClientesDataSet.Luxor_tbllim_grupoclientebaccaratDataTable">
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
@@ -377,289 +660,6 @@ Used to sort self-referenced table's rows
 </member><member name="T:bddc.Win.BDClientesDataSetTableAdapters.TableAdapterManager">
 	<summary>
 TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
-</summary>
-</member><member name="M:bddc.Win.thlaadfs.wsSeguridad.#ctor">
-	<remarks/>
-</member><member name="E:bddc.Win.thlaadfs.wsSeguridad.HelloWorldCompleted">
-	<remarks/>
-</member><member name="E:bddc.Win.thlaadfs.wsSeguridad.IsAuthenticatedUserCompleted">
-	<remarks/>
-</member><member name="M:bddc.Win.thlaadfs.wsSeguridad.HelloWorld">
-	<remarks/>
-</member><member name="M:bddc.Win.thlaadfs.wsSeguridad.HelloWorldAsync">
-	<remarks/>
-</member><member name="M:bddc.Win.thlaadfs.wsSeguridad.HelloWorldAsync(System.Object)">
-	<remarks/>
-</member><member name="M:bddc.Win.thlaadfs.wsSeguridad.IsAuthenticatedUser(System.String,System.String)">
-	<remarks/>
-</member><member name="M:bddc.Win.thlaadfs.wsSeguridad.IsAuthenticatedUserAsync(System.String,System.String)">
-	<remarks/>
-</member><member name="M:bddc.Win.thlaadfs.wsSeguridad.IsAuthenticatedUserAsync(System.String,System.String,System.Object)">
-	<remarks/>
-</member><member name="M:bddc.Win.thlaadfs.wsSeguridad.CancelAsync(System.Object)">
-	<remarks/>
-</member><member name="T:bddc.Win.thlaadfs.wsSeguridad">
-	<remarks/>
-</member><member name="T:bddc.Win.thlaadfs.HelloWorldCompletedEventHandler">
-	<remarks/>
-</member><member name="P:bddc.Win.thlaadfs.HelloWorldCompletedEventArgs.Result">
-	<remarks/>
-</member><member name="T:bddc.Win.thlaadfs.HelloWorldCompletedEventArgs">
-	<remarks/>
-</member><member name="T:bddc.Win.thlaadfs.IsAuthenticatedUserCompletedEventHandler">
-	<remarks/>
-</member><member name="P:bddc.Win.thlaadfs.IsAuthenticatedUserCompletedEventArgs.Result">
-	<remarks/>
-</member><member name="T:bddc.Win.thlaadfs.IsAuthenticatedUserCompletedEventArgs">
-	<remarks/>
-</member><member name="T:bddc.Win.xmlWinLossAnual.winloss_añosDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:bddc.Win.xmlWinLossAnual.RatingTotal_xAñoDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:bddc.Win.xmlWinLossAnual.winloss_añosRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:bddc.Win.xmlWinLossAnual.RatingTotal_xAñoRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:bddc.Win.xmlWinLossAnual.winloss_añosRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:bddc.Win.xmlWinLossAnual.RatingTotal_xAñoRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:bddc.Win.xmlWinLossAnual">
-	<summary>
-Represents a strongly typed in-memory cache of data.
-</summary>
-</member><member name="T:bddc.Win.xmlWinLossAnualTableAdapters.winloss_añosTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="M:bddc.Win.xmlWinLossAnualTableAdapters.TableAdapterManager.UpdateUpdatedRows(bddc.Win.xmlWinLossAnual,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
-	<summary>
-Update rows in top-down order.
-</summary>
-</member><member name="M:bddc.Win.xmlWinLossAnualTableAdapters.TableAdapterManager.UpdateInsertedRows(bddc.Win.xmlWinLossAnual,System.Collections.Generic.List{System.Data.DataRow})">
-	<summary>
-Insert rows in top-down order.
-</summary>
-</member><member name="M:bddc.Win.xmlWinLossAnualTableAdapters.TableAdapterManager.UpdateDeletedRows(bddc.Win.xmlWinLossAnual,System.Collections.Generic.List{System.Data.DataRow})">
-	<summary>
-Delete rows in bottom-up order.
-</summary>
-</member><member name="M:bddc.Win.xmlWinLossAnualTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
-	<summary>
-Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
-</summary>
-</member><member name="M:bddc.Win.xmlWinLossAnualTableAdapters.TableAdapterManager.UpdateAll(bddc.Win.xmlWinLossAnual)">
-	<summary>
-Update all changes to the dataset.
-</summary>
-</member><member name="T:bddc.Win.xmlWinLossAnualTableAdapters.TableAdapterManager.UpdateOrderOption">
-	<summary>
-Update Order Option
-</summary>
-</member><member name="T:bddc.Win.xmlWinLossAnualTableAdapters.TableAdapterManager.SelfReferenceComparer">
-	<summary>
-Used to sort self-referenced table's rows
-</summary>
-</member><member name="T:bddc.Win.xmlWinLossAnualTableAdapters.TableAdapterManager">
-	<summary>
-TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
-</summary>
-</member><member name="P:bddc.Win.My.Resources.Resources.ResourceManager">
-	<summary>
-  Returns the cached ResourceManager instance used by this class.
-</summary>
-</member><member name="P:bddc.Win.My.Resources.Resources.Culture">
-	<summary>
-  Overrides the current thread's CurrentUICulture property for all
-  resource lookups using this strongly typed resource class.
-</summary>
-</member><member name="P:bddc.Win.My.Resources.Resources.btnAperturaCaja">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:bddc.Win.My.Resources.Resources.btnCajasAbiertas">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:bddc.Win.My.Resources.Resources.btnFJMCierre">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:bddc.Win.My.Resources.Resources.btnFJMCredito">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:bddc.Win.My.Resources.Resources.btnFJMRelleno">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:bddc.Win.My.Resources.Resources.btngridBorrar">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:bddc.Win.My.Resources.Resources.btngridBorrarFila">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:bddc.Win.My.Resources.Resources.btngridBuscar">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:bddc.Win.My.Resources.Resources.btngridGuardar">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:bddc.Win.My.Resources.Resources.btngridNuevo">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:bddc.Win.My.Resources.Resources.btnGuardar">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:bddc.Win.My.Resources.Resources.btnImprimir">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:bddc.Win.My.Resources.Resources.btnImprimirCli">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:bddc.Win.My.Resources.Resources.btnNo">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:bddc.Win.My.Resources.Resources.btnNuevoCli">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:bddc.Win.My.Resources.Resources.btnOk">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:bddc.Win.My.Resources.Resources.btnSalida">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:bddc.Win.My.Resources.Resources.btnVolver">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:bddc.Win.My.Resources.Resources.caja">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:bddc.Win.My.Resources.Resources.excel">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:bddc.Win.My.Resources.Resources.imgAccesos">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:bddc.Win.My.Resources.Resources.imgAuditoria">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:bddc.Win.My.Resources.Resources.imgCajayConteo">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:bddc.Win.My.Resources.Resources.imgClientes">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:bddc.Win.My.Resources.Resources.imgEstimadoMesa">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:bddc.Win.My.Resources.Resources.imgImpresion">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:bddc.Win.My.Resources.Resources.imgLogin">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:bddc.Win.My.Resources.Resources.imgLogoFCB">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:bddc.Win.My.Resources.Resources.imgMercadeoCortesias">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:bddc.Win.My.Resources.Resources.imgMercadeoPromocion">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:bddc.Win.My.Resources.Resources.imgMovimMesas">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:bddc.Win.My.Resources.Resources.imgReportes">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:bddc.Win.My.Resources.Resources.imgRuleta">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:bddc.Win.My.Resources.Resources.imgSalir">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:bddc.Win.My.Resources.Resources.imgSistema">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:bddc.Win.My.Resources.Resources.imgTipoCambio">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:bddc.Win.My.Resources.Resources.imgTrasladoRating">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:bddc.Win.My.Resources.Resources.imgUsuarios">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:bddc.Win.My.Resources.Resources.update">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="T:bddc.Win.My.Resources.Resources">
-	<summary>
-  A strongly-typed resource class, for looking up localized strings, etc.
-</summary>
-</member><member name="T:bddc.Win.xmlRatingDetalle.rptRatingDetalleDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:bddc.Win.xmlRatingDetalle.rptRatingDetalleRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:bddc.Win.xmlRatingDetalle.rptRatingDetalleRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:bddc.Win.xmlRatingDetalle">
-	<summary>
-Represents a strongly typed in-memory cache of data.
 </summary>
 </member><member name="T:bddc.Win.xmlOperacionCajaReporte.rpRetiroEfectivoDataTable">
 	<summary>

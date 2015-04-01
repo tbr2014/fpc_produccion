@@ -5,8 +5,6 @@ Public Class frmTasaCambio_Tacna
     Dim boolNuevo As Boolean
     Private objDALC As DALC.COM.clsTipoCambio
 
-
-
 #Region "Operaciones"
 
     Private Sub ValidarRegistros()
@@ -21,14 +19,13 @@ Public Class frmTasaCambio_Tacna
             Me.txtDia.Text = CDate(Me.dptFecha.Text).Day
 
         Catch ex As Exception
-
+            MsgBox(ex.Message)
         End Try
     End Sub
 
 #End Region
 
     Private Sub frmTasaCambio_Tacna_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        'TODO: This line of code loads data into the 'BdClientesDataSet1.Tacna_tblaux_tipocambio' table. You can move, or remove it, as needed.
         Me.Tacna_tblaux_tipocambioTableAdapter.Fill(Me.BdClientesDataSet1.Tacna_tblaux_tipocambio)
         frmLogin.ConfigurarBarraxPermisos(ToolStrip1, Util.Enumeracion.enmSEGModulos.MODTBL)
 
@@ -46,7 +43,6 @@ Public Class frmTasaCambio_Tacna
 
         boolNuevo = False
     End Sub
-
 
     Private Sub TipoCambioBindingNavigatorSaveItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Me.Validate()

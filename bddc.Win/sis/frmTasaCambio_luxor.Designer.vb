@@ -22,47 +22,47 @@ Partial Class frmTasaCambio_luxor
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container
-        Me.lblMensaje = New System.Windows.Forms.Label
-        Me.ToolStrip1 = New System.Windows.Forms.ToolStrip
-        Me.tsbBuscar = New System.Windows.Forms.ToolStripButton
-        Me.tsbNuevo = New System.Windows.Forms.ToolStripButton
-        Me.tsbAgregar = New System.Windows.Forms.ToolStripButton
-        Me.tsbGuardar = New System.Windows.Forms.ToolStripButton
-        Me.tsbEliminar = New System.Windows.Forms.ToolStripButton
-        Me.tsbImprimir = New System.Windows.Forms.ToolStripButton
-        Me.tsbSalir = New System.Windows.Forms.ToolStripButton
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox
-        Me.chkEstado = New System.Windows.Forms.CheckBox
-        Me.txtTasa = New System.Windows.Forms.TextBox
-        Me.dptFecha = New System.Windows.Forms.DateTimePicker
-        Me.EstadoLabel = New System.Windows.Forms.Label
-        Me.TasaLabel = New System.Windows.Forms.Label
-        Me.FechaLabel = New System.Windows.Forms.Label
-        Me.BDClientesDataSet = New bddc.Win.BDClientesDataSet
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView
-        Me.txtDia = New System.Windows.Forms.TextBox
-        Me.txtMes = New System.Windows.Forms.TextBox
-        Me.txtAño = New System.Windows.Forms.TextBox
+        Me.components = New System.ComponentModel.Container()
+        Me.lblMensaje = New System.Windows.Forms.Label()
+        Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
+        Me.tsbBuscar = New System.Windows.Forms.ToolStripButton()
+        Me.tsbNuevo = New System.Windows.Forms.ToolStripButton()
+        Me.tsbAgregar = New System.Windows.Forms.ToolStripButton()
+        Me.tsbGuardar = New System.Windows.Forms.ToolStripButton()
+        Me.tsbEliminar = New System.Windows.Forms.ToolStripButton()
+        Me.tsbImprimir = New System.Windows.Forms.ToolStripButton()
+        Me.tsbSalir = New System.Windows.Forms.ToolStripButton()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.chkEstado = New System.Windows.Forms.CheckBox()
         Me.BindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.Luxor_tblaux_tipocambioTableAdapter = New bddc.Win.BDClientesDataSetTableAdapters.Luxor_tblaux_tipocambioTableAdapter
-        Me.TableAdapterManager1 = New bddc.Win.BDClientesDataSetTableAdapters.TableAdapterManager
-        Me.FechaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.TasaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.FtdcyyyyDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.FtdcmmDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.FtdcddDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.EstadoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewCheckBoxColumn
+        Me.BDClientesDataSet = New bddc.Win.BDClientesDataSet()
+        Me.txtTasa = New System.Windows.Forms.TextBox()
+        Me.dptFecha = New System.Windows.Forms.DateTimePicker()
+        Me.EstadoLabel = New System.Windows.Forms.Label()
+        Me.TasaLabel = New System.Windows.Forms.Label()
+        Me.FechaLabel = New System.Windows.Forms.Label()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.FechaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TasaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.FtdcyyyyDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.FtdcmmDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.FtdcddDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.EstadoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.txtDia = New System.Windows.Forms.TextBox()
+        Me.txtMes = New System.Windows.Forms.TextBox()
+        Me.txtAño = New System.Windows.Forms.TextBox()
+        Me.Luxor_tblaux_tipocambioTableAdapter = New bddc.Win.BDClientesDataSetTableAdapters.Luxor_tblaux_tipocambioTableAdapter()
+        Me.TableAdapterManager1 = New bddc.Win.BDClientesDataSetTableAdapters.TableAdapterManager()
         Me.ToolStrip1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
+        CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BDClientesDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblMensaje
@@ -200,6 +200,16 @@ Partial Class frmTasaCambio_luxor
         Me.chkEstado.TabIndex = 5
         Me.chkEstado.UseVisualStyleBackColor = True
         '
+        'BindingSource1
+        '
+        Me.BindingSource1.DataMember = "Luxor_tblaux_tipocambio"
+        Me.BindingSource1.DataSource = Me.BDClientesDataSet
+        '
+        'BDClientesDataSet
+        '
+        Me.BDClientesDataSet.DataSetName = "BDClientesDataSet"
+        Me.BDClientesDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
         'txtTasa
         '
         Me.txtTasa.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.BindingSource1, "Tasa", True))
@@ -245,11 +255,6 @@ Partial Class frmTasaCambio_luxor
         Me.FechaLabel.TabIndex = 0
         Me.FechaLabel.Text = "Fecha"
         '
-        'BDClientesDataSet
-        '
-        Me.BDClientesDataSet.DataSetName = "BDClientesDataSet"
-        Me.BDClientesDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
         'GroupBox2
         '
         Me.GroupBox2.Controls.Add(Me.DataGridView1)
@@ -272,61 +277,6 @@ Partial Class frmTasaCambio_luxor
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(344, 213)
         Me.DataGridView1.TabIndex = 0
-        '
-        'txtDia
-        '
-        Me.txtDia.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.txtDia.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.BindingSource1, "ftdc_dd", True))
-        Me.txtDia.Location = New System.Drawing.Point(222, 107)
-        Me.txtDia.Name = "txtDia"
-        Me.txtDia.Size = New System.Drawing.Size(100, 20)
-        Me.txtDia.TabIndex = 82
-        Me.txtDia.TabStop = False
-        '
-        'txtMes
-        '
-        Me.txtMes.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.txtMes.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.BindingSource1, "ftdc_mm", True))
-        Me.txtMes.Location = New System.Drawing.Point(222, 86)
-        Me.txtMes.Name = "txtMes"
-        Me.txtMes.Size = New System.Drawing.Size(100, 20)
-        Me.txtMes.TabIndex = 81
-        Me.txtMes.TabStop = False
-        '
-        'txtAño
-        '
-        Me.txtAño.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.txtAño.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.BindingSource1, "ftdc_yyyy", True))
-        Me.txtAño.Location = New System.Drawing.Point(222, 62)
-        Me.txtAño.Name = "txtAño"
-        Me.txtAño.Size = New System.Drawing.Size(100, 20)
-        Me.txtAño.TabIndex = 80
-        Me.txtAño.TabStop = False
-        '
-        'BindingSource1
-        '
-        Me.BindingSource1.DataMember = "Luxor_tblaux_tipocambio"
-        Me.BindingSource1.DataSource = Me.BDClientesDataSet
-        '
-        'Luxor_tblaux_tipocambioTableAdapter
-        '
-        Me.Luxor_tblaux_tipocambioTableAdapter.ClearBeforeFill = True
-        '
-        'TableAdapterManager1
-        '
-        Me.TableAdapterManager1.BackupDataSetBeforeUpdate = False
-        Me.TableAdapterManager1.Fiesta_tblaux_tipocambioTableAdapter = Nothing
-        Me.TableAdapterManager1.Fiesta_tblbdd_clienteTableAdapter = Nothing
-        Me.TableAdapterManager1.Fiesta_tblbdd_consumo_ttrTableAdapter = Nothing
-        Me.TableAdapterManager1.Fiesta_tblfjm_grupoclientebaccaratTableAdapter = Nothing
-        Me.TableAdapterManager1.Fiesta_tblttr_cliente_consumoTableAdapter = Nothing
-        Me.TableAdapterManager1.Luxor_tblaux_tipocambioTableAdapter = Me.Luxor_tblaux_tipocambioTableAdapter
-        Me.TableAdapterManager1.Luxor_tblbdd_clienteBusquedaTableAdapter = Nothing
-        Me.TableAdapterManager1.Luxor_tblbdd_clienteTableAdapter = Nothing
-        Me.TableAdapterManager1.Luxor_tblbdd_consumo_ttrTableAdapter = Nothing
-        Me.TableAdapterManager1.Luxor_tbllim_grupoclientebaccaratTableAdapter = Nothing
-        Me.TableAdapterManager1.Luxor_tblttr_cliente_consumoTableAdapter = Nothing
-        Me.TableAdapterManager1.UpdateOrder = bddc.Win.BDClientesDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         '
         'FechaDataGridViewTextBoxColumn
         '
@@ -369,6 +319,60 @@ Partial Class frmTasaCambio_luxor
         Me.EstadoDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
         Me.EstadoDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
         '
+        'txtDia
+        '
+        Me.txtDia.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.txtDia.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.BindingSource1, "ftdc_dd", True))
+        Me.txtDia.Location = New System.Drawing.Point(222, 107)
+        Me.txtDia.Name = "txtDia"
+        Me.txtDia.Size = New System.Drawing.Size(100, 20)
+        Me.txtDia.TabIndex = 82
+        Me.txtDia.TabStop = False
+        '
+        'txtMes
+        '
+        Me.txtMes.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.txtMes.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.BindingSource1, "ftdc_mm", True))
+        Me.txtMes.Location = New System.Drawing.Point(222, 86)
+        Me.txtMes.Name = "txtMes"
+        Me.txtMes.Size = New System.Drawing.Size(100, 20)
+        Me.txtMes.TabIndex = 81
+        Me.txtMes.TabStop = False
+        '
+        'txtAño
+        '
+        Me.txtAño.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.txtAño.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.BindingSource1, "ftdc_yyyy", True))
+        Me.txtAño.Location = New System.Drawing.Point(222, 62)
+        Me.txtAño.Name = "txtAño"
+        Me.txtAño.Size = New System.Drawing.Size(100, 20)
+        Me.txtAño.TabIndex = 80
+        Me.txtAño.TabStop = False
+        '
+        'Luxor_tblaux_tipocambioTableAdapter
+        '
+        Me.Luxor_tblaux_tipocambioTableAdapter.ClearBeforeFill = True
+        '
+        'TableAdapterManager1
+        '
+        Me.TableAdapterManager1.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager1.Fiesta_tblaux_tipocambioTableAdapter = Nothing
+        Me.TableAdapterManager1.Fiesta_tblbdd_clienteBusquedaTableAdapter = Nothing
+        Me.TableAdapterManager1.Fiesta_tblbdd_clienteTableAdapter = Nothing
+        Me.TableAdapterManager1.Fiesta_tblbdd_consumo_ttrTableAdapter = Nothing
+        Me.TableAdapterManager1.Fiesta_tblfjm_grupoclientebaccaratTableAdapter = Nothing
+        Me.TableAdapterManager1.Fiesta_tblttr_cliente_consumoTableAdapter = Nothing
+        Me.TableAdapterManager1.Luxor_tblaux_tipocambioTableAdapter = Me.Luxor_tblaux_tipocambioTableAdapter
+        Me.TableAdapterManager1.Luxor_tblbdd_clienteBusquedaTableAdapter = Nothing
+        Me.TableAdapterManager1.Luxor_tblbdd_clienteTableAdapter = Nothing
+        Me.TableAdapterManager1.Luxor_tblbdd_consumo_ttrTableAdapter = Nothing
+        Me.TableAdapterManager1.Luxor_tbllim_grupoclientebaccaratTableAdapter = Nothing
+        Me.TableAdapterManager1.Luxor_tblttr_cliente_consumoTableAdapter = Nothing
+        Me.TableAdapterManager1.Prueba_tblaux_tipocambioTableAdapter = Nothing
+        Me.TableAdapterManager1.Tacna_tblaux_tipocambioTableAdapter = Nothing
+        Me.TableAdapterManager1.Tacna_tblbdd_clienteBusquedaTableAdapter = Nothing
+        Me.TableAdapterManager1.UpdateOrder = bddc.Win.BDClientesDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        '
         'frmTasaCambio_luxor
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -387,11 +391,11 @@ Partial Class frmTasaCambio_luxor
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BDClientesDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

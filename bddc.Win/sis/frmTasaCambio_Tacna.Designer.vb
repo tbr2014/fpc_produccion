@@ -22,39 +22,39 @@ Partial Class frmTasaCambio_Tacna
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox
-        Me.txtDia = New System.Windows.Forms.Label
-        Me.txtMes = New System.Windows.Forms.Label
-        Me.txtAño = New System.Windows.Forms.Label
-        Me.chkEstado = New System.Windows.Forms.CheckBox
-        Me.txtTasa = New System.Windows.Forms.TextBox
-        Me.dptFecha = New System.Windows.Forms.DateTimePicker
-        Me.Label4 = New System.Windows.Forms.Label
-        Me.Label3 = New System.Windows.Forms.Label
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView
-        Me.FechaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.TasaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.FtdcyyyyDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.FtdcmmDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.FtdcddDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.EstadoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.components = New System.ComponentModel.Container()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.txtDia = New System.Windows.Forms.Label()
+        Me.txtMes = New System.Windows.Forms.Label()
+        Me.txtAño = New System.Windows.Forms.Label()
+        Me.chkEstado = New System.Windows.Forms.CheckBox()
+        Me.txtTasa = New System.Windows.Forms.TextBox()
+        Me.dptFecha = New System.Windows.Forms.DateTimePicker()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.TacnatblauxtipocambioBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.BdClientesDataSet1 = New bddc.Win.BDClientesDataSet
-        Me.lblMensaje = New System.Windows.Forms.Label
-        Me.ToolStrip1 = New System.Windows.Forms.ToolStrip
-        Me.tsbBuscar = New System.Windows.Forms.ToolStripButton
-        Me.tsbNuevo = New System.Windows.Forms.ToolStripButton
-        Me.tsbAgregar = New System.Windows.Forms.ToolStripButton
-        Me.tsbGuardar = New System.Windows.Forms.ToolStripButton
-        Me.tsbEliminar = New System.Windows.Forms.ToolStripButton
-        Me.tsbImprimir = New System.Windows.Forms.ToolStripButton
-        Me.tsbSalir = New System.Windows.Forms.ToolStripButton
-        Me.Tacna_tblaux_tipocambioTableAdapter = New bddc.Win.BDClientesDataSetTableAdapters.Tacna_tblaux_tipocambioTableAdapter
-        Me.TableAdapterManager1 = New bddc.Win.BDClientesDataSetTableAdapters.TableAdapterManager
+        Me.BdClientesDataSet1 = New bddc.Win.BDClientesDataSet()
+        Me.lblMensaje = New System.Windows.Forms.Label()
+        Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
+        Me.tsbBuscar = New System.Windows.Forms.ToolStripButton()
+        Me.tsbNuevo = New System.Windows.Forms.ToolStripButton()
+        Me.tsbAgregar = New System.Windows.Forms.ToolStripButton()
+        Me.tsbGuardar = New System.Windows.Forms.ToolStripButton()
+        Me.tsbEliminar = New System.Windows.Forms.ToolStripButton()
+        Me.tsbImprimir = New System.Windows.Forms.ToolStripButton()
+        Me.tsbSalir = New System.Windows.Forms.ToolStripButton()
+        Me.Tacna_tblaux_tipocambioTableAdapter = New bddc.Win.BDClientesDataSetTableAdapters.Tacna_tblaux_tipocambioTableAdapter()
+        Me.TableAdapterManager1 = New bddc.Win.BDClientesDataSetTableAdapters.TableAdapterManager()
+        Me.FechaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TasaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.FtdcyyyyDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.FtdcmmDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.FtdcddDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.EstadoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -190,45 +190,6 @@ Partial Class frmTasaCambio_Tacna
         Me.DataGridView1.Size = New System.Drawing.Size(352, 203)
         Me.DataGridView1.TabIndex = 3
         '
-        'FechaDataGridViewTextBoxColumn
-        '
-        Me.FechaDataGridViewTextBoxColumn.DataPropertyName = "Fecha"
-        Me.FechaDataGridViewTextBoxColumn.HeaderText = "Fecha"
-        Me.FechaDataGridViewTextBoxColumn.Name = "FechaDataGridViewTextBoxColumn"
-        '
-        'TasaDataGridViewTextBoxColumn
-        '
-        Me.TasaDataGridViewTextBoxColumn.DataPropertyName = "Tasa"
-        Me.TasaDataGridViewTextBoxColumn.HeaderText = "Tasa"
-        Me.TasaDataGridViewTextBoxColumn.Name = "TasaDataGridViewTextBoxColumn"
-        '
-        'FtdcyyyyDataGridViewTextBoxColumn
-        '
-        Me.FtdcyyyyDataGridViewTextBoxColumn.DataPropertyName = "ftdc_yyyy"
-        Me.FtdcyyyyDataGridViewTextBoxColumn.HeaderText = "ftdc_yyyy"
-        Me.FtdcyyyyDataGridViewTextBoxColumn.Name = "FtdcyyyyDataGridViewTextBoxColumn"
-        Me.FtdcyyyyDataGridViewTextBoxColumn.Visible = False
-        '
-        'FtdcmmDataGridViewTextBoxColumn
-        '
-        Me.FtdcmmDataGridViewTextBoxColumn.DataPropertyName = "ftdc_mm"
-        Me.FtdcmmDataGridViewTextBoxColumn.HeaderText = "ftdc_mm"
-        Me.FtdcmmDataGridViewTextBoxColumn.Name = "FtdcmmDataGridViewTextBoxColumn"
-        Me.FtdcmmDataGridViewTextBoxColumn.Visible = False
-        '
-        'FtdcddDataGridViewTextBoxColumn
-        '
-        Me.FtdcddDataGridViewTextBoxColumn.DataPropertyName = "ftdc_dd"
-        Me.FtdcddDataGridViewTextBoxColumn.HeaderText = "ftdc_dd"
-        Me.FtdcddDataGridViewTextBoxColumn.Name = "FtdcddDataGridViewTextBoxColumn"
-        Me.FtdcddDataGridViewTextBoxColumn.Visible = False
-        '
-        'EstadoDataGridViewTextBoxColumn
-        '
-        Me.EstadoDataGridViewTextBoxColumn.DataPropertyName = "Estado"
-        Me.EstadoDataGridViewTextBoxColumn.HeaderText = "Estado"
-        Me.EstadoDataGridViewTextBoxColumn.Name = "EstadoDataGridViewTextBoxColumn"
-        '
         'TacnatblauxtipocambioBindingSource
         '
         Me.TacnatblauxtipocambioBindingSource.DataMember = "Tacna_tblaux_tipocambio"
@@ -342,9 +303,51 @@ Partial Class frmTasaCambio_Tacna
         Me.TableAdapterManager1.Luxor_tblbdd_consumo_ttrTableAdapter = Nothing
         Me.TableAdapterManager1.Luxor_tbllim_grupoclientebaccaratTableAdapter = Nothing
         Me.TableAdapterManager1.Luxor_tblttr_cliente_consumoTableAdapter = Nothing
+        Me.TableAdapterManager1.Prueba_tblaux_tipocambioTableAdapter = Nothing
         Me.TableAdapterManager1.Tacna_tblaux_tipocambioTableAdapter = Me.Tacna_tblaux_tipocambioTableAdapter
         Me.TableAdapterManager1.Tacna_tblbdd_clienteBusquedaTableAdapter = Nothing
         Me.TableAdapterManager1.UpdateOrder = bddc.Win.BDClientesDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        '
+        'FechaDataGridViewTextBoxColumn
+        '
+        Me.FechaDataGridViewTextBoxColumn.DataPropertyName = "Fecha"
+        Me.FechaDataGridViewTextBoxColumn.HeaderText = "Fecha"
+        Me.FechaDataGridViewTextBoxColumn.Name = "FechaDataGridViewTextBoxColumn"
+        '
+        'TasaDataGridViewTextBoxColumn
+        '
+        Me.TasaDataGridViewTextBoxColumn.DataPropertyName = "Tasa"
+        Me.TasaDataGridViewTextBoxColumn.HeaderText = "Tasa"
+        Me.TasaDataGridViewTextBoxColumn.Name = "TasaDataGridViewTextBoxColumn"
+        '
+        'FtdcyyyyDataGridViewTextBoxColumn
+        '
+        Me.FtdcyyyyDataGridViewTextBoxColumn.DataPropertyName = "ftdc_yyyy"
+        Me.FtdcyyyyDataGridViewTextBoxColumn.HeaderText = "ftdc_yyyy"
+        Me.FtdcyyyyDataGridViewTextBoxColumn.Name = "FtdcyyyyDataGridViewTextBoxColumn"
+        Me.FtdcyyyyDataGridViewTextBoxColumn.Visible = False
+        '
+        'FtdcmmDataGridViewTextBoxColumn
+        '
+        Me.FtdcmmDataGridViewTextBoxColumn.DataPropertyName = "ftdc_mm"
+        Me.FtdcmmDataGridViewTextBoxColumn.HeaderText = "ftdc_mm"
+        Me.FtdcmmDataGridViewTextBoxColumn.Name = "FtdcmmDataGridViewTextBoxColumn"
+        Me.FtdcmmDataGridViewTextBoxColumn.Visible = False
+        '
+        'FtdcddDataGridViewTextBoxColumn
+        '
+        Me.FtdcddDataGridViewTextBoxColumn.DataPropertyName = "ftdc_dd"
+        Me.FtdcddDataGridViewTextBoxColumn.HeaderText = "ftdc_dd"
+        Me.FtdcddDataGridViewTextBoxColumn.Name = "FtdcddDataGridViewTextBoxColumn"
+        Me.FtdcddDataGridViewTextBoxColumn.Visible = False
+        '
+        'EstadoDataGridViewTextBoxColumn
+        '
+        Me.EstadoDataGridViewTextBoxColumn.DataPropertyName = "Estado"
+        Me.EstadoDataGridViewTextBoxColumn.HeaderText = "Estado"
+        Me.EstadoDataGridViewTextBoxColumn.Name = "EstadoDataGridViewTextBoxColumn"
+        Me.EstadoDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.EstadoDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
         '
         'frmTasaCambio_Tacna
         '
@@ -402,5 +405,5 @@ Partial Class frmTasaCambio_Tacna
     Friend WithEvents FtdcyyyyDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents FtdcmmDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents FtdcddDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents EstadoDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents EstadoDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewCheckBoxColumn
 End Class
