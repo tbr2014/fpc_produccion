@@ -23,6 +23,7 @@ Public Class frmLogin
     Public objRatReg As frmRatingRegistro
     Public objRptMesas As frmReportesMesas
     Public objRptMercadeo As frmReportesMercadeo
+    Public objCambioContraseña As frmCambioPassword
 
 #Region "Operaciones"
 
@@ -416,6 +417,17 @@ Public Class frmLogin
 
     End Sub
 
+    Private Sub lblCambioPassword_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lblCambioPassword.Click
+        Try
+            Dim objCambioContraseña As New frmCambioPassword
+            objCambioContraseña.ShowDialog()
+            objCambioContraseña.Dispose()
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        End Try
+    End Sub
+
 #End Region
+
 
 End Class

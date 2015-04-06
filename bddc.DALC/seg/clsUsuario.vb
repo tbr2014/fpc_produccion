@@ -64,11 +64,7 @@ Namespace SEG
                         dtsResultado = MySqlHelper.ExecuteDataset(CadenaConexion, "call bdseguridad_test.sprseg_usuario_buscar (?p_strUsuario);", prmParameter)
 
                 End Select
-                'If uni = 0 Then
-                'Else
-                'End If
 
-               
                 If (dtsResultado.Tables(0).Rows.Count > 0) Then
                     arrResultado = New ArrayList
 
@@ -89,7 +85,10 @@ Namespace SEG
                     Next
 
                     Return arrResultado
-
+                Else
+                    arrResultado = New ArrayList
+                    'arrResultado.Add("0")
+                    Return arrResultado
                 End If
 
             Catch ex As Exception
@@ -524,6 +523,117 @@ Namespace SEG
             End Try
 
             Return Nothing
+
+        End Function
+
+        Public Function UpdatePassword(ByVal Id As Integer, ByVal Clave As String, ByVal Unidad As String)
+            Dim CadenaConexion As String = Util.Factory.GetConexion
+            'objConexion.GetConexion
+            Dim dato As New Util.Dato
+            Dim intResultado As Integer = 0
+            Dim prmParameter(1) As MySqlParameter
+            Dim arrParameter As New ArrayList
+            Dim strCadena As String = ""
+
+            Try
+
+                With arrParameter
+                    .Add("?p_intUsuarioId")
+                    .Add("?p_strClave")
+                End With
+
+                prmParameter(0) = New MySqlParameter(arrParameter(0).ToString, MySqlDbType.Int32)
+                prmParameter(0).Value = Id
+
+                prmParameter(1) = New MySqlParameter(arrParameter(1).ToString, MySqlDbType.String, Util.Constante.DiccionarioDatos.CONST_CODIGO_MEDIO_10)
+                prmParameter(1).Value = Clave
+
+                Select Case Unidad
+                    Case "FIESTA CASINO BENAVIDES"
+                        Util.Factory.ConfigOrigen = 1
+                        CadenaConexion = Util.Factory.GetConexion
+
+                        objMySqlConnection = New MySqlConnection(CadenaConexion)
+                        objMySqlConnection.Open()
+
+                        objMySqlCommand = New MySqlCommand
+                        With objMySqlCommand
+                            .Connection = objMySqlConnection
+                            .CommandType = CommandType.StoredProcedure
+                            .CommandText = "bdseguridad.sprseg_usuario_escribir"
+                            .Parameters.AddRange(prmParameter)
+
+                            '3. Invocando al SP:
+                            intResultado = .ExecuteNonQuery()
+                        End With
+
+                    Case "LUXOR LIMA CASINO"
+                        Util.Factory.ConfigOrigen = 2
+                        CadenaConexion = Util.Factory.GetConexion
+
+                        objMySqlConnection = New MySqlConnection(CadenaConexion)
+                        objMySqlConnection.Open()
+
+                        objMySqlCommand = New MySqlCommand
+                        With objMySqlCommand
+                            .Connection = objMySqlConnection
+                            .CommandType = CommandType.StoredProcedure
+                            .CommandText = "bdseguridadluxor.sprseg_usuario_escribir"
+                            .Parameters.AddRange(prmParameter)
+
+                            '3. Invocando al SP:
+                            intResultado = .ExecuteNonQuery()
+                        End With
+
+                    Case "LUXOR TACNA"
+                        Util.Factory.ConfigOrigen = 3
+                        CadenaConexion = Util.Factory.GetConexion
+
+                        objMySqlConnection = New MySqlConnection(CadenaConexion)
+                        objMySqlConnection.Open()
+
+                        objMySqlCommand = New MySqlCommand
+                        With objMySqlCommand
+                            .Connection = objMySqlConnection
+                            .CommandType = CommandType.StoredProcedure
+                            .CommandText = "bdseguridadtacna.sprseg_usuario_escribir"
+                            .Parameters.AddRange(prmParameter)
+
+                            '3. Invocando al SP:
+                            intResultado = .ExecuteNonQuery()
+                        End With
+
+                    Case "EMPRESA DE PRUEBA"
+                        Util.Factory.ConfigOrigen = 5
+                        CadenaConexion = Util.Factory.GetConexion
+
+                        objMySqlConnection = New MySqlConnection(CadenaConexion)
+                        objMySqlConnection.Open()
+
+                        objMySqlCommand = New MySqlCommand
+                        With objMySqlCommand
+                            .Connection = objMySqlConnection
+                            .CommandType = CommandType.StoredProcedure
+                            .CommandText = "bdseguridad_test.sprseg_usuario_updateClave"
+                            .Parameters.AddRange(prmParameter)
+
+                            '3. Invocando al SP:
+                            intResultado = .ExecuteNonQuery()
+                        End With
+                End Select
+
+                If intResultado > 0 Then
+                    'Parámetro(s) de Salida:
+                    'objBEC.UsuarioId = IIf(dato.EsNuloBD(prmParameter(0).Value) IsNot Nothing, prmParameter(0).Value, 0)
+                    Return Util.Enumeracion.enmResultadoOperacion.OK
+                Else
+                    Return Util.Enumeracion.enmResultadoOperacion.NONE
+                End If
+
+            Catch ex As Exception
+                Throw New DataException(ex.Message)
+                Return Util.Enumeracion.enmResultadoOperacion.ERR
+            End Try
 
         End Function
 

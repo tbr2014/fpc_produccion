@@ -305,6 +305,12 @@
     <Compile Include="fjm\JdM\frmReportesMesas.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ini\frmCambioPassword.Designer.vb">
+      <DependentUpon>frmCambioPassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ini\frmCambioPassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ini\frmPrincipal2.Designer.vb">
       <DependentUpon>frmPrincipal2.vb</DependentUpon>
     </Compile>
@@ -734,6 +740,9 @@
     <EmbeddedResource Include="fjm\JdM\frmReportesMesas.resx">
       <DependentUpon>frmReportesMesas.vb</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ini\frmCambioPassword.resx">
+      <DependentUpon>frmCambioPassword.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ini\frmPrincipal2.resx">
       <DependentUpon>frmPrincipal2.vb</DependentUpon>

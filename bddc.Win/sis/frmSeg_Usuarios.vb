@@ -150,7 +150,6 @@
         Dim arrResultados As ArrayList
 
         Try
-
             arrParametros.Add(CType(Me.cboUsuarioBuscar.SelectedItem, BEC.COM.clsItem).ItemId)
             arrResultados = objDALC.Buscar(arrParametros, frmLogin.Unidad)
 

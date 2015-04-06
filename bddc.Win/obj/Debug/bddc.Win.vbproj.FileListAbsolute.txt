@@ -2114,6 +2114,7 @@ C:\FPC AMBIENTE DE DESARROLLO\bddc\bddc.Win\obj\Debug\bddc.Win.frmReporte10.reso
 C:\FPC AMBIENTE DE DESARROLLO\bddc\bddc.Win\obj\Debug\bddc.Win.frmReporte9.resources
 C:\FPC AMBIENTE DE DESARROLLO\bddc\bddc.Win\obj\Debug\bddc.Win.frmReporteRatingAnual.resources
 C:\FPC AMBIENTE DE DESARROLLO\bddc\bddc.Win\obj\Debug\bddc.Win.frmReportesMesas.resources
+C:\FPC AMBIENTE DE DESARROLLO\bddc\bddc.Win\obj\Debug\bddc.Win.frmCambioPassword.resources
 C:\FPC AMBIENTE DE DESARROLLO\bddc\bddc.Win\obj\Debug\bddc.Win.frmPrincipal2.resources
 C:\FPC AMBIENTE DE DESARROLLO\bddc\bddc.Win\obj\Debug\bddc.Win.frmRptClientes_Promociones.resources
 C:\FPC AMBIENTE DE DESARROLLO\bddc\bddc.Win\obj\Debug\bddc.Win.frmReportesMercadeo.resources
