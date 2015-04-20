@@ -383,6 +383,7 @@ Partial Class frmTasaCambio_prueba
         Me.Controls.Add(Me.ToolStrip1)
         Me.Controls.Add(Me.lblMensaje)
         Me.Name = "frmTasaCambio_prueba"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Tasa de Cambio"
         Me.ToolStrip1.ResumeLayout(False)
         Me.ToolStrip1.PerformLayout()

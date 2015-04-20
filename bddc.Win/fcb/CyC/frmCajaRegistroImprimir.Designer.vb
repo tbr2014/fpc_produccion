@@ -22,18 +22,20 @@ Partial Class frmCajaRegistroImprimir
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.crvResultados = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.crOperacionCajaRegistro1 = New bddc.Win.crOperacionCajaRegistro
+        Me.crvResultados = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.crOperacionCajaRegistro1 = New bddc.Win.crOperacionCajaRegistro()
         Me.SuspendLayout()
         '
         'crvResultados
         '
         Me.crvResultados.ActiveViewIndex = -1
+        Me.crvResultados.AutoSize = True
         Me.crvResultados.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.crvResultados.DisplayGroupTree = False
+        Me.crvResultados.Cursor = System.Windows.Forms.Cursors.Default
         Me.crvResultados.Dock = System.Windows.Forms.DockStyle.Fill
         Me.crvResultados.Location = New System.Drawing.Point(0, 0)
         Me.crvResultados.Name = "crvResultados"
+        Me.crvResultados.ReportSource = Me.crOperacionCajaRegistro1
         Me.crvResultados.SelectionFormula = ""
         Me.crvResultados.ShowCloseButton = False
         Me.crvResultados.ShowGotoPageButton = False
@@ -55,6 +57,7 @@ Partial Class frmCajaRegistroImprimir
         Me.Text = "Registro de Operaciones - Vista Previa"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents crvResultados As CrystalDecisions.Windows.Forms.CrystalReportViewer

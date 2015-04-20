@@ -61,6 +61,7 @@ Partial Class frmCambioPassword
         'txtNewPassword2
         '
         Me.txtNewPassword2.Location = New System.Drawing.Point(195, 95)
+        Me.txtNewPassword2.MaxLength = 10
         Me.txtNewPassword2.Name = "txtNewPassword2"
         Me.txtNewPassword2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txtNewPassword2.Size = New System.Drawing.Size(154, 20)
@@ -70,6 +71,7 @@ Partial Class frmCambioPassword
         'txtNewPassword
         '
         Me.txtNewPassword.Location = New System.Drawing.Point(195, 57)
+        Me.txtNewPassword.MaxLength = 10
         Me.txtNewPassword.Name = "txtNewPassword"
         Me.txtNewPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txtNewPassword.Size = New System.Drawing.Size(154, 20)

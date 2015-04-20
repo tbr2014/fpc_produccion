@@ -373,7 +373,7 @@ Public Class frmCajaBuscar
                     ClienteTipoDoc = Convert.ToInt32(row.Cells(15).Value.ToString())
                     Select Case ClienteTipoDoc
                         Case 0
-                            NumeroDoc = "No registrado"
+                            NumeroDoc = "TipoDoc-" & row.Cells(16).Value.ToString()
                         Case 1
                             NumeroDoc = "DNI-" & row.Cells(16).Value.ToString()
                         Case 2
