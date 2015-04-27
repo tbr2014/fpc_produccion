@@ -105,6 +105,7 @@
                         Next
 
                         UltraToolbarsManager1.Tools("btnSalir").SharedProps.Visible = True
+                        UltraToolbarsManager1.Tools("btnMODGU_PasswordReset").SharedProps.Visible = True
 
                         'Habilitar segun Accesos asignado:
                         Dim strOpciones() As String = strCadenaOpciones.Split("|")
@@ -317,6 +318,12 @@
 
             Case "btnMODCJ_CajaAbiertas"
                 Dim objFrm As New FormCajasAbiertas
+                objFrm.ShowDialog()
+                objFrm.Dispose()
+
+            Case "btnMODGU_PasswordReset"
+
+                Dim objFrm As New frmCambioPassword(frmLogin.objColeccionFCB.objUsuBEC)
                 objFrm.ShowDialog()
                 objFrm.Dispose()
 

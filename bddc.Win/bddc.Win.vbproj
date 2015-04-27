@@ -109,6 +109,7 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Release\Infragistics4.Win.UltraWinStatusBar.v12.2.dll</HintPath>
     </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinTabControl.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
     <Reference Include="Infragistics4.Win.UltraWinToolbars.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Release\Infragistics4.Win.UltraWinToolbars.v12.2.dll</HintPath>
@@ -141,6 +142,7 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.EnterpriseServices" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
     <Reference Include="System.Transactions" />
     <Reference Include="System.Web.Extensions">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -159,6 +161,7 @@
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
       <Private>True</Private>
     </Reference>
+    <Reference Include="UIAutomationProvider" />
   </ItemGroup>
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
@@ -985,6 +988,7 @@
     <None Include="Resources\caja.jpg" />
     <None Include="Resources\btnAperturaCaja.png" />
     <None Include="Resources\btnCajasAbiertas.png" />
+    <None Include="Resources\btnResetPassword.png" />
     <Content Include="Resources\excel.png" />
     <Content Include="Resources\TasaCambio.gif" />
     <Content Include="Resources\update.jpg" />

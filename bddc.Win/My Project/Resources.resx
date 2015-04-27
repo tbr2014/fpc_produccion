@@ -130,8 +130,8 @@
   <data name="btnAperturaCaja" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btnAperturaCaja.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="btngridBorrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btngridBorrar.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btngridNuevo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btngridNuevo.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="imgMercadeoPromocion" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\imgMercadeoPromocion.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -147,6 +147,9 @@
   </data>
   <data name="imgMovimMesas" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\imgMovimMesas.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="excel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\excel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="imgSistema" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\imgSistema.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -175,14 +178,17 @@
   <data name="imgEstimadoMesa" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\imgEstimadoMesa.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="imgUsuarios" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imgUsuarios.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="imgSalir" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\imgSalir.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="btnNo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btnNo.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="imgUsuarios" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\imgUsuarios.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btngridBorrarFila" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btngridBorrarFila.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="imgLogin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\imgLogin.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -193,11 +199,8 @@
   <data name="caja" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\caja.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="btngridBorrarFila" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btngridBorrarFila.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btngridNuevo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btngridNuevo.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btngridBorrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btngridBorrar.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="imgImpresion" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\imgImpresion.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -232,7 +235,7 @@
   <data name="btngridGuardar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btngridGuardar.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="excel" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\excel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btnResetPassword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnResetPassword.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

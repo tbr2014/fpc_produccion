@@ -339,6 +339,8 @@ Public Class frmCajaBuscar
         Dim ClienteTipoDoc As Integer
         Dim NumeroDoc As String
         Dim Nombre As String
+        Dim Moneda As String
+        Dim Monto As String
 
         If result = DialogResult.OK Then
             Path = FolderBrowserDialog1.SelectedPath
@@ -356,20 +358,20 @@ Public Class frmCajaBuscar
 
             Using writer As StreamWriter = New StreamWriter(outputFile)
 
-                writer.WriteLine("Fecha, Codigo_Operacion, DNI_Cliente, Nombre, Caja, Hora, Monto, Tipo_Operacion")
+                writer.WriteLine("Fecha, Codigo_Operacion, DNI_Cliente, Nombre, Caja, Hora, Moneda, Monto, Tipo_Operacion")
 
                 For Each row As DataGridViewRow In dgvResultados.Rows
                     'Obtener el valor de la celda de los diferentes campos
 
-                    '1. Fecha
+                    'Fecha
                     writer.Write(row.Cells(3).Value.ToString())
                     writer.Write(",")
 
-                    '2. Codigo Operacion
+                    'Codigo Operacion
                     writer.Write(row.Cells(2).Value.ToString())
                     writer.Write(",")
 
-                    '3. DNI
+                    'DNI
                     ClienteTipoDoc = Convert.ToInt32(row.Cells(15).Value.ToString())
                     Select Case ClienteTipoDoc
                         Case 0
@@ -386,25 +388,41 @@ Public Class frmCajaBuscar
                     writer.Write(NumeroDoc)
                     writer.Write(",")
 
-                    '4. Nombre
+                    'Nombre
                     Nombre = row.Cells(9).Value.ToString()
                     Nombre = Nombre.Replace(",", "")
                     writer.Write(Nombre)
                     writer.Write(",")
 
-                    '5. Caja
+                    'Caja
                     writer.Write(row.Cells(14).Value.ToString())
                     writer.Write(",")
 
-                    '6. Hora
+                    'Hora
                     writer.Write(row.Cells(10).Value.ToString())
                     writer.Write(",")
 
-                    '7. Monto
-                    writer.Write(row.Cells(11).Value.ToString())
+                    'Moneda
+                    Moneda = row.Cells(4).Value.ToString()
+                    Select Case Moneda
+                        Case "1"
+                            writer.Write("S/.")
+                            Moneda = "S/. "
+                        Case "2"
+                            writer.Write("US$")
+                            Moneda = "US$ "
+                        Case "3"
+                            writer.Write("€")
+                            Moneda = "€ "
+                    End Select
                     writer.Write(",")
 
-                    '8. Tipo Operacion
+                    'Monto
+                    Monto = row.Cells(11).Value.ToString()
+                    writer.Write(Monto.Replace(Moneda, ""))
+                    writer.Write(",")
+
+                    'Tipo Operacion
                     TipoOp = Convert.ToInt32(row.Cells(7).Value.ToString())
                     Select Case TipoOp
                         Case 1

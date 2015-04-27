@@ -66,7 +66,9 @@ Partial Class frmPrincipal
         Dim RibbonGroup10 As Infragistics.Win.UltraWinToolbars.RibbonGroup = New Infragistics.Win.UltraWinToolbars.RibbonGroup("Operaciones Caja")
         Dim ButtonTool33 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("btnMODCJ_CajaAbiertas")
         Dim ButtonTool21 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("btnMODCJ_NuevaApertura")
-        Dim RibbonTab5 As Infragistics.Win.UltraWinToolbars.RibbonTab = New Infragistics.Win.UltraWinToolbars.RibbonTab("ribbon1")
+        Dim RibbonTab5 As Infragistics.Win.UltraWinToolbars.RibbonTab = New Infragistics.Win.UltraWinToolbars.RibbonTab("rtPasword")
+        Dim RibbonGroup11 As Infragistics.Win.UltraWinToolbars.RibbonGroup = New Infragistics.Win.UltraWinToolbars.RibbonGroup("rgUserPassword")
+        Dim ButtonTool49 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("btnMODGU_PasswordReset")
         Dim ButtonTool31 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("btnSalir")
         Dim ControlContainerTool2 As Infragistics.Win.UltraWinToolbars.ControlContainerTool = New Infragistics.Win.UltraWinToolbars.ControlContainerTool("ControlContainerTool1")
         Dim ButtonTool2 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("btnMODFPC_MesasEstimado")
@@ -118,13 +120,15 @@ Partial Class frmPrincipal
         Dim Appearance26 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
         Dim ButtonTool30 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("btnMODCJ_CajaAbiertas")
         Dim Appearance27 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
+        Dim ButtonTool40 As Infragistics.Win.UltraWinToolbars.ButtonTool = New Infragistics.Win.UltraWinToolbars.ButtonTool("btnMODGU_PasswordReset")
+        Dim Appearance28 As Infragistics.Win.Appearance = New Infragistics.Win.Appearance()
         Me.btn_AperCaja = New Infragistics.Win.Misc.UltraPanel()
         Me.UltraStatusBar1 = New Infragistics.Win.UltraWinStatusBar.UltraStatusBar()
         Me._mdiPrincipal_Toolbars_Dock_Area_Right = New Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea()
+        Me.UltraToolbarsManager1 = New Infragistics.Win.UltraWinToolbars.UltraToolbarsManager(Me.components)
         Me._mdiPrincipal_Toolbars_Dock_Area_Left = New Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea()
         Me._mdiPrincipal_Toolbars_Dock_Area_Bottom = New Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea()
         Me._mdiPrincipal_Toolbars_Dock_Area_Top = New Infragistics.Win.UltraWinToolbars.UltraToolbarsDockArea()
-        Me.UltraToolbarsManager1 = New Infragistics.Win.UltraWinToolbars.UltraToolbarsManager(Me.components)
         Me.btn_AperCaja.ClientArea.SuspendLayout()
         Me.btn_AperCaja.SuspendLayout()
         CType(Me.UltraStatusBar1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -141,9 +145,9 @@ Partial Class frmPrincipal
         Me.btn_AperCaja.ClientArea.Controls.Add(Me.UltraStatusBar1)
         Me.btn_AperCaja.Cursor = System.Windows.Forms.Cursors.Default
         Me.btn_AperCaja.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.btn_AperCaja.Location = New System.Drawing.Point(8, 189)
+        Me.btn_AperCaja.Location = New System.Drawing.Point(8, 164)
         Me.btn_AperCaja.Name = "btn_AperCaja"
-        Me.btn_AperCaja.Size = New System.Drawing.Size(906, 442)
+        Me.btn_AperCaja.Size = New System.Drawing.Size(906, 467)
         Me.btn_AperCaja.TabIndex = 0
         '
         'UltraStatusBar1
@@ -151,7 +155,7 @@ Partial Class frmPrincipal
         Appearance2.BackColor = System.Drawing.SystemColors.Control
         Appearance2.BackColor2 = System.Drawing.SystemColors.Control
         Me.UltraStatusBar1.Appearance = Appearance2
-        Me.UltraStatusBar1.Location = New System.Drawing.Point(0, 419)
+        Me.UltraStatusBar1.Location = New System.Drawing.Point(0, 444)
         Me.UltraStatusBar1.Name = "UltraStatusBar1"
         UltraStatusPanel1.Key = "tsslblUnidad"
         UltraStatusPanel1.SizingMode = Infragistics.Win.UltraWinStatusBar.PanelSizingMode.Automatic
@@ -175,45 +179,10 @@ Partial Class frmPrincipal
         Me._mdiPrincipal_Toolbars_Dock_Area_Right.DockedPosition = Infragistics.Win.UltraWinToolbars.DockedPosition.Right
         Me._mdiPrincipal_Toolbars_Dock_Area_Right.ForeColor = System.Drawing.SystemColors.ControlText
         Me._mdiPrincipal_Toolbars_Dock_Area_Right.InitialResizeAreaExtent = 8
-        Me._mdiPrincipal_Toolbars_Dock_Area_Right.Location = New System.Drawing.Point(914, 189)
+        Me._mdiPrincipal_Toolbars_Dock_Area_Right.Location = New System.Drawing.Point(914, 164)
         Me._mdiPrincipal_Toolbars_Dock_Area_Right.Name = "_mdiPrincipal_Toolbars_Dock_Area_Right"
-        Me._mdiPrincipal_Toolbars_Dock_Area_Right.Size = New System.Drawing.Size(8, 442)
+        Me._mdiPrincipal_Toolbars_Dock_Area_Right.Size = New System.Drawing.Size(8, 467)
         Me._mdiPrincipal_Toolbars_Dock_Area_Right.ToolbarsManager = Me.UltraToolbarsManager1
-        '
-        '_mdiPrincipal_Toolbars_Dock_Area_Left
-        '
-        Me._mdiPrincipal_Toolbars_Dock_Area_Left.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping
-        Me._mdiPrincipal_Toolbars_Dock_Area_Left.BackColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(219, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me._mdiPrincipal_Toolbars_Dock_Area_Left.DockedPosition = Infragistics.Win.UltraWinToolbars.DockedPosition.Left
-        Me._mdiPrincipal_Toolbars_Dock_Area_Left.ForeColor = System.Drawing.SystemColors.ControlText
-        Me._mdiPrincipal_Toolbars_Dock_Area_Left.InitialResizeAreaExtent = 8
-        Me._mdiPrincipal_Toolbars_Dock_Area_Left.Location = New System.Drawing.Point(0, 189)
-        Me._mdiPrincipal_Toolbars_Dock_Area_Left.Name = "_mdiPrincipal_Toolbars_Dock_Area_Left"
-        Me._mdiPrincipal_Toolbars_Dock_Area_Left.Size = New System.Drawing.Size(8, 442)
-        Me._mdiPrincipal_Toolbars_Dock_Area_Left.ToolbarsManager = Me.UltraToolbarsManager1
-        '
-        '_mdiPrincipal_Toolbars_Dock_Area_Bottom
-        '
-        Me._mdiPrincipal_Toolbars_Dock_Area_Bottom.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping
-        Me._mdiPrincipal_Toolbars_Dock_Area_Bottom.BackColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(219, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me._mdiPrincipal_Toolbars_Dock_Area_Bottom.DockedPosition = Infragistics.Win.UltraWinToolbars.DockedPosition.Bottom
-        Me._mdiPrincipal_Toolbars_Dock_Area_Bottom.ForeColor = System.Drawing.SystemColors.ControlText
-        Me._mdiPrincipal_Toolbars_Dock_Area_Bottom.InitialResizeAreaExtent = 8
-        Me._mdiPrincipal_Toolbars_Dock_Area_Bottom.Location = New System.Drawing.Point(0, 631)
-        Me._mdiPrincipal_Toolbars_Dock_Area_Bottom.Name = "_mdiPrincipal_Toolbars_Dock_Area_Bottom"
-        Me._mdiPrincipal_Toolbars_Dock_Area_Bottom.Size = New System.Drawing.Size(922, 8)
-        Me._mdiPrincipal_Toolbars_Dock_Area_Bottom.ToolbarsManager = Me.UltraToolbarsManager1
-        '
-        '_mdiPrincipal_Toolbars_Dock_Area_Top
-        '
-        Me._mdiPrincipal_Toolbars_Dock_Area_Top.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping
-        Me._mdiPrincipal_Toolbars_Dock_Area_Top.BackColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(219, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me._mdiPrincipal_Toolbars_Dock_Area_Top.DockedPosition = Infragistics.Win.UltraWinToolbars.DockedPosition.Top
-        Me._mdiPrincipal_Toolbars_Dock_Area_Top.ForeColor = System.Drawing.SystemColors.ControlText
-        Me._mdiPrincipal_Toolbars_Dock_Area_Top.Location = New System.Drawing.Point(0, 0)
-        Me._mdiPrincipal_Toolbars_Dock_Area_Top.Name = "_mdiPrincipal_Toolbars_Dock_Area_Top"
-        Me._mdiPrincipal_Toolbars_Dock_Area_Top.Size = New System.Drawing.Size(922, 189)
-        Me._mdiPrincipal_Toolbars_Dock_Area_Top.ToolbarsManager = Me.UltraToolbarsManager1
         '
         'UltraToolbarsManager1
         '
@@ -273,7 +242,11 @@ Partial Class frmPrincipal
         ButtonTool21.InstanceProps.PreferredSizeOnRibbon = Infragistics.Win.UltraWinToolbars.RibbonToolSize.Large
         RibbonGroup10.Tools.AddRange(New Infragistics.Win.UltraWinToolbars.ToolBase() {ButtonTool33, ButtonTool21})
         RibbonTab4.Groups.AddRange(New Infragistics.Win.UltraWinToolbars.RibbonGroup() {RibbonGroup10})
-        RibbonTab5.Caption = ""
+        RibbonTab5.Caption = "Gestión de Usuario"
+        RibbonGroup11.Caption = "Contraseña"
+        ButtonTool49.InstanceProps.PreferredSizeOnRibbon = Infragistics.Win.UltraWinToolbars.RibbonToolSize.Large
+        RibbonGroup11.Tools.AddRange(New Infragistics.Win.UltraWinToolbars.ToolBase() {ButtonTool49})
+        RibbonTab5.Groups.AddRange(New Infragistics.Win.UltraWinToolbars.RibbonGroup() {RibbonGroup11})
         Me.UltraToolbarsManager1.Ribbon.NonInheritedRibbonTabs.AddRange(New Infragistics.Win.UltraWinToolbars.RibbonTab() {RibbonTab1, RibbonTab2, RibbonTab3, RibbonTab4, RibbonTab5})
         Me.UltraToolbarsManager1.Ribbon.QuickAccessToolbar.NonInheritedTools.AddRange(New Infragistics.Win.UltraWinToolbars.ToolBase() {ButtonTool31})
         Me.UltraToolbarsManager1.Ribbon.Visible = True
@@ -353,7 +326,45 @@ Partial Class frmPrincipal
         Appearance27.Image = Global.bddc.Win.My.Resources.Resources.btnCajasAbiertas
         ButtonTool30.SharedPropsInternal.AppearancesSmall.Appearance = Appearance27
         ButtonTool30.SharedPropsInternal.Caption = "Cajas Abiertas"
-        Me.UltraToolbarsManager1.Tools.AddRange(New Infragistics.Win.UltraWinToolbars.ToolBase() {ControlContainerTool2, ButtonTool2, ButtonTool6, ButtonTool8, ButtonTool10, ButtonTool13, ButtonTool14, ButtonTool17, ButtonTool18, ButtonTool20, ButtonTool23, ButtonTool27, ButtonTool26, ButtonTool28, ButtonTool32, ButtonTool37, ButtonTool38, ButtonTool39, ButtonTool42, ButtonTool44, ButtonTool46, ButtonTool48, ButtonTool22, ButtonTool29, ButtonTool30})
+        Appearance28.Image = Global.bddc.Win.My.Resources.Resources.btnResetPassword
+        ButtonTool40.SharedPropsInternal.AppearancesSmall.Appearance = Appearance28
+        ButtonTool40.SharedPropsInternal.Caption = "Cambio / Reset"
+        Me.UltraToolbarsManager1.Tools.AddRange(New Infragistics.Win.UltraWinToolbars.ToolBase() {ControlContainerTool2, ButtonTool2, ButtonTool6, ButtonTool8, ButtonTool10, ButtonTool13, ButtonTool14, ButtonTool17, ButtonTool18, ButtonTool20, ButtonTool23, ButtonTool27, ButtonTool26, ButtonTool28, ButtonTool32, ButtonTool37, ButtonTool38, ButtonTool39, ButtonTool42, ButtonTool44, ButtonTool46, ButtonTool48, ButtonTool22, ButtonTool29, ButtonTool30, ButtonTool40})
+        '
+        '_mdiPrincipal_Toolbars_Dock_Area_Left
+        '
+        Me._mdiPrincipal_Toolbars_Dock_Area_Left.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping
+        Me._mdiPrincipal_Toolbars_Dock_Area_Left.BackColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(219, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me._mdiPrincipal_Toolbars_Dock_Area_Left.DockedPosition = Infragistics.Win.UltraWinToolbars.DockedPosition.Left
+        Me._mdiPrincipal_Toolbars_Dock_Area_Left.ForeColor = System.Drawing.SystemColors.ControlText
+        Me._mdiPrincipal_Toolbars_Dock_Area_Left.InitialResizeAreaExtent = 8
+        Me._mdiPrincipal_Toolbars_Dock_Area_Left.Location = New System.Drawing.Point(0, 164)
+        Me._mdiPrincipal_Toolbars_Dock_Area_Left.Name = "_mdiPrincipal_Toolbars_Dock_Area_Left"
+        Me._mdiPrincipal_Toolbars_Dock_Area_Left.Size = New System.Drawing.Size(8, 467)
+        Me._mdiPrincipal_Toolbars_Dock_Area_Left.ToolbarsManager = Me.UltraToolbarsManager1
+        '
+        '_mdiPrincipal_Toolbars_Dock_Area_Bottom
+        '
+        Me._mdiPrincipal_Toolbars_Dock_Area_Bottom.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping
+        Me._mdiPrincipal_Toolbars_Dock_Area_Bottom.BackColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(219, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me._mdiPrincipal_Toolbars_Dock_Area_Bottom.DockedPosition = Infragistics.Win.UltraWinToolbars.DockedPosition.Bottom
+        Me._mdiPrincipal_Toolbars_Dock_Area_Bottom.ForeColor = System.Drawing.SystemColors.ControlText
+        Me._mdiPrincipal_Toolbars_Dock_Area_Bottom.InitialResizeAreaExtent = 8
+        Me._mdiPrincipal_Toolbars_Dock_Area_Bottom.Location = New System.Drawing.Point(0, 631)
+        Me._mdiPrincipal_Toolbars_Dock_Area_Bottom.Name = "_mdiPrincipal_Toolbars_Dock_Area_Bottom"
+        Me._mdiPrincipal_Toolbars_Dock_Area_Bottom.Size = New System.Drawing.Size(922, 8)
+        Me._mdiPrincipal_Toolbars_Dock_Area_Bottom.ToolbarsManager = Me.UltraToolbarsManager1
+        '
+        '_mdiPrincipal_Toolbars_Dock_Area_Top
+        '
+        Me._mdiPrincipal_Toolbars_Dock_Area_Top.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping
+        Me._mdiPrincipal_Toolbars_Dock_Area_Top.BackColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(219, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me._mdiPrincipal_Toolbars_Dock_Area_Top.DockedPosition = Infragistics.Win.UltraWinToolbars.DockedPosition.Top
+        Me._mdiPrincipal_Toolbars_Dock_Area_Top.ForeColor = System.Drawing.SystemColors.ControlText
+        Me._mdiPrincipal_Toolbars_Dock_Area_Top.Location = New System.Drawing.Point(0, 0)
+        Me._mdiPrincipal_Toolbars_Dock_Area_Top.Name = "_mdiPrincipal_Toolbars_Dock_Area_Top"
+        Me._mdiPrincipal_Toolbars_Dock_Area_Top.Size = New System.Drawing.Size(922, 164)
+        Me._mdiPrincipal_Toolbars_Dock_Area_Top.ToolbarsManager = Me.UltraToolbarsManager1
         '
         'frmPrincipal
         '

@@ -2,6 +2,8 @@
 
 Public Class frmCambioPassword
 
+#Region "Atributos"
+    Private Shared objUsuBEC = New BEC.SEG.clsUsuario
     Private arrUbicaciones As IList
     Private FlagEmptyFields As Boolean
     Private FlagUserExist As Boolean
@@ -9,6 +11,31 @@ Public Class frmCambioPassword
     Private FlagNewPasswords As Boolean
     Private FlagChangePass As Boolean
     Private intUsuarioId As Integer
+#End Region
+
+#Region "Contructor/Destructor"
+    Public Sub New()
+        ' This call is required by the Windows Form Designer.
+        InitializeComponent()
+
+        ' Add any initialization after the InitializeComponent() call.
+        objUsuBEC = New BEC.SEG.clsUsuario
+    End Sub
+
+    Public Sub New(ByVal UsuBec As BEC.SEG.clsUsuario)
+
+        ' This call is required by the Windows Form Designer.
+        InitializeComponent()
+
+        ' Add any initialization after the InitializeComponent() call.
+        'objUsuBEC = New BEC.SEG.clsUsuario
+        objUsuBEC = UsuBec
+    End Sub
+
+    Protected Overrides Sub Finalize()
+        MyBase.Finalize()
+    End Sub
+#End Region
 
 #Region "Operaciones"
 
@@ -16,11 +43,13 @@ Public Class frmCambioPassword
         '1:.Ubicaciones()
         Dim objDALCUbi As New DALC.COM.clsUnidad
 
-        arrUbicaciones = objDALCUbi.Listar()
-        If arrUbicaciones IsNot Nothing Then
-            Me.cboUbicaciones.DataSource = arrUbicaciones
-            Me.cboUbicaciones.SelectedIndex = 1
-        End If
+        'arrUbicaciones = objDALCUbi.Listar()
+        'If arrUbicaciones IsNot Nothing Then
+        '    Me.cboUbicaciones.DataSource = arrUbicaciones
+        '    Me.cboUbicaciones.SelectedIndex = 1
+        'End If
+
+
 
     End Sub
 
@@ -221,8 +250,12 @@ Public Class frmCambioPassword
 
 #Region "Eventos de Controles"
 
-    Private Sub frmCambioPassword_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        LeerParametros()
+    Private Sub frmCambioPassword_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+        If objUsuBEC IsNot Nothing Then
+            objUsuBEC.
+        End If
+
+            LeerParametros()
     End Sub
 
     Private Sub ToolStripButtonSalir_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ToolStripButtonSalir.Click
@@ -267,6 +300,7 @@ Public Class frmCambioPassword
 
         End Try
     End Sub
+
 
 #End Region
 
