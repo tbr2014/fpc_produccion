@@ -17,6 +17,8 @@ Namespace Constante
         Public Const MODFPC As String = "Módulo Fiesta Player's Club"
         Public Const _MODCYC As String = "MODCYC"
         Public Const MODCYC As String = "Módulo Caja y Conteo"
+        Public Const _MODGU As String = "MODGU"
+        Public Const MODGU As String = "Módulo Gestión de Usuario"
 
     End Module
 

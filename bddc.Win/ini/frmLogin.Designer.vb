@@ -36,7 +36,6 @@ Partial Class frmLogin
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.cboUbicaciones = New System.Windows.Forms.ComboBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.lblCambioPassword = New System.Windows.Forms.LinkLabel()
         Me.ssLogin.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -164,24 +163,12 @@ Partial Class frmLogin
         Me.Label3.TabIndex = 0
         Me.Label3.Text = "Unidad"
         '
-        'lblCambioPassword
-        '
-        Me.lblCambioPassword.AutoSize = True
-        Me.lblCambioPassword.Font = New System.Drawing.Font("Tahoma", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCambioPassword.Location = New System.Drawing.Point(214, 177)
-        Me.lblCambioPassword.Name = "lblCambioPassword"
-        Me.lblCambioPassword.Size = New System.Drawing.Size(105, 13)
-        Me.lblCambioPassword.TabIndex = 7
-        Me.lblCambioPassword.TabStop = True
-        Me.lblCambioPassword.Text = "Cambiar Contraseña"
-        '
         'frmLogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 19.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
         Me.ClientSize = New System.Drawing.Size(359, 217)
-        Me.Controls.Add(Me.lblCambioPassword)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.cboUbicaciones)
         Me.Controls.Add(Me.ssLogin)
@@ -216,7 +203,6 @@ Partial Class frmLogin
     Friend WithEvents tsslblIdioma As System.Windows.Forms.ToolStripStatusLabel
     Friend WithEvents cboUbicaciones As System.Windows.Forms.ComboBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents lblCambioPassword As System.Windows.Forms.LinkLabel
     'Friend WithEvents TestWorker As System.ComponentModel.BackgroundWorker
 
 End Class

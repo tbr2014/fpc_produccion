@@ -323,7 +323,7 @@
 
             Case "btnMODGU_PasswordReset"
 
-                Dim objFrm As New frmCambioPassword(frmLogin.objColeccionFCB.objUsuBEC)
+                Dim objFrm As New frmCambioPassword
                 objFrm.ShowDialog()
                 objFrm.Dispose()
 

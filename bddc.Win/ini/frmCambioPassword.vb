@@ -3,7 +3,6 @@
 Public Class frmCambioPassword
 
 #Region "Atributos"
-    Private Shared objUsuBEC = New BEC.SEG.clsUsuario
     Private arrUbicaciones As IList
     Private FlagEmptyFields As Boolean
     Private FlagUserExist As Boolean
@@ -17,19 +16,7 @@ Public Class frmCambioPassword
     Public Sub New()
         ' This call is required by the Windows Form Designer.
         InitializeComponent()
-
         ' Add any initialization after the InitializeComponent() call.
-        objUsuBEC = New BEC.SEG.clsUsuario
-    End Sub
-
-    Public Sub New(ByVal UsuBec As BEC.SEG.clsUsuario)
-
-        ' This call is required by the Windows Form Designer.
-        InitializeComponent()
-
-        ' Add any initialization after the InitializeComponent() call.
-        'objUsuBEC = New BEC.SEG.clsUsuario
-        objUsuBEC = UsuBec
     End Sub
 
     Protected Overrides Sub Finalize()
@@ -42,6 +29,20 @@ Public Class frmCambioPassword
     Private Sub LeerParametros()
         '1:.Ubicaciones()
         Dim objDALCUbi As New DALC.COM.clsUnidad
+        txtUsuario.Text = frmLogin.objColeccionFCB.objUsuBEC.Usuario
+
+        'Para pruebas
+        txtUnidad.Text = "EMPRESA DE PRUEBA"
+
+        'Para produccion
+        'Select Case frmLogin.objColeccionFCB.objUsuBEC.UnidadId
+        '    Case 1
+        '        txtUnidad.Text = "Fiesta Casino Benavides"
+        '    Case 2
+        '        txtUnidad.Text = "Luxor Lima Casino"
+        '    Case 3
+        '        txtUnidad.Text = "Luxor Tacna"
+        'End Select
 
         'arrUbicaciones = objDALCUbi.Listar()
         'If arrUbicaciones IsNot Nothing Then
@@ -49,19 +50,17 @@ Public Class frmCambioPassword
         '    Me.cboUbicaciones.SelectedIndex = 1
         'End If
 
-
-
     End Sub
 
     Private Sub CamposEnBlanco()
         Try
-            If txtUsuario.Text.CompareTo("") = 0 Then
-                lblmensaje.Text = "Debes ingresar el Nombre de Usuario"
-                FlagEmptyFields = False
-                Exit Sub
-            Else
-                FlagEmptyFields = True
-            End If
+            'If txtUsuario.Text.CompareTo("") = 0 Then
+            '    lblmensaje.Text = "Debes ingresar el Nombre de Usuario"
+            '    FlagEmptyFields = False
+            '    Exit Sub
+            'Else
+            '    FlagEmptyFields = True
+            'End If
 
             'If cboUbicaciones.Text.Trim.CompareTo("") = 0 Then
             '    lblmensaje.Text = "Debes seleccionar una Unidad"
@@ -71,13 +70,13 @@ Public Class frmCambioPassword
             '    FlagEmptyFields = True
             'End If
 
-            If cboUbicaciones.Text.Trim.CompareTo("- SIN ESPECIFICAR -") = 0 Then
-                lblmensaje.Text = "Debes seleccionar una Unidad"
-                FlagEmptyFields = False
-                Exit Sub
-            Else
-                FlagEmptyFields = True
-            End If
+            'If cboUbicaciones.Text.Trim.CompareTo("- SIN ESPECIFICAR -") = 0 Then
+            '    lblmensaje.Text = "Debes seleccionar una Unidad"
+            '    FlagEmptyFields = False
+            '    Exit Sub
+            'Else
+            '    FlagEmptyFields = True
+            'End If
 
             If txtOldPassword.Text.CompareTo("") = 0 Then
                 lblmensaje.Text = "Debes ingresar tu contraseña actual"
@@ -117,7 +116,7 @@ Public Class frmCambioPassword
         Try
             arrParam.Add(txtUsuario.Text.Trim)
             'Buscar si el nombre de usuario esta en la unidad seleccionada
-            arrResultados = objDALC.Buscar(arrParam, cboUbicaciones.Text.Trim)
+            arrResultados = objDALC.Buscar(arrParam, txtUnidad.Text.Trim)
 
             If arrResultados Is Nothing Or arrResultados.Count = 0 Then
                 'If arrResultados.Count = 0 Then
@@ -148,7 +147,7 @@ Public Class frmCambioPassword
         Dim Unidad As String
         Dim strNombreUsuario As String = String.Empty
 
-        Unidad = cboUbicaciones.Text.Trim
+        Unidad = txtUnidad.Text.Trim
 
         With arrParam
             .Add(txtUsuario.Text.Trim)
@@ -210,25 +209,25 @@ Public Class frmCambioPassword
         Dim objBEC = New BEC.SEG.clsUsuario
         Dim intResultado As Integer = Util.Enumeracion.enmResultadoOperacion.NONE
 
-        intResultado = objDALC.UpdatePassword(Convert.ToInt32(txtUsuarioId.Text), txtNewPassword.Text, cboUbicaciones.Text.Trim)
+        intResultado = objDALC.UpdatePassword(Convert.ToInt32(txtUsuarioId.Text), txtNewPassword.Text, txtUnidad.Text.Trim)
 
         If intResultado = Util.Enumeracion.enmResultadoOperacion.OK Then
 
             lblmensaje.Text = Util.Constante.Ope_ActualizarOK
             FlagChangePass = True
-            '    If Configuration.ConfigurationManager.AppSettings("ActivarAuditoriaEventos") = Util.Enumeracion.enmResultadoOperacion.OK Then
-            '        Dim intUsuarioId As Integer = frmLogin.objColeccionFCB.objUsuBEC.UsuarioId
-            '        ' Pista de Auditoría:
-            '        Select Case objBEC.UsuarioId
-            '            Case 0
-            '                frmLogin.objColeccionFCB.objAuditoria = New DALC.SEG.clsUsuarioEvento(intUsuarioId, Util.Enumeracion.enmTipoAccion.Create, Util.Constante.Sistema._MODSEG & "->" & Me.Name, Environment.MachineName, frmLogin.objColeccionFCB.objUsuUndBEC.UnidadId, frmLogin.Unidad)
-            '            Case Else
-            '                frmLogin.objColeccionFCB.objAuditoria = New DALC.SEG.clsUsuarioEvento(intUsuarioId, Util.Enumeracion.enmTipoAccion.Update, Util.Constante.Sistema._MODSEG & "->" & Me.Name, Environment.MachineName, frmLogin.objColeccionFCB.objUsuUndBEC.UnidadId, frmLogin.Unidad)
-            '        End Select
+            If Configuration.ConfigurationManager.AppSettings("ActivarAuditoriaEventos") = Util.Enumeracion.enmResultadoOperacion.OK Then
+                Dim intUsuarioId As Integer = frmLogin.objColeccionFCB.objUsuBEC.UsuarioId
+                ' Pista de Auditoría:
+                '        Select Case objBEC.UsuarioId
+                '            Case 0
+                '                frmLogin.objColeccionFCB.objAuditoria = New DALC.SEG.clsUsuarioEvento(intUsuarioId, Util.Enumeracion.enmTipoAccion.Create, Util.Constante.Sistema._MODSEG & "->" & Me.Name, Environment.MachineName, frmLogin.objColeccionFCB.objUsuUndBEC.UnidadId, frmLogin.Unidad)
+                '            Case Else
+                frmLogin.objColeccionFCB.objAuditoria = New DALC.SEG.clsUsuarioEvento(intUsuarioId, Util.Enumeracion.enmTipoAccion.Update, Util.Constante.Sistema._MODGU & "->" & Me.Name, Environment.MachineName, frmLogin.objColeccionFCB.objUsuUndBEC.UnidadId, frmLogin.Unidad)
+                '        End Sele
 
-            '        frmLogin.objColeccionFCB.objAuditoria = Nothing
-            '        ' Fin de Auditoría
-            '    End If
+                '        frmLogin.objColeccionFCB.objAuditoria = Nothing
+                'Fin de Auditoría
+            End If
         Else
             FlagChangePass = False
             '    tsslblMensaje.Text = Util.Constante.Ope_ActualizarERR
@@ -251,11 +250,7 @@ Public Class frmCambioPassword
 #Region "Eventos de Controles"
 
     Private Sub frmCambioPassword_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-        If objUsuBEC IsNot Nothing Then
-            objUsuBEC.
-        End If
-
-            LeerParametros()
+        LeerParametros()
     End Sub
 
     Private Sub ToolStripButtonSalir_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ToolStripButtonSalir.Click
@@ -300,7 +295,6 @@ Public Class frmCambioPassword
 
         End Try
     End Sub
-
 
 #End Region
 

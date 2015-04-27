@@ -33,7 +33,7 @@ Partial Class frmCambioPassword
         Me.ToolStripButtonSalir = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButtonGuardar = New System.Windows.Forms.ToolStripButton()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.cboUbicaciones = New System.Windows.Forms.ComboBox()
+        Me.txtUnidad = New System.Windows.Forms.TextBox()
         Me.txtUsuario = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
@@ -144,7 +144,7 @@ Partial Class frmCambioPassword
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.cboUbicaciones)
+        Me.GroupBox2.Controls.Add(Me.txtUnidad)
         Me.GroupBox2.Controls.Add(Me.txtUsuario)
         Me.GroupBox2.Controls.Add(Me.Label6)
         Me.GroupBox2.Controls.Add(Me.Label5)
@@ -154,16 +154,17 @@ Partial Class frmCambioPassword
         Me.GroupBox2.TabIndex = 3
         Me.GroupBox2.TabStop = False
         '
-        'cboUbicaciones
+        'txtUnidad
         '
-        Me.cboUbicaciones.FormattingEnabled = True
-        Me.cboUbicaciones.Location = New System.Drawing.Point(80, 45)
-        Me.cboUbicaciones.Name = "cboUbicaciones"
-        Me.cboUbicaciones.Size = New System.Drawing.Size(154, 21)
-        Me.cboUbicaciones.TabIndex = 8
+        Me.txtUnidad.Enabled = False
+        Me.txtUnidad.Location = New System.Drawing.Point(80, 43)
+        Me.txtUnidad.Name = "txtUnidad"
+        Me.txtUnidad.Size = New System.Drawing.Size(154, 20)
+        Me.txtUnidad.TabIndex = 6
         '
         'txtUsuario
         '
+        Me.txtUsuario.Enabled = False
         Me.txtUsuario.Location = New System.Drawing.Point(80, 14)
         Me.txtUsuario.Name = "txtUsuario"
         Me.txtUsuario.Size = New System.Drawing.Size(154, 20)
@@ -210,6 +211,7 @@ Partial Class frmCambioPassword
         Me.txtUsuarioId.TabIndex = 5
         Me.txtUsuarioId.TabStop = False
         Me.txtUsuarioId.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.txtUsuarioId.Visible = False
         '
         'frmCambioPassword
         '
@@ -245,11 +247,11 @@ Partial Class frmCambioPassword
     Friend WithEvents ToolStrip1 As System.Windows.Forms.ToolStrip
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
     Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents cboUbicaciones As System.Windows.Forms.ComboBox
     Friend WithEvents txtUsuario As System.Windows.Forms.TextBox
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents ToolStripButtonSalir As System.Windows.Forms.ToolStripButton
     Friend WithEvents ToolStripButtonGuardar As System.Windows.Forms.ToolStripButton
     Friend WithEvents lblmensaje As System.Windows.Forms.Label
     Friend WithEvents txtUsuarioId As System.Windows.Forms.TextBox
+    Friend WithEvents txtUnidad As System.Windows.Forms.TextBox
 End Class

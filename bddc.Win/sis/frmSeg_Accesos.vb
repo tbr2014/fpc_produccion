@@ -48,7 +48,8 @@
 
                     End Select
                 Next
-
+                cboModulos.Items.RemoveAt(4)
+                'cboModulos.Items.Remove("MODGU - Modulo Gestion de Usuario")
             End If
 
             '2. Horarios:
