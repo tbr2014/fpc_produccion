@@ -32,7 +32,7 @@ Partial Class frmClienteBuscar
         Me.Label4 = New System.Windows.Forms.Label()
         Me.txtBuscarApe = New System.Windows.Forms.TextBox()
         Me.btnVolver = New System.Windows.Forms.Button()
-        Me.txtBuscarReferencia = New System.Windows.Forms.TextBox()
+        Me.txtBuscarDNI = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.txtBuscarCodigo = New System.Windows.Forms.TextBox()
         Me.btnBuscar = New System.Windows.Forms.Button()
@@ -40,14 +40,6 @@ Partial Class frmClienteBuscar
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtBuscarNomb = New System.Windows.Forms.TextBox()
         Me.dgvClientes = New System.Windows.Forms.DataGridView()
-        Me.ClienteId = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ClienteNombreCompleto = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ClienteEstadoId = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ClienteCodigo = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ClienteApePat = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ClienteApeMat = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ClienteApellidos = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ClienteNombres = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         Me.tsslblMensaje = New System.Windows.Forms.ToolStripStatusLabel()
         Me.BdClientesDataSet1 = New bddc.Win.BDClientesDataSet()
@@ -88,7 +80,7 @@ Partial Class frmClienteBuscar
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.txtBuscarApe)
         Me.GroupBox1.Controls.Add(Me.btnVolver)
-        Me.GroupBox1.Controls.Add(Me.txtBuscarReferencia)
+        Me.GroupBox1.Controls.Add(Me.txtBuscarDNI)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.txtBuscarCodigo)
         Me.GroupBox1.Controls.Add(Me.btnBuscar)
@@ -97,7 +89,7 @@ Partial Class frmClienteBuscar
         Me.GroupBox1.Controls.Add(Me.txtBuscarNomb)
         Me.GroupBox1.Location = New System.Drawing.Point(12, 57)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(496, 92)
+        Me.GroupBox1.Size = New System.Drawing.Size(496, 74)
         Me.GroupBox1.TabIndex = 73
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Buscar por"
@@ -105,7 +97,7 @@ Partial Class frmClienteBuscar
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(198, 45)
+        Me.Label4.Location = New System.Drawing.Point(7, 48)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(44, 13)
         Me.Label4.TabIndex = 4
@@ -113,7 +105,7 @@ Partial Class frmClienteBuscar
         '
         'txtBuscarApe
         '
-        Me.txtBuscarApe.Location = New System.Drawing.Point(246, 42)
+        Me.txtBuscarApe.Location = New System.Drawing.Point(73, 45)
         Me.txtBuscarApe.MaxLength = 50
         Me.txtBuscarApe.Name = "txtBuscarApe"
         Me.txtBuscarApe.Size = New System.Drawing.Size(115, 20)
@@ -124,32 +116,32 @@ Partial Class frmClienteBuscar
         Me.btnVolver.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnVolver.BackgroundImage = Global.bddc.Win.My.Resources.Resources.btnSalida
         Me.btnVolver.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.btnVolver.Location = New System.Drawing.Point(431, 40)
+        Me.btnVolver.Location = New System.Drawing.Point(432, 19)
         Me.btnVolver.Name = "btnVolver"
         Me.btnVolver.Size = New System.Drawing.Size(49, 46)
         Me.btnVolver.TabIndex = 6
         Me.btnVolver.UseVisualStyleBackColor = True
         '
-        'txtBuscarReferencia
+        'txtBuscarDNI
         '
-        Me.txtBuscarReferencia.Location = New System.Drawing.Point(73, 65)
-        Me.txtBuscarReferencia.MaxLength = 50
-        Me.txtBuscarReferencia.Name = "txtBuscarReferencia"
-        Me.txtBuscarReferencia.Size = New System.Drawing.Size(288, 20)
-        Me.txtBuscarReferencia.TabIndex = 4
+        Me.txtBuscarDNI.Location = New System.Drawing.Point(73, 19)
+        Me.txtBuscarDNI.MaxLength = 50
+        Me.txtBuscarDNI.Name = "txtBuscarDNI"
+        Me.txtBuscarDNI.Size = New System.Drawing.Size(115, 20)
+        Me.txtBuscarDNI.TabIndex = 4
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(7, 68)
+        Me.Label3.Location = New System.Drawing.Point(7, 22)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(59, 13)
+        Me.Label3.Size = New System.Drawing.Size(26, 13)
         Me.Label3.TabIndex = 0
-        Me.Label3.Text = "Referencia"
+        Me.Label3.Text = "DNI"
         '
         'txtBuscarCodigo
         '
-        Me.txtBuscarCodigo.Location = New System.Drawing.Point(73, 19)
+        Me.txtBuscarCodigo.Location = New System.Drawing.Point(251, 45)
         Me.txtBuscarCodigo.MaxLength = 13
         Me.txtBuscarCodigo.Name = "txtBuscarCodigo"
         Me.txtBuscarCodigo.Size = New System.Drawing.Size(115, 20)
@@ -159,7 +151,7 @@ Partial Class frmClienteBuscar
         '
         Me.btnBuscar.BackgroundImage = Global.bddc.Win.My.Resources.Resources.btngridBuscar
         Me.btnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.btnBuscar.Location = New System.Drawing.Point(376, 40)
+        Me.btnBuscar.Location = New System.Drawing.Point(377, 19)
         Me.btnBuscar.Name = "btnBuscar"
         Me.btnBuscar.Size = New System.Drawing.Size(49, 46)
         Me.btnBuscar.TabIndex = 5
@@ -168,7 +160,7 @@ Partial Class frmClienteBuscar
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(7, 22)
+        Me.Label2.Location = New System.Drawing.Point(202, 48)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(40, 13)
         Me.Label2.TabIndex = 0
@@ -177,7 +169,7 @@ Partial Class frmClienteBuscar
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(7, 45)
+        Me.Label1.Location = New System.Drawing.Point(202, 22)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(44, 13)
         Me.Label1.TabIndex = 0
@@ -185,7 +177,7 @@ Partial Class frmClienteBuscar
         '
         'txtBuscarNomb
         '
-        Me.txtBuscarNomb.Location = New System.Drawing.Point(73, 42)
+        Me.txtBuscarNomb.Location = New System.Drawing.Point(251, 19)
         Me.txtBuscarNomb.MaxLength = 50
         Me.txtBuscarNomb.Name = "txtBuscarNomb"
         Me.txtBuscarNomb.Size = New System.Drawing.Size(115, 20)
@@ -208,7 +200,6 @@ Partial Class frmClienteBuscar
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgvClientes.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.dgvClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvClientes.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ClienteId, Me.ClienteNombreCompleto, Me.ClienteEstadoId, Me.ClienteCodigo, Me.ClienteApePat, Me.ClienteApeMat, Me.ClienteApellidos, Me.ClienteNombres})
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
         DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -217,7 +208,7 @@ Partial Class frmClienteBuscar
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.dgvClientes.DefaultCellStyle = DataGridViewCellStyle2
-        Me.dgvClientes.Location = New System.Drawing.Point(22, 155)
+        Me.dgvClientes.Location = New System.Drawing.Point(18, 138)
         Me.dgvClientes.Name = "dgvClientes"
         Me.dgvClientes.ReadOnly = True
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
@@ -229,71 +220,8 @@ Partial Class frmClienteBuscar
         DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgvClientes.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
         Me.dgvClientes.RowHeadersWidth = 20
-        Me.dgvClientes.Size = New System.Drawing.Size(480, 301)
+        Me.dgvClientes.Size = New System.Drawing.Size(480, 320)
         Me.dgvClientes.TabIndex = 74
-        '
-        'ClienteId
-        '
-        Me.ClienteId.DataPropertyName = "ClienteId"
-        Me.ClienteId.HeaderText = "ClienteId"
-        Me.ClienteId.Name = "ClienteId"
-        Me.ClienteId.ReadOnly = True
-        Me.ClienteId.Visible = False
-        '
-        'ClienteNombreCompleto
-        '
-        Me.ClienteNombreCompleto.DataPropertyName = "ClienteNombreCompleto"
-        Me.ClienteNombreCompleto.HeaderText = "ClienteNombreCompleto"
-        Me.ClienteNombreCompleto.Name = "ClienteNombreCompleto"
-        Me.ClienteNombreCompleto.ReadOnly = True
-        Me.ClienteNombreCompleto.Visible = False
-        '
-        'ClienteEstadoId
-        '
-        Me.ClienteEstadoId.DataPropertyName = "ClienteEstadoId"
-        Me.ClienteEstadoId.HeaderText = "ClienteEstadoId"
-        Me.ClienteEstadoId.Name = "ClienteEstadoId"
-        Me.ClienteEstadoId.ReadOnly = True
-        Me.ClienteEstadoId.Visible = False
-        '
-        'ClienteCodigo
-        '
-        Me.ClienteCodigo.DataPropertyName = "ClienteCodigo"
-        Me.ClienteCodigo.HeaderText = "Código"
-        Me.ClienteCodigo.Name = "ClienteCodigo"
-        Me.ClienteCodigo.ReadOnly = True
-        '
-        'ClienteApePat
-        '
-        Me.ClienteApePat.DataPropertyName = "ClienteApePat"
-        Me.ClienteApePat.HeaderText = "ClienteApePat"
-        Me.ClienteApePat.Name = "ClienteApePat"
-        Me.ClienteApePat.ReadOnly = True
-        Me.ClienteApePat.Visible = False
-        '
-        'ClienteApeMat
-        '
-        Me.ClienteApeMat.DataPropertyName = "ClienteApeMat"
-        Me.ClienteApeMat.HeaderText = "ClienteApeMat"
-        Me.ClienteApeMat.Name = "ClienteApeMat"
-        Me.ClienteApeMat.ReadOnly = True
-        Me.ClienteApeMat.Visible = False
-        '
-        'ClienteApellidos
-        '
-        Me.ClienteApellidos.DataPropertyName = "ClienteApellidos"
-        Me.ClienteApellidos.HeaderText = "Apellidos"
-        Me.ClienteApellidos.Name = "ClienteApellidos"
-        Me.ClienteApellidos.ReadOnly = True
-        Me.ClienteApellidos.Width = 150
-        '
-        'ClienteNombres
-        '
-        Me.ClienteNombres.DataPropertyName = "ClienteNombres"
-        Me.ClienteNombres.HeaderText = "Nombres"
-        Me.ClienteNombres.Name = "ClienteNombres"
-        Me.ClienteNombres.ReadOnly = True
-        Me.ClienteNombres.Width = 180
         '
         'StatusStrip1
         '
@@ -335,6 +263,7 @@ Partial Class frmClienteBuscar
         Me.Controls.Add(Me.Label22)
         Me.Controls.Add(Me.PictureBox2)
         Me.Name = "frmClienteBuscar"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Busqueda de Clientes"
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
@@ -354,7 +283,7 @@ Partial Class frmClienteBuscar
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents txtBuscarApe As System.Windows.Forms.TextBox
     Friend WithEvents btnVolver As System.Windows.Forms.Button
-    Friend WithEvents txtBuscarReferencia As System.Windows.Forms.TextBox
+    Friend WithEvents txtBuscarDNI As System.Windows.Forms.TextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents txtBuscarCodigo As System.Windows.Forms.TextBox
     Friend WithEvents btnBuscar As System.Windows.Forms.Button
@@ -362,14 +291,6 @@ Partial Class frmClienteBuscar
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents txtBuscarNomb As System.Windows.Forms.TextBox
     Friend WithEvents dgvClientes As System.Windows.Forms.DataGridView
-    Friend WithEvents ClienteId As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents ClienteNombreCompleto As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents ClienteEstadoId As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents ClienteCodigo As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents ClienteApePat As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents ClienteApeMat As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents ClienteApellidos As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents ClienteNombres As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents StatusStrip1 As System.Windows.Forms.StatusStrip
     Friend WithEvents tsslblMensaje As System.Windows.Forms.ToolStripStatusLabel
     Friend WithEvents BdClientesDataSet1 As bddc.Win.BDClientesDataSet

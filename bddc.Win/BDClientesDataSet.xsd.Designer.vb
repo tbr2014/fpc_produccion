@@ -4681,6 +4681,8 @@ Partial Public Class BDClientesDataSet
         
         Private columnClienteApellidos As Global.System.Data.DataColumn
         
+        Private columnDNI As Global.System.Data.DataColumn
+        
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Sub New()
@@ -4765,6 +4767,14 @@ Partial Public Class BDClientesDataSet
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property DNIColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnDNI
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Browsable(false)>  _
         Public ReadOnly Property Count() As Integer
@@ -4801,9 +4811,9 @@ Partial Public Class BDClientesDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Overloads Function AddFiesta_tblbdd_clienteBusquedaRow(ByVal ClienteCodigo As String, ByVal ClienteApePat As String, ByVal ClienteApeMat As String, ByVal ClienteNombres As String, ByVal ClienteApellidos As String) As Fiesta_tblbdd_clienteBusquedaRow
+        Public Overloads Function AddFiesta_tblbdd_clienteBusquedaRow(ByVal ClienteCodigo As String, ByVal ClienteApePat As String, ByVal ClienteApeMat As String, ByVal ClienteNombres As String, ByVal ClienteApellidos As String, ByVal DNI As String) As Fiesta_tblbdd_clienteBusquedaRow
             Dim rowFiesta_tblbdd_clienteBusquedaRow As Fiesta_tblbdd_clienteBusquedaRow = CType(Me.NewRow,Fiesta_tblbdd_clienteBusquedaRow)
-            Dim columnValuesArray() As Object = New Object() {Nothing, ClienteCodigo, ClienteApePat, ClienteApeMat, ClienteNombres, ClienteApellidos}
+            Dim columnValuesArray() As Object = New Object() {Nothing, ClienteCodigo, ClienteApePat, ClienteApeMat, ClienteNombres, ClienteApellidos, DNI}
             rowFiesta_tblbdd_clienteBusquedaRow.ItemArray = columnValuesArray
             Me.Rows.Add(rowFiesta_tblbdd_clienteBusquedaRow)
             Return rowFiesta_tblbdd_clienteBusquedaRow
@@ -4838,6 +4848,7 @@ Partial Public Class BDClientesDataSet
             Me.columnClienteApeMat = MyBase.Columns("ClienteApeMat")
             Me.columnClienteNombres = MyBase.Columns("ClienteNombres")
             Me.columnClienteApellidos = MyBase.Columns("ClienteApellidos")
+            Me.columnDNI = MyBase.Columns("DNI")
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -4855,12 +4866,15 @@ Partial Public Class BDClientesDataSet
             MyBase.Columns.Add(Me.columnClienteNombres)
             Me.columnClienteApellidos = New Global.System.Data.DataColumn("ClienteApellidos", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnClienteApellidos)
+            Me.columnDNI = New Global.System.Data.DataColumn("DNI", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnDNI)
             Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnClienteId}, true))
             Me.columnClienteId.AutoIncrement = true
             Me.columnClienteId.AutoIncrementSeed = -1
             Me.columnClienteId.AutoIncrementStep = -1
             Me.columnClienteId.AllowDBNull = false
             Me.columnClienteId.Unique = true
+            Me.columnClienteCodigo.AllowDBNull = false
             Me.columnClienteCodigo.ReadOnly = true
             Me.columnClienteApePat.AllowDBNull = false
             Me.columnClienteApeMat.AllowDBNull = false
@@ -13682,12 +13696,7 @@ Partial Public Class BDClientesDataSet
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Property ClienteCodigo() As String
             Get
-                Try 
-                    Return CType(Me(Me.tableFiesta_tblbdd_clienteBusqueda.ClienteCodigoColumn),String)
-                Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("The value for column 'ClienteCodigo' in table 'Fiesta_tblbdd_clienteBusqueda' is "& _ 
-                            "DBNull.", e)
-                End Try
+                Return CType(Me(Me.tableFiesta_tblbdd_clienteBusqueda.ClienteCodigoColumn),String)
             End Get
             Set
                 Me(Me.tableFiesta_tblbdd_clienteBusqueda.ClienteCodigoColumn) = value
@@ -13745,15 +13754,18 @@ Partial Public Class BDClientesDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function IsClienteCodigoNull() As Boolean
-            Return Me.IsNull(Me.tableFiesta_tblbdd_clienteBusqueda.ClienteCodigoColumn)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Sub SetClienteCodigoNull()
-            Me(Me.tableFiesta_tblbdd_clienteBusqueda.ClienteCodigoColumn) = Global.System.Convert.DBNull
-        End Sub
+        Public Property DNI() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tableFiesta_tblbdd_clienteBusqueda.DNIColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'DNI' in table 'Fiesta_tblbdd_clienteBusqueda' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableFiesta_tblbdd_clienteBusqueda.DNIColumn) = value
+            End Set
+        End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
@@ -13765,6 +13777,18 @@ Partial Public Class BDClientesDataSet
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Sub SetClienteApellidosNull()
             Me(Me.tableFiesta_tblbdd_clienteBusqueda.ClienteApellidosColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsDNINull() As Boolean
+            Return Me.IsNull(Me.tableFiesta_tblbdd_clienteBusqueda.DNIColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetDNINull()
+            Me(Me.tableFiesta_tblbdd_clienteBusqueda.DNIColumn) = Global.System.Convert.DBNull
         End Sub
     End Class
     
@@ -29223,12 +29247,15 @@ Namespace BDClientesDataSetTableAdapters
             tableMapping.ColumnMappings.Add("ClienteApeMat", "ClienteApeMat")
             tableMapping.ColumnMappings.Add("ClienteNombres", "ClienteNombres")
             tableMapping.ColumnMappings.Add("ClienteApellidos", "ClienteApellidos")
+            tableMapping.ColumnMappings.Add("DNI", "DNI")
             Me._adapter.TableMappings.Add(tableMapping)
             Me._adapter.DeleteCommand = New Global.Devart.Data.MySql.MySqlCommand()
             Me._adapter.DeleteCommand.Connection = Me.Connection
             Me._adapter.DeleteCommand.CommandText = "DELETE FROM `bdcrm`.`tblbdd_cliente` WHERE ((`ccli_id` = :Original_ClienteId) AND"& _ 
-                " (`scli_apellidopat` = :Original_ClienteApePat) AND (`scli_apellidomat` = :Origi"& _ 
-                "nal_ClienteApeMat) AND (`scli_nombres` = :Original_ClienteNombres))"
+                " ((:IsNull_DNI = 1 AND `scli_numdoc` IS NULL) OR (`scli_numdoc` = :Original_DNI)"& _ 
+                ") AND (`scli_apellidopat` = :Original_ClienteApePat) AND (`scli_apellidomat` = :"& _ 
+                "Original_ClienteApeMat) AND (`scli_nombres` = :Original_ClienteNombres) AND (`sc"& _ 
+                "li_codigo` = :Original_ClienteCodigo))"
             Me._adapter.DeleteCommand.CommandType = Global.System.Data.CommandType.Text
             Dim param As Global.Devart.Data.MySql.MySqlParameter = New Global.Devart.Data.MySql.MySqlParameter()
             param.ParameterName = "Original_ClienteId"
@@ -29236,6 +29263,22 @@ Namespace BDClientesDataSetTableAdapters
             param.MySqlType = Global.Devart.Data.MySql.MySqlType.Int
             param.IsNullable = true
             param.SourceColumn = "ClienteId"
+            param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            Me._adapter.DeleteCommand.Parameters.Add(param)
+            param = New Global.Devart.Data.MySql.MySqlParameter()
+            param.ParameterName = "IsNull_DNI"
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlType = Global.Devart.Data.MySql.MySqlType.Int
+            param.IsNullable = true
+            param.SourceColumn = "DNI"
+            param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            param.SourceColumnNullMapping = true
+            Me._adapter.DeleteCommand.Parameters.Add(param)
+            param = New Global.Devart.Data.MySql.MySqlParameter()
+            param.ParameterName = "Original_DNI"
+            param.MySqlType = Global.Devart.Data.MySql.MySqlType.VarChar
+            param.IsNullable = true
+            param.SourceColumn = "DNI"
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
             Me._adapter.DeleteCommand.Parameters.Add(param)
             param = New Global.Devart.Data.MySql.MySqlParameter()
@@ -29259,14 +29302,29 @@ Namespace BDClientesDataSetTableAdapters
             param.SourceColumn = "ClienteNombres"
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
             Me._adapter.DeleteCommand.Parameters.Add(param)
+            param = New Global.Devart.Data.MySql.MySqlParameter()
+            param.ParameterName = "Original_ClienteCodigo"
+            param.MySqlType = Global.Devart.Data.MySql.MySqlType.VarChar
+            param.IsNullable = true
+            param.SourceColumn = "ClienteCodigo"
+            param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            Me._adapter.DeleteCommand.Parameters.Add(param)
             Me._adapter.UpdateCommand = New Global.Devart.Data.MySql.MySqlCommand()
             Me._adapter.UpdateCommand.Connection = Me.Connection
-            Me._adapter.UpdateCommand.CommandText = "UPDATE `bdcrm`.`tblbdd_cliente` SET `scli_apellidopat` = :ClienteApePat, `scli_ap"& _ 
-                "ellidomat` = :ClienteApeMat, `scli_nombres` = :ClienteNombres WHERE ((`ccli_id` "& _ 
-                "= :Original_ClienteId) AND (`scli_apellidopat` = :Original_ClienteApePat) AND (`"& _ 
-                "scli_apellidomat` = :Original_ClienteApeMat) AND (`scli_nombres` = :Original_Cli"& _ 
-                "enteNombres))"
+            Me._adapter.UpdateCommand.CommandText = "UPDATE `bdcrm`.`tblbdd_cliente` SET `scli_numdoc` = :DNI, `scli_apellidopat` = :C"& _ 
+                "lienteApePat, `scli_apellidomat` = :ClienteApeMat, `scli_nombres` = :ClienteNomb"& _ 
+                "res, `scli_codigo` = :ClienteCodigo WHERE ((`ccli_id` = :Original_ClienteId) AND"& _ 
+                " ((:IsNull_DNI = 1 AND `scli_numdoc` IS NULL) OR (`scli_numdoc` = :Original_DNI)"& _ 
+                ") AND (`scli_apellidopat` = :Original_ClienteApePat) AND (`scli_apellidomat` = :"& _ 
+                "Original_ClienteApeMat) AND (`scli_nombres` = :Original_ClienteNombres) AND (`sc"& _ 
+                "li_codigo` = :Original_ClienteCodigo))"
             Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
+            param = New Global.Devart.Data.MySql.MySqlParameter()
+            param.ParameterName = "DNI"
+            param.MySqlType = Global.Devart.Data.MySql.MySqlType.VarChar
+            param.IsNullable = true
+            param.SourceColumn = "DNI"
+            Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.Devart.Data.MySql.MySqlParameter()
             param.ParameterName = "ClienteApePat"
             param.MySqlType = Global.Devart.Data.MySql.MySqlType.VarChar
@@ -29286,11 +29344,33 @@ Namespace BDClientesDataSetTableAdapters
             param.SourceColumn = "ClienteNombres"
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.Devart.Data.MySql.MySqlParameter()
+            param.ParameterName = "ClienteCodigo"
+            param.MySqlType = Global.Devart.Data.MySql.MySqlType.VarChar
+            param.IsNullable = true
+            param.SourceColumn = "ClienteCodigo"
+            Me._adapter.UpdateCommand.Parameters.Add(param)
+            param = New Global.Devart.Data.MySql.MySqlParameter()
             param.ParameterName = "Original_ClienteId"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlType = Global.Devart.Data.MySql.MySqlType.Int
             param.IsNullable = true
             param.SourceColumn = "ClienteId"
+            param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            Me._adapter.UpdateCommand.Parameters.Add(param)
+            param = New Global.Devart.Data.MySql.MySqlParameter()
+            param.ParameterName = "IsNull_DNI"
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlType = Global.Devart.Data.MySql.MySqlType.Int
+            param.IsNullable = true
+            param.SourceColumn = "DNI"
+            param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            param.SourceColumnNullMapping = true
+            Me._adapter.UpdateCommand.Parameters.Add(param)
+            param = New Global.Devart.Data.MySql.MySqlParameter()
+            param.ParameterName = "Original_DNI"
+            param.MySqlType = Global.Devart.Data.MySql.MySqlType.VarChar
+            param.IsNullable = true
+            param.SourceColumn = "DNI"
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.Devart.Data.MySql.MySqlParameter()
@@ -29314,6 +29394,13 @@ Namespace BDClientesDataSetTableAdapters
             param.SourceColumn = "ClienteNombres"
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
             Me._adapter.UpdateCommand.Parameters.Add(param)
+            param = New Global.Devart.Data.MySql.MySqlParameter()
+            param.ParameterName = "Original_ClienteCodigo"
+            param.MySqlType = Global.Devart.Data.MySql.MySqlType.VarChar
+            param.IsNullable = true
+            param.SourceColumn = "ClienteCodigo"
+            param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            Me._adapter.UpdateCommand.Parameters.Add(param)
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -29329,14 +29416,14 @@ Namespace BDClientesDataSetTableAdapters
             Me._commandCollection = New Global.Devart.Data.MySql.MySqlCommand(0) {}
             Me._commandCollection(0) = New Global.Devart.Data.MySql.MySqlCommand()
             Me._commandCollection(0).Connection = Me.Connection
-            Me._commandCollection(0).CommandText = "SELECT        ccli_id AS ClienteId, COALESCE(scli_codigo, '') AS ClienteCodigo, s"& _ 
-                "cli_apellidopat AS ClienteApePat, scli_apellidomat AS ClienteApeMat, "&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"         "& _ 
-                "                scli_nombres AS ClienteNombres, CONCAT(scli_apellidomat, ' ', sc"& _ 
-                "li_apellidopat) AS ClienteApellidos"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"FROM            tblbdd_cliente"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"WHERE      "& _ 
-                "  (fcli_estadoid = 1) AND (fcli_fuenteid IN (0, 1, 2, 3)) OR"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                  "& _ 
-                "       (scli_nombres = :Nombre) OR"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                         (scli_apellidopat ="& _ 
-                " :Apellido) OR"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                         (scli_codigo = :Codigo) OR"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"           "& _ 
-                "              (scli_comentarios = :Referencia)"
+            Me._commandCollection(0).CommandText = "SELECT        "&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"ccli_id AS ClienteId, "&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"scli_numdoc AS DNI,"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"scli_apellidopat AS "& _ 
+                "ClienteApePat, "&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"scli_apellidomat AS ClienteApeMat, "&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"scli_nombres AS ClienteNom"& _ 
+                "bres, "&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"CONCAT(scli_apellidomat, ' ', scli_apellidopat) AS ClienteApellidos,"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"sc"& _ 
+                "li_codigo AS ClienteCodigo"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"FROM            tblbdd_cliente"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"WHERE        (fcli_e"& _ 
+                "stadoid = 1) AND (fcli_fuenteid IN (0, 1, 2, 3)) OR"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                         (s"& _ 
+                "cli_nombres = :Nombre) OR"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                         (scli_apellidopat = :Apellid"& _ 
+                "o) OR"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                         (scli_codigo = :Codigo) OR"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                    "& _ 
+                "     (scli_numdoc = :DNI)"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
             Dim param As Global.Devart.Data.MySql.MySqlParameter = New Global.Devart.Data.MySql.MySqlParameter()
             param.ParameterName = "Nombre"
@@ -29357,14 +29444,14 @@ Namespace BDClientesDataSetTableAdapters
             param.MySqlType = Global.Devart.Data.MySql.MySqlType.VarChar
             param.Size = 1024
             param.IsNullable = true
-            param.SourceColumn = "scli_codigo"
+            param.SourceColumn = "ClienteCodigo"
             Me._commandCollection(0).Parameters.Add(param)
             param = New Global.Devart.Data.MySql.MySqlParameter()
-            param.ParameterName = "Referencia"
+            param.ParameterName = "DNI"
             param.MySqlType = Global.Devart.Data.MySql.MySqlType.VarChar
             param.Size = 1024
             param.IsNullable = true
-            param.SourceColumn = "scli_comentarios"
+            param.SourceColumn = "DNI"
             Me._commandCollection(0).Parameters.Add(param)
         End Sub
         
@@ -29372,7 +29459,7 @@ Namespace BDClientesDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, true)>  _
-        Public Overloads Overridable Function Fill(ByVal dataTable As BDClientesDataSet.Fiesta_tblbdd_clienteBusquedaDataTable, ByVal Nombre As String, ByVal Apellido As String, ByVal Codigo As String, ByVal Referencia As String) As Integer
+        Public Overloads Overridable Function Fill(ByVal dataTable As BDClientesDataSet.Fiesta_tblbdd_clienteBusquedaDataTable, ByVal Nombre As String, ByVal Apellido As String, ByVal Codigo As String, ByVal DNI As String) As Integer
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
             If (Nombre Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("Nombre")
@@ -29389,10 +29476,10 @@ Namespace BDClientesDataSetTableAdapters
             Else
                 Me.Adapter.SelectCommand.Parameters(2).Value = CType(Codigo,String)
             End If
-            If (Referencia Is Nothing) Then
-                Throw New Global.System.ArgumentNullException("Referencia")
+            If (DNI Is Nothing) Then
+                Me.Adapter.SelectCommand.Parameters(3).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.SelectCommand.Parameters(3).Value = CType(Referencia,String)
+                Me.Adapter.SelectCommand.Parameters(3).Value = CType(DNI,String)
             End If
             If (Me.ClearBeforeFill = true) Then
                 dataTable.Clear
@@ -29405,7 +29492,7 @@ Namespace BDClientesDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], true)>  _
-        Public Overloads Overridable Function GetData(ByVal Nombre As String, ByVal Apellido As String, ByVal Codigo As String, ByVal Referencia As String) As BDClientesDataSet.Fiesta_tblbdd_clienteBusquedaDataTable
+        Public Overloads Overridable Function GetData(ByVal Nombre As String, ByVal Apellido As String, ByVal Codigo As String, ByVal DNI As String) As BDClientesDataSet.Fiesta_tblbdd_clienteBusquedaDataTable
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
             If (Nombre Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("Nombre")
@@ -29422,10 +29509,10 @@ Namespace BDClientesDataSetTableAdapters
             Else
                 Me.Adapter.SelectCommand.Parameters(2).Value = CType(Codigo,String)
             End If
-            If (Referencia Is Nothing) Then
-                Throw New Global.System.ArgumentNullException("Referencia")
+            If (DNI Is Nothing) Then
+                Me.Adapter.SelectCommand.Parameters(3).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.SelectCommand.Parameters(3).Value = CType(Referencia,String)
+                Me.Adapter.SelectCommand.Parameters(3).Value = CType(DNI,String)
             End If
             Dim dataTable As BDClientesDataSet.Fiesta_tblbdd_clienteBusquedaDataTable = New BDClientesDataSet.Fiesta_tblbdd_clienteBusquedaDataTable()
             Me.Adapter.Fill(dataTable)
@@ -29464,22 +29551,33 @@ Namespace BDClientesDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Delete, true)>  _
-        Public Overloads Overridable Function Delete(ByVal Original_ClienteId As Integer, ByVal Original_ClienteApePat As String, ByVal Original_ClienteApeMat As String, ByVal Original_ClienteNombres As String) As Integer
+        Public Overloads Overridable Function Delete(ByVal Original_ClienteId As Integer, ByVal Original_DNI As String, ByVal Original_ClienteApePat As String, ByVal Original_ClienteApeMat As String, ByVal Original_ClienteNombres As String, ByVal Original_ClienteCodigo As String) As Integer
             Me.Adapter.DeleteCommand.Parameters(0).Value = CType(Original_ClienteId,Integer)
+            If (Original_DNI Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("Original_DNI")
+            Else
+                Me.Adapter.DeleteCommand.Parameters(1).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(2).Value = CType(Original_DNI,String)
+            End If
             If (Original_ClienteApePat Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("Original_ClienteApePat")
             Else
-                Me.Adapter.DeleteCommand.Parameters(1).Value = CType(Original_ClienteApePat,String)
+                Me.Adapter.DeleteCommand.Parameters(3).Value = CType(Original_ClienteApePat,String)
             End If
             If (Original_ClienteApeMat Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("Original_ClienteApeMat")
             Else
-                Me.Adapter.DeleteCommand.Parameters(2).Value = CType(Original_ClienteApeMat,String)
+                Me.Adapter.DeleteCommand.Parameters(4).Value = CType(Original_ClienteApeMat,String)
             End If
             If (Original_ClienteNombres Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("Original_ClienteNombres")
             Else
-                Me.Adapter.DeleteCommand.Parameters(3).Value = CType(Original_ClienteNombres,String)
+                Me.Adapter.DeleteCommand.Parameters(5).Value = CType(Original_ClienteNombres,String)
+            End If
+            If (Original_ClienteCodigo Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("Original_ClienteCodigo")
+            Else
+                Me.Adapter.DeleteCommand.Parameters(6).Value = CType(Original_ClienteCodigo,String)
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.DeleteCommand.Connection.State
             If ((Me.Adapter.DeleteCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
@@ -29500,37 +29598,58 @@ Namespace BDClientesDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
-        Public Overloads Overridable Function Update(ByVal ClienteApePat As String, ByVal ClienteApeMat As String, ByVal ClienteNombres As String, ByVal Original_ClienteId As Integer, ByVal Original_ClienteApePat As String, ByVal Original_ClienteApeMat As String, ByVal Original_ClienteNombres As String) As Integer
+        Public Overloads Overridable Function Update(ByVal DNI As String, ByVal ClienteApePat As String, ByVal ClienteApeMat As String, ByVal ClienteNombres As String, ByVal ClienteCodigo As String, ByVal Original_ClienteId As Integer, ByVal Original_DNI As String, ByVal Original_ClienteApePat As String, ByVal Original_ClienteApeMat As String, ByVal Original_ClienteNombres As String, ByVal Original_ClienteCodigo As String) As Integer
+            If (DNI Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("DNI")
+            Else
+                Me.Adapter.UpdateCommand.Parameters(0).Value = CType(DNI,String)
+            End If
             If (ClienteApePat Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("ClienteApePat")
             Else
-                Me.Adapter.UpdateCommand.Parameters(0).Value = CType(ClienteApePat,String)
+                Me.Adapter.UpdateCommand.Parameters(1).Value = CType(ClienteApePat,String)
             End If
             If (ClienteApeMat Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("ClienteApeMat")
             Else
-                Me.Adapter.UpdateCommand.Parameters(1).Value = CType(ClienteApeMat,String)
+                Me.Adapter.UpdateCommand.Parameters(2).Value = CType(ClienteApeMat,String)
             End If
             If (ClienteNombres Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("ClienteNombres")
             Else
-                Me.Adapter.UpdateCommand.Parameters(2).Value = CType(ClienteNombres,String)
+                Me.Adapter.UpdateCommand.Parameters(3).Value = CType(ClienteNombres,String)
             End If
-            Me.Adapter.UpdateCommand.Parameters(3).Value = CType(Original_ClienteId,Integer)
+            If (ClienteCodigo Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("ClienteCodigo")
+            Else
+                Me.Adapter.UpdateCommand.Parameters(4).Value = CType(ClienteCodigo,String)
+            End If
+            Me.Adapter.UpdateCommand.Parameters(5).Value = CType(Original_ClienteId,Integer)
+            If (Original_DNI Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("Original_DNI")
+            Else
+                Me.Adapter.UpdateCommand.Parameters(6).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(7).Value = CType(Original_DNI,String)
+            End If
             If (Original_ClienteApePat Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("Original_ClienteApePat")
             Else
-                Me.Adapter.UpdateCommand.Parameters(4).Value = CType(Original_ClienteApePat,String)
+                Me.Adapter.UpdateCommand.Parameters(8).Value = CType(Original_ClienteApePat,String)
             End If
             If (Original_ClienteApeMat Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("Original_ClienteApeMat")
             Else
-                Me.Adapter.UpdateCommand.Parameters(5).Value = CType(Original_ClienteApeMat,String)
+                Me.Adapter.UpdateCommand.Parameters(9).Value = CType(Original_ClienteApeMat,String)
             End If
             If (Original_ClienteNombres Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("Original_ClienteNombres")
             Else
-                Me.Adapter.UpdateCommand.Parameters(6).Value = CType(Original_ClienteNombres,String)
+                Me.Adapter.UpdateCommand.Parameters(10).Value = CType(Original_ClienteNombres,String)
+            End If
+            If (Original_ClienteCodigo Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("Original_ClienteCodigo")
+            Else
+                Me.Adapter.UpdateCommand.Parameters(11).Value = CType(Original_ClienteCodigo,String)
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.UpdateCommand.Connection.State
             If ((Me.Adapter.UpdateCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _

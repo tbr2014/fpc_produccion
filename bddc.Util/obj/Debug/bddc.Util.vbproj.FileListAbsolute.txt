@@ -362,3 +362,15 @@ C:\FPC AMBIENTE DE DESARROLLO\bddc\bddc.Util\obj\Debug\bddc.Util.vbproj.Generate
 C:\FPC AMBIENTE DE DESARROLLO\bddc\bddc.Util\obj\Debug\bddc.Util.dll
 C:\FPC AMBIENTE DE DESARROLLO\bddc\bddc.Util\obj\Debug\bddc.Util.xml
 C:\FPC AMBIENTE DE DESARROLLO\bddc\bddc.Util\obj\Debug\bddc.Util.pdb
+C:\FPC PRUEBAS\bddc\bddc.Util\bin\Debug\bddc.Util.dll
+C:\FPC PRUEBAS\bddc\bddc.Util\bin\Debug\bddc.Util.pdb
+C:\FPC PRUEBAS\bddc\bddc.Util\bin\Debug\bddc.Util.xml
+C:\FPC PRUEBAS\bddc\bddc.Util\bin\Debug\bddc.BEC.dll
+C:\FPC PRUEBAS\bddc\bddc.Util\bin\Debug\bddc.BEC.pdb
+C:\FPC PRUEBAS\bddc\bddc.Util\bin\Debug\bddc.BEC.xml
+C:\FPC PRUEBAS\bddc\bddc.Util\obj\Debug\bddc.Util.vbprojResolveAssemblyReference.cache
+C:\FPC PRUEBAS\bddc\bddc.Util\obj\Debug\bddc.Util.Resources.resources
+C:\FPC PRUEBAS\bddc\bddc.Util\obj\Debug\bddc.Util.vbproj.GenerateResource.Cache
+C:\FPC PRUEBAS\bddc\bddc.Util\obj\Debug\bddc.Util.dll
+C:\FPC PRUEBAS\bddc\bddc.Util\obj\Debug\bddc.Util.xml
+C:\FPC PRUEBAS\bddc\bddc.Util\obj\Debug\bddc.Util.pdb

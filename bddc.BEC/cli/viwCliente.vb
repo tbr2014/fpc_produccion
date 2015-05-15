@@ -25,6 +25,7 @@ Namespace CLI
 		Private strClienteNombres As String
 		Private strClienteNombreCompleto As String
         Private intClienteEstadoId As Integer
+        Private strClienteDNI As String
         'Private strClienteNacionalidad As String
 
 		Public Property ClienteId() As Integer
@@ -108,7 +109,16 @@ Namespace CLI
 			Set(ByVal Value as Integer)
 				intClienteEstadoId = Value
 			End Set
-		End Property
+        End Property
+
+        Public Property ClienteDNI() As String
+            Get
+                Return strClienteDNI
+            End Get
+            Set(ByVal Value As String)
+                strClienteDNI = Value
+            End Set
+        End Property
 
 	End Class ' viwCliente
 

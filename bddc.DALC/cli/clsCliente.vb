@@ -30,7 +30,6 @@ Namespace CLI
 
         Public Function Buscar(ByVal arrFiltro As System.Collections.IList, ByVal Unidad As String) As System.Collections.IList Implements COM.ICRUD.Buscar
             Dim CadenaConexion As String = Util.Factory.GetConexion
-            'objConexion.GetConexion
             Dim dato As New Util.Dato
             Dim dtsResultado As New DataSet
             Dim arrBEC As BEC.CLI.viwCliente()
@@ -45,7 +44,7 @@ Namespace CLI
                     .Add("?p_str_buscarNomApe")
                     .Add("?p_str_buscarApe")
                     .Add("?p_str_buscarCodigo")
-                    .Add("?p_str_buscarReferencia")
+                    .Add("?p_str_buscarDNI")
                 End With
 
                 prmParameter(0) = New MySqlParameter(arrParameter(0).ToString, MySqlDbType.String, Util.Constante.DiccionarioDatos.CONST_NOMBRE_50)
@@ -64,22 +63,22 @@ Namespace CLI
                     Case "FIESTA CASINO BENAVIDES"
                         Util.Factory.ConfigOrigen = 1
                         CadenaConexion = Util.Factory.GetConexion
-                        dtsResultado = MySqlHelper.ExecuteDataset(CadenaConexion, "call bdcrm.sprbdd_cliente_buscar (?p_str_buscarNomApe, ?p_str_buscarApe, ?p_str_buscarCodigo, ?p_str_buscarReferencia);", prmParameter)
+                        dtsResultado = MySqlHelper.ExecuteDataset(CadenaConexion, "call bdcrm.sprbdd_cliente_buscar (?p_str_buscarNomApe, ?p_str_buscarApe, ?p_str_buscarCodigo, ?p_str_buscarDNI);", prmParameter)
 
                     Case "LUXOR LIMA CASINO"
                         Util.Factory.ConfigOrigen = 2
                         CadenaConexion = Util.Factory.GetConexion
-                        dtsResultado = MySqlHelper.ExecuteDataset(CadenaConexion, "call bdcrmluxor.sprbdd_cliente_buscar (?p_str_buscarNomApe, ?p_str_buscarApe, ?p_str_buscarCodigo, ?p_str_buscarReferencia);", prmParameter)
+                        dtsResultado = MySqlHelper.ExecuteDataset(CadenaConexion, "call bdcrmluxor.sprbdd_cliente_buscar (?p_str_buscarNomApe, ?p_str_buscarApe, ?p_str_buscarCodigo, ?p_str_buscarDNI);", prmParameter)
 
                     Case "LUXOR TACNA"
                         Util.Factory.ConfigOrigen = 3
                         CadenaConexion = Util.Factory.GetConexion
-                        dtsResultado = MySqlHelper.ExecuteDataset(CadenaConexion, "call bdcrmtacna.sprbdd_cliente_buscar (?p_str_buscarNomApe, ?p_str_buscarApe, ?p_str_buscarCodigo, ?p_str_buscarReferencia);", prmParameter)
+                        dtsResultado = MySqlHelper.ExecuteDataset(CadenaConexion, "call bdcrmtacna.sprbdd_cliente_buscar (?p_str_buscarNomApe, ?p_str_buscarApe, ?p_str_buscarCodigo, ?p_str_buscarDNI);", prmParameter)
 
                     Case "EMPRESA DE PRUEBA"
                         Util.Factory.ConfigOrigen = 5
                         CadenaConexion = Util.Factory.GetConexion
-                        dtsResultado = MySqlHelper.ExecuteDataset(CadenaConexion, "call bdcrm_test.sprbdd_cliente_buscar (?p_str_buscarNomApe, ?p_str_buscarApe, ?p_str_buscarCodigo, ?p_str_buscarReferencia);", prmParameter)
+                        dtsResultado = MySqlHelper.ExecuteDataset(CadenaConexion, "call bdcrm_test.sprbdd_cliente_buscar (?p_str_buscarNomApe, ?p_str_buscarApe, ?p_str_buscarCodigo, ?p_str_buscarDNI);", prmParameter)
                 End Select
 
 
@@ -95,6 +94,7 @@ Namespace CLI
                             .ClienteApePat = dato.EsNuloBD(dtsResultado.Tables(0).Rows(k)("ClienteApePat"))
                             .ClienteApeMat = dato.EsNuloBD(dtsResultado.Tables(0).Rows(k)("ClienteApeMat"))
                             .ClienteNombres = dato.EsNuloBD(dtsResultado.Tables(0).Rows(k)("ClienteNombres"))
+                            .ClienteDNI = dato.EsNuloBD(dtsResultado.Tables(0).Rows(k)("DNI"))
                         End With
 
                         arrBEC(k) = viwBEC
