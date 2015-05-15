@@ -2153,12 +2153,9 @@ C:\FPC AMBIENTE DE DESARROLLO\bddc\bddc.Win\obj\Debug\bddc.Win.application
 C:\FPC AMBIENTE DE DESARROLLO\bddc\bddc.Win\obj\Debug\bddc.Win.exe
 C:\FPC AMBIENTE DE DESARROLLO\bddc\bddc.Win\obj\Debug\bddc.Win.xml
 C:\FPC AMBIENTE DE DESARROLLO\bddc\bddc.Win\obj\Debug\bddc.Win.pdb
-C:\FPC PRUEBAS\bddc\bddc.Win\bin\Debug\bddc.Win.exe.config
-C:\FPC PRUEBAS\bddc\bddc.Win\obj\Debug\bddc.Win.exe
-C:\FPC PRUEBAS\bddc\bddc.Win\obj\Debug\bddc.Win.xml
-C:\FPC PRUEBAS\bddc\bddc.Win\obj\Debug\bddc.Win.pdb
 C:\FPC PRUEBAS\bddc\bddc.Win\bin\Debug\imgLogoFCB.ico
 C:\FPC PRUEBAS\bddc\bddc.Win\bin\Debug\Styles.css
+C:\FPC PRUEBAS\bddc\bddc.Win\bin\Debug\bddc.Win.exe.config
 C:\FPC PRUEBAS\bddc\bddc.Win\bin\Debug\bddc.Win.exe.manifest
 C:\FPC PRUEBAS\bddc\bddc.Win\bin\Debug\bddc.Win.application
 C:\FPC PRUEBAS\bddc\bddc.Win\bin\Debug\bddc.Win.exe
@@ -2236,3 +2233,6 @@ C:\FPC PRUEBAS\bddc\bddc.Win\obj\Debug\RdlCompile.compiled
 C:\FPC PRUEBAS\bddc\bddc.Win\obj\Debug\bddc.Win.TrustInfo.xml
 C:\FPC PRUEBAS\bddc\bddc.Win\obj\Debug\bddc.Win.exe.manifest
 C:\FPC PRUEBAS\bddc\bddc.Win\obj\Debug\bddc.Win.application
+C:\FPC PRUEBAS\bddc\bddc.Win\obj\Debug\bddc.Win.exe
+C:\FPC PRUEBAS\bddc\bddc.Win\obj\Debug\bddc.Win.xml
+C:\FPC PRUEBAS\bddc\bddc.Win\obj\Debug\bddc.Win.pdb
