@@ -47,11 +47,14 @@ Partial Class frmCajaRegistroOperador
         Me.lblOperacionCodigo = New System.Windows.Forms.Label()
         Me.Label20 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.rbtnSoles = New System.Windows.Forms.RadioButton()
+        Me.rbtnDolar = New System.Windows.Forms.RadioButton()
+        Me.cboFichaVenta = New System.Windows.Forms.ComboBox()
         Me.Label22 = New System.Windows.Forms.Label()
         Me.txtJackpotMaquina = New System.Windows.Forms.TextBox()
         Me.txtFichaCantidad = New System.Windows.Forms.TextBox()
-        Me.cboFichaVenta = New System.Windows.Forms.ComboBox()
-        Me.Label19 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.rbTipoOperacion6 = New System.Windows.Forms.RadioButton()
         Me.rbTipoOperacion5 = New System.Windows.Forms.RadioButton()
@@ -107,6 +110,7 @@ Partial Class frmCajaRegistroOperador
         Me.GroupBox6.SuspendLayout()
         Me.GroupBox5.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
+        Me.GroupBox4.SuspendLayout()
         Me.gbSeccion3.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
         Me.gbCaja.SuspendLayout()
@@ -351,11 +355,10 @@ Partial Class frmCajaRegistroOperador
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.GroupBox4)
         Me.GroupBox2.Controls.Add(Me.Label22)
         Me.GroupBox2.Controls.Add(Me.txtJackpotMaquina)
         Me.GroupBox2.Controls.Add(Me.txtFichaCantidad)
-        Me.GroupBox2.Controls.Add(Me.cboFichaVenta)
-        Me.GroupBox2.Controls.Add(Me.Label19)
         Me.GroupBox2.Controls.Add(Me.Label5)
         Me.GroupBox2.Controls.Add(Me.rbTipoOperacion6)
         Me.GroupBox2.Controls.Add(Me.rbTipoOperacion5)
@@ -363,12 +366,66 @@ Partial Class frmCajaRegistroOperador
         Me.GroupBox2.Controls.Add(Me.rbTipoOperacion1)
         Me.GroupBox2.Controls.Add(Me.rbTipoOperacion3)
         Me.GroupBox2.Controls.Add(Me.rbTipoOperacion2)
-        Me.GroupBox2.Location = New System.Drawing.Point(4, 152)
+        Me.GroupBox2.Location = New System.Drawing.Point(4, 124)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(577, 113)
+        Me.GroupBox2.Size = New System.Drawing.Size(577, 145)
         Me.GroupBox2.TabIndex = 4
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Tipo Operación"
+        '
+        'GroupBox4
+        '
+        Me.GroupBox4.Controls.Add(Me.Label19)
+        Me.GroupBox4.Controls.Add(Me.rbtnSoles)
+        Me.GroupBox4.Controls.Add(Me.rbtnDolar)
+        Me.GroupBox4.Controls.Add(Me.cboFichaVenta)
+        Me.GroupBox4.Location = New System.Drawing.Point(27, 52)
+        Me.GroupBox4.Name = "GroupBox4"
+        Me.GroupBox4.Size = New System.Drawing.Size(194, 52)
+        Me.GroupBox4.TabIndex = 15
+        Me.GroupBox4.TabStop = False
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.Location = New System.Drawing.Point(11, 21)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(33, 13)
+        Me.Label19.TabIndex = 8
+        Me.Label19.Text = "Ficha"
+        '
+        'rbtnSoles
+        '
+        Me.rbtnSoles.AutoSize = True
+        Me.rbtnSoles.Enabled = False
+        Me.rbtnSoles.Location = New System.Drawing.Point(50, 29)
+        Me.rbtnSoles.Name = "rbtnSoles"
+        Me.rbtnSoles.Size = New System.Drawing.Size(51, 17)
+        Me.rbtnSoles.TabIndex = 14
+        Me.rbtnSoles.TabStop = True
+        Me.rbtnSoles.Text = "Soles"
+        Me.rbtnSoles.UseVisualStyleBackColor = True
+        '
+        'rbtnDolar
+        '
+        Me.rbtnDolar.AutoSize = True
+        Me.rbtnDolar.Enabled = False
+        Me.rbtnDolar.Location = New System.Drawing.Point(50, 12)
+        Me.rbtnDolar.Name = "rbtnDolar"
+        Me.rbtnDolar.Size = New System.Drawing.Size(61, 17)
+        Me.rbtnDolar.TabIndex = 13
+        Me.rbtnDolar.TabStop = True
+        Me.rbtnDolar.Text = "Dólares"
+        Me.rbtnDolar.UseVisualStyleBackColor = True
+        '
+        'cboFichaVenta
+        '
+        Me.cboFichaVenta.Enabled = False
+        Me.cboFichaVenta.FormattingEnabled = True
+        Me.cboFichaVenta.Location = New System.Drawing.Point(117, 19)
+        Me.cboFichaVenta.Name = "cboFichaVenta"
+        Me.cboFichaVenta.Size = New System.Drawing.Size(70, 21)
+        Me.cboFichaVenta.TabIndex = 9
         '
         'Label22
         '
@@ -389,33 +446,15 @@ Partial Class frmCajaRegistroOperador
         '
         'txtFichaCantidad
         '
-        Me.txtFichaCantidad.Location = New System.Drawing.Point(102, 81)
+        Me.txtFichaCantidad.Location = New System.Drawing.Point(102, 109)
         Me.txtFichaCantidad.Name = "txtFichaCantidad"
         Me.txtFichaCantidad.Size = New System.Drawing.Size(33, 20)
         Me.txtFichaCantidad.TabIndex = 10
         '
-        'cboFichaVenta
-        '
-        Me.cboFichaVenta.Enabled = False
-        Me.cboFichaVenta.FormattingEnabled = True
-        Me.cboFichaVenta.Location = New System.Drawing.Point(102, 58)
-        Me.cboFichaVenta.Name = "cboFichaVenta"
-        Me.cboFichaVenta.Size = New System.Drawing.Size(70, 21)
-        Me.cboFichaVenta.TabIndex = 9
-        '
-        'Label19
-        '
-        Me.Label19.AutoSize = True
-        Me.Label19.Location = New System.Drawing.Point(36, 61)
-        Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(60, 13)
-        Me.Label19.TabIndex = 8
-        Me.Label19.Text = "Ficha  US$"
-        '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(32, 84)
+        Me.Label5.Location = New System.Drawing.Point(32, 112)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(64, 13)
         Me.Label5.TabIndex = 6
@@ -888,6 +927,8 @@ Partial Class frmCajaRegistroOperador
         Me.GroupBox5.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
+        Me.GroupBox4.ResumeLayout(False)
+        Me.GroupBox4.PerformLayout()
         Me.gbSeccion3.ResumeLayout(False)
         Me.gbSeccion3.PerformLayout()
         Me.GroupBox3.ResumeLayout(False)
@@ -977,4 +1018,7 @@ Partial Class frmCajaRegistroOperador
     Friend WithEvents rbModalidadOperacion2 As System.Windows.Forms.RadioButton
     Friend WithEvents txtTarjetaNum As System.Windows.Forms.MaskedTextBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents rbtnSoles As System.Windows.Forms.RadioButton
+    Friend WithEvents rbtnDolar As System.Windows.Forms.RadioButton
+    Friend WithEvents GroupBox4 As System.Windows.Forms.GroupBox
 End Class

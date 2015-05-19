@@ -198,26 +198,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="bddc.BEC.dll" size="68096">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="bddc.BEC.dll" size="68608">
       <assemblyIdentity name="bddc.BEC" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>9Bj1QNgeG5wqv0aj3QefWMzbBcQ=</dsig:DigestValue>
+        <dsig:DigestValue>f+7gvOyetH1FYdHIsYsZJKa3B5c=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="bddc.DALC.dll" size="145408">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="bddc.DALC.dll" size="145920">
       <assemblyIdentity name="bddc.DALC" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>Y/d9uP0mdHEmTpkR8pkEWGdGq04=</dsig:DigestValue>
+        <dsig:DigestValue>A4AV/Fm8E6ynvFlt7A4Ld6f4SFI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -229,19 +229,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>SkdifbwaSm5wX0tO3Vgtcg6Wwys=</dsig:DigestValue>
+        <dsig:DigestValue>bnUqhCQBiBSnR/lBADR0rfv/lPE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="bddc.Win.exe" size="5880320">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="bddc.Win.exe" size="5881856">
       <assemblyIdentity name="bddc.Win" version="1.0.0.1" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>irzkqGlvQmz115LIike0bq//HhU=</dsig:DigestValue>
+        <dsig:DigestValue>ogtQpSw5JikMjjOsRKO2slyCx1o=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -216,7 +216,7 @@ Namespace FCB
             'objConexion.GetConexion
             Dim dato As New Util.Dato
             Dim intResultado As Integer = 0
-            Dim prmParameter(17) As MySqlParameter
+            Dim prmParameter(18) As MySqlParameter
             Dim arrParameter As New ArrayList
 
             Try
@@ -238,6 +238,7 @@ Namespace FCB
                     .Add("?p_fopc_modalidadid")
                     .Add("?p_fopc_tipoid")
                     .Add("?p_sopc_tarjetanum")
+                    .Add("?p_nopc_fichamoneda")
                     .Add("?p_nopc_fichacantidad")
                     .Add("?p_nopc_fichadenominacion")
                     .Add("?p_sopc_maquinanum")
@@ -285,26 +286,29 @@ Namespace FCB
                     prmParameter(10) = New MySqlParameter(arrParameter(10).ToString, MySqlDbType.String, Util.Constante.DiccionarioDatos.CONST_CODIGO_LARGO_20)
                     prmParameter(10).Value = .OperacionTarjetaNum
 
-                    prmParameter(11) = New MySqlParameter(arrParameter(11).ToString, MySqlDbType.Int32)
-                    prmParameter(11).Value = .OperacionFichaCantidad
+                    prmParameter(11) = New MySqlParameter(arrParameter(11).ToString, MySqlDbType.String, Util.Constante.DiccionarioDatos.CONST_CODIGO_CORTO_6)
+                    prmParameter(11).Value = .OperacionFichaMoneda
 
-                    prmParameter(12) = New MySqlParameter(arrParameter(12).ToString, MySqlDbType.Decimal)
-                    prmParameter(12).Value = .OperacionFichaDenominacion
+                    prmParameter(12) = New MySqlParameter(arrParameter(12).ToString, MySqlDbType.Int32)
+                    prmParameter(12).Value = .OperacionFichaCantidad
 
-                    prmParameter(13) = New MySqlParameter(arrParameter(13).ToString, MySqlDbType.String, Util.Constante.DiccionarioDatos.CONST_CODIGO_CORTO_6)
-                    prmParameter(13).Value = .OperacionMaquinaNum
+                    prmParameter(13) = New MySqlParameter(arrParameter(13).ToString, MySqlDbType.Decimal)
+                    prmParameter(13).Value = .OperacionFichaDenominacion
 
-                    prmParameter(14) = New MySqlParameter(arrParameter(14).ToString, MySqlDbType.Int64)
-                    prmParameter(14).Value = .ClienteId
+                    prmParameter(14) = New MySqlParameter(arrParameter(14).ToString, MySqlDbType.String, Util.Constante.DiccionarioDatos.CONST_CODIGO_CORTO_6)
+                    prmParameter(14).Value = .OperacionMaquinaNum
 
-                    prmParameter(15) = New MySqlParameter(arrParameter(15).ToString, MySqlDbType.Int16)
-                    prmParameter(15).Value = .EstadoId
+                    prmParameter(15) = New MySqlParameter(arrParameter(15).ToString, MySqlDbType.Int64)
+                    prmParameter(15).Value = .ClienteId
 
                     prmParameter(16) = New MySqlParameter(arrParameter(16).ToString, MySqlDbType.Int16)
-                    prmParameter(16).Value = .AudCreac_UsuarioId
+                    prmParameter(16).Value = .EstadoId
 
-                    prmParameter(17) = New MySqlParameter(arrParameter(17).ToString, MySqlDbType.String, Util.Constante.DiccionarioDatos.CONST_CODIGO_MEDIO_10)
-                    prmParameter(17).Value = .OperacionHora
+                    prmParameter(17) = New MySqlParameter(arrParameter(17).ToString, MySqlDbType.Int16)
+                    prmParameter(17).Value = .AudCreac_UsuarioId
+
+                    prmParameter(18) = New MySqlParameter(arrParameter(18).ToString, MySqlDbType.String, Util.Constante.DiccionarioDatos.CONST_CODIGO_MEDIO_10)
+                    prmParameter(18).Value = .OperacionHora
 
                 End With
 

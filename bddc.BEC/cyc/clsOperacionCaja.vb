@@ -43,6 +43,7 @@ Namespace FCB
         Private strClienteDocumento As String
         Private strClienteNombreCompleto As String
         Private intEstadoId As Integer
+        Private strOperacionFichaMoneda As String
         Private intOperacionFichaCantidad As Integer
         Private decOperacionFichaDenominacion As Decimal
         Private strOperacionMaquinaNum As String
@@ -229,6 +230,15 @@ Namespace FCB
             End Get
             Set(ByVal Value As String)
                 strOperacionMonto = Value
+            End Set
+        End Property
+
+        Public Property OperacionFichaMoneda() As String
+            Get
+                Return strOperacionFichaMoneda
+            End Get
+            Set(ByVal Value As String)
+                strOperacionFichaMoneda = Value
             End Set
         End Property
 

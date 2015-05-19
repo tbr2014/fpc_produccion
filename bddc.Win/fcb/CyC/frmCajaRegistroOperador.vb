@@ -41,8 +41,8 @@ Public Class frmCajaRegistroOperador
                 Next
             End If
 
-            cboFichaVenta.Items.Clear()
-            cboFichaVenta.Items.Add(New BEC.COM.clsItem(Util.Enumeracion.enmMoneda.Moneda_Dolar, 1000))
+            'cboFichaVenta.Items.Clear()
+            'cboFichaVenta.Items.Add(New BEC.COM.clsItem(Util.Enumeracion.enmMoneda.Moneda_Dolar, 1000))
 
         Catch ex As Exception
             Me.tssMensaje.Text = ex.Message
@@ -73,7 +73,7 @@ Public Class frmCajaRegistroOperador
         rbTipoOperacion5.Checked = False
         rbTipoOperacion6.Checked = False
 
-        cboFichaVenta.SelectedItem = cboFichaVenta.Items(0)
+        'cboFichaVenta.SelectedItem = cboFichaVenta.Items(0)
         txtFichaCantidad.Enabled = False
         txtFichaCantidad.Text = ""
         txtTarjetaNum.Enabled = False
@@ -183,8 +183,11 @@ Public Class frmCajaRegistroOperador
                 If txtFichaCantidad.Text.CompareTo("") = 0 Then
                     Throw New DataException("Ingrese el No. ficha(s)!")
                 End If
-
+                If cboFichaVenta.SelectedIndex < 0 Then
+                    Throw New DataException("Seleccione el tipo de ficha(s)!")
+                End If
             End If
+
             If rbTipoOperacion5.Checked Then
                 If txtJackpotMaquina.Text.CompareTo("") = 0 Then
                     Throw New DataException("Ingrese la Máquina!")
@@ -372,6 +375,13 @@ Public Class frmCajaRegistroOperador
                 .OperacionFichaDenominacion = 0
             End If
 
+            If rbtnDolar.Checked = True Then
+                .OperacionFichaMoneda = "US$"
+            End If
+            If rbtnSoles.Checked = True Then
+                .OperacionFichaMoneda = "S/."
+            End If
+
             .OperacionMaquinaNum = txtJackpotMaquina.Text
 
             .ClienteId = lblClienteId.Text
@@ -517,8 +527,12 @@ Public Class frmCajaRegistroOperador
     Private Sub rbTipoOperacion1y2_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles rbTipoOperacion2.CheckedChanged, rbTipoOperacion1.CheckedChanged
         If rbTipoOperacion1.Checked = True Then
             txtFichaCantidad.Enabled = True
+            rbtnDolar.Enabled = True
+            rbtnSoles.Enabled = True
         Else
             txtFichaCantidad.Enabled = False
+            rbtnDolar.Enabled = True
+            rbtnSoles.Enabled = True
         End If
     End Sub
 
@@ -533,7 +547,26 @@ Public Class frmCajaRegistroOperador
 
     End Sub
 
-#End Region
+    Private Sub rbtnDolar_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles rbtnDolar.CheckedChanged
+        If rbtnDolar.Checked = True Then
+            cboFichaVenta.Items.Clear()
+            cboFichaVenta.Items.Add(New BEC.COM.clsItem(Util.Enumeracion.enmMoneda.Moneda_Dolar, 1000))
+            cboFichaVenta.SelectedItem = cboFichaVenta.Items(0)
+            cboFichaVenta.Enabled = False
+            'txtFichaCantidad.Enabled = True
+        End If
+    End Sub
+
+    Private Sub rbtnSoles_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles rbtnSoles.CheckedChanged
+        If rbtnSoles.Checked = True Then
+            cboFichaVenta.Items.Clear()
+            cboFichaVenta.Items.Add(New BEC.COM.clsItem(Util.Enumeracion.enmMoneda.Moneda_Soles, 1000))
+            cboFichaVenta.Items.Add(New BEC.COM.clsItem(Util.Enumeracion.enmMoneda.Moneda_Soles, 500))
+            cboFichaVenta.SelectedItem = cboFichaVenta.Items(0)
+            cboFichaVenta.Enabled = True
+            'txtFichaCantidad.Enabled = True
+        End If
+    End Sub
 
     Private Sub rbTipoOperacion5_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles rbTipoOperacion5.CheckedChanged
         If rbTipoOperacion5.Checked = True Then
@@ -542,6 +575,11 @@ Public Class frmCajaRegistroOperador
             txtJackpotMaquina.Enabled = False
         End If
     End Sub
+#End Region
+
+    
 
 
+    
+   
 End Class
