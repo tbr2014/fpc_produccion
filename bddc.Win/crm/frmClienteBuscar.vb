@@ -1,6 +1,7 @@
 ﻿Public Class frmClienteBuscar
 
     Public intClienteId As Integer
+    'Public intClienteId As String
     Private Shared viwBEC As BEC.CLI.viwCliente
     'Private Shared objBEC As BEC.CLI.viwCliente
 
@@ -16,6 +17,9 @@
             Dim intResultado As Integer = Util.Enumeracion.enmResultadoOperacion.NONE
             Dim arrResultado As ArrayList
             Dim fi As IO.FileInfo
+
+            'Limpiar el datasource del grid
+            dgvClientes.DataSource = ""
 
             If txtBuscarNomb.Text = "" And txtBuscarApe.Text = "" And txtBuscarCodigo.Text = "" And txtBuscarDNI.Text = "" Then
 
@@ -38,12 +42,13 @@
                     dgvClientes.Columns.Remove("ClienteNombreCompleto")
                     dgvClientes.Columns.Remove("ClienteEstadoId")
 
+                    dgvClientes.Columns(0).HeaderText = "Id"
                     dgvClientes.Columns(1).HeaderText = "Codigo"
                     dgvClientes.Columns(2).HeaderText = "Apellido"
                     dgvClientes.Columns(3).HeaderText = "Nombre"
                     dgvClientes.Columns(4).HeaderText = "DNI"
 
-                    dgvClientes.Columns(4).DisplayIndex = 0
+                    dgvClientes.Columns(4).DisplayIndex = 1
                     dgvClientes.Columns(1).DisplayIndex = 4
 
                     'tsslblMensaje.Text = Replace(Util.Constante.Ope_BuscarNUMREG, "XX", Me.BdClientesDataSet1.Fiesta_tblbdd_clienteBusqueda.Rows.Count)
@@ -65,19 +70,21 @@
                     dgvClientes.Visible = True
                     dgvClientes.DataSource = arrBEC
 
-                    dgvClientes.Columns.Remove("ClienteId")
+                    dgvClientes.Columns("ClienteId").Visible = False
+                    'dgvClientes.Columns.Remove("ClienteId")
                     dgvClientes.Columns.Remove("ClienteApePat")
                     dgvClientes.Columns.Remove("ClienteApeMat")
                     dgvClientes.Columns.Remove("ClienteNombreCompleto")
                     dgvClientes.Columns.Remove("ClienteEstadoId")
 
-                    dgvClientes.Columns(0).HeaderText = "Codigo"
-                    dgvClientes.Columns(1).HeaderText = "Apellido"
-                    dgvClientes.Columns(2).HeaderText = "Nombre"
-                    dgvClientes.Columns(3).HeaderText = "DNI"
+                    dgvClientes.Columns(0).HeaderText = "Id"
+                    dgvClientes.Columns(1).HeaderText = "Codigo"
+                    dgvClientes.Columns(2).HeaderText = "Apellido"
+                    dgvClientes.Columns(3).HeaderText = "Nombre"
+                    dgvClientes.Columns(4).HeaderText = "DNI"
 
-                    dgvClientes.Columns(3).DisplayIndex = 0
-                    dgvClientes.Columns(0).DisplayIndex = 3
+                    dgvClientes.Columns(4).DisplayIndex = 1
+                    dgvClientes.Columns(1).DisplayIndex = 4
 
                     'tsslblMensaje.Text = Replace(Util.Constante.Ope_BuscarNUMREG, "XX", Me.BdClientesDataSet1.Fiesta_tblbdd_clienteBusqueda.Rows.Count)
                 Else
@@ -112,7 +119,7 @@
     End Sub
 
     Private Sub dgvClientes_KeyDown(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles dgvClientes.KeyDown
-        If e.KeyCode = Keys.Enter Then
+        If e.KeyCode = Keys.Enter Then          
             intClienteId = dgvClientes.Rows(dgvClientes.CurrentRow.Index).Cells("Clienteid").Value
             Me.Close()
         End If

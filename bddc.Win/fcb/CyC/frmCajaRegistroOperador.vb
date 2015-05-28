@@ -577,9 +577,9 @@ Public Class frmCajaRegistroOperador
     End Sub
 #End Region
 
-    
 
 
-    
-   
+
+
+
 End Class
