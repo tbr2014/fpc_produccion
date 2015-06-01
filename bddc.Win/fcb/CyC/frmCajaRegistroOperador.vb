@@ -531,8 +531,8 @@ Public Class frmCajaRegistroOperador
             rbtnSoles.Enabled = True
         Else
             txtFichaCantidad.Enabled = False
-            rbtnDolar.Enabled = True
-            rbtnSoles.Enabled = True
+            rbtnDolar.Enabled = False
+            rbtnSoles.Enabled = False
         End If
     End Sub
 
