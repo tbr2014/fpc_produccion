@@ -40,7 +40,6 @@ Namespace COM
                     Case "LUXOR TACNA"
                         Util.Factory.ConfigOrigen = 3
                         CadenaConexion = Util.Factory.GetConexion
-                        'cambio = 
                         dtsResultado = MySqlHelper.ExecuteDataset(CadenaConexion, "select bdclientetacna.fncfjm_tipocambio_mes();")
 
                     Case "EMPRESA DE PRUEBA"

@@ -5,10 +5,11 @@
     Private arrResultados As ArrayList
     Private strFechaRegistroIni, strFechaRegistroFin As String
     Private decTipoCambio As Decimal
+    Private MonedaFicha As String
     Private objBEC As BEC.FCB.clsOperacionCaja
     Private objXML As xmlOperacionCajaReporte
     Private intTipoReporte As Util.Enumeracion.enmFCBReporteOperacionCaja
-
+    Private Unidad As String
 #End Region
 
 #Region "Operaciones"
@@ -19,12 +20,9 @@
 
             If arrResultados IsNot Nothing Then
 
-                Dim strFichaDenominacion As String = Configuration.ConfigurationManager.AppSettings("FCB_VentaFicha")
-
                 Select Case intTipoReporte
 
                     Case Util.Enumeracion.enmFCBReporteOperacionCaja.RetiroEfectivoTarjetas
-
                         Select Case frmLogin.Unidad
                             Case "FIESTA CASINO BENAVIDES"
                                 With crOperacionCajaReporteRetEfec_Fiesta1
@@ -38,7 +36,6 @@
 
                             Case "LUXOR LIMA CASINO"
                                 With crOperacionCajaReporteRetEfec1
-
                                     .SetDataSource(arrResultados)
                                     .SetParameterValue("parFechaRegistroIni", strFechaRegistroIni)
                                     .SetParameterValue("parFechaRegistroFin", strFechaRegistroFin)
@@ -49,7 +46,6 @@
 
                             Case "LUXOR TACNA"
                                 With crOperacionCajaReporteRetEfec1
-
                                     .SetDataSource(arrResultados)
                                     .SetParameterValue("parFechaRegistroIni", strFechaRegistroIni)
                                     .SetParameterValue("parFechaRegistroFin", strFechaRegistroFin)
@@ -68,17 +64,69 @@
                                 crvResultados.ReportSource = crOperacionCajaReporteRetEfec_Fiesta1
                                 crvResultados.Zoom(100)
                         End Select
-                   
+
                     Case Util.Enumeracion.enmFCBReporteOperacionCaja.RegistroVentasFichas
-                        With crOperacionCajaReporteVentFich1
-                            .SetDataSource(arrResultados)
-                            .SetParameterValue("parFechaRegistroIni", strFechaRegistroIni)
-                            .SetParameterValue("parFechaRegistroFin", strFechaRegistroFin)
-                            .SetParameterValue("parTipoCambio", decTipoCambio)
-                            .SetParameterValue("parFichaDenominacion", strFichaDenominacion)
-                        End With
-                        crvResultados.ReportSource = crOperacionCajaReporteVentFich1
-                        crvResultados.Zoom(100)
+
+                        Select Case frmLogin.Unidad
+                            Case "FIESTA CASINO BENAVIDES"
+                                With crOperacionCajaReporteVentFich1
+                                    .SetDataSource(arrResultados)
+                                    .SetParameterValue("parFechaRegistroIni", strFechaRegistroIni)
+                                    .SetParameterValue("parFechaRegistroFin", strFechaRegistroFin)
+                                    .SetParameterValue("parTipoCambio", decTipoCambio)
+                                    .SetParameterValue("parFichaDenominacion", MonedaFicha)
+                                    .SetParameterValue("parCasino", frmLogin.Unidad)
+                                End With
+                                crvResultados.ReportSource = crOperacionCajaReporteVentFich1
+                                crvResultados.Zoom(100)
+
+                            Case "LUXOR LIMA CASINO"
+                                With crOperacionCajaReporteVentFich1
+                                    .SetDataSource(arrResultados)
+                                    .SetParameterValue("parFechaRegistroIni", strFechaRegistroIni)
+                                    .SetParameterValue("parFechaRegistroFin", strFechaRegistroFin)
+                                    .SetParameterValue("parTipoCambio", decTipoCambio)
+                                    .SetParameterValue("parFichaDenominacion", MonedaFicha)
+                                    .SetParameterValue("parCasino", frmLogin.Unidad)
+                                End With
+                                crvResultados.ReportSource = crOperacionCajaReporteVentFich1
+                                crvResultados.Zoom(100)
+
+                            Case "LUXOR TACNA"
+                                With crOperacionCajaReporteVentFich1
+                                    .SetDataSource(arrResultados)
+                                    .SetParameterValue("parFechaRegistroIni", strFechaRegistroIni)
+                                    .SetParameterValue("parFechaRegistroFin", strFechaRegistroFin)
+                                    .SetParameterValue("parTipoCambio", decTipoCambio)
+                                    .SetParameterValue("parFichaDenominacion", MonedaFicha)
+                                    .SetParameterValue("parCasino", frmLogin.Unidad)
+                                End With
+                                crvResultados.ReportSource = crOperacionCajaReporteVentFich1
+                                crvResultados.Zoom(100)
+
+                            Case "EMPRESA DE PRUEBA"
+
+                                If MonedaFicha.CompareTo("S./ 500") = 0 Then
+                                    Unidad = "LUXOR LIMA CASINO"
+                                End If
+                                If MonedaFicha.CompareTo("S./ 1000") = 0 Then
+                                    Unidad = "LUXOR TACNA"
+                                End If
+                                If MonedaFicha.CompareTo("US$ 1000") = 0 Then
+                                    Unidad = "EMPRESA DE PRUEBA"
+                                End If
+
+                                With crOperacionCajaReporteVentFich1
+                                    .SetDataSource(arrResultados)
+                                    .SetParameterValue("parFechaRegistroIni", strFechaRegistroIni)
+                                    .SetParameterValue("parFechaRegistroFin", strFechaRegistroFin)
+                                    .SetParameterValue("parTipoCambio", decTipoCambio)
+                                    .SetParameterValue("parFichaDenominacion", MonedaFicha)
+                                    .SetParameterValue("parCasino", Unidad)
+                                End With
+                                crvResultados.ReportSource = crOperacionCajaReporteVentFich1
+                                crvResultados.Zoom(100)
+                        End Select
 
                     Case Util.Enumeracion.enmFCBReporteOperacionCaja.RegistroPagosManuales
 
@@ -126,7 +174,7 @@
 
 #End Region
 
-    Public Sub New(ByVal pintTipoReporte As Integer, ByVal parrResultados As ArrayList, ByVal pstrFechaRegistroIni As String, ByVal pstrFechaRegistroFin As String, ByVal pdecTipoCambio As Decimal)
+    Public Sub New(ByVal pintTipoReporte As Integer, ByVal parrResultados As ArrayList, ByVal pstrFechaRegistroIni As String, ByVal pstrFechaRegistroFin As String, ByVal pdecTipoCambio As Decimal, ByVal pstrFichaDenominacion As String)
 
         ' This call is required by the Windows Form Designer.
         InitializeComponent()
@@ -137,6 +185,7 @@
         strFechaRegistroIni = pstrFechaRegistroIni
         strFechaRegistroFin = pstrFechaRegistroFin
         decTipoCambio = pdecTipoCambio
+        MonedaFicha = pstrFichaDenominacion
         CargarDatos()
     End Sub
 

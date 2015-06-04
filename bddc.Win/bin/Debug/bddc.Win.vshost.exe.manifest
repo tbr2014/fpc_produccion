@@ -205,7 +205,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>8d4VkX+nrZRZj4Zq/yc3K+/WmM4=</dsig:DigestValue>
+        <dsig:DigestValue>7JivT8N+1lcCa8W7Itfnt5aL8b4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -217,7 +217,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>zFLxP3zTO2ssUOnQyXQJG+YH0+s=</dsig:DigestValue>
+        <dsig:DigestValue>XNIPmPz0jrKbMCZy87fedXiujCM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -229,19 +229,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>G7ErbpmycsRV89+397RjXZ/qIX4=</dsig:DigestValue>
+        <dsig:DigestValue>pJ4e+t8s4DBH/0b5z40lXfAqlaU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="bddc.Win.exe" size="5882368">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="bddc.Win.exe" size="5622784">
       <assemblyIdentity name="bddc.Win" version="1.0.0.1" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>ByVGBtAMzmgRWnBOusk0nx5n58w=</dsig:DigestValue>
+        <dsig:DigestValue>kWt+cY+7vrNbJ+uNB27rlOS4nsA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -293,13 +293,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="bddc.Win.exe.config" size="11968">
+  <file name="bddc.Win.exe.config" size="12041">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>sRd9Y+udKypae3MCbFbsIqlfrBU=</dsig:DigestValue>
+      <dsig:DigestValue>aeJG26xpC1A3mfBYLwlJP9qpdGM=</dsig:DigestValue>
     </hash>
   </file>
   <file name="imgLogoFCB.ico" size="260929">

@@ -147,6 +147,15 @@
         Dim decTipoCambio As Decimal = objTCDALC.Leer(frmLogin.Unidad)
         Dim intTipoReporte As Integer = 0
 
+        Dim strFichaDenominacion As String
+        If frmLogin.Unidad.CompareTo("FIESTA CASINO BENAVIDES") Then
+            strFichaDenominacion = Configuration.ConfigurationManager.AppSettings("FCB_VentaFicha")
+        ElseIf frmLogin.Unidad.CompareTo("LUXOR LIMA CASINO") Then
+            strFichaDenominacion = Configuration.ConfigurationManager.AppSettings("LIMA_VentaFicha")
+        Else
+            strFichaDenominacion = Configuration.ConfigurationManager.AppSettings("TACNA_VentaFicha")
+        End If
+
         Try
 
             Select Case CType(sender, Button).Name
@@ -194,7 +203,7 @@
             arrResultados = objDALC.Reporte(arrFiltros, frmLogin.Unidad)
 
             If arrResultados IsNot Nothing Then
-                objFrm = New frmCajaReporteImprimir(intTipoReporte, arrResultados, ucFechaProcesoIni.txtFecha.Text, ucFechaProcesoFin.txtFecha.Text, decTipoCambio)
+                objFrm = New frmCajaReporteImprimir(intTipoReporte, arrResultados, ucFechaProcesoIni.txtFecha.Text, ucFechaProcesoFin.txtFecha.Text, decTipoCambio, strFichaDenominacion)
                 objFrm.ShowDialog()
                 objFrm.Dispose()
             Else
@@ -221,10 +230,10 @@
                 btnReporteVentaFichas.Visible = True
 
             Case "LUXOR LIMA CASINO"
-                btnReporteVentaFichas.Visible = False
+                btnReporteVentaFichas.Visible = True
 
             Case "LUXOR TACNA"
-                btnReporteVentaFichas.Visible = False
+                btnReporteVentaFichas.Visible = True
 
             Case "EMPRESA DE PRUEBA"
                 btnReporteVentaFichas.Visible = True
@@ -264,4 +273,70 @@
         End If
     End Sub
 
+    Private Sub btn_temp_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_temp.Click
+        Dim objDALC As New DALC.FCB.clsOperacionCaja
+        Dim objFrm As frmCajaReporteImprimir
+        Dim arrResultados As ArrayList
+        Dim arrFiltros As New ArrayList
+        Dim intTipoReporte As Integer = 0
+        Dim objTCDALC As New DALC.COM.clsTipoCambio
+        Dim decTipoCambio As Decimal = objTCDALC.Leer("LUXOR LIMA CASINO")
+        intTipoReporte = Util.Enumeracion.enmFCBReporteOperacionCaja.RegistroVentasFichas
+
+        With arrFiltros
+            .Add(ucFechaProcesoIni.txtFecha.Text)
+            .Add(ucFechaProcesoFin.txtFecha.Text)
+            .Add("") 'Modalidad --> Todos
+            .Add("1") 'Tipo --> 1: Canje de dinero por fichas en caja	
+            .Add(CType(cboCaja.SelectedItem, BEC.COM.clsItem).ItemNombre)
+            .Add(varClienteId)
+        End With
+
+        arrResultados = objDALC.Reporte(arrFiltros, frmLogin.Unidad)
+
+        Dim strFichaDenominacion As String
+        strFichaDenominacion = Configuration.ConfigurationManager.AppSettings("LIMA_VentaFicha")
+
+        If arrResultados IsNot Nothing Then
+            objFrm = New frmCajaReporteImprimir(intTipoReporte, arrResultados, ucFechaProcesoIni.txtFecha.Text, ucFechaProcesoFin.txtFecha.Text, decTipoCambio, strFichaDenominacion)
+            objFrm.ShowDialog()
+            objFrm.Dispose()
+        Else
+            MsgBox(Util.Constante.Ope_BuscarNONE, MsgBoxStyle.Information, Util.Constante.Msj_SistemaTitulo)
+        End If
+
+    End Sub
+
+    Private Sub btn_temp2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_temp2.Click
+        Dim objDALC As New DALC.FCB.clsOperacionCaja
+        Dim objFrm As frmCajaReporteImprimir
+        Dim arrResultados As ArrayList
+        Dim arrFiltros As New ArrayList
+        Dim intTipoReporte As Integer = 0
+        Dim objTCDALC As New DALC.COM.clsTipoCambio
+        Dim decTipoCambio As Decimal = objTCDALC.Leer("LUXOR TACNA")
+        intTipoReporte = Util.Enumeracion.enmFCBReporteOperacionCaja.RegistroVentasFichas
+
+        With arrFiltros
+            .Add(ucFechaProcesoIni.txtFecha.Text)
+            .Add(ucFechaProcesoFin.txtFecha.Text)
+            .Add("") 'Modalidad --> Todos
+            .Add("1") 'Tipo --> 1: Canje de dinero por fichas en caja	
+            .Add(CType(cboCaja.SelectedItem, BEC.COM.clsItem).ItemNombre)
+            .Add(varClienteId)
+        End With
+
+        Dim strFichaDenominacion As String
+        strFichaDenominacion = Configuration.ConfigurationManager.AppSettings("TACNA_VentaFicha")
+
+        arrResultados = objDALC.Reporte(arrFiltros, frmLogin.Unidad)
+        If arrResultados IsNot Nothing Then
+            objFrm = New frmCajaReporteImprimir(intTipoReporte, arrResultados, ucFechaProcesoIni.txtFecha.Text, ucFechaProcesoFin.txtFecha.Text, decTipoCambio, strFichaDenominacion)
+            objFrm.ShowDialog()
+            objFrm.Dispose()
+        Else
+            MsgBox(Util.Constante.Ope_BuscarNONE, MsgBoxStyle.Information, Util.Constante.Msj_SistemaTitulo)
+        End If
+
+    End Sub
 End Class
