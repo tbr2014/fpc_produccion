@@ -22,105 +22,109 @@ Partial Class frmClienteRegistro
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox
-        Me.GroupBox9 = New System.Windows.Forms.GroupBox
-        Me.txtClienteEdad = New System.Windows.Forms.TextBox
-        Me.cboTipoDoc = New System.Windows.Forms.ComboBox
-        Me.txtClienteNumDoc = New System.Windows.Forms.TextBox
-        Me.txtClienteCodigo = New System.Windows.Forms.TextBox
-        Me.GroupBox4 = New System.Windows.Forms.GroupBox
-        Me.txtClienteFecNac = New System.Windows.Forms.TextBox
-        Me.dtpClienteFecNac = New System.Windows.Forms.DateTimePicker
-        Me.lblClienteId = New System.Windows.Forms.Label
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox
-        Me.rbSexo2 = New System.Windows.Forms.RadioButton
-        Me.rbSexo1 = New System.Windows.Forms.RadioButton
-        Me.txtClienteApeMat = New System.Windows.Forms.TextBox
-        Me.txtClienteApePat = New System.Windows.Forms.TextBox
-        Me.txtClienteNombre = New System.Windows.Forms.TextBox
-        Me.Label7 = New System.Windows.Forms.Label
-        Me.Label6 = New System.Windows.Forms.Label
-        Me.Label5 = New System.Windows.Forms.Label
-        Me.Label4 = New System.Windows.Forms.Label
-        Me.Label3 = New System.Windows.Forms.Label
-        Me.btnFotoQuitar = New System.Windows.Forms.Button
-        Me.btnFotoUpload = New System.Windows.Forms.Button
-        Me.pbFotografia = New System.Windows.Forms.PictureBox
-        Me.lblFotoOrigen = New System.Windows.Forms.Label
-        Me.StatusStrip1 = New System.Windows.Forms.StatusStrip
-        Me.tssMensaje = New System.Windows.Forms.ToolStripStatusLabel
-        Me.tpComentarios = New System.Windows.Forms.TabPage
-        Me.GroupBox8 = New System.Windows.Forms.GroupBox
-        Me.txtAudUpdFecha = New System.Windows.Forms.TextBox
-        Me.txtAudInsFecha = New System.Windows.Forms.TextBox
-        Me.Label27 = New System.Windows.Forms.Label
-        Me.Label26 = New System.Windows.Forms.Label
-        Me.txtAudUpdUsr = New System.Windows.Forms.TextBox
-        Me.txtAudInsUsr = New System.Windows.Forms.TextBox
-        Me.Label25 = New System.Windows.Forms.Label
-        Me.Label24 = New System.Windows.Forms.Label
-        Me.GroupBox7 = New System.Windows.Forms.GroupBox
-        Me.txtClienteComentarios = New System.Windows.Forms.TextBox
-        Me.tpFiestaCasino = New System.Windows.Forms.TabPage
-        Me.GroupBox3 = New System.Windows.Forms.GroupBox
-        Me.btnRating = New System.Windows.Forms.Button
-        Me.Label23 = New System.Windows.Forms.Label
-        Me.txtTierJuegoSlots = New System.Windows.Forms.TextBox
-        Me.txtPuntajeSlots = New System.Windows.Forms.TextBox
-        Me.txtPuntajeFJM = New System.Windows.Forms.TextBox
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.Label19 = New System.Windows.Forms.Label
-        Me.txtTierJuegoFJM = New System.Windows.Forms.NumericUpDown
-        Me.cbSlots = New System.Windows.Forms.CheckBox
-        Me.cbJuego3 = New System.Windows.Forms.CheckBox
-        Me.cbJuego4 = New System.Windows.Forms.CheckBox
-        Me.cbJuego2 = New System.Windows.Forms.CheckBox
-        Me.cbJuego5 = New System.Windows.Forms.CheckBox
-        Me.cbJuego1 = New System.Windows.Forms.CheckBox
-        Me.tpDomicilio = New System.Windows.Forms.TabPage
-        Me.GroupBox6 = New System.Windows.Forms.GroupBox
-        Me.txtEmpresaPais = New System.Windows.Forms.TextBox
-        Me.txtEmpresaTelefono = New System.Windows.Forms.MaskedTextBox
-        Me.txtEmpresaDireccion = New System.Windows.Forms.TextBox
-        Me.txtEmpresaPuesto = New System.Windows.Forms.TextBox
-        Me.txtEmpresaArea = New System.Windows.Forms.TextBox
-        Me.txtEmpresaRUC = New System.Windows.Forms.MaskedTextBox
-        Me.Label20 = New System.Windows.Forms.Label
-        Me.Label18 = New System.Windows.Forms.Label
-        Me.Label17 = New System.Windows.Forms.Label
-        Me.Label16 = New System.Windows.Forms.Label
-        Me.Label15 = New System.Windows.Forms.Label
-        Me.Label9 = New System.Windows.Forms.Label
-        Me.txtEmpresaNombre = New System.Windows.Forms.TextBox
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.GroupBox5 = New System.Windows.Forms.GroupBox
-        Me.txtClienteProfesion = New System.Windows.Forms.TextBox
-        Me.Label21 = New System.Windows.Forms.Label
-        Me.txtClienteNacionalidad = New System.Windows.Forms.TextBox
-        Me.Label8 = New System.Windows.Forms.Label
-        Me.Label10 = New System.Windows.Forms.Label
-        Me.txtClienteTelMovil = New System.Windows.Forms.MaskedTextBox
-        Me.Label11 = New System.Windows.Forms.Label
-        Me.txtClienteTelFijo = New System.Windows.Forms.MaskedTextBox
-        Me.Label12 = New System.Windows.Forms.Label
-        Me.cbDistrito = New System.Windows.Forms.ComboBox
-        Me.Label13 = New System.Windows.Forms.Label
-        Me.txtClienteEmail = New System.Windows.Forms.TextBox
-        Me.Label14 = New System.Windows.Forms.Label
-        Me.txtDomicilioDireccion = New System.Windows.Forms.TextBox
-        Me.tcCliente = New System.Windows.Forms.TabControl
-        Me.Label22 = New System.Windows.Forms.Label
-        Me.ToolStrip1 = New System.Windows.Forms.ToolStrip
-        Me.tsbBuscar = New System.Windows.Forms.ToolStripButton
-        Me.tsbNuevo = New System.Windows.Forms.ToolStripButton
-        Me.tsbGuardar = New System.Windows.Forms.ToolStripButton
-        Me.tsbEliminar = New System.Windows.Forms.ToolStripButton
-        Me.tsbImprimir = New System.Windows.Forms.ToolStripButton
-        Me.tsbAgregar = New System.Windows.Forms.ToolStripButton
-        Me.tsbSalir = New System.Windows.Forms.ToolStripButton
+        Me.components = New System.ComponentModel.Container()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox9 = New System.Windows.Forms.GroupBox()
+        Me.txtClienteEdad = New System.Windows.Forms.TextBox()
+        Me.cboTipoDoc = New System.Windows.Forms.ComboBox()
+        Me.txtClienteNumDoc = New System.Windows.Forms.TextBox()
+        Me.txtClienteCodigo = New System.Windows.Forms.TextBox()
+        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.txtClienteFecNac = New System.Windows.Forms.TextBox()
+        Me.dtpClienteFecNac = New System.Windows.Forms.DateTimePicker()
+        Me.lblClienteId = New System.Windows.Forms.Label()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.rbSexo2 = New System.Windows.Forms.RadioButton()
+        Me.rbSexo1 = New System.Windows.Forms.RadioButton()
+        Me.txtClienteApeMat = New System.Windows.Forms.TextBox()
+        Me.txtClienteApePat = New System.Windows.Forms.TextBox()
+        Me.txtClienteNombre = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.btnFotoQuitar = New System.Windows.Forms.Button()
+        Me.btnFotoUpload = New System.Windows.Forms.Button()
+        Me.pbFotografia = New System.Windows.Forms.PictureBox()
+        Me.lblFotoOrigen = New System.Windows.Forms.Label()
+        Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
+        Me.tssMensaje = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.tpComentarios = New System.Windows.Forms.TabPage()
+        Me.GroupBox8 = New System.Windows.Forms.GroupBox()
+        Me.txtAudUpdFecha = New System.Windows.Forms.TextBox()
+        Me.txtAudInsFecha = New System.Windows.Forms.TextBox()
+        Me.Label27 = New System.Windows.Forms.Label()
+        Me.Label26 = New System.Windows.Forms.Label()
+        Me.txtAudUpdUsr = New System.Windows.Forms.TextBox()
+        Me.txtAudInsUsr = New System.Windows.Forms.TextBox()
+        Me.Label25 = New System.Windows.Forms.Label()
+        Me.Label24 = New System.Windows.Forms.Label()
+        Me.GroupBox7 = New System.Windows.Forms.GroupBox()
+        Me.txtClienteComentarios = New System.Windows.Forms.TextBox()
+        Me.tpFiestaCasino = New System.Windows.Forms.TabPage()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.btnRating = New System.Windows.Forms.Button()
+        Me.Label23 = New System.Windows.Forms.Label()
+        Me.txtTierJuegoSlots = New System.Windows.Forms.TextBox()
+        Me.txtPuntajeSlots = New System.Windows.Forms.TextBox()
+        Me.txtPuntajeFJM = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.txtTierJuegoFJM = New System.Windows.Forms.NumericUpDown()
+        Me.cbSlots = New System.Windows.Forms.CheckBox()
+        Me.cbJuego3 = New System.Windows.Forms.CheckBox()
+        Me.cbJuego4 = New System.Windows.Forms.CheckBox()
+        Me.cbJuego2 = New System.Windows.Forms.CheckBox()
+        Me.cbJuego5 = New System.Windows.Forms.CheckBox()
+        Me.cbJuego1 = New System.Windows.Forms.CheckBox()
+        Me.tpDomicilio = New System.Windows.Forms.TabPage()
+        Me.GroupBox6 = New System.Windows.Forms.GroupBox()
+        Me.txtEmpresaPais = New System.Windows.Forms.TextBox()
+        Me.txtEmpresaTelefono = New System.Windows.Forms.MaskedTextBox()
+        Me.txtEmpresaDireccion = New System.Windows.Forms.TextBox()
+        Me.txtEmpresaPuesto = New System.Windows.Forms.TextBox()
+        Me.txtEmpresaArea = New System.Windows.Forms.TextBox()
+        Me.txtEmpresaRUC = New System.Windows.Forms.MaskedTextBox()
+        Me.Label20 = New System.Windows.Forms.Label()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.txtEmpresaNombre = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.GroupBox5 = New System.Windows.Forms.GroupBox()
+        Me.txtClienteDpto = New System.Windows.Forms.TextBox()
+        Me.Label29 = New System.Windows.Forms.Label()
+        Me.txtClienteProvincia = New System.Windows.Forms.TextBox()
+        Me.Label28 = New System.Windows.Forms.Label()
+        Me.txtClienteProfesion = New System.Windows.Forms.TextBox()
+        Me.Label21 = New System.Windows.Forms.Label()
+        Me.txtClienteNacionalidad = New System.Windows.Forms.TextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.txtClienteTelMovil = New System.Windows.Forms.MaskedTextBox()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.txtClienteTelFijo = New System.Windows.Forms.MaskedTextBox()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.cbDistrito = New System.Windows.Forms.ComboBox()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.txtClienteEmail = New System.Windows.Forms.TextBox()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.txtDomicilioDireccion = New System.Windows.Forms.TextBox()
+        Me.tcCliente = New System.Windows.Forms.TabControl()
+        Me.Label22 = New System.Windows.Forms.Label()
+        Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
+        Me.tsbBuscar = New System.Windows.Forms.ToolStripButton()
+        Me.tsbNuevo = New System.Windows.Forms.ToolStripButton()
+        Me.tsbGuardar = New System.Windows.Forms.ToolStripButton()
+        Me.tsbEliminar = New System.Windows.Forms.ToolStripButton()
+        Me.tsbImprimir = New System.Windows.Forms.ToolStripButton()
+        Me.tsbAgregar = New System.Windows.Forms.ToolStripButton()
+        Me.tsbSalir = New System.Windows.Forms.ToolStripButton()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox9.SuspendLayout()
         Me.GroupBox4.SuspendLayout()
@@ -164,7 +168,7 @@ Partial Class frmClienteRegistro
         Me.GroupBox1.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(12, 97)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(602, 151)
+        Me.GroupBox1.Size = New System.Drawing.Size(657, 151)
         Me.GroupBox1.TabIndex = 1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Datos Básicos"
@@ -172,7 +176,7 @@ Partial Class frmClienteRegistro
         'GroupBox9
         '
         Me.GroupBox9.Controls.Add(Me.txtClienteEdad)
-        Me.GroupBox9.Location = New System.Drawing.Point(347, 102)
+        Me.GroupBox9.Location = New System.Drawing.Point(366, 102)
         Me.GroupBox9.Name = "GroupBox9"
         Me.GroupBox9.Size = New System.Drawing.Size(103, 35)
         Me.GroupBox9.TabIndex = 92
@@ -230,7 +234,7 @@ Partial Class frmClienteRegistro
         '
         Me.GroupBox4.Controls.Add(Me.txtClienteFecNac)
         Me.GroupBox4.Controls.Add(Me.dtpClienteFecNac)
-        Me.GroupBox4.Location = New System.Drawing.Point(347, 17)
+        Me.GroupBox4.Location = New System.Drawing.Point(366, 17)
         Me.GroupBox4.Name = "GroupBox4"
         Me.GroupBox4.Size = New System.Drawing.Size(103, 43)
         Me.GroupBox4.TabIndex = 86
@@ -267,7 +271,7 @@ Partial Class frmClienteRegistro
         '
         Me.GroupBox2.Controls.Add(Me.rbSexo2)
         Me.GroupBox2.Controls.Add(Me.rbSexo1)
-        Me.GroupBox2.Location = New System.Drawing.Point(347, 61)
+        Me.GroupBox2.Location = New System.Drawing.Point(366, 61)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(103, 38)
         Me.GroupBox2.TabIndex = 81
@@ -382,7 +386,7 @@ Partial Class frmClienteRegistro
         '
         Me.btnFotoQuitar.BackgroundImage = Global.bddc.Win.My.Resources.Resources.btngridBorrarFila
         Me.btnFotoQuitar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.btnFotoQuitar.Location = New System.Drawing.Point(559, 123)
+        Me.btnFotoQuitar.Location = New System.Drawing.Point(592, 123)
         Me.btnFotoQuitar.Name = "btnFotoQuitar"
         Me.btnFotoQuitar.Size = New System.Drawing.Size(27, 23)
         Me.btnFotoQuitar.TabIndex = 69
@@ -390,7 +394,7 @@ Partial Class frmClienteRegistro
         '
         'btnFotoUpload
         '
-        Me.btnFotoUpload.Location = New System.Drawing.Point(478, 123)
+        Me.btnFotoUpload.Location = New System.Drawing.Point(511, 123)
         Me.btnFotoUpload.Name = "btnFotoUpload"
         Me.btnFotoUpload.Size = New System.Drawing.Size(75, 23)
         Me.btnFotoUpload.TabIndex = 68
@@ -402,7 +406,7 @@ Partial Class frmClienteRegistro
         '
         Me.pbFotografia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.pbFotografia.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.pbFotografia.Location = New System.Drawing.Point(478, 18)
+        Me.pbFotografia.Location = New System.Drawing.Point(511, 18)
         Me.pbFotografia.Name = "pbFotografia"
         Me.pbFotografia.Size = New System.Drawing.Size(107, 107)
         Me.pbFotografia.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -425,7 +429,7 @@ Partial Class frmClienteRegistro
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tssMensaje})
         Me.StatusStrip1.Location = New System.Drawing.Point(0, 560)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(624, 22)
+        Me.StatusStrip1.Size = New System.Drawing.Size(685, 22)
         Me.StatusStrip1.TabIndex = 2
         Me.StatusStrip1.Text = "StatusStrip1"
         '
@@ -442,7 +446,7 @@ Partial Class frmClienteRegistro
         Me.tpComentarios.Controls.Add(Me.GroupBox7)
         Me.tpComentarios.Location = New System.Drawing.Point(4, 23)
         Me.tpComentarios.Name = "tpComentarios"
-        Me.tpComentarios.Size = New System.Drawing.Size(594, 246)
+        Me.tpComentarios.Size = New System.Drawing.Size(653, 246)
         Me.tpComentarios.TabIndex = 5
         Me.tpComentarios.Text = "Comentarios"
         '
@@ -559,7 +563,7 @@ Partial Class frmClienteRegistro
         Me.tpFiestaCasino.Location = New System.Drawing.Point(4, 23)
         Me.tpFiestaCasino.Name = "tpFiestaCasino"
         Me.tpFiestaCasino.Padding = New System.Windows.Forms.Padding(3)
-        Me.tpFiestaCasino.Size = New System.Drawing.Size(594, 246)
+        Me.tpFiestaCasino.Size = New System.Drawing.Size(653, 246)
         Me.tpFiestaCasino.TabIndex = 1
         Me.tpFiestaCasino.Text = "Fiesta Casino"
         '
@@ -744,7 +748,7 @@ Partial Class frmClienteRegistro
         Me.tpDomicilio.Location = New System.Drawing.Point(4, 23)
         Me.tpDomicilio.Name = "tpDomicilio"
         Me.tpDomicilio.Padding = New System.Windows.Forms.Padding(3)
-        Me.tpDomicilio.Size = New System.Drawing.Size(594, 246)
+        Me.tpDomicilio.Size = New System.Drawing.Size(653, 246)
         Me.tpDomicilio.TabIndex = 0
         Me.tpDomicilio.Text = "Contacto"
         '
@@ -764,7 +768,7 @@ Partial Class frmClienteRegistro
         Me.GroupBox6.Controls.Add(Me.Label9)
         Me.GroupBox6.Controls.Add(Me.txtEmpresaNombre)
         Me.GroupBox6.Controls.Add(Me.Label2)
-        Me.GroupBox6.Location = New System.Drawing.Point(300, 9)
+        Me.GroupBox6.Location = New System.Drawing.Point(366, 9)
         Me.GroupBox6.Name = "GroupBox6"
         Me.GroupBox6.Size = New System.Drawing.Size(281, 231)
         Me.GroupBox6.TabIndex = 88
@@ -902,6 +906,10 @@ Partial Class frmClienteRegistro
         '
         'GroupBox5
         '
+        Me.GroupBox5.Controls.Add(Me.txtClienteDpto)
+        Me.GroupBox5.Controls.Add(Me.Label29)
+        Me.GroupBox5.Controls.Add(Me.txtClienteProvincia)
+        Me.GroupBox5.Controls.Add(Me.Label28)
         Me.GroupBox5.Controls.Add(Me.txtClienteProfesion)
         Me.GroupBox5.Controls.Add(Me.Label21)
         Me.GroupBox5.Controls.Add(Me.txtClienteNacionalidad)
@@ -918,15 +926,51 @@ Partial Class frmClienteRegistro
         Me.GroupBox5.Controls.Add(Me.txtDomicilioDireccion)
         Me.GroupBox5.Location = New System.Drawing.Point(3, 6)
         Me.GroupBox5.Name = "GroupBox5"
-        Me.GroupBox5.Size = New System.Drawing.Size(291, 234)
+        Me.GroupBox5.Size = New System.Drawing.Size(357, 234)
         Me.GroupBox5.TabIndex = 87
         Me.GroupBox5.TabStop = False
         Me.GroupBox5.Text = "Personal"
         '
+        'txtClienteDpto
+        '
+        Me.txtClienteDpto.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtClienteDpto.Location = New System.Drawing.Point(80, 103)
+        Me.txtClienteDpto.MaxLength = 60
+        Me.txtClienteDpto.Name = "txtClienteDpto"
+        Me.txtClienteDpto.Size = New System.Drawing.Size(189, 20)
+        Me.txtClienteDpto.TabIndex = 94
+        '
+        'Label29
+        '
+        Me.Label29.AutoSize = True
+        Me.Label29.Location = New System.Drawing.Point(6, 106)
+        Me.Label29.Name = "Label29"
+        Me.Label29.Size = New System.Drawing.Size(32, 14)
+        Me.Label29.TabIndex = 93
+        Me.Label29.Text = "Dpto."
+        '
+        'txtClienteProvincia
+        '
+        Me.txtClienteProvincia.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtClienteProvincia.Location = New System.Drawing.Point(80, 80)
+        Me.txtClienteProvincia.MaxLength = 60
+        Me.txtClienteProvincia.Name = "txtClienteProvincia"
+        Me.txtClienteProvincia.Size = New System.Drawing.Size(189, 20)
+        Me.txtClienteProvincia.TabIndex = 92
+        '
+        'Label28
+        '
+        Me.Label28.AutoSize = True
+        Me.Label28.Location = New System.Drawing.Point(6, 83)
+        Me.Label28.Name = "Label28"
+        Me.Label28.Size = New System.Drawing.Size(51, 14)
+        Me.Label28.TabIndex = 91
+        Me.Label28.Text = "Provincia"
+        '
         'txtClienteProfesion
         '
         Me.txtClienteProfesion.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtClienteProfesion.Location = New System.Drawing.Point(86, 197)
+        Me.txtClienteProfesion.Location = New System.Drawing.Point(80, 205)
         Me.txtClienteProfesion.Name = "txtClienteProfesion"
         Me.txtClienteProfesion.Size = New System.Drawing.Size(190, 20)
         Me.txtClienteProfesion.TabIndex = 90
@@ -935,7 +979,7 @@ Partial Class frmClienteRegistro
         '
         Me.Label21.AutoSize = True
         Me.Label21.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label21.Location = New System.Drawing.Point(6, 200)
+        Me.Label21.Location = New System.Drawing.Point(6, 208)
         Me.Label21.Name = "Label21"
         Me.Label21.Size = New System.Drawing.Size(53, 14)
         Me.Label21.TabIndex = 89
@@ -944,16 +988,16 @@ Partial Class frmClienteRegistro
         'txtClienteNacionalidad
         '
         Me.txtClienteNacionalidad.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtClienteNacionalidad.Location = New System.Drawing.Point(87, 171)
+        Me.txtClienteNacionalidad.Location = New System.Drawing.Point(80, 180)
         Me.txtClienteNacionalidad.Name = "txtClienteNacionalidad"
-        Me.txtClienteNacionalidad.Size = New System.Drawing.Size(190, 20)
+        Me.txtClienteNacionalidad.Size = New System.Drawing.Size(189, 20)
         Me.txtClienteNacionalidad.TabIndex = 88
         '
         'Label8
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(6, 172)
+        Me.Label8.Location = New System.Drawing.Point(6, 183)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(68, 14)
         Me.Label8.TabIndex = 87
@@ -963,7 +1007,7 @@ Partial Class frmClienteRegistro
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(6, 19)
+        Me.Label10.Location = New System.Drawing.Point(6, 22)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(55, 14)
         Me.Label10.TabIndex = 80
@@ -971,7 +1015,7 @@ Partial Class frmClienteRegistro
         '
         'txtClienteTelMovil
         '
-        Me.txtClienteTelMovil.Location = New System.Drawing.Point(87, 119)
+        Me.txtClienteTelMovil.Location = New System.Drawing.Point(250, 129)
         Me.txtClienteTelMovil.Name = "txtClienteTelMovil"
         Me.txtClienteTelMovil.Size = New System.Drawing.Size(93, 20)
         Me.txtClienteTelMovil.TabIndex = 86
@@ -980,7 +1024,7 @@ Partial Class frmClienteRegistro
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(6, 66)
+        Me.Label11.Location = New System.Drawing.Point(6, 56)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(43, 14)
         Me.Label11.TabIndex = 81
@@ -988,26 +1032,26 @@ Partial Class frmClienteRegistro
         '
         'txtClienteTelFijo
         '
-        Me.txtClienteTelFijo.Location = New System.Drawing.Point(87, 93)
+        Me.txtClienteTelFijo.Location = New System.Drawing.Point(80, 129)
         Me.txtClienteTelFijo.Name = "txtClienteTelFijo"
-        Me.txtClienteTelFijo.Size = New System.Drawing.Size(92, 20)
+        Me.txtClienteTelFijo.Size = New System.Drawing.Size(90, 20)
         Me.txtClienteTelFijo.TabIndex = 85
         '
         'Label12
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(6, 94)
+        Me.Label12.Location = New System.Drawing.Point(6, 132)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(68, 14)
+        Me.Label12.Size = New System.Drawing.Size(47, 14)
         Me.Label12.TabIndex = 79
-        Me.Label12.Text = "Teléfono fijo:"
+        Me.Label12.Text = "Telf. fijo:"
         '
         'cbDistrito
         '
         Me.cbDistrito.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbDistrito.FormattingEnabled = True
-        Me.cbDistrito.Location = New System.Drawing.Point(87, 65)
+        Me.cbDistrito.Location = New System.Drawing.Point(80, 52)
         Me.cbDistrito.Name = "cbDistrito"
         Me.cbDistrito.Size = New System.Drawing.Size(189, 22)
         Me.cbDistrito.TabIndex = 84
@@ -1016,16 +1060,16 @@ Partial Class frmClienteRegistro
         '
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(6, 120)
+        Me.Label13.Location = New System.Drawing.Point(188, 132)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(78, 14)
+        Me.Label13.Size = New System.Drawing.Size(57, 14)
         Me.Label13.TabIndex = 77
-        Me.Label13.Text = "Teléfono móvil:"
+        Me.Label13.Text = "Telf. móvil:"
         '
         'txtClienteEmail
         '
         Me.txtClienteEmail.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtClienteEmail.Location = New System.Drawing.Point(87, 145)
+        Me.txtClienteEmail.Location = New System.Drawing.Point(80, 154)
         Me.txtClienteEmail.Name = "txtClienteEmail"
         Me.txtClienteEmail.Size = New System.Drawing.Size(190, 20)
         Me.txtClienteEmail.TabIndex = 83
@@ -1034,7 +1078,7 @@ Partial Class frmClienteRegistro
         '
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.Location = New System.Drawing.Point(6, 146)
+        Me.Label14.Location = New System.Drawing.Point(6, 157)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(38, 14)
         Me.Label14.TabIndex = 78
@@ -1043,11 +1087,11 @@ Partial Class frmClienteRegistro
         'txtDomicilioDireccion
         '
         Me.txtDomicilioDireccion.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtDomicilioDireccion.Location = New System.Drawing.Point(87, 15)
+        Me.txtDomicilioDireccion.Location = New System.Drawing.Point(80, 16)
         Me.txtDomicilioDireccion.MaxLength = 200
         Me.txtDomicilioDireccion.Multiline = True
         Me.txtDomicilioDireccion.Name = "txtDomicilioDireccion"
-        Me.txtDomicilioDireccion.Size = New System.Drawing.Size(189, 45)
+        Me.txtDomicilioDireccion.Size = New System.Drawing.Size(264, 33)
         Me.txtDomicilioDireccion.TabIndex = 82
         '
         'tcCliente
@@ -1059,7 +1103,7 @@ Partial Class frmClienteRegistro
         Me.tcCliente.Location = New System.Drawing.Point(12, 254)
         Me.tcCliente.Name = "tcCliente"
         Me.tcCliente.SelectedIndex = 0
-        Me.tcCliente.Size = New System.Drawing.Size(602, 273)
+        Me.tcCliente.Size = New System.Drawing.Size(661, 273)
         Me.tcCliente.TabIndex = 0
         '
         'Label22
@@ -1079,7 +1123,7 @@ Partial Class frmClienteRegistro
         Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsbBuscar, Me.tsbNuevo, Me.tsbGuardar, Me.tsbEliminar, Me.tsbImprimir, Me.tsbAgregar, Me.tsbSalir})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(624, 31)
+        Me.ToolStrip1.Size = New System.Drawing.Size(685, 31)
         Me.ToolStrip1.TabIndex = 71
         Me.ToolStrip1.Text = "ToolStrip1"
         '
@@ -1162,7 +1206,7 @@ Partial Class frmClienteRegistro
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(624, 582)
+        Me.ClientSize = New System.Drawing.Size(685, 582)
         Me.Controls.Add(Me.ToolStrip1)
         Me.Controls.Add(Me.Label22)
         Me.Controls.Add(Me.PictureBox2)
@@ -1307,4 +1351,8 @@ Partial Class frmClienteRegistro
     Friend WithEvents tsbImprimir As System.Windows.Forms.ToolStripButton
     Friend WithEvents GroupBox9 As System.Windows.Forms.GroupBox
     Friend WithEvents txtClienteEdad As System.Windows.Forms.TextBox
+    Friend WithEvents txtClienteDpto As System.Windows.Forms.TextBox
+    Friend WithEvents Label29 As System.Windows.Forms.Label
+    Friend WithEvents txtClienteProvincia As System.Windows.Forms.TextBox
+    Friend WithEvents Label28 As System.Windows.Forms.Label
 End Class

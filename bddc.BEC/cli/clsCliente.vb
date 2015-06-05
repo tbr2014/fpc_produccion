@@ -40,7 +40,10 @@ Namespace CLI
 		Private strClienteComentarios As String
 		Private decClientePuntaje As Decimal
 		Private strClienteTier As String
-		Private intClienteEstadoId As Integer
+        Private intClienteEstadoId As Integer
+        Private strClienteDistrito As String
+        Private strClienteProvincia As String
+        Private strClienteDepartamento As String
 
 		Public Sub New()
 
@@ -368,6 +371,33 @@ Namespace CLI
 				strClienteTipoDoc = Value
 			End Set
 		End Property
+
+        Public Property ClienteDistrito() As String
+            Get
+                Return strClienteDistrito
+            End Get
+            Set(ByVal Value As String)
+                strClienteDistrito = Value
+            End Set
+        End Property
+
+        Public Property ClienteProvincia() As String
+            Get
+                Return strClienteProvincia
+            End Get
+            Set(ByVal Value As String)
+                strClienteProvincia = Value
+            End Set
+        End Property
+
+        Public Property ClienteDepartamento() As String
+            Get
+                Return strClienteDepartamento
+            End Get
+            Set(ByVal Value As String)
+                strClienteDepartamento = Value
+            End Set
+        End Property
 
 	End Class ' clsCliente
 

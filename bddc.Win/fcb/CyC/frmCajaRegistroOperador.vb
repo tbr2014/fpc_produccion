@@ -131,13 +131,13 @@ Public Class frmCajaRegistroOperador
                     txtClientePais.Text = .DomicilioPais.Trim
 
                     txtClienteDireccion.Text = .DomicilioDireccion.Trim
-                    txtClienteDireccionDist.Text = .DomicilioCiudad.Trim
+                    'txtClienteDireccionDist.Text = .DomicilioCiudad.Trim
                     txtClienteDireccionNro.Text = ""
                     txtClienteDireccionInt.Text = ""
                     txtClienteDireccionUrb.Text = ""
-                    txtClienteDireccionDist.Text = ""
-                    txtClienteDireccionProv.Text = ""
-                    txtClienteDireccionDpto.Text = ""
+                    txtClienteDireccionDist.Text = .ClienteDistrito.Trim
+                    txtClienteDireccionProv.Text = .ClienteProvincia.Trim
+                    txtClienteDireccionDpto.Text = .ClienteDepartamento.Trim
 
                 End With
 

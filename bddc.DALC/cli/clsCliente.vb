@@ -173,7 +173,7 @@ Namespace CLI
             'objConexion.GetConexion
             Dim dato As New Util.Dato
             Dim intResultado As Integer = 0
-            Dim prmParameter(31) As MySqlParameter
+            Dim prmParameter(34) As MySqlParameter
             Dim arrParameter As New ArrayList
 
             Try
@@ -213,6 +213,9 @@ Namespace CLI
                     .Add("p_scli_comentarios")
                     .Add("p_fcli_estadoid")
                     .Add("p_faud_usrid")
+                    .Add("p_scli_distrito")
+                    .Add("p_scli_provincia")
+                    .Add("p_scli_departamento")
                 End With
 
                 objBEC = obj
@@ -316,6 +319,14 @@ Namespace CLI
                     prmParameter(31) = New MySqlParameter(arrParameter(31).ToString, MySqlDbType.Int16)
                     prmParameter(31).Value = .AudCreac_UsuarioId
 
+                    prmParameter(32) = New MySqlParameter(arrParameter(32).ToString, MySqlDbType.String, Util.Constante.DiccionarioDatos.CONST_NOMBRE_50)
+                    prmParameter(32).Value = .ClienteDistrito.Trim
+
+                    prmParameter(33) = New MySqlParameter(arrParameter(33).ToString, MySqlDbType.String, Util.Constante.DiccionarioDatos.CONST_NOMBRE_50)
+                    prmParameter(33).Value = .ClienteProvincia.Trim
+
+                    prmParameter(34) = New MySqlParameter(arrParameter(34).ToString, MySqlDbType.String, Util.Constante.DiccionarioDatos.CONST_NOMBRE_50)
+                    prmParameter(34).Value = .ClienteDepartamento.Trim
                 End With
 
                 Select Case Unidad
@@ -456,7 +467,6 @@ Namespace CLI
                     objBEC = New BEC.CLI.clsCliente
 
                     With objBEC
-
                         .ClienteId = dato.EsNuloBD(dtsResultado.Tables(0).Rows(k)("ClienteId"))
                         .ClienteCodigo = dato.EsNuloBD(dtsResultado.Tables(0).Rows(k)("ClienteCodigo"))
                         .ClienteApePat = dato.EsNuloBD(dtsResultado.Tables(0).Rows(k)("ClienteApePat"))
@@ -481,7 +491,10 @@ Namespace CLI
                         .AudEdic_Usuario = dato.EsNuloBD(dtsResultado.Tables(0).Rows(k)("AudEdic_Usuario"))
                         .AudEdic_Fecha = dato.EsNuloBD(dtsResultado.Tables(0).Rows(k)("AudEdic_Fecha"))
                         .ClienteNacionalidad = dato.EsNuloBD(dtsResultado.Tables(0).Rows(k)("Nacionalidad"))
-
+                        .ClienteDistrito = dato.EsNuloBD(dtsResultado.Tables(0).Rows(k)("Distrito"))
+                        .ClienteProvincia = dato.EsNuloBD(dtsResultado.Tables(0).Rows(k)("Provincia"))
+                        .ClienteDepartamento = dato.EsNuloBD(dtsResultado.Tables(0).Rows(k)("Departamento"))
+                        .ClienteProfesion = dato.EsNuloBD(dtsResultado.Tables(0).Rows(k)("Profesion"))
                     End With
 
                     Return objBEC

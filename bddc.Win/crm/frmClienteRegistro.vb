@@ -39,54 +39,50 @@
 
         Dim objDL As New DALC.COM.clsParametro
         Dim objBEC As BEC.COM.clsParametro
-        Dim arrResultados As IList
+        Dim arrResulDocId As IList
+
+        Dim objUbigeo As New DALC.COM.clsUbigeo
+        Dim arrParam As New ArrayList
+        Dim arrResulDistrito As IList
 
         Try
-            ' 1. Parametro(s):
-            '7:          Tipo Moneda
-
-            arrResultados = objDL.Seleccionar("6", frmLogin.Unidad)
-
-            If arrResultados.Count > 0 Then
+            'Tipo de documento de identificacion
+            arrResulDocId = objDL.Seleccionar("6", frmLogin.Unidad)
+            If arrResulDocId.Count > 0 Then
                 Me.cboTipoDoc.Items.Clear()
 
-                For k As Integer = 0 To arrResultados.Count - 1
-                    objBEC = CType(arrResultados(k), BEC.COM.clsParametro)
+                For k As Integer = 0 To arrResulDocId.Count - 1
+                    objBEC = CType(arrResulDocId(k), BEC.COM.clsParametro)
                     Select Case objBEC.GrupoId
                         Case Util.Enumeracion.enmGrupoParametro.DocumentoIdentidad
                             Me.cboTipoDoc.Items.Add(New BEC.COM.clsItem(objBEC.ParametroId, objBEC.Nombre))
                     End Select
                 Next
             End If
-
-            'Seleccionando el primer item:
             Me.cboTipoDoc.SelectedItem = Me.cboTipoDoc.Items(0)
 
-            Dim objUbigeo As New DALC.COM.clsUbigeo
-            Dim arrParam As New ArrayList
-            Dim arrResultado As IList
-
+            'Distritos
             With arrParam
                 .Add(Util.Enumeracion.enmAUXTipoUbigeo.DISTRITO)
                 .Add(Util.Constante.CONST_PROV_LIMA)
             End With
-
-            arrResultado = objUbigeo.Buscar(arrParam, frmLogin.Unidad)
-
+            arrResulDistrito = objUbigeo.Buscar(arrParam, frmLogin.Unidad)
             With cbDistrito
                 .DisplayMember = "ItemNombre"
                 .ValueMember = "ItemId"
-                .DataSource = arrResultado
+                .DataSource = arrResulDistrito
             End With
 
+            'Fiesta Casino Tier
             txtTierJuegoFJM.Maximum = Configuration.ConfigurationManager.AppSettings("FCB_ClienteMaxTier")
 
-            Me.lblClienteId.Text = ""
-            Me.tssMensaje.Text = ""
+            'label que contendrá el id del cliente de la BD
+            Me.lblClienteId.Text = String.Empty
+
+            'Txtbox para mostrar mensajes
+            Me.tssMensaje.Text = String.Empty
 
             btnRating.Enabled = False
-
-
 
         Catch ex As Exception
             Me.tssMensaje.Text = ex.Message
@@ -99,29 +95,28 @@
 
     Private Sub ClienteNuevo()
 
-        lblClienteId.Text = ""
-        txtClienteCodigo.ReadOnly = False
-        lblClienteId.Text = ""
-        'lblPuntaje.Text = "0.00"
-        'lblTier.Text = "0"
+        'Seteando todos los campos en blanco
 
-        txtClienteCodigo.Text = ""
-        txtClienteNombre.Text = ""
-        txtClienteApePat.Text = ""
-        txtClienteApeMat.Text = ""
-        txtClienteNumDoc.Text = ""
+        lblClienteId.Text = String.Empty
+        txtClienteCodigo.ReadOnly = False
+        txtClienteCodigo.Text = String.Empty
+        txtClienteNombre.Text = String.Empty
+        txtClienteApePat.Text = String.Empty
+        txtClienteApeMat.Text = String.Empty
+        txtClienteNumDoc.Text = String.Empty
 
         rbSexo1.Checked = False
         rbSexo2.Checked = False
 
-        txtClienteFecNac.Text = ""
-        'dtpClienteFecNac.Text = ""
-        txtDomicilioDireccion.Text = ""
-        'txtDomicilioDistrito.Text = ""
-        txtClienteTelFijo.Text = ""
-        txtClienteTelMovil.Text = ""
-        txtClienteEmail.Text = ""
-        txtClienteNacionalidad.Text = ""
+        txtClienteFecNac.Text = String.Empty
+        txtDomicilioDireccion.Text = String.Empty
+        txtClienteTelFijo.Text = String.Empty
+        txtClienteTelMovil.Text = String.Empty
+        txtClienteEmail.Text = String.Empty
+        txtClienteNacionalidad.Text = String.Empty
+        txtClienteProvincia.Text = String.Empty
+        txtClienteDpto.Text = String.Empty
+        txtClienteProfesion.Text = String.Empty
 
         cbJuego1.Checked = False
         cbJuego2.Checked = False
@@ -133,12 +128,12 @@
         pbFotografia.Image = Nothing
         btnFotoUpload.Visible = False
         btnFotoQuitar.Visible = False
-        lblFotoOrigen.Text = ""
+        lblFotoOrigen.Text = String.Empty
 
-        txtClienteComentarios.Text = ""
+        txtClienteComentarios.Text = String.Empty
 
         btnRating.Enabled = False
-        Me.tssMensaje.Text = ""
+        Me.tssMensaje.Text = String.Empty
 
         If objBEC IsNot Nothing Then
             If objBEC.ClienteId <> 0 Then objBEC.ClienteId = 0
@@ -249,7 +244,10 @@
 
                     txtClienteFecNac.Text = .ClienteFecNac
                     txtDomicilioDireccion.Text = .DomicilioDireccion.Trim
-                    'cbDistrito.Text = .DomicilioCiudad 'txtDomicilioDistrito.Text = .DomicilioCiudad
+                    cbDistrito.Text = .ClienteDistrito
+                    txtClienteProvincia.Text = .ClienteProvincia
+                    txtClienteDpto.Text = .ClienteDepartamento
+                    txtClienteProfesion.Text = .ClienteProfesion
 
                     Dim intIndice As Integer = cbDistrito.FindString(.DomicilioCiudad.Trim)
                     If intIndice > 0 Then cbDistrito.SelectedIndex = intIndice
@@ -447,6 +445,7 @@
     Private Sub ClienteEscribir()
 
         Dim intUsuarioId As Integer = Util.Enumeracion.enmResultadoOperacion.NONE
+
         If frmLogin.objColeccionFCB.objUsuBEC IsNot Nothing Then
             intUsuarioId = frmLogin.objColeccionFCB.objUsuBEC.UsuarioId
         Else
@@ -483,6 +482,9 @@
                 .ClienteEmail = txtClienteEmail.Text.Trim
                 .ClienteNacionalidad = txtClienteNacionalidad.Text.Trim
                 .ClienteProfesion = txtClienteProfesion.Text.Trim
+                .ClienteDistrito = CType(cbDistrito.SelectedItem, BEC.COM.clsItem).ItemNombre
+                .ClienteProvincia = txtClienteProvincia.Text.Trim
+                .ClienteDepartamento = txtClienteDpto.Text.Trim
 
                 '==========
                 'Empresa
