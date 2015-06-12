@@ -310,15 +310,16 @@ Public Class frmCajaBuscar
         dgvResultados.Columns("EstadoId").Visible = False
 
         dgvResultados.Columns.Remove("NumRegistro")
-        dgvResultados.Columns.Remove("Userid")
+        '13.-
+        'dgvResultados.Columns.Remove("Userid")
         dgvResultados.Columns.Remove("UserName")
         dgvResultados.Columns.Remove("TipoTarjetaCred")
 
-        '13.-
-        dgvResultados.Columns("NombreCaja").Visible = False
         '14.-
-        dgvResultados.Columns("TipoDocumento").Visible = False
+        dgvResultados.Columns("NombreCaja").Visible = False
         '15.-
+        dgvResultados.Columns("TipoDocumento").Visible = False
+        '16.-
         dgvResultados.Columns("NumeroDocumento").Visible = False
 
         dgvResultados.Columns.Remove("AudCreac_UsuarioId")
@@ -327,7 +328,8 @@ Public Class frmCajaBuscar
         dgvResultados.Columns.Remove("AudCreac_Usuario")
         dgvResultados.Columns.Remove("AudEdic_Fecha")
         dgvResultados.Columns.Remove("AudEdic_Usuario")
-        dgvResultados.Columns.Remove("UnidadId")
+        '17.-
+        'dgvResultados.Columns.Remove("UnidadId")
     End Sub
 
     Private Sub Exportar()
@@ -375,18 +377,18 @@ Public Class frmCajaBuscar
                     writer.Write(",")
 
                     'DNI
-                    ClienteTipoDoc = Convert.ToInt32(row.Cells(14).Value.ToString())
+                    ClienteTipoDoc = Convert.ToInt32(row.Cells(15).Value.ToString())
                     Select Case ClienteTipoDoc
                         Case 0
-                            NumeroDoc = "TipoDoc-" & row.Cells(15).Value.ToString()
+                            NumeroDoc = "TipoDoc-" & row.Cells(16).Value.ToString()
                         Case 1
-                            NumeroDoc = "DNI-" & row.Cells(15).Value.ToString()
+                            NumeroDoc = "DNI-" & row.Cells(16).Value.ToString()
                         Case 2
-                            NumeroDoc = "CE-" & row.Cells(15).Value.ToString()
+                            NumeroDoc = "CE-" & row.Cells(16).Value.ToString()
                         Case 3
-                            NumeroDoc = "PAS-" & row.Cells(15).Value.ToString()
+                            NumeroDoc = "PAS-" & row.Cells(16).Value.ToString()
                         Case 4
-                            NumeroDoc = "CEDULA-" & row.Cells(15).Value.ToString()
+                            NumeroDoc = "CEDULA-" & row.Cells(16).Value.ToString()
                     End Select
                     writer.Write(NumeroDoc)
                     writer.Write(",")
