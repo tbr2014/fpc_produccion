@@ -22,94 +22,95 @@ Partial Class frmCajaRegistro
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.ToolStrip1 = New System.Windows.Forms.ToolStrip
-        Me.tsbBuscar = New System.Windows.Forms.ToolStripButton
-        Me.tsbNuevo = New System.Windows.Forms.ToolStripButton
-        Me.tsbAgregar = New System.Windows.Forms.ToolStripButton
-        Me.tsbGuardar = New System.Windows.Forms.ToolStripButton
-        Me.tsbImprimir = New System.Windows.Forms.ToolStripButton
-        Me.tsbEliminar = New System.Windows.Forms.ToolStripButton
-        Me.tsbSalir = New System.Windows.Forms.ToolStripButton
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox
-        Me.statusStrip1 = New System.Windows.Forms.StatusStrip
-        Me.tssMensaje = New System.Windows.Forms.ToolStripStatusLabel
-        Me.gbSeccion1 = New System.Windows.Forms.GroupBox
-        Me.lblOperacionCajaId = New System.Windows.Forms.Label
-        Me.pbInactivo = New System.Windows.Forms.PictureBox
-        Me.pbActivo = New System.Windows.Forms.PictureBox
-        Me.txtOficialCumplimiento = New System.Windows.Forms.TextBox
-        Me.Label5 = New System.Windows.Forms.Label
-        Me.Label7 = New System.Windows.Forms.Label
-        Me.txtSujetoObligado = New System.Windows.Forms.TextBox
-        Me.Label4 = New System.Windows.Forms.Label
-        Me.txtRegistroFecha = New System.Windows.Forms.TextBox
-        Me.Label3 = New System.Windows.Forms.Label
-        Me.txtRegistroNro = New System.Windows.Forms.TextBox
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.gbSeccion2 = New System.Windows.Forms.GroupBox
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox
-        Me.Label10 = New System.Windows.Forms.Label
-        Me.txtJackpotMaquina = New System.Windows.Forms.TextBox
-        Me.lblFichaDenominacion = New System.Windows.Forms.Label
-        Me.txtFichaCantidad = New System.Windows.Forms.TextBox
-        Me.Label9 = New System.Windows.Forms.Label
-        Me.rbTipoOperacion6 = New System.Windows.Forms.RadioButton
-        Me.rbTipoOperacion5 = New System.Windows.Forms.RadioButton
-        Me.rbTipoOperacion4 = New System.Windows.Forms.RadioButton
-        Me.rbTipoOperacion1 = New System.Windows.Forms.RadioButton
-        Me.rbTipoOperacion3 = New System.Windows.Forms.RadioButton
-        Me.rbTipoOperacion2 = New System.Windows.Forms.RadioButton
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox
-        Me.txtTarjetaNum = New System.Windows.Forms.MaskedTextBox
-        Me.rbModalidadOperacion1 = New System.Windows.Forms.RadioButton
-        Me.Label8 = New System.Windows.Forms.Label
-        Me.rbModalidadOperacion3 = New System.Windows.Forms.RadioButton
-        Me.rbModalidadOperacion2 = New System.Windows.Forms.RadioButton
-        Me.txtOperacionMonto = New System.Windows.Forms.TextBox
-        Me.Label6 = New System.Windows.Forms.Label
-        Me.GroupBox8 = New System.Windows.Forms.GroupBox
-        Me.txtAudUpdFecha = New System.Windows.Forms.TextBox
-        Me.txtAudInsFecha = New System.Windows.Forms.TextBox
-        Me.Label27 = New System.Windows.Forms.Label
-        Me.Label26 = New System.Windows.Forms.Label
-        Me.txtAudUpdUsr = New System.Windows.Forms.TextBox
-        Me.txtAudInsUsr = New System.Windows.Forms.TextBox
-        Me.Label25 = New System.Windows.Forms.Label
-        Me.Label24 = New System.Windows.Forms.Label
-        Me.GroupBox4 = New System.Windows.Forms.GroupBox
-        Me.lblClienteId = New System.Windows.Forms.Label
-        Me.Label19 = New System.Windows.Forms.Label
-        Me.GroupBox5 = New System.Windows.Forms.GroupBox
-        Me.txtClienteDireccionDist = New System.Windows.Forms.TextBox
-        Me.txtClienteDireccionProv = New System.Windows.Forms.TextBox
-        Me.txtClienteDireccionDpto = New System.Windows.Forms.TextBox
-        Me.Label20 = New System.Windows.Forms.Label
-        Me.Label21 = New System.Windows.Forms.Label
-        Me.txtClienteDireccionUrb = New System.Windows.Forms.TextBox
-        Me.Label22 = New System.Windows.Forms.Label
-        Me.Label23 = New System.Windows.Forms.Label
-        Me.txtClienteDireccionInt = New System.Windows.Forms.TextBox
-        Me.Label28 = New System.Windows.Forms.Label
-        Me.txtClienteDireccionNro = New System.Windows.Forms.TextBox
-        Me.Label29 = New System.Windows.Forms.Label
-        Me.txtClienteDireccion = New System.Windows.Forms.TextBox
-        Me.Label30 = New System.Windows.Forms.Label
-        Me.txtClienteNacionalidad = New System.Windows.Forms.TextBox
-        Me.Label31 = New System.Windows.Forms.Label
-        Me.txtClientePais = New System.Windows.Forms.TextBox
-        Me.Label32 = New System.Windows.Forms.Label
-        Me.txtClienteNumDoc = New System.Windows.Forms.TextBox
-        Me.Label33 = New System.Windows.Forms.Label
-        Me.txtClienteApellidos = New System.Windows.Forms.TextBox
-        Me.txtClienteNombres = New System.Windows.Forms.TextBox
-        Me.Label34 = New System.Windows.Forms.Label
-        Me.Label35 = New System.Windows.Forms.Label
-        Me.gbCaja = New System.Windows.Forms.GroupBox
-        Me.txtCaja = New System.Windows.Forms.TextBox
-        Me.gbComentario = New System.Windows.Forms.GroupBox
-        Me.btnEliminar = New System.Windows.Forms.Button
-        Me.txtComentario = New System.Windows.Forms.TextBox
+        Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
+        Me.tsbBuscar = New System.Windows.Forms.ToolStripButton()
+        Me.tsbNuevo = New System.Windows.Forms.ToolStripButton()
+        Me.tsbAgregar = New System.Windows.Forms.ToolStripButton()
+        Me.tsbGuardar = New System.Windows.Forms.ToolStripButton()
+        Me.tsbImprimir = New System.Windows.Forms.ToolStripButton()
+        Me.tsbEliminar = New System.Windows.Forms.ToolStripButton()
+        Me.tsbSalir = New System.Windows.Forms.ToolStripButton()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.statusStrip1 = New System.Windows.Forms.StatusStrip()
+        Me.tssMensaje = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.gbSeccion1 = New System.Windows.Forms.GroupBox()
+        Me.lblOperacionCajaId = New System.Windows.Forms.Label()
+        Me.pbInactivo = New System.Windows.Forms.PictureBox()
+        Me.pbActivo = New System.Windows.Forms.PictureBox()
+        Me.txtOficialCumplimiento = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.txtSujetoObligado = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.txtRegistroFecha = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.txtRegistroNro = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.gbSeccion2 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.txtJackpotMaquina = New System.Windows.Forms.TextBox()
+        Me.lblFichaDenominacion = New System.Windows.Forms.Label()
+        Me.txtFichaCantidad = New System.Windows.Forms.TextBox()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.rbTipoOperacion6 = New System.Windows.Forms.RadioButton()
+        Me.rbTipoOperacion5 = New System.Windows.Forms.RadioButton()
+        Me.rbTipoOperacion4 = New System.Windows.Forms.RadioButton()
+        Me.rbTipoOperacion1 = New System.Windows.Forms.RadioButton()
+        Me.rbTipoOperacion3 = New System.Windows.Forms.RadioButton()
+        Me.rbTipoOperacion2 = New System.Windows.Forms.RadioButton()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.txtTarjetaNum = New System.Windows.Forms.MaskedTextBox()
+        Me.rbModalidadOperacion1 = New System.Windows.Forms.RadioButton()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.rbModalidadOperacion3 = New System.Windows.Forms.RadioButton()
+        Me.rbModalidadOperacion2 = New System.Windows.Forms.RadioButton()
+        Me.txtOperacionMonto = New System.Windows.Forms.TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.GroupBox8 = New System.Windows.Forms.GroupBox()
+        Me.txtAudUpdFecha = New System.Windows.Forms.TextBox()
+        Me.txtAudInsFecha = New System.Windows.Forms.TextBox()
+        Me.Label27 = New System.Windows.Forms.Label()
+        Me.Label26 = New System.Windows.Forms.Label()
+        Me.txtAudUpdUsr = New System.Windows.Forms.TextBox()
+        Me.txtAudInsUsr = New System.Windows.Forms.TextBox()
+        Me.Label25 = New System.Windows.Forms.Label()
+        Me.Label24 = New System.Windows.Forms.Label()
+        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.lblClienteId = New System.Windows.Forms.Label()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.GroupBox5 = New System.Windows.Forms.GroupBox()
+        Me.txtClienteDireccionDist = New System.Windows.Forms.TextBox()
+        Me.txtClienteDireccionProv = New System.Windows.Forms.TextBox()
+        Me.txtClienteDireccionDpto = New System.Windows.Forms.TextBox()
+        Me.Label20 = New System.Windows.Forms.Label()
+        Me.Label21 = New System.Windows.Forms.Label()
+        Me.txtClienteDireccionUrb = New System.Windows.Forms.TextBox()
+        Me.Label22 = New System.Windows.Forms.Label()
+        Me.Label23 = New System.Windows.Forms.Label()
+        Me.txtClienteDireccionInt = New System.Windows.Forms.TextBox()
+        Me.Label28 = New System.Windows.Forms.Label()
+        Me.txtClienteDireccionNro = New System.Windows.Forms.TextBox()
+        Me.Label29 = New System.Windows.Forms.Label()
+        Me.txtClienteDireccion = New System.Windows.Forms.TextBox()
+        Me.Label30 = New System.Windows.Forms.Label()
+        Me.txtClienteNacionalidad = New System.Windows.Forms.TextBox()
+        Me.Label31 = New System.Windows.Forms.Label()
+        Me.txtClientePais = New System.Windows.Forms.TextBox()
+        Me.Label32 = New System.Windows.Forms.Label()
+        Me.txtClienteNumDoc = New System.Windows.Forms.TextBox()
+        Me.Label33 = New System.Windows.Forms.Label()
+        Me.txtClienteApellidos = New System.Windows.Forms.TextBox()
+        Me.txtClienteNombres = New System.Windows.Forms.TextBox()
+        Me.Label34 = New System.Windows.Forms.Label()
+        Me.Label35 = New System.Windows.Forms.Label()
+        Me.gbCaja = New System.Windows.Forms.GroupBox()
+        Me.txtCaja = New System.Windows.Forms.TextBox()
+        Me.gbComentario = New System.Windows.Forms.GroupBox()
+        Me.btnEliminar = New System.Windows.Forms.Button()
+        Me.txtComentario = New System.Windows.Forms.TextBox()
+        Me.LblFichaTipoMoneda = New System.Windows.Forms.Label()
         Me.ToolStrip1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.statusStrip1.SuspendLayout()
@@ -142,7 +143,7 @@ Partial Class frmCajaRegistro
         Me.tsbBuscar.Image = Global.bddc.Win.My.Resources.Resources.btngridBuscar
         Me.tsbBuscar.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.tsbBuscar.Name = "tsbBuscar"
-        Me.tsbBuscar.Size = New System.Drawing.Size(67, 28)
+        Me.tsbBuscar.Size = New System.Drawing.Size(70, 28)
         Me.tsbBuscar.Text = "Buscar"
         Me.tsbBuscar.Visible = False
         '
@@ -152,7 +153,7 @@ Partial Class frmCajaRegistro
         Me.tsbNuevo.Image = Global.bddc.Win.My.Resources.Resources.btngridNuevo
         Me.tsbNuevo.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.tsbNuevo.Name = "tsbNuevo"
-        Me.tsbNuevo.Size = New System.Drawing.Size(66, 28)
+        Me.tsbNuevo.Size = New System.Drawing.Size(70, 28)
         Me.tsbNuevo.Text = "Nuevo"
         Me.tsbNuevo.Visible = False
         '
@@ -162,7 +163,7 @@ Partial Class frmCajaRegistro
         Me.tsbAgregar.Image = Global.bddc.Win.My.Resources.Resources.btnOk
         Me.tsbAgregar.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.tsbAgregar.Name = "tsbAgregar"
-        Me.tsbAgregar.Size = New System.Drawing.Size(74, 28)
+        Me.tsbAgregar.Size = New System.Drawing.Size(77, 28)
         Me.tsbAgregar.Text = "Agregar"
         Me.tsbAgregar.Visible = False
         '
@@ -172,7 +173,7 @@ Partial Class frmCajaRegistro
         Me.tsbGuardar.Image = Global.bddc.Win.My.Resources.Resources.btngridGuardar
         Me.tsbGuardar.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.tsbGuardar.Name = "tsbGuardar"
-        Me.tsbGuardar.Size = New System.Drawing.Size(74, 28)
+        Me.tsbGuardar.Size = New System.Drawing.Size(77, 28)
         Me.tsbGuardar.Text = "Guardar"
         Me.tsbGuardar.Visible = False
         '
@@ -181,7 +182,7 @@ Partial Class frmCajaRegistro
         Me.tsbImprimir.Image = Global.bddc.Win.My.Resources.Resources.imgImpresion
         Me.tsbImprimir.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.tsbImprimir.Name = "tsbImprimir"
-        Me.tsbImprimir.Size = New System.Drawing.Size(73, 28)
+        Me.tsbImprimir.Size = New System.Drawing.Size(81, 28)
         Me.tsbImprimir.Text = "Imprimir"
         '
         'tsbEliminar
@@ -189,7 +190,7 @@ Partial Class frmCajaRegistro
         Me.tsbEliminar.Image = Global.bddc.Win.My.Resources.Resources.btngridBorrar
         Me.tsbEliminar.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.tsbEliminar.Name = "tsbEliminar"
-        Me.tsbEliminar.Size = New System.Drawing.Size(71, 28)
+        Me.tsbEliminar.Size = New System.Drawing.Size(78, 28)
         Me.tsbEliminar.Text = "Eliminar"
         '
         'tsbSalir
@@ -197,7 +198,7 @@ Partial Class frmCajaRegistro
         Me.tsbSalir.Image = Global.bddc.Win.My.Resources.Resources.btnSalida
         Me.tsbSalir.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.tsbSalir.Name = "tsbSalir"
-        Me.tsbSalir.Size = New System.Drawing.Size(55, 28)
+        Me.tsbSalir.Size = New System.Drawing.Size(57, 28)
         Me.tsbSalir.Text = "Salir"
         '
         'Label2
@@ -234,7 +235,7 @@ Partial Class frmCajaRegistro
         'tssMensaje
         '
         Me.tssMensaje.Name = "tssMensaje"
-        Me.tssMensaje.Size = New System.Drawing.Size(47, 17)
+        Me.tssMensaje.Size = New System.Drawing.Size(51, 17)
         Me.tssMensaje.Text = "Mensaje"
         '
         'gbSeccion1
@@ -385,6 +386,7 @@ Partial Class frmCajaRegistro
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.LblFichaTipoMoneda)
         Me.GroupBox2.Controls.Add(Me.Label10)
         Me.GroupBox2.Controls.Add(Me.txtJackpotMaquina)
         Me.GroupBox2.Controls.Add(Me.lblFichaDenominacion)
@@ -425,9 +427,9 @@ Partial Class frmCajaRegistro
         Me.lblFichaDenominacion.AutoSize = True
         Me.lblFichaDenominacion.Location = New System.Drawing.Point(136, 143)
         Me.lblFichaDenominacion.Name = "lblFichaDenominacion"
-        Me.lblFichaDenominacion.Size = New System.Drawing.Size(109, 13)
+        Me.lblFichaDenominacion.Size = New System.Drawing.Size(61, 13)
         Me.lblFichaDenominacion.TabIndex = 13
-        Me.lblFichaDenominacion.Text = "x Fichas de US$ XXX"
+        Me.lblFichaDenominacion.Text = "x Fichas de"
         '
         'txtFichaCantidad
         '
@@ -989,6 +991,15 @@ Partial Class frmCajaRegistro
         Me.txtComentario.Size = New System.Drawing.Size(520, 38)
         Me.txtComentario.TabIndex = 6
         '
+        'LblFichaTipoMoneda
+        '
+        Me.LblFichaTipoMoneda.AutoSize = True
+        Me.LblFichaTipoMoneda.Location = New System.Drawing.Point(195, 143)
+        Me.LblFichaTipoMoneda.Name = "LblFichaTipoMoneda"
+        Me.LblFichaTipoMoneda.Size = New System.Drawing.Size(12, 13)
+        Me.LblFichaTipoMoneda.TabIndex = 16
+        Me.LblFichaTipoMoneda.Text = "x"
+        '
         'frmCajaRegistro
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1125,4 +1136,5 @@ Partial Class frmCajaRegistro
     Friend WithEvents btnEliminar As System.Windows.Forms.Button
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents txtJackpotMaquina As System.Windows.Forms.TextBox
+    Friend WithEvents LblFichaTipoMoneda As System.Windows.Forms.Label
 End Class

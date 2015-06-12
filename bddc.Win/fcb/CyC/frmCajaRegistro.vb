@@ -35,6 +35,7 @@
         Dim objDALC As New DALC.FCB.clsOperacionCaja
         Dim intResultado As Integer = Util.Enumeracion.enmResultadoOperacion.NONE
         Dim intUsuarioId As Integer = Util.Enumeracion.enmResultadoOperacion.NONE
+        Dim OperacionFichaDenominacion As Decimal
 
         Try
 
@@ -60,7 +61,6 @@
                     txtOficialCumplimiento.Text = .OficialCumplimiento
                     txtOperacionMonto.Text = .OperacionMonto
 
-
                     Select Case .OperacionModalidadId
                         Case 1
                             rbModalidadOperacion1.Checked = True
@@ -83,6 +83,14 @@
                             rbTipoOperacion5.Checked = True
                         Case 6
                             rbTipoOperacion6.Checked = True
+                    End Select
+
+                    OperacionFichaDenominacion = .OperacionFichaDenominacion
+                    Select Case .OperacionMontoMonedaId
+                        Case 1
+                            LblFichaTipoMoneda.Text = "S/. " + OperacionFichaDenominacion.ToString()
+                        Case 2
+                            LblFichaTipoMoneda.Text = "US$ 1000"
                     End Select
 
                     txtTarjetaNum.Text = .OperacionTarjetaNum.Trim
@@ -255,8 +263,8 @@
                     txtClienteDireccionInt.Text = ""
                     txtClienteDireccionUrb.Text = ""
                     txtClienteDireccionDist.Text = .DomicilioCiudad
-                    txtClienteDireccionProv.Text = ""
-                    txtClienteDireccionDpto.Text = ""
+                    txtClienteDireccionProv.Text = .ClienteProvincia
+                    txtClienteDireccionDpto.Text = .ClienteDepartamento
 
                 End With
 

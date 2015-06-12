@@ -22,7 +22,6 @@
                 objOpeBEC = arrDatos(0)
                 objCliBEC = arrDatos(1)
 
-
                 objXML = New xmlOperacionCajaRegistro
                 Dim drFila As DataRow = objXML.rpOperacionCaja.NewRow
 
@@ -47,9 +46,8 @@
                     .Item("ClienteDireccionInt") = "" 'objCliBEC.DomicilioDireccionInt
                     .Item("ClienteDireccionUrb") = "" 'objCliBEC.DomicilioDireccionUrb
                     .Item("ClienteDireccionDist") = objCliBEC.DomicilioCiudad
-                    .Item("ClienteDireccionProv") = "" 'objCliBEC.DomicilioDireccionProv
-                    .Item("ClienteDireccionDpto") = "" 'objCliBEC.DomicilioDireccionDpto
-                    
+                    .Item("ClienteDireccionProv") = objCliBEC.ClienteProvincia
+                    .Item("ClienteDireccionDpto") = objCliBEC.ClienteDepartamento
 
                 End With
                 objXML.rpOperacionCaja.AddrpOperacionCajaRow(drFila)
