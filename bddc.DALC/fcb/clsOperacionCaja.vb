@@ -544,7 +544,6 @@ Namespace FCB
         Public Function Reporte(ByVal arrFiltro As System.Collections.IList, ByVal Unidad As String) As System.Collections.IList
 
             Dim CadenaConexion As String
-            'objConexion.GetConexion
             Dim dato As New Util.Dato
             Dim dtsResultado As New DataSet
             Dim prmParameter(5) As MySqlParameter
@@ -554,7 +553,6 @@ Namespace FCB
             Try
 
                 '1. Definiendo Parámetros del SP:
-
                 With arrParameter
                     .Add("?p_sopc_fechaini")
                     .Add("?p_sopc_fechafin")

@@ -10,6 +10,8 @@
     Private objXML As xmlOperacionCajaReporte
     Private intTipoReporte As Util.Enumeracion.enmFCBReporteOperacionCaja
     Private Unidad As String
+    Private Importe As String
+    Private Total As String
 #End Region
 
 #Region "Operaciones"
@@ -76,6 +78,8 @@
                                     .SetParameterValue("parTipoCambio", decTipoCambio)
                                     .SetParameterValue("parFichaDenominacion", MonedaFicha)
                                     .SetParameterValue("parCasino", frmLogin.Unidad)
+                                    .SetParameterValue("parEncabImporte", "Importe US$")
+                                    .SetParameterValue("parTotal", "Total US$")
                                 End With
                                 crvResultados.ReportSource = crOperacionCajaReporteVentFich1
                                 crvResultados.Zoom(100)
@@ -88,6 +92,8 @@
                                     .SetParameterValue("parTipoCambio", decTipoCambio)
                                     .SetParameterValue("parFichaDenominacion", MonedaFicha)
                                     .SetParameterValue("parCasino", frmLogin.Unidad)
+                                    .SetParameterValue("parEncabImporte", "Importe S/.")
+                                    .SetParameterValue("parTotal", "Total S/.")
                                 End With
                                 crvResultados.ReportSource = crOperacionCajaReporteVentFich1
                                 crvResultados.Zoom(100)
@@ -100,6 +106,8 @@
                                     .SetParameterValue("parTipoCambio", decTipoCambio)
                                     .SetParameterValue("parFichaDenominacion", MonedaFicha)
                                     .SetParameterValue("parCasino", frmLogin.Unidad)
+                                    .SetParameterValue("parEncabImporte", "Importe S/.")
+                                    .SetParameterValue("parTotal", "Total S/.")
                                 End With
                                 crvResultados.ReportSource = crOperacionCajaReporteVentFich1
                                 crvResultados.Zoom(100)
@@ -108,12 +116,18 @@
 
                                 If MonedaFicha.CompareTo("S./ 500") = 0 Then
                                     Unidad = "LUXOR LIMA CASINO"
+                                    Importe = "Importe S/."
+                                    Total = "Total S/."
                                 End If
                                 If MonedaFicha.CompareTo("S./ 1000") = 0 Then
                                     Unidad = "LUXOR TACNA"
+                                    Importe = "Importe S/."
+                                    Total = "Total S/."
                                 End If
                                 If MonedaFicha.CompareTo("US$ 1000") = 0 Then
                                     Unidad = "EMPRESA DE PRUEBA"
+                                    Importe = "Importe US$"
+                                    Total = "Total US$"
                                 End If
 
                                 With crOperacionCajaReporteVentFich1
@@ -123,6 +137,8 @@
                                     .SetParameterValue("parTipoCambio", decTipoCambio)
                                     .SetParameterValue("parFichaDenominacion", MonedaFicha)
                                     .SetParameterValue("parCasino", Unidad)
+                                    .SetParameterValue("parEncabImporte", Importe)
+                                    .SetParameterValue("parTotal", Total)
                                 End With
                                 crvResultados.ReportSource = crOperacionCajaReporteVentFich1
                                 crvResultados.Zoom(100)
