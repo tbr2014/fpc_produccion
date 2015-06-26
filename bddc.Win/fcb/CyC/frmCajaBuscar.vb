@@ -262,74 +262,83 @@ Public Class frmCajaBuscar
     End Sub
 
     Private Sub CleanDGV()
-        '1.-
+
+        '---------------------- NO VISIBLE --------------------
+        '1.- OperacionCajaId
         dgvResultados.Columns("OperacionCajaId").Visible = False
-        '2.-
-        dgvResultados.Columns(2).HeaderText = "No. Registro"
-        '3.-
-        dgvResultados.Columns("OperacionFecha").Visible = False
+        '------------------------------------------------------
 
-        dgvResultados.Columns.Remove("SujetoObligado")
-        dgvResultados.Columns.Remove("OficialCumplimiento")
+        '--------------------------- VISIBLE -------------------------
+        '2.- OperacionCodigo
+        '3.- Cliente
+        dgvResultados.Columns("ClienteNombreCompleto").HeaderText = "Cliente"
+        dgvResultados.Columns("ClienteNombreCompleto").DisplayIndex = 3
+        '4.- Hora
+        dgvResultados.Columns("OperacionHora").HeaderText = "Hora"
+        dgvResultados.Columns("OperacionHora").DisplayIndex = 4
+        '5.- Monto
+        dgvResultados.Columns("OperacionMonto").HeaderText = "Monto"
+        dgvResultados.Columns("OperacionMonto").DisplayIndex = 5
+        '6.- User ID
+        dgvResultados.Columns("UserId").DisplayIndex = 6
+        '7.- Unidad Id
+        dgvResultados.Columns("UnidadId").DisplayIndex = 7
+        '8.- OperacionFecha
+        '9.- Sujeto Obligado 
+        '10.- Oficial Cumplimiento
+        '--------------------------------------------------------------
 
-        '4.-
+        '------------------------ NO VISIBLE --------------------------
+        '11.- OperacionMontoMonedaId
         dgvResultados.Columns("OperacionMontoMonedaId").Visible = False
-        '5.-
+        '12.- OperacionMontoImporte 
         dgvResultados.Columns("OperacionMontoImporte").Visible = False
-        '6.-
+        '13.- OperacionTipoCambio
         dgvResultados.Columns("OperacionTipoCambio").Visible = False
+        '--------------------------------------------------------------
 
-        dgvResultados.Columns.Remove("OperacionModalidadId")
+        '----------------------------- VISIBLE-------------------------
+        '14.- Operacion Modalidad
+        '15.- Operacion Tipo Id
+        '16.- Operacion Referencia
+        '17.- OperacionTarjetaNum
+        '18.- OperacionCaja
+        '19.- ClienteId
+        '20.- ClienteDocumento 
+        '--------------------------------------------------------------
 
-        '7.-
-        dgvResultados.Columns("OperacionTipoId").Visible = False
+        '-------------------------- NO VISIBLE -------------------------
+        '21.- OperacionFichaMoneda
+        dgvResultados.Columns("OperacionFichaMoneda").Visible = False
+        '--------------------------------------------------------------
 
-        dgvResultados.Columns.Remove("OperacionReferencia")
-        dgvResultados.Columns.Remove("OperacionTarjetaNum")
-        dgvResultados.Columns.Remove("OperacionCaja")
+        '--------------------------- VISIBLE---------------------------
+        '22.- OperacionFichaCantidad 
+        '23.- OperacionFichaDenominacion 
+        '24.- OperacionMaquinaNum 
+        '25.- OperacionComentario
+        '--------------------------------------------------------------
 
-        '8.-
-        dgvResultados.Columns("ClienteId").Visible = False
-        '9.-
-        dgvResultados.Columns(9).HeaderText = "Cliente"
-
-        dgvResultados.Columns.Remove("ClienteDocumento")
-
-        '10.-
-        dgvResultados.Columns(10).HeaderText = "Hora"
-        '11.-
-        dgvResultados.Columns(11).HeaderText = "Monto"
-
-        dgvResultados.Columns.Remove("OperacionFichaMoneda")
-        dgvResultados.Columns.Remove("OperacionFichaCantidad")
-        dgvResultados.Columns.Remove("OperacionFichaDenominacion")
-        dgvResultados.Columns.Remove("OperacionMaquinaNum")
-        dgvResultados.Columns.Remove("OperacionComentario")
-
-        '12.-
+        '-------------------------- NO VISIBLE ------------------------
+        '26.- EstadoId
         dgvResultados.Columns("EstadoId").Visible = False
+        '--------------------------------------------------------------
 
-        dgvResultados.Columns.Remove("NumRegistro")
-        '13.-
-        'dgvResultados.Columns.Remove("Userid")
-        dgvResultados.Columns.Remove("UserName")
-        dgvResultados.Columns.Remove("TipoTarjetaCred")
+        '--------------------------- VISIBLE---------------------------
+        '27.- NumRegistro
+        '28.- UserName
+        '29.- TipoTarjetaCred
+        '30.- NombreCaja
+        '31.- TipoDocumento
+        '32.- NumeroDocumento
+        '33.- AudCreac_UsuarioId
+        '34.- AudCreac_Fecha
+        '35.- AudEdic_UsuarioId
+        '36.- AudCreac_Usuario
+        '36.- AudEdic_Fecha
+        '38.- AudEdic_Usuario
+        '--------------------------------------------------------------
 
-        '14.-
-        dgvResultados.Columns("NombreCaja").Visible = False
-        '15.-
-        dgvResultados.Columns("TipoDocumento").Visible = False
-        '16.-
-        dgvResultados.Columns("NumeroDocumento").Visible = False
-
-        dgvResultados.Columns.Remove("AudCreac_UsuarioId")
-        dgvResultados.Columns.Remove("AudCreac_Fecha")
-        dgvResultados.Columns.Remove("AudEdic_UsuarioId")
-        dgvResultados.Columns.Remove("AudCreac_Usuario")
-        dgvResultados.Columns.Remove("AudEdic_Fecha")
-        dgvResultados.Columns.Remove("AudEdic_Usuario")
-        '17.-
-        'dgvResultados.Columns.Remove("UnidadId")
     End Sub
 
     Private Sub Exportar()
@@ -377,38 +386,38 @@ Public Class frmCajaBuscar
                     writer.Write(",")
 
                     'DNI
-                    ClienteTipoDoc = Convert.ToInt32(row.Cells(15).Value.ToString())
+                    ClienteTipoDoc = Convert.ToInt32(row.Cells(30).Value.ToString())
                     Select Case ClienteTipoDoc
                         Case 0
-                            NumeroDoc = "TipoDoc-" & row.Cells(16).Value.ToString()
+                            NumeroDoc = "TipoDoc-" & row.Cells(31).Value.ToString()
                         Case 1
-                            NumeroDoc = "DNI-" & row.Cells(16).Value.ToString()
+                            NumeroDoc = "DNI-" & row.Cells(31).Value.ToString()
                         Case 2
-                            NumeroDoc = "CE-" & row.Cells(16).Value.ToString()
+                            NumeroDoc = "CE-" & row.Cells(31).Value.ToString()
                         Case 3
-                            NumeroDoc = "PAS-" & row.Cells(16).Value.ToString()
+                            NumeroDoc = "PAS-" & row.Cells(31).Value.ToString()
                         Case 4
-                            NumeroDoc = "CEDULA-" & row.Cells(16).Value.ToString()
+                            NumeroDoc = "CEDULA-" & row.Cells(31).Value.ToString()
                     End Select
                     writer.Write(NumeroDoc)
                     writer.Write(",")
 
                     'Nombre
-                    Nombre = row.Cells(9).Value.ToString()
+                    Nombre = row.Cells(15).Value.ToString()
                     Nombre = Nombre.Replace(",", "")
                     writer.Write(Nombre)
                     writer.Write(",")
 
                     'Caja
-                    writer.Write(row.Cells(13).Value.ToString())
+                    writer.Write(row.Cells(29).Value.ToString())
                     writer.Write(",")
 
                     'Hora
-                    writer.Write(row.Cells(10).Value.ToString())
+                    writer.Write(row.Cells(17).Value.ToString())
                     writer.Write(",")
 
                     'Moneda
-                    Moneda = row.Cells(4).Value.ToString()
+                    Moneda = row.Cells(6).Value.ToString()
                     Select Case Moneda
                         Case "1"
                             writer.Write("S/.")
@@ -423,12 +432,12 @@ Public Class frmCajaBuscar
                     writer.Write(",")
 
                     'Monto
-                    Monto = row.Cells(11).Value.ToString()
+                    Monto = row.Cells(18).Value.ToString()
                     writer.Write(Monto.Replace(Moneda, ""))
                     writer.Write(",")
 
                     'Tipo Operacion
-                    TipoOp = Convert.ToInt32(row.Cells(7).Value.ToString())
+                    TipoOp = Convert.ToInt32(row.Cells(10).Value.ToString())
                     Select Case TipoOp
                         Case 1
                             TipoOpNombre = "Canje Dinero por Fichas"

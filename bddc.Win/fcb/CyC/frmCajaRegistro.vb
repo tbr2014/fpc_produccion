@@ -36,7 +36,7 @@
         Dim intResultado As Integer = Util.Enumeracion.enmResultadoOperacion.NONE
         Dim intUsuarioId As Integer = Util.Enumeracion.enmResultadoOperacion.NONE
         Dim OperacionFichaDenominacion As Decimal
-
+        Dim OperacionFichaMoneda As String
         Try
 
             If frmLogin.objColeccionFCB.objUsuBEC IsNot Nothing Then
@@ -86,12 +86,17 @@
                     End Select
 
                     OperacionFichaDenominacion = .OperacionFichaDenominacion
-                    Select Case .OperacionMontoMonedaId
-                        Case 1
-                            LblFichaTipoMoneda.Text = "S/. " + OperacionFichaDenominacion.ToString()
-                        Case 2
-                            LblFichaTipoMoneda.Text = "US$ 1000"
-                    End Select
+                    OperacionFichaMoneda = .OperacionFichaMoneda
+                    LblFichaTipoMoneda.Text = OperacionFichaMoneda + OperacionFichaDenominacion.ToString()
+
+                    'Select Case .OperacionMontoMonedaId
+                    '    Case 1
+
+
+                    '        LblFichaTipoMoneda.Text = "S/. " + OperacionFichaDenominacion.ToString()
+                    '    Case 2
+                    '        LblFichaTipoMoneda.Text = "US$ 1000"
+                    'End Select
 
                     txtTarjetaNum.Text = .OperacionTarjetaNum.Trim
                     txtCaja.Text = .OperacionCaja.Trim

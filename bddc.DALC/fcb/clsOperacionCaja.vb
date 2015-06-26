@@ -514,6 +514,7 @@ Namespace FCB
 
                         .OperacionTipoId = dato.EsNuloBD(dtsResultado.Tables(0).Rows(k)("OperacionTipoId"))
                         .OperacionTarjetaNum = dato.EsNuloBD(dtsResultado.Tables(0).Rows(k)("OperacionTarjetaNum"))
+                        .OperacionFichaMoneda = dato.EsNuloBD(dtsResultado.Tables(0).Rows(k)("OperacionFichaMoneda"))
                         .OperacionFichaCantidad = dato.EsNuloBD(dtsResultado.Tables(0).Rows(k)("OperacionFichaCantidad"))
                         .OperacionFichaDenominacion = dato.EsNuloBD(dtsResultado.Tables(0).Rows(k)("OperacionFichaDenominacion"))
                         .OperacionMaquinaNum = dato.EsNuloBD(dtsResultado.Tables(0).Rows(k)("OperacionMaquinaNum"))
