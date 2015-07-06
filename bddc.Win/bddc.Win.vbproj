@@ -205,22 +205,10 @@
     <Compile Include="com\ucFecha.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="crm\frmClienteBuscarT.Designer.vb">
-      <DependentUpon>frmClienteBuscarT.vb</DependentUpon>
-    </Compile>
-    <Compile Include="crm\frmClienteBuscarT.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="crm\frmClienteBuscar.Designer.vb">
       <DependentUpon>frmClienteBuscar.vb</DependentUpon>
     </Compile>
     <Compile Include="crm\frmClienteBuscar.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="crm\frmClienteBuscarL.Designer.vb">
-      <DependentUpon>frmClienteBuscarL.vb</DependentUpon>
-    </Compile>
-    <Compile Include="crm\frmClienteBuscarL.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="crm\frmClienteRegistro.Designer.vb">
@@ -681,14 +669,8 @@
       <DependentUpon>ucFecha.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="crm\frmClienteBuscarT.resx">
-      <DependentUpon>frmClienteBuscarT.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="crm\frmClienteBuscar.resx">
       <DependentUpon>frmClienteBuscar.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="crm\frmClienteBuscarL.resx">
-      <DependentUpon>frmClienteBuscarL.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="crm\frmClienteRegistro.resx">
       <DependentUpon>frmClienteRegistro.vb</DependentUpon>

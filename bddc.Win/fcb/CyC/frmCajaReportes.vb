@@ -12,28 +12,28 @@
 
     Private Sub ClienteBuscar()
         Try
-            Dim uni As Integer = StrComp(frmLogin.Unidad, "FIESTA CASINO BENAVIDES")
-            If uni = 0 Then
-                Dim objfrm As New frmClienteBuscar
+            'Dim uni As Integer = StrComp(frmLogin.Unidad, "FIESTA CASINO BENAVIDES")
+            'If uni = 0 Then
+            Dim objfrm As New frmClienteBuscar
 
-                objfrm.ShowDialog()
+            objfrm.ShowDialog()
 
-                If objfrm.intClienteId > 0 Then
-                    objBEC = New BEC.CLI.clsCliente
-                    objBEC.ClienteId = objfrm.intClienteId
-                    ClienteLeer(objBEC.ClienteId)
-                End If
-            Else
-                Dim objfrm As New frmClienteBuscarL
-
-                objfrm.ShowDialog()
-
-                If objfrm.intClienteId > 0 Then
-                    objBEC = New BEC.CLI.clsCliente
-                    objBEC.ClienteId = objfrm.intClienteId
-                    ClienteLeer(objBEC.ClienteId)
-                End If
+            If objfrm.intClienteId > 0 Then
+                objBEC = New BEC.CLI.clsCliente
+                objBEC.ClienteId = objfrm.intClienteId
+                ClienteLeer(objBEC.ClienteId)
             End If
+            'Else
+            'Dim objfrm As New frmClienteBuscarL
+
+            'objfrm.ShowDialog()
+
+            'If objfrm.intClienteId > 0 Then
+            '    objBEC = New BEC.CLI.clsCliente
+            '    objBEC.ClienteId = objfrm.intClienteId
+            '    ClienteLeer(objBEC.ClienteId)
+            'End If
+            'End If
             'txtCliente.Text = Fix(DateDiff(DateInterval.Day, CDate(Me.txtClienteFecNac.Text), Today) / 365) & " Años"  'dtpClienteFecNac.Value)
         Catch ex As Exception
             MsgBox(ex.Message)

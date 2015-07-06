@@ -220,7 +220,6 @@ Namespace FCB
             Dim arrParameter As New ArrayList
 
             Try
-
                 objBEC = New BEC.FCB.clsOperacionCaja
                 objBEC = obj
 
@@ -311,7 +310,6 @@ Namespace FCB
                     prmParameter(18).Value = .OperacionHora
 
                 End With
-
 
                 Select Case Unidad
                     Case "FIESTA CASINO BENAVIDES"

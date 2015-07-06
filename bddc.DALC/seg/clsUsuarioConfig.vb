@@ -218,7 +218,7 @@ Namespace SEG
                 prmParameter.Value = arrFiltro(0)
 
                 '2. Invocando al SP:
-                Dim uni As Integer = StrComp(Unidad, "FIESTA CASINO BENAVIDES")
+                'Dim uni As Integer = StrComp(Unidad, "FIESTA CASINO BENAVIDES")
 
                 Select Case Unidad
                     Case "FIESTA CASINO BENAVIDES"

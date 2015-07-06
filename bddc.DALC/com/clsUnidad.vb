@@ -24,10 +24,10 @@ Namespace COM
                 Util.Factory.ConfigOrigen = 1
                 CadenaConexion = Util.Factory.GetConexion
                 'PRODUCCION
-                'dtsResultado = MySqlHelper.ExecuteDataset(CadenaConexion, "call bdAuxiliar.spraux_unidad_listar ();")
+                dtsResultado = MySqlHelper.ExecuteDataset(CadenaConexion, "call bdAuxiliar.spraux_unidad_listar ();")
 
                 'PRUEBA
-                dtsResultado = MySqlHelper.ExecuteDataset(CadenaConexion, "call bdAuxiliar_test.spraux_unidad_listar ();")
+                'dtsResultado = MySqlHelper.ExecuteDataset(CadenaConexion, "call bdAuxiliar_test.spraux_unidad_listar ();")
 
                 If (dtsResultado.Tables(0).Rows.Count > 0) Then
                     ReDim arrResultado(dtsResultado.Tables(0).Rows.Count)
@@ -140,10 +140,10 @@ Namespace COM
                 Util.Factory.ConfigOrigen = 1
                 CadenaConexion = Util.Factory.GetConexion
                 'PRODUCCION
-                'dtsResultado = MySqlHelper.ExecuteDataset(CadenaConexion, "call bdAuxiliar.spraux_unidad_leer (?p_intUnidadId)", prmParameter)
+                dtsResultado = MySqlHelper.ExecuteDataset(CadenaConexion, "call bdAuxiliar.spraux_unidad_leer (?p_intUnidadId)", prmParameter)
 
                 'PRUEBAS
-                dtsResultado = MySqlHelper.ExecuteDataset(CadenaConexion, "call bdauxiliar_test.spraux_unidad_leer (?p_intUnidadId)", prmParameter)
+                'dtsResultado = MySqlHelper.ExecuteDataset(CadenaConexion, "call bdauxiliar_test.spraux_unidad_leer (?p_intUnidadId)", prmParameter)
 
                 If (dtsResultado.Tables(0).Rows.Count > 0) Then
 

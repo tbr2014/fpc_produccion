@@ -51,13 +51,11 @@ Public Class Factory
                 Case Enumeracion.enmConfigOrigen.FIESTACONFING
                     Return ConfigurationSettings.AppSettings("ConnectionStringFiesta")
                 Case Enumeracion.enmConfigOrigen.LUXORCONFING
-                    Return ConfigurationSettings.AppSettings("ConnectionString")
+                    Return ConfigurationSettings.AppSettings("ConnectionStringLuxor")
                 Case Enumeracion.enmConfigOrigen.TACNACONFING
                     Return ConfigurationSettings.AppSettings("ConnectionStringTacna")
                 Case Enumeracion.enmConfigOrigen.REGISTRY
                     Return ReadRegedit("ConnectionString")
-                Case Enumeracion.enmConfigOrigen.PRUEBA
-                    Return ConfigurationSettings.AppSettings("ConnectionStringPrueba")
                 Case Else
                     Return ConfigurationSettings.AppSettings("ConnectionString")
             End Select

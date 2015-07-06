@@ -68,25 +68,25 @@
 
     Private Sub btnBuscarClienteOrigen_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnBuscarClienteOrigen.Click
         Try
-            Dim uni As Integer = StrComp(frmLogin.Unidad, "FIESTA CASINO BENAVIDES")
-            If uni = 0 Then
-                Dim objfrm As New frmClienteBuscar
-                objfrm.ShowDialog()
+            'Dim uni As Integer = StrComp(frmLogin.Unidad, "FIESTA CASINO BENAVIDES")
+            'If uni = 0 Then
+            Dim objfrm As New frmClienteBuscar
+            objfrm.ShowDialog()
 
-                If objfrm.intClienteId > 0 Then
-                    intClienteOrigenId = objfrm.intClienteId
-                    ddlClienteOrigen.SelectedValue = intClienteOrigenId
-                End If
-
-            Else
-                Dim objfrm As New frmClienteBuscarL
-                objfrm.ShowDialog()
-
-                If objfrm.intClienteId > 0 Then
-                    intClienteOrigenId = objfrm.intClienteId
-                    ddlClienteOrigen.SelectedValue = intClienteOrigenId
-                End If
+            If objfrm.intClienteId > 0 Then
+                intClienteOrigenId = objfrm.intClienteId
+                ddlClienteOrigen.SelectedValue = intClienteOrigenId
             End If
+
+            'Else
+            'Dim objfrm As New frmClienteBuscarL
+            'objfrm.ShowDialog()
+
+            'If objfrm.intClienteId > 0 Then
+            '    intClienteOrigenId = objfrm.intClienteId
+            '    ddlClienteOrigen.SelectedValue = intClienteOrigenId
+            'End If
+            'End If
 
         Catch ex As Exception
             tsslblMensaje.Text = ex.Message
@@ -95,23 +95,23 @@
 
     Private Sub btnBuscarClienteDestino_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnBuscarClienteDestino.Click
         Try
-            Dim uni As Integer = StrComp(frmLogin.Unidad, "FIESTA CASINO BENAVIDES")
-            If uni = 0 Then
-                Dim objfrm As New frmClienteBuscar
-                objfrm.ShowDialog()
-                If objfrm.intClienteId > 0 Then
-                    intClienteDestinoId = objfrm.intClienteId
-                    ddlClienteDestino.SelectedValue = intClienteDestinoId
-                End If
-
-            Else
-                Dim objfrm As New frmClienteBuscarL
-                objfrm.ShowDialog()
-                If objfrm.intClienteId > 0 Then
-                    intClienteDestinoId = objfrm.intClienteId
-                    ddlClienteDestino.SelectedValue = intClienteDestinoId
-                End If
+            'Dim uni As Integer = StrComp(frmLogin.Unidad, "FIESTA CASINO BENAVIDES")
+            'If uni = 0 Then
+            Dim objfrm As New frmClienteBuscar
+            objfrm.ShowDialog()
+            If objfrm.intClienteId > 0 Then
+                intClienteDestinoId = objfrm.intClienteId
+                ddlClienteDestino.SelectedValue = intClienteDestinoId
             End If
+
+            'Else
+            'Dim objfrm As New frmClienteBuscarL
+            'objfrm.ShowDialog()
+            'If objfrm.intClienteId > 0 Then
+            '    intClienteDestinoId = objfrm.intClienteId
+            '    ddlClienteDestino.SelectedValue = intClienteDestinoId
+            'End If
+            'End If
 
         Catch ex As Exception
             tsslblMensaje.Text = ex.Message

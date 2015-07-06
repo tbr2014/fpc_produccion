@@ -18,8 +18,8 @@ Public Class frmLogin
     Public objPrincipal As frmPrincipal
     Public objCliReg As frmClienteRegistro
     Public objCliBus As frmClienteBuscar
-    Public objCliBus2 As frmClienteBuscarL
-    Public objCliBus3 As frmClienteBuscarT
+    'Public objCliBus2 As frmClienteBuscarL
+    'Public objCliBus3 As frmClienteBuscarT
     Public objRatReg As frmRatingRegistro
     Public objRptMesas As frmReportesMesas
     Public objRptMercadeo As frmReportesMercadeo

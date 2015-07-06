@@ -430,43 +430,43 @@ Public Class frmCajaRegistroOperador
 
     Private Sub btnClienteBuscar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnClienteBuscar.Click
         Try
-            Select Case frmLogin.Unidad
-                Case "FIESTA CASINO BENAVIDES"
-                    frmLogin.objCliBus = New frmClienteBuscar
-                    frmLogin.objCliBus.ShowDialog()
+            'Select Case frmLogin.Unidad
+            'Case "FIESTA CASINO BENAVIDES"
+            frmLogin.objCliBus = New frmClienteBuscar
+            frmLogin.objCliBus.ShowDialog()
 
-                    If frmLogin.objCliBus.intClienteId > 0 Then
-                        lblClienteId.Text = frmLogin.objCliBus.intClienteId
-                        ClienteLeer(lblClienteId.Text) 'Cargar datos
-                    End If
+            If frmLogin.objCliBus.intClienteId > 0 Then
+                lblClienteId.Text = frmLogin.objCliBus.intClienteId
+                ClienteLeer(lblClienteId.Text) 'Cargar datos
+            End If
 
-                Case "LUXOR LIMA CASINO"
-                    frmLogin.objCliBus2 = New frmClienteBuscarL
-                    frmLogin.objCliBus2.ShowDialog()
+            '    Case "LUXOR LIMA CASINO"
+            'frmLogin.objCliBus2 = New frmClienteBuscarL
+            'frmLogin.objCliBus2.ShowDialog()
 
-                    If frmLogin.objCliBus2.intClienteId > 0 Then
-                        lblClienteId.Text = frmLogin.objCliBus2.intClienteId
-                        ClienteLeer(lblClienteId.Text) 'Cargar datos
-                    End If
+            'If frmLogin.objCliBus2.intClienteId > 0 Then
+            '    lblClienteId.Text = frmLogin.objCliBus2.intClienteId
+            '    ClienteLeer(lblClienteId.Text) 'Cargar datos
+            'End If
 
-                Case "LUXOR TACNA"
-                    frmLogin.objCliBus3 = New frmClienteBuscarT
-                    frmLogin.objCliBus3.ShowDialog()
+            '    Case "LUXOR TACNA"
+            'frmLogin.objCliBus3 = New frmClienteBuscarT
+            'frmLogin.objCliBus3.ShowDialog()
 
-                    If frmLogin.objCliBus3.intClienteId > 0 Then
-                        lblClienteId.Text = frmLogin.objCliBus3.intClienteId
-                        ClienteLeer(lblClienteId.Text) 'Cargar datos
-                    End If
+            'If frmLogin.objCliBus3.intClienteId > 0 Then
+            '    lblClienteId.Text = frmLogin.objCliBus3.intClienteId
+            '    ClienteLeer(lblClienteId.Text) 'Cargar datos
+            'End If
 
-                Case "EMPRESA DE PRUEBA"
-                    frmLogin.objCliBus = New frmClienteBuscar
-                    frmLogin.objCliBus.ShowDialog()
+            '    Case "EMPRESA DE PRUEBA"
+            'frmLogin.objCliBus = New frmClienteBuscar
+            'frmLogin.objCliBus.ShowDialog()
 
-                    If frmLogin.objCliBus.intClienteId > 0 Then
-                        lblClienteId.Text = frmLogin.objCliBus.intClienteId
-                        ClienteLeer(lblClienteId.Text) 'Cargar datos
-                    End If
-            End Select
+            'If frmLogin.objCliBus.intClienteId > 0 Then
+            '    lblClienteId.Text = frmLogin.objCliBus.intClienteId
+            '    ClienteLeer(lblClienteId.Text) 'Cargar datos
+            'End If
+            'End Select
 
 
         Catch ex As Exception

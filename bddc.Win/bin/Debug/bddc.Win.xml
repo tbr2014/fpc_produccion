@@ -6,35 +6,19 @@ bddc.Win
 </name>
 </assembly>
 <members>
-<member name="T:bddc.Win.xmlOperacionCajaRegistro.rpOperacionCajaDataTable">
+<member name="T:bddc.Win.xmlClientePuntaje.rptClientePuntajeDataTable">
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
-</member><member name="T:bddc.Win.xmlOperacionCajaRegistro.rpOperacionCajaRow">
+</member><member name="T:bddc.Win.xmlClientePuntaje.rptClientePuntajeRow">
 	<summary>
 Represents strongly named DataRow class.
 </summary>
-</member><member name="T:bddc.Win.xmlOperacionCajaRegistro.rpOperacionCajaRowChangeEvent">
+</member><member name="T:bddc.Win.xmlClientePuntaje.rptClientePuntajeRowChangeEvent">
 	<summary>
 Row event argument class
 </summary>
-</member><member name="T:bddc.Win.xmlOperacionCajaRegistro">
-	<summary>
-Represents a strongly typed in-memory cache of data.
-</summary>
-</member><member name="T:bddc.Win.xmlRatingPit.rptRatingPitDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:bddc.Win.xmlRatingPit.rptRatingPitRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:bddc.Win.xmlRatingPit.rptRatingPitRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:bddc.Win.xmlRatingPit">
+</member><member name="T:bddc.Win.xmlClientePuntaje">
 	<summary>
 Represents a strongly typed in-memory cache of data.
 </summary>
@@ -101,6 +85,176 @@ Used to sort self-referenced table's rows
 </member><member name="T:bddc.Win.xmlCalendarioPuntajeTableAdapters.TableAdapterManager">
 	<summary>
 TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:bddc.Win.xmlWinLossAnual.winloss_añosDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:bddc.Win.xmlWinLossAnual.RatingTotal_xAñoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:bddc.Win.xmlWinLossAnual.winloss_añosRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:bddc.Win.xmlWinLossAnual.RatingTotal_xAñoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:bddc.Win.xmlWinLossAnual.winloss_añosRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:bddc.Win.xmlWinLossAnual.RatingTotal_xAñoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:bddc.Win.xmlWinLossAnual">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:bddc.Win.xmlWinLossAnualTableAdapters.winloss_añosTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:bddc.Win.xmlWinLossAnualTableAdapters.TableAdapterManager.UpdateUpdatedRows(bddc.Win.xmlWinLossAnual,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:bddc.Win.xmlWinLossAnualTableAdapters.TableAdapterManager.UpdateInsertedRows(bddc.Win.xmlWinLossAnual,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:bddc.Win.xmlWinLossAnualTableAdapters.TableAdapterManager.UpdateDeletedRows(bddc.Win.xmlWinLossAnual,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:bddc.Win.xmlWinLossAnualTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:bddc.Win.xmlWinLossAnualTableAdapters.TableAdapterManager.UpdateAll(bddc.Win.xmlWinLossAnual)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:bddc.Win.xmlWinLossAnualTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:bddc.Win.xmlWinLossAnualTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:bddc.Win.xmlWinLossAnualTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:bddc.Win.xmlRatingPit.rptRatingPitDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:bddc.Win.xmlRatingPit.rptRatingPitRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:bddc.Win.xmlRatingPit.rptRatingPitRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:bddc.Win.xmlRatingPit">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="M:bddc.Win.thlaadfs.wsSeguridad.#ctor">
+	<remarks/>
+</member><member name="E:bddc.Win.thlaadfs.wsSeguridad.HelloWorldCompleted">
+	<remarks/>
+</member><member name="E:bddc.Win.thlaadfs.wsSeguridad.IsAuthenticatedUserCompleted">
+	<remarks/>
+</member><member name="M:bddc.Win.thlaadfs.wsSeguridad.HelloWorld">
+	<remarks/>
+</member><member name="M:bddc.Win.thlaadfs.wsSeguridad.HelloWorldAsync">
+	<remarks/>
+</member><member name="M:bddc.Win.thlaadfs.wsSeguridad.HelloWorldAsync(System.Object)">
+	<remarks/>
+</member><member name="M:bddc.Win.thlaadfs.wsSeguridad.IsAuthenticatedUser(System.String,System.String)">
+	<remarks/>
+</member><member name="M:bddc.Win.thlaadfs.wsSeguridad.IsAuthenticatedUserAsync(System.String,System.String)">
+	<remarks/>
+</member><member name="M:bddc.Win.thlaadfs.wsSeguridad.IsAuthenticatedUserAsync(System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:bddc.Win.thlaadfs.wsSeguridad.CancelAsync(System.Object)">
+	<remarks/>
+</member><member name="T:bddc.Win.thlaadfs.wsSeguridad">
+	<remarks/>
+</member><member name="T:bddc.Win.thlaadfs.HelloWorldCompletedEventHandler">
+	<remarks/>
+</member><member name="P:bddc.Win.thlaadfs.HelloWorldCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:bddc.Win.thlaadfs.HelloWorldCompletedEventArgs">
+	<remarks/>
+</member><member name="T:bddc.Win.thlaadfs.IsAuthenticatedUserCompletedEventHandler">
+	<remarks/>
+</member><member name="P:bddc.Win.thlaadfs.IsAuthenticatedUserCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:bddc.Win.thlaadfs.IsAuthenticatedUserCompletedEventArgs">
+	<remarks/>
+</member><member name="T:bddc.Win.xmlOperacionCajaReporte.rpRetiroEfectivoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:bddc.Win.xmlOperacionCajaReporte.rpVentaFichaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:bddc.Win.xmlOperacionCajaReporte.rpPagoManualDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:bddc.Win.xmlOperacionCajaReporte.rpRetiroEfectivoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:bddc.Win.xmlOperacionCajaReporte.rpVentaFichaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:bddc.Win.xmlOperacionCajaReporte.rpPagoManualRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:bddc.Win.xmlOperacionCajaReporte.rpRetiroEfectivoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:bddc.Win.xmlOperacionCajaReporte.rpVentaFichaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:bddc.Win.xmlOperacionCajaReporte.rpPagoManualRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:bddc.Win.xmlOperacionCajaReporte">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:bddc.Win.xmlMesaOperacionFormato.dtDenominacionDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:bddc.Win.xmlMesaOperacionFormato.dtDenominacionRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:bddc.Win.xmlMesaOperacionFormato.dtDenominacionRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:bddc.Win.xmlMesaOperacionFormato">
+	<summary>
+Represents a strongly typed in-memory cache of data.
 </summary>
 </member><member name="P:bddc.Win.My.Resources.Resources.ResourceManager">
 	<summary>
@@ -275,19 +429,35 @@ TableAdapterManager is used to coordinate TableAdapters in the dataset to enable
 	<summary>
   A strongly-typed resource class, for looking up localized strings, etc.
 </summary>
-</member><member name="T:bddc.Win.xmlRatingDetalle.rptRatingDetalleDataTable">
+</member><member name="T:bddc.Win.xmlRatingTotal.rptRatingTotalDataTable">
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
-</member><member name="T:bddc.Win.xmlRatingDetalle.rptRatingDetalleRow">
+</member><member name="T:bddc.Win.xmlRatingTotal.rptRatingTotalRow">
 	<summary>
 Represents strongly named DataRow class.
 </summary>
-</member><member name="T:bddc.Win.xmlRatingDetalle.rptRatingDetalleRowChangeEvent">
+</member><member name="T:bddc.Win.xmlRatingTotal.rptRatingTotalRowChangeEvent">
 	<summary>
 Row event argument class
 </summary>
-</member><member name="T:bddc.Win.xmlRatingDetalle">
+</member><member name="T:bddc.Win.xmlRatingTotal">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:bddc.Win.xmlOperacionCajaRegistro.rpOperacionCajaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:bddc.Win.xmlOperacionCajaRegistro.rpOperacionCajaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:bddc.Win.xmlOperacionCajaRegistro.rpOperacionCajaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:bddc.Win.xmlOperacionCajaRegistro">
 	<summary>
 Represents a strongly typed in-memory cache of data.
 </summary>
@@ -663,191 +833,21 @@ Used to sort self-referenced table's rows
 	<summary>
 TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
 </summary>
-</member><member name="T:bddc.Win.xmlClientePuntaje.rptClientePuntajeDataTable">
+</member><member name="T:bddc.Win.xmlRatingDetalle.rptRatingDetalleDataTable">
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
-</member><member name="T:bddc.Win.xmlClientePuntaje.rptClientePuntajeRow">
+</member><member name="T:bddc.Win.xmlRatingDetalle.rptRatingDetalleRow">
 	<summary>
 Represents strongly named DataRow class.
 </summary>
-</member><member name="T:bddc.Win.xmlClientePuntaje.rptClientePuntajeRowChangeEvent">
+</member><member name="T:bddc.Win.xmlRatingDetalle.rptRatingDetalleRowChangeEvent">
 	<summary>
 Row event argument class
 </summary>
-</member><member name="T:bddc.Win.xmlClientePuntaje">
+</member><member name="T:bddc.Win.xmlRatingDetalle">
 	<summary>
 Represents a strongly typed in-memory cache of data.
-</summary>
-</member><member name="M:bddc.Win.thlaadfs.wsSeguridad.#ctor">
-	<remarks/>
-</member><member name="E:bddc.Win.thlaadfs.wsSeguridad.HelloWorldCompleted">
-	<remarks/>
-</member><member name="E:bddc.Win.thlaadfs.wsSeguridad.IsAuthenticatedUserCompleted">
-	<remarks/>
-</member><member name="M:bddc.Win.thlaadfs.wsSeguridad.HelloWorld">
-	<remarks/>
-</member><member name="M:bddc.Win.thlaadfs.wsSeguridad.HelloWorldAsync">
-	<remarks/>
-</member><member name="M:bddc.Win.thlaadfs.wsSeguridad.HelloWorldAsync(System.Object)">
-	<remarks/>
-</member><member name="M:bddc.Win.thlaadfs.wsSeguridad.IsAuthenticatedUser(System.String,System.String)">
-	<remarks/>
-</member><member name="M:bddc.Win.thlaadfs.wsSeguridad.IsAuthenticatedUserAsync(System.String,System.String)">
-	<remarks/>
-</member><member name="M:bddc.Win.thlaadfs.wsSeguridad.IsAuthenticatedUserAsync(System.String,System.String,System.Object)">
-	<remarks/>
-</member><member name="M:bddc.Win.thlaadfs.wsSeguridad.CancelAsync(System.Object)">
-	<remarks/>
-</member><member name="T:bddc.Win.thlaadfs.wsSeguridad">
-	<remarks/>
-</member><member name="T:bddc.Win.thlaadfs.HelloWorldCompletedEventHandler">
-	<remarks/>
-</member><member name="P:bddc.Win.thlaadfs.HelloWorldCompletedEventArgs.Result">
-	<remarks/>
-</member><member name="T:bddc.Win.thlaadfs.HelloWorldCompletedEventArgs">
-	<remarks/>
-</member><member name="T:bddc.Win.thlaadfs.IsAuthenticatedUserCompletedEventHandler">
-	<remarks/>
-</member><member name="P:bddc.Win.thlaadfs.IsAuthenticatedUserCompletedEventArgs.Result">
-	<remarks/>
-</member><member name="T:bddc.Win.thlaadfs.IsAuthenticatedUserCompletedEventArgs">
-	<remarks/>
-</member><member name="T:bddc.Win.xmlOperacionCajaReporte.rpRetiroEfectivoDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:bddc.Win.xmlOperacionCajaReporte.rpVentaFichaDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:bddc.Win.xmlOperacionCajaReporte.rpPagoManualDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:bddc.Win.xmlOperacionCajaReporte.rpRetiroEfectivoRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:bddc.Win.xmlOperacionCajaReporte.rpVentaFichaRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:bddc.Win.xmlOperacionCajaReporte.rpPagoManualRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:bddc.Win.xmlOperacionCajaReporte.rpRetiroEfectivoRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:bddc.Win.xmlOperacionCajaReporte.rpVentaFichaRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:bddc.Win.xmlOperacionCajaReporte.rpPagoManualRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:bddc.Win.xmlOperacionCajaReporte">
-	<summary>
-Represents a strongly typed in-memory cache of data.
-</summary>
-</member><member name="T:bddc.Win.xmlRatingTotal.rptRatingTotalDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:bddc.Win.xmlRatingTotal.rptRatingTotalRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:bddc.Win.xmlRatingTotal.rptRatingTotalRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:bddc.Win.xmlRatingTotal">
-	<summary>
-Represents a strongly typed in-memory cache of data.
-</summary>
-</member><member name="T:bddc.Win.xmlMesaOperacionFormato.dtDenominacionDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:bddc.Win.xmlMesaOperacionFormato.dtDenominacionRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:bddc.Win.xmlMesaOperacionFormato.dtDenominacionRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:bddc.Win.xmlMesaOperacionFormato">
-	<summary>
-Represents a strongly typed in-memory cache of data.
-</summary>
-</member><member name="T:bddc.Win.xmlWinLossAnual.winloss_añosDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:bddc.Win.xmlWinLossAnual.RatingTotal_xAñoDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:bddc.Win.xmlWinLossAnual.winloss_añosRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:bddc.Win.xmlWinLossAnual.RatingTotal_xAñoRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:bddc.Win.xmlWinLossAnual.winloss_añosRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:bddc.Win.xmlWinLossAnual.RatingTotal_xAñoRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:bddc.Win.xmlWinLossAnual">
-	<summary>
-Represents a strongly typed in-memory cache of data.
-</summary>
-</member><member name="T:bddc.Win.xmlWinLossAnualTableAdapters.winloss_añosTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="M:bddc.Win.xmlWinLossAnualTableAdapters.TableAdapterManager.UpdateUpdatedRows(bddc.Win.xmlWinLossAnual,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
-	<summary>
-Update rows in top-down order.
-</summary>
-</member><member name="M:bddc.Win.xmlWinLossAnualTableAdapters.TableAdapterManager.UpdateInsertedRows(bddc.Win.xmlWinLossAnual,System.Collections.Generic.List{System.Data.DataRow})">
-	<summary>
-Insert rows in top-down order.
-</summary>
-</member><member name="M:bddc.Win.xmlWinLossAnualTableAdapters.TableAdapterManager.UpdateDeletedRows(bddc.Win.xmlWinLossAnual,System.Collections.Generic.List{System.Data.DataRow})">
-	<summary>
-Delete rows in bottom-up order.
-</summary>
-</member><member name="M:bddc.Win.xmlWinLossAnualTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
-	<summary>
-Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
-</summary>
-</member><member name="M:bddc.Win.xmlWinLossAnualTableAdapters.TableAdapterManager.UpdateAll(bddc.Win.xmlWinLossAnual)">
-	<summary>
-Update all changes to the dataset.
-</summary>
-</member><member name="T:bddc.Win.xmlWinLossAnualTableAdapters.TableAdapterManager.UpdateOrderOption">
-	<summary>
-Update Order Option
-</summary>
-</member><member name="T:bddc.Win.xmlWinLossAnualTableAdapters.TableAdapterManager.SelfReferenceComparer">
-	<summary>
-Used to sort self-referenced table's rows
-</summary>
-</member><member name="T:bddc.Win.xmlWinLossAnualTableAdapters.TableAdapterManager">
-	<summary>
-TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
 </summary>
 </member>
 </members>
