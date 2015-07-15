@@ -26,22 +26,22 @@ Partial Class frmCajaReportes
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.btnReporteVentaFichas = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btn_temp2 = New System.Windows.Forms.Button()
+        Me.btn_temp = New System.Windows.Forms.Button()
         Me.btnReportePagosManuales = New System.Windows.Forms.Button()
         Me.btnReporteRetiroEfectivo = New System.Windows.Forms.Button()
         Me.btnVolver = New System.Windows.Forms.Button()
         Me.gbFechaRegistro = New System.Windows.Forms.GroupBox()
-        Me.ucFechaProcesoFin = New bddc.Win.ucFecha()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.ucFechaProcesoIni = New bddc.Win.ucFecha()
         Me.gbCaja = New System.Windows.Forms.GroupBox()
         Me.cboCaja = New System.Windows.Forms.ComboBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.btnBuscarUsuario = New System.Windows.Forms.Button()
         Me.txtCliente = New System.Windows.Forms.TextBox()
         Me.chkClientes = New System.Windows.Forms.CheckBox()
-        Me.btn_temp = New System.Windows.Forms.Button()
-        Me.btn_temp2 = New System.Windows.Forms.Button()
+        Me.ucFechaProcesoFin = New bddc.Win.ucFecha()
+        Me.ucFechaProcesoIni = New bddc.Win.ucFecha()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.gbFechaRegistro.SuspendLayout()
@@ -90,10 +90,30 @@ Partial Class frmCajaReportes
         Me.GroupBox1.Controls.Add(Me.btnReporteVentaFichas)
         Me.GroupBox1.Location = New System.Drawing.Point(12, 214)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(377, 134)
+        Me.GroupBox1.Size = New System.Drawing.Size(303, 134)
         Me.GroupBox1.TabIndex = 1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Reportes"
+        '
+        'btn_temp2
+        '
+        Me.btn_temp2.Location = New System.Drawing.Point(292, 71)
+        Me.btn_temp2.Name = "btn_temp2"
+        Me.btn_temp2.Size = New System.Drawing.Size(25, 23)
+        Me.btn_temp2.TabIndex = 4
+        Me.btn_temp2.Text = "Luxor Tacna"
+        Me.btn_temp2.UseVisualStyleBackColor = True
+        Me.btn_temp2.Visible = False
+        '
+        'btn_temp
+        '
+        Me.btn_temp.Location = New System.Drawing.Point(292, 46)
+        Me.btn_temp.Name = "btn_temp"
+        Me.btn_temp.Size = New System.Drawing.Size(25, 24)
+        Me.btn_temp.TabIndex = 3
+        Me.btn_temp.Text = "Luxor Lima"
+        Me.btn_temp.UseVisualStyleBackColor = True
+        Me.btn_temp.Visible = False
         '
         'btnReportePagosManuales
         '
@@ -118,7 +138,7 @@ Partial Class frmCajaReportes
         Me.btnVolver.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.btnVolver.BackgroundImage = Global.bddc.Win.My.Resources.Resources.btnSalida
         Me.btnVolver.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.btnVolver.Location = New System.Drawing.Point(342, 354)
+        Me.btnVolver.Location = New System.Drawing.Point(258, 354)
         Me.btnVolver.Name = "btnVolver"
         Me.btnVolver.Size = New System.Drawing.Size(47, 39)
         Me.btnVolver.TabIndex = 3
@@ -137,14 +157,6 @@ Partial Class frmCajaReportes
         Me.gbFechaRegistro.TabIndex = 2
         Me.gbFechaRegistro.TabStop = False
         Me.gbFechaRegistro.Text = "Fecha Registro"
-        '
-        'ucFechaProcesoFin
-        '
-        Me.ucFechaProcesoFin.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.ucFechaProcesoFin.Location = New System.Drawing.Point(135, 12)
-        Me.ucFechaProcesoFin.Name = "ucFechaProcesoFin"
-        Me.ucFechaProcesoFin.Size = New System.Drawing.Size(96, 25)
-        Me.ucFechaProcesoFin.TabIndex = 81
         '
         'Label3
         '
@@ -165,14 +177,6 @@ Partial Class frmCajaReportes
         Me.Label1.Size = New System.Drawing.Size(21, 13)
         Me.Label1.TabIndex = 79
         Me.Label1.Text = "De"
-        '
-        'ucFechaProcesoIni
-        '
-        Me.ucFechaProcesoIni.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.ucFechaProcesoIni.Location = New System.Drawing.Point(31, 12)
-        Me.ucFechaProcesoIni.Name = "ucFechaProcesoIni"
-        Me.ucFechaProcesoIni.Size = New System.Drawing.Size(96, 25)
-        Me.ucFechaProcesoIni.TabIndex = 78
         '
         'gbCaja
         '
@@ -239,29 +243,27 @@ Partial Class frmCajaReportes
         Me.chkClientes.Text = "Todos"
         Me.chkClientes.UseVisualStyleBackColor = True
         '
-        'btn_temp
+        'ucFechaProcesoFin
         '
-        Me.btn_temp.Location = New System.Drawing.Point(292, 46)
-        Me.btn_temp.Name = "btn_temp"
-        Me.btn_temp.Size = New System.Drawing.Size(79, 24)
-        Me.btn_temp.TabIndex = 3
-        Me.btn_temp.Text = "Luxor Lima"
-        Me.btn_temp.UseVisualStyleBackColor = True
+        Me.ucFechaProcesoFin.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.ucFechaProcesoFin.Location = New System.Drawing.Point(135, 12)
+        Me.ucFechaProcesoFin.Name = "ucFechaProcesoFin"
+        Me.ucFechaProcesoFin.Size = New System.Drawing.Size(96, 25)
+        Me.ucFechaProcesoFin.TabIndex = 81
         '
-        'btn_temp2
+        'ucFechaProcesoIni
         '
-        Me.btn_temp2.Location = New System.Drawing.Point(292, 71)
-        Me.btn_temp2.Name = "btn_temp2"
-        Me.btn_temp2.Size = New System.Drawing.Size(79, 23)
-        Me.btn_temp2.TabIndex = 4
-        Me.btn_temp2.Text = "Luxor Tacna"
-        Me.btn_temp2.UseVisualStyleBackColor = True
+        Me.ucFechaProcesoIni.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.ucFechaProcesoIni.Location = New System.Drawing.Point(31, 12)
+        Me.ucFechaProcesoIni.Name = "ucFechaProcesoIni"
+        Me.ucFechaProcesoIni.Size = New System.Drawing.Size(96, 25)
+        Me.ucFechaProcesoIni.TabIndex = 78
         '
         'frmCajaReportes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(401, 399)
+        Me.ClientSize = New System.Drawing.Size(330, 399)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.gbCaja)
         Me.Controls.Add(Me.gbFechaRegistro)

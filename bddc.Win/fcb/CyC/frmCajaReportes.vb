@@ -148,9 +148,11 @@
         Dim intTipoReporte As Integer = 0
 
         Dim strFichaDenominacion As String
-        If frmLogin.Unidad.CompareTo("FIESTA CASINO BENAVIDES") Then
+        Dim strUnidadCasino As String = frmLogin.Unidad
+
+        If strUnidadCasino.CompareTo("FIESTA CASINO BENAVIDES") = 0 Then
             strFichaDenominacion = Configuration.ConfigurationManager.AppSettings("FCB_VentaFicha")
-        ElseIf frmLogin.Unidad.CompareTo("LUXOR LIMA CASINO") Then
+        ElseIf strUnidadCasino.CompareTo("LUXOR LIMA CASINO") = 0 Then
             strFichaDenominacion = Configuration.ConfigurationManager.AppSettings("LIMA_VentaFicha")
         Else
             strFichaDenominacion = Configuration.ConfigurationManager.AppSettings("TACNA_VentaFicha")
