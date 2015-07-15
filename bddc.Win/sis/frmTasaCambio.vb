@@ -29,7 +29,7 @@
 
         frmLogin.ConfigurarBarraxPermisos(ToolStrip1, Util.Enumeracion.enmSEGModulos.MODTBL)
 
-        Me.Fiesta_tblaux_tipocambioTableAdapter.Fill(Me.BDClientesDataSet.Fiesta_tblaux_tipocambio)
+        'Me.Fiesta_tblaux_tipocambioTableAdapter.Fill(Me.BDClientesDataSet.Fiesta_tblaux_tipocambio)
 
         boolNuevo = False
     End Sub

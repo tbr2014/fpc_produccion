@@ -412,6 +412,12 @@
     <Compile Include="rpt\xmlWinLossAnual.vb">
       <DependentUpon>xmlWinLossAnual.xsd</DependentUpon>
     </Compile>
+    <Compile Include="sis\frmTasaCambio_Tacna.Designer.vb">
+      <DependentUpon>frmTasaCambio_Tacna.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sis\frmTasaCambio_Tacna.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="sis\frmSeg_Config_Mesas.Designer.vb">
       <DependentUpon>frmSeg_Config_Mesas.vb</DependentUpon>
     </Compile>
@@ -641,12 +647,6 @@
     <Compile Include="sis\frmTasaCambio_Prueba.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="sis\frmTasaCambio_Tacna.Designer.vb">
-      <DependentUpon>frmTasaCambio_Tacna.vb</DependentUpon>
-    </Compile>
-    <Compile Include="sis\frmTasaCambio_Tacna.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Web References\thlaadfs\Reference.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -783,6 +783,9 @@
       <LastGenOutput>crRatingTotal_Anual.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="rpt\RptBaccarat3.rdlc" />
+    <EmbeddedResource Include="sis\frmTasaCambio_Tacna.resx">
+      <DependentUpon>frmTasaCambio_Tacna.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="sis\frmSeg_Config_Mesas.resx">
       <DependentUpon>frmSeg_Config_Mesas.vb</DependentUpon>
     </EmbeddedResource>
@@ -902,9 +905,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="sis\frmTasaCambio_Prueba.resx">
       <DependentUpon>frmTasaCambio_Prueba.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="sis\frmTasaCambio_Tacna.resx">
-      <DependentUpon>frmTasaCambio_Tacna.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

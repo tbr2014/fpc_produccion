@@ -23,21 +23,6 @@ Partial Class frmTasaCambio_Tacna
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.txtDia = New System.Windows.Forms.Label()
-        Me.txtMes = New System.Windows.Forms.Label()
-        Me.txtAño = New System.Windows.Forms.Label()
-        Me.chkEstado = New System.Windows.Forms.CheckBox()
-        Me.txtTasa = New System.Windows.Forms.TextBox()
-        Me.dptFecha = New System.Windows.Forms.DateTimePicker()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.TacnatblauxtipocambioBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.BdClientesDataSet1 = New bddc.Win.BDClientesDataSet()
         Me.lblMensaje = New System.Windows.Forms.Label()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.tsbBuscar = New System.Windows.Forms.ToolStripButton()
@@ -47,166 +32,48 @@ Partial Class frmTasaCambio_Tacna
         Me.tsbEliminar = New System.Windows.Forms.ToolStripButton()
         Me.tsbImprimir = New System.Windows.Forms.ToolStripButton()
         Me.tsbSalir = New System.Windows.Forms.ToolStripButton()
-        Me.Tacna_tblaux_tipocambioTableAdapter = New bddc.Win.BDClientesDataSetTableAdapters.Tacna_tblaux_tipocambioTableAdapter()
-        Me.TableAdapterManager1 = New bddc.Win.BDClientesDataSetTableAdapters.TableAdapterManager()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.chkEstado = New System.Windows.Forms.CheckBox()
+        Me.BindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.BDClientesDataSet = New bddc.Win.BDClientesDataSet()
+        Me.txtTasa = New System.Windows.Forms.TextBox()
+        Me.dptFecha = New System.Windows.Forms.DateTimePicker()
+        Me.EstadoLabel = New System.Windows.Forms.Label()
+        Me.TasaLabel = New System.Windows.Forms.Label()
+        Me.FechaLabel = New System.Windows.Forms.Label()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.FechaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TasaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.FtdcyyyyDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.FtdcmmDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.FtdcddDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.EstadoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewCheckBoxColumn()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox1.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TacnatblauxtipocambioBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.BdClientesDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.txtDia = New System.Windows.Forms.TextBox()
+        Me.txtMes = New System.Windows.Forms.TextBox()
+        Me.txtAño = New System.Windows.Forms.TextBox()
+        Me.TableAdapterManager1 = New bddc.Win.BDClientesDataSetTableAdapters.TableAdapterManager()
+        Me.Tacna_tblaux_tipocambioTableAdapter1 = New bddc.Win.BDClientesDataSetTableAdapters.Tacna_tblaux_tipocambioTableAdapter()
         Me.ToolStrip1.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox1.SuspendLayout()
+        CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BDClientesDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox2.SuspendLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.bddc.Win.My.Resources.Resources.imgTipoCambio
-        Me.PictureBox1.Location = New System.Drawing.Point(12, 43)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(127, 93)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(147, 78)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(125, 17)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Tasa de Cambio"
-        '
-        'GroupBox1
-        '
-        Me.GroupBox1.Controls.Add(Me.txtDia)
-        Me.GroupBox1.Controls.Add(Me.txtMes)
-        Me.GroupBox1.Controls.Add(Me.txtAño)
-        Me.GroupBox1.Controls.Add(Me.chkEstado)
-        Me.GroupBox1.Controls.Add(Me.txtTasa)
-        Me.GroupBox1.Controls.Add(Me.dptFecha)
-        Me.GroupBox1.Controls.Add(Me.Label4)
-        Me.GroupBox1.Controls.Add(Me.Label3)
-        Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Location = New System.Drawing.Point(13, 142)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(352, 109)
-        Me.GroupBox1.TabIndex = 2
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Datos Generales"
-        '
-        'txtDia
-        '
-        Me.txtDia.AutoSize = True
-        Me.txtDia.Location = New System.Drawing.Point(174, 81)
-        Me.txtDia.Name = "txtDia"
-        Me.txtDia.Size = New System.Drawing.Size(0, 13)
-        Me.txtDia.TabIndex = 11
-        '
-        'txtMes
-        '
-        Me.txtMes.AutoSize = True
-        Me.txtMes.Location = New System.Drawing.Point(174, 53)
-        Me.txtMes.Name = "txtMes"
-        Me.txtMes.Size = New System.Drawing.Size(0, 13)
-        Me.txtMes.TabIndex = 10
-        '
-        'txtAño
-        '
-        Me.txtAño.AutoSize = True
-        Me.txtAño.Location = New System.Drawing.Point(171, 20)
-        Me.txtAño.Name = "txtAño"
-        Me.txtAño.Size = New System.Drawing.Size(0, 13)
-        Me.txtAño.TabIndex = 9
-        '
-        'chkEstado
-        '
-        Me.chkEstado.AutoSize = True
-        Me.chkEstado.Checked = True
-        Me.chkEstado.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.chkEstado.Location = New System.Drawing.Point(47, 83)
-        Me.chkEstado.Name = "chkEstado"
-        Me.chkEstado.Size = New System.Drawing.Size(15, 14)
-        Me.chkEstado.TabIndex = 8
-        Me.chkEstado.UseVisualStyleBackColor = True
-        '
-        'txtTasa
-        '
-        Me.txtTasa.Location = New System.Drawing.Point(47, 51)
-        Me.txtTasa.Name = "txtTasa"
-        Me.txtTasa.Size = New System.Drawing.Size(100, 20)
-        Me.txtTasa.TabIndex = 7
-        '
-        'dptFecha
-        '
-        Me.dptFecha.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dptFecha.Location = New System.Drawing.Point(47, 25)
-        Me.dptFecha.Name = "dptFecha"
-        Me.dptFecha.Size = New System.Drawing.Size(102, 20)
-        Me.dptFecha.TabIndex = 6
-        Me.dptFecha.Value = New Date(2013, 8, 13, 14, 17, 41, 0)
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(7, 82)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(40, 13)
-        Me.Label4.TabIndex = 2
-        Me.Label4.Text = "Estado"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(7, 54)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(31, 13)
-        Me.Label3.TabIndex = 1
-        Me.Label3.Text = "Tasa"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(6, 31)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(37, 13)
-        Me.Label2.TabIndex = 0
-        Me.Label2.Text = "Fecha"
-        '
-        'DataGridView1
-        '
-        Me.DataGridView1.AutoGenerateColumns = False
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.FechaDataGridViewTextBoxColumn, Me.TasaDataGridViewTextBoxColumn, Me.FtdcyyyyDataGridViewTextBoxColumn, Me.FtdcmmDataGridViewTextBoxColumn, Me.FtdcddDataGridViewTextBoxColumn, Me.EstadoDataGridViewTextBoxColumn})
-        Me.DataGridView1.DataSource = Me.TacnatblauxtipocambioBindingSource
-        Me.DataGridView1.Location = New System.Drawing.Point(13, 257)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(352, 203)
-        Me.DataGridView1.TabIndex = 3
-        '
-        'TacnatblauxtipocambioBindingSource
-        '
-        Me.TacnatblauxtipocambioBindingSource.DataMember = "Tacna_tblaux_tipocambio"
-        Me.TacnatblauxtipocambioBindingSource.DataSource = Me.BdClientesDataSet1
-        '
-        'BdClientesDataSet1
-        '
-        Me.BdClientesDataSet1.DataSetName = "BDClientesDataSet"
-        Me.BdClientesDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'lblMensaje
         '
         Me.lblMensaje.AutoSize = True
+        Me.lblMensaje.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMensaje.ForeColor = System.Drawing.Color.DimGray
         Me.lblMensaje.Location = New System.Drawing.Point(12, 465)
         Me.lblMensaje.Name = "lblMensaje"
-        Me.lblMensaje.Size = New System.Drawing.Size(64, 13)
-        Me.lblMensaje.TabIndex = 4
+        Me.lblMensaje.Size = New System.Drawing.Size(74, 13)
+        Me.lblMensaje.TabIndex = 74
         Me.lblMensaje.Text = "<Mensajes>"
         '
         'ToolStrip1
@@ -217,7 +84,7 @@ Partial Class frmTasaCambio_Tacna
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip1.Name = "ToolStrip1"
         Me.ToolStrip1.Size = New System.Drawing.Size(377, 31)
-        Me.ToolStrip1.TabIndex = 76
+        Me.ToolStrip1.TabIndex = 75
         Me.ToolStrip1.Text = "ToolStrip1"
         '
         'tsbBuscar
@@ -258,13 +125,11 @@ Partial Class frmTasaCambio_Tacna
         '
         'tsbEliminar
         '
-        Me.tsbEliminar.Enabled = False
         Me.tsbEliminar.Image = Global.bddc.Win.My.Resources.Resources.btngridBorrar
         Me.tsbEliminar.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.tsbEliminar.Name = "tsbEliminar"
         Me.tsbEliminar.Size = New System.Drawing.Size(78, 28)
         Me.tsbEliminar.Text = "Eliminar"
-        Me.tsbEliminar.Visible = False
         '
         'tsbImprimir
         '
@@ -284,29 +149,132 @@ Partial Class frmTasaCambio_Tacna
         Me.tsbSalir.Size = New System.Drawing.Size(57, 28)
         Me.tsbSalir.Text = "Salir"
         '
-        'Tacna_tblaux_tipocambioTableAdapter
+        'Label2
         '
-        Me.Tacna_tblaux_tipocambioTableAdapter.ClearBeforeFill = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(72, 59)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(124, 26)
+        Me.Label2.TabIndex = 76
+        Me.Label2.Text = "Tasa de Cambio"
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'TableAdapterManager1
+        'PictureBox2
         '
-        Me.TableAdapterManager1.BackupDataSetBeforeUpdate = False
-        Me.TableAdapterManager1.Fiesta_tblaux_tipocambioTableAdapter = Nothing
-        Me.TableAdapterManager1.Fiesta_tblbdd_clienteBusquedaTableAdapter = Nothing
-        Me.TableAdapterManager1.Fiesta_tblbdd_clienteTableAdapter = Nothing
-        Me.TableAdapterManager1.Fiesta_tblbdd_consumo_ttrTableAdapter = Nothing
-        Me.TableAdapterManager1.Fiesta_tblfjm_grupoclientebaccaratTableAdapter = Nothing
-        Me.TableAdapterManager1.Fiesta_tblttr_cliente_consumoTableAdapter = Nothing
-        Me.TableAdapterManager1.Luxor_tblaux_tipocambioTableAdapter = Nothing
-        Me.TableAdapterManager1.Luxor_tblbdd_clienteBusquedaTableAdapter = Nothing
-        Me.TableAdapterManager1.Luxor_tblbdd_clienteTableAdapter = Nothing
-        Me.TableAdapterManager1.Luxor_tblbdd_consumo_ttrTableAdapter = Nothing
-        Me.TableAdapterManager1.Luxor_tbllim_grupoclientebaccaratTableAdapter = Nothing
-        Me.TableAdapterManager1.Luxor_tblttr_cliente_consumoTableAdapter = Nothing
-        Me.TableAdapterManager1.Prueba_tblaux_tipocambioTableAdapter = Nothing
-        Me.TableAdapterManager1.Tacna_tblaux_tipocambioTableAdapter = Me.Tacna_tblaux_tipocambioTableAdapter
-        Me.TableAdapterManager1.Tacna_tblbdd_clienteBusquedaTableAdapter = Nothing
-        Me.TableAdapterManager1.UpdateOrder = bddc.Win.BDClientesDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox2.Image = Global.bddc.Win.My.Resources.Resources.imgTipoCambio
+        Me.PictureBox2.Location = New System.Drawing.Point(12, 44)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(59, 57)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 77
+        Me.PictureBox2.TabStop = False
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.chkEstado)
+        Me.GroupBox1.Controls.Add(Me.txtTasa)
+        Me.GroupBox1.Controls.Add(Me.dptFecha)
+        Me.GroupBox1.Controls.Add(Me.EstadoLabel)
+        Me.GroupBox1.Controls.Add(Me.TasaLabel)
+        Me.GroupBox1.Controls.Add(Me.FechaLabel)
+        Me.GroupBox1.Location = New System.Drawing.Point(13, 108)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(351, 108)
+        Me.GroupBox1.TabIndex = 78
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Datos Generales"
+        '
+        'chkEstado
+        '
+        Me.chkEstado.AutoSize = True
+        Me.chkEstado.Checked = True
+        Me.chkEstado.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.chkEstado.DataBindings.Add(New System.Windows.Forms.Binding("CheckState", Me.BindingSource1, "Estado", True))
+        Me.chkEstado.Location = New System.Drawing.Point(54, 80)
+        Me.chkEstado.Name = "chkEstado"
+        Me.chkEstado.Size = New System.Drawing.Size(15, 14)
+        Me.chkEstado.TabIndex = 5
+        Me.chkEstado.UseVisualStyleBackColor = True
+        '
+        'BindingSource1
+        '
+        Me.BindingSource1.DataMember = "Tacna_tblaux_tipocambio"
+        Me.BindingSource1.DataSource = Me.BDClientesDataSet
+        '
+        'BDClientesDataSet
+        '
+        Me.BDClientesDataSet.DataSetName = "BDClientesDataSet"
+        Me.BDClientesDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'txtTasa
+        '
+        Me.txtTasa.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.BindingSource1, "Tasa", True))
+        Me.txtTasa.Location = New System.Drawing.Point(54, 51)
+        Me.txtTasa.Name = "txtTasa"
+        Me.txtTasa.Size = New System.Drawing.Size(100, 20)
+        Me.txtTasa.TabIndex = 4
+        '
+        'dptFecha
+        '
+        Me.dptFecha.DataBindings.Add(New System.Windows.Forms.Binding("Value", Me.BindingSource1, "Fecha", True))
+        Me.dptFecha.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.dptFecha.Location = New System.Drawing.Point(54, 25)
+        Me.dptFecha.Name = "dptFecha"
+        Me.dptFecha.Size = New System.Drawing.Size(102, 20)
+        Me.dptFecha.TabIndex = 3
+        Me.dptFecha.Value = New Date(2013, 8, 13, 14, 17, 41, 0)
+        '
+        'EstadoLabel
+        '
+        Me.EstadoLabel.AutoSize = True
+        Me.EstadoLabel.Location = New System.Drawing.Point(10, 80)
+        Me.EstadoLabel.Name = "EstadoLabel"
+        Me.EstadoLabel.Size = New System.Drawing.Size(40, 13)
+        Me.EstadoLabel.TabIndex = 2
+        Me.EstadoLabel.Text = "Estado"
+        '
+        'TasaLabel
+        '
+        Me.TasaLabel.AutoSize = True
+        Me.TasaLabel.Location = New System.Drawing.Point(10, 51)
+        Me.TasaLabel.Name = "TasaLabel"
+        Me.TasaLabel.Size = New System.Drawing.Size(31, 13)
+        Me.TasaLabel.TabIndex = 1
+        Me.TasaLabel.Text = "Tasa"
+        '
+        'FechaLabel
+        '
+        Me.FechaLabel.AutoSize = True
+        Me.FechaLabel.Location = New System.Drawing.Point(10, 25)
+        Me.FechaLabel.Name = "FechaLabel"
+        Me.FechaLabel.Size = New System.Drawing.Size(37, 13)
+        Me.FechaLabel.TabIndex = 0
+        Me.FechaLabel.Text = "Fecha"
+        '
+        'GroupBox2
+        '
+        Me.GroupBox2.Controls.Add(Me.DataGridView1)
+        Me.GroupBox2.Controls.Add(Me.txtDia)
+        Me.GroupBox2.Controls.Add(Me.txtMes)
+        Me.GroupBox2.Controls.Add(Me.txtAño)
+        Me.GroupBox2.Location = New System.Drawing.Point(13, 223)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(357, 239)
+        Me.GroupBox2.TabIndex = 79
+        Me.GroupBox2.TabStop = False
+        '
+        'DataGridView1
+        '
+        Me.DataGridView1.AutoGenerateColumns = False
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.FechaDataGridViewTextBoxColumn, Me.TasaDataGridViewTextBoxColumn, Me.FtdcyyyyDataGridViewTextBoxColumn, Me.FtdcmmDataGridViewTextBoxColumn, Me.FtdcddDataGridViewTextBoxColumn, Me.EstadoDataGridViewTextBoxColumn})
+        Me.DataGridView1.DataSource = Me.BindingSource1
+        Me.DataGridView1.Location = New System.Drawing.Point(7, 20)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.Size = New System.Drawing.Size(344, 213)
+        Me.DataGridView1.TabIndex = 0
         '
         'FechaDataGridViewTextBoxColumn
         '
@@ -349,38 +317,89 @@ Partial Class frmTasaCambio_Tacna
         Me.EstadoDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
         Me.EstadoDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
         '
-        'frmTasaCambio_Tacna
+        'txtDia
+        '
+        Me.txtDia.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.txtDia.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.BindingSource1, "ftdc_dd", True))
+        Me.txtDia.Location = New System.Drawing.Point(222, 107)
+        Me.txtDia.Name = "txtDia"
+        Me.txtDia.Size = New System.Drawing.Size(100, 20)
+        Me.txtDia.TabIndex = 82
+        Me.txtDia.TabStop = False
+        '
+        'txtMes
+        '
+        Me.txtMes.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.txtMes.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.BindingSource1, "ftdc_mm", True))
+        Me.txtMes.Location = New System.Drawing.Point(222, 86)
+        Me.txtMes.Name = "txtMes"
+        Me.txtMes.Size = New System.Drawing.Size(100, 20)
+        Me.txtMes.TabIndex = 81
+        Me.txtMes.TabStop = False
+        '
+        'txtAño
+        '
+        Me.txtAño.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.txtAño.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.BindingSource1, "ftdc_yyyy", True))
+        Me.txtAño.Location = New System.Drawing.Point(222, 62)
+        Me.txtAño.Name = "txtAño"
+        Me.txtAño.Size = New System.Drawing.Size(100, 20)
+        Me.txtAño.TabIndex = 80
+        Me.txtAño.TabStop = False
+        '
+        'TableAdapterManager1
+        '
+        Me.TableAdapterManager1.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager1.Fiesta_tblaux_tipocambioTableAdapter = Nothing
+        Me.TableAdapterManager1.Fiesta_tblbdd_clienteBusquedaTableAdapter = Nothing
+        Me.TableAdapterManager1.Fiesta_tblbdd_clienteTableAdapter = Nothing
+        Me.TableAdapterManager1.Fiesta_tblbdd_consumo_ttrTableAdapter = Nothing
+        Me.TableAdapterManager1.Fiesta_tblfjm_grupoclientebaccaratTableAdapter = Nothing
+        Me.TableAdapterManager1.Fiesta_tblttr_cliente_consumoTableAdapter = Nothing
+        Me.TableAdapterManager1.Luxor_tblaux_tipocambioTableAdapter = Nothing
+        Me.TableAdapterManager1.Luxor_tblbdd_clienteBusquedaTableAdapter = Nothing
+        Me.TableAdapterManager1.Luxor_tblbdd_clienteTableAdapter = Nothing
+        Me.TableAdapterManager1.Luxor_tblbdd_consumo_ttrTableAdapter = Nothing
+        Me.TableAdapterManager1.Luxor_tbllim_grupoclientebaccaratTableAdapter = Nothing
+        Me.TableAdapterManager1.Luxor_tblttr_cliente_consumoTableAdapter = Nothing
+        Me.TableAdapterManager1.Prueba_tblaux_tipocambioTableAdapter = Nothing
+        Me.TableAdapterManager1.Tacna_tblaux_tipocambioTableAdapter = Me.Tacna_tblaux_tipocambioTableAdapter1
+        Me.TableAdapterManager1.Tacna_tblbdd_clienteBusquedaTableAdapter = Nothing
+        Me.TableAdapterManager1.UpdateOrder = bddc.Win.BDClientesDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        '
+        'Tacna_tblaux_tipocambioTableAdapter1
+        '
+        Me.Tacna_tblaux_tipocambioTableAdapter1.ClearBeforeFill = True
+        '
+        'frmTasaCambio_prueba
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(377, 485)
+        Me.Controls.Add(Me.GroupBox2)
+        Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.ToolStrip1)
         Me.Controls.Add(Me.lblMensaje)
-        Me.Controls.Add(Me.DataGridView1)
-        Me.Controls.Add(Me.GroupBox1)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.PictureBox1)
         Me.Name = "frmTasaCambio_Tacna"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Tasa de Cambio"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TacnatblauxtipocambioBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.BdClientesDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ToolStrip1.ResumeLayout(False)
         Me.ToolStrip1.PerformLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
+        CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BDClientesDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox2.PerformLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
-    Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
-    Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
+
     Friend WithEvents lblMensaje As System.Windows.Forms.Label
     Friend WithEvents ToolStrip1 As System.Windows.Forms.ToolStrip
     Friend WithEvents tsbBuscar As System.Windows.Forms.ToolStripButton
@@ -390,20 +409,28 @@ Partial Class frmTasaCambio_Tacna
     Friend WithEvents tsbEliminar As System.Windows.Forms.ToolStripButton
     Friend WithEvents tsbImprimir As System.Windows.Forms.ToolStripButton
     Friend WithEvents tsbSalir As System.Windows.Forms.ToolStripButton
-    Friend WithEvents dptFecha As System.Windows.Forms.DateTimePicker
-    Friend WithEvents txtTasa As System.Windows.Forms.TextBox
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
+    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents chkEstado As System.Windows.Forms.CheckBox
-    Friend WithEvents BdClientesDataSet1 As bddc.Win.BDClientesDataSet
-    Friend WithEvents TacnatblauxtipocambioBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents Tacna_tblaux_tipocambioTableAdapter As bddc.Win.BDClientesDataSetTableAdapters.Tacna_tblaux_tipocambioTableAdapter
+    Friend WithEvents txtTasa As System.Windows.Forms.TextBox
+    Friend WithEvents dptFecha As System.Windows.Forms.DateTimePicker
+    Friend WithEvents EstadoLabel As System.Windows.Forms.Label
+    Friend WithEvents TasaLabel As System.Windows.Forms.Label
+    Friend WithEvents FechaLabel As System.Windows.Forms.Label
+    Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
+    Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
+    Friend WithEvents BDClientesDataSet As bddc.Win.BDClientesDataSet
+    Friend WithEvents txtAño As System.Windows.Forms.TextBox
+    Friend WithEvents txtMes As System.Windows.Forms.TextBox
+    Friend WithEvents txtDia As System.Windows.Forms.TextBox
+    Friend WithEvents BindingSource1 As System.Windows.Forms.BindingSource
     Friend WithEvents TableAdapterManager1 As bddc.Win.BDClientesDataSetTableAdapters.TableAdapterManager
-    Friend WithEvents txtAño As System.Windows.Forms.Label
-    Friend WithEvents txtMes As System.Windows.Forms.Label
-    Friend WithEvents txtDia As System.Windows.Forms.Label
     Friend WithEvents FechaDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents TasaDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents FtdcyyyyDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents FtdcmmDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents FtdcddDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents EstadoDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewCheckBoxColumn
+    Friend WithEvents Tacna_tblaux_tipocambioTableAdapter1 As bddc.Win.BDClientesDataSetTableAdapters.Tacna_tblaux_tipocambioTableAdapter
 End Class

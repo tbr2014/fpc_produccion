@@ -3,7 +3,6 @@
 Public Class frmTasaCambio_Tacna
 
     Dim boolNuevo As Boolean
-    Private objDALC As DALC.COM.clsTipoCambio
 
 #Region "Operaciones"
 
@@ -11,7 +10,7 @@ Public Class frmTasaCambio_Tacna
         Try
 
             If dptFecha.Text = "" Then MsgBox("Debe ingresar la fecha. ", MsgBoxStyle.Critical) : dptFecha.Focus() : Exit Sub
-            'If txtTasa.Text = "" Then MsgBox("Debe ingresar la tasa de cambio. ", MsgBoxStyle.Critical) : txtTasa.Focus() : Exit Sub
+            If txtTasa.Text = "" Then MsgBox("Debe ingresar la tasa de cambio. ", MsgBoxStyle.Critical) : txtTasa.Focus() : Exit Sub
 
             Me.dptFecha.Value = Me.dptFecha.Text
             Me.txtAño.Text = CDate(Me.dptFecha.Text).Year
@@ -19,35 +18,25 @@ Public Class frmTasaCambio_Tacna
             Me.txtDia.Text = CDate(Me.dptFecha.Text).Day
 
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         End Try
     End Sub
 
 #End Region
 
-    Private Sub frmTasaCambio_Tacna_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        Me.Tacna_tblaux_tipocambioTableAdapter.Fill(Me.BdClientesDataSet1.Tacna_tblaux_tipocambio)
+    Private Sub frmTasaCambio_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the 'BDClientesDataSet.Tacna_tblaux_tipocambio' table. You can move, or remove it, as needed.
+        Me.Tacna_tblaux_tipocambioTableAdapter1.Fill(Me.BDClientesDataSet.Tacna_tblaux_tipocambio)
+
         frmLogin.ConfigurarBarraxPermisos(ToolStrip1, Util.Enumeracion.enmSEGModulos.MODTBL)
-
-        'objDALC = New DALC.COM.clsTipoCambio
-
-        'Dim dt As DataSet
-        'dt = objDALC.Leer2()
-
-        'Dim dttable As DataTable
-        'dttable = dt.Tables(0)
-
-        'DataGridView1.DataSource = dttable
-
-        dptFecha.Value = DateTime.Today()
-
+        'dptFecha.Value = DateTime.Today()
         boolNuevo = False
     End Sub
 
     Private Sub TipoCambioBindingNavigatorSaveItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Me.Validate()
-        Me.TacnatblauxtipocambioBindingSource.EndEdit()
-        'Me.TableAdapterManager1.UpdateAll(Me.BdClientesDataSet1)
+        Me.BindingSource1.EndEdit()
+        Me.TableAdapterManager1.UpdateAll(Me.BDClientesDataSet)
     End Sub
 
     Private Sub tsbGuardar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles tsbGuardar.Click
@@ -63,15 +52,15 @@ Public Class frmTasaCambio_Tacna
 
             ValidarRegistros()
 
-            Me.TacnatblauxtipocambioBindingSource.MoveNext()
-            Me.TacnatblauxtipocambioBindingSource.MovePrevious()
+            Me.BindingSource1.MoveNext()
+            Me.BindingSource1.MovePrevious()
 
-            Me.Tacna_tblaux_tipocambioTableAdapter.Update(BdClientesDataSet1.Tacna_tblaux_tipocambio)
+            Me.Tacna_tblaux_tipocambioTableAdapter1.Update(BDClientesDataSet.Tacna_tblaux_tipocambio)
 
             If boolNuevo Then
                 frmLogin.objColeccionFCB.objAuditoria = New DALC.SEG.clsUsuarioEvento(intUsuarioId, Util.Enumeracion.enmTipoAccion.Create, Util.Constante.Sistema._MODTBL & "->" & Me.Name, Environment.MachineName, frmLogin.objColeccionFCB.objUsuUndBEC.UnidadId, frmLogin.Unidad)
-                Me.BdClientesDataSet1.Fiesta_tblaux_tipocambio.Clear()
-                Me.Tacna_tblaux_tipocambioTableAdapter.Fill(Me.BdClientesDataSet1.Tacna_tblaux_tipocambio)
+                Me.BDClientesDataSet.Prueba_tblaux_tipocambio.Clear()
+                Me.Tacna_tblaux_tipocambioTableAdapter1.Fill(Me.BDClientesDataSet.Tacna_tblaux_tipocambio)
             Else
                 frmLogin.objColeccionFCB.objAuditoria = New DALC.SEG.clsUsuarioEvento(intUsuarioId, Util.Enumeracion.enmTipoAccion.Update, Util.Constante.Sistema._MODTBL & "->" & Me.Name, Environment.MachineName, frmLogin.objColeccionFCB.objUsuUndBEC.UnidadId, frmLogin.Unidad)
             End If
@@ -80,18 +69,6 @@ Public Class frmTasaCambio_Tacna
 
             lblMensaje.ForeColor = Color.Blue
             lblMensaje.Text = Util.Constante.Ope_OperacionOK
-
-
-            'Dim rate As Tacna_tblaux_tipocambioTableAdapter
-            'rate = New Tacna_tblaux_tipocambioTableAdapter()
-
-            'For Each row As DataGridViewRow In DataGridView1.Rows
-
-            '    row.Cells(1).ToString()
-            '    row.Cells(2).ToString()
-            '    row.Cells(3).ToString()
-
-            'Next
 
         Catch ex As Exception
             lblMensaje.ForeColor = Color.Red
@@ -106,7 +83,7 @@ Public Class frmTasaCambio_Tacna
             lblMensaje.Text = "<Message>"
 
             boolNuevo = True
-            Me.TacnatblauxtipocambioBindingSource.AddNew()
+            Me.BindingSource1.AddNew()
             'Me.txtTasa.Text = 1
             chkEstado.CheckState = CheckState.Checked
             Me.dptFecha.Focus()
@@ -114,7 +91,7 @@ Public Class frmTasaCambio_Tacna
         Catch ex As Exception
 
             boolNuevo = False
-            Me.TacnatblauxtipocambioBindingSource.CancelEdit()
+            Me.BindingSource1.CancelEdit()
             lblMensaje.ForeColor = Color.Red
             lblMensaje.Text = "Error: " & ex.Message
 
@@ -140,11 +117,38 @@ Public Class frmTasaCambio_Tacna
 
     Private Sub dgTipoCambio_DataError(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewDataErrorEventArgs)
         boolNuevo = False
-        Me.TacnatblauxtipocambioBindingSource.CancelEdit()
+        Me.BindingSource1.CancelEdit()
         lblMensaje.ForeColor = Color.Red
         lblMensaje.Text = Util.Constante.Ope_OperacionERR & " Fue cancelada. "
-
     End Sub
 
+    Private Sub tsbEliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles tsbEliminar.Click
+        Try
+            If MsgBox(Util.Constante.Msg_ConfEliminar, MsgBoxStyle.YesNo, Util.Constante.Msj_SistemaTitulo) <> 6 Then Exit Sub
+
+            lblMensaje.Text = String.Empty
+
+            Dim intUsuarioId As Integer = Util.Enumeracion.enmResultadoOperacion.NONE
+            If frmLogin.objColeccionFCB.objUsuBEC IsNot Nothing Then
+                intUsuarioId = frmLogin.objColeccionFCB.objUsuBEC.UsuarioId
+            Else
+                Throw New DataException(Util.Constante.Acc_SesionERR)
+            End If
+
+            ValidarRegistros()
+
+            Me.Tacna_tblaux_tipocambioTableAdapter1.DeleteTasaCambio(Convert.ToInt32(Me.txtAño.Text), Convert.ToInt32(Me.txtMes.Text), Convert.ToInt32(Me.txtDia.Text))
+
+            frmLogin.objColeccionFCB.objAuditoria = New DALC.SEG.clsUsuarioEvento(intUsuarioId, Util.Enumeracion.enmTipoAccion.Delete, Util.Constante.Sistema._MODTBL & "->" & Me.Name, Environment.MachineName, frmLogin.objColeccionFCB.objUsuUndBEC.UnidadId, frmLogin.Unidad)
+            Me.BDClientesDataSet.Prueba_tblaux_tipocambio.Clear()
+            Me.Tacna_tblaux_tipocambioTableAdapter1.Fill(Me.BDClientesDataSet.Tacna_tblaux_tipocambio)
+
+            lblMensaje.ForeColor = Color.Blue
+            lblMensaje.Text = Util.Constante.Ope_OperacionOK
+
+        Catch ex As Exception
+            lblMensaje.Text = ex.Message
+        End Try
+    End Sub
 
 End Class

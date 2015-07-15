@@ -2282,6 +2282,7 @@ C:\FPC PRODUCCION\bddc\bddc.Win\obj\Debug\bddc.Win.frmCambioPassword.resources
 C:\FPC PRODUCCION\bddc\bddc.Win\obj\Debug\bddc.Win.frmPrincipal2.resources
 C:\FPC PRODUCCION\bddc\bddc.Win\obj\Debug\bddc.Win.frmRptClientes_Promociones.resources
 C:\FPC PRODUCCION\bddc\bddc.Win\obj\Debug\bddc.Win.frmReportesMercadeo.resources
+C:\FPC PRODUCCION\bddc\bddc.Win\obj\Debug\bddc.Win.frmTasaCambio_Tacna.resources
 C:\FPC PRODUCCION\bddc\bddc.Win\obj\Debug\bddc.Win.frmSeg_Config_Mesas.resources
 C:\FPC PRODUCCION\bddc\bddc.Win\obj\Debug\bddc.Win.frmTasaCambio_luxor.resources
 C:\FPC PRODUCCION\bddc\bddc.Win\obj\Debug\bddc.Win.frmSeg_Accesos.resources
@@ -2306,7 +2307,6 @@ C:\FPC PRODUCCION\bddc\bddc.Win\obj\Debug\bddc.Win.frmLogin.resources
 C:\FPC PRODUCCION\bddc\bddc.Win\obj\Debug\bddc.Win.Resources.resources
 C:\FPC PRODUCCION\bddc\bddc.Win\obj\Debug\bddc.Win.frmTasaCambio.resources
 C:\FPC PRODUCCION\bddc\bddc.Win\obj\Debug\bddc.Win.frmTasaCambio_prueba.resources
-C:\FPC PRODUCCION\bddc\bddc.Win\obj\Debug\bddc.Win.frmTasaCambio_Tacna.resources
 C:\FPC PRODUCCION\bddc\bddc.Win\obj\Debug\bddc.Win.vbproj.GenerateResource.Cache
 C:\FPC PRODUCCION\bddc\bddc.Win\obj\Debug\bddc.Win.exe.licenses
 C:\FPC PRODUCCION\bddc\bddc.Win\obj\Debug\RdlCompile.cache

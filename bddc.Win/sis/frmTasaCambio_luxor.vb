@@ -24,7 +24,6 @@ Public Class frmTasaCambio_luxor
 
 #End Region
 
-
     Private Sub frmTasaCambio_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         'TODO: This line of code loads data into the 'BDClientesDataSet.Luxor_tblaux_tipocambio' table. You can move, or remove it, as needed.
         Me.Luxor_tblaux_tipocambioTableAdapter.Fill(Me.BDClientesDataSet.Luxor_tblaux_tipocambio)
@@ -122,5 +121,34 @@ Public Class frmTasaCambio_luxor
         lblMensaje.ForeColor = Color.Red
         lblMensaje.Text = Util.Constante.Ope_OperacionERR & " Fue cancelada. "
 
+    End Sub
+
+    Private Sub tsbEliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles tsbEliminar.Click
+        Try
+            If MsgBox(Util.Constante.Msg_ConfEliminar, MsgBoxStyle.YesNo, Util.Constante.Msj_SistemaTitulo) <> 6 Then Exit Sub
+
+            lblMensaje.Text = String.Empty
+
+            Dim intUsuarioId As Integer = Util.Enumeracion.enmResultadoOperacion.NONE
+            If frmLogin.objColeccionFCB.objUsuBEC IsNot Nothing Then
+                intUsuarioId = frmLogin.objColeccionFCB.objUsuBEC.UsuarioId
+            Else
+                Throw New DataException(Util.Constante.Acc_SesionERR)
+            End If
+
+            ValidarRegistros()
+
+            Me.Luxor_tblaux_tipocambioTableAdapter.DeleteTasaCambio(Convert.ToInt32(Me.txtAño.Text), Convert.ToInt32(Me.txtMes.Text), Convert.ToInt32(Me.txtDia.Text))
+
+            frmLogin.objColeccionFCB.objAuditoria = New DALC.SEG.clsUsuarioEvento(intUsuarioId, Util.Enumeracion.enmTipoAccion.Delete, Util.Constante.Sistema._MODTBL & "->" & Me.Name, Environment.MachineName, frmLogin.objColeccionFCB.objUsuUndBEC.UnidadId, frmLogin.Unidad)
+            Me.BDClientesDataSet.Prueba_tblaux_tipocambio.Clear()
+            Me.Luxor_tblaux_tipocambioTableAdapter.Fill(Me.BDClientesDataSet.Luxor_tblaux_tipocambio)
+
+            lblMensaje.ForeColor = Color.Blue
+            lblMensaje.Text = Util.Constante.Ope_OperacionOK
+
+        Catch ex As Exception
+            lblMensaje.Text = ex.Message
+        End Try
     End Sub
 End Class

@@ -36537,233 +36537,287 @@ Namespace BDClientesDataSetTableAdapters
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Private Sub InitCommandCollection()
-            Me._commandCollection = New Global.Devart.Data.MySql.MySqlCommand(1) {}
+            Me._commandCollection = New Global.Devart.Data.MySql.MySqlCommand(2) {}
             Me._commandCollection(0) = New Global.Devart.Data.MySql.MySqlCommand()
             Me._commandCollection(0).Connection = Me.Connection
-            Me._commandCollection(0).CommandText = "SELECT        ftdc_fechac AS Fecha, ntdc_valor AS Tasa, ftdc_yyyy, ftdc_mm, ftdc_"& _ 
-                "dd, ftdc_estadoid AS Estado"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"FROM            tblaux_tipocambio"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"ORDER BY Fecha D"& _ 
+            Me._commandCollection(0).CommandText = "SELECT        ftdc_fechac AS Fecha, ntdc_valor AS Tasa, ftdc_yyyy, ftdc_mm, ftdc_" & _
+                "dd, ftdc_estadoid AS Estado" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "FROM            tblaux_tipocambio" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "ORDER BY Fecha D" & _
                 "ESC"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
             Me._commandCollection(1) = New Global.Devart.Data.MySql.MySqlCommand()
             Me._commandCollection(1).Connection = Me.Connection
-            Me._commandCollection(1).CommandText = "SELECT        ftdc_fechac AS Fecha, ntdc_valor AS Tasa, ftdc_yyyy, ftdc_mm, ftdc_"& _ 
-                "dd, ftdc_estadoid AS Estado"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"FROM            tblaux_tipocambio"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"ORDER BY Fecha D"& _ 
-                "ESC"
+            Me._commandCollection(1).CommandText = "DELETE FROM `bdauxiliarluxor`.`tblaux_tipocambio`" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "WHERE        (ftdc_yyyy = :PAR" & _
+                "AM1) AND (ftdc_mm = :PARAM2) AND (ftdc_dd = :PARAM3)"
             Me._commandCollection(1).CommandType = Global.System.Data.CommandType.Text
+            Dim param As Global.Devart.Data.MySql.MySqlParameter = New Global.Devart.Data.MySql.MySqlParameter()
+            param.ParameterName = "PARAM1"
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlType = Global.Devart.Data.MySql.MySqlType.Int
+            param.IsNullable = True
+            param.SourceColumn = "ftdc_yyyy"
+            param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            Me._commandCollection(1).Parameters.Add(param)
+            param = New Global.Devart.Data.MySql.MySqlParameter()
+            param.ParameterName = "PARAM2"
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlType = Global.Devart.Data.MySql.MySqlType.Int
+            param.IsNullable = True
+            param.SourceColumn = "ftdc_mm"
+            param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            Me._commandCollection(1).Parameters.Add(param)
+            param = New Global.Devart.Data.MySql.MySqlParameter()
+            param.ParameterName = "PARAM3"
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlType = Global.Devart.Data.MySql.MySqlType.Int
+            param.IsNullable = True
+            param.SourceColumn = "ftdc_dd"
+            param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            Me._commandCollection(1).Parameters.Add(param)
+            Me._commandCollection(2) = New Global.Devart.Data.MySql.MySqlCommand()
+            Me._commandCollection(2).Connection = Me.Connection
+            Me._commandCollection(2).CommandText = "SELECT        ftdc_fechac AS Fecha, ntdc_valor AS Tasa, ftdc_yyyy, ftdc_mm, ftdc_" & _
+                "dd, ftdc_estadoid AS Estado" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "FROM            tblaux_tipocambio" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "ORDER BY Fecha D" & _
+                "ESC"
+            Me._commandCollection(2).CommandType = Global.System.Data.CommandType.Text
         End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, true)>  _
-        Public Overloads Overridable Function Fill(ByVal dataTable As BDClientesDataSet.Luxor_tblaux_tipocambioDataTable) As Integer
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, True)> _
+        Public Overridable Overloads Function Fill(ByVal dataTable As BDClientesDataSet.Luxor_tblaux_tipocambioDataTable) As Integer
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
-            If (Me.ClearBeforeFill = true) Then
-                dataTable.Clear
+            If (Me.ClearBeforeFill = True) Then
+                dataTable.Clear()
             End If
             Dim returnValue As Integer = Me.Adapter.Fill(dataTable)
             Return returnValue
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], true)>  _
-        Public Overloads Overridable Function GetData() As BDClientesDataSet.Luxor_tblaux_tipocambioDataTable
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], True)> _
+        Public Overridable Overloads Function GetData() As BDClientesDataSet.Luxor_tblaux_tipocambioDataTable
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
             Dim dataTable As BDClientesDataSet.Luxor_tblaux_tipocambioDataTable = New BDClientesDataSet.Luxor_tblaux_tipocambioDataTable()
             Me.Adapter.Fill(dataTable)
             Return dataTable
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], false)>  _
-        Public Overloads Overridable Function GetCambioByDate() As BDClientesDataSet.Luxor_tblaux_tipocambioDataTable
-            Me.Adapter.SelectCommand = Me.CommandCollection(1)
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], False)> _
+        Public Overridable Overloads Function GetCambioByDate() As BDClientesDataSet.Luxor_tblaux_tipocambioDataTable
+            Me.Adapter.SelectCommand = Me.CommandCollection(2)
             Dim dataTable As BDClientesDataSet.Luxor_tblaux_tipocambioDataTable = New BDClientesDataSet.Luxor_tblaux_tipocambioDataTable()
             Me.Adapter.Fill(dataTable)
             Return dataTable
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
-        Public Overloads Overridable Function Update(ByVal dataTable As BDClientesDataSet.Luxor_tblaux_tipocambioDataTable) As Integer
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
+        Public Overridable Overloads Function Update(ByVal dataTable As BDClientesDataSet.Luxor_tblaux_tipocambioDataTable) As Integer
             Return Me.Adapter.Update(dataTable)
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
-        Public Overloads Overridable Function Update(ByVal dataSet As BDClientesDataSet) As Integer
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
+        Public Overridable Overloads Function Update(ByVal dataSet As BDClientesDataSet) As Integer
             Return Me.Adapter.Update(dataSet, "Luxor_tblaux_tipocambio")
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
-        Public Overloads Overridable Function Update(ByVal dataRow As Global.System.Data.DataRow) As Integer
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
+        Public Overridable Overloads Function Update(ByVal dataRow As Global.System.Data.DataRow) As Integer
             Return Me.Adapter.Update(New Global.System.Data.DataRow() {dataRow})
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
-        Public Overloads Overridable Function Update(ByVal dataRows() As Global.System.Data.DataRow) As Integer
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
+        Public Overridable Overloads Function Update(ByVal dataRows() As Global.System.Data.DataRow) As Integer
             Return Me.Adapter.Update(dataRows)
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Delete, true)>  _
-        Public Overloads Overridable Function Delete(ByVal Original_Fecha As Date, ByVal Original_Tasa As Decimal, ByVal Original_ftdc_yyyy As Integer, ByVal Original_ftdc_mm As Integer, ByVal Original_ftdc_dd As Integer, ByVal Original_Estado As Integer) As Integer
-            Me.Adapter.DeleteCommand.Parameters(0).Value = CType(0,Object)
-            Me.Adapter.DeleteCommand.Parameters(1).Value = CType(Original_Fecha,Date)
-            Me.Adapter.DeleteCommand.Parameters(2).Value = CType(0,Object)
-            Me.Adapter.DeleteCommand.Parameters(3).Value = CType(Original_Tasa,Decimal)
-            Me.Adapter.DeleteCommand.Parameters(4).Value = CType(Original_ftdc_yyyy,Integer)
-            Me.Adapter.DeleteCommand.Parameters(5).Value = CType(Original_ftdc_mm,Integer)
-            Me.Adapter.DeleteCommand.Parameters(6).Value = CType(Original_ftdc_dd,Integer)
-            Me.Adapter.DeleteCommand.Parameters(7).Value = CType(0,Object)
-            Me.Adapter.DeleteCommand.Parameters(8).Value = CType(Original_Estado,Integer)
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Delete, True)> _
+        Public Overridable Overloads Function Delete(ByVal Original_Fecha As Date, ByVal Original_Tasa As Decimal, ByVal Original_ftdc_yyyy As Integer, ByVal Original_ftdc_mm As Integer, ByVal Original_ftdc_dd As Integer, ByVal Original_Estado As Integer) As Integer
+            Me.Adapter.DeleteCommand.Parameters(0).Value = CType(0, Object)
+            Me.Adapter.DeleteCommand.Parameters(1).Value = CType(Original_Fecha, Date)
+            Me.Adapter.DeleteCommand.Parameters(2).Value = CType(0, Object)
+            Me.Adapter.DeleteCommand.Parameters(3).Value = CType(Original_Tasa, Decimal)
+            Me.Adapter.DeleteCommand.Parameters(4).Value = CType(Original_ftdc_yyyy, Integer)
+            Me.Adapter.DeleteCommand.Parameters(5).Value = CType(Original_ftdc_mm, Integer)
+            Me.Adapter.DeleteCommand.Parameters(6).Value = CType(Original_ftdc_dd, Integer)
+            Me.Adapter.DeleteCommand.Parameters(7).Value = CType(0, Object)
+            Me.Adapter.DeleteCommand.Parameters(8).Value = CType(Original_Estado, Integer)
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.DeleteCommand.Connection.State
-            If ((Me.Adapter.DeleteCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
+            If ((Me.Adapter.DeleteCommand.Connection.State And Global.System.Data.ConnectionState.Open) _
                         <> Global.System.Data.ConnectionState.Open) Then
-                Me.Adapter.DeleteCommand.Connection.Open
+                Me.Adapter.DeleteCommand.Connection.Open()
             End If
-            Try 
+            Try
                 Dim returnValue As Integer = Me.Adapter.DeleteCommand.ExecuteNonQuery
                 Return returnValue
             Finally
                 If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
-                    Me.Adapter.DeleteCommand.Connection.Close
+                    Me.Adapter.DeleteCommand.Connection.Close()
                 End If
             End Try
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, true)>  _
-        Public Overloads Overridable Function Insert(ByVal Fecha As Date, ByVal Tasa As Decimal, ByVal ftdc_yyyy As Integer, ByVal ftdc_mm As Integer, ByVal ftdc_dd As Integer, ByVal Estado As Integer) As Integer
-            Me.Adapter.InsertCommand.Parameters(0).Value = CType(Fecha,Date)
-            Me.Adapter.InsertCommand.Parameters(1).Value = CType(Tasa,Decimal)
-            Me.Adapter.InsertCommand.Parameters(2).Value = CType(ftdc_yyyy,Integer)
-            Me.Adapter.InsertCommand.Parameters(3).Value = CType(ftdc_mm,Integer)
-            Me.Adapter.InsertCommand.Parameters(4).Value = CType(ftdc_dd,Integer)
-            Me.Adapter.InsertCommand.Parameters(5).Value = CType(Estado,Integer)
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, True)> _
+        Public Overridable Overloads Function Insert(ByVal Fecha As Date, ByVal Tasa As Decimal, ByVal ftdc_yyyy As Integer, ByVal ftdc_mm As Integer, ByVal ftdc_dd As Integer, ByVal Estado As Integer) As Integer
+            Me.Adapter.InsertCommand.Parameters(0).Value = CType(Fecha, Date)
+            Me.Adapter.InsertCommand.Parameters(1).Value = CType(Tasa, Decimal)
+            Me.Adapter.InsertCommand.Parameters(2).Value = CType(ftdc_yyyy, Integer)
+            Me.Adapter.InsertCommand.Parameters(3).Value = CType(ftdc_mm, Integer)
+            Me.Adapter.InsertCommand.Parameters(4).Value = CType(ftdc_dd, Integer)
+            Me.Adapter.InsertCommand.Parameters(5).Value = CType(Estado, Integer)
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.InsertCommand.Connection.State
-            If ((Me.Adapter.InsertCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
+            If ((Me.Adapter.InsertCommand.Connection.State And Global.System.Data.ConnectionState.Open) _
                         <> Global.System.Data.ConnectionState.Open) Then
-                Me.Adapter.InsertCommand.Connection.Open
+                Me.Adapter.InsertCommand.Connection.Open()
             End If
-            Try 
+            Try
                 Dim returnValue As Integer = Me.Adapter.InsertCommand.ExecuteNonQuery
                 Return returnValue
             Finally
                 If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
-                    Me.Adapter.InsertCommand.Connection.Close
+                    Me.Adapter.InsertCommand.Connection.Close()
                 End If
             End Try
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
-        Public Overloads Overridable Function Update(ByVal Fecha As Date, ByVal Tasa As Decimal, ByVal ftdc_yyyy As Integer, ByVal ftdc_mm As Integer, ByVal ftdc_dd As Integer, ByVal Estado As Integer, ByVal Original_Fecha As Date, ByVal Original_Tasa As Decimal, ByVal Original_ftdc_yyyy As Integer, ByVal Original_ftdc_mm As Integer, ByVal Original_ftdc_dd As Integer, ByVal Original_Estado As Integer) As Integer
-            Me.Adapter.UpdateCommand.Parameters(0).Value = CType(Fecha,Date)
-            Me.Adapter.UpdateCommand.Parameters(1).Value = CType(Tasa,Decimal)
-            Me.Adapter.UpdateCommand.Parameters(2).Value = CType(ftdc_yyyy,Integer)
-            Me.Adapter.UpdateCommand.Parameters(3).Value = CType(ftdc_mm,Integer)
-            Me.Adapter.UpdateCommand.Parameters(4).Value = CType(ftdc_dd,Integer)
-            Me.Adapter.UpdateCommand.Parameters(5).Value = CType(Estado,Integer)
-            Me.Adapter.UpdateCommand.Parameters(6).Value = CType(0,Object)
-            Me.Adapter.UpdateCommand.Parameters(7).Value = CType(Original_Fecha,Date)
-            Me.Adapter.UpdateCommand.Parameters(8).Value = CType(0,Object)
-            Me.Adapter.UpdateCommand.Parameters(9).Value = CType(Original_Tasa,Decimal)
-            Me.Adapter.UpdateCommand.Parameters(10).Value = CType(Original_ftdc_yyyy,Integer)
-            Me.Adapter.UpdateCommand.Parameters(11).Value = CType(Original_ftdc_mm,Integer)
-            Me.Adapter.UpdateCommand.Parameters(12).Value = CType(Original_ftdc_dd,Integer)
-            Me.Adapter.UpdateCommand.Parameters(13).Value = CType(0,Object)
-            Me.Adapter.UpdateCommand.Parameters(14).Value = CType(Original_Estado,Integer)
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, True)> _
+        Public Overridable Overloads Function Update(ByVal Fecha As Date, ByVal Tasa As Decimal, ByVal ftdc_yyyy As Integer, ByVal ftdc_mm As Integer, ByVal ftdc_dd As Integer, ByVal Estado As Integer, ByVal Original_Fecha As Date, ByVal Original_Tasa As Decimal, ByVal Original_ftdc_yyyy As Integer, ByVal Original_ftdc_mm As Integer, ByVal Original_ftdc_dd As Integer, ByVal Original_Estado As Integer) As Integer
+            Me.Adapter.UpdateCommand.Parameters(0).Value = CType(Fecha, Date)
+            Me.Adapter.UpdateCommand.Parameters(1).Value = CType(Tasa, Decimal)
+            Me.Adapter.UpdateCommand.Parameters(2).Value = CType(ftdc_yyyy, Integer)
+            Me.Adapter.UpdateCommand.Parameters(3).Value = CType(ftdc_mm, Integer)
+            Me.Adapter.UpdateCommand.Parameters(4).Value = CType(ftdc_dd, Integer)
+            Me.Adapter.UpdateCommand.Parameters(5).Value = CType(Estado, Integer)
+            Me.Adapter.UpdateCommand.Parameters(6).Value = CType(0, Object)
+            Me.Adapter.UpdateCommand.Parameters(7).Value = CType(Original_Fecha, Date)
+            Me.Adapter.UpdateCommand.Parameters(8).Value = CType(0, Object)
+            Me.Adapter.UpdateCommand.Parameters(9).Value = CType(Original_Tasa, Decimal)
+            Me.Adapter.UpdateCommand.Parameters(10).Value = CType(Original_ftdc_yyyy, Integer)
+            Me.Adapter.UpdateCommand.Parameters(11).Value = CType(Original_ftdc_mm, Integer)
+            Me.Adapter.UpdateCommand.Parameters(12).Value = CType(Original_ftdc_dd, Integer)
+            Me.Adapter.UpdateCommand.Parameters(13).Value = CType(0, Object)
+            Me.Adapter.UpdateCommand.Parameters(14).Value = CType(Original_Estado, Integer)
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.UpdateCommand.Connection.State
-            If ((Me.Adapter.UpdateCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
+            If ((Me.Adapter.UpdateCommand.Connection.State And Global.System.Data.ConnectionState.Open) _
                         <> Global.System.Data.ConnectionState.Open) Then
-                Me.Adapter.UpdateCommand.Connection.Open
+                Me.Adapter.UpdateCommand.Connection.Open()
             End If
-            Try 
+            Try
                 Dim returnValue As Integer = Me.Adapter.UpdateCommand.ExecuteNonQuery
                 Return returnValue
             Finally
                 If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
-                    Me.Adapter.UpdateCommand.Connection.Close
+                    Me.Adapter.UpdateCommand.Connection.Close()
                 End If
             End Try
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
-        Public Overloads Overridable Function Update(ByVal Fecha As Date, ByVal Tasa As Decimal, ByVal Estado As Integer, ByVal Original_Fecha As Date, ByVal Original_Tasa As Decimal, ByVal Original_ftdc_yyyy As Integer, ByVal Original_ftdc_mm As Integer, ByVal Original_ftdc_dd As Integer, ByVal Original_Estado As Integer) As Integer
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, True)> _
+        Public Overridable Overloads Function Update(ByVal Fecha As Date, ByVal Tasa As Decimal, ByVal Estado As Integer, ByVal Original_Fecha As Date, ByVal Original_Tasa As Decimal, ByVal Original_ftdc_yyyy As Integer, ByVal Original_ftdc_mm As Integer, ByVal Original_ftdc_dd As Integer, ByVal Original_Estado As Integer) As Integer
             Return Me.Update(Fecha, Tasa, Original_ftdc_yyyy, Original_ftdc_mm, Original_ftdc_dd, Estado, Original_Fecha, Original_Tasa, Original_ftdc_yyyy, Original_ftdc_mm, Original_ftdc_dd, Original_Estado)
         End Function
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Delete, False)> _
+        Public Overridable Overloads Function DeleteTasaCambio(ByVal PARAM1 As Integer, ByVal PARAM2 As Integer, ByVal PARAM3 As Integer) As Integer
+            Dim command As Global.Devart.Data.MySql.MySqlCommand = Me.CommandCollection(1)
+            command.Parameters(0).Value = CType(PARAM1, Integer)
+            command.Parameters(1).Value = CType(PARAM2, Integer)
+            command.Parameters(2).Value = CType(PARAM3, Integer)
+            Dim previousConnectionState As Global.System.Data.ConnectionState = command.Connection.State
+            If ((command.Connection.State And Global.System.Data.ConnectionState.Open) _
+                        <> Global.System.Data.ConnectionState.Open) Then
+                command.Connection.Open()
+            End If
+            Dim returnValue As Integer
+            Try
+                returnValue = command.ExecuteNonQuery
+            Finally
+                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
+                    command.Connection.Close()
+                End If
+            End Try
+            Return returnValue
+        End Function
     End Class
-    
+
     '''<summary>
     '''Represents the connection and commands used to retrieve and save data.
     '''</summary>
-    <Global.System.ComponentModel.DesignerCategoryAttribute("code"),  _
-     Global.System.ComponentModel.ToolboxItem(true),  _
-     Global.System.ComponentModel.DataObjectAttribute(true),  _
-     Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner"& _ 
-        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"),  _
-     Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+    <Global.System.ComponentModel.DesignerCategoryAttribute("code"), _
+     Global.System.ComponentModel.ToolboxItem(True), _
+     Global.System.ComponentModel.DataObjectAttribute(True), _
+     Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" & _
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"), _
+     Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
     Partial Public Class Luxor_viwbdd_cliente_crmTableAdapter
         Inherits Global.System.ComponentModel.Component
-        
+
         Private WithEvents _adapter As Global.Devart.Data.MySql.MySqlDataAdapter
-        
+
         Private _connection As Global.Devart.Data.MySql.MySqlConnection
-        
+
         Private _transaction As Global.System.Data.Common.DbTransaction
-        
+
         Private _commandCollection() As Global.Devart.Data.MySql.MySqlCommand
-        
+
         Private _clearBeforeFill As Boolean
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Public Sub New()
-            MyBase.New
-            Me.ClearBeforeFill = true
+            MyBase.New()
+            Me.ClearBeforeFill = True
         End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Protected Friend ReadOnly Property Adapter() As Global.Devart.Data.MySql.MySqlDataAdapter
             Get
                 If (Me._adapter Is Nothing) Then
-                    Me.InitAdapter
+                    Me.InitAdapter()
                 End If
                 Return Me._adapter
             End Get
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Friend Property Connection() As Global.Devart.Data.MySql.MySqlConnection
             Get
                 If (Me._connection Is Nothing) Then
-                    Me.InitConnection
+                    Me.InitConnection()
                 End If
                 Return Me._connection
             End Get
-            Set
+            Set(ByVal value As Global.Devart.Data.MySql.MySqlConnection)
                 Me._connection = value
                 If (Not (Me.Adapter.InsertCommand) Is Nothing) Then
                     Me.Adapter.InsertCommand.Connection = value
@@ -36777,65 +36831,65 @@ Namespace BDClientesDataSetTableAdapters
                 Dim i As Integer = 0
                 Do While (i < Me.CommandCollection.Length)
                     If (Not (Me.CommandCollection(i)) Is Nothing) Then
-                        CType(Me.CommandCollection(i),Global.Devart.Data.MySql.MySqlCommand).Connection = value
+                        CType(Me.CommandCollection(i), Global.Devart.Data.MySql.MySqlCommand).Connection = value
                     End If
                     i = (i + 1)
                 Loop
             End Set
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Friend Property Transaction() As Global.System.Data.Common.DbTransaction
             Get
                 Return Me._transaction
             End Get
-            Set
+            Set(ByVal value As Global.System.Data.Common.DbTransaction)
                 Me._transaction = value
                 Dim i As Integer = 0
                 Do While (i < Me.CommandCollection.Length)
                     Me.CommandCollection(i).Transaction = Me._transaction
                     i = (i + 1)
                 Loop
-                If ((Not (Me.Adapter) Is Nothing)  _
+                If ((Not (Me.Adapter) Is Nothing) _
                             AndAlso (Not (Me.Adapter.DeleteCommand) Is Nothing)) Then
                     Me.Adapter.DeleteCommand.Transaction = Me._transaction
                 End If
-                If ((Not (Me.Adapter) Is Nothing)  _
+                If ((Not (Me.Adapter) Is Nothing) _
                             AndAlso (Not (Me.Adapter.InsertCommand) Is Nothing)) Then
                     Me.Adapter.InsertCommand.Transaction = Me._transaction
                 End If
-                If ((Not (Me.Adapter) Is Nothing)  _
+                If ((Not (Me.Adapter) Is Nothing) _
                             AndAlso (Not (Me.Adapter.UpdateCommand) Is Nothing)) Then
                     Me.Adapter.UpdateCommand.Transaction = Me._transaction
                 End If
             End Set
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Protected ReadOnly Property CommandCollection() As Global.Devart.Data.MySql.MySqlCommand()
             Get
                 If (Me._commandCollection Is Nothing) Then
-                    Me.InitCommandCollection
+                    Me.InitCommandCollection()
                 End If
                 Return Me._commandCollection
             End Get
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Public Property ClearBeforeFill() As Boolean
             Get
                 Return Me._clearBeforeFill
             End Get
-            Set
+            Set(ByVal value As Boolean)
                 Me._clearBeforeFill = value
             End Set
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Private Sub InitAdapter()
             Me._adapter = New Global.Devart.Data.MySql.MySqlDataAdapter()
             Dim tableMapping As Global.System.Data.Common.DataTableMapping = New Global.System.Data.Common.DataTableMapping()
@@ -36868,104 +36922,104 @@ Namespace BDClientesDataSetTableAdapters
             tableMapping.ColumnMappings.Add("Tiers", "Tiers")
             Me._adapter.TableMappings.Add(tableMapping)
         End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Private Sub InitConnection()
             Me._connection = New Global.Devart.Data.MySql.MySqlConnection()
             Me._connection.ConnectionString = Global.bddc.Win.My.MySettings.Default.bdcrmluxorConnectionString
         End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Private Sub InitCommandCollection()
             Me._commandCollection = New Global.Devart.Data.MySql.MySqlCommand(0) {}
             Me._commandCollection(0) = New Global.Devart.Data.MySql.MySqlCommand()
             Me._commandCollection(0).Connection = Me.Connection
-            Me._commandCollection(0).CommandText = "SELECT        Fuente, FuenteId, ClienteId, ClienteCodigo, ClienteNumdoc, ClienteT"& _ 
-                "itulo, ClienteApePat, ClienteApeMat, ClienteNombres, ClienteNombreCompleto, Clie"& _ 
-                "nteFecNac, "&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                         ClienteGenero, ClienteEmail, ClienteTelFij"& _ 
-                "o, ClienteTelMovil, ClienteNacionalidad, DomicilioDireccion, DomicilioDistrito, "& _ 
-                "EmpresaNombre, EmpresaRUC, "&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                         EmpresaPuesto, EmpresaTele"& _ 
-                "fono, Unidad, Tier, Tiers"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"FROM            viwbdd_cliente_crm"
+            Me._commandCollection(0).CommandText = "SELECT        Fuente, FuenteId, ClienteId, ClienteCodigo, ClienteNumdoc, ClienteT" & _
+                "itulo, ClienteApePat, ClienteApeMat, ClienteNombres, ClienteNombreCompleto, Clie" & _
+                "nteFecNac, " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "                         ClienteGenero, ClienteEmail, ClienteTelFij" & _
+                "o, ClienteTelMovil, ClienteNacionalidad, DomicilioDireccion, DomicilioDistrito, " & _
+                "EmpresaNombre, EmpresaRUC, " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "                         EmpresaPuesto, EmpresaTele" & _
+                "fono, Unidad, Tier, Tiers" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "FROM            viwbdd_cliente_crm"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
         End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, true)>  _
-        Public Overloads Overridable Function Fill(ByVal dataTable As BDClientesDataSet.Luxor_viwbdd_cliente_crmDataTable) As Integer
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, True)> _
+        Public Overridable Overloads Function Fill(ByVal dataTable As BDClientesDataSet.Luxor_viwbdd_cliente_crmDataTable) As Integer
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
-            If (Me.ClearBeforeFill = true) Then
-                dataTable.Clear
+            If (Me.ClearBeforeFill = True) Then
+                dataTable.Clear()
             End If
             Dim returnValue As Integer = Me.Adapter.Fill(dataTable)
             Return returnValue
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], true)>  _
-        Public Overloads Overridable Function GetData() As BDClientesDataSet.Luxor_viwbdd_cliente_crmDataTable
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], True)> _
+        Public Overridable Overloads Function GetData() As BDClientesDataSet.Luxor_viwbdd_cliente_crmDataTable
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
             Dim dataTable As BDClientesDataSet.Luxor_viwbdd_cliente_crmDataTable = New BDClientesDataSet.Luxor_viwbdd_cliente_crmDataTable()
             Me.Adapter.Fill(dataTable)
             Return dataTable
         End Function
     End Class
-    
+
     '''<summary>
     '''Represents the connection and commands used to retrieve and save data.
     '''</summary>
-    <Global.System.ComponentModel.DesignerCategoryAttribute("code"),  _
-     Global.System.ComponentModel.ToolboxItem(true),  _
-     Global.System.ComponentModel.DataObjectAttribute(true),  _
-     Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner"& _ 
-        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"),  _
-     Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+    <Global.System.ComponentModel.DesignerCategoryAttribute("code"), _
+     Global.System.ComponentModel.ToolboxItem(True), _
+     Global.System.ComponentModel.DataObjectAttribute(True), _
+     Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" & _
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"), _
+     Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
     Partial Public Class Fiesta_viwbdd_cliente_crmTableAdapter
         Inherits Global.System.ComponentModel.Component
-        
+
         Private WithEvents _adapter As Global.Devart.Data.MySql.MySqlDataAdapter
-        
+
         Private _connection As Global.Devart.Data.MySql.MySqlConnection
-        
+
         Private _transaction As Global.System.Data.Common.DbTransaction
-        
+
         Private _commandCollection() As Global.Devart.Data.MySql.MySqlCommand
-        
+
         Private _clearBeforeFill As Boolean
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Public Sub New()
-            MyBase.New
-            Me.ClearBeforeFill = true
+            MyBase.New()
+            Me.ClearBeforeFill = True
         End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Protected Friend ReadOnly Property Adapter() As Global.Devart.Data.MySql.MySqlDataAdapter
             Get
                 If (Me._adapter Is Nothing) Then
-                    Me.InitAdapter
+                    Me.InitAdapter()
                 End If
                 Return Me._adapter
             End Get
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Friend Property Connection() As Global.Devart.Data.MySql.MySqlConnection
             Get
                 If (Me._connection Is Nothing) Then
-                    Me.InitConnection
+                    Me.InitConnection()
                 End If
                 Return Me._connection
             End Get
-            Set
+            Set(ByVal value As Global.Devart.Data.MySql.MySqlConnection)
                 Me._connection = value
                 If (Not (Me.Adapter.InsertCommand) Is Nothing) Then
                     Me.Adapter.InsertCommand.Connection = value
@@ -36979,65 +37033,65 @@ Namespace BDClientesDataSetTableAdapters
                 Dim i As Integer = 0
                 Do While (i < Me.CommandCollection.Length)
                     If (Not (Me.CommandCollection(i)) Is Nothing) Then
-                        CType(Me.CommandCollection(i),Global.Devart.Data.MySql.MySqlCommand).Connection = value
+                        CType(Me.CommandCollection(i), Global.Devart.Data.MySql.MySqlCommand).Connection = value
                     End If
                     i = (i + 1)
                 Loop
             End Set
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Friend Property Transaction() As Global.System.Data.Common.DbTransaction
             Get
                 Return Me._transaction
             End Get
-            Set
+            Set(ByVal value As Global.System.Data.Common.DbTransaction)
                 Me._transaction = value
                 Dim i As Integer = 0
                 Do While (i < Me.CommandCollection.Length)
                     Me.CommandCollection(i).Transaction = Me._transaction
                     i = (i + 1)
                 Loop
-                If ((Not (Me.Adapter) Is Nothing)  _
+                If ((Not (Me.Adapter) Is Nothing) _
                             AndAlso (Not (Me.Adapter.DeleteCommand) Is Nothing)) Then
                     Me.Adapter.DeleteCommand.Transaction = Me._transaction
                 End If
-                If ((Not (Me.Adapter) Is Nothing)  _
+                If ((Not (Me.Adapter) Is Nothing) _
                             AndAlso (Not (Me.Adapter.InsertCommand) Is Nothing)) Then
                     Me.Adapter.InsertCommand.Transaction = Me._transaction
                 End If
-                If ((Not (Me.Adapter) Is Nothing)  _
+                If ((Not (Me.Adapter) Is Nothing) _
                             AndAlso (Not (Me.Adapter.UpdateCommand) Is Nothing)) Then
                     Me.Adapter.UpdateCommand.Transaction = Me._transaction
                 End If
             End Set
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Protected ReadOnly Property CommandCollection() As Global.Devart.Data.MySql.MySqlCommand()
             Get
                 If (Me._commandCollection Is Nothing) Then
-                    Me.InitCommandCollection
+                    Me.InitCommandCollection()
                 End If
                 Return Me._commandCollection
             End Get
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Public Property ClearBeforeFill() As Boolean
             Get
                 Return Me._clearBeforeFill
             End Get
-            Set
+            Set(ByVal value As Boolean)
                 Me._clearBeforeFill = value
             End Set
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Private Sub InitAdapter()
             Me._adapter = New Global.Devart.Data.MySql.MySqlDataAdapter()
             Dim tableMapping As Global.System.Data.Common.DataTableMapping = New Global.System.Data.Common.DataTableMapping()
@@ -37070,104 +37124,104 @@ Namespace BDClientesDataSetTableAdapters
             tableMapping.ColumnMappings.Add("Tiers", "Tiers")
             Me._adapter.TableMappings.Add(tableMapping)
         End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Private Sub InitConnection()
             Me._connection = New Global.Devart.Data.MySql.MySqlConnection()
             Me._connection.ConnectionString = Global.bddc.Win.My.MySettings.Default.bdcrmConnectionString
         End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Private Sub InitCommandCollection()
             Me._commandCollection = New Global.Devart.Data.MySql.MySqlCommand(0) {}
             Me._commandCollection(0) = New Global.Devart.Data.MySql.MySqlCommand()
             Me._commandCollection(0).Connection = Me.Connection
-            Me._commandCollection(0).CommandText = "SELECT        Fuente, FuenteId, ClienteId, ClienteCodigo, ClienteNumdoc, ClienteT"& _ 
-                "itulo, ClienteApePat, ClienteApeMat, ClienteNombres, ClienteNombreCompleto, Clie"& _ 
-                "nteFecNac, "&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                         ClienteGenero, ClienteEmail, ClienteTelFij"& _ 
-                "o, ClienteTelMovil, ClienteNacionalidad, DomicilioDireccion, DomicilioDistrito, "& _ 
-                "EmpresaNombre, EmpresaRUC, "&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                         EmpresaPuesto, EmpresaTele"& _ 
-                "fono, Unidad, Tier, Tiers"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"FROM            viwbdd_cliente_crm"
+            Me._commandCollection(0).CommandText = "SELECT        Fuente, FuenteId, ClienteId, ClienteCodigo, ClienteNumdoc, ClienteT" & _
+                "itulo, ClienteApePat, ClienteApeMat, ClienteNombres, ClienteNombreCompleto, Clie" & _
+                "nteFecNac, " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "                         ClienteGenero, ClienteEmail, ClienteTelFij" & _
+                "o, ClienteTelMovil, ClienteNacionalidad, DomicilioDireccion, DomicilioDistrito, " & _
+                "EmpresaNombre, EmpresaRUC, " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "                         EmpresaPuesto, EmpresaTele" & _
+                "fono, Unidad, Tier, Tiers" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "FROM            viwbdd_cliente_crm"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
         End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, true)>  _
-        Public Overloads Overridable Function Fill(ByVal dataTable As BDClientesDataSet.Fiesta_viwbdd_cliente_crmDataTable) As Integer
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, True)> _
+        Public Overridable Overloads Function Fill(ByVal dataTable As BDClientesDataSet.Fiesta_viwbdd_cliente_crmDataTable) As Integer
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
-            If (Me.ClearBeforeFill = true) Then
-                dataTable.Clear
+            If (Me.ClearBeforeFill = True) Then
+                dataTable.Clear()
             End If
             Dim returnValue As Integer = Me.Adapter.Fill(dataTable)
             Return returnValue
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], true)>  _
-        Public Overloads Overridable Function GetData() As BDClientesDataSet.Fiesta_viwbdd_cliente_crmDataTable
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], True)> _
+        Public Overridable Overloads Function GetData() As BDClientesDataSet.Fiesta_viwbdd_cliente_crmDataTable
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
             Dim dataTable As BDClientesDataSet.Fiesta_viwbdd_cliente_crmDataTable = New BDClientesDataSet.Fiesta_viwbdd_cliente_crmDataTable()
             Me.Adapter.Fill(dataTable)
             Return dataTable
         End Function
     End Class
-    
+
     '''<summary>
     '''Represents the connection and commands used to retrieve and save data.
     '''</summary>
-    <Global.System.ComponentModel.DesignerCategoryAttribute("code"),  _
-     Global.System.ComponentModel.ToolboxItem(true),  _
-     Global.System.ComponentModel.DataObjectAttribute(true),  _
-     Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner"& _ 
-        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"),  _
-     Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+    <Global.System.ComponentModel.DesignerCategoryAttribute("code"), _
+     Global.System.ComponentModel.ToolboxItem(True), _
+     Global.System.ComponentModel.DataObjectAttribute(True), _
+     Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" & _
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"), _
+     Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
     Partial Public Class Luxor_viwfcb_clientes_datosbasicosTableAdapter
         Inherits Global.System.ComponentModel.Component
-        
+
         Private WithEvents _adapter As Global.Devart.Data.MySql.MySqlDataAdapter
-        
+
         Private _connection As Global.Devart.Data.MySql.MySqlConnection
-        
+
         Private _transaction As Global.System.Data.Common.DbTransaction
-        
+
         Private _commandCollection() As Global.Devart.Data.MySql.MySqlCommand
-        
+
         Private _clearBeforeFill As Boolean
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Public Sub New()
-            MyBase.New
-            Me.ClearBeforeFill = true
+            MyBase.New()
+            Me.ClearBeforeFill = True
         End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Protected Friend ReadOnly Property Adapter() As Global.Devart.Data.MySql.MySqlDataAdapter
             Get
                 If (Me._adapter Is Nothing) Then
-                    Me.InitAdapter
+                    Me.InitAdapter()
                 End If
                 Return Me._adapter
             End Get
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Friend Property Connection() As Global.Devart.Data.MySql.MySqlConnection
             Get
                 If (Me._connection Is Nothing) Then
-                    Me.InitConnection
+                    Me.InitConnection()
                 End If
                 Return Me._connection
             End Get
-            Set
+            Set(ByVal value As Global.Devart.Data.MySql.MySqlConnection)
                 Me._connection = value
                 If (Not (Me.Adapter.InsertCommand) Is Nothing) Then
                     Me.Adapter.InsertCommand.Connection = value
@@ -37181,65 +37235,65 @@ Namespace BDClientesDataSetTableAdapters
                 Dim i As Integer = 0
                 Do While (i < Me.CommandCollection.Length)
                     If (Not (Me.CommandCollection(i)) Is Nothing) Then
-                        CType(Me.CommandCollection(i),Global.Devart.Data.MySql.MySqlCommand).Connection = value
+                        CType(Me.CommandCollection(i), Global.Devart.Data.MySql.MySqlCommand).Connection = value
                     End If
                     i = (i + 1)
                 Loop
             End Set
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Friend Property Transaction() As Global.System.Data.Common.DbTransaction
             Get
                 Return Me._transaction
             End Get
-            Set
+            Set(ByVal value As Global.System.Data.Common.DbTransaction)
                 Me._transaction = value
                 Dim i As Integer = 0
                 Do While (i < Me.CommandCollection.Length)
                     Me.CommandCollection(i).Transaction = Me._transaction
                     i = (i + 1)
                 Loop
-                If ((Not (Me.Adapter) Is Nothing)  _
+                If ((Not (Me.Adapter) Is Nothing) _
                             AndAlso (Not (Me.Adapter.DeleteCommand) Is Nothing)) Then
                     Me.Adapter.DeleteCommand.Transaction = Me._transaction
                 End If
-                If ((Not (Me.Adapter) Is Nothing)  _
+                If ((Not (Me.Adapter) Is Nothing) _
                             AndAlso (Not (Me.Adapter.InsertCommand) Is Nothing)) Then
                     Me.Adapter.InsertCommand.Transaction = Me._transaction
                 End If
-                If ((Not (Me.Adapter) Is Nothing)  _
+                If ((Not (Me.Adapter) Is Nothing) _
                             AndAlso (Not (Me.Adapter.UpdateCommand) Is Nothing)) Then
                     Me.Adapter.UpdateCommand.Transaction = Me._transaction
                 End If
             End Set
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Protected ReadOnly Property CommandCollection() As Global.Devart.Data.MySql.MySqlCommand()
             Get
                 If (Me._commandCollection Is Nothing) Then
-                    Me.InitCommandCollection
+                    Me.InitCommandCollection()
                 End If
                 Return Me._commandCollection
             End Get
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Public Property ClearBeforeFill() As Boolean
             Get
                 Return Me._clearBeforeFill
             End Get
-            Set
+            Set(ByVal value As Boolean)
                 Me._clearBeforeFill = value
             End Set
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Private Sub InitAdapter()
             Me._adapter = New Global.Devart.Data.MySql.MySqlDataAdapter()
             Dim tableMapping As Global.System.Data.Common.DataTableMapping = New Global.System.Data.Common.DataTableMapping()
@@ -37255,100 +37309,100 @@ Namespace BDClientesDataSetTableAdapters
             tableMapping.ColumnMappings.Add("Telefonos", "Telefonos")
             Me._adapter.TableMappings.Add(tableMapping)
         End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Private Sub InitConnection()
             Me._connection = New Global.Devart.Data.MySql.MySqlConnection()
             Me._connection.ConnectionString = Global.bddc.Win.My.MySettings.Default.bdcrmluxorConnectionString
         End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Private Sub InitCommandCollection()
             Me._commandCollection = New Global.Devart.Data.MySql.MySqlCommand(0) {}
             Me._commandCollection(0) = New Global.Devart.Data.MySql.MySqlCommand()
             Me._commandCollection(0).Connection = Me.Connection
-            Me._commandCollection(0).CommandText = "SELECT        ClienteId, Codigo, TipoDoc, NumDoc, Nombres, Apellidos, Email, Tele"& _ 
-                "fonos"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"FROM            viwfcb_clientes_datosbasicos"
+            Me._commandCollection(0).CommandText = "SELECT        ClienteId, Codigo, TipoDoc, NumDoc, Nombres, Apellidos, Email, Tele" & _
+                "fonos" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "FROM            viwfcb_clientes_datosbasicos"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
         End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, true)>  _
-        Public Overloads Overridable Function Fill(ByVal dataTable As BDClientesDataSet.Luxor_viwfcb_clientes_datosbasicosDataTable) As Integer
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, True)> _
+        Public Overridable Overloads Function Fill(ByVal dataTable As BDClientesDataSet.Luxor_viwfcb_clientes_datosbasicosDataTable) As Integer
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
-            If (Me.ClearBeforeFill = true) Then
-                dataTable.Clear
+            If (Me.ClearBeforeFill = True) Then
+                dataTable.Clear()
             End If
             Dim returnValue As Integer = Me.Adapter.Fill(dataTable)
             Return returnValue
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], true)>  _
-        Public Overloads Overridable Function GetData() As BDClientesDataSet.Luxor_viwfcb_clientes_datosbasicosDataTable
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], True)> _
+        Public Overridable Overloads Function GetData() As BDClientesDataSet.Luxor_viwfcb_clientes_datosbasicosDataTable
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
             Dim dataTable As BDClientesDataSet.Luxor_viwfcb_clientes_datosbasicosDataTable = New BDClientesDataSet.Luxor_viwfcb_clientes_datosbasicosDataTable()
             Me.Adapter.Fill(dataTable)
             Return dataTable
         End Function
     End Class
-    
+
     '''<summary>
     '''Represents the connection and commands used to retrieve and save data.
     '''</summary>
-    <Global.System.ComponentModel.DesignerCategoryAttribute("code"),  _
-     Global.System.ComponentModel.ToolboxItem(true),  _
-     Global.System.ComponentModel.DataObjectAttribute(true),  _
-     Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner"& _ 
-        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"),  _
-     Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+    <Global.System.ComponentModel.DesignerCategoryAttribute("code"), _
+     Global.System.ComponentModel.ToolboxItem(True), _
+     Global.System.ComponentModel.DataObjectAttribute(True), _
+     Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" & _
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"), _
+     Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
     Partial Public Class Fiesta_viwfcb_clientes_datosbasicosTableAdapter
         Inherits Global.System.ComponentModel.Component
-        
+
         Private WithEvents _adapter As Global.Devart.Data.MySql.MySqlDataAdapter
-        
+
         Private _connection As Global.Devart.Data.MySql.MySqlConnection
-        
+
         Private _transaction As Global.System.Data.Common.DbTransaction
-        
+
         Private _commandCollection() As Global.Devart.Data.MySql.MySqlCommand
-        
+
         Private _clearBeforeFill As Boolean
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Public Sub New()
-            MyBase.New
-            Me.ClearBeforeFill = true
+            MyBase.New()
+            Me.ClearBeforeFill = True
         End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Protected Friend ReadOnly Property Adapter() As Global.Devart.Data.MySql.MySqlDataAdapter
             Get
                 If (Me._adapter Is Nothing) Then
-                    Me.InitAdapter
+                    Me.InitAdapter()
                 End If
                 Return Me._adapter
             End Get
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Friend Property Connection() As Global.Devart.Data.MySql.MySqlConnection
             Get
                 If (Me._connection Is Nothing) Then
-                    Me.InitConnection
+                    Me.InitConnection()
                 End If
                 Return Me._connection
             End Get
-            Set
+            Set(ByVal value As Global.Devart.Data.MySql.MySqlConnection)
                 Me._connection = value
                 If (Not (Me.Adapter.InsertCommand) Is Nothing) Then
                     Me.Adapter.InsertCommand.Connection = value
@@ -37362,65 +37416,65 @@ Namespace BDClientesDataSetTableAdapters
                 Dim i As Integer = 0
                 Do While (i < Me.CommandCollection.Length)
                     If (Not (Me.CommandCollection(i)) Is Nothing) Then
-                        CType(Me.CommandCollection(i),Global.Devart.Data.MySql.MySqlCommand).Connection = value
+                        CType(Me.CommandCollection(i), Global.Devart.Data.MySql.MySqlCommand).Connection = value
                     End If
                     i = (i + 1)
                 Loop
             End Set
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Friend Property Transaction() As Global.System.Data.Common.DbTransaction
             Get
                 Return Me._transaction
             End Get
-            Set
+            Set(ByVal value As Global.System.Data.Common.DbTransaction)
                 Me._transaction = value
                 Dim i As Integer = 0
                 Do While (i < Me.CommandCollection.Length)
                     Me.CommandCollection(i).Transaction = Me._transaction
                     i = (i + 1)
                 Loop
-                If ((Not (Me.Adapter) Is Nothing)  _
+                If ((Not (Me.Adapter) Is Nothing) _
                             AndAlso (Not (Me.Adapter.DeleteCommand) Is Nothing)) Then
                     Me.Adapter.DeleteCommand.Transaction = Me._transaction
                 End If
-                If ((Not (Me.Adapter) Is Nothing)  _
+                If ((Not (Me.Adapter) Is Nothing) _
                             AndAlso (Not (Me.Adapter.InsertCommand) Is Nothing)) Then
                     Me.Adapter.InsertCommand.Transaction = Me._transaction
                 End If
-                If ((Not (Me.Adapter) Is Nothing)  _
+                If ((Not (Me.Adapter) Is Nothing) _
                             AndAlso (Not (Me.Adapter.UpdateCommand) Is Nothing)) Then
                     Me.Adapter.UpdateCommand.Transaction = Me._transaction
                 End If
             End Set
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Protected ReadOnly Property CommandCollection() As Global.Devart.Data.MySql.MySqlCommand()
             Get
                 If (Me._commandCollection Is Nothing) Then
-                    Me.InitCommandCollection
+                    Me.InitCommandCollection()
                 End If
                 Return Me._commandCollection
             End Get
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Public Property ClearBeforeFill() As Boolean
             Get
                 Return Me._clearBeforeFill
             End Get
-            Set
+            Set(ByVal value As Boolean)
                 Me._clearBeforeFill = value
             End Set
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Private Sub InitAdapter()
             Me._adapter = New Global.Devart.Data.MySql.MySqlDataAdapter()
             Dim tableMapping As Global.System.Data.Common.DataTableMapping = New Global.System.Data.Common.DataTableMapping()
@@ -37436,100 +37490,100 @@ Namespace BDClientesDataSetTableAdapters
             tableMapping.ColumnMappings.Add("Telefonos", "Telefonos")
             Me._adapter.TableMappings.Add(tableMapping)
         End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Private Sub InitConnection()
             Me._connection = New Global.Devart.Data.MySql.MySqlConnection()
             Me._connection.ConnectionString = Global.bddc.Win.My.MySettings.Default.bdcrmConnectionString
         End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Private Sub InitCommandCollection()
             Me._commandCollection = New Global.Devart.Data.MySql.MySqlCommand(0) {}
             Me._commandCollection(0) = New Global.Devart.Data.MySql.MySqlCommand()
             Me._commandCollection(0).Connection = Me.Connection
-            Me._commandCollection(0).CommandText = "SELECT        ClienteId, Codigo, TipoDoc, NumDoc, Nombres, Apellidos, Email, Tele"& _ 
-                "fonos"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"FROM            viwfcb_clientes_datosbasicos"
+            Me._commandCollection(0).CommandText = "SELECT        ClienteId, Codigo, TipoDoc, NumDoc, Nombres, Apellidos, Email, Tele" & _
+                "fonos" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "FROM            viwfcb_clientes_datosbasicos"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
         End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, true)>  _
-        Public Overloads Overridable Function Fill(ByVal dataTable As BDClientesDataSet.Fiesta_viwfcb_clientes_datosbasicosDataTable) As Integer
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, True)> _
+        Public Overridable Overloads Function Fill(ByVal dataTable As BDClientesDataSet.Fiesta_viwfcb_clientes_datosbasicosDataTable) As Integer
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
-            If (Me.ClearBeforeFill = true) Then
-                dataTable.Clear
+            If (Me.ClearBeforeFill = True) Then
+                dataTable.Clear()
             End If
             Dim returnValue As Integer = Me.Adapter.Fill(dataTable)
             Return returnValue
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], true)>  _
-        Public Overloads Overridable Function GetData() As BDClientesDataSet.Fiesta_viwfcb_clientes_datosbasicosDataTable
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], True)> _
+        Public Overridable Overloads Function GetData() As BDClientesDataSet.Fiesta_viwfcb_clientes_datosbasicosDataTable
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
             Dim dataTable As BDClientesDataSet.Fiesta_viwfcb_clientes_datosbasicosDataTable = New BDClientesDataSet.Fiesta_viwfcb_clientes_datosbasicosDataTable()
             Me.Adapter.Fill(dataTable)
             Return dataTable
         End Function
     End Class
-    
+
     '''<summary>
     '''Represents the connection and commands used to retrieve and save data.
     '''</summary>
-    <Global.System.ComponentModel.DesignerCategoryAttribute("code"),  _
-     Global.System.ComponentModel.ToolboxItem(true),  _
-     Global.System.ComponentModel.DataObjectAttribute(true),  _
-     Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner"& _ 
-        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"),  _
-     Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+    <Global.System.ComponentModel.DesignerCategoryAttribute("code"), _
+     Global.System.ComponentModel.ToolboxItem(True), _
+     Global.System.ComponentModel.DataObjectAttribute(True), _
+     Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" & _
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"), _
+     Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
     Partial Public Class Luxor_viwbdd_cliente_slotsTableAdapter
         Inherits Global.System.ComponentModel.Component
-        
+
         Private WithEvents _adapter As Global.Devart.Data.MySql.MySqlDataAdapter
-        
+
         Private _connection As Global.Devart.Data.MySql.MySqlConnection
-        
+
         Private _transaction As Global.System.Data.Common.DbTransaction
-        
+
         Private _commandCollection() As Global.Devart.Data.MySql.MySqlCommand
-        
+
         Private _clearBeforeFill As Boolean
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Public Sub New()
-            MyBase.New
-            Me.ClearBeforeFill = true
+            MyBase.New()
+            Me.ClearBeforeFill = True
         End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Protected Friend ReadOnly Property Adapter() As Global.Devart.Data.MySql.MySqlDataAdapter
             Get
                 If (Me._adapter Is Nothing) Then
-                    Me.InitAdapter
+                    Me.InitAdapter()
                 End If
                 Return Me._adapter
             End Get
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Friend Property Connection() As Global.Devart.Data.MySql.MySqlConnection
             Get
                 If (Me._connection Is Nothing) Then
-                    Me.InitConnection
+                    Me.InitConnection()
                 End If
                 Return Me._connection
             End Get
-            Set
+            Set(ByVal value As Global.Devart.Data.MySql.MySqlConnection)
                 Me._connection = value
                 If (Not (Me.Adapter.InsertCommand) Is Nothing) Then
                     Me.Adapter.InsertCommand.Connection = value
@@ -37543,65 +37597,65 @@ Namespace BDClientesDataSetTableAdapters
                 Dim i As Integer = 0
                 Do While (i < Me.CommandCollection.Length)
                     If (Not (Me.CommandCollection(i)) Is Nothing) Then
-                        CType(Me.CommandCollection(i),Global.Devart.Data.MySql.MySqlCommand).Connection = value
+                        CType(Me.CommandCollection(i), Global.Devart.Data.MySql.MySqlCommand).Connection = value
                     End If
                     i = (i + 1)
                 Loop
             End Set
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Friend Property Transaction() As Global.System.Data.Common.DbTransaction
             Get
                 Return Me._transaction
             End Get
-            Set
+            Set(ByVal value As Global.System.Data.Common.DbTransaction)
                 Me._transaction = value
                 Dim i As Integer = 0
                 Do While (i < Me.CommandCollection.Length)
                     Me.CommandCollection(i).Transaction = Me._transaction
                     i = (i + 1)
                 Loop
-                If ((Not (Me.Adapter) Is Nothing)  _
+                If ((Not (Me.Adapter) Is Nothing) _
                             AndAlso (Not (Me.Adapter.DeleteCommand) Is Nothing)) Then
                     Me.Adapter.DeleteCommand.Transaction = Me._transaction
                 End If
-                If ((Not (Me.Adapter) Is Nothing)  _
+                If ((Not (Me.Adapter) Is Nothing) _
                             AndAlso (Not (Me.Adapter.InsertCommand) Is Nothing)) Then
                     Me.Adapter.InsertCommand.Transaction = Me._transaction
                 End If
-                If ((Not (Me.Adapter) Is Nothing)  _
+                If ((Not (Me.Adapter) Is Nothing) _
                             AndAlso (Not (Me.Adapter.UpdateCommand) Is Nothing)) Then
                     Me.Adapter.UpdateCommand.Transaction = Me._transaction
                 End If
             End Set
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Protected ReadOnly Property CommandCollection() As Global.Devart.Data.MySql.MySqlCommand()
             Get
                 If (Me._commandCollection Is Nothing) Then
-                    Me.InitCommandCollection
+                    Me.InitCommandCollection()
                 End If
                 Return Me._commandCollection
             End Get
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Public Property ClearBeforeFill() As Boolean
             Get
                 Return Me._clearBeforeFill
             End Get
-            Set
+            Set(ByVal value As Boolean)
                 Me._clearBeforeFill = value
             End Set
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Private Sub InitAdapter()
             Me._adapter = New Global.Devart.Data.MySql.MySqlDataAdapter()
             Dim tableMapping As Global.System.Data.Common.DataTableMapping = New Global.System.Data.Common.DataTableMapping()
@@ -37636,105 +37690,105 @@ Namespace BDClientesDataSetTableAdapters
             tableMapping.ColumnMappings.Add("plr_tier", "plr_tier")
             Me._adapter.TableMappings.Add(tableMapping)
         End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Private Sub InitConnection()
             Me._connection = New Global.Devart.Data.MySql.MySqlConnection()
             Me._connection.ConnectionString = Global.bddc.Win.My.MySettings.Default.bdcrmluxorConnectionString
         End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Private Sub InitCommandCollection()
             Me._commandCollection = New Global.Devart.Data.MySql.MySqlCommand(0) {}
             Me._commandCollection(0) = New Global.Devart.Data.MySql.MySqlCommand()
             Me._commandCollection(0).Connection = Me.Connection
-            Me._commandCollection(0).CommandText = "SELECT        Fuente, plr_rank, ClienteCodigo, ClienteTitulo, ClienteApePat, Clie"& _ 
-                "nteApeMat, ClienteNombres, ClienteNumdoc, ClienteGenero, ClienteFecNac, Domicili"& _ 
-                "oDireccion, "&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                         DomicilioDistrito, TelFijo, TelMovil, EMa"& _ 
-                "il, plr_last_activity, plr_point_bal, plr_comp_bal, plr_points_earned, plr_visit"& _ 
-                "s, plr_total_theo, plr_slot_theo, plr_table_theo, "&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                         plr"& _ 
-                "_slot_points, plr_slot_wager, plr_slot_won, plr_tier"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"FROM            viwbdd_cli"& _ 
+            Me._commandCollection(0).CommandText = "SELECT        Fuente, plr_rank, ClienteCodigo, ClienteTitulo, ClienteApePat, Clie" & _
+                "nteApeMat, ClienteNombres, ClienteNumdoc, ClienteGenero, ClienteFecNac, Domicili" & _
+                "oDireccion, " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "                         DomicilioDistrito, TelFijo, TelMovil, EMa" & _
+                "il, plr_last_activity, plr_point_bal, plr_comp_bal, plr_points_earned, plr_visit" & _
+                "s, plr_total_theo, plr_slot_theo, plr_table_theo, " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "                         plr" & _
+                "_slot_points, plr_slot_wager, plr_slot_won, plr_tier" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "FROM            viwbdd_cli" & _
                 "ente_slots"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
         End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, true)>  _
-        Public Overloads Overridable Function Fill(ByVal dataTable As BDClientesDataSet.Luxor_viwbdd_cliente_slotsDataTable) As Integer
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, True)> _
+        Public Overridable Overloads Function Fill(ByVal dataTable As BDClientesDataSet.Luxor_viwbdd_cliente_slotsDataTable) As Integer
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
-            If (Me.ClearBeforeFill = true) Then
-                dataTable.Clear
+            If (Me.ClearBeforeFill = True) Then
+                dataTable.Clear()
             End If
             Dim returnValue As Integer = Me.Adapter.Fill(dataTable)
             Return returnValue
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], true)>  _
-        Public Overloads Overridable Function GetData() As BDClientesDataSet.Luxor_viwbdd_cliente_slotsDataTable
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], True)> _
+        Public Overridable Overloads Function GetData() As BDClientesDataSet.Luxor_viwbdd_cliente_slotsDataTable
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
             Dim dataTable As BDClientesDataSet.Luxor_viwbdd_cliente_slotsDataTable = New BDClientesDataSet.Luxor_viwbdd_cliente_slotsDataTable()
             Me.Adapter.Fill(dataTable)
             Return dataTable
         End Function
     End Class
-    
+
     '''<summary>
     '''Represents the connection and commands used to retrieve and save data.
     '''</summary>
-    <Global.System.ComponentModel.DesignerCategoryAttribute("code"),  _
-     Global.System.ComponentModel.ToolboxItem(true),  _
-     Global.System.ComponentModel.DataObjectAttribute(true),  _
-     Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner"& _ 
-        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"),  _
-     Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+    <Global.System.ComponentModel.DesignerCategoryAttribute("code"), _
+     Global.System.ComponentModel.ToolboxItem(True), _
+     Global.System.ComponentModel.DataObjectAttribute(True), _
+     Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" & _
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"), _
+     Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
     Partial Public Class Fiesta_viwbdd_cliente_slotsTableAdapter
         Inherits Global.System.ComponentModel.Component
-        
+
         Private WithEvents _adapter As Global.Devart.Data.MySql.MySqlDataAdapter
-        
+
         Private _connection As Global.Devart.Data.MySql.MySqlConnection
-        
+
         Private _transaction As Global.System.Data.Common.DbTransaction
-        
+
         Private _commandCollection() As Global.Devart.Data.MySql.MySqlCommand
-        
+
         Private _clearBeforeFill As Boolean
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Public Sub New()
-            MyBase.New
-            Me.ClearBeforeFill = true
+            MyBase.New()
+            Me.ClearBeforeFill = True
         End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Protected Friend ReadOnly Property Adapter() As Global.Devart.Data.MySql.MySqlDataAdapter
             Get
                 If (Me._adapter Is Nothing) Then
-                    Me.InitAdapter
+                    Me.InitAdapter()
                 End If
                 Return Me._adapter
             End Get
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Friend Property Connection() As Global.Devart.Data.MySql.MySqlConnection
             Get
                 If (Me._connection Is Nothing) Then
-                    Me.InitConnection
+                    Me.InitConnection()
                 End If
                 Return Me._connection
             End Get
-            Set
+            Set(ByVal value As Global.Devart.Data.MySql.MySqlConnection)
                 Me._connection = value
                 If (Not (Me.Adapter.InsertCommand) Is Nothing) Then
                     Me.Adapter.InsertCommand.Connection = value
@@ -37748,65 +37802,65 @@ Namespace BDClientesDataSetTableAdapters
                 Dim i As Integer = 0
                 Do While (i < Me.CommandCollection.Length)
                     If (Not (Me.CommandCollection(i)) Is Nothing) Then
-                        CType(Me.CommandCollection(i),Global.Devart.Data.MySql.MySqlCommand).Connection = value
+                        CType(Me.CommandCollection(i), Global.Devart.Data.MySql.MySqlCommand).Connection = value
                     End If
                     i = (i + 1)
                 Loop
             End Set
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Friend Property Transaction() As Global.System.Data.Common.DbTransaction
             Get
                 Return Me._transaction
             End Get
-            Set
+            Set(ByVal value As Global.System.Data.Common.DbTransaction)
                 Me._transaction = value
                 Dim i As Integer = 0
                 Do While (i < Me.CommandCollection.Length)
                     Me.CommandCollection(i).Transaction = Me._transaction
                     i = (i + 1)
                 Loop
-                If ((Not (Me.Adapter) Is Nothing)  _
+                If ((Not (Me.Adapter) Is Nothing) _
                             AndAlso (Not (Me.Adapter.DeleteCommand) Is Nothing)) Then
                     Me.Adapter.DeleteCommand.Transaction = Me._transaction
                 End If
-                If ((Not (Me.Adapter) Is Nothing)  _
+                If ((Not (Me.Adapter) Is Nothing) _
                             AndAlso (Not (Me.Adapter.InsertCommand) Is Nothing)) Then
                     Me.Adapter.InsertCommand.Transaction = Me._transaction
                 End If
-                If ((Not (Me.Adapter) Is Nothing)  _
+                If ((Not (Me.Adapter) Is Nothing) _
                             AndAlso (Not (Me.Adapter.UpdateCommand) Is Nothing)) Then
                     Me.Adapter.UpdateCommand.Transaction = Me._transaction
                 End If
             End Set
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Protected ReadOnly Property CommandCollection() As Global.Devart.Data.MySql.MySqlCommand()
             Get
                 If (Me._commandCollection Is Nothing) Then
-                    Me.InitCommandCollection
+                    Me.InitCommandCollection()
                 End If
                 Return Me._commandCollection
             End Get
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Public Property ClearBeforeFill() As Boolean
             Get
                 Return Me._clearBeforeFill
             End Get
-            Set
+            Set(ByVal value As Boolean)
                 Me._clearBeforeFill = value
             End Set
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Private Sub InitAdapter()
             Me._adapter = New Global.Devart.Data.MySql.MySqlDataAdapter()
             Dim tableMapping As Global.System.Data.Common.DataTableMapping = New Global.System.Data.Common.DataTableMapping()
@@ -37841,105 +37895,105 @@ Namespace BDClientesDataSetTableAdapters
             tableMapping.ColumnMappings.Add("plr_tier", "plr_tier")
             Me._adapter.TableMappings.Add(tableMapping)
         End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Private Sub InitConnection()
             Me._connection = New Global.Devart.Data.MySql.MySqlConnection()
             Me._connection.ConnectionString = Global.bddc.Win.My.MySettings.Default.bdcrmConnectionString
         End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Private Sub InitCommandCollection()
             Me._commandCollection = New Global.Devart.Data.MySql.MySqlCommand(0) {}
             Me._commandCollection(0) = New Global.Devart.Data.MySql.MySqlCommand()
             Me._commandCollection(0).Connection = Me.Connection
-            Me._commandCollection(0).CommandText = "SELECT        Fuente, plr_rank, ClienteCodigo, ClienteTitulo, ClienteApePat, Clie"& _ 
-                "nteApeMat, ClienteNombres, ClienteNumdoc, ClienteGenero, ClienteFecNac, Domicili"& _ 
-                "oDireccion, "&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                         DomicilioDistrito, TelFijo, TelMovil, EMa"& _ 
-                "il, plr_last_activity, plr_point_bal, plr_comp_bal, plr_points_earned, plr_visit"& _ 
-                "s, plr_total_theo, plr_slot_theo, plr_table_theo, "&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                         plr"& _ 
-                "_slot_points, plr_slot_wager, plr_slot_won, plr_tier"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"FROM            viwbdd_cli"& _ 
+            Me._commandCollection(0).CommandText = "SELECT        Fuente, plr_rank, ClienteCodigo, ClienteTitulo, ClienteApePat, Clie" & _
+                "nteApeMat, ClienteNombres, ClienteNumdoc, ClienteGenero, ClienteFecNac, Domicili" & _
+                "oDireccion, " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "                         DomicilioDistrito, TelFijo, TelMovil, EMa" & _
+                "il, plr_last_activity, plr_point_bal, plr_comp_bal, plr_points_earned, plr_visit" & _
+                "s, plr_total_theo, plr_slot_theo, plr_table_theo, " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "                         plr" & _
+                "_slot_points, plr_slot_wager, plr_slot_won, plr_tier" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "FROM            viwbdd_cli" & _
                 "ente_slots"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
         End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, true)>  _
-        Public Overloads Overridable Function Fill(ByVal dataTable As BDClientesDataSet.Fiesta_viwbdd_cliente_slotsDataTable) As Integer
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, True)> _
+        Public Overridable Overloads Function Fill(ByVal dataTable As BDClientesDataSet.Fiesta_viwbdd_cliente_slotsDataTable) As Integer
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
-            If (Me.ClearBeforeFill = true) Then
-                dataTable.Clear
+            If (Me.ClearBeforeFill = True) Then
+                dataTable.Clear()
             End If
             Dim returnValue As Integer = Me.Adapter.Fill(dataTable)
             Return returnValue
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], true)>  _
-        Public Overloads Overridable Function GetData() As BDClientesDataSet.Fiesta_viwbdd_cliente_slotsDataTable
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], True)> _
+        Public Overridable Overloads Function GetData() As BDClientesDataSet.Fiesta_viwbdd_cliente_slotsDataTable
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
             Dim dataTable As BDClientesDataSet.Fiesta_viwbdd_cliente_slotsDataTable = New BDClientesDataSet.Fiesta_viwbdd_cliente_slotsDataTable()
             Me.Adapter.Fill(dataTable)
             Return dataTable
         End Function
     End Class
-    
+
     '''<summary>
     '''Represents the connection and commands used to retrieve and save data.
     '''</summary>
-    <Global.System.ComponentModel.DesignerCategoryAttribute("code"),  _
-     Global.System.ComponentModel.ToolboxItem(true),  _
-     Global.System.ComponentModel.DataObjectAttribute(true),  _
-     Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner"& _ 
-        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"),  _
-     Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+    <Global.System.ComponentModel.DesignerCategoryAttribute("code"), _
+     Global.System.ComponentModel.ToolboxItem(True), _
+     Global.System.ComponentModel.DataObjectAttribute(True), _
+     Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" & _
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"), _
+     Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
     Partial Public Class Tacna_tblbdd_clienteBusquedaTableAdapter
         Inherits Global.System.ComponentModel.Component
-        
+
         Private WithEvents _adapter As Global.Devart.Data.MySql.MySqlDataAdapter
-        
+
         Private _connection As Global.Devart.Data.MySql.MySqlConnection
-        
+
         Private _transaction As Global.System.Data.Common.DbTransaction
-        
+
         Private _commandCollection() As Global.Devart.Data.MySql.MySqlCommand
-        
+
         Private _clearBeforeFill As Boolean
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Public Sub New()
-            MyBase.New
-            Me.ClearBeforeFill = true
+            MyBase.New()
+            Me.ClearBeforeFill = True
         End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Protected Friend ReadOnly Property Adapter() As Global.Devart.Data.MySql.MySqlDataAdapter
             Get
                 If (Me._adapter Is Nothing) Then
-                    Me.InitAdapter
+                    Me.InitAdapter()
                 End If
                 Return Me._adapter
             End Get
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Friend Property Connection() As Global.Devart.Data.MySql.MySqlConnection
             Get
                 If (Me._connection Is Nothing) Then
-                    Me.InitConnection
+                    Me.InitConnection()
                 End If
                 Return Me._connection
             End Get
-            Set
+            Set(ByVal value As Global.Devart.Data.MySql.MySqlConnection)
                 Me._connection = value
                 If (Not (Me.Adapter.InsertCommand) Is Nothing) Then
                     Me.Adapter.InsertCommand.Connection = value
@@ -37953,65 +38007,65 @@ Namespace BDClientesDataSetTableAdapters
                 Dim i As Integer = 0
                 Do While (i < Me.CommandCollection.Length)
                     If (Not (Me.CommandCollection(i)) Is Nothing) Then
-                        CType(Me.CommandCollection(i),Global.Devart.Data.MySql.MySqlCommand).Connection = value
+                        CType(Me.CommandCollection(i), Global.Devart.Data.MySql.MySqlCommand).Connection = value
                     End If
                     i = (i + 1)
                 Loop
             End Set
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Friend Property Transaction() As Global.System.Data.Common.DbTransaction
             Get
                 Return Me._transaction
             End Get
-            Set
+            Set(ByVal value As Global.System.Data.Common.DbTransaction)
                 Me._transaction = value
                 Dim i As Integer = 0
                 Do While (i < Me.CommandCollection.Length)
                     Me.CommandCollection(i).Transaction = Me._transaction
                     i = (i + 1)
                 Loop
-                If ((Not (Me.Adapter) Is Nothing)  _
+                If ((Not (Me.Adapter) Is Nothing) _
                             AndAlso (Not (Me.Adapter.DeleteCommand) Is Nothing)) Then
                     Me.Adapter.DeleteCommand.Transaction = Me._transaction
                 End If
-                If ((Not (Me.Adapter) Is Nothing)  _
+                If ((Not (Me.Adapter) Is Nothing) _
                             AndAlso (Not (Me.Adapter.InsertCommand) Is Nothing)) Then
                     Me.Adapter.InsertCommand.Transaction = Me._transaction
                 End If
-                If ((Not (Me.Adapter) Is Nothing)  _
+                If ((Not (Me.Adapter) Is Nothing) _
                             AndAlso (Not (Me.Adapter.UpdateCommand) Is Nothing)) Then
                     Me.Adapter.UpdateCommand.Transaction = Me._transaction
                 End If
             End Set
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Protected ReadOnly Property CommandCollection() As Global.Devart.Data.MySql.MySqlCommand()
             Get
                 If (Me._commandCollection Is Nothing) Then
-                    Me.InitCommandCollection
+                    Me.InitCommandCollection()
                 End If
                 Return Me._commandCollection
             End Get
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Public Property ClearBeforeFill() As Boolean
             Get
                 Return Me._clearBeforeFill
             End Get
-            Set
+            Set(ByVal value As Boolean)
                 Me._clearBeforeFill = value
             End Set
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Private Sub InitAdapter()
             Me._adapter = New Global.Devart.Data.MySql.MySqlDataAdapter()
             Dim tableMapping As Global.System.Data.Common.DataTableMapping = New Global.System.Data.Common.DataTableMapping()
@@ -38026,378 +38080,378 @@ Namespace BDClientesDataSetTableAdapters
             Me._adapter.TableMappings.Add(tableMapping)
             Me._adapter.DeleteCommand = New Global.Devart.Data.MySql.MySqlCommand()
             Me._adapter.DeleteCommand.Connection = Me.Connection
-            Me._adapter.DeleteCommand.CommandText = "DELETE FROM `bdcrmtacna`.`tblbdd_cliente` WHERE ((`ccli_id` = :Original_ClienteId"& _ 
-                ") AND (`scli_apellidopat` = :Original_ClienteApePat) AND (`scli_apellidomat` = :"& _ 
+            Me._adapter.DeleteCommand.CommandText = "DELETE FROM `bdcrmtacna`.`tblbdd_cliente` WHERE ((`ccli_id` = :Original_ClienteId" & _
+                ") AND (`scli_apellidopat` = :Original_ClienteApePat) AND (`scli_apellidomat` = :" & _
                 "Original_ClienteApeMat) AND (`scli_nombres` = :Original_ClienteNombres))"
             Me._adapter.DeleteCommand.CommandType = Global.System.Data.CommandType.Text
             Dim param As Global.Devart.Data.MySql.MySqlParameter = New Global.Devart.Data.MySql.MySqlParameter()
             param.ParameterName = "Original_ClienteId"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlType = Global.Devart.Data.MySql.MySqlType.Int
-            param.IsNullable = true
+            param.IsNullable = True
             param.SourceColumn = "ClienteId"
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
             Me._adapter.DeleteCommand.Parameters.Add(param)
             param = New Global.Devart.Data.MySql.MySqlParameter()
             param.ParameterName = "Original_ClienteApePat"
             param.MySqlType = Global.Devart.Data.MySql.MySqlType.VarChar
-            param.IsNullable = true
+            param.IsNullable = True
             param.SourceColumn = "ClienteApePat"
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
             Me._adapter.DeleteCommand.Parameters.Add(param)
             param = New Global.Devart.Data.MySql.MySqlParameter()
             param.ParameterName = "Original_ClienteApeMat"
             param.MySqlType = Global.Devart.Data.MySql.MySqlType.VarChar
-            param.IsNullable = true
+            param.IsNullable = True
             param.SourceColumn = "ClienteApeMat"
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
             Me._adapter.DeleteCommand.Parameters.Add(param)
             param = New Global.Devart.Data.MySql.MySqlParameter()
             param.ParameterName = "Original_ClienteNombres"
             param.MySqlType = Global.Devart.Data.MySql.MySqlType.VarChar
-            param.IsNullable = true
+            param.IsNullable = True
             param.SourceColumn = "ClienteNombres"
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
             Me._adapter.DeleteCommand.Parameters.Add(param)
             Me._adapter.UpdateCommand = New Global.Devart.Data.MySql.MySqlCommand()
             Me._adapter.UpdateCommand.Connection = Me.Connection
-            Me._adapter.UpdateCommand.CommandText = "UPDATE `bdcrmtacna`.`tblbdd_cliente` SET `scli_apellidopat` = :ClienteApePat, `sc"& _ 
-                "li_apellidomat` = :ClienteApeMat, `scli_nombres` = :ClienteNombres WHERE ((`ccli"& _ 
-                "_id` = :Original_ClienteId) AND (`scli_apellidopat` = :Original_ClienteApePat) A"& _ 
-                "ND (`scli_apellidomat` = :Original_ClienteApeMat) AND (`scli_nombres` = :Origina"& _ 
+            Me._adapter.UpdateCommand.CommandText = "UPDATE `bdcrmtacna`.`tblbdd_cliente` SET `scli_apellidopat` = :ClienteApePat, `sc" & _
+                "li_apellidomat` = :ClienteApeMat, `scli_nombres` = :ClienteNombres WHERE ((`ccli" & _
+                "_id` = :Original_ClienteId) AND (`scli_apellidopat` = :Original_ClienteApePat) A" & _
+                "ND (`scli_apellidomat` = :Original_ClienteApeMat) AND (`scli_nombres` = :Origina" & _
                 "l_ClienteNombres))"
             Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
             param = New Global.Devart.Data.MySql.MySqlParameter()
             param.ParameterName = "ClienteApePat"
             param.MySqlType = Global.Devart.Data.MySql.MySqlType.VarChar
-            param.IsNullable = true
+            param.IsNullable = True
             param.SourceColumn = "ClienteApePat"
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.Devart.Data.MySql.MySqlParameter()
             param.ParameterName = "ClienteApeMat"
             param.MySqlType = Global.Devart.Data.MySql.MySqlType.VarChar
-            param.IsNullable = true
+            param.IsNullable = True
             param.SourceColumn = "ClienteApeMat"
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.Devart.Data.MySql.MySqlParameter()
             param.ParameterName = "ClienteNombres"
             param.MySqlType = Global.Devart.Data.MySql.MySqlType.VarChar
-            param.IsNullable = true
+            param.IsNullable = True
             param.SourceColumn = "ClienteNombres"
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.Devart.Data.MySql.MySqlParameter()
             param.ParameterName = "Original_ClienteId"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlType = Global.Devart.Data.MySql.MySqlType.Int
-            param.IsNullable = true
+            param.IsNullable = True
             param.SourceColumn = "ClienteId"
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.Devart.Data.MySql.MySqlParameter()
             param.ParameterName = "Original_ClienteApePat"
             param.MySqlType = Global.Devart.Data.MySql.MySqlType.VarChar
-            param.IsNullable = true
+            param.IsNullable = True
             param.SourceColumn = "ClienteApePat"
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.Devart.Data.MySql.MySqlParameter()
             param.ParameterName = "Original_ClienteApeMat"
             param.MySqlType = Global.Devart.Data.MySql.MySqlType.VarChar
-            param.IsNullable = true
+            param.IsNullable = True
             param.SourceColumn = "ClienteApeMat"
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.Devart.Data.MySql.MySqlParameter()
             param.ParameterName = "Original_ClienteNombres"
             param.MySqlType = Global.Devart.Data.MySql.MySqlType.VarChar
-            param.IsNullable = true
+            param.IsNullable = True
             param.SourceColumn = "ClienteNombres"
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
             Me._adapter.UpdateCommand.Parameters.Add(param)
         End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Private Sub InitConnection()
             Me._connection = New Global.Devart.Data.MySql.MySqlConnection()
             Me._connection.ConnectionString = Global.bddc.Win.My.MySettings.Default.bdcrmtacnaConnectionString
         End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Private Sub InitCommandCollection()
             Me._commandCollection = New Global.Devart.Data.MySql.MySqlCommand(0) {}
             Me._commandCollection(0) = New Global.Devart.Data.MySql.MySqlCommand()
             Me._commandCollection(0).Connection = Me.Connection
-            Me._commandCollection(0).CommandText = "SELECT        ccli_id AS ClienteId, COALESCE(scli_codigo, '') AS ClienteCodigo, s"& _ 
-                "cli_apellidopat AS ClienteApePat, scli_apellidomat AS ClienteApeMat, "&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"         "& _ 
-                "                scli_nombres AS ClienteNombres, CONCAT(scli_apellidomat, ' ', sc"& _ 
-                "li_apellidopat) AS ClienteApellidos"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"FROM            tblbdd_cliente"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"WHERE      "& _ 
-                "  (fcli_estadoid = 1) AND (fcli_fuenteid IN (0, 1, 2, 3)) OR"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                  "& _ 
-                "       (scli_nombres = :Nombre) OR"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                         (scli_apellidopat ="& _ 
-                " :Apellido) OR"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                         (scli_codigo = :Codigo) OR"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"           "& _ 
+            Me._commandCollection(0).CommandText = "SELECT        ccli_id AS ClienteId, COALESCE(scli_codigo, '') AS ClienteCodigo, s" & _
+                "cli_apellidopat AS ClienteApePat, scli_apellidomat AS ClienteApeMat, " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "         " & _
+                "                scli_nombres AS ClienteNombres, CONCAT(scli_apellidomat, ' ', sc" & _
+                "li_apellidopat) AS ClienteApellidos" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "FROM            tblbdd_cliente" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "WHERE      " & _
+                "  (fcli_estadoid = 1) AND (fcli_fuenteid IN (0, 1, 2, 3)) OR" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "                  " & _
+                "       (scli_nombres = :Nombre) OR" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "                         (scli_apellidopat =" & _
+                " :Apellido) OR" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "                         (scli_codigo = :Codigo) OR" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "           " & _
                 "              (scli_comentarios = :Referencia)"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
             Dim param As Global.Devart.Data.MySql.MySqlParameter = New Global.Devart.Data.MySql.MySqlParameter()
             param.ParameterName = "Nombre"
             param.MySqlType = Global.Devart.Data.MySql.MySqlType.VarChar
             param.Size = 1024
-            param.IsNullable = true
+            param.IsNullable = True
             param.SourceColumn = "ClienteNombres"
             Me._commandCollection(0).Parameters.Add(param)
             param = New Global.Devart.Data.MySql.MySqlParameter()
             param.ParameterName = "Apellido"
             param.MySqlType = Global.Devart.Data.MySql.MySqlType.VarChar
             param.Size = 1024
-            param.IsNullable = true
+            param.IsNullable = True
             param.SourceColumn = "ClienteApePat"
             Me._commandCollection(0).Parameters.Add(param)
             param = New Global.Devart.Data.MySql.MySqlParameter()
             param.ParameterName = "Codigo"
             param.MySqlType = Global.Devart.Data.MySql.MySqlType.VarChar
             param.Size = 1024
-            param.IsNullable = true
+            param.IsNullable = True
             param.SourceColumn = "scli_codigo"
             Me._commandCollection(0).Parameters.Add(param)
             param = New Global.Devart.Data.MySql.MySqlParameter()
             param.ParameterName = "Referencia"
             param.MySqlType = Global.Devart.Data.MySql.MySqlType.VarChar
             param.Size = 1024
-            param.IsNullable = true
+            param.IsNullable = True
             param.SourceColumn = "scli_comentarios"
             Me._commandCollection(0).Parameters.Add(param)
         End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, true)>  _
-        Public Overloads Overridable Function Fill(ByVal dataTable As BDClientesDataSet.Tacna_tblbdd_clienteBusquedaDataTable, ByVal Nombre As String, ByVal Apellido As String, ByVal Codigo As String, ByVal Referencia As String) As Integer
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, True)> _
+        Public Overridable Overloads Function Fill(ByVal dataTable As BDClientesDataSet.Tacna_tblbdd_clienteBusquedaDataTable, ByVal Nombre As String, ByVal Apellido As String, ByVal Codigo As String, ByVal Referencia As String) As Integer
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
             If (Nombre Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("Nombre")
             Else
-                Me.Adapter.SelectCommand.Parameters(0).Value = CType(Nombre,String)
+                Me.Adapter.SelectCommand.Parameters(0).Value = CType(Nombre, String)
             End If
             If (Apellido Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("Apellido")
             Else
-                Me.Adapter.SelectCommand.Parameters(1).Value = CType(Apellido,String)
+                Me.Adapter.SelectCommand.Parameters(1).Value = CType(Apellido, String)
             End If
             If (Codigo Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("Codigo")
             Else
-                Me.Adapter.SelectCommand.Parameters(2).Value = CType(Codigo,String)
+                Me.Adapter.SelectCommand.Parameters(2).Value = CType(Codigo, String)
             End If
             If (Referencia Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("Referencia")
             Else
-                Me.Adapter.SelectCommand.Parameters(3).Value = CType(Referencia,String)
+                Me.Adapter.SelectCommand.Parameters(3).Value = CType(Referencia, String)
             End If
-            If (Me.ClearBeforeFill = true) Then
-                dataTable.Clear
+            If (Me.ClearBeforeFill = True) Then
+                dataTable.Clear()
             End If
             Dim returnValue As Integer = Me.Adapter.Fill(dataTable)
             Return returnValue
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], true)>  _
-        Public Overloads Overridable Function GetData(ByVal Nombre As String, ByVal Apellido As String, ByVal Codigo As String, ByVal Referencia As String) As BDClientesDataSet.Tacna_tblbdd_clienteBusquedaDataTable
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], True)> _
+        Public Overridable Overloads Function GetData(ByVal Nombre As String, ByVal Apellido As String, ByVal Codigo As String, ByVal Referencia As String) As BDClientesDataSet.Tacna_tblbdd_clienteBusquedaDataTable
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
             If (Nombre Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("Nombre")
             Else
-                Me.Adapter.SelectCommand.Parameters(0).Value = CType(Nombre,String)
+                Me.Adapter.SelectCommand.Parameters(0).Value = CType(Nombre, String)
             End If
             If (Apellido Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("Apellido")
             Else
-                Me.Adapter.SelectCommand.Parameters(1).Value = CType(Apellido,String)
+                Me.Adapter.SelectCommand.Parameters(1).Value = CType(Apellido, String)
             End If
             If (Codigo Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("Codigo")
             Else
-                Me.Adapter.SelectCommand.Parameters(2).Value = CType(Codigo,String)
+                Me.Adapter.SelectCommand.Parameters(2).Value = CType(Codigo, String)
             End If
             If (Referencia Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("Referencia")
             Else
-                Me.Adapter.SelectCommand.Parameters(3).Value = CType(Referencia,String)
+                Me.Adapter.SelectCommand.Parameters(3).Value = CType(Referencia, String)
             End If
             Dim dataTable As BDClientesDataSet.Tacna_tblbdd_clienteBusquedaDataTable = New BDClientesDataSet.Tacna_tblbdd_clienteBusquedaDataTable()
             Me.Adapter.Fill(dataTable)
             Return dataTable
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
-        Public Overloads Overridable Function Update(ByVal dataTable As BDClientesDataSet.Tacna_tblbdd_clienteBusquedaDataTable) As Integer
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
+        Public Overridable Overloads Function Update(ByVal dataTable As BDClientesDataSet.Tacna_tblbdd_clienteBusquedaDataTable) As Integer
             Return Me.Adapter.Update(dataTable)
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
-        Public Overloads Overridable Function Update(ByVal dataSet As BDClientesDataSet) As Integer
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
+        Public Overridable Overloads Function Update(ByVal dataSet As BDClientesDataSet) As Integer
             Return Me.Adapter.Update(dataSet, "Tacna_tblbdd_clienteBusqueda")
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
-        Public Overloads Overridable Function Update(ByVal dataRow As Global.System.Data.DataRow) As Integer
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
+        Public Overridable Overloads Function Update(ByVal dataRow As Global.System.Data.DataRow) As Integer
             Return Me.Adapter.Update(New Global.System.Data.DataRow() {dataRow})
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
-        Public Overloads Overridable Function Update(ByVal dataRows() As Global.System.Data.DataRow) As Integer
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
+        Public Overridable Overloads Function Update(ByVal dataRows() As Global.System.Data.DataRow) As Integer
             Return Me.Adapter.Update(dataRows)
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Delete, true)>  _
-        Public Overloads Overridable Function Delete(ByVal Original_ClienteId As Integer, ByVal Original_ClienteApePat As String, ByVal Original_ClienteApeMat As String, ByVal Original_ClienteNombres As String) As Integer
-            Me.Adapter.DeleteCommand.Parameters(0).Value = CType(Original_ClienteId,Integer)
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Delete, True)> _
+        Public Overridable Overloads Function Delete(ByVal Original_ClienteId As Integer, ByVal Original_ClienteApePat As String, ByVal Original_ClienteApeMat As String, ByVal Original_ClienteNombres As String) As Integer
+            Me.Adapter.DeleteCommand.Parameters(0).Value = CType(Original_ClienteId, Integer)
             If (Original_ClienteApePat Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("Original_ClienteApePat")
             Else
-                Me.Adapter.DeleteCommand.Parameters(1).Value = CType(Original_ClienteApePat,String)
+                Me.Adapter.DeleteCommand.Parameters(1).Value = CType(Original_ClienteApePat, String)
             End If
             If (Original_ClienteApeMat Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("Original_ClienteApeMat")
             Else
-                Me.Adapter.DeleteCommand.Parameters(2).Value = CType(Original_ClienteApeMat,String)
+                Me.Adapter.DeleteCommand.Parameters(2).Value = CType(Original_ClienteApeMat, String)
             End If
             If (Original_ClienteNombres Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("Original_ClienteNombres")
             Else
-                Me.Adapter.DeleteCommand.Parameters(3).Value = CType(Original_ClienteNombres,String)
+                Me.Adapter.DeleteCommand.Parameters(3).Value = CType(Original_ClienteNombres, String)
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.DeleteCommand.Connection.State
-            If ((Me.Adapter.DeleteCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
+            If ((Me.Adapter.DeleteCommand.Connection.State And Global.System.Data.ConnectionState.Open) _
                         <> Global.System.Data.ConnectionState.Open) Then
-                Me.Adapter.DeleteCommand.Connection.Open
+                Me.Adapter.DeleteCommand.Connection.Open()
             End If
-            Try 
+            Try
                 Dim returnValue As Integer = Me.Adapter.DeleteCommand.ExecuteNonQuery
                 Return returnValue
             Finally
                 If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
-                    Me.Adapter.DeleteCommand.Connection.Close
+                    Me.Adapter.DeleteCommand.Connection.Close()
                 End If
             End Try
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
-        Public Overloads Overridable Function Update(ByVal ClienteApePat As String, ByVal ClienteApeMat As String, ByVal ClienteNombres As String, ByVal Original_ClienteId As Integer, ByVal Original_ClienteApePat As String, ByVal Original_ClienteApeMat As String, ByVal Original_ClienteNombres As String) As Integer
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, True)> _
+        Public Overridable Overloads Function Update(ByVal ClienteApePat As String, ByVal ClienteApeMat As String, ByVal ClienteNombres As String, ByVal Original_ClienteId As Integer, ByVal Original_ClienteApePat As String, ByVal Original_ClienteApeMat As String, ByVal Original_ClienteNombres As String) As Integer
             If (ClienteApePat Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("ClienteApePat")
             Else
-                Me.Adapter.UpdateCommand.Parameters(0).Value = CType(ClienteApePat,String)
+                Me.Adapter.UpdateCommand.Parameters(0).Value = CType(ClienteApePat, String)
             End If
             If (ClienteApeMat Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("ClienteApeMat")
             Else
-                Me.Adapter.UpdateCommand.Parameters(1).Value = CType(ClienteApeMat,String)
+                Me.Adapter.UpdateCommand.Parameters(1).Value = CType(ClienteApeMat, String)
             End If
             If (ClienteNombres Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("ClienteNombres")
             Else
-                Me.Adapter.UpdateCommand.Parameters(2).Value = CType(ClienteNombres,String)
+                Me.Adapter.UpdateCommand.Parameters(2).Value = CType(ClienteNombres, String)
             End If
-            Me.Adapter.UpdateCommand.Parameters(3).Value = CType(Original_ClienteId,Integer)
+            Me.Adapter.UpdateCommand.Parameters(3).Value = CType(Original_ClienteId, Integer)
             If (Original_ClienteApePat Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("Original_ClienteApePat")
             Else
-                Me.Adapter.UpdateCommand.Parameters(4).Value = CType(Original_ClienteApePat,String)
+                Me.Adapter.UpdateCommand.Parameters(4).Value = CType(Original_ClienteApePat, String)
             End If
             If (Original_ClienteApeMat Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("Original_ClienteApeMat")
             Else
-                Me.Adapter.UpdateCommand.Parameters(5).Value = CType(Original_ClienteApeMat,String)
+                Me.Adapter.UpdateCommand.Parameters(5).Value = CType(Original_ClienteApeMat, String)
             End If
             If (Original_ClienteNombres Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("Original_ClienteNombres")
             Else
-                Me.Adapter.UpdateCommand.Parameters(6).Value = CType(Original_ClienteNombres,String)
+                Me.Adapter.UpdateCommand.Parameters(6).Value = CType(Original_ClienteNombres, String)
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.UpdateCommand.Connection.State
-            If ((Me.Adapter.UpdateCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
+            If ((Me.Adapter.UpdateCommand.Connection.State And Global.System.Data.ConnectionState.Open) _
                         <> Global.System.Data.ConnectionState.Open) Then
-                Me.Adapter.UpdateCommand.Connection.Open
+                Me.Adapter.UpdateCommand.Connection.Open()
             End If
-            Try 
+            Try
                 Dim returnValue As Integer = Me.Adapter.UpdateCommand.ExecuteNonQuery
                 Return returnValue
             Finally
                 If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
-                    Me.Adapter.UpdateCommand.Connection.Close
+                    Me.Adapter.UpdateCommand.Connection.Close()
                 End If
             End Try
         End Function
     End Class
-    
+
     '''<summary>
     '''Represents the connection and commands used to retrieve and save data.
     '''</summary>
-    <Global.System.ComponentModel.DesignerCategoryAttribute("code"),  _
-     Global.System.ComponentModel.ToolboxItem(true),  _
-     Global.System.ComponentModel.DataObjectAttribute(true),  _
-     Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner"& _ 
-        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"),  _
-     Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+    <Global.System.ComponentModel.DesignerCategoryAttribute("code"), _
+     Global.System.ComponentModel.ToolboxItem(True), _
+     Global.System.ComponentModel.DataObjectAttribute(True), _
+     Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" & _
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"), _
+     Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
     Partial Public Class Tacna_tblaux_tipocambioTableAdapter
         Inherits Global.System.ComponentModel.Component
-        
+
         Private WithEvents _adapter As Global.Devart.Data.MySql.MySqlDataAdapter
-        
+
         Private _connection As Global.Devart.Data.MySql.MySqlConnection
-        
+
         Private _transaction As Global.System.Data.Common.DbTransaction
-        
+
         Private _commandCollection() As Global.Devart.Data.MySql.MySqlCommand
-        
+
         Private _clearBeforeFill As Boolean
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Public Sub New()
-            MyBase.New
-            Me.ClearBeforeFill = true
+            MyBase.New()
+            Me.ClearBeforeFill = True
         End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Protected Friend ReadOnly Property Adapter() As Global.Devart.Data.MySql.MySqlDataAdapter
             Get
                 If (Me._adapter Is Nothing) Then
-                    Me.InitAdapter
+                    Me.InitAdapter()
                 End If
                 Return Me._adapter
             End Get
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Friend Property Connection() As Global.Devart.Data.MySql.MySqlConnection
             Get
                 If (Me._connection Is Nothing) Then
-                    Me.InitConnection
+                    Me.InitConnection()
                 End If
                 Return Me._connection
             End Get
-            Set
+            Set(ByVal value As Global.Devart.Data.MySql.MySqlConnection)
                 Me._connection = value
                 If (Not (Me.Adapter.InsertCommand) Is Nothing) Then
                     Me.Adapter.InsertCommand.Connection = value
@@ -38411,65 +38465,65 @@ Namespace BDClientesDataSetTableAdapters
                 Dim i As Integer = 0
                 Do While (i < Me.CommandCollection.Length)
                     If (Not (Me.CommandCollection(i)) Is Nothing) Then
-                        CType(Me.CommandCollection(i),Global.Devart.Data.MySql.MySqlCommand).Connection = value
+                        CType(Me.CommandCollection(i), Global.Devart.Data.MySql.MySqlCommand).Connection = value
                     End If
                     i = (i + 1)
                 Loop
             End Set
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Friend Property Transaction() As Global.System.Data.Common.DbTransaction
             Get
                 Return Me._transaction
             End Get
-            Set
+            Set(ByVal value As Global.System.Data.Common.DbTransaction)
                 Me._transaction = value
                 Dim i As Integer = 0
                 Do While (i < Me.CommandCollection.Length)
                     Me.CommandCollection(i).Transaction = Me._transaction
                     i = (i + 1)
                 Loop
-                If ((Not (Me.Adapter) Is Nothing)  _
+                If ((Not (Me.Adapter) Is Nothing) _
                             AndAlso (Not (Me.Adapter.DeleteCommand) Is Nothing)) Then
                     Me.Adapter.DeleteCommand.Transaction = Me._transaction
                 End If
-                If ((Not (Me.Adapter) Is Nothing)  _
+                If ((Not (Me.Adapter) Is Nothing) _
                             AndAlso (Not (Me.Adapter.InsertCommand) Is Nothing)) Then
                     Me.Adapter.InsertCommand.Transaction = Me._transaction
                 End If
-                If ((Not (Me.Adapter) Is Nothing)  _
+                If ((Not (Me.Adapter) Is Nothing) _
                             AndAlso (Not (Me.Adapter.UpdateCommand) Is Nothing)) Then
                     Me.Adapter.UpdateCommand.Transaction = Me._transaction
                 End If
             End Set
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Protected ReadOnly Property CommandCollection() As Global.Devart.Data.MySql.MySqlCommand()
             Get
                 If (Me._commandCollection Is Nothing) Then
-                    Me.InitCommandCollection
+                    Me.InitCommandCollection()
                 End If
                 Return Me._commandCollection
             End Get
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Public Property ClearBeforeFill() As Boolean
             Get
                 Return Me._clearBeforeFill
             End Get
-            Set
+            Set(ByVal value As Boolean)
                 Me._clearBeforeFill = value
             End Set
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Private Sub InitAdapter()
             Me._adapter = New Global.Devart.Data.MySql.MySqlDataAdapter()
             Dim tableMapping As Global.System.Data.Common.DataTableMapping = New Global.System.Data.Common.DataTableMapping()
@@ -38484,27 +38538,27 @@ Namespace BDClientesDataSetTableAdapters
             Me._adapter.TableMappings.Add(tableMapping)
             Me._adapter.DeleteCommand = New Global.Devart.Data.MySql.MySqlCommand()
             Me._adapter.DeleteCommand.Connection = Me.Connection
-            Me._adapter.DeleteCommand.CommandText = "DELETE FROM `bdauxiliartacna`.`tblaux_tipocambio` WHERE (((:IsNull_Fecha = 1 AND "& _ 
-                "`ftdc_fechac` IS NULL) OR (`ftdc_fechac` = :Original_Fecha)) AND ((:IsNull_Tasa "& _ 
-                "= 1 AND `ntdc_valor` IS NULL) OR (`ntdc_valor` = :Original_Tasa)) AND (`ftdc_yyy"& _ 
-                "y` = :Original_ftdc_yyyy) AND (`ftdc_mm` = :Original_ftdc_mm) AND (`ftdc_dd` = :"& _ 
-                "Original_ftdc_dd) AND ((:IsNull_Estado = 1 AND `ftdc_estadoid` IS NULL) OR (`ftd"& _ 
+            Me._adapter.DeleteCommand.CommandText = "DELETE FROM `bdauxiliartacna`.`tblaux_tipocambio` WHERE (((:IsNull_Fecha = 1 AND " & _
+                "`ftdc_fechac` IS NULL) OR (`ftdc_fechac` = :Original_Fecha)) AND ((:IsNull_Tasa " & _
+                "= 1 AND `ntdc_valor` IS NULL) OR (`ntdc_valor` = :Original_Tasa)) AND (`ftdc_yyy" & _
+                "y` = :Original_ftdc_yyyy) AND (`ftdc_mm` = :Original_ftdc_mm) AND (`ftdc_dd` = :" & _
+                "Original_ftdc_dd) AND ((:IsNull_Estado = 1 AND `ftdc_estadoid` IS NULL) OR (`ftd" & _
                 "c_estadoid` = :Original_Estado)))"
             Me._adapter.DeleteCommand.CommandType = Global.System.Data.CommandType.Text
             Dim param As Global.Devart.Data.MySql.MySqlParameter = New Global.Devart.Data.MySql.MySqlParameter()
             param.ParameterName = "IsNull_Fecha"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlType = Global.Devart.Data.MySql.MySqlType.Int
-            param.IsNullable = true
+            param.IsNullable = True
             param.SourceColumn = "Fecha"
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
-            param.SourceColumnNullMapping = true
+            param.SourceColumnNullMapping = True
             Me._adapter.DeleteCommand.Parameters.Add(param)
             param = New Global.Devart.Data.MySql.MySqlParameter()
             param.ParameterName = "Original_Fecha"
             param.DbType = Global.System.Data.DbType.DateTime
             param.MySqlType = Global.Devart.Data.MySql.MySqlType.DateTime
-            param.IsNullable = true
+            param.IsNullable = True
             param.SourceColumn = "Fecha"
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
             Me._adapter.DeleteCommand.Parameters.Add(param)
@@ -38512,16 +38566,16 @@ Namespace BDClientesDataSetTableAdapters
             param.ParameterName = "IsNull_Tasa"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlType = Global.Devart.Data.MySql.MySqlType.Int
-            param.IsNullable = true
+            param.IsNullable = True
             param.SourceColumn = "Tasa"
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
-            param.SourceColumnNullMapping = true
+            param.SourceColumnNullMapping = True
             Me._adapter.DeleteCommand.Parameters.Add(param)
             param = New Global.Devart.Data.MySql.MySqlParameter()
             param.ParameterName = "Original_Tasa"
             param.DbType = Global.System.Data.DbType.[Decimal]
             param.MySqlType = Global.Devart.Data.MySql.MySqlType.[Decimal]
-            param.IsNullable = true
+            param.IsNullable = True
             param.SourceColumn = "Tasa"
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
             Me._adapter.DeleteCommand.Parameters.Add(param)
@@ -38529,7 +38583,7 @@ Namespace BDClientesDataSetTableAdapters
             param.ParameterName = "Original_ftdc_yyyy"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlType = Global.Devart.Data.MySql.MySqlType.Int
-            param.IsNullable = true
+            param.IsNullable = True
             param.SourceColumn = "ftdc_yyyy"
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
             Me._adapter.DeleteCommand.Parameters.Add(param)
@@ -38537,7 +38591,7 @@ Namespace BDClientesDataSetTableAdapters
             param.ParameterName = "Original_ftdc_mm"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlType = Global.Devart.Data.MySql.MySqlType.Int
-            param.IsNullable = true
+            param.IsNullable = True
             param.SourceColumn = "ftdc_mm"
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
             Me._adapter.DeleteCommand.Parameters.Add(param)
@@ -38545,7 +38599,7 @@ Namespace BDClientesDataSetTableAdapters
             param.ParameterName = "Original_ftdc_dd"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlType = Global.Devart.Data.MySql.MySqlType.Int
-            param.IsNullable = true
+            param.IsNullable = True
             param.SourceColumn = "ftdc_dd"
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
             Me._adapter.DeleteCommand.Parameters.Add(param)
@@ -38553,134 +38607,134 @@ Namespace BDClientesDataSetTableAdapters
             param.ParameterName = "IsNull_Estado"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlType = Global.Devart.Data.MySql.MySqlType.Int
-            param.IsNullable = true
+            param.IsNullable = True
             param.SourceColumn = "Estado"
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
-            param.SourceColumnNullMapping = true
+            param.SourceColumnNullMapping = True
             Me._adapter.DeleteCommand.Parameters.Add(param)
             param = New Global.Devart.Data.MySql.MySqlParameter()
             param.ParameterName = "Original_Estado"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlType = Global.Devart.Data.MySql.MySqlType.Int
-            param.IsNullable = true
+            param.IsNullable = True
             param.SourceColumn = "Estado"
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
             Me._adapter.DeleteCommand.Parameters.Add(param)
             Me._adapter.InsertCommand = New Global.Devart.Data.MySql.MySqlCommand()
             Me._adapter.InsertCommand.Connection = Me.Connection
-            Me._adapter.InsertCommand.CommandText = "INSERT INTO `bdauxiliartacna`.`tblaux_tipocambio` (`ftdc_fechac`, `ntdc_valor`, `"& _ 
-                "ftdc_yyyy`, `ftdc_mm`, `ftdc_dd`, `ftdc_estadoid`) VALUES (:Fecha, :Tasa, :ftdc_"& _ 
+            Me._adapter.InsertCommand.CommandText = "INSERT INTO `bdauxiliartacna`.`tblaux_tipocambio` (`ftdc_fechac`, `ntdc_valor`, `" & _
+                "ftdc_yyyy`, `ftdc_mm`, `ftdc_dd`, `ftdc_estadoid`) VALUES (:Fecha, :Tasa, :ftdc_" & _
                 "yyyy, :ftdc_mm, :ftdc_dd, :Estado)"
             Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
             param = New Global.Devart.Data.MySql.MySqlParameter()
             param.ParameterName = "Fecha"
             param.DbType = Global.System.Data.DbType.DateTime
             param.MySqlType = Global.Devart.Data.MySql.MySqlType.DateTime
-            param.IsNullable = true
+            param.IsNullable = True
             param.SourceColumn = "Fecha"
             Me._adapter.InsertCommand.Parameters.Add(param)
             param = New Global.Devart.Data.MySql.MySqlParameter()
             param.ParameterName = "Tasa"
             param.DbType = Global.System.Data.DbType.[Decimal]
             param.MySqlType = Global.Devart.Data.MySql.MySqlType.[Decimal]
-            param.IsNullable = true
+            param.IsNullable = True
             param.SourceColumn = "Tasa"
             Me._adapter.InsertCommand.Parameters.Add(param)
             param = New Global.Devart.Data.MySql.MySqlParameter()
             param.ParameterName = "ftdc_yyyy"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlType = Global.Devart.Data.MySql.MySqlType.Int
-            param.IsNullable = true
+            param.IsNullable = True
             param.SourceColumn = "ftdc_yyyy"
             Me._adapter.InsertCommand.Parameters.Add(param)
             param = New Global.Devart.Data.MySql.MySqlParameter()
             param.ParameterName = "ftdc_mm"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlType = Global.Devart.Data.MySql.MySqlType.Int
-            param.IsNullable = true
+            param.IsNullable = True
             param.SourceColumn = "ftdc_mm"
             Me._adapter.InsertCommand.Parameters.Add(param)
             param = New Global.Devart.Data.MySql.MySqlParameter()
             param.ParameterName = "ftdc_dd"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlType = Global.Devart.Data.MySql.MySqlType.Int
-            param.IsNullable = true
+            param.IsNullable = True
             param.SourceColumn = "ftdc_dd"
             Me._adapter.InsertCommand.Parameters.Add(param)
             param = New Global.Devart.Data.MySql.MySqlParameter()
             param.ParameterName = "Estado"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlType = Global.Devart.Data.MySql.MySqlType.Int
-            param.IsNullable = true
+            param.IsNullable = True
             param.SourceColumn = "Estado"
             Me._adapter.InsertCommand.Parameters.Add(param)
             Me._adapter.UpdateCommand = New Global.Devart.Data.MySql.MySqlCommand()
             Me._adapter.UpdateCommand.Connection = Me.Connection
-            Me._adapter.UpdateCommand.CommandText = "UPDATE `bdauxiliartacna`.`tblaux_tipocambio` SET `ftdc_fechac` = :Fecha, `ntdc_va"& _ 
-                "lor` = :Tasa, `ftdc_yyyy` = :ftdc_yyyy, `ftdc_mm` = :ftdc_mm, `ftdc_dd` = :ftdc_"& _ 
-                "dd, `ftdc_estadoid` = :Estado WHERE (((:IsNull_Fecha = 1 AND `ftdc_fechac` IS NU"& _ 
-                "LL) OR (`ftdc_fechac` = :Original_Fecha)) AND ((:IsNull_Tasa = 1 AND `ntdc_valor"& _ 
-                "` IS NULL) OR (`ntdc_valor` = :Original_Tasa)) AND (`ftdc_yyyy` = :Original_ftdc"& _ 
-                "_yyyy) AND (`ftdc_mm` = :Original_ftdc_mm) AND (`ftdc_dd` = :Original_ftdc_dd) A"& _ 
-                "ND ((:IsNull_Estado = 1 AND `ftdc_estadoid` IS NULL) OR (`ftdc_estadoid` = :Orig"& _ 
+            Me._adapter.UpdateCommand.CommandText = "UPDATE `bdauxiliartacna`.`tblaux_tipocambio` SET `ftdc_fechac` = :Fecha, `ntdc_va" & _
+                "lor` = :Tasa, `ftdc_yyyy` = :ftdc_yyyy, `ftdc_mm` = :ftdc_mm, `ftdc_dd` = :ftdc_" & _
+                "dd, `ftdc_estadoid` = :Estado WHERE (((:IsNull_Fecha = 1 AND `ftdc_fechac` IS NU" & _
+                "LL) OR (`ftdc_fechac` = :Original_Fecha)) AND ((:IsNull_Tasa = 1 AND `ntdc_valor" & _
+                "` IS NULL) OR (`ntdc_valor` = :Original_Tasa)) AND (`ftdc_yyyy` = :Original_ftdc" & _
+                "_yyyy) AND (`ftdc_mm` = :Original_ftdc_mm) AND (`ftdc_dd` = :Original_ftdc_dd) A" & _
+                "ND ((:IsNull_Estado = 1 AND `ftdc_estadoid` IS NULL) OR (`ftdc_estadoid` = :Orig" & _
                 "inal_Estado)))"
             Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
             param = New Global.Devart.Data.MySql.MySqlParameter()
             param.ParameterName = "Fecha"
             param.DbType = Global.System.Data.DbType.DateTime
             param.MySqlType = Global.Devart.Data.MySql.MySqlType.DateTime
-            param.IsNullable = true
+            param.IsNullable = True
             param.SourceColumn = "Fecha"
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.Devart.Data.MySql.MySqlParameter()
             param.ParameterName = "Tasa"
             param.DbType = Global.System.Data.DbType.[Decimal]
             param.MySqlType = Global.Devart.Data.MySql.MySqlType.[Decimal]
-            param.IsNullable = true
+            param.IsNullable = True
             param.SourceColumn = "Tasa"
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.Devart.Data.MySql.MySqlParameter()
             param.ParameterName = "ftdc_yyyy"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlType = Global.Devart.Data.MySql.MySqlType.Int
-            param.IsNullable = true
+            param.IsNullable = True
             param.SourceColumn = "ftdc_yyyy"
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.Devart.Data.MySql.MySqlParameter()
             param.ParameterName = "ftdc_mm"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlType = Global.Devart.Data.MySql.MySqlType.Int
-            param.IsNullable = true
+            param.IsNullable = True
             param.SourceColumn = "ftdc_mm"
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.Devart.Data.MySql.MySqlParameter()
             param.ParameterName = "ftdc_dd"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlType = Global.Devart.Data.MySql.MySqlType.Int
-            param.IsNullable = true
+            param.IsNullable = True
             param.SourceColumn = "ftdc_dd"
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.Devart.Data.MySql.MySqlParameter()
             param.ParameterName = "Estado"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlType = Global.Devart.Data.MySql.MySqlType.Int
-            param.IsNullable = true
+            param.IsNullable = True
             param.SourceColumn = "Estado"
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.Devart.Data.MySql.MySqlParameter()
             param.ParameterName = "IsNull_Fecha"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlType = Global.Devart.Data.MySql.MySqlType.Int
-            param.IsNullable = true
+            param.IsNullable = True
             param.SourceColumn = "Fecha"
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
-            param.SourceColumnNullMapping = true
+            param.SourceColumnNullMapping = True
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.Devart.Data.MySql.MySqlParameter()
             param.ParameterName = "Original_Fecha"
             param.DbType = Global.System.Data.DbType.DateTime
             param.MySqlType = Global.Devart.Data.MySql.MySqlType.DateTime
-            param.IsNullable = true
+            param.IsNullable = True
             param.SourceColumn = "Fecha"
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
             Me._adapter.UpdateCommand.Parameters.Add(param)
@@ -38688,16 +38742,16 @@ Namespace BDClientesDataSetTableAdapters
             param.ParameterName = "IsNull_Tasa"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlType = Global.Devart.Data.MySql.MySqlType.Int
-            param.IsNullable = true
+            param.IsNullable = True
             param.SourceColumn = "Tasa"
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
-            param.SourceColumnNullMapping = true
+            param.SourceColumnNullMapping = True
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.Devart.Data.MySql.MySqlParameter()
             param.ParameterName = "Original_Tasa"
             param.DbType = Global.System.Data.DbType.[Decimal]
             param.MySqlType = Global.Devart.Data.MySql.MySqlType.[Decimal]
-            param.IsNullable = true
+            param.IsNullable = True
             param.SourceColumn = "Tasa"
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
             Me._adapter.UpdateCommand.Parameters.Add(param)
@@ -38705,7 +38759,7 @@ Namespace BDClientesDataSetTableAdapters
             param.ParameterName = "Original_ftdc_yyyy"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlType = Global.Devart.Data.MySql.MySqlType.Int
-            param.IsNullable = true
+            param.IsNullable = True
             param.SourceColumn = "ftdc_yyyy"
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
             Me._adapter.UpdateCommand.Parameters.Add(param)
@@ -38713,7 +38767,7 @@ Namespace BDClientesDataSetTableAdapters
             param.ParameterName = "Original_ftdc_mm"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlType = Global.Devart.Data.MySql.MySqlType.Int
-            param.IsNullable = true
+            param.IsNullable = True
             param.SourceColumn = "ftdc_mm"
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
             Me._adapter.UpdateCommand.Parameters.Add(param)
@@ -38721,7 +38775,7 @@ Namespace BDClientesDataSetTableAdapters
             param.ParameterName = "Original_ftdc_dd"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlType = Global.Devart.Data.MySql.MySqlType.Int
-            param.IsNullable = true
+            param.IsNullable = True
             param.SourceColumn = "ftdc_dd"
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
             Me._adapter.UpdateCommand.Parameters.Add(param)
@@ -38729,205 +38783,259 @@ Namespace BDClientesDataSetTableAdapters
             param.ParameterName = "IsNull_Estado"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlType = Global.Devart.Data.MySql.MySqlType.Int
-            param.IsNullable = true
+            param.IsNullable = True
             param.SourceColumn = "Estado"
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
-            param.SourceColumnNullMapping = true
+            param.SourceColumnNullMapping = True
             Me._adapter.UpdateCommand.Parameters.Add(param)
             param = New Global.Devart.Data.MySql.MySqlParameter()
             param.ParameterName = "Original_Estado"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlType = Global.Devart.Data.MySql.MySqlType.Int
-            param.IsNullable = true
+            param.IsNullable = True
             param.SourceColumn = "Estado"
             param.SourceVersion = Global.System.Data.DataRowVersion.Original
             Me._adapter.UpdateCommand.Parameters.Add(param)
         End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Private Sub InitConnection()
             Me._connection = New Global.Devart.Data.MySql.MySqlConnection()
             Me._connection.ConnectionString = Global.bddc.Win.My.MySettings.Default.bdauxiliartacnaConnectionString
         End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Private Sub InitCommandCollection()
-            Me._commandCollection = New Global.Devart.Data.MySql.MySqlCommand(1) {}
+            Me._commandCollection = New Global.Devart.Data.MySql.MySqlCommand(2) {}
             Me._commandCollection(0) = New Global.Devart.Data.MySql.MySqlCommand()
             Me._commandCollection(0).Connection = Me.Connection
-            Me._commandCollection(0).CommandText = "SELECT        ftdc_fechac AS Fecha, ntdc_valor AS Tasa, ftdc_yyyy, ftdc_mm, ftdc_"& _ 
-                "dd, ftdc_estadoid AS Estado"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"FROM            tblaux_tipocambio"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"ORDER BY Fecha D"& _ 
+            Me._commandCollection(0).CommandText = "SELECT        ftdc_fechac AS Fecha, ntdc_valor AS Tasa, ftdc_yyyy, ftdc_mm, ftdc_" & _
+                "dd, ftdc_estadoid AS Estado" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "FROM            tblaux_tipocambio" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "ORDER BY Fecha D" & _
                 "ESC"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
             Me._commandCollection(1) = New Global.Devart.Data.MySql.MySqlCommand()
             Me._commandCollection(1).Connection = Me.Connection
-            Me._commandCollection(1).CommandText = "SELECT        ftdc_fechac AS Fecha, ntdc_valor AS Tasa, ftdc_yyyy, ftdc_mm, ftdc_"& _ 
-                "dd, ftdc_estadoid AS Estado"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"FROM            tblaux_tipocambio"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"ORDER BY Fecha D"& _ 
-                "ESC"
+            Me._commandCollection(1).CommandText = "DELETE FROM `bdauxiliartacna`.`tblaux_tipocambio`" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "WHERE        (ftdc_yyyy = :PAR" & _
+                "AM1) AND (ftdc_mm = :PARAM2) AND (ftdc_dd = :PARAM3)"
             Me._commandCollection(1).CommandType = Global.System.Data.CommandType.Text
+            Dim param As Global.Devart.Data.MySql.MySqlParameter = New Global.Devart.Data.MySql.MySqlParameter()
+            param.ParameterName = "PARAM1"
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlType = Global.Devart.Data.MySql.MySqlType.Int
+            param.IsNullable = True
+            param.SourceColumn = "ftdc_yyyy"
+            param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            Me._commandCollection(1).Parameters.Add(param)
+            param = New Global.Devart.Data.MySql.MySqlParameter()
+            param.ParameterName = "PARAM2"
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlType = Global.Devart.Data.MySql.MySqlType.Int
+            param.IsNullable = True
+            param.SourceColumn = "ftdc_mm"
+            param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            Me._commandCollection(1).Parameters.Add(param)
+            param = New Global.Devart.Data.MySql.MySqlParameter()
+            param.ParameterName = "PARAM3"
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlType = Global.Devart.Data.MySql.MySqlType.Int
+            param.IsNullable = True
+            param.SourceColumn = "ftdc_dd"
+            param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            Me._commandCollection(1).Parameters.Add(param)
+            Me._commandCollection(2) = New Global.Devart.Data.MySql.MySqlCommand()
+            Me._commandCollection(2).Connection = Me.Connection
+            Me._commandCollection(2).CommandText = "SELECT        ftdc_fechac AS Fecha, ntdc_valor AS Tasa, ftdc_yyyy, ftdc_mm, ftdc_" & _
+                "dd, ftdc_estadoid AS Estado" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "FROM            tblaux_tipocambio" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "ORDER BY Fecha D" & _
+                "ESC"
+            Me._commandCollection(2).CommandType = Global.System.Data.CommandType.Text
         End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, true)>  _
-        Public Overloads Overridable Function Fill(ByVal dataTable As BDClientesDataSet.Tacna_tblaux_tipocambioDataTable) As Integer
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, True)> _
+        Public Overridable Overloads Function Fill(ByVal dataTable As BDClientesDataSet.Tacna_tblaux_tipocambioDataTable) As Integer
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
-            If (Me.ClearBeforeFill = true) Then
-                dataTable.Clear
+            If (Me.ClearBeforeFill = True) Then
+                dataTable.Clear()
             End If
             Dim returnValue As Integer = Me.Adapter.Fill(dataTable)
             Return returnValue
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], true)>  _
-        Public Overloads Overridable Function GetData() As BDClientesDataSet.Tacna_tblaux_tipocambioDataTable
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], True)> _
+        Public Overridable Overloads Function GetData() As BDClientesDataSet.Tacna_tblaux_tipocambioDataTable
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
             Dim dataTable As BDClientesDataSet.Tacna_tblaux_tipocambioDataTable = New BDClientesDataSet.Tacna_tblaux_tipocambioDataTable()
             Me.Adapter.Fill(dataTable)
             Return dataTable
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], false)>  _
-        Public Overloads Overridable Function GetCambioByDate() As BDClientesDataSet.Tacna_tblaux_tipocambioDataTable
-            Me.Adapter.SelectCommand = Me.CommandCollection(1)
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], False)> _
+        Public Overridable Overloads Function GetCambioByDate() As BDClientesDataSet.Tacna_tblaux_tipocambioDataTable
+            Me.Adapter.SelectCommand = Me.CommandCollection(2)
             Dim dataTable As BDClientesDataSet.Tacna_tblaux_tipocambioDataTable = New BDClientesDataSet.Tacna_tblaux_tipocambioDataTable()
             Me.Adapter.Fill(dataTable)
             Return dataTable
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
-        Public Overloads Overridable Function Update(ByVal dataTable As BDClientesDataSet.Tacna_tblaux_tipocambioDataTable) As Integer
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
+        Public Overridable Overloads Function Update(ByVal dataTable As BDClientesDataSet.Tacna_tblaux_tipocambioDataTable) As Integer
             Return Me.Adapter.Update(dataTable)
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
-        Public Overloads Overridable Function Update(ByVal dataSet As BDClientesDataSet) As Integer
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
+        Public Overridable Overloads Function Update(ByVal dataSet As BDClientesDataSet) As Integer
             Return Me.Adapter.Update(dataSet, "Tacna_tblaux_tipocambio")
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
-        Public Overloads Overridable Function Update(ByVal dataRow As Global.System.Data.DataRow) As Integer
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
+        Public Overridable Overloads Function Update(ByVal dataRow As Global.System.Data.DataRow) As Integer
             Return Me.Adapter.Update(New Global.System.Data.DataRow() {dataRow})
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
-        Public Overloads Overridable Function Update(ByVal dataRows() As Global.System.Data.DataRow) As Integer
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
+        Public Overridable Overloads Function Update(ByVal dataRows() As Global.System.Data.DataRow) As Integer
             Return Me.Adapter.Update(dataRows)
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Delete, true)>  _
-        Public Overloads Overridable Function Delete(ByVal Original_Fecha As Date, ByVal Original_Tasa As Decimal, ByVal Original_ftdc_yyyy As Integer, ByVal Original_ftdc_mm As Integer, ByVal Original_ftdc_dd As Integer, ByVal Original_Estado As Integer) As Integer
-            Me.Adapter.DeleteCommand.Parameters(0).Value = CType(0,Object)
-            Me.Adapter.DeleteCommand.Parameters(1).Value = CType(Original_Fecha,Date)
-            Me.Adapter.DeleteCommand.Parameters(2).Value = CType(0,Object)
-            Me.Adapter.DeleteCommand.Parameters(3).Value = CType(Original_Tasa,Decimal)
-            Me.Adapter.DeleteCommand.Parameters(4).Value = CType(Original_ftdc_yyyy,Integer)
-            Me.Adapter.DeleteCommand.Parameters(5).Value = CType(Original_ftdc_mm,Integer)
-            Me.Adapter.DeleteCommand.Parameters(6).Value = CType(Original_ftdc_dd,Integer)
-            Me.Adapter.DeleteCommand.Parameters(7).Value = CType(0,Object)
-            Me.Adapter.DeleteCommand.Parameters(8).Value = CType(Original_Estado,Integer)
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Delete, True)> _
+        Public Overridable Overloads Function Delete(ByVal Original_Fecha As Date, ByVal Original_Tasa As Decimal, ByVal Original_ftdc_yyyy As Integer, ByVal Original_ftdc_mm As Integer, ByVal Original_ftdc_dd As Integer, ByVal Original_Estado As Integer) As Integer
+            Me.Adapter.DeleteCommand.Parameters(0).Value = CType(0, Object)
+            Me.Adapter.DeleteCommand.Parameters(1).Value = CType(Original_Fecha, Date)
+            Me.Adapter.DeleteCommand.Parameters(2).Value = CType(0, Object)
+            Me.Adapter.DeleteCommand.Parameters(3).Value = CType(Original_Tasa, Decimal)
+            Me.Adapter.DeleteCommand.Parameters(4).Value = CType(Original_ftdc_yyyy, Integer)
+            Me.Adapter.DeleteCommand.Parameters(5).Value = CType(Original_ftdc_mm, Integer)
+            Me.Adapter.DeleteCommand.Parameters(6).Value = CType(Original_ftdc_dd, Integer)
+            Me.Adapter.DeleteCommand.Parameters(7).Value = CType(0, Object)
+            Me.Adapter.DeleteCommand.Parameters(8).Value = CType(Original_Estado, Integer)
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.DeleteCommand.Connection.State
-            If ((Me.Adapter.DeleteCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
+            If ((Me.Adapter.DeleteCommand.Connection.State And Global.System.Data.ConnectionState.Open) _
                         <> Global.System.Data.ConnectionState.Open) Then
-                Me.Adapter.DeleteCommand.Connection.Open
+                Me.Adapter.DeleteCommand.Connection.Open()
             End If
-            Try 
+            Try
                 Dim returnValue As Integer = Me.Adapter.DeleteCommand.ExecuteNonQuery
                 Return returnValue
             Finally
                 If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
-                    Me.Adapter.DeleteCommand.Connection.Close
+                    Me.Adapter.DeleteCommand.Connection.Close()
                 End If
             End Try
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, true)>  _
-        Public Overloads Overridable Function Insert(ByVal Fecha As Date, ByVal Tasa As Decimal, ByVal ftdc_yyyy As Integer, ByVal ftdc_mm As Integer, ByVal ftdc_dd As Integer, ByVal Estado As Integer) As Integer
-            Me.Adapter.InsertCommand.Parameters(0).Value = CType(Fecha,Date)
-            Me.Adapter.InsertCommand.Parameters(1).Value = CType(Tasa,Decimal)
-            Me.Adapter.InsertCommand.Parameters(2).Value = CType(ftdc_yyyy,Integer)
-            Me.Adapter.InsertCommand.Parameters(3).Value = CType(ftdc_mm,Integer)
-            Me.Adapter.InsertCommand.Parameters(4).Value = CType(ftdc_dd,Integer)
-            Me.Adapter.InsertCommand.Parameters(5).Value = CType(Estado,Integer)
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, True)> _
+        Public Overridable Overloads Function Insert(ByVal Fecha As Date, ByVal Tasa As Decimal, ByVal ftdc_yyyy As Integer, ByVal ftdc_mm As Integer, ByVal ftdc_dd As Integer, ByVal Estado As Integer) As Integer
+            Me.Adapter.InsertCommand.Parameters(0).Value = CType(Fecha, Date)
+            Me.Adapter.InsertCommand.Parameters(1).Value = CType(Tasa, Decimal)
+            Me.Adapter.InsertCommand.Parameters(2).Value = CType(ftdc_yyyy, Integer)
+            Me.Adapter.InsertCommand.Parameters(3).Value = CType(ftdc_mm, Integer)
+            Me.Adapter.InsertCommand.Parameters(4).Value = CType(ftdc_dd, Integer)
+            Me.Adapter.InsertCommand.Parameters(5).Value = CType(Estado, Integer)
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.InsertCommand.Connection.State
-            If ((Me.Adapter.InsertCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
+            If ((Me.Adapter.InsertCommand.Connection.State And Global.System.Data.ConnectionState.Open) _
                         <> Global.System.Data.ConnectionState.Open) Then
-                Me.Adapter.InsertCommand.Connection.Open
+                Me.Adapter.InsertCommand.Connection.Open()
             End If
-            Try 
+            Try
                 Dim returnValue As Integer = Me.Adapter.InsertCommand.ExecuteNonQuery
                 Return returnValue
             Finally
                 If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
-                    Me.Adapter.InsertCommand.Connection.Close
+                    Me.Adapter.InsertCommand.Connection.Close()
                 End If
             End Try
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
-        Public Overloads Overridable Function Update(ByVal Fecha As Date, ByVal Tasa As Decimal, ByVal ftdc_yyyy As Integer, ByVal ftdc_mm As Integer, ByVal ftdc_dd As Integer, ByVal Estado As Integer, ByVal Original_Fecha As Date, ByVal Original_Tasa As Decimal, ByVal Original_ftdc_yyyy As Integer, ByVal Original_ftdc_mm As Integer, ByVal Original_ftdc_dd As Integer, ByVal Original_Estado As Integer) As Integer
-            Me.Adapter.UpdateCommand.Parameters(0).Value = CType(Fecha,Date)
-            Me.Adapter.UpdateCommand.Parameters(1).Value = CType(Tasa,Decimal)
-            Me.Adapter.UpdateCommand.Parameters(2).Value = CType(ftdc_yyyy,Integer)
-            Me.Adapter.UpdateCommand.Parameters(3).Value = CType(ftdc_mm,Integer)
-            Me.Adapter.UpdateCommand.Parameters(4).Value = CType(ftdc_dd,Integer)
-            Me.Adapter.UpdateCommand.Parameters(5).Value = CType(Estado,Integer)
-            Me.Adapter.UpdateCommand.Parameters(6).Value = CType(0,Object)
-            Me.Adapter.UpdateCommand.Parameters(7).Value = CType(Original_Fecha,Date)
-            Me.Adapter.UpdateCommand.Parameters(8).Value = CType(0,Object)
-            Me.Adapter.UpdateCommand.Parameters(9).Value = CType(Original_Tasa,Decimal)
-            Me.Adapter.UpdateCommand.Parameters(10).Value = CType(Original_ftdc_yyyy,Integer)
-            Me.Adapter.UpdateCommand.Parameters(11).Value = CType(Original_ftdc_mm,Integer)
-            Me.Adapter.UpdateCommand.Parameters(12).Value = CType(Original_ftdc_dd,Integer)
-            Me.Adapter.UpdateCommand.Parameters(13).Value = CType(0,Object)
-            Me.Adapter.UpdateCommand.Parameters(14).Value = CType(Original_Estado,Integer)
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, True)> _
+        Public Overridable Overloads Function Update(ByVal Fecha As Date, ByVal Tasa As Decimal, ByVal ftdc_yyyy As Integer, ByVal ftdc_mm As Integer, ByVal ftdc_dd As Integer, ByVal Estado As Integer, ByVal Original_Fecha As Date, ByVal Original_Tasa As Decimal, ByVal Original_ftdc_yyyy As Integer, ByVal Original_ftdc_mm As Integer, ByVal Original_ftdc_dd As Integer, ByVal Original_Estado As Integer) As Integer
+            Me.Adapter.UpdateCommand.Parameters(0).Value = CType(Fecha, Date)
+            Me.Adapter.UpdateCommand.Parameters(1).Value = CType(Tasa, Decimal)
+            Me.Adapter.UpdateCommand.Parameters(2).Value = CType(ftdc_yyyy, Integer)
+            Me.Adapter.UpdateCommand.Parameters(3).Value = CType(ftdc_mm, Integer)
+            Me.Adapter.UpdateCommand.Parameters(4).Value = CType(ftdc_dd, Integer)
+            Me.Adapter.UpdateCommand.Parameters(5).Value = CType(Estado, Integer)
+            Me.Adapter.UpdateCommand.Parameters(6).Value = CType(0, Object)
+            Me.Adapter.UpdateCommand.Parameters(7).Value = CType(Original_Fecha, Date)
+            Me.Adapter.UpdateCommand.Parameters(8).Value = CType(0, Object)
+            Me.Adapter.UpdateCommand.Parameters(9).Value = CType(Original_Tasa, Decimal)
+            Me.Adapter.UpdateCommand.Parameters(10).Value = CType(Original_ftdc_yyyy, Integer)
+            Me.Adapter.UpdateCommand.Parameters(11).Value = CType(Original_ftdc_mm, Integer)
+            Me.Adapter.UpdateCommand.Parameters(12).Value = CType(Original_ftdc_dd, Integer)
+            Me.Adapter.UpdateCommand.Parameters(13).Value = CType(0, Object)
+            Me.Adapter.UpdateCommand.Parameters(14).Value = CType(Original_Estado, Integer)
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.UpdateCommand.Connection.State
-            If ((Me.Adapter.UpdateCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
+            If ((Me.Adapter.UpdateCommand.Connection.State And Global.System.Data.ConnectionState.Open) _
                         <> Global.System.Data.ConnectionState.Open) Then
-                Me.Adapter.UpdateCommand.Connection.Open
+                Me.Adapter.UpdateCommand.Connection.Open()
             End If
-            Try 
+            Try
                 Dim returnValue As Integer = Me.Adapter.UpdateCommand.ExecuteNonQuery
                 Return returnValue
             Finally
                 If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
-                    Me.Adapter.UpdateCommand.Connection.Close
+                    Me.Adapter.UpdateCommand.Connection.Close()
                 End If
             End Try
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
-        Public Overloads Overridable Function Update(ByVal Fecha As Date, ByVal Tasa As Decimal, ByVal Estado As Integer, ByVal Original_Fecha As Date, ByVal Original_Tasa As Decimal, ByVal Original_ftdc_yyyy As Integer, ByVal Original_ftdc_mm As Integer, ByVal Original_ftdc_dd As Integer, ByVal Original_Estado As Integer) As Integer
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, True)> _
+        Public Overridable Overloads Function Update(ByVal Fecha As Date, ByVal Tasa As Decimal, ByVal Estado As Integer, ByVal Original_Fecha As Date, ByVal Original_Tasa As Decimal, ByVal Original_ftdc_yyyy As Integer, ByVal Original_ftdc_mm As Integer, ByVal Original_ftdc_dd As Integer, ByVal Original_Estado As Integer) As Integer
             Return Me.Update(Fecha, Tasa, Original_ftdc_yyyy, Original_ftdc_mm, Original_ftdc_dd, Estado, Original_Fecha, Original_Tasa, Original_ftdc_yyyy, Original_ftdc_mm, Original_ftdc_dd, Original_Estado)
+        End Function
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Delete, False)> _
+        Public Overridable Overloads Function DeleteTasaCambio(ByVal PARAM1 As Integer, ByVal PARAM2 As Integer, ByVal PARAM3 As Integer) As Integer
+            Dim command As Global.Devart.Data.MySql.MySqlCommand = Me.CommandCollection(1)
+            command.Parameters(0).Value = CType(PARAM1, Integer)
+            command.Parameters(1).Value = CType(PARAM2, Integer)
+            command.Parameters(2).Value = CType(PARAM3, Integer)
+            Dim previousConnectionState As Global.System.Data.ConnectionState = command.Connection.State
+            If ((command.Connection.State And Global.System.Data.ConnectionState.Open) _
+                        <> Global.System.Data.ConnectionState.Open) Then
+                command.Connection.Open()
+            End If
+            Dim returnValue As Integer
+            Try
+                returnValue = command.ExecuteNonQuery
+            Finally
+                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
+                    command.Connection.Close()
+                End If
+            End Try
+            Return returnValue
         End Function
     End Class
     
