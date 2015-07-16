@@ -42,6 +42,7 @@
                                     .SetParameterValue("parFechaRegistroIni", strFechaRegistroIni)
                                     .SetParameterValue("parFechaRegistroFin", strFechaRegistroFin)
                                     .SetParameterValue("parTipoCambio", decTipoCambio)
+                                    .SetParameterValue("parCasino", frmLogin.Unidad)
                                 End With
                                 crvResultados.ReportSource = crOperacionCajaReporteRetEfec1
                                 crvResultados.Zoom(100)
@@ -52,6 +53,7 @@
                                     .SetParameterValue("parFechaRegistroIni", strFechaRegistroIni)
                                     .SetParameterValue("parFechaRegistroFin", strFechaRegistroFin)
                                     .SetParameterValue("parTipoCambio", decTipoCambio)
+                                    .SetParameterValue("parCasino", frmLogin.Unidad)
                                 End With
                                 crvResultados.ReportSource = crOperacionCajaReporteRetEfec1
                                 crvResultados.Zoom(100)
