@@ -71,6 +71,7 @@
 
                     Case Util.Enumeracion.enmFCBReporteOperacionCaja.RegistroVentasFichas
 
+
                         Select Case frmLogin.Unidad
                             Case "FIESTA CASINO BENAVIDES"
                                 With crOperacionCajaReporteVentFich1
