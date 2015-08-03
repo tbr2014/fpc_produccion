@@ -71,7 +71,6 @@
 
                     Case Util.Enumeracion.enmFCBReporteOperacionCaja.RegistroVentasFichas
 
-
                         Select Case frmLogin.Unidad
                             Case "FIESTA CASINO BENAVIDES"
                                 With crOperacionCajaReporteVentFich1
@@ -115,36 +114,35 @@
                                 crvResultados.ReportSource = crOperacionCajaReporteVentFich1
                                 crvResultados.Zoom(100)
 
-                            Case "EMPRESA DE PRUEBA"
+                                'Case "EMPRESA DE PRUEBA"
+                                'If MonedaFicha.CompareTo("S./ 500") = 0 Then
+                                '    Unidad = "LUXOR LIMA CASINO"
+                                '    Importe = "Importe S/."
+                                '    Total = "Total S/."
+                                'End If
+                                'If MonedaFicha.CompareTo("S./ 1000") = 0 Then
+                                '    Unidad = "LUXOR TACNA"
+                                '    Importe = "Importe S/."
+                                '    Total = "Total S/."
+                                'End If
+                                'If MonedaFicha.CompareTo("US$ 1000") = 0 Then
+                                '    Unidad = "EMPRESA DE PRUEBA"
+                                '    Importe = "Importe US$"
+                                '    Total = "Total US$"
+                                'End If
 
-                                If MonedaFicha.CompareTo("S./ 500") = 0 Then
-                                    Unidad = "LUXOR LIMA CASINO"
-                                    Importe = "Importe S/."
-                                    Total = "Total S/."
-                                End If
-                                If MonedaFicha.CompareTo("S./ 1000") = 0 Then
-                                    Unidad = "LUXOR TACNA"
-                                    Importe = "Importe S/."
-                                    Total = "Total S/."
-                                End If
-                                If MonedaFicha.CompareTo("US$ 1000") = 0 Then
-                                    Unidad = "EMPRESA DE PRUEBA"
-                                    Importe = "Importe US$"
-                                    Total = "Total US$"
-                                End If
-
-                                With crOperacionCajaReporteVentFich1
-                                    .SetDataSource(arrResultados)
-                                    .SetParameterValue("parFechaRegistroIni", strFechaRegistroIni)
-                                    .SetParameterValue("parFechaRegistroFin", strFechaRegistroFin)
-                                    .SetParameterValue("parTipoCambio", decTipoCambio)
-                                    .SetParameterValue("parFichaDenominacion", MonedaFicha)
-                                    .SetParameterValue("parCasino", Unidad)
-                                    .SetParameterValue("parEncabImporte", Importe)
-                                    .SetParameterValue("parTotal", Total)
-                                End With
-                                crvResultados.ReportSource = crOperacionCajaReporteVentFich1
-                                crvResultados.Zoom(100)
+                                'With crOperacionCajaReporteVentFich1
+                                '    .SetDataSource(arrResultados)
+                                '    .SetParameterValue("parFechaRegistroIni", strFechaRegistroIni)
+                                '    .SetParameterValue("parFechaRegistroFin", strFechaRegistroFin)
+                                '    .SetParameterValue("parTipoCambio", decTipoCambio)
+                                '    .SetParameterValue("parFichaDenominacion", MonedaFicha)
+                                '    .SetParameterValue("parCasino", Unidad)
+                                '    .SetParameterValue("parEncabImporte", Importe)
+                                '    .SetParameterValue("parTotal", Total)
+                                'End With
+                                'crvResultados.ReportSource = crOperacionCajaReporteVentFich1
+                                'crvResultados.Zoom(100)
                         End Select
 
                     Case Util.Enumeracion.enmFCBReporteOperacionCaja.RegistroPagosManuales
@@ -176,7 +174,6 @@
                 End Select
 
                 crvResultados.Visible = True
-
                 'dgvResultados.Visible = True
                 'dgvResultados.DataSource = arrResultado
 
